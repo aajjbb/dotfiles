@@ -1,5 +1,11 @@
 ;; control backup files
-(setq backup-directory-alist `(("." . "~/.saves")))
+;; (setq backup-directory-alist `(("." . "~/.saves")))
+;; actually saving them all in temp folder
+(setq backup-directory-alist
+	  `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+	  `((".*" ,temporary-file-directory t)))
+
 
 ;; load plugins 
 (add-to-list 'load-path "~/.emacs.d/")
@@ -15,6 +21,13 @@
 (custom-set-variables
  '(inhibit-startup-screen t))
 (custom-set-faces )
+
+;; dos2unix function
+(defun dos2unix ()
+  "Replace DOS eolns CR LF with Unix eolns CR"
+  (interactive)
+    (goto-char (point-min))
+      (while (search-forward "\r" nil t) (replace-match "")))
 
 ;; configs from auto complete
 (add-to-list 'load-path "~/.emacs.d/plugins/autocomplete/")
@@ -48,3 +61,8 @@
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
                          ("melpa" . "http://melpa.milkbox.net/packages/")))
+
+
+;; make emacs share clipboard with the system (nw mode)
+(load-file "~/.emacs.d/xclip.el")
+
