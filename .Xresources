@@ -1,5 +1,5 @@
 urxvt*saveLines: 5000
-urxvt*termName: rxvt-256-olor
+urxvt*termName: rxvt-256-color
 
 URxvt.scrollBar: false
 URxvt.borderLess: false
@@ -82,3 +82,20 @@ uRxvt*perl-ext-common: default, matcher, clipboard
 *color7:  #a6a6a6
 ! white
 *color15: #e6e6e6
+
+Xterm*saveLines: 5000
+Xterm*termName: xterm
+
+Xterm.scrollBar: false
+Xterm.borderLess: false
+
+Xterm*font: xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true:hinting=true
+Xterm*boldFont: xft:Bitstream Vera Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
+
+xterm*faceName: xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true:hinting=true
+
+Xterm*loginShell:         true
+Xterm*scrollBar:         false
+Xterm*secondaryScroll:    true
+
+Xterm.iso14755: False 
