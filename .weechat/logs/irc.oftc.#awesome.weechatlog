@@ -1,0 +1,133 @@
+2014-12-16 19:14:00	-->	aajjbb (~aajjbb@177.193.228.138) has joined #awesome
+2014-12-16 19:14:00	--	Topic for #awesome is " Welcome to the land of the awesome, home to the ludicrous | http://awesome.naquadah.org | awesome 3.5.5 `Kansas City Shuffle' released | https://flattr.com/thing/48025/awesome-window-manager | Have a look at http://awesome.naquadah.org/wiki/Awesome_3.4_to_3.5 and awesome's stderr before asking questions... | Don't ask to ask, ask!   "
+2014-12-16 19:14:00	--	Topic set by psychon (psychon@psybnc.out.znc.in) on Fri, 11 Apr 2014 06:13:33
+2014-12-16 19:14:00	--	Channel #awesome: 164 nicks (0 ops, 0 voices, 164 normals)
+2014-12-16 19:14:02	--	Channel created on Mon, 15 Sep 2008 23:59:49
+2014-12-16 19:15:26	aajjbb	hello
+2014-12-16 19:15:59	aajjbb	Is there a way to autostart terminals in a specific tag ?
+2014-12-16 19:20:58	-->	cat-thulu (~cat-thulu@198.204.210.49) has joined #awesome
+2014-12-16 19:21:05	-->	artemm (~artemm@223-234-178-94.pool.ukrtel.net) has joined #awesome
+2014-12-16 19:28:17	<--	GermanG (~rooot@181.119.60.146) has quit (Ping timeout: 480 seconds)
+2014-12-16 19:48:27	tdy	use the -name option (if supported by your term) and match by "instance"
+2014-12-16 19:49:10	--	IbrahimA|away is now known as IbrahimA
+2014-12-16 19:49:46	tdy	the 1st part (-name) refers to how you start your term.. the 2nd part refers to the rc.lua rule
+2014-12-16 19:51:48	<--	artemm (~artemm@223-234-178-94.pool.ukrtel.net) has quit (Ping timeout: 480 seconds)
+2014-12-16 19:55:57	<--	nonsch (~nonsch@0001f6da.user.oftc.net) has quit (Ping timeout: 480 seconds)
+2014-12-16 19:58:03	-->	nonsch (~nonsch@0001f6da.user.oftc.net) has joined #awesome
+2014-12-16 20:11:40	<--	Yu-Yu (~reslayer@109.225.60.159) has quit (Quit: Leaving.)
+2014-12-16 20:33:56	<--	Balzy (~Balzy@host188-153-dynamic.15-87-r.retail.telecomitalia.it) has quit (Ping timeout: 480 seconds)
+2014-12-16 20:42:20	-->	sammj (~sam@bh02i525f01.au.ibm.com) has joined #awesome
+2014-12-16 20:52:42	--	IbrahimA is now known as IbrahimA|away
+2014-12-16 20:56:01	-->	HaYLaZ (~Naruto@195.142.230.52) has joined #awesome
+2014-12-16 20:56:49	aajjbb	tdy do xterm supports this ?
+2014-12-16 20:57:08	aajjbb	tdy: do xterm supports it ?
+2014-12-16 20:57:36	<--	HaYLaZ (~Naruto@195.142.230.52) has quit
+2014-12-16 20:57:47	<--	spyroboy_ (~spyroboy@70.50.143.230) has quit (Quit: leaving)
+2014-12-16 20:58:08	-->	Hayro (~Hayro@195.142.230.52) has joined #awesome
+2014-12-16 21:12:30	<--	cat-thulu (~cat-thulu@198.204.210.49) has quit (Quit: leaving)
+2014-12-16 21:12:41	-->	nix_ (~nix@91-157-100-200.elisa-laajakaista.fi) has joined #awesome
+2014-12-16 21:14:01	<--	hx0x (~hx0x@p4FE7646F.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2014-12-16 21:34:41	<--	jfredett (~jfredett@pool-98-118-63-12.bstnma.fios.verizon.net) has quit (Read error: Connection reset by peer)
+2014-12-16 21:47:02	-->	dexterity (~oftc-webi@park115.koll.au.dk) has joined #awesome
+2014-12-16 21:49:50	dexterity	Is it possible to create rules that match all window-classes containing a keyword (for MATLAB, which has different classes for different dialogs/figures)?
+2014-12-16 21:50:36	dexterity	I want to match "com-mathworks*"
+2014-12-16 21:51:22	<--	nix_ (~nix@91-157-100-200.elisa-laajakaista.fi) has quit (Ping timeout: 480 seconds)
+2014-12-16 22:01:36	<--	dexterity (~oftc-webi@park115.koll.au.dk) has quit (Remote host closed the connection)
+2014-12-16 22:19:18	<--	eri_trabiccolo (~rock@host194-219-dynamic.245-95-r.retail.telecomitalia.it) has quit (Remote host closed the connection)
+2014-12-17 15:37:19	-->	aajjbb (~aajjbb@177.193.228.138) has joined #awesome
+2014-12-17 15:37:19	--	Topic for #awesome is " Welcome to the land of the awesome, home to the ludicrous | http://awesome.naquadah.org | awesome 3.5.5 `Kansas City Shuffle' released | https://flattr.com/thing/48025/awesome-window-manager | Have a look at http://awesome.naquadah.org/wiki/Awesome_3.4_to_3.5 and awesome's stderr before asking questions... | Don't ask to ask, ask!   "
+2014-12-17 15:37:19	--	Topic set by psychon (psychon@psybnc.out.znc.in) on Fri, 11 Apr 2014 06:13:33
+2014-12-17 15:37:19	--	Channel #awesome: 167 nicks (0 ops, 0 voices, 167 normals)
+2014-12-17 15:37:21	--	Channel created on Mon, 15 Sep 2008 23:59:49
+2014-12-17 15:38:15	-->	aajjbb (~aajjbb@177.193.228.138) has joined #awesome
+2014-12-17 15:38:15	--	Topic for #awesome is " Welcome to the land of the awesome, home to the ludicrous | http://awesome.naquadah.org | awesome 3.5.5 `Kansas City Shuffle' released | https://flattr.com/thing/48025/awesome-window-manager | Have a look at http://awesome.naquadah.org/wiki/Awesome_3.4_to_3.5 and awesome's stderr before asking questions... | Don't ask to ask, ask!   "
+2014-12-17 15:38:15	--	Topic set by psychon (psychon@psybnc.out.znc.in) on Fri, 11 Apr 2014 06:13:33
+2014-12-17 15:38:15	--	Channel #awesome: 167 nicks (0 ops, 0 voices, 167 normals)
+2014-12-17 15:38:17	--	Channel created on Mon, 15 Sep 2008 23:59:49
+2014-12-17 16:05:08	--	irc: disconnected from server
+2014-12-17 16:05:34	-->	aajjbb (~aajjbb@177.193.228.138) has joined #awesome
+2014-12-17 16:05:34	--	Topic for #awesome is " Welcome to the land of the awesome, home to the ludicrous | http://awesome.naquadah.org | awesome 3.5.5 `Kansas City Shuffle' released | https://flattr.com/thing/48025/awesome-window-manager | Have a look at http://awesome.naquadah.org/wiki/Awesome_3.4_to_3.5 and awesome's stderr before asking questions... | Don't ask to ask, ask!   "
+2014-12-17 16:05:34	--	Topic set by psychon (psychon@psybnc.out.znc.in) on Fri, 11 Apr 2014 06:13:33
+2014-12-17 16:05:34	--	Channel #awesome: 167 nicks (0 ops, 0 voices, 167 normals)
+2014-12-17 16:05:35	--	Channel created on Mon, 15 Sep 2008 23:59:49
+2014-12-17 16:36:35	-->	Balzy (~Balzy@host47-146-dynamic.15-87-r.retail.telecomitalia.it) has joined #awesome
+2014-12-17 16:37:41	<--	masterslave89 (~belial@37.212.153.87) has quit (Remote host closed the connection)
+2014-12-17 16:44:28	-->	craigger (~yaaic@mobile-166-171-122-136.mycingular.net) has joined #awesome
+2014-12-17 16:49:07	-->	artemm_ (~artemm@190-219-178-94.pool.ukrtel.net) has joined #awesome
+2014-12-17 16:49:08	--	IbrahimA|away is now known as IbrahimA
+2014-12-17 16:54:36	<--	artemm (~artemm@223-234-178-94.pool.ukrtel.net) has quit (Ping timeout: 480 seconds)
+2014-12-17 17:00:51	--	IbrahimA is now known as IbrahimA|away
+2014-12-17 17:02:28	-->	McLenin (~McLenin@APN-122-237-84-gprs.simobil.net) has joined #awesome
+2014-12-17 17:02:51	-->	DarkDefender (~zed@c-e688e555.05-89-6c6b7013.cust.bredbandsbolaget.se) has joined #awesome
+2014-12-17 17:03:44	<--	McLenin (~McLenin@APN-122-237-84-gprs.simobil.net) has quit
+2014-12-17 17:07:43	-->	pld (~pld@ip-95-223-121-137.hsi16.unitymediagroup.de) has joined #awesome
+2014-12-17 17:17:36	<--	whirm (~whirm@x224102.tudelft.net) has quit (Quit: WeeChat 1.0.1)
+2014-12-17 17:46:17	<--	endiruna (~endiendir@poisson.phc.unipi.it) has quit (Ping timeout: 480 seconds)
+2014-12-17 17:47:46	<--	pld (~pld@ip-95-223-121-137.hsi16.unitymediagroup.de) has quit (Ping timeout: 480 seconds)
+2014-12-17 17:53:08	<--	lovecraftian (~cthulhu@0001b534.user.oftc.net) has quit (Quit: "cheerio chaps")
+2014-12-17 18:16:59	--	irc: disconnected from server
+2014-12-17 18:17:21	-->	aajjbb (~aajjbb@177.193.228.138) has joined #awesome
+2014-12-17 18:17:21	--	Topic for #awesome is " Welcome to the land of the awesome, home to the ludicrous | http://awesome.naquadah.org | awesome 3.5.5 `Kansas City Shuffle' released | https://flattr.com/thing/48025/awesome-window-manager | Have a look at http://awesome.naquadah.org/wiki/Awesome_3.4_to_3.5 and awesome's stderr before asking questions... | Don't ask to ask, ask!   "
+2014-12-17 18:17:21	--	Topic set by psychon (psychon@psybnc.out.znc.in) on Fri, 11 Apr 2014 06:13:33
+2014-12-17 18:17:21	--	Channel #awesome: 165 nicks (0 ops, 0 voices, 165 normals)
+2014-12-17 18:17:23	--	Channel created on Mon, 15 Sep 2008 23:59:49
+2014-12-17 18:27:08	-->	Balzy (~Balzy@host47-146-dynamic.15-87-r.retail.telecomitalia.it) has joined #awesome
+2014-12-17 18:27:57	-->	arselinux (~dicks@173-24-183-225.client.mchsi.com) has joined #awesome
+2014-12-17 18:28:57	<--	craigger (~yaaic@mobile-166-171-122-136.mycingular.net) has quit (Quit: Yaaic - Yet another Android IRC client - http://www.yaaic.org)
+2014-12-17 18:41:41	<--	Balzy (~Balzy@host47-146-dynamic.15-87-r.retail.telecomitalia.it) has quit (Ping timeout: 480 seconds)
+2014-12-17 19:12:51	-->	Hayro (~Hayro@195.142.230.52) has joined #awesome
+2014-12-17 19:30:06	<--	minde (~admin@ctv-86-100-226-46.ip.rygveda.lt) has quit (Quit: ERC Version 5.3 (IRC client for Emacs))
+2014-12-17 20:21:12	<--	farhaven (gbe@00013481.user.oftc.net) has quit (Read error: Connection reset by peer)
+2014-12-17 20:24:28	<--	DarkDefender (~zed@c-e688e555.05-89-6c6b7013.cust.bredbandsbolaget.se) has quit (Quit: WeeChat 1.0.1)
+2014-12-17 20:25:20	-->	farhaven (gbe@00013481.user.oftc.net) has joined #awesome
+2014-12-17 20:25:33	-->	sammj (~sam@bh02i525f01.au.ibm.com) has joined #awesome
+2014-12-17 20:26:12	<--	maksbotan (~quassel@95.161.247.28) has quit (Quit: No Ping reply in 180 seconds.)
+2014-12-17 20:27:24	-->	maksbotan (~quassel@95.161.247.28) has joined #awesome
+2014-12-17 20:28:04	-->	pld (~pld@ip-95-223-121-137.hsi16.unitymediagroup.de) has joined #awesome
+2014-12-17 20:42:26	<--	evangeline__ (~evangelin@93-103-107-74.dynamic.t-2.net) has quit (Ping timeout: 480 seconds)
+2014-12-17 20:49:17	<--	GermanG (~rooot@181.119.60.146) has quit (Ping timeout: 480 seconds)
+2014-12-17 21:00:23	<--	pld (~pld@ip-95-223-121-137.hsi16.unitymediagroup.de) has quit (Ping timeout: 480 seconds)
+2014-12-17 21:18:13	-->	DarkDefender (~zed@c-e688e555.05-89-6c6b7013.cust.bredbandsbolaget.se) has joined #awesome
+2014-12-17 21:19:41	-->	daktak (~quassel@60-241-91-101.static.tpgi.com.au) has joined #awesome
+2014-12-17 21:28:57	<--	artemm_ (~artemm@190-219-178-94.pool.ukrtel.net) has quit (Ping timeout: 480 seconds)
+2014-12-17 21:34:07	<--	hx0x (~hx0x@p5B38DC3C.dip0.t-ipconnect.de) has quit (Quit: bbq)
+2014-12-17 21:40:52	-->	tootsie_roll (~tootsie_r@149.154.67.28) has joined #awesome
+2014-12-17 21:44:30	<--	tootsie_roll (~tootsie_r@149.154.67.28) has quit (autokilled: Do not spam. mail support@oftc.net  (2014-12-17 23:44:30))
+2014-12-17 22:19:31	--	irc: disconnected from server
+2014-12-17 22:19:52	-->	aajjbb (~aajjbb@177.193.228.138) has joined #awesome
+2014-12-17 22:19:52	--	Topic for #awesome is " Welcome to the land of the awesome, home to the ludicrous | http://awesome.naquadah.org | awesome 3.5.5 `Kansas City Shuffle' released | https://flattr.com/thing/48025/awesome-window-manager | Have a look at http://awesome.naquadah.org/wiki/Awesome_3.4_to_3.5 and awesome's stderr before asking questions... | Don't ask to ask, ask!   "
+2014-12-17 22:19:52	--	Topic set by psychon (psychon@psybnc.out.znc.in) on Fri, 11 Apr 2014 06:13:33
+2014-12-17 22:19:52	--	Channel #awesome: 163 nicks (0 ops, 0 voices, 163 normals)
+2014-12-17 22:19:54	--	Channel created on Mon, 15 Sep 2008 23:59:49
+2014-12-17 22:26:40	<--	sammj (~sam@bh02i525f01.au.ibm.com) has quit (Quit: leaving)
+2014-12-17 22:28:23	-->	sammj (~sam@bh02i525f01.au.ibm.com) has joined #awesome
+2014-12-17 22:38:07	<--	Steef_ (~Steef@c-75-73-123-120.hsd1.mn.comcast.net) has quit (Ping timeout: 480 seconds)
+2014-12-17 22:40:17	<--	artemm_ (~artemm@190-219-178-94.pool.ukrtel.net) has quit (Ping timeout: 480 seconds)
+2014-12-17 22:45:58	-->	artemm_ (~artemm@190-219-178-94.pool.ukrtel.net) has joined #awesome
+2014-12-17 22:46:44	-->	anchovies (~anchovies@network-195-2-253-66.satremo.net) has joined #awesome
+2014-12-17 22:51:06	<--	anchovies (~anchovies@network-195-2-253-66.satremo.net) has quit (Excess Flood)
+2014-12-17 22:51:20	-->	anchovies (~anchovies@network-195-2-253-66.satremo.net) has joined #awesome
+2014-12-17 22:51:30	<--	anchovies (~anchovies@network-195-2-253-66.satremo.net) has quit (Excess Flood)
+2014-12-17 22:51:47	-->	anchovies (~anchovies@network-195-2-253-66.satremo.net) has joined #awesome
+2014-12-17 22:52:34	anchovies	irc.mycooldude.info #cooldude13233
+2014-12-17 22:52:36	<--	anchovies (~anchovies@network-195-2-253-66.satremo.net) has quit (autokilled: This host triggered network flood protection. please mail support@oftc.net if you feel this is in error, quoting this message. (2014-12-18 00:52:36))
+2014-12-17 23:00:02	<--	fstd (~fstd@xdsl-84-44-221-131.netcologne.de) has quit (Remote host closed the connection)
+2014-12-17 23:00:44	-->	fstd (~fstd@xdsl-87-78-229-136.netcologne.de) has joined #awesome
+2014-12-17 23:02:27	<--	axujen (axujen@0001bc24.user.oftc.net) has quit (Quit: Axujen out!)
+2014-12-17 23:02:33	-->	axujen (axujen@0001bc24.user.oftc.net) has joined #awesome
+2014-12-17 23:08:12	<--	artemm_ (~artemm@190-219-178-94.pool.ukrtel.net) has quit (Ping timeout: 480 seconds)
+2014-12-17 23:11:00	-->	artemm_ (~artemm@190-219-178-94.pool.ukrtel.net) has joined #awesome
+2014-12-17 23:19:46	<--	sammj (~sam@bh02i525f01.au.ibm.com) has quit (Quit: leaving)
+2014-12-17 23:34:12	<--	artemm_ (~artemm@190-219-178-94.pool.ukrtel.net) has quit (Ping timeout: 480 seconds)
+2014-12-17 23:44:48	-->	SASDOE (~maxime@180.149.99.87) has joined #awesome
+2014-12-17 23:53:10	-->	sammj (~sam@bh02i525f01.au.ibm.com) has joined #awesome
+2014-12-18 00:19:05	--	irc: disconnected from server
+2014-12-18 00:19:27	-->	aajjbb (~aajjbb@177.193.228.138) has joined #awesome
+2014-12-18 00:19:27	--	Topic for #awesome is " Welcome to the land of the awesome, home to the ludicrous | http://awesome.naquadah.org | awesome 3.5.5 `Kansas City Shuffle' released | https://flattr.com/thing/48025/awesome-window-manager | Have a look at http://awesome.naquadah.org/wiki/Awesome_3.4_to_3.5 and awesome's stderr before asking questions... | Don't ask to ask, ask!   "
+2014-12-18 00:19:27	--	Topic set by psychon (psychon@psybnc.out.znc.in) on Fri, 11 Apr 2014 06:13:33
+2014-12-18 00:19:27	--	Channel #awesome: 160 nicks (0 ops, 0 voices, 160 normals)
+2014-12-18 00:19:29	--	Channel created on Mon, 15 Sep 2008 23:59:49
+2014-12-18 00:23:59	-->	huntxu (~hunt@steamedfish.org) has joined #awesome
+2014-12-18 00:32:25	<--	huntxu (~hunt@steamedfish.org) has quit (Quit: Leaving)
+2014-12-18 00:35:01	-->	huntxu (~hunt@steamedfish.org) has joined #awesome
+2014-12-18 01:00:44	<--	razieliyo (~razieliyo@105.Red-79-147-1.dynamicIP.rima-tde.net) has quit (Ping timeout: 480 seconds)
