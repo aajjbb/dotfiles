@@ -1,11 +1,54 @@
+!urxvt settings
+	
 urxvt*saveLines: 5000
 urxvt*termName: rxvt-256-color
 
-URxvt.scrollBar: false
-URxvt.borderLess: false
+urxvt.scrollBar: false
+urxvt.borderLess: false
 
-URxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true:hinting=true
-URxvt*boldFont: xft:Bitstream Vera Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
+urxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true:hinting=true
+urxvt*boldFont: xft:Bitstream Vera Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
+
+urxvt*loginShell:         true
+urxvt*scrollBar:         false
+urxvt*secondaryScroll:    true
+
+urxvt.keysym.Shift-Control-V: perl:clipboard:paste 
+urxvt.iso14755: False 
+
+urxvt*perl-ext-common: default, matcher, clipboard
+
+!Xft.dpi: 96
+!Xft.antialias: true
+!Xft.hinting: true
+!Xft.rgba: rgb
+!Xft.autohint: false
+!Xft.hintstyle: hintslight
+!Xft.lcdfilter: lcddefault
+! grassland by bohoomil
+
+xterm*termName: xterm-256color
+xterm*locale: true
+
+!fix clipboard issue	
+XTerm*VT100.*translations:      #override \
+        Shift Ctrl C: select-end(CLIPBOARD, CUT_BUFFER0) \n\
+        Shift Ctrl V: insert-selection(CLIPBOARD, CUT_BUFFER0)
+			
+xterm*saveLines: 9000
+
+xterm.scrollBar: false
+xterm.borderLess: false
+
+xterm*loginShell:         true
+xterm*scrollBar:         false
+xterm*secondaryScroll:    true
+
+xterm.iso14755: False 
+
+xterm*font: xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true:hinting=true
+xterm*boldFont: xft:Bitstream Vera Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
+xterm*faceName: xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true:hinting=true
 
 !! fonts bank
 !!URxvt*font: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
@@ -21,23 +64,7 @@ URxvt*boldFont: xft:Bitstream Vera Sans Mono:bold:pixelsize=12:antialias=true:hi
 !!urxvt*font: terminus
 !!urxvt*boldFont: terminus-12
 
-urxvt*loginShell:         true
-urxvt*scrollBar:         false
-urxvt*secondaryScroll:    true
-
-URxvt.keysym.Shift-Control-V: perl:clipboard:paste 
-URxvt.iso14755: False 
-
-uRxvt*perl-ext-common: default, matcher, clipboard
-
-!Xft.dpi: 96
-!Xft.antialias: true
-!Xft.hinting: true
-!Xft.rgba: rgb
-!Xft.autohint: false
-!Xft.hintstyle: hintslight
-!Xft.lcdfilter: lcddefault
-! grassland by bohoomil
+!general settings
 
 *background:  #0d1926
 *foreground:  #d9e6f2
@@ -80,22 +107,6 @@ uRxvt*perl-ext-common: default, matcher, clipboard
 
 ! light gray
 *color7:  #a6a6a6
+
 ! white
 *color15: #e6e6e6
-
-Xterm*saveLines: 5000
-Xterm*termName: xterm
-
-Xterm.scrollBar: false
-Xterm.borderLess: false
-
-Xterm*font: xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true:hinting=true
-Xterm*boldFont: xft:Bitstream Vera Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
-
-xterm*faceName: xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true:hinting=true
-
-Xterm*loginShell:         true
-Xterm*scrollBar:         false
-Xterm*secondaryScroll:    true
-
-Xterm.iso14755: False 

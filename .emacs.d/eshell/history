@@ -1,0 +1,8 @@
+ls
+rm -rf ~/.cask/
+ls
+cd ~/.emacs.d/
+ls
+cd elpa/
+ls
+vim moe-theme-20140731.228/
