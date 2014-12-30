@@ -16,7 +16,6 @@ shopt -s histappend
 shopt -s hostcomplete
 shopt -s nocaseglob
 
-export TERM=xterm
 export HISTSIZE=10000
 export HISTFILESIZE=${HISTSIZE}
 export HISTCONTROL=ignoreboth
@@ -57,8 +56,10 @@ ex ()
 
 #vars
 
-export TERM='rxvt-unicode'
+export EDITOR='emacs'
+export TERM='xterm-256color'
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
+export _JAVA_AWT_WM_NONREPARENTING=1
 
 PATH="`ruby -e 'print Gem.user_dir'`/bin:$PATH"
 
