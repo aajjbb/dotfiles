@@ -49,3 +49,37 @@
 2014-12-16 19:15:17		Option changed: irc.server.oftc.autojoin = "#awesome"  (default: (undefined))
 2014-12-17 15:37:08		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
 2014-12-17 15:38:04		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-18 17:25:31		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-18 17:26:11		irc: server irc.perl.org created (temporary server, NOT SAVED!)
+2014-12-18 17:34:27	=!=	Error: option "irc.perl.org.autoconnect" not found
+2014-12-18 17:35:09	=!=	Error: option "irc.perl.org.autoconnect" not found
+2014-12-18 17:41:15		Option changed: irc.server.freenode.addresses = "chat.freenode.net/7000"  (default: (undefined))
+2014-12-18 17:41:24		Option changed: irc.server.freenode.ssl = on  (default: (undefined))
+2014-12-18 17:41:31		Option changed: irc.server.freenode.ssl_dhkey_size = 1024  (default: (undefined))
+2014-12-18 17:42:08		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-18 17:43:36		irc: server perl created
+2014-12-18 17:44:05		irc: server irc.perl.org created (temporary server, NOT SAVED!)
+2014-12-18 17:44:34	=!=	Error: option "irc.perl.org.autoconnect" not found
+2014-12-19 18:14:51		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-22 17:41:38		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-22 19:07:32		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-23 18:57:03		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-24 00:27:19		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-24 12:02:36		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-26 12:16:57		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-28 16:36:16		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-29 02:03:03		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-29 13:57:07		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-30 20:45:09		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-30 20:46:58		irc: server perl created
+2014-12-30 20:47:34	=!=	Error: option "ssl.irc.perl.org.nicks" not found
+2014-12-30 20:47:56	=!=	irc: server "perl" already exists, can't create it!
+2014-12-30 20:50:59	=!=	irc: command "quiet" must be executed on connected irc server
+2014-12-30 20:51:03		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-30 20:51:29	=!=	Error with command "/server perl irc.perl.org/6667" (help on command: /help server)
+2014-12-30 20:51:35	=!=	irc: server "perl" already exists, can't create it!
+2014-12-30 20:51:38		irc: server sperl created
+2014-12-30 20:53:16		Option changed: irc.server.sperl.autoconnect = on  (default: (undefined))
+2014-12-30 20:53:37		Option changed: irc.server.sperl.autoconnect = on  (default: (undefined))
+2014-12-30 20:53:51		Option changed: irc.server.sperl.autojoin = "#sao-paulo.pm"  (default: (undefined))
+2014-12-30 22:01:45		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer

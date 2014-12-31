@@ -1,0 +1,183 @@
+2014-12-22 19:08:12	-->	aajjbb (~aajjbb@177.193.228.138) has joined #gsoc
+2014-12-22 19:08:12	--	Topic for #gsoc is "GSoC 2015 and GCI 2014 are on! Check out google-melange.com for more info on both programs"
+2014-12-22 19:08:12	--	Topic set by sttaylor on Mon, 06 Oct 2014 14:15:46
+2014-12-22 19:08:12	--	Channel #gsoc: 269 nicks (3 ops, 0 voices, 266 normals)
+2014-12-22 19:08:12	--	PvNotice(ChanServ): Welcome to the Google Summer of Code channel! Please note that this channel is logged.
+2014-12-22 19:08:12	<--	meflin (~meflin@c-107-2-144-171.hsd1.co.comcast.net) has quit (Read error: Connection reset by peer)
+2014-12-22 19:08:13	--	Channel created on Tue, 19 Feb 2008 03:10:20
+2014-12-22 19:08:29	aajjbb	Hi
+2014-12-22 19:08:34	aajjbb	I'm new to gsoc
+2014-12-22 19:08:39	-->	meflin (~meflin@c-107-2-144-171.hsd1.co.comcast.net) has joined #gsoc
+2014-12-22 19:08:43	<--	Sodan (~Sodan@ACaen-256-1-33-172.w83-115.abo.wanadoo.fr) has quit (Quit: My Laptop has gone to sleep. ZZZzzz…)
+2014-12-22 19:08:52	<--	obusher (~quassel@212-183-47-35.adsl.highway.telekom.at) has quit (Remote host closed the connection)
+2014-12-22 19:11:55	-->	VarunAgw (~VarunAgw@115.246.77.111) has joined #gsoc
+2014-12-22 19:11:56	<--	VarunAgw (~VarunAgw@115.246.77.111) has quit (Changing host)
+2014-12-22 19:11:56	-->	VarunAgw (~VarunAgw@unaffiliated/varunagw) has joined #gsoc
+2014-12-22 19:12:37	-->	ph4nt0mas (~Manolis@athedsl-220641.home.otenet.gr) has joined #gsoc
+2014-12-22 19:12:38	teepee	aajjbb: hi! and welcome
+2014-12-22 19:14:04	<--	phant0mas (~Manolis@athedsl-222430.home.otenet.gr) has quit (Ping timeout: 250 seconds)
+2014-12-22 19:16:38	--	thiago_ is now known as thiago
+2014-12-22 19:17:22	<--	raniere_ (~raniere@179.110.98.51) has quit (Ping timeout: 240 seconds)
+2014-12-22 19:17:48	-->	Sodan (~Sodan@ACaen-256-1-33-172.w83-115.abo.wanadoo.fr) has joined #gsoc
+2014-12-22 19:18:02	-->	georgeMuraru (~george@92.81.171.179) has joined #gsoc
+2014-12-22 19:18:04	<--	Sodan (~Sodan@ACaen-256-1-33-172.w83-115.abo.wanadoo.fr) has quit (Client Quit)
+2014-12-22 19:22:15	-->	phant0mas (~Manolis@athedsl-81348.home.otenet.gr) has joined #gsoc
+2014-12-22 19:22:57	<--	ph4nt0mas (~Manolis@athedsl-220641.home.otenet.gr) has quit (Ping timeout: 240 seconds)
+2014-12-22 19:23:10	-->	prth (~anonymous@113.193.192.48) has joined #gsoc
+2014-12-22 19:24:10	<--	automata (~automata@177.156.164.116) has quit (Read error: Connection reset by peer)
+2014-12-22 19:24:24	-->	automata (~automata@177.156.164.116) has joined #gsoc
+2014-12-22 19:25:17	<--	rahulch (~rahul@116.193.134.176) has quit (Quit: Konversation terminated!)
+2014-12-22 19:25:43	<--	georgeMuraru (~george@92.81.171.179) has quit (Quit: Leaving)
+2014-12-22 19:32:44	-->	raniere_ (~raniere@200-204-235-94.customer.telesp.net.br) has joined #gsoc
+2014-12-22 19:32:58	<--	vultraz (~chatzilla@wesnoth/developer/vultraz) has quit (Ping timeout: 255 seconds)
+2014-12-22 19:33:26	Evan_M	Anyone else want an invite to inbox by google? I have 7
+2014-12-22 19:35:08	<--	debjit (~debjit@117.211.86.108) has quit (Quit: Konversation terminated!)
+2014-12-22 19:35:26	-->	debjit (~debjit@14.139.221.18) has joined #gsoc
+2014-12-22 19:35:31	-->	rahulch (~rahul@116.193.130.134) has joined #gsoc
+2014-12-22 19:37:11	<--	lfzawacki (~lucas@189.27.162.79.dynamic.adsl.gvt.net.br) has left #gsoc
+2014-12-22 19:37:57	<--	akshika (uid44558@gateway/web/irccloud.com/x-gjuwpdmkvqudrsdn) has quit (Quit: Connection closed for inactivity)
+2014-12-22 19:38:37	<--	flugo (~flugo@112.196.175.117) has quit (Ping timeout: 240 seconds)
+2014-12-22 19:40:08	<--	raniere_ (~raniere@200-204-235-94.customer.telesp.net.br) has quit (Read error: Connection reset by peer)
+2014-12-22 19:40:19	<--	jpirie (~user@2a02:c7d:2fbe:5100:1db1:7180:b31a:6078) has quit (Quit: ERC Version 5.3 (IRC client for Emacs))
+2014-12-22 19:41:27	<--	rahulch (~rahul@116.193.130.134) has quit (Quit: Konversation terminated!)
+2014-12-22 19:41:40	-->	rahulch (~rahul@116.193.130.134) has joined #gsoc
+2014-12-22 19:41:41	-->	raniere_ (~raniere@201-1-119-40.dsl.telesp.net.br) has joined #gsoc
+2014-12-22 19:45:17	-->	rahulch_ (~rahul@116.193.130.134) has joined #gsoc
+2014-12-22 19:45:22	<--	rahulch (~rahul@116.193.130.134) has quit (Read error: No route to host)
+2014-12-22 19:52:01	-->	ph4nt0mas (~Manolis@ppp-94-65-59-123.home.otenet.gr) has joined #gsoc
+2014-12-22 19:52:30	<--	reyha (uid40302@gateway/web/irccloud.com/x-gbkrkzmkmhtyqnan) has quit (Quit: Connection closed for inactivity)
+2014-12-22 19:53:04	--	prth is now known as prth|away
+2014-12-22 19:53:20	<--	phant0mas (~Manolis@athedsl-81348.home.otenet.gr) has quit (Ping timeout: 265 seconds)
+2014-12-22 19:56:12	<--	Sergobot (~sergobot@95.78.99.13) has quit (Remote host closed the connection)
+2014-12-22 19:58:29	-->	flugo (~flugo@112.196.175.117) has joined #gsoc
+2014-12-22 20:00:29	<--	gg7 (~gg7@unaffiliated/gg7) has quit (Ping timeout: 244 seconds)
+2014-12-22 20:02:13	-->	psjr (~psjr@189.29.123.15) has joined #gsoc
+2014-12-22 20:04:41	<--	Jeremy_Rand (~Jeremy_Ra@ip72-198-31-109.ok.ok.cox.net) has quit (Read error: Connection reset by peer)
+2014-12-22 20:04:42	<--	MrSavage (~MrSavage@unaffiliated/mrsavage) has quit (Read error: Connection reset by peer)
+2014-12-22 20:05:13	<--	sara_mansouri_ (~saramanso@rangi.usask.ca) has quit (Remote host closed the connection)
+2014-12-22 20:05:15	-->	Sodan (~Sodan@ACaen-256-1-33-172.w83-115.abo.wanadoo.fr) has joined #gsoc
+2014-12-22 20:05:20	-->	MrSavage (~MrSavage@unaffiliated/mrsavage) has joined #gsoc
+2014-12-22 20:05:44	-->	Jeremy_Rand (~Jeremy_Ra@ip72-198-31-109.ok.ok.cox.net) has joined #gsoc
+2014-12-22 20:06:41	<--	PulkoMandy (PulkoMandy@aus31-1-78-207-238-185.fbx.proxad.net) has quit (Quit: Vision[0.9.7-H-20140108]: i've been blurred!)
+2014-12-22 20:13:30	<--	perway (~perway@65-129-40-71.bois.qwest.net) has quit (Remote host closed the connection)
+2014-12-22 20:14:57	--	raniere_ is now known as raniere
+2014-12-22 20:14:58	-->	perway (~perway@65-129-40-71.bois.qwest.net) has joined #gsoc
+2014-12-22 20:15:25	<--	imjalpreet (~Thunderbi@triband-mum-59.182.23.190.mtnl.net.in) has quit (Remote host closed the connection)
+2014-12-22 20:15:42	-->	imjalpreet (~Thunderbi@triband-mum-59.182.30.2.mtnl.net.in) has joined #gsoc
+2014-12-22 20:19:15	-->	censorydep (~censoryde@nameless.frogfeet.net) has joined #gsoc
+2014-12-22 20:24:42	-->	FlowRiser (~FlowRiser@188.25.227.237) has joined #gsoc
+2014-12-22 20:25:17	<--	VarunAgw (~VarunAgw@unaffiliated/varunagw) has quit (Ping timeout: 244 seconds)
+2014-12-22 20:25:40	<--	censorydep (~censoryde@nameless.frogfeet.net) has quit (Quit: censorydep)
+2014-12-22 20:28:51	-->	censorydep (~censoryde@nameless.frogfeet.net) has joined #gsoc
+2014-12-22 20:35:45	<--	censorydep (~censoryde@nameless.frogfeet.net) has quit (Quit: censorydep)
+2014-12-22 20:36:20	<--	tonythomas (uid25971@gateway/web/irccloud.com/x-bsxixhsitjvohzwk) has quit (Quit: Connection closed for inactivity)
+2014-12-22 20:37:18	<--	perway (~perway@65-129-40-71.bois.qwest.net) has quit (Remote host closed the connection)
+2014-12-22 20:37:57	-->	perway (~perway@65-129-40-71.bois.qwest.net) has joined #gsoc
+2014-12-22 20:38:52	-->	vultraz (~chatzilla@wesnoth/developer/vultraz) has joined #gsoc
+2014-12-22 20:39:56	<--	perway (~perway@65-129-40-71.bois.qwest.net) has quit (Remote host closed the connection)
+2014-12-22 20:40:12	-->	perway (~perway@65-129-40-71.bois.qwest.net) has joined #gsoc
+2014-12-22 20:41:26	--	kais58|AFK is now known as kais58
+2014-12-22 20:46:55	-->	tadityar (~tadityar@36.79.160.61) has joined #gsoc
+2014-12-22 20:47:53	<--	ries (~ries@D979C47E.cm-3-2d.dynamic.ziggo.nl) has quit (Quit: ries)
+2014-12-22 20:50:14	-->	alexander (~alexander@2a02:8109:a6c0:ff8:183e:ed98:f38:6193) has joined #gsoc
+2014-12-22 20:50:43	--	alexander is now known as Guest85130
+2014-12-22 21:14:33	--	irc: disconnected from server
+2014-12-22 21:14:55	-->	aajjbb (~aajjbb@177.193.228.138) has joined #gsoc
+2014-12-22 21:14:55	--	Topic for #gsoc is "GSoC 2015 and GCI 2014 are on! Check out google-melange.com for more info on both programs"
+2014-12-22 21:14:55	--	Topic set by sttaylor on Mon, 06 Oct 2014 14:15:46
+2014-12-22 21:14:55	--	Channel #gsoc: 257 nicks (3 ops, 0 voices, 254 normals)
+2014-12-22 21:15:01	--	Channel created on Tue, 19 Feb 2008 03:10:20
+2014-12-22 21:15:14	--	PvNotice(ChanServ): Welcome to the Google Summer of Code channel! Please note that this channel is logged.
+2014-12-22 21:19:17	-->	perway (~perway@65-129-40-71.bois.qwest.net) has joined #gsoc
+2014-12-22 21:20:12	<--	cs_shadow|afk (uid55797@gateway/web/irccloud.com/x-dycitxduowxwhtub) has quit (Quit: Connection closed for inactivity)
+2014-12-22 21:22:31	-->	teepee (~teepee@gateway/tor-sasl/teepee) has joined #gsoc
+2014-12-22 21:30:21	-->	Zifre (~Zifre@unaffiliated/zifre) has joined #gsoc
+2014-12-22 21:34:32	<--	enitiz (~saurabh@pool-96-243-29-221.bflony.fios.verizon.net) has quit (Quit: Leaving)
+2014-12-22 21:38:36	-->	RT|Chatzilla (~rt@reactos/tester/RT) has joined #gsoc
+2014-12-22 21:47:40	<--	rahulch_ (~rahul@116.193.130.134) has quit (Quit: Konversation terminated!)
+2014-12-22 21:50:39	<--	imjalpreet (~Thunderbi@triband-mum-59.182.30.2.mtnl.net.in) has quit (Ping timeout: 252 seconds)
+2014-12-22 21:54:05	<--	perway (~perway@65-129-40-71.bois.qwest.net) has quit (Remote host closed the connection)
+2014-12-22 21:55:25	<--	pikpik (uid4366@gateway/web/irccloud.com/x-chlxsozswroezhee) has quit (Quit: Connection closed for inactivity)
+2014-12-22 21:56:50	-->	enitiz (~saurabh@pool-96-243-29-221.bflony.fios.verizon.net) has joined #gsoc
+2014-12-22 21:57:29	-->	lfzawacki (~lucas@187-54-141-235.paemt702.dsl.brasiltelecom.net.br) has joined #gsoc
+2014-12-22 21:58:31	-->	phant0mas (~Manolis@athedsl-221762.home.otenet.gr) has joined #gsoc
+2014-12-22 21:59:10	<--	shredpub (uid27475@gateway/web/irccloud.com/x-ypeiutihoudkwfli) has quit (Quit: Connection closed for inactivity)
+2014-12-22 21:59:26	-->	perway (~perway@65-129-40-71.bois.qwest.net) has joined #gsoc
+2014-12-22 21:59:27	<--	ph4nt0mas (~Manolis@ppp-94-65-59-123.home.otenet.gr) has quit (Ping timeout: 245 seconds)
+2014-12-22 22:02:11	<--	lfzawacki (~lucas@187-54-141-235.paemt702.dsl.brasiltelecom.net.br) has quit (Client Quit)
+2014-12-22 22:02:24	-->	ries (~ries@D979C47E.cm-3-2d.dynamic.ziggo.nl) has joined #gsoc
+2014-12-22 22:04:23	<--	raniere (~raniere@201-1-119-40.dsl.telesp.net.br) has quit (Ping timeout: 240 seconds)
+2014-12-22 22:04:41	--	naderman_ is now known as naderman
+2014-12-22 22:19:43	-->	raniere (~raniere@200-148-19-237.dsl.telesp.net.br) has joined #gsoc
+2014-12-22 22:24:03	-->	rahulr (~second@14.139.56.18) has joined #gsoc
+2014-12-22 22:27:36	<--	Sodan (~Sodan@ACaen-256-1-33-172.w83-115.abo.wanadoo.fr) has quit (Quit: Bye !)
+2014-12-22 22:49:11	--	megabitdragon is now known as megabit|away
+2014-12-22 23:03:45	<--	ries (~ries@D979C47E.cm-3-2d.dynamic.ziggo.nl) has quit (Quit: ries)
+2014-12-22 23:05:26	--	bkuhn is now known as bkuhnIdle
+2014-12-22 23:07:19	<--	poxip (~michal@unaffiliated/mrpoxipol) has quit (Quit: Ex-Chat)
+2014-12-22 23:07:54	<--	psjr (~psjr@189.29.123.15) has quit (Quit: Ex-Chat)
+2014-12-22 23:11:47	-->	walterbender (~walter@146-115-134-246.c3-0.nwt-ubr1.sbo-nwt.ma.cable.rcn.com) has joined #gsoc
+2014-12-22 23:14:58	-->	harsha89 (~harsha@112.134.187.51) has joined #gsoc
+2014-12-22 23:16:29	<--	harsz89 (~harsha@112.134.249.222) has quit (Ping timeout: 245 seconds)
+2014-12-22 23:26:40	-->	ph4nt0mas (~Manolis@athedsl-4368222.home.otenet.gr) has joined #gsoc
+2014-12-22 23:27:40	<--	phant0mas (~Manolis@athedsl-221762.home.otenet.gr) has quit (Ping timeout: 244 seconds)
+2014-12-22 23:29:31	-->	infinity0_ (~infinity0@e181155222.adsl.alicedsl.de) has joined #gsoc
+2014-12-22 23:29:31	<--	infinity0_ (~infinity0@e181155222.adsl.alicedsl.de) has quit (Changing host)
+2014-12-22 23:29:31	-->	infinity0_ (~infinity0@freenet/developer/infinity0) has joined #gsoc
+2014-12-22 23:29:31	--	infinity0 is now known as Guest90657
+2014-12-22 23:29:31	<--	Guest90657 (~infinity0@freenet/developer/infinity0) has quit (Killed (rajaniemi.freenode.net (Nickname regained by services)))
+2014-12-22 23:29:31	--	infinity0_ is now known as infinity0
+2014-12-22 23:31:56	<--	vimal (vikumar@nat/redhat/x-gmxviiiyixautwyk) has quit (Quit: Leaving)
+2014-12-22 23:37:46	<--	thiago (~thiago@kde/thiago) has quit (Ping timeout: 255 seconds)
+2014-12-22 23:39:50	-->	ximion1 (~ximion@p50922A54.dip0.t-ipconnect.de) has joined #gsoc
+2014-12-22 23:41:54	<--	andre__ (~andre__@wikimedia/aklapper) has quit (Ping timeout: 245 seconds)
+2014-12-22 23:43:53	<--	ximion (~ximion@p50922769.dip0.t-ipconnect.de) has quit (Ping timeout: 265 seconds)
+2014-12-22 23:47:22	<--	ph4nt0mas (~Manolis@athedsl-4368222.home.otenet.gr) has quit (Ping timeout: 245 seconds)
+2014-12-22 23:47:51	-->	ph4nt0mas (~Manolis@athedsl-4369652.home.otenet.gr) has joined #gsoc
+2014-12-22 23:48:48	<--	tadityar (~tadityar@36.79.160.61) has quit (Remote host closed the connection)
+2014-12-22 23:51:50	<--	fqueze (~Instantbi@ns3001302.ip-37-59-48.eu) has quit (Quit: Instantbird 1.6a1pre -- http://www.instantbird.com)
+2014-12-22 23:54:42	<--	valex (~valex@86.121.200.188) has quit (Ping timeout: 256 seconds)
+2014-12-22 23:56:10	--	bkuhnIdle is now known as bkuhn
+2014-12-22 23:56:30	-->	phant0mas (~Manolis@athedsl-303487.home.otenet.gr) has joined #gsoc
+2014-12-22 23:57:19	<--	ph4nt0mas (~Manolis@athedsl-4369652.home.otenet.gr) has quit (Ping timeout: 245 seconds)
+2014-12-22 23:58:32	-->	Nilabhra (~nilabhra@150.107.179.62) has joined #gsoc
+2014-12-23 00:11:04	<--	m4tx (~m4tx@unaffiliated/m4tx) has quit (Ping timeout: 244 seconds)
+2014-12-23 00:29:57	-->	MrsSavage (~MrSavage@unaffiliated/mrsavage) has joined #gsoc
+2014-12-23 00:29:59	<--	MrSavage (~MrSavage@unaffiliated/mrsavage) has quit (Read error: Connection reset by peer)
+2014-12-23 00:31:51	<--	automata (~automata@177.156.164.116) has quit (Quit: Saindo)
+2014-12-23 00:33:04	-->	akshika (uid44558@gateway/web/irccloud.com/x-nssfahieukekwohb) has joined #gsoc
+2014-12-23 00:46:11	<--	ximion1 (~ximion@p50922A54.dip0.t-ipconnect.de) has quit (Quit: Konversation terminated!)
+2014-12-23 00:46:11	<--	BenStobaugh (~ben@cpe-24-162-127-251.hot.res.rr.com) has quit (Read error: Connection reset by peer)
+2014-12-23 00:53:35	-->	BenStobaugh (~ben@cpe-24-162-127-251.hot.res.rr.com) has joined #gsoc
+2014-12-23 00:59:10	<--	MrsSavage (~MrSavage@unaffiliated/mrsavage) has quit (Read error: Connection reset by peer)
+2014-12-23 00:59:40	-->	MrSavage (~MrSavage@unaffiliated/mrsavage) has joined #gsoc
+2014-12-23 01:04:17	-->	hardik_7 (~quassel@14.139.122.114) has joined #gsoc
+2014-12-23 01:05:48	-->	hardik_7_ (~quassel@14.139.122.114) has joined #gsoc
+2014-12-23 01:05:48	<--	hardik_7 (~quassel@14.139.122.114) has quit (Read error: Connection reset by peer)
+2014-12-23 01:10:58	<--	bkuhn (~bkuhn@fsf/director/conservancy.president.bkuhn) has quit (Quit: Sleeping)
+2014-12-23 01:14:18	<--	rahulr (~second@14.139.56.18) has quit (Ping timeout: 244 seconds)
+2014-12-23 01:15:31	<--	harsha89 (~harsha@112.134.187.51) has quit (Remote host closed the connection)
+2014-12-23 01:17:05	<--	hardik_7_ (~quassel@14.139.122.114) has quit (Remote host closed the connection)
+2014-12-23 01:19:15	-->	Ivanovic_ (~ivanovic@frnk-5f7502f1.pool.mediaWays.net) has joined #gsoc
+2014-12-23 01:19:55	-->	coragem (~coragem@189-69-73-15.dsl.telesp.net.br) has joined #gsoc
+2014-12-23 01:22:24	<--	Ivanovic (~ivanovic@frnk-5f74e066.pool.mediaWays.net) has quit (Ping timeout: 250 seconds)
+2014-12-23 01:23:09	--	Ivanovic_ is now known as Ivanovic
+2014-12-23 01:25:39	-->	debjit (~debjit@14.139.221.18) has joined #gsoc
+2014-12-23 01:25:46	-->	ph4nt0mas (~Manolis@athedsl-4366843.home.otenet.gr) has joined #gsoc
+2014-12-23 01:26:07	<--	phant0mas (~Manolis@athedsl-303487.home.otenet.gr) has quit (Ping timeout: 245 seconds)
+2014-12-23 01:31:14	-->	jishnu7 (~jishnu7@122.167.181.123) has joined #gsoc
+2014-12-23 01:31:56	-->	rahulr (~second@14.139.56.18) has joined #gsoc
+2014-12-23 01:34:48	-->	ArneBab_ (~quassel@55d4616a.access.ecotel.net) has joined #gsoc
+2014-12-23 01:37:44	<--	ArneBab (~quassel@55d45f98.access.ecotel.net) has quit (Ping timeout: 245 seconds)
+2014-12-23 01:45:20	-->	Zifre_ (~Zifre@unaffiliated/zifre) has joined #gsoc
+2014-12-23 01:46:40	<--	MrSavage (~MrSavage@unaffiliated/mrsavage) has quit (Read error: Connection reset by peer)
+2014-12-23 01:48:50	<--	Zifre (~Zifre@unaffiliated/zifre) has quit (Ping timeout: 250 seconds)
+2014-12-23 01:53:33	<--	Jeremy_Rand (~Jeremy_Ra@ip72-198-31-109.ok.ok.cox.net) has quit (Read error: Connection reset by peer)
+2014-12-23 01:53:37	-->	YashM (~YashM@59.88.28.94) has joined #gsoc
+2014-12-23 01:54:05	ignacio	good night n_n
+2014-12-23 01:54:49	<--	debjit (~debjit@14.139.221.18) has quit (Ping timeout: 245 seconds)
+2014-12-23 01:56:49	-->	Jeremy_Rand (~Jeremy_Ra@ip72-198-31-109.ok.ok.cox.net) has joined #gsoc
+2014-12-23 01:56:49	<--	ArneBab_ (~quassel@55d4616a.access.ecotel.net) has quit (Ping timeout: 272 seconds)
+2014-12-23 01:58:13	<--	mavihs (Elite13014@gateway/shell/elitebnc/x-famkapkgbhrszrkp) has quit (Ping timeout: 258 seconds)
+2014-12-23 01:58:22	-->	ArneBab (~quassel@55d4616a.access.ecotel.net) has joined #gsoc
+2014-12-23 02:05:57	<--	umccullough (~umccullou@50-0-12-247.dsl.dynamic.sonic.net) has left #gsoc

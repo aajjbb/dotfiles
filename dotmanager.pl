@@ -3,12 +3,16 @@
 use strict;
 use warnings;
 
-#WOWJS35OFF
+use File::Copy::Recursive qw(dircopy fcopy);
 
-my $root = "~/";
+use feature 'say';
+
+
+
+my $root = $ENV{'HOME'}; 
 my $current_dir = $ENV{'PWD'};
 
-my @files = {
+my %files = (
 	".emacs.d" => $root,
 	".weechat" => $root,
 	"awesome" => $root . ".config/",
@@ -21,14 +25,52 @@ my @files = {
 	".tmux.conf" => $root,
 	".vimrc" => $root,
 	".Xresources" => $root,
-};
+);
+
+=doc
+	Install dotfiles of the current repository for the current user in the system
+=cut
 
 sub install {
-	
+	foreach my $key (keys %files) {
+		my $source_file = $current_dir . "/" . $key;
+		my $destiny_file = $root . "/" . $key;
+
+		print("Installing " . $key . " in " . $destiny_file . "\n");
+		
+		if (-d $source_file) {
+			if (!dircopy($source_file, $destiny_file)) {
+				say "Failed to install " . $key . " is probably being used by other application";
+			}
+		} else {
+			if (!fcopy($source_file, $destiny_file)) {
+				say "Failed to install " . $key . " is probably being used by other application";
+			}
+		}
+	}
 }
 
-sub update {
+=doc
+	Updates the current system dotfiles to the repository
+=cut
 
+sub update {
+	foreach my $key (keys %files) {
+		my $source_file = $root . "/" . $key;;
+		my $destiny_file = $current_dir . "/" . $key;
+
+		print("Uploading " . $source_file . " in " . $destiny_file . "\n");
+		
+		if (-d $source_file) {
+			if (!dircopy($source_file, $destiny_file)) {
+				say "Failed to update " . $key . " is probably being used by other application";
+			}
+		} else {
+			if (!fcopy($source_file, $destiny_file)) {
+				say "Failed to update " . $key . " is probably being used by other application";
+			}
+		}
+	}
 }
 
 if ($#ARGV != 0) {

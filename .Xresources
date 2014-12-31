@@ -1,5 +1,4 @@
 !urxvt settings
-	
 urxvt*saveLines: 5000
 urxvt*termName: rxvt-256-color
 
@@ -27,11 +26,15 @@ urxvt*perl-ext-common: default, matcher, clipboard
 !Xft.lcdfilter: lcddefault
 ! grassland by bohoomil
 
+
+!xterm configs
 xterm*termName: xterm-256color
 xterm*locale: true
+	
+!fix clipboard issue
 
-!fix clipboard issue	
-XTerm*VT100.*translations:      #override \
+xterm*selectToClipboard: true
+xterm*VT100.*translations:      #override \
         Shift Ctrl C: select-end(CLIPBOARD, CUT_BUFFER0) \n\
         Shift Ctrl V: insert-selection(CLIPBOARD, CUT_BUFFER0)
 			

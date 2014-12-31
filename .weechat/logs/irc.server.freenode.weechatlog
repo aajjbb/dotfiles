@@ -1190,3 +1190,2191 @@
 2014-12-18 00:19:26	--	User mode [+Zi] by aajjbb
 2014-12-18 00:19:26	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
 2014-12-18 00:19:32	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-18 17:25:31	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-18 17:25:31	--	gnutls: receiving 2 certificates
+2014-12-18 17:25:31	--	 - certificate[1] info:
+2014-12-18 17:25:31	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-18 17:25:31	--	 - certificate[2] info:
+2014-12-18 17:25:31	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-18 17:25:31	--	gnutls: peer's certificate is trusted
+2014-12-18 17:25:32	--	irc: connected to chat.freenode.net/7000 (195.154.200.232)
+2014-12-18 17:25:32	--	barjavel.freenode.net: *** Looking up your hostname...
+2014-12-18 17:25:32	--	barjavel.freenode.net: *** Checking Ident
+2014-12-18 17:25:32	--	barjavel.freenode.net: *** Couldn't look up your hostname
+2014-12-18 17:25:40	--	barjavel.freenode.net: *** No Ident response
+2014-12-18 17:25:40	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-18 17:25:40	--	MSG(nickserv): identify ******
+2014-12-18 17:25:40	--	Your host is barjavel.freenode.net[195.154.200.232/7000], running version ircd-seven-1.1.3
+2014-12-18 17:25:40	--	This server was created Fri Oct 24 2014 at 13:59:13 UTC
+2014-12-18 17:25:40	--	barjavel.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-18 17:25:40	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-18 17:25:40	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-18 17:25:40	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-18 17:25:40	--	There are 167 users and 96894 invisible on 25 servers
+2014-12-18 17:25:40	--	28 :IRC Operators online
+2014-12-18 17:25:40	--	9 :unknown connection(s)
+2014-12-18 17:25:40	--	50087 :channels formed
+2014-12-18 17:25:40	--	I have 7415 clients and 1 servers
+2014-12-18 17:25:40	--	7415 7537 :Current local users 7415, max 7537
+2014-12-18 17:25:40	--	97061 101901 :Current global users 97061, max 101901
+2014-12-18 17:25:40	--	Highest connection count: 7538 (7537 clients) (763318 connections received)
+2014-12-18 17:25:40	--	- barjavel.freenode.net Message of the Day -
+2014-12-18 17:25:40	--	- Welcome to barjavel.freenode.net in Paris, FR, EU.
+2014-12-18 17:25:40	--	- Thanks to Bearstech (www.bearstech.com) for sponsoring
+2014-12-18 17:25:40	--	- this server!
+2014-12-18 17:25:40	--	-
+2014-12-18 17:25:40	--	- BARJAVEL, RENE [1911-1985].  Born in Nyons, he was a
+2014-12-18 17:25:40	--	- science-fiction author, a journalist and a critic. He is
+2014-12-18 17:25:40	--	- credited with having written the first novel to introduce
+2014-12-18 17:25:40	--	- the Grandfather Paradox in time travel, in his 1943 work
+2014-12-18 17:25:40	--	- 'Le Voyageur imprudent'.
+2014-12-18 17:25:40	--	-
+2014-12-18 17:25:40	--	- Welcome to freenode - supporting the free and open source
+2014-12-18 17:25:40	--	- software communities since 1998.
+2014-12-18 17:25:40	--	-
+2014-12-18 17:25:40	--	- **************************************************************
+2014-12-18 17:25:40	--	-                       SECURITY ALERT
+2014-12-18 17:25:40	--	-
+2014-12-18 17:25:40	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-12-18 17:25:40	--	- some compromised binaries present on a number of servers.
+2014-12-18 17:25:40	--	- The servers in question have been removed from the network and
+2014-12-18 17:25:40	--	- shut down.  However, it's possible that network traffic  -
+2014-12-18 17:25:40	--	- including SSL traffic - has been sniffed and passwords
+2014-12-18 17:25:40	--	- exposed.
+2014-12-18 17:25:40	--	-
+2014-12-18 17:25:40	--	- We therefore recommend that all users change their nickserv
+2014-12-18 17:25:40	--	- password(s) to a new value which is not shared with any
+2014-12-18 17:25:40	--	- other service.
+2014-12-18 17:25:40	--	-
+2014-12-18 17:25:40	--	- You can do this with /msg nickserv set password newpasshere
+2014-12-18 17:25:40	--	-
+2014-12-18 17:25:40	--	- Please note that investigation is ongoing to discover the root
+2014-12-18 17:25:40	--	- cause of the attack, and until this investigation is complete
+2014-12-18 17:25:40	--	- we cannot be 100% certain that all traces of the compromises
+2014-12-18 17:25:40	--	- have been removed. We may have to ask you to change your
+2014-12-18 17:25:40	--	- passwords again after analysis has completed.
+2014-12-18 17:25:40	--	-
+2014-12-18 17:25:40	--	- Further details will appear on https://blog.freenode.net/
+2014-12-18 17:25:40	--	-
+2014-12-18 17:25:40	--	- **************************************************************
+2014-12-18 17:25:40	--	-
+2014-12-18 17:25:40	--	- By connecting to freenode you indicate that you have read and
+2014-12-18 17:25:40	--	- accept our policies as set out on http://www.freenode.net
+2014-12-18 17:25:40	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-18 17:25:40	--	- any network-related questions or queries, where a number of
+2014-12-18 17:25:40	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-18 17:25:40	--	-
+2014-12-18 17:25:40	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-18 17:25:40	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-18 17:25:40	--	- real-life collaboration.
+2014-12-18 17:25:40	--	-
+2014-12-18 17:25:40	--	- We would like to thank Private Internet Access
+2014-12-18 17:25:40	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-18 17:25:40	--	- organisations that help keep freenode and our other projects
+2014-12-18 17:25:40	--	- running for their sustained support.
+2014-12-18 17:25:40	--	-
+2014-12-18 17:25:40	--	- In particular we would like to thank the sponsor
+2014-12-18 17:25:40	--	- of this server, details of which can be found above.
+2014-12-18 17:25:40	--	-
+2014-12-18 17:25:40	--	End of /MOTD command.
+2014-12-18 17:25:40	--	User mode [+Zi] by aajjbb
+2014-12-18 17:25:40	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-18 17:25:46	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-18 17:42:08	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-18 17:42:08	--	gnutls: receiving 2 certificates
+2014-12-18 17:42:08	--	 - certificate[1] info:
+2014-12-18 17:42:08	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-18 17:42:08	--	 - certificate[2] info:
+2014-12-18 17:42:08	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-18 17:42:08	--	gnutls: peer's certificate is trusted
+2014-12-18 17:42:09	--	irc: connected to chat.freenode.net/7000 (174.143.119.91)
+2014-12-18 17:42:09	--	asimov.freenode.net: *** Looking up your hostname...
+2014-12-18 17:42:09	--	asimov.freenode.net: *** Checking Ident
+2014-12-18 17:42:09	--	asimov.freenode.net: *** Couldn't look up your hostname
+2014-12-18 17:42:15	--	asimov.freenode.net: *** No Ident response
+2014-12-18 17:42:15	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-18 17:42:15	--	MSG(nickserv): identify ******
+2014-12-18 17:42:15	--	Your host is asimov.freenode.net[174.143.119.91/7000], running version ircd-seven-1.1.3
+2014-12-18 17:42:15	--	This server was created Tue Jul 22 2014 at 13:52:16 UTC
+2014-12-18 17:42:15	--	asimov.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-18 17:42:15	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-18 17:42:15	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-18 17:42:15	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-18 17:42:15	--	There are 168 users and 96987 invisible on 25 servers
+2014-12-18 17:42:15	--	28 :IRC Operators online
+2014-12-18 17:42:15	--	13 :unknown connection(s)
+2014-12-18 17:42:15	--	50115 :channels formed
+2014-12-18 17:42:15	--	I have 8712 clients and 1 servers
+2014-12-18 17:42:15	--	8712 8870 :Current local users 8712, max 8870
+2014-12-18 17:42:15	--	97155 102229 :Current global users 97155, max 102229
+2014-12-18 17:42:15	--	Highest connection count: 8871 (8870 clients) (1862199 connections received)
+2014-12-18 17:42:15	--	- asimov.freenode.net Message of the Day -
+2014-12-18 17:42:15	--	- Welcome to asimov.freenode.net in TX, USA!  Thanks to
+2014-12-18 17:42:15	--	- Rackspace (www.rackspace.com) for sponsoring
+2014-12-18 17:42:15	--	- this server!
+2014-12-18 17:42:15	--	-
+2014-12-18 17:42:15	--	- ASIMOV, ISAAC [1920-1992].  One of the brightest stars of the
+2014-12-18 17:42:15	--	- science fiction universe.  Author of I Robot, the
+2014-12-18 17:42:15	--	- Foundation series (which "grew like Topsy"), Pebble in the
+2014-12-18 17:42:15	--	- Sky and hundreds of works of science fact and science
+2014-12-18 17:42:15	--	- fiction.
+2014-12-18 17:42:15	--	-
+2014-12-18 17:42:15	--	- Welcome to freenode - supporting the free and open source
+2014-12-18 17:42:15	--	- software communities since 1998.
+2014-12-18 17:42:15	--	-
+2014-12-18 17:42:15	--	- By connecting to freenode you indicate that you have read and
+2014-12-18 17:42:15	--	- accept our policies as set out on http://www.freenode.net
+2014-12-18 17:42:15	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-18 17:42:15	--	- any network-related questions or queries, where a number of
+2014-12-18 17:42:15	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-18 17:42:15	--	-
+2014-12-18 17:42:15	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-18 17:42:15	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-18 17:42:15	--	- real-life collaboration.
+2014-12-18 17:42:15	--	-
+2014-12-18 17:42:15	--	- We would like to thank Private Internet Access
+2014-12-18 17:42:15	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-18 17:42:15	--	- organisations that help keep freenode and our other projects
+2014-12-18 17:42:15	--	- running for their sustained support.
+2014-12-18 17:42:15	--	-
+2014-12-18 17:42:15	--	- In particular we would like to thank the sponsor
+2014-12-18 17:42:15	--	- of this server, details of which can be found above.
+2014-12-18 17:42:15	--	-
+2014-12-18 17:42:15	--	- ***************************************************************
+2014-12-18 17:42:15	--	- Please read http://blog.freenode.net/2010/11/be-safe-out-there/
+2014-12-18 17:42:15	--	- ***************************************************************
+2014-12-18 17:42:15	--	End of /MOTD command.
+2014-12-18 17:42:15	--	User mode [+Zi] by aajjbb
+2014-12-18 17:42:15	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-18 17:42:21	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-18 18:37:34	=!=	irc: reading data on socket: error -54 Error in the pull function.
+2014-12-18 18:37:34	--	irc: disconnecting from server...
+2014-12-18 18:37:34	--	irc: disconnected from server
+2014-12-18 18:37:34	--	irc: reconnecting to server in 10 seconds
+2014-12-18 18:37:44	--	irc: reconnecting to server...
+2014-12-18 18:37:44	--	irc: connecting to server chat.freenode.net/7000 (SSL)...
+2014-12-18 18:37:45	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-18 18:37:45	--	gnutls: receiving 2 certificates
+2014-12-18 18:37:45	--	 - certificate[1] info:
+2014-12-18 18:37:45	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-18 18:37:45	--	 - certificate[2] info:
+2014-12-18 18:37:45	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-18 18:37:45	--	gnutls: peer's certificate is trusted
+2014-12-18 18:37:45	--	irc: connected to chat.freenode.net/7000 (31.13.222.109)
+2014-12-18 18:37:45	--	hitchcock.freenode.net: *** Looking up your hostname...
+2014-12-18 18:37:45	--	hitchcock.freenode.net: *** Checking Ident
+2014-12-18 18:37:45	--	hitchcock.freenode.net: *** Couldn't look up your hostname
+2014-12-18 18:37:53	--	hitchcock.freenode.net: *** No Ident response
+2014-12-18 18:37:53	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-18 18:37:53	--	MSG(nickserv): identify ******
+2014-12-18 18:37:53	--	Your host is hitchcock.freenode.net[31.13.222.109/7000], running version ircd-seven-1.1.3
+2014-12-18 18:37:53	--	This server was created Sat Oct 11 2014 at 13:43:24 UTC
+2014-12-18 18:37:53	--	hitchcock.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-18 18:37:53	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-18 18:37:53	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-18 18:37:53	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-18 18:37:53	--	There are 171 users and 96517 invisible on 25 servers
+2014-12-18 18:37:53	--	28 :IRC Operators online
+2014-12-18 18:37:53	--	10 :unknown connection(s)
+2014-12-18 18:37:53	--	50078 :channels formed
+2014-12-18 18:37:53	--	I have 3467 clients and 1 servers
+2014-12-18 18:37:53	--	3467 4803 :Current local users 3467, max 4803
+2014-12-18 18:37:53	--	96688 101901 :Current global users 96688, max 101901
+2014-12-18 18:37:53	--	Highest connection count: 4804 (4803 clients) (602166 connections received)
+2014-12-18 18:37:53	--	- hitchcock.freenode.net Message of the Day -
+2014-12-18 18:37:53	--	-
+2014-12-18 18:37:53	--	- Welcome to hitchcock.freenode.net in Sofia, Bulgaria, EU, kindly sponsored by
+2014-12-18 18:37:53	--	- Neterra Communications (www.neterra.net)
+2014-12-18 18:37:53	--	-
+2014-12-18 18:37:53	--	- HITCHCOCK, SIR ALFRED [1899 - 1980] Born in Essex,
+2014-12-18 18:37:53	--	- England, Sir Alfred Hitchcock was a noted film director
+2014-12-18 18:37:53	--	- and producer. Over a long career he pioneered many modern
+2014-12-18 18:37:53	--	- techniques in film-making, made more than 50 feature films,
+2014-12-18 18:37:53	--	- and influenced many present-day directors and producers.
+2014-12-18 18:37:53	--	-
+2014-12-18 18:37:53	--	- Welcome to freenode - supporting the free and open source
+2014-12-18 18:37:53	--	- software communities since 1998.
+2014-12-18 18:37:53	--	-
+2014-12-18 18:37:53	--	- **************************************************************
+2014-12-18 18:37:53	--	-                       SECURITY ALERT
+2014-12-18 18:37:53	--	-
+2014-12-18 18:37:53	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-12-18 18:37:53	--	- some compromised binaries present on a number of servers.
+2014-12-18 18:37:53	--	- The servers in question have been removed from the network and
+2014-12-18 18:37:53	--	- shut down.  However, it's possible that network traffic  -
+2014-12-18 18:37:53	--	- including SSL traffic - has been sniffed and passwords
+2014-12-18 18:37:53	--	- exposed.
+2014-12-18 18:37:53	--	-
+2014-12-18 18:37:53	--	- We therefore recommend that all users change their nickserv
+2014-12-18 18:37:53	--	- password(s) to a new value which is not shared with any
+2014-12-18 18:37:53	--	- other service.
+2014-12-18 18:37:53	--	-
+2014-12-18 18:37:53	--	- You can do this with /msg nickserv set password newpasshere
+2014-12-18 18:37:53	--	-
+2014-12-18 18:37:53	--	- Please note that investigation is ongoing to discover the root
+2014-12-18 18:37:53	--	- cause of the attack, and until this investigation is complete
+2014-12-18 18:37:53	--	- we cannot be 100% certain that all traces of the compromises
+2014-12-18 18:37:53	--	- have been removed. We may have to ask you to change your
+2014-12-18 18:37:53	--	- passwords again after analysis has completed.
+2014-12-18 18:37:53	--	-
+2014-12-18 18:37:53	--	- Further details will appear on https://blog.freenode.net/
+2014-12-18 18:37:53	--	-
+2014-12-18 18:37:53	--	- **************************************************************
+2014-12-18 18:37:53	--	-
+2014-12-18 18:37:53	--	- By connecting to freenode you indicate that you have read and
+2014-12-18 18:37:53	--	- accept our policies as set out on http://www.freenode.net
+2014-12-18 18:37:53	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-18 18:37:53	--	- any network-related questions or queries, where a number of
+2014-12-18 18:37:53	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-18 18:37:53	--	-
+2014-12-18 18:37:53	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-18 18:37:53	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-18 18:37:53	--	- real-life collaboration.
+2014-12-18 18:37:53	--	-
+2014-12-18 18:37:53	--	- We would like to thank Private Internet Access
+2014-12-18 18:37:53	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-18 18:37:53	--	- organisations that help keep freenode and our other projects
+2014-12-18 18:37:53	--	- running for their sustained support.
+2014-12-18 18:37:53	--	-
+2014-12-18 18:37:53	--	- In particular we would like to thank the sponsor
+2014-12-18 18:37:53	--	- of this server, details of which can be found above.
+2014-12-18 18:37:53	--	-
+2014-12-18 18:37:53	--	End of /MOTD command.
+2014-12-18 18:37:53	--	User mode [+Zi] by aajjbb
+2014-12-18 18:37:53	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-18 18:38:00	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-18 21:13:56	=!=	irc: reading data on socket: error -54 Error in the pull function.
+2014-12-18 21:13:56	--	irc: disconnecting from server...
+2014-12-18 21:13:56	--	irc: disconnected from server
+2014-12-18 21:13:56	--	irc: reconnecting to server in 10 seconds
+2014-12-18 21:14:06	--	irc: reconnecting to server...
+2014-12-18 21:14:06	--	irc: connecting to server chat.freenode.net/7000 (SSL)...
+2014-12-18 21:14:06	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-18 21:14:06	--	gnutls: receiving 2 certificates
+2014-12-18 21:14:06	--	 - certificate[1] info:
+2014-12-18 21:14:06	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-18 21:14:06	--	 - certificate[2] info:
+2014-12-18 21:14:06	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-18 21:14:06	--	gnutls: peer's certificate is trusted
+2014-12-18 21:14:07	--	irc: connected to chat.freenode.net/7000 (82.96.64.4)
+2014-12-18 21:14:07	--	kornbluth.freenode.net: *** Looking up your hostname...
+2014-12-18 21:14:07	--	kornbluth.freenode.net: *** Checking Ident
+2014-12-18 21:14:07	--	kornbluth.freenode.net: *** Couldn't look up your hostname
+2014-12-18 21:14:15	--	kornbluth.freenode.net: *** No Ident response
+2014-12-18 21:14:15	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-18 21:14:15	--	MSG(nickserv): identify ******
+2014-12-18 21:14:15	--	Your host is kornbluth.freenode.net[82.96.64.4/7000], running version ircd-seven-1.1.3
+2014-12-18 21:14:15	--	This server was created Mon Dec 31 2012 at 22:38:44 CET
+2014-12-18 21:14:15	--	kornbluth.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-18 21:14:15	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-18 21:14:15	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-18 21:14:15	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-18 21:14:15	--	There are 200 users and 91025 invisible on 25 servers
+2014-12-18 21:14:15	--	28 :IRC Operators online
+2014-12-18 21:14:15	--	4 :unknown connection(s)
+2014-12-18 21:14:15	--	49574 :channels formed
+2014-12-18 21:14:15	--	I have 9288 clients and 2 servers
+2014-12-18 21:14:15	--	9288 15000 :Current local users 9288, max 15000
+2014-12-18 21:14:15	--	91225 104047 :Current global users 91225, max 104047
+2014-12-18 21:14:15	--	Highest connection count: 15001 (15000 clients) (2658099 connections received)
+2014-12-18 21:14:15	--	- kornbluth.freenode.net Message of the Day -
+2014-12-18 21:14:15	--	- Welcome to kornbluth.freenode.net in Frankfurt, DE, EU.
+2014-12-18 21:14:15	--	- Thanks to Probe Networks (www.probe-networks.de) for
+2014-12-18 21:14:15	--	- sponsoring this server!
+2014-12-18 21:14:15	--	-
+2014-12-18 21:14:15	--	- KORNBLUTH, CYRIL M. [1923-1958].  Born in New York City and
+2014-12-18 21:14:15	--	- an active member of the Futurians, Cyril Kornbluth sold his
+2014-12-18 21:14:15	--	- first story professionally at age 15.  By the 1940's his
+2014-12-18 21:14:15	--	- stories appeared widely under several pennames, including
+2014-12-18 21:14:15	--	- S.D. Gottesman and Cecil Corman.  He left his university
+2014-12-18 21:14:15	--	- studies in Chicago to serve in the Army in Europe during
+2014-12-18 21:14:15	--	- WWII, then returned to school and work in Chicago until he
+2014-12-18 21:14:15	--	- began writing full-time in 1951.  The author of The Marching
+2014-12-18 21:14:15	--	- Morons and the novels The Space Merchants (with Frederik
+2014-12-18 21:14:15	--	- Pohl) and The Syndic, he's best known for his biting social
+2014-12-18 21:14:15	--	- satire and his collaborations with Pohl and with Judith
+2014-12-18 21:14:15	--	- Merril.
+2014-12-18 21:14:15	--	- Welcome to freenode - supporting the free and open source
+2014-12-18 21:14:15	--	- software communities since 1998.
+2014-12-18 21:14:15	--	-
+2014-12-18 21:14:15	--	- **************************************************************
+2014-12-18 21:14:15	--	-                       SECURITY ALERT
+2014-12-18 21:14:15	--	-
+2014-12-18 21:14:15	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-12-18 21:14:15	--	- some compromised binaries present on a number of servers.
+2014-12-18 21:14:15	--	- The servers in question have been removed from the network and
+2014-12-18 21:14:15	--	- shut down.  However, it's possible that network traffic  -
+2014-12-18 21:14:15	--	- including SSL traffic - has been sniffed and passwords
+2014-12-18 21:14:15	--	- exposed.
+2014-12-18 21:14:15	--	-
+2014-12-18 21:14:15	--	- We therefore recommend that all users change their nickserv
+2014-12-18 21:14:15	--	- password(s) to a new value which is not shared with any
+2014-12-18 21:14:15	--	- other service.
+2014-12-18 21:14:15	--	-
+2014-12-18 21:14:15	--	- You can do this with /msg nickserv set password newpasshere
+2014-12-18 21:14:15	--	-
+2014-12-18 21:14:15	--	- Please note that investigation is ongoing to discover the root
+2014-12-18 21:14:15	--	- cause of the attack, and until this investigation is complete
+2014-12-18 21:14:15	--	- we cannot be 100% certain that all traces of the compromises
+2014-12-18 21:14:15	--	- have been removed. We may have to ask you to change your
+2014-12-18 21:14:15	--	- passwords again after analysis has completed.
+2014-12-18 21:14:15	--	-
+2014-12-18 21:14:15	--	- Further details will appear on https://blog.freenode.net/
+2014-12-18 21:14:15	--	-
+2014-12-18 21:14:15	--	- **************************************************************
+2014-12-18 21:14:15	--	-
+2014-12-18 21:14:15	--	- By connecting to freenode you indicate that you have read and
+2014-12-18 21:14:15	--	- accept our policies as set out on http://www.freenode.net
+2014-12-18 21:14:15	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-18 21:14:15	--	- any network-related questions or queries, where a number of
+2014-12-18 21:14:15	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-18 21:14:15	--	-
+2014-12-18 21:14:15	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-18 21:14:15	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-18 21:14:15	--	- real-life collaboration.
+2014-12-18 21:14:15	--	-
+2014-12-18 21:14:15	--	- We would like to thank Private Internet Access
+2014-12-18 21:14:15	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-18 21:14:15	--	- organisations that help keep freenode and our other projects
+2014-12-18 21:14:15	--	- running for their sustained support.
+2014-12-18 21:14:15	--	-
+2014-12-18 21:14:15	--	- In particular we would like to thank the sponsor
+2014-12-18 21:14:15	--	- of this server, details of which can be found above.
+2014-12-18 21:14:15	--	-
+2014-12-18 21:14:15	--	End of /MOTD command.
+2014-12-18 21:14:15	--	User mode [+Zi] by aajjbb
+2014-12-18 21:14:15	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-18 21:14:21	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-18 23:37:55	=!=	irc: reading data on socket: error -54 Error in the pull function.
+2014-12-18 23:37:55	--	irc: disconnecting from server...
+2014-12-18 23:37:56	--	irc: disconnected from server
+2014-12-18 23:37:56	--	irc: reconnecting to server in 10 seconds
+2014-12-18 23:38:06	--	irc: reconnecting to server...
+2014-12-18 23:38:06	--	irc: connecting to server chat.freenode.net/7000 (SSL)...
+2014-12-18 23:38:07	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-18 23:38:07	--	gnutls: receiving 2 certificates
+2014-12-18 23:38:07	--	 - certificate[1] info:
+2014-12-18 23:38:07	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-18 23:38:07	--	 - certificate[2] info:
+2014-12-18 23:38:07	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-18 23:38:07	--	gnutls: peer's certificate is trusted
+2014-12-18 23:38:07	--	irc: connected to chat.freenode.net/7000 (91.217.189.42)
+2014-12-18 23:38:07	--	sinisalo.freenode.net: *** Looking up your hostname...
+2014-12-18 23:38:07	--	sinisalo.freenode.net: *** Checking Ident
+2014-12-18 23:38:07	--	sinisalo.freenode.net: *** Couldn't look up your hostname
+2014-12-18 23:38:16	--	sinisalo.freenode.net: *** No Ident response
+2014-12-18 23:38:16	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-18 23:38:16	--	MSG(nickserv): identify ******
+2014-12-18 23:38:16	--	Your host is sinisalo.freenode.net[91.217.189.42/7000], running version ircd-seven-1.1.3
+2014-12-18 23:38:16	--	This server was created Tue Jul 1 2014 at 14:17:05 CEST
+2014-12-18 23:38:16	--	sinisalo.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-18 23:38:16	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-18 23:38:16	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-18 23:38:16	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-18 23:38:16	--	There are 195 users and 87040 invisible on 25 servers
+2014-12-18 23:38:16	--	28 :IRC Operators online
+2014-12-18 23:38:16	--	4 :unknown connection(s)
+2014-12-18 23:38:16	--	49241 :channels formed
+2014-12-18 23:38:16	--	I have 6058 clients and 1 servers
+2014-12-18 23:38:16	--	6058 7020 :Current local users 6058, max 7020
+2014-12-18 23:38:16	--	87235 101901 :Current global users 87235, max 101901
+2014-12-18 23:38:16	--	Highest connection count: 7021 (7020 clients) (839402 connections received)
+2014-12-18 23:38:16	--	- sinisalo.freenode.net Message of the Day -
+2014-12-18 23:38:16	--	- Welcome to sinisalo.freenode.net in Stockholm, SE.
+2014-12-18 23:38:16	--	- Thanks to http://www.portlane.com/ for sponsoring
+2014-12-18 23:38:16	--	- this server!
+2014-12-18 23:38:16	--	-
+2014-12-18 23:38:16	--	-
+2014-12-18 23:38:16	--	- SINISALO, (ANNA) JOHANNA (1958-), a Finnish science fiction
+2014-12-18 23:38:16	--	- and fantasy novelist and a script writer. Her novel 'Not
+2014-12-18 23:38:16	--	- Before Sundown' (orig. 'Ennen päivänlaskua ei voi'
+2014-12-18 23:38:16	--	- published in Finnish in 2000, when it also won the biggest
+2014-12-18 23:38:16	--	- literature award of Finland) was awarded The James Tiptree
+2014-12-18 23:38:16	--	- Jr. award in 2004.  She was nominated for a Nebula award in
+2014-12-18 23:38:16	--	- 2009 for her short story Baby Doll.  Their most recent work
+2014-12-18 23:38:16	--	- includes screenwriting for the film 'Iron Sky'.
+2014-12-18 23:38:16	--	-
+2014-12-18 23:38:16	--	- Welcome to freenode - supporting the free and open source
+2014-12-18 23:38:16	--	- software communities since 1998.
+2014-12-18 23:38:16	--	-
+2014-12-18 23:38:16	--	- **************************************************************
+2014-12-18 23:38:16	--	-                       SECURITY ALERT
+2014-12-18 23:38:16	--	-
+2014-12-18 23:38:16	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-12-18 23:38:16	--	- some compromised binaries present on a number of servers.
+2014-12-18 23:38:16	--	- The servers in question have been removed from the network and
+2014-12-18 23:38:16	--	- shut down.  However, it's possible that network traffic  -
+2014-12-18 23:38:16	--	- including SSL traffic - has been sniffed and passwords
+2014-12-18 23:38:16	--	- exposed.
+2014-12-18 23:38:16	--	-
+2014-12-18 23:38:16	--	- We therefore recommend that all users change their nickserv
+2014-12-18 23:38:16	--	- password(s) to a new value which is not shared with any
+2014-12-18 23:38:16	--	- other service.
+2014-12-18 23:38:16	--	-
+2014-12-18 23:38:16	--	- You can do this with /msg nickserv set password newpasshere
+2014-12-18 23:38:16	--	-
+2014-12-18 23:38:16	--	- Please note that investigation is ongoing to discover the root
+2014-12-18 23:38:16	--	- cause of the attack, and until this investigation is complete
+2014-12-18 23:38:16	--	- we cannot be 100% certain that all traces of the compromises
+2014-12-18 23:38:16	--	- have been removed. We may have to ask you to change your
+2014-12-18 23:38:16	--	- passwords again after analysis has completed.
+2014-12-18 23:38:16	--	-
+2014-12-18 23:38:16	--	- Further details will appear on https://blog.freenode.net/
+2014-12-18 23:38:16	--	-
+2014-12-18 23:38:16	--	- **************************************************************
+2014-12-18 23:38:16	--	-
+2014-12-18 23:38:16	--	- By connecting to freenode you indicate that you have read and
+2014-12-18 23:38:16	--	- accept our policies as set out on http://www.freenode.net
+2014-12-18 23:38:16	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-18 23:38:16	--	- any network-related questions or queries, where a number of
+2014-12-18 23:38:16	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-18 23:38:16	--	-
+2014-12-18 23:38:16	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-18 23:38:16	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-18 23:38:16	--	- real-life collaboration.
+2014-12-18 23:38:16	--	-
+2014-12-18 23:38:16	--	- We would like to thank Private Internet Access
+2014-12-18 23:38:16	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-18 23:38:16	--	- organisations that help keep freenode and our other projects
+2014-12-18 23:38:16	--	- running for their sustained support.
+2014-12-18 23:38:16	--	-
+2014-12-18 23:38:17	--	- In particular we would like to thank the sponsor
+2014-12-18 23:38:17	--	- of this server, details of which can be found above.
+2014-12-18 23:38:17	--	-
+2014-12-18 23:38:17	--	End of /MOTD command.
+2014-12-18 23:38:17	--	User mode [+Zi] by aajjbb
+2014-12-18 23:38:17	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-18 23:38:23	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-19 18:14:51	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-19 18:14:51	--	gnutls: receiving 2 certificates
+2014-12-19 18:14:51	--	 - certificate[1] info:
+2014-12-19 18:14:51	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-19 18:14:51	--	 - certificate[2] info:
+2014-12-19 18:14:51	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-19 18:14:51	--	gnutls: peer's certificate is trusted
+2014-12-19 18:14:51	--	irc: connected to chat.freenode.net/7000 (91.217.189.44)
+2014-12-19 18:14:52	--	wolfe.freenode.net: *** Looking up your hostname...
+2014-12-19 18:14:52	--	wolfe.freenode.net: *** Checking Ident
+2014-12-19 18:14:52	--	wolfe.freenode.net: *** Couldn't look up your hostname
+2014-12-19 18:14:59	--	wolfe.freenode.net: *** No Ident response
+2014-12-19 18:14:59	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-19 18:14:59	--	MSG(nickserv): identify ******
+2014-12-19 18:14:59	--	Your host is wolfe.freenode.net[91.217.189.44/7000], running version ircd-seven-1.1.3
+2014-12-19 18:14:59	--	This server was created Mon Sep 15 2014 at 10:05:03 UTC
+2014-12-19 18:14:59	--	wolfe.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-19 18:14:59	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-19 18:14:59	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-19 18:14:59	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-19 18:14:59	--	There are 181 users and 93877 invisible on 25 servers
+2014-12-19 18:14:59	--	26 :IRC Operators online
+2014-12-19 18:14:59	--	10 :unknown connection(s)
+2014-12-19 18:14:59	--	49999 :channels formed
+2014-12-19 18:14:59	--	I have 5931 clients and 1 servers
+2014-12-19 18:14:59	--	5931 5988 :Current local users 5931, max 5988
+2014-12-19 18:14:59	--	94058 101901 :Current global users 94058, max 101901
+2014-12-19 18:14:59	--	Highest connection count: 5989 (5988 clients) (770314 connections received)
+2014-12-19 18:14:59	--	- wolfe.freenode.net Message of the Day -
+2014-12-19 18:14:59	--	- Welcome to wolfe.freenode.net in Stockholm, SE.
+2014-12-19 18:14:59	--	- Thanks to http://www.portlane.com/ for sponsoring
+2014-12-19 18:14:59	--	- this server!
+2014-12-19 18:14:59	--	-
+2014-12-19 18:14:59	--	- WOLFE, GENE [1931-].  Prolific writer of short stories and
+2014-12-19 18:14:59	--	- novels. His best-known work is the multi-volume novel The
+2014-12-19 18:14:59	--	- Book of the New Sun. He has won multiple awards including
+2014-12-19 18:14:59	--	- the Nebula Award, the World Fantasy Award, The Campell
+2014-12-19 18:14:59	--	- Memorial Award and the Locus Award. He was awarded the World
+2014-12-19 18:14:59	--	- Fantasy Award for lifetime achievement in 1996.
+2014-12-19 18:14:59	--	-
+2014-12-19 18:14:59	--	- Welcome to freenode - supporting the free and open source
+2014-12-19 18:14:59	--	- software communities since 1998.
+2014-12-19 18:14:59	--	-
+2014-12-19 18:14:59	--	- **************************************************************
+2014-12-19 18:14:59	--	-                       SECURITY ALERT
+2014-12-19 18:14:59	--	-
+2014-12-19 18:14:59	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-12-19 18:14:59	--	- some compromised binaries present on a number of servers.
+2014-12-19 18:14:59	--	- The servers in question have been removed from the network and
+2014-12-19 18:14:59	--	- shut down.  However, it's possible that network traffic  -
+2014-12-19 18:14:59	--	- including SSL traffic - has been sniffed and passwords
+2014-12-19 18:14:59	--	- exposed.
+2014-12-19 18:14:59	--	-
+2014-12-19 18:14:59	--	- We therefore recommend that all users change their nickserv
+2014-12-19 18:14:59	--	- password(s) to a new value which is not shared with any
+2014-12-19 18:14:59	--	- other service.
+2014-12-19 18:14:59	--	-
+2014-12-19 18:14:59	--	- You can do this with /msg nickserv set password newpasshere
+2014-12-19 18:14:59	--	-
+2014-12-19 18:14:59	--	- Please note that investigation is ongoing to discover the root
+2014-12-19 18:14:59	--	- cause of the attack, and until this investigation is complete
+2014-12-19 18:14:59	--	- we cannot be 100% certain that all traces of the compromises
+2014-12-19 18:14:59	--	- have been removed. We may have to ask you to change your
+2014-12-19 18:14:59	--	- passwords again after analysis has completed.
+2014-12-19 18:14:59	--	-
+2014-12-19 18:14:59	--	- Further details will appear on https://blog.freenode.net/
+2014-12-19 18:14:59	--	-
+2014-12-19 18:14:59	--	- **************************************************************
+2014-12-19 18:14:59	--	-
+2014-12-19 18:14:59	--	- By connecting to freenode you indicate that you have read and
+2014-12-19 18:14:59	--	- accept our policies as set out on http://www.freenode.net
+2014-12-19 18:14:59	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-19 18:14:59	--	- any network-related questions or queries, where a number of
+2014-12-19 18:14:59	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-19 18:14:59	--	-
+2014-12-19 18:14:59	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-19 18:14:59	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-19 18:14:59	--	- real-life collaboration.
+2014-12-19 18:14:59	--	-
+2014-12-19 18:14:59	--	- We would like to thank Private Internet Access
+2014-12-19 18:14:59	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-19 18:14:59	--	- organisations that help keep freenode and our other projects
+2014-12-19 18:14:59	--	- running for their sustained support.
+2014-12-19 18:14:59	--	-
+2014-12-19 18:14:59	--	- In particular we would like to thank the sponsor
+2014-12-19 18:14:59	--	- of this server, details of which can be found above.
+2014-12-19 18:14:59	--	-
+2014-12-19 18:14:59	--	End of /MOTD command.
+2014-12-19 18:14:59	--	User mode [+Zi] by aajjbb
+2014-12-19 18:15:13	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-19 18:15:14	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-22 17:41:38	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-22 17:41:38	--	gnutls: receiving 2 certificates
+2014-12-22 17:41:38	--	 - certificate[1] info:
+2014-12-22 17:41:38	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-22 17:41:38	--	 - certificate[2] info:
+2014-12-22 17:41:38	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-22 17:41:38	--	gnutls: peer's certificate is trusted
+2014-12-22 17:41:39	--	irc: connected to chat.freenode.net/7000 (195.148.124.79)
+2014-12-22 17:41:39	--	rajaniemi.freenode.net: *** Looking up your hostname...
+2014-12-22 17:41:39	--	rajaniemi.freenode.net: *** Checking Ident
+2014-12-22 17:41:39	--	rajaniemi.freenode.net: *** Couldn't look up your hostname
+2014-12-22 17:41:44	--	rajaniemi.freenode.net: *** No Ident response
+2014-12-22 17:41:44	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-22 17:41:44	--	MSG(nickserv): identify ******
+2014-12-22 17:41:44	--	Your host is rajaniemi.freenode.net[195.148.124.79/7000], running version ircd-seven-1.1.3
+2014-12-22 17:41:44	--	This server was created Tue Oct 21 2014 at 11:19:23 UTC
+2014-12-22 17:41:44	--	rajaniemi.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-22 17:41:44	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-22 17:41:44	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-22 17:41:44	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-22 17:41:44	--	There are 187 users and 92979 invisible on 25 servers
+2014-12-22 17:41:44	--	25 :IRC Operators online
+2014-12-22 17:41:44	--	15 :unknown connection(s)
+2014-12-22 17:41:44	--	50513 :channels formed
+2014-12-22 17:41:44	--	I have 4611 clients and 1 servers
+2014-12-22 17:41:44	--	4611 9257 :Current local users 4611, max 9257
+2014-12-22 17:41:44	--	93166 101901 :Current global users 93166, max 101901
+2014-12-22 17:41:44	--	Highest connection count: 9258 (9257 clients) (732504 connections received)
+2014-12-22 17:41:44	--	- rajaniemi.freenode.net Message of the Day -
+2014-12-22 17:41:44	--	- Welcome to rajaniemi.freenode.net in Helsinki, Finland.  Our thanks to
+2014-12-22 17:41:44	--	- Aalto University for sponsoring this server!
+2014-12-22 17:41:44	--	-
+2014-12-22 17:41:44	--	- RAJANIEMI, Hannu  (1978-). Born in Ylivieska, Finland, Rajaniemi is the
+2014-12-22 17:41:44	--	- author of two novels and several short stories, and his debut novel 'The
+2014-12-22 17:41:44	--	- Quantum Thief' was nominated for the 2011 Locus Award for Best First
+2014-12-22 17:41:44	--	- Novel.  Rajaniemi lives in Edinburgh, Scotland where he is founding
+2014-12-22 17:41:44	--	- director of ThinkTank Maths, a commercial research organisation.
+2014-12-22 17:41:44	--	-
+2014-12-22 17:41:44	--	-
+2014-12-22 17:41:44	--	- Welcome to freenode - supporting the free and open source
+2014-12-22 17:41:44	--	- software communities since 1998.
+2014-12-22 17:41:44	--	-
+2014-12-22 17:41:44	--	- **************************************************************
+2014-12-22 17:41:44	--	-                       SECURITY ALERT
+2014-12-22 17:41:44	--	-
+2014-12-22 17:41:44	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-12-22 17:41:44	--	- some compromised binaries present on a number of servers.
+2014-12-22 17:41:44	--	- The servers in question have been removed from the network and
+2014-12-22 17:41:44	--	- shut down.  However, it's possible that network traffic  -
+2014-12-22 17:41:44	--	- including SSL traffic - has been sniffed and passwords
+2014-12-22 17:41:44	--	- exposed.
+2014-12-22 17:41:44	--	-
+2014-12-22 17:41:44	--	- We therefore recommend that all users change their nickserv
+2014-12-22 17:41:44	--	- password(s) to a new value which is not shared with any
+2014-12-22 17:41:44	--	- other service.
+2014-12-22 17:41:44	--	-
+2014-12-22 17:41:44	--	- You can do this with /msg nickserv set password newpasshere
+2014-12-22 17:41:44	--	-
+2014-12-22 17:41:44	--	- Please note that investigation is ongoing to discover the root
+2014-12-22 17:41:44	--	- cause of the attack, and until this investigation is complete
+2014-12-22 17:41:44	--	- we cannot be 100% certain that all traces of the compromises
+2014-12-22 17:41:44	--	- have been removed. We may have to ask you to change your
+2014-12-22 17:41:44	--	- passwords again after analysis has completed.
+2014-12-22 17:41:44	--	-
+2014-12-22 17:41:44	--	- Further details will appear on https://blog.freenode.net/
+2014-12-22 17:41:44	--	-
+2014-12-22 17:41:44	--	- **************************************************************
+2014-12-22 17:41:44	--	-
+2014-12-22 17:41:44	--	- By connecting to freenode you indicate that you have read and
+2014-12-22 17:41:44	--	- accept our policies as set out on http://www.freenode.net
+2014-12-22 17:41:44	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-22 17:41:44	--	- any network-related questions or queries, where a number of
+2014-12-22 17:41:44	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-22 17:41:44	--	-
+2014-12-22 17:41:44	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-22 17:41:44	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-22 17:41:44	--	- real-life collaboration.
+2014-12-22 17:41:44	--	-
+2014-12-22 17:41:44	--	- We would like to thank Private Internet Access
+2014-12-22 17:41:44	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-22 17:41:44	--	- organisations that help keep freenode and our other projects
+2014-12-22 17:41:44	--	- running for their sustained support.
+2014-12-22 17:41:44	--	-
+2014-12-22 17:41:44	--	- In particular we would like to thank the sponsor
+2014-12-22 17:41:44	--	- of this server, details of which can be found above.
+2014-12-22 17:41:44	--	-
+2014-12-22 17:41:44	--	End of /MOTD command.
+2014-12-22 17:41:44	--	User mode [+Zi] by aajjbb
+2014-12-22 17:41:44	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-22 17:41:51	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-22 19:07:32	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-22 19:07:32	--	gnutls: receiving 2 certificates
+2014-12-22 19:07:32	--	 - certificate[1] info:
+2014-12-22 19:07:32	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-22 19:07:32	--	 - certificate[2] info:
+2014-12-22 19:07:32	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-22 19:07:32	--	gnutls: peer's certificate is trusted
+2014-12-22 19:07:33	--	irc: connected to chat.freenode.net/7000 (185.30.166.35)
+2014-12-22 19:07:33	--	verne.freenode.net: *** Looking up your hostname...
+2014-12-22 19:07:33	--	verne.freenode.net: *** Checking Ident
+2014-12-22 19:07:33	--	verne.freenode.net: *** Couldn't look up your hostname
+2014-12-22 19:07:41	--	verne.freenode.net: *** No Ident response
+2014-12-22 19:07:41	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-22 19:07:41	--	MSG(nickserv): identify ******
+2014-12-22 19:07:41	--	Your host is verne.freenode.net[185.30.166.35/7000], running version ircd-seven-1.1.3
+2014-12-22 19:07:41	--	This server was created Sat Mar 22 2014 at 14:55:42 EDT
+2014-12-22 19:07:41	--	verne.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-22 19:07:41	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-22 19:07:41	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-22 19:07:41	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-22 19:07:41	--	There are 186 users and 92366 invisible on 25 servers
+2014-12-22 19:07:41	--	25 :IRC Operators online
+2014-12-22 19:07:41	--	11 :unknown connection(s)
+2014-12-22 19:07:41	--	50469 :channels formed
+2014-12-22 19:07:41	--	I have 5163 clients and 1 servers
+2014-12-22 19:07:41	--	5163 15001 :Current local users 5163, max 15001
+2014-12-22 19:07:41	--	92552 104047 :Current global users 92552, max 104047
+2014-12-22 19:07:41	--	Highest connection count: 15002 (15001 clients) (2368178 connections received)
+2014-12-22 19:07:41	--	- verne.freenode.net Message of the Day -
+2014-12-22 19:07:41	--	- Welcome to verne.freenode.net in Amsterdam, NL.
+2014-12-22 19:07:41	--	- Thanks to http://www.hyperfilter.com/ for sponsoring
+2014-12-22 19:07:41	--	- this server!
+2014-12-22 19:07:41	--	-
+2014-12-22 19:07:41	--	-
+2014-12-22 19:07:41	--	- VERNE, Jules (1828-1905). Born in Nantes, France, Verne was
+2014-12-22 19:07:41	--	- a pioneering french author known for novels such as Twenty
+2014-12-22 19:07:41	--	- Thousand Leagues Under the Sea, A Journey to the Center of the
+2014-12-22 19:07:41	--	- Earth, and Around the World in Eighty Days. Often lauded as the
+2014-12-22 19:07:41	--	- Father of science fiction, Verne wrote about concepts such as
+2014-12-22 19:07:41	--	- space travel, skyscrapers, and worldwide communications
+2014-12-22 19:07:41	--	- networks long before these ideas became popularised or realised.
+2014-12-22 19:07:41	--	-
+2014-12-22 19:07:41	--	- Welcome to freenode - supporting the free and open source
+2014-12-22 19:07:41	--	- software communities since 1998.
+2014-12-22 19:07:41	--	-
+2014-12-22 19:07:41	--	- **************************************************************
+2014-12-22 19:07:41	--	-                       SECURITY ALERT
+2014-12-22 19:07:41	--	-
+2014-12-22 19:07:41	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-12-22 19:07:41	--	- some compromised binaries present on a number of servers.
+2014-12-22 19:07:41	--	- The servers in question have been removed from the network and
+2014-12-22 19:07:41	--	- shut down.  However, it's possible that network traffic  -
+2014-12-22 19:07:41	--	- including SSL traffic - has been sniffed and passwords
+2014-12-22 19:07:41	--	- exposed.
+2014-12-22 19:07:41	--	-
+2014-12-22 19:07:41	--	- We therefore recommend that all users change their nickserv
+2014-12-22 19:07:41	--	- password(s) to a new value which is not shared with any
+2014-12-22 19:07:41	--	- other service.
+2014-12-22 19:07:41	--	-
+2014-12-22 19:07:41	--	- You can do this with /msg nickserv set password newpasshere
+2014-12-22 19:07:41	--	-
+2014-12-22 19:07:41	--	- Please note that investigation is ongoing to discover the root
+2014-12-22 19:07:41	--	- cause of the attack, and until this investigation is complete
+2014-12-22 19:07:41	--	- we cannot be 100% certain that all traces of the compromises
+2014-12-22 19:07:41	--	- have been removed. We may have to ask you to change your
+2014-12-22 19:07:41	--	- passwords again after analysis has completed.
+2014-12-22 19:07:41	--	-
+2014-12-22 19:07:41	--	- Further details will appear on https://blog.freenode.net/
+2014-12-22 19:07:41	--	-
+2014-12-22 19:07:41	--	- **************************************************************
+2014-12-22 19:07:41	--	-
+2014-12-22 19:07:41	--	- By connecting to freenode you indicate that you have read and
+2014-12-22 19:07:41	--	- accept our policies as set out on http://www.freenode.net
+2014-12-22 19:07:41	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-22 19:07:41	--	- any network-related questions or queries, where a number of
+2014-12-22 19:07:41	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-22 19:07:41	--	-
+2014-12-22 19:07:41	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-22 19:07:41	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-22 19:07:41	--	- real-life collaboration.
+2014-12-22 19:07:41	--	-
+2014-12-22 19:07:41	--	- We would like to thank Private Internet Access
+2014-12-22 19:07:41	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-22 19:07:41	--	- organisations that help keep freenode and our other projects
+2014-12-22 19:07:41	--	- running for their sustained support.
+2014-12-22 19:07:41	--	-
+2014-12-22 19:07:41	--	- In particular we would like to thank the sponsor
+2014-12-22 19:07:41	--	- of this server, details of which can be found above.
+2014-12-22 19:07:41	--	-
+2014-12-22 19:07:41	--	End of /MOTD command.
+2014-12-22 19:07:41	--	User mode [+Zi] by aajjbb
+2014-12-22 19:07:41	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-22 19:07:47	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-22 21:14:32	=!=	irc: reading data on socket: error -54 Error in the pull function.
+2014-12-22 21:14:32	--	irc: disconnecting from server...
+2014-12-22 21:14:33	--	irc: disconnected from server
+2014-12-22 21:14:33	--	irc: reconnecting to server in 10 seconds
+2014-12-22 21:14:43	--	irc: reconnecting to server...
+2014-12-22 21:14:43	--	irc: connecting to server chat.freenode.net/7000 (SSL)...
+2014-12-22 21:14:43	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-22 21:14:43	--	gnutls: receiving 2 certificates
+2014-12-22 21:14:43	--	 - certificate[1] info:
+2014-12-22 21:14:43	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-22 21:14:43	--	 - certificate[2] info:
+2014-12-22 21:14:43	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-22 21:14:43	--	gnutls: peer's certificate is trusted
+2014-12-22 21:14:43	--	irc: connected to chat.freenode.net/7000 (174.143.119.91)
+2014-12-22 21:14:44	--	asimov.freenode.net: *** Looking up your hostname...
+2014-12-22 21:14:44	--	asimov.freenode.net: *** Checking Ident
+2014-12-22 21:14:44	--	asimov.freenode.net: *** Couldn't look up your hostname
+2014-12-22 21:14:49	--	asimov.freenode.net: *** No Ident response
+2014-12-22 21:14:49	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-22 21:14:49	--	MSG(nickserv): identify ******
+2014-12-22 21:14:49	--	Your host is asimov.freenode.net[174.143.119.91/7000], running version ircd-seven-1.1.3
+2014-12-22 21:14:49	--	This server was created Tue Jul 22 2014 at 13:52:16 UTC
+2014-12-22 21:14:49	--	asimov.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-22 21:14:49	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-22 21:14:49	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-22 21:14:49	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-22 21:14:49	--	There are 185 users and 88195 invisible on 25 servers
+2014-12-22 21:14:49	--	25 :IRC Operators online
+2014-12-22 21:14:49	--	7 :unknown connection(s)
+2014-12-22 21:14:49	--	50180 :channels formed
+2014-12-22 21:14:49	--	I have 7623 clients and 1 servers
+2014-12-22 21:14:49	--	7623 8870 :Current local users 7623, max 8870
+2014-12-22 21:14:49	--	88380 102229 :Current global users 88380, max 102229
+2014-12-22 21:14:49	--	Highest connection count: 8871 (8870 clients) (1935599 connections received)
+2014-12-22 21:14:49	--	- asimov.freenode.net Message of the Day -
+2014-12-22 21:14:49	--	- Welcome to asimov.freenode.net in TX, USA!  Thanks to
+2014-12-22 21:14:49	--	- Rackspace (www.rackspace.com) for sponsoring
+2014-12-22 21:14:49	--	- this server!
+2014-12-22 21:14:49	--	-
+2014-12-22 21:14:49	--	- ASIMOV, ISAAC [1920-1992].  One of the brightest stars of the
+2014-12-22 21:14:49	--	- science fiction universe.  Author of I Robot, the
+2014-12-22 21:14:49	--	- Foundation series (which "grew like Topsy"), Pebble in the
+2014-12-22 21:14:49	--	- Sky and hundreds of works of science fact and science
+2014-12-22 21:14:49	--	- fiction.
+2014-12-22 21:14:49	--	-
+2014-12-22 21:14:49	--	- Welcome to freenode - supporting the free and open source
+2014-12-22 21:14:49	--	- software communities since 1998.
+2014-12-22 21:14:49	--	-
+2014-12-22 21:14:49	--	- By connecting to freenode you indicate that you have read and
+2014-12-22 21:14:49	--	- accept our policies as set out on http://www.freenode.net
+2014-12-22 21:14:49	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-22 21:14:49	--	- any network-related questions or queries, where a number of
+2014-12-22 21:14:49	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-22 21:14:49	--	-
+2014-12-22 21:14:49	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-22 21:14:49	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-22 21:14:49	--	- real-life collaboration.
+2014-12-22 21:14:49	--	-
+2014-12-22 21:14:49	--	- We would like to thank Private Internet Access
+2014-12-22 21:14:49	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-22 21:14:49	--	- organisations that help keep freenode and our other projects
+2014-12-22 21:14:49	--	- running for their sustained support.
+2014-12-22 21:14:49	--	-
+2014-12-22 21:14:49	--	- In particular we would like to thank the sponsor
+2014-12-22 21:14:49	--	- of this server, details of which can be found above.
+2014-12-22 21:14:49	--	-
+2014-12-22 21:14:49	--	- ***************************************************************
+2014-12-22 21:14:49	--	- Please read http://blog.freenode.net/2010/11/be-safe-out-there/
+2014-12-22 21:14:49	--	- ***************************************************************
+2014-12-22 21:14:49	--	End of /MOTD command.
+2014-12-22 21:14:49	--	User mode [+Zi] by aajjbb
+2014-12-22 21:14:50	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-22 21:15:13	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-23 18:57:03	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-23 18:57:03	--	gnutls: receiving 2 certificates
+2014-12-23 18:57:03	--	 - certificate[1] info:
+2014-12-23 18:57:03	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-23 18:57:03	--	 - certificate[2] info:
+2014-12-23 18:57:03	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-23 18:57:03	--	gnutls: peer's certificate is trusted
+2014-12-23 18:57:03	--	irc: connected to chat.freenode.net/7000 (82.96.64.4)
+2014-12-23 18:57:04	--	kornbluth.freenode.net: *** Looking up your hostname...
+2014-12-23 18:57:04	--	kornbluth.freenode.net: *** Checking Ident
+2014-12-23 18:57:04	--	kornbluth.freenode.net: *** Couldn't look up your hostname
+2014-12-23 18:57:09	--	kornbluth.freenode.net: *** No Ident response
+2014-12-23 18:57:09	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-23 18:57:09	--	MSG(nickserv): identify ******
+2014-12-23 18:57:09	--	Your host is kornbluth.freenode.net[82.96.64.4/7000], running version ircd-seven-1.1.3
+2014-12-23 18:57:09	--	This server was created Mon Dec 31 2012 at 22:38:44 CET
+2014-12-23 18:57:09	--	kornbluth.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-23 18:57:09	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-23 18:57:09	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-23 18:57:09	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-23 18:57:09	--	There are 180 users and 90567 invisible on 26 servers
+2014-12-23 18:57:09	--	25 :IRC Operators online
+2014-12-23 18:57:09	--	4 :unknown connection(s)
+2014-12-23 18:57:09	--	50481 :channels formed
+2014-12-23 18:57:09	--	I have 9906 clients and 2 servers
+2014-12-23 18:57:09	--	9906 15000 :Current local users 9906, max 15000
+2014-12-23 18:57:09	--	90747 104047 :Current global users 90747, max 104047
+2014-12-23 18:57:09	--	Highest connection count: 15001 (15000 clients) (2737016 connections received)
+2014-12-23 18:57:09	--	- kornbluth.freenode.net Message of the Day -
+2014-12-23 18:57:09	--	- Welcome to kornbluth.freenode.net in Frankfurt, DE, EU.
+2014-12-23 18:57:09	--	- Thanks to Probe Networks (www.probe-networks.de) for
+2014-12-23 18:57:09	--	- sponsoring this server!
+2014-12-23 18:57:09	--	-
+2014-12-23 18:57:09	--	- KORNBLUTH, CYRIL M. [1923-1958].  Born in New York City and
+2014-12-23 18:57:09	--	- an active member of the Futurians, Cyril Kornbluth sold his
+2014-12-23 18:57:09	--	- first story professionally at age 15.  By the 1940's his
+2014-12-23 18:57:09	--	- stories appeared widely under several pennames, including
+2014-12-23 18:57:09	--	- S.D. Gottesman and Cecil Corman.  He left his university
+2014-12-23 18:57:09	--	- studies in Chicago to serve in the Army in Europe during
+2014-12-23 18:57:09	--	- WWII, then returned to school and work in Chicago until he
+2014-12-23 18:57:09	--	- began writing full-time in 1951.  The author of The Marching
+2014-12-23 18:57:09	--	- Morons and the novels The Space Merchants (with Frederik
+2014-12-23 18:57:09	--	- Pohl) and The Syndic, he's best known for his biting social
+2014-12-23 18:57:09	--	- satire and his collaborations with Pohl and with Judith
+2014-12-23 18:57:09	--	- Merril.
+2014-12-23 18:57:09	--	- Welcome to freenode - supporting the free and open source
+2014-12-23 18:57:09	--	- software communities since 1998.
+2014-12-23 18:57:09	--	-
+2014-12-23 18:57:09	--	- **************************************************************
+2014-12-23 18:57:09	--	-                       SECURITY ALERT
+2014-12-23 18:57:09	--	-
+2014-12-23 18:57:09	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-12-23 18:57:09	--	- some compromised binaries present on a number of servers.
+2014-12-23 18:57:09	--	- The servers in question have been removed from the network and
+2014-12-23 18:57:09	--	- shut down.  However, it's possible that network traffic  -
+2014-12-23 18:57:09	--	- including SSL traffic - has been sniffed and passwords
+2014-12-23 18:57:09	--	- exposed.
+2014-12-23 18:57:09	--	-
+2014-12-23 18:57:09	--	- We therefore recommend that all users change their nickserv
+2014-12-23 18:57:09	--	- password(s) to a new value which is not shared with any
+2014-12-23 18:57:09	--	- other service.
+2014-12-23 18:57:09	--	-
+2014-12-23 18:57:09	--	- You can do this with /msg nickserv set password newpasshere
+2014-12-23 18:57:09	--	-
+2014-12-23 18:57:09	--	- Please note that investigation is ongoing to discover the root
+2014-12-23 18:57:09	--	- cause of the attack, and until this investigation is complete
+2014-12-23 18:57:09	--	- we cannot be 100% certain that all traces of the compromises
+2014-12-23 18:57:09	--	- have been removed. We may have to ask you to change your
+2014-12-23 18:57:09	--	- passwords again after analysis has completed.
+2014-12-23 18:57:09	--	-
+2014-12-23 18:57:09	--	- Further details will appear on https://blog.freenode.net/
+2014-12-23 18:57:09	--	-
+2014-12-23 18:57:09	--	- **************************************************************
+2014-12-23 18:57:09	--	-
+2014-12-23 18:57:09	--	- By connecting to freenode you indicate that you have read and
+2014-12-23 18:57:09	--	- accept our policies as set out on http://www.freenode.net
+2014-12-23 18:57:09	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-23 18:57:09	--	- any network-related questions or queries, where a number of
+2014-12-23 18:57:09	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-23 18:57:09	--	-
+2014-12-23 18:57:09	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-23 18:57:09	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-23 18:57:09	--	- real-life collaboration.
+2014-12-23 18:57:09	--	-
+2014-12-23 18:57:09	--	- We would like to thank Private Internet Access
+2014-12-23 18:57:09	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-23 18:57:09	--	- organisations that help keep freenode and our other projects
+2014-12-23 18:57:09	--	- running for their sustained support.
+2014-12-23 18:57:09	--	-
+2014-12-23 18:57:09	--	- In particular we would like to thank the sponsor
+2014-12-23 18:57:09	--	- of this server, details of which can be found above.
+2014-12-23 18:57:09	--	-
+2014-12-23 18:57:09	--	End of /MOTD command.
+2014-12-23 18:57:09	--	User mode [+Zi] by aajjbb
+2014-12-23 18:57:09	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-23 18:57:15	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-24 00:27:19	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-24 00:27:19	--	gnutls: receiving 2 certificates
+2014-12-24 00:27:19	--	 - certificate[1] info:
+2014-12-24 00:27:19	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-24 00:27:19	--	 - certificate[2] info:
+2014-12-24 00:27:19	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-24 00:27:19	--	gnutls: peer's certificate is trusted
+2014-12-24 00:27:19	--	irc: connected to chat.freenode.net/7000 (82.96.64.4)
+2014-12-24 00:27:19	--	kornbluth.freenode.net: *** Looking up your hostname...
+2014-12-24 00:27:19	--	kornbluth.freenode.net: *** Checking Ident
+2014-12-24 00:27:19	--	kornbluth.freenode.net: *** Couldn't look up your hostname
+2014-12-24 00:27:25	--	kornbluth.freenode.net: *** No Ident response
+2014-12-24 00:27:25	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-24 00:27:25	--	MSG(nickserv): identify ******
+2014-12-24 00:27:25	--	Your host is kornbluth.freenode.net[82.96.64.4/7000], running version ircd-seven-1.1.3
+2014-12-24 00:27:25	--	This server was created Mon Dec 31 2012 at 22:38:44 CET
+2014-12-24 00:27:25	--	kornbluth.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-24 00:27:25	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-24 00:27:25	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-24 00:27:25	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-24 00:27:25	--	There are 173 users and 82062 invisible on 26 servers
+2014-12-24 00:27:25	--	25 :IRC Operators online
+2014-12-24 00:27:25	--	8 :unknown connection(s)
+2014-12-24 00:27:25	--	49691 :channels formed
+2014-12-24 00:27:25	--	I have 9252 clients and 2 servers
+2014-12-24 00:27:25	--	9252 15000 :Current local users 9252, max 15000
+2014-12-24 00:27:25	--	82235 104047 :Current global users 82235, max 104047
+2014-12-24 00:27:25	--	Highest connection count: 15001 (15000 clients) (2740290 connections received)
+2014-12-24 00:27:25	--	- kornbluth.freenode.net Message of the Day -
+2014-12-24 00:27:25	--	- Welcome to kornbluth.freenode.net in Frankfurt, DE, EU.
+2014-12-24 00:27:25	--	- Thanks to Probe Networks (www.probe-networks.de) for
+2014-12-24 00:27:25	--	- sponsoring this server!
+2014-12-24 00:27:25	--	-
+2014-12-24 00:27:25	--	- KORNBLUTH, CYRIL M. [1923-1958].  Born in New York City and
+2014-12-24 00:27:25	--	- an active member of the Futurians, Cyril Kornbluth sold his
+2014-12-24 00:27:25	--	- first story professionally at age 15.  By the 1940's his
+2014-12-24 00:27:25	--	- stories appeared widely under several pennames, including
+2014-12-24 00:27:25	--	- S.D. Gottesman and Cecil Corman.  He left his university
+2014-12-24 00:27:25	--	- studies in Chicago to serve in the Army in Europe during
+2014-12-24 00:27:25	--	- WWII, then returned to school and work in Chicago until he
+2014-12-24 00:27:25	--	- began writing full-time in 1951.  The author of The Marching
+2014-12-24 00:27:25	--	- Morons and the novels The Space Merchants (with Frederik
+2014-12-24 00:27:25	--	- Pohl) and The Syndic, he's best known for his biting social
+2014-12-24 00:27:25	--	- satire and his collaborations with Pohl and with Judith
+2014-12-24 00:27:25	--	- Merril.
+2014-12-24 00:27:25	--	- Welcome to freenode - supporting the free and open source
+2014-12-24 00:27:25	--	- software communities since 1998.
+2014-12-24 00:27:25	--	-
+2014-12-24 00:27:25	--	- **************************************************************
+2014-12-24 00:27:25	--	-                       SECURITY ALERT
+2014-12-24 00:27:25	--	-
+2014-12-24 00:27:25	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-12-24 00:27:25	--	- some compromised binaries present on a number of servers.
+2014-12-24 00:27:25	--	- The servers in question have been removed from the network and
+2014-12-24 00:27:25	--	- shut down.  However, it's possible that network traffic  -
+2014-12-24 00:27:25	--	- including SSL traffic - has been sniffed and passwords
+2014-12-24 00:27:25	--	- exposed.
+2014-12-24 00:27:25	--	-
+2014-12-24 00:27:25	--	- We therefore recommend that all users change their nickserv
+2014-12-24 00:27:25	--	- password(s) to a new value which is not shared with any
+2014-12-24 00:27:25	--	- other service.
+2014-12-24 00:27:25	--	-
+2014-12-24 00:27:25	--	- You can do this with /msg nickserv set password newpasshere
+2014-12-24 00:27:25	--	-
+2014-12-24 00:27:25	--	- Please note that investigation is ongoing to discover the root
+2014-12-24 00:27:25	--	- cause of the attack, and until this investigation is complete
+2014-12-24 00:27:25	--	- we cannot be 100% certain that all traces of the compromises
+2014-12-24 00:27:25	--	- have been removed. We may have to ask you to change your
+2014-12-24 00:27:25	--	- passwords again after analysis has completed.
+2014-12-24 00:27:25	--	-
+2014-12-24 00:27:25	--	- Further details will appear on https://blog.freenode.net/
+2014-12-24 00:27:25	--	-
+2014-12-24 00:27:25	--	- **************************************************************
+2014-12-24 00:27:25	--	-
+2014-12-24 00:27:25	--	- By connecting to freenode you indicate that you have read and
+2014-12-24 00:27:25	--	- accept our policies as set out on http://www.freenode.net
+2014-12-24 00:27:25	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-24 00:27:25	--	- any network-related questions or queries, where a number of
+2014-12-24 00:27:25	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-24 00:27:25	--	-
+2014-12-24 00:27:25	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-24 00:27:25	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-24 00:27:25	--	- real-life collaboration.
+2014-12-24 00:27:25	--	-
+2014-12-24 00:27:25	--	- We would like to thank Private Internet Access
+2014-12-24 00:27:25	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-24 00:27:25	--	- organisations that help keep freenode and our other projects
+2014-12-24 00:27:25	--	- running for their sustained support.
+2014-12-24 00:27:25	--	-
+2014-12-24 00:27:25	--	- In particular we would like to thank the sponsor
+2014-12-24 00:27:25	--	- of this server, details of which can be found above.
+2014-12-24 00:27:25	--	-
+2014-12-24 00:27:25	--	End of /MOTD command.
+2014-12-24 00:27:25	--	User mode [+Zi] by aajjbb
+2014-12-24 00:27:25	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-24 00:27:31	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-24 12:02:36	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-24 12:02:36	--	gnutls: receiving 2 certificates
+2014-12-24 12:02:36	--	 - certificate[1] info:
+2014-12-24 12:02:36	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-24 12:02:36	--	 - certificate[2] info:
+2014-12-24 12:02:36	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-24 12:02:36	--	gnutls: peer's certificate is trusted
+2014-12-24 12:02:36	--	irc: connected to chat.freenode.net/7000 (174.143.119.91)
+2014-12-24 12:02:37	--	asimov.freenode.net: *** Looking up your hostname...
+2014-12-24 12:02:37	--	asimov.freenode.net: *** Checking Ident
+2014-12-24 12:02:37	--	asimov.freenode.net: *** Couldn't look up your hostname
+2014-12-24 12:02:42	--	asimov.freenode.net: *** No Ident response
+2014-12-24 12:02:42	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-24 12:02:42	--	MSG(nickserv): identify ******
+2014-12-24 12:02:42	--	Your host is asimov.freenode.net[174.143.119.91/7000], running version ircd-seven-1.1.3
+2014-12-24 12:02:42	--	This server was created Tue Jul 22 2014 at 13:52:16 UTC
+2014-12-24 12:02:42	--	asimov.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-24 12:02:42	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-24 12:02:42	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-24 12:02:42	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-24 12:02:42	--	There are 172 users and 83960 invisible on 26 servers
+2014-12-24 12:02:42	--	24 :IRC Operators online
+2014-12-24 12:02:42	--	9 :unknown connection(s)
+2014-12-24 12:02:42	--	49981 :channels formed
+2014-12-24 12:02:42	--	I have 7284 clients and 1 servers
+2014-12-24 12:02:42	--	7284 8870 :Current local users 7284, max 8870
+2014-12-24 12:02:42	--	84132 102229 :Current global users 84132, max 102229
+2014-12-24 12:02:42	--	Highest connection count: 8871 (8870 clients) (1960511 connections received)
+2014-12-24 12:02:42	--	- asimov.freenode.net Message of the Day -
+2014-12-24 12:02:42	--	- Welcome to asimov.freenode.net in TX, USA!  Thanks to
+2014-12-24 12:02:42	--	- Rackspace (www.rackspace.com) for sponsoring
+2014-12-24 12:02:42	--	- this server!
+2014-12-24 12:02:42	--	-
+2014-12-24 12:02:42	--	- ASIMOV, ISAAC [1920-1992].  One of the brightest stars of the
+2014-12-24 12:02:42	--	- science fiction universe.  Author of I Robot, the
+2014-12-24 12:02:42	--	- Foundation series (which "grew like Topsy"), Pebble in the
+2014-12-24 12:02:42	--	- Sky and hundreds of works of science fact and science
+2014-12-24 12:02:42	--	- fiction.
+2014-12-24 12:02:42	--	-
+2014-12-24 12:02:42	--	- Welcome to freenode - supporting the free and open source
+2014-12-24 12:02:42	--	- software communities since 1998.
+2014-12-24 12:02:42	--	-
+2014-12-24 12:02:42	--	- By connecting to freenode you indicate that you have read and
+2014-12-24 12:02:42	--	- accept our policies as set out on http://www.freenode.net
+2014-12-24 12:02:42	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-24 12:02:42	--	- any network-related questions or queries, where a number of
+2014-12-24 12:02:42	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-24 12:02:43	--	-
+2014-12-24 12:02:43	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-24 12:02:43	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-24 12:02:43	--	- real-life collaboration.
+2014-12-24 12:02:43	--	-
+2014-12-24 12:02:43	--	- We would like to thank Private Internet Access
+2014-12-24 12:02:43	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-24 12:02:43	--	- organisations that help keep freenode and our other projects
+2014-12-24 12:02:43	--	- running for their sustained support.
+2014-12-24 12:02:43	--	-
+2014-12-24 12:02:43	--	- In particular we would like to thank the sponsor
+2014-12-24 12:02:43	--	- of this server, details of which can be found above.
+2014-12-24 12:02:43	--	-
+2014-12-24 12:02:43	--	- ***************************************************************
+2014-12-24 12:02:43	--	- Please read http://blog.freenode.net/2010/11/be-safe-out-there/
+2014-12-24 12:02:43	--	- ***************************************************************
+2014-12-24 12:02:43	--	End of /MOTD command.
+2014-12-24 12:02:43	--	User mode [+Zi] by aajjbb
+2014-12-24 12:02:43	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-24 12:02:49	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-26 12:16:58	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-26 12:16:58	--	gnutls: receiving 2 certificates
+2014-12-26 12:16:58	--	 - certificate[1] info:
+2014-12-26 12:16:58	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-26 12:16:58	--	 - certificate[2] info:
+2014-12-26 12:16:58	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-26 12:16:58	--	gnutls: peer's certificate is trusted
+2014-12-26 12:16:58	--	irc: connected to chat.freenode.net/7000 (82.96.64.4)
+2014-12-26 12:16:58	--	kornbluth.freenode.net: *** Looking up your hostname...
+2014-12-26 12:16:58	--	kornbluth.freenode.net: *** Checking Ident
+2014-12-26 12:16:58	--	kornbluth.freenode.net: *** Couldn't look up your hostname
+2014-12-26 12:17:05	--	kornbluth.freenode.net: *** No Ident response
+2014-12-26 12:17:05	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-26 12:17:05	--	MSG(nickserv): identify ******
+2014-12-26 12:17:05	--	Your host is kornbluth.freenode.net[82.96.64.4/7000], running version ircd-seven-1.1.3
+2014-12-26 12:17:05	--	This server was created Mon Dec 31 2012 at 22:38:44 CET
+2014-12-26 12:17:05	--	kornbluth.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-26 12:17:05	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-26 12:17:05	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-26 12:17:05	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-26 12:17:05	--	There are 176 users and 81146 invisible on 26 servers
+2014-12-26 12:17:05	--	25 :IRC Operators online
+2014-12-26 12:17:05	--	5 :unknown connection(s)
+2014-12-26 12:17:05	--	49779 :channels formed
+2014-12-26 12:17:05	--	I have 9379 clients and 2 servers
+2014-12-26 12:17:05	--	9379 15000 :Current local users 9379, max 15000
+2014-12-26 12:17:05	--	81322 104047 :Current global users 81322, max 104047
+2014-12-26 12:17:05	--	Highest connection count: 15001 (15000 clients) (2770288 connections received)
+2014-12-26 12:17:05	--	- kornbluth.freenode.net Message of the Day -
+2014-12-26 12:17:05	--	- Welcome to kornbluth.freenode.net in Frankfurt, DE, EU.
+2014-12-26 12:17:05	--	- Thanks to Probe Networks (www.probe-networks.de) for
+2014-12-26 12:17:05	--	- sponsoring this server!
+2014-12-26 12:17:05	--	-
+2014-12-26 12:17:05	--	- KORNBLUTH, CYRIL M. [1923-1958].  Born in New York City and
+2014-12-26 12:17:05	--	- an active member of the Futurians, Cyril Kornbluth sold his
+2014-12-26 12:17:05	--	- first story professionally at age 15.  By the 1940's his
+2014-12-26 12:17:05	--	- stories appeared widely under several pennames, including
+2014-12-26 12:17:05	--	- S.D. Gottesman and Cecil Corman.  He left his university
+2014-12-26 12:17:05	--	- studies in Chicago to serve in the Army in Europe during
+2014-12-26 12:17:05	--	- WWII, then returned to school and work in Chicago until he
+2014-12-26 12:17:05	--	- began writing full-time in 1951.  The author of The Marching
+2014-12-26 12:17:05	--	- Morons and the novels The Space Merchants (with Frederik
+2014-12-26 12:17:05	--	- Pohl) and The Syndic, he's best known for his biting social
+2014-12-26 12:17:05	--	- satire and his collaborations with Pohl and with Judith
+2014-12-26 12:17:05	--	- Merril.
+2014-12-26 12:17:05	--	- Welcome to freenode - supporting the free and open source
+2014-12-26 12:17:05	--	- software communities since 1998.
+2014-12-26 12:17:05	--	-
+2014-12-26 12:17:05	--	- **************************************************************
+2014-12-26 12:17:05	--	-                       SECURITY ALERT
+2014-12-26 12:17:05	--	-
+2014-12-26 12:17:05	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-12-26 12:17:05	--	- some compromised binaries present on a number of servers.
+2014-12-26 12:17:05	--	- The servers in question have been removed from the network and
+2014-12-26 12:17:05	--	- shut down.  However, it's possible that network traffic  -
+2014-12-26 12:17:05	--	- including SSL traffic - has been sniffed and passwords
+2014-12-26 12:17:05	--	- exposed.
+2014-12-26 12:17:05	--	-
+2014-12-26 12:17:05	--	- We therefore recommend that all users change their nickserv
+2014-12-26 12:17:05	--	- password(s) to a new value which is not shared with any
+2014-12-26 12:17:05	--	- other service.
+2014-12-26 12:17:05	--	-
+2014-12-26 12:17:05	--	- You can do this with /msg nickserv set password newpasshere
+2014-12-26 12:17:05	--	-
+2014-12-26 12:17:05	--	- Please note that investigation is ongoing to discover the root
+2014-12-26 12:17:05	--	- cause of the attack, and until this investigation is complete
+2014-12-26 12:17:05	--	- we cannot be 100% certain that all traces of the compromises
+2014-12-26 12:17:05	--	- have been removed. We may have to ask you to change your
+2014-12-26 12:17:05	--	- passwords again after analysis has completed.
+2014-12-26 12:17:05	--	-
+2014-12-26 12:17:05	--	- Further details will appear on https://blog.freenode.net/
+2014-12-26 12:17:05	--	-
+2014-12-26 12:17:05	--	- **************************************************************
+2014-12-26 12:17:05	--	-
+2014-12-26 12:17:05	--	- By connecting to freenode you indicate that you have read and
+2014-12-26 12:17:05	--	- accept our policies as set out on http://www.freenode.net
+2014-12-26 12:17:05	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-26 12:17:05	--	- any network-related questions or queries, where a number of
+2014-12-26 12:17:05	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-26 12:17:05	--	-
+2014-12-26 12:17:05	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-26 12:17:05	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-26 12:17:05	--	- real-life collaboration.
+2014-12-26 12:17:05	--	-
+2014-12-26 12:17:05	--	- We would like to thank Private Internet Access
+2014-12-26 12:17:05	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-26 12:17:05	--	- organisations that help keep freenode and our other projects
+2014-12-26 12:17:05	--	- running for their sustained support.
+2014-12-26 12:17:05	--	-
+2014-12-26 12:17:05	--	- In particular we would like to thank the sponsor
+2014-12-26 12:17:05	--	- of this server, details of which can be found above.
+2014-12-26 12:17:05	--	-
+2014-12-26 12:17:05	--	End of /MOTD command.
+2014-12-26 12:17:05	--	User mode [+Zi] by aajjbb
+2014-12-26 12:17:05	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-26 12:17:11	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-26 12:43:05	=!=	irc: reading data on socket: error -54 Error in the pull function.
+2014-12-26 12:43:05	--	irc: disconnecting from server...
+2014-12-26 12:43:05	--	irc: disconnected from server
+2014-12-26 12:43:05	--	irc: reconnecting to server in 10 seconds
+2014-12-26 12:43:15	--	irc: reconnecting to server...
+2014-12-26 12:43:15	--	irc: connecting to server chat.freenode.net/7000 (SSL)...
+2014-12-26 12:43:16	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-26 12:43:16	--	gnutls: receiving 2 certificates
+2014-12-26 12:43:16	--	 - certificate[1] info:
+2014-12-26 12:43:16	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-26 12:43:16	--	 - certificate[2] info:
+2014-12-26 12:43:16	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-26 12:43:16	--	gnutls: peer's certificate is trusted
+2014-12-26 12:43:16	--	irc: connected to chat.freenode.net/7000 (185.30.166.38)
+2014-12-26 12:43:16	--	orwell.freenode.net: *** Looking up your hostname...
+2014-12-26 12:43:16	--	orwell.freenode.net: *** Checking Ident
+2014-12-26 12:43:17	--	orwell.freenode.net: *** Couldn't look up your hostname
+2014-12-26 12:43:24	--	orwell.freenode.net: *** No Ident response
+2014-12-26 12:43:24	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-26 12:43:24	--	MSG(nickserv): identify ******
+2014-12-26 12:43:24	--	Your host is orwell.freenode.net[185.30.166.38/7000], running version ircd-seven-1.1.3
+2014-12-26 12:43:24	--	This server was created Sat Feb 22 2014 at 16:03:54 BRT
+2014-12-26 12:43:24	--	orwell.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-26 12:43:24	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-26 12:43:24	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-26 12:43:24	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-26 12:43:24	--	There are 176 users and 81507 invisible on 26 servers
+2014-12-26 12:43:24	--	25 :IRC Operators online
+2014-12-26 12:43:24	--	24 :unknown connection(s)
+2014-12-26 12:43:24	--	49849 :channels formed
+2014-12-26 12:43:24	--	I have 7236 clients and 1 servers
+2014-12-26 12:43:24	--	7236 15001 :Current local users 7236, max 15001
+2014-12-26 12:43:24	--	81683 104047 :Current global users 81683, max 104047
+2014-12-26 12:43:24	--	Highest connection count: 15002 (15001 clients) (2601846 connections received)
+2014-12-26 12:43:24	--	- orwell.freenode.net Message of the Day -
+2014-12-26 12:43:24	--	- Welcome to orwell.freenode.net in Amsterdam, NL.
+2014-12-26 12:43:24	--	- Thanks to http://www.hyperfilter.com/ for sponsoring
+2014-12-26 12:43:24	--	- this server!
+2014-12-26 12:43:24	--	-
+2014-12-26 12:43:24	--	- ORWELL, GEORGE [1903 - 1950] Born in India, his mother
+2014-12-26 12:43:24	--	- moved him to England when he was one year old, and it
+2014-12-26 12:43:24	--	- was in England where he was educated and spent most of
+2014-12-26 12:43:24	--	- his life.  Orwell is perhaps best known for his novels
+2014-12-26 12:43:24	--	- Nineteen Eighty-Four and Animal Farm.
+2014-12-26 12:43:24	--	-
+2014-12-26 12:43:24	--	-
+2014-12-26 12:43:24	--	- Welcome to freenode - supporting the free and open source
+2014-12-26 12:43:24	--	- software communities since 1998.
+2014-12-26 12:43:24	--	-
+2014-12-26 12:43:24	--	- **************************************************************
+2014-12-26 12:43:24	--	-                       SECURITY ALERT
+2014-12-26 12:43:24	--	-
+2014-12-26 12:43:24	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-12-26 12:43:24	--	- some compromised binaries present on a number of servers.
+2014-12-26 12:43:24	--	- The servers in question have been removed from the network and
+2014-12-26 12:43:24	--	- shut down.  However, it's possible that network traffic  -
+2014-12-26 12:43:24	--	- including SSL traffic - has been sniffed and passwords
+2014-12-26 12:43:24	--	- exposed.
+2014-12-26 12:43:24	--	-
+2014-12-26 12:43:24	--	- We therefore recommend that all users change their nickserv
+2014-12-26 12:43:24	--	- password(s) to a new value which is not shared with any
+2014-12-26 12:43:24	--	- other service.
+2014-12-26 12:43:24	--	-
+2014-12-26 12:43:24	--	- You can do this with /msg nickserv set password newpasshere
+2014-12-26 12:43:24	--	-
+2014-12-26 12:43:24	--	- Please note that investigation is ongoing to discover the root
+2014-12-26 12:43:24	--	- cause of the attack, and until this investigation is complete
+2014-12-26 12:43:24	--	- we cannot be 100% certain that all traces of the compromises
+2014-12-26 12:43:24	--	- have been removed. We may have to ask you to change your
+2014-12-26 12:43:24	--	- passwords again after analysis has completed.
+2014-12-26 12:43:24	--	-
+2014-12-26 12:43:24	--	- Further details will appear on https://blog.freenode.net/
+2014-12-26 12:43:24	--	-
+2014-12-26 12:43:24	--	- **************************************************************
+2014-12-26 12:43:24	--	-
+2014-12-26 12:43:24	--	- By connecting to freenode you indicate that you have read and
+2014-12-26 12:43:24	--	- accept our policies as set out on http://www.freenode.net
+2014-12-26 12:43:24	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-26 12:43:24	--	- any network-related questions or queries, where a number of
+2014-12-26 12:43:24	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-26 12:43:24	--	-
+2014-12-26 12:43:24	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-26 12:43:24	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-26 12:43:24	--	- real-life collaboration.
+2014-12-26 12:43:24	--	-
+2014-12-26 12:43:24	--	- We would like to thank Private Internet Access
+2014-12-26 12:43:24	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-26 12:43:24	--	- organisations that help keep freenode and our other projects
+2014-12-26 12:43:24	--	- running for their sustained support.
+2014-12-26 12:43:24	--	-
+2014-12-26 12:43:24	--	- In particular we would like to thank the sponsor
+2014-12-26 12:43:24	--	- of this server, details of which can be found above.
+2014-12-26 12:43:24	--	-
+2014-12-26 12:43:24	--	End of /MOTD command.
+2014-12-26 12:43:24	--	User mode [+Zi] by aajjbb
+2014-12-26 12:43:24	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-26 12:43:30	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-26 14:24:34	=!=	irc: reading data on socket: error -54 Error in the pull function.
+2014-12-26 14:24:34	--	irc: disconnecting from server...
+2014-12-26 14:24:34	--	irc: disconnected from server
+2014-12-26 14:24:34	--	irc: reconnecting to server in 10 seconds
+2014-12-26 14:24:44	--	irc: reconnecting to server...
+2014-12-26 14:24:44	--	irc: connecting to server chat.freenode.net/7000 (SSL)...
+2014-12-26 14:24:45	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-26 14:24:45	--	gnutls: receiving 2 certificates
+2014-12-26 14:24:45	--	 - certificate[1] info:
+2014-12-26 14:24:45	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-26 14:24:45	--	 - certificate[2] info:
+2014-12-26 14:24:45	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-26 14:24:45	--	gnutls: peer's certificate is trusted
+2014-12-26 14:24:45	--	irc: connected to chat.freenode.net/7000 (185.30.166.35)
+2014-12-26 14:24:45	--	verne.freenode.net: *** Looking up your hostname...
+2014-12-26 14:24:45	--	verne.freenode.net: *** Checking Ident
+2014-12-26 14:24:46	--	verne.freenode.net: *** Couldn't look up your hostname
+2014-12-26 14:24:55	--	verne.freenode.net: *** No Ident response
+2014-12-26 14:24:55	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-26 14:24:55	--	MSG(nickserv): identify ******
+2014-12-26 14:24:55	--	Your host is verne.freenode.net[185.30.166.35/7000], running version ircd-seven-1.1.3
+2014-12-26 14:24:55	--	This server was created Sat Mar 22 2014 at 14:55:42 EDT
+2014-12-26 14:24:55	--	verne.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-26 14:24:55	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-26 14:24:55	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-26 14:24:55	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-26 14:24:55	--	There are 173 users and 82863 invisible on 26 servers
+2014-12-26 14:24:55	--	25 :IRC Operators online
+2014-12-26 14:24:55	--	8 :unknown connection(s)
+2014-12-26 14:24:55	--	45246 :channels formed
+2014-12-26 14:24:55	--	I have 5520 clients and 1 servers
+2014-12-26 14:24:55	--	5520 15001 :Current local users 5520, max 15001
+2014-12-26 14:24:55	--	83036 104047 :Current global users 83036, max 104047
+2014-12-26 14:24:55	--	Highest connection count: 15002 (15001 clients) (2414666 connections received)
+2014-12-26 14:24:55	--	- verne.freenode.net Message of the Day -
+2014-12-26 14:24:55	--	- Welcome to verne.freenode.net in Amsterdam, NL.
+2014-12-26 14:24:55	--	- Thanks to http://www.hyperfilter.com/ for sponsoring
+2014-12-26 14:24:55	--	- this server!
+2014-12-26 14:24:55	--	-
+2014-12-26 14:24:55	--	-
+2014-12-26 14:24:55	--	- VERNE, Jules (1828-1905). Born in Nantes, France, Verne was
+2014-12-26 14:24:55	--	- a pioneering french author known for novels such as Twenty
+2014-12-26 14:24:55	--	- Thousand Leagues Under the Sea, A Journey to the Center of the
+2014-12-26 14:24:55	--	- Earth, and Around the World in Eighty Days. Often lauded as the
+2014-12-26 14:24:55	--	- Father of science fiction, Verne wrote about concepts such as
+2014-12-26 14:24:55	--	- space travel, skyscrapers, and worldwide communications
+2014-12-26 14:24:55	--	- networks long before these ideas became popularised or realised.
+2014-12-26 14:24:55	--	-
+2014-12-26 14:24:55	--	- Welcome to freenode - supporting the free and open source
+2014-12-26 14:24:55	--	- software communities since 1998.
+2014-12-26 14:24:55	--	-
+2014-12-26 14:24:55	--	- **************************************************************
+2014-12-26 14:24:55	--	-                       SECURITY ALERT
+2014-12-26 14:24:55	--	-
+2014-12-26 14:24:55	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-12-26 14:24:55	--	- some compromised binaries present on a number of servers.
+2014-12-26 14:24:55	--	- The servers in question have been removed from the network and
+2014-12-26 14:24:55	--	- shut down.  However, it's possible that network traffic  -
+2014-12-26 14:24:55	--	- including SSL traffic - has been sniffed and passwords
+2014-12-26 14:24:55	--	- exposed.
+2014-12-26 14:24:55	--	-
+2014-12-26 14:24:55	--	- We therefore recommend that all users change their nickserv
+2014-12-26 14:24:55	--	- password(s) to a new value which is not shared with any
+2014-12-26 14:24:55	--	- other service.
+2014-12-26 14:24:55	--	-
+2014-12-26 14:24:55	--	- You can do this with /msg nickserv set password newpasshere
+2014-12-26 14:24:55	--	-
+2014-12-26 14:24:55	--	- Please note that investigation is ongoing to discover the root
+2014-12-26 14:24:55	--	- cause of the attack, and until this investigation is complete
+2014-12-26 14:24:55	--	- we cannot be 100% certain that all traces of the compromises
+2014-12-26 14:24:55	--	- have been removed. We may have to ask you to change your
+2014-12-26 14:24:55	--	- passwords again after analysis has completed.
+2014-12-26 14:24:55	--	-
+2014-12-26 14:24:55	--	- Further details will appear on https://blog.freenode.net/
+2014-12-26 14:24:55	--	-
+2014-12-26 14:24:55	--	- **************************************************************
+2014-12-26 14:24:55	--	-
+2014-12-26 14:24:55	--	- By connecting to freenode you indicate that you have read and
+2014-12-26 14:24:55	--	- accept our policies as set out on http://www.freenode.net
+2014-12-26 14:24:55	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-26 14:24:55	--	- any network-related questions or queries, where a number of
+2014-12-26 14:24:55	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-26 14:24:55	--	-
+2014-12-26 14:24:55	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-26 14:24:55	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-26 14:24:55	--	- real-life collaboration.
+2014-12-26 14:24:55	--	-
+2014-12-26 14:24:55	--	- We would like to thank Private Internet Access
+2014-12-26 14:24:55	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-26 14:24:55	--	- organisations that help keep freenode and our other projects
+2014-12-26 14:24:55	--	- running for their sustained support.
+2014-12-26 14:24:55	--	-
+2014-12-26 14:24:55	--	- In particular we would like to thank the sponsor
+2014-12-26 14:24:55	--	- of this server, details of which can be found above.
+2014-12-26 14:24:55	--	-
+2014-12-26 14:24:55	--	End of /MOTD command.
+2014-12-26 14:24:55	--	User mode [+Zi] by aajjbb
+2014-12-26 14:24:55	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-26 14:25:01	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-26 16:21:49	=!=	irc: reading data on socket: error -54 Error in the pull function.
+2014-12-26 16:21:49	--	irc: disconnecting from server...
+2014-12-26 16:21:49	--	irc: disconnected from server
+2014-12-26 16:21:49	--	irc: reconnecting to server in 10 seconds
+2014-12-26 16:21:59	--	irc: reconnecting to server...
+2014-12-26 16:21:59	--	irc: connecting to server chat.freenode.net/7000 (SSL)...
+2014-12-26 16:22:00	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-26 16:22:00	--	gnutls: receiving 2 certificates
+2014-12-26 16:22:00	--	 - certificate[1] info:
+2014-12-26 16:22:00	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-26 16:22:00	--	 - certificate[2] info:
+2014-12-26 16:22:00	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-26 16:22:00	--	gnutls: peer's certificate is trusted
+2014-12-26 16:22:00	--	irc: connected to chat.freenode.net/7000 (195.148.124.79)
+2014-12-26 16:22:00	--	rajaniemi.freenode.net: *** Looking up your hostname...
+2014-12-26 16:22:00	--	rajaniemi.freenode.net: *** Checking Ident
+2014-12-26 16:22:00	--	rajaniemi.freenode.net: *** Couldn't look up your hostname
+2014-12-26 16:22:10	--	rajaniemi.freenode.net: *** No Ident response
+2014-12-26 16:22:10	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-26 16:22:10	--	MSG(nickserv): identify ******
+2014-12-26 16:22:10	--	Your host is rajaniemi.freenode.net[195.148.124.79/7000], running version ircd-seven-1.1.3
+2014-12-26 16:22:10	--	This server was created Tue Oct 21 2014 at 11:19:23 UTC
+2014-12-26 16:22:10	--	rajaniemi.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-26 16:22:10	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-26 16:22:10	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-26 16:22:10	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-26 16:22:10	--	There are 174 users and 83666 invisible on 26 servers
+2014-12-26 16:22:10	--	26 :IRC Operators online
+2014-12-26 16:22:10	--	7 :unknown connection(s)
+2014-12-26 16:22:10	--	45484 :channels formed
+2014-12-26 16:22:10	--	I have 4841 clients and 1 servers
+2014-12-26 16:22:10	--	4841 9257 :Current local users 4841, max 9257
+2014-12-26 16:22:10	--	83840 101901 :Current global users 83840, max 101901
+2014-12-26 16:22:10	--	Highest connection count: 9258 (9257 clients) (787231 connections received)
+2014-12-26 16:22:10	--	- rajaniemi.freenode.net Message of the Day -
+2014-12-26 16:22:10	--	- Welcome to rajaniemi.freenode.net in Helsinki, Finland.  Our thanks to
+2014-12-26 16:22:10	--	- Aalto University for sponsoring this server!
+2014-12-26 16:22:10	--	-
+2014-12-26 16:22:10	--	- RAJANIEMI, Hannu  (1978-). Born in Ylivieska, Finland, Rajaniemi is the
+2014-12-26 16:22:10	--	- author of two novels and several short stories, and his debut novel 'The
+2014-12-26 16:22:10	--	- Quantum Thief' was nominated for the 2011 Locus Award for Best First
+2014-12-26 16:22:10	--	- Novel.  Rajaniemi lives in Edinburgh, Scotland where he is founding
+2014-12-26 16:22:10	--	- director of ThinkTank Maths, a commercial research organisation.
+2014-12-26 16:22:10	--	-
+2014-12-26 16:22:10	--	-
+2014-12-26 16:22:10	--	- Welcome to freenode - supporting the free and open source
+2014-12-26 16:22:10	--	- software communities since 1998.
+2014-12-26 16:22:10	--	-
+2014-12-26 16:22:10	--	- **************************************************************
+2014-12-26 16:22:10	--	-                       SECURITY ALERT
+2014-12-26 16:22:10	--	-
+2014-12-26 16:22:10	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-12-26 16:22:10	--	- some compromised binaries present on a number of servers.
+2014-12-26 16:22:10	--	- The servers in question have been removed from the network and
+2014-12-26 16:22:10	--	- shut down.  However, it's possible that network traffic  -
+2014-12-26 16:22:10	--	- including SSL traffic - has been sniffed and passwords
+2014-12-26 16:22:10	--	- exposed.
+2014-12-26 16:22:10	--	-
+2014-12-26 16:22:10	--	- We therefore recommend that all users change their nickserv
+2014-12-26 16:22:10	--	- password(s) to a new value which is not shared with any
+2014-12-26 16:22:10	--	- other service.
+2014-12-26 16:22:10	--	-
+2014-12-26 16:22:10	--	- You can do this with /msg nickserv set password newpasshere
+2014-12-26 16:22:10	--	-
+2014-12-26 16:22:10	--	- Please note that investigation is ongoing to discover the root
+2014-12-26 16:22:10	--	- cause of the attack, and until this investigation is complete
+2014-12-26 16:22:10	--	- we cannot be 100% certain that all traces of the compromises
+2014-12-26 16:22:10	--	- have been removed. We may have to ask you to change your
+2014-12-26 16:22:10	--	- passwords again after analysis has completed.
+2014-12-26 16:22:10	--	-
+2014-12-26 16:22:10	--	- Further details will appear on https://blog.freenode.net/
+2014-12-26 16:22:10	--	-
+2014-12-26 16:22:10	--	- **************************************************************
+2014-12-26 16:22:10	--	-
+2014-12-26 16:22:10	--	- By connecting to freenode you indicate that you have read and
+2014-12-26 16:22:10	--	- accept our policies as set out on http://www.freenode.net
+2014-12-26 16:22:10	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-26 16:22:10	--	- any network-related questions or queries, where a number of
+2014-12-26 16:22:10	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-26 16:22:10	--	-
+2014-12-26 16:22:10	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-26 16:22:10	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-26 16:22:10	--	- real-life collaboration.
+2014-12-26 16:22:10	--	-
+2014-12-26 16:22:10	--	- We would like to thank Private Internet Access
+2014-12-26 16:22:10	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-26 16:22:10	--	- organisations that help keep freenode and our other projects
+2014-12-26 16:22:10	--	- running for their sustained support.
+2014-12-26 16:22:10	--	-
+2014-12-26 16:22:10	--	- In particular we would like to thank the sponsor
+2014-12-26 16:22:10	--	- of this server, details of which can be found above.
+2014-12-26 16:22:10	--	-
+2014-12-26 16:22:10	--	End of /MOTD command.
+2014-12-26 16:22:10	--	User mode [+Zi] by aajjbb
+2014-12-26 16:22:10	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-26 16:22:16	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-26 18:31:14	=!=	irc: reading data on socket: error -54 Error in the pull function.
+2014-12-26 18:31:14	--	irc: disconnecting from server...
+2014-12-26 18:31:15	--	irc: disconnected from server
+2014-12-26 18:31:15	--	irc: reconnecting to server in 10 seconds
+2014-12-26 18:31:25	--	irc: reconnecting to server...
+2014-12-26 18:31:25	--	irc: connecting to server chat.freenode.net/7000 (SSL)...
+2014-12-26 18:31:25	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-26 18:31:25	--	gnutls: receiving 2 certificates
+2014-12-26 18:31:25	--	 - certificate[1] info:
+2014-12-26 18:31:25	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-26 18:31:25	--	 - certificate[2] info:
+2014-12-26 18:31:25	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-26 18:31:25	--	gnutls: peer's certificate is trusted
+2014-12-26 18:31:26	--	irc: connected to chat.freenode.net/7000 (192.186.157.43)
+2014-12-26 18:31:26	--	tepper.freenode.net: *** Looking up your hostname...
+2014-12-26 18:31:26	--	tepper.freenode.net: *** Checking Ident
+2014-12-26 18:31:26	--	tepper.freenode.net: *** Couldn't look up your hostname
+2014-12-26 18:31:32	--	tepper.freenode.net: *** No Ident response
+2014-12-26 18:31:32	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-26 18:31:32	--	MSG(nickserv): identify ******
+2014-12-26 18:31:32	--	Your host is tepper.freenode.net[192.186.157.43/7000], running version ircd-seven-1.1.3
+2014-12-26 18:31:32	--	This server was created Sun Jul 20 2014 at 01:18:10 UTC
+2014-12-26 18:31:32	--	tepper.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-26 18:31:32	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-26 18:31:32	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-26 18:31:32	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-26 18:31:32	--	There are 178 users and 84000 invisible on 26 servers
+2014-12-26 18:31:32	--	26 :IRC Operators online
+2014-12-26 18:31:32	--	8 :unknown connection(s)
+2014-12-26 18:31:32	--	45757 :channels formed
+2014-12-26 18:31:32	--	I have 4933 clients and 1 servers
+2014-12-26 18:31:32	--	4933 6413 :Current local users 4933, max 6413
+2014-12-26 18:31:32	--	84178 101901 :Current global users 84178, max 101901
+2014-12-26 18:31:32	--	Highest connection count: 6414 (6413 clients) (770505 connections received)
+2014-12-26 18:31:32	--	- tepper.freenode.net Message of the Day -
+2014-12-26 18:31:32	--	- Welcome to tepper.freenode.net in Buffalo, NY.
+2014-12-26 18:31:32	--	- Thanks to http://www.servermania.com/ for sponsoring
+2014-12-26 18:31:32	--	- this server!
+2014-12-26 18:31:32	--	-
+2014-12-26 18:31:32	--	-
+2014-12-26 18:31:32	--	- TEPPER, SHERI S. (1929-), an American science fiction,
+2014-12-26 18:31:32	--	- horror and mystery novel author, behind more than thirty
+2014-12-26 18:31:32	--	- books, many themed unapologetically eco-feminist. Her
+2014-12-26 18:31:32	--	- writing career started composing children's stories, but
+2014-12-26 18:31:32	--	- moved to adult fiction in 1982. With the 1991 novel
+2014-12-26 18:31:32	--	- 'Beauty' she won the Locus award for Best Fantasy Novel.
+2014-12-26 18:31:32	--	- Her other well-known works include 'Grass' (1989, nominated
+2014-12-26 18:31:32	--	- for Hugo and Locus Awards in 1990) and 'Gate to Women's
+2014-12-26 18:31:32	--	- Country' (1988).
+2014-12-26 18:31:32	--	-
+2014-12-26 18:31:32	--	- Welcome to freenode - supporting the free and open source
+2014-12-26 18:31:32	--	- software communities since 1998.
+2014-12-26 18:31:32	--	-
+2014-12-26 18:31:32	--	- **************************************************************
+2014-12-26 18:31:32	--	-                       SECURITY ALERT
+2014-12-26 18:31:32	--	-
+2014-12-26 18:31:32	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-12-26 18:31:32	--	- some compromised binaries present on a number of servers.
+2014-12-26 18:31:32	--	- The servers in question have been removed from the network and
+2014-12-26 18:31:32	--	- shut down.  However, it's possible that network traffic  -
+2014-12-26 18:31:32	--	- including SSL traffic - has been sniffed and passwords
+2014-12-26 18:31:32	--	- exposed.
+2014-12-26 18:31:32	--	-
+2014-12-26 18:31:32	--	- We therefore recommend that all users change their nickserv
+2014-12-26 18:31:32	--	- password(s) to a new value which is not shared with any
+2014-12-26 18:31:32	--	- other service.
+2014-12-26 18:31:32	--	-
+2014-12-26 18:31:32	--	- You can do this with /msg nickserv set password newpasshere
+2014-12-26 18:31:32	--	-
+2014-12-26 18:31:32	--	- Please note that investigation is ongoing to discover the root
+2014-12-26 18:31:32	--	- cause of the attack, and until this investigation is complete
+2014-12-26 18:31:32	--	- we cannot be 100% certain that all traces of the compromises
+2014-12-26 18:31:32	--	- have been removed. We may have to ask you to change your
+2014-12-26 18:31:32	--	- passwords again after analysis has completed.
+2014-12-26 18:31:32	--	-
+2014-12-26 18:31:32	--	- Further details will appear on https://blog.freenode.net/
+2014-12-26 18:31:32	--	-
+2014-12-26 18:31:32	--	- **************************************************************
+2014-12-26 18:31:32	--	-
+2014-12-26 18:31:32	--	- By connecting to freenode you indicate that you have read and
+2014-12-26 18:31:32	--	- accept our policies as set out on http://www.freenode.net
+2014-12-26 18:31:32	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-26 18:31:32	--	- any network-related questions or queries, where a number of
+2014-12-26 18:31:32	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-26 18:31:32	--	-
+2014-12-26 18:31:32	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-26 18:31:32	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-26 18:31:32	--	- real-life collaboration.
+2014-12-26 18:31:32	--	-
+2014-12-26 18:31:32	--	- We would like to thank Private Internet Access
+2014-12-26 18:31:32	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-26 18:31:32	--	- organisations that help keep freenode and our other projects
+2014-12-26 18:31:32	--	- running for their sustained support.
+2014-12-26 18:31:32	--	-
+2014-12-26 18:31:32	--	- In particular we would like to thank the sponsor
+2014-12-26 18:31:32	--	- of this server, details of which can be found above.
+2014-12-26 18:31:32	--	-
+2014-12-26 18:31:32	--	End of /MOTD command.
+2014-12-26 18:31:32	--	User mode [+Zi] by aajjbb
+2014-12-26 18:31:33	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-26 18:31:38	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-26 23:09:55	=!=	irc: reading data on socket: error -54 Error in the pull function.
+2014-12-26 23:09:55	--	irc: disconnecting from server...
+2014-12-26 23:09:56	--	irc: disconnected from server
+2014-12-26 23:09:56	--	irc: reconnecting to server in 10 seconds
+2014-12-26 23:10:06	--	irc: reconnecting to server...
+2014-12-26 23:10:06	--	irc: connecting to server chat.freenode.net/7000 (SSL)...
+2014-12-26 23:10:07	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-26 23:10:07	--	gnutls: receiving 2 certificates
+2014-12-26 23:10:07	--	 - certificate[1] info:
+2014-12-26 23:10:07	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-26 23:10:07	--	 - certificate[2] info:
+2014-12-26 23:10:07	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-26 23:10:07	--	gnutls: peer's certificate is trusted
+2014-12-26 23:10:07	--	irc: connected to chat.freenode.net/7000 (37.48.83.75)
+2014-12-26 23:10:07	--	wilhelm.freenode.net: *** Looking up your hostname...
+2014-12-26 23:10:07	--	wilhelm.freenode.net: *** Checking Ident
+2014-12-26 23:10:07	--	wilhelm.freenode.net: *** Couldn't look up your hostname
+2014-12-26 23:10:16	--	wilhelm.freenode.net: *** No Ident response
+2014-12-26 23:10:16	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-26 23:10:16	--	MSG(nickserv): identify ******
+2014-12-26 23:10:16	--	Your host is wilhelm.freenode.net[37.48.83.75/7000], running version ircd-seven-1.1.3
+2014-12-26 23:10:16	--	This server was created Sat Mar 8 2014 at 15:57:41 CET
+2014-12-26 23:10:16	--	wilhelm.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-26 23:10:16	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-26 23:10:16	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-26 23:10:16	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-26 23:10:16	--	There are 168 users and 80093 invisible on 26 servers
+2014-12-26 23:10:16	--	25 :IRC Operators online
+2014-12-26 23:10:16	--	13 :unknown connection(s)
+2014-12-26 23:10:16	--	45618 :channels formed
+2014-12-26 23:10:16	--	I have 10785 clients and 1 servers
+2014-12-26 23:10:16	--	10785 12000 :Current local users 10785, max 12000
+2014-12-26 23:10:16	--	80261 104047 :Current global users 80261, max 104047
+2014-12-26 23:10:16	--	Highest connection count: 12001 (12000 clients) (3342812 connections received)
+2014-12-26 23:10:16	--	- wilhelm.freenode.net Message of the Day -
+2014-12-26 23:10:16	--	- Welcome to wilhelm.freenode.net in Netherlands, EU.
+2014-12-26 23:10:16	--	- Thanks to https://www.cubecraftgames.net for sponsoring
+2014-12-26 23:10:16	--	- this server!
+2014-12-26 23:10:16	--	-
+2014-12-26 23:10:16	--	- Welcome to freenode - supporting the free and open source
+2014-12-26 23:10:16	--	- software communities since 1998.
+2014-12-26 23:10:16	--	-
+2014-12-26 23:10:16	--	- **************************************************************
+2014-12-26 23:10:16	--	-                       SECURITY ALERT
+2014-12-26 23:10:16	--	-
+2014-12-26 23:10:16	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-12-26 23:10:16	--	- some compromised binaries present on a number of servers.
+2014-12-26 23:10:16	--	- The servers in question have been removed from the network and
+2014-12-26 23:10:16	--	- shut down.  However, it's possible that network traffic  -
+2014-12-26 23:10:16	--	- including SSL traffic - has been sniffed and passwords
+2014-12-26 23:10:16	--	- exposed.
+2014-12-26 23:10:16	--	-
+2014-12-26 23:10:16	--	- We therefore recommend that all users change their nickserv
+2014-12-26 23:10:16	--	- password(s) to a new value which is not shared with any
+2014-12-26 23:10:16	--	- other service.
+2014-12-26 23:10:16	--	-
+2014-12-26 23:10:16	--	- You can do this with /msg nickserv set password newpasshere
+2014-12-26 23:10:16	--	-
+2014-12-26 23:10:16	--	- Please note that investigation is ongoing to discover the root
+2014-12-26 23:10:16	--	- cause of the attack, and until this investigation is complete
+2014-12-26 23:10:16	--	- we cannot be 100% certain that all traces of the compromises
+2014-12-26 23:10:16	--	- have been removed. We may have to ask you to change your
+2014-12-26 23:10:16	--	- passwords again after analysis has completed.
+2014-12-26 23:10:16	--	-
+2014-12-26 23:10:16	--	- Further details will appear on https://blog.freenode.net/
+2014-12-26 23:10:16	--	-
+2014-12-26 23:10:16	--	- **************************************************************
+2014-12-26 23:10:16	--	-
+2014-12-26 23:10:16	--	- By connecting to freenode you indicate that you have read and
+2014-12-26 23:10:16	--	- accept our policies as set out on http://www.freenode.net
+2014-12-26 23:10:16	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-26 23:10:16	--	- any network-related questions or queries, where a number of
+2014-12-26 23:10:16	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-26 23:10:16	--	-
+2014-12-26 23:10:16	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-26 23:10:16	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-26 23:10:16	--	- real-life collaboration.
+2014-12-26 23:10:16	--	-
+2014-12-26 23:10:16	--	- We would like to thank Private Internet Access
+2014-12-26 23:10:16	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-26 23:10:16	--	- organisations that help keep freenode and our other projects
+2014-12-26 23:10:16	--	- running for their sustained support.
+2014-12-26 23:10:16	--	-
+2014-12-26 23:10:16	--	- In particular we would like to thank the sponsor
+2014-12-26 23:10:16	--	- of this server, details of which can be found above.
+2014-12-26 23:10:16	--	-
+2014-12-26 23:10:16	--	End of /MOTD command.
+2014-12-26 23:10:16	--	User mode [+Zi] by aajjbb
+2014-12-26 23:10:16	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-26 23:10:23	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-28 16:36:16	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-28 16:36:16	--	gnutls: receiving 2 certificates
+2014-12-28 16:36:16	--	 - certificate[1] info:
+2014-12-28 16:36:16	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-28 16:36:16	--	 - certificate[2] info:
+2014-12-28 16:36:16	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-28 16:36:16	--	gnutls: peer's certificate is trusted
+2014-12-28 16:36:17	--	irc: connected to chat.freenode.net/7000 (195.148.124.79)
+2014-12-28 16:36:17	--	rajaniemi.freenode.net: *** Looking up your hostname...
+2014-12-28 16:36:17	--	rajaniemi.freenode.net: *** Checking Ident
+2014-12-28 16:36:17	--	rajaniemi.freenode.net: *** Couldn't look up your hostname
+2014-12-28 16:36:25	--	rajaniemi.freenode.net: *** No Ident response
+2014-12-28 16:36:25	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-28 16:36:25	--	MSG(nickserv): identify ******
+2014-12-28 16:36:25	--	Your host is rajaniemi.freenode.net[195.148.124.79/7000], running version ircd-seven-1.1.3
+2014-12-28 16:36:25	--	This server was created Tue Oct 21 2014 at 11:19:23 UTC
+2014-12-28 16:36:25	--	rajaniemi.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-28 16:36:25	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-28 16:36:25	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-28 16:36:25	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-28 16:36:25	--	There are 187 users and 84199 invisible on 26 servers
+2014-12-28 16:36:25	--	26 :IRC Operators online
+2014-12-28 16:36:25	--	6 :unknown connection(s)
+2014-12-28 16:36:25	--	47063 :channels formed
+2014-12-28 16:36:25	--	I have 5170 clients and 1 servers
+2014-12-28 16:36:25	--	5170 9257 :Current local users 5170, max 9257
+2014-12-28 16:36:25	--	84386 101901 :Current global users 84386, max 101901
+2014-12-28 16:36:25	--	Highest connection count: 9258 (9257 clients) (814803 connections received)
+2014-12-28 16:36:25	--	- rajaniemi.freenode.net Message of the Day -
+2014-12-28 16:36:25	--	- Welcome to rajaniemi.freenode.net in Helsinki, Finland.  Our thanks to
+2014-12-28 16:36:25	--	- Aalto University for sponsoring this server!
+2014-12-28 16:36:25	--	-
+2014-12-28 16:36:25	--	- RAJANIEMI, Hannu  (1978-). Born in Ylivieska, Finland, Rajaniemi is the
+2014-12-28 16:36:25	--	- author of two novels and several short stories, and his debut novel 'The
+2014-12-28 16:36:25	--	- Quantum Thief' was nominated for the 2011 Locus Award for Best First
+2014-12-28 16:36:25	--	- Novel.  Rajaniemi lives in Edinburgh, Scotland where he is founding
+2014-12-28 16:36:25	--	- director of ThinkTank Maths, a commercial research organisation.
+2014-12-28 16:36:25	--	-
+2014-12-28 16:36:25	--	-
+2014-12-28 16:36:25	--	- Welcome to freenode - supporting the free and open source
+2014-12-28 16:36:25	--	- software communities since 1998.
+2014-12-28 16:36:25	--	-
+2014-12-28 16:36:25	--	- **************************************************************
+2014-12-28 16:36:25	--	-                       SECURITY ALERT
+2014-12-28 16:36:25	--	-
+2014-12-28 16:36:25	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-12-28 16:36:25	--	- some compromised binaries present on a number of servers.
+2014-12-28 16:36:25	--	- The servers in question have been removed from the network and
+2014-12-28 16:36:25	--	- shut down.  However, it's possible that network traffic  -
+2014-12-28 16:36:25	--	- including SSL traffic - has been sniffed and passwords
+2014-12-28 16:36:25	--	- exposed.
+2014-12-28 16:36:25	--	-
+2014-12-28 16:36:25	--	- We therefore recommend that all users change their nickserv
+2014-12-28 16:36:25	--	- password(s) to a new value which is not shared with any
+2014-12-28 16:36:25	--	- other service.
+2014-12-28 16:36:25	--	-
+2014-12-28 16:36:25	--	- You can do this with /msg nickserv set password newpasshere
+2014-12-28 16:36:25	--	-
+2014-12-28 16:36:25	--	- Please note that investigation is ongoing to discover the root
+2014-12-28 16:36:25	--	- cause of the attack, and until this investigation is complete
+2014-12-28 16:36:25	--	- we cannot be 100% certain that all traces of the compromises
+2014-12-28 16:36:25	--	- have been removed. We may have to ask you to change your
+2014-12-28 16:36:25	--	- passwords again after analysis has completed.
+2014-12-28 16:36:25	--	-
+2014-12-28 16:36:25	--	- Further details will appear on https://blog.freenode.net/
+2014-12-28 16:36:25	--	-
+2014-12-28 16:36:25	--	- **************************************************************
+2014-12-28 16:36:25	--	-
+2014-12-28 16:36:25	--	- By connecting to freenode you indicate that you have read and
+2014-12-28 16:36:25	--	- accept our policies as set out on http://www.freenode.net
+2014-12-28 16:36:25	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-28 16:36:25	--	- any network-related questions or queries, where a number of
+2014-12-28 16:36:25	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-28 16:36:25	--	-
+2014-12-28 16:36:25	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-28 16:36:25	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-28 16:36:25	--	- real-life collaboration.
+2014-12-28 16:36:25	--	-
+2014-12-28 16:36:25	--	- We would like to thank Private Internet Access
+2014-12-28 16:36:25	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-28 16:36:25	--	- organisations that help keep freenode and our other projects
+2014-12-28 16:36:25	--	- running for their sustained support.
+2014-12-28 16:36:25	--	-
+2014-12-28 16:36:25	--	- In particular we would like to thank the sponsor
+2014-12-28 16:36:25	--	- of this server, details of which can be found above.
+2014-12-28 16:36:25	--	-
+2014-12-28 16:36:25	--	End of /MOTD command.
+2014-12-28 16:36:25	--	User mode [+Zi] by aajjbb
+2014-12-28 16:36:25	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-28 16:36:35	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-29 02:03:04	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-29 02:03:04	--	gnutls: receiving 2 certificates
+2014-12-29 02:03:04	--	 - certificate[1] info:
+2014-12-29 02:03:04	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-29 02:03:04	--	 - certificate[2] info:
+2014-12-29 02:03:04	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-29 02:03:04	--	gnutls: peer's certificate is trusted
+2014-12-29 02:03:04	--	irc: connected to chat.freenode.net/7000 (192.186.157.43)
+2014-12-29 02:03:04	--	tepper.freenode.net: *** Looking up your hostname...
+2014-12-29 02:03:04	--	tepper.freenode.net: *** Checking Ident
+2014-12-29 02:03:04	--	tepper.freenode.net: *** Couldn't look up your hostname
+2014-12-29 02:03:08	--	tepper.freenode.net: *** No Ident response
+2014-12-29 02:03:08	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-29 02:03:08	--	MSG(nickserv): identify ******
+2014-12-29 02:03:08	--	Your host is tepper.freenode.net[192.186.157.43/7000], running version ircd-seven-1.1.3
+2014-12-29 02:03:08	--	This server was created Sun Jul 20 2014 at 01:18:10 UTC
+2014-12-29 02:03:08	--	tepper.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-29 02:03:08	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-29 02:03:08	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-29 02:03:08	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-29 02:03:08	--	There are 168 users and 79799 invisible on 26 servers
+2014-12-29 02:03:08	--	25 :IRC Operators online
+2014-12-29 02:03:08	--	15 :unknown connection(s)
+2014-12-29 02:03:08	--	46955 :channels formed
+2014-12-29 02:03:08	--	I have 4007 clients and 1 servers
+2014-12-29 02:03:08	--	4007 6413 :Current local users 4007, max 6413
+2014-12-29 02:03:08	--	79967 101901 :Current global users 79967, max 101901
+2014-12-29 02:03:08	--	Highest connection count: 6414 (6413 clients) (799629 connections received)
+2014-12-29 02:03:09	--	- tepper.freenode.net Message of the Day -
+2014-12-29 02:03:09	--	- Welcome to tepper.freenode.net in Buffalo, NY.
+2014-12-29 02:03:09	--	- Thanks to http://www.servermania.com/ for sponsoring
+2014-12-29 02:03:09	--	- this server!
+2014-12-29 02:03:09	--	-
+2014-12-29 02:03:09	--	-
+2014-12-29 02:03:09	--	- TEPPER, SHERI S. (1929-), an American science fiction,
+2014-12-29 02:03:09	--	- horror and mystery novel author, behind more than thirty
+2014-12-29 02:03:09	--	- books, many themed unapologetically eco-feminist. Her
+2014-12-29 02:03:09	--	- writing career started composing children's stories, but
+2014-12-29 02:03:09	--	- moved to adult fiction in 1982. With the 1991 novel
+2014-12-29 02:03:09	--	- 'Beauty' she won the Locus award for Best Fantasy Novel.
+2014-12-29 02:03:09	--	- Her other well-known works include 'Grass' (1989, nominated
+2014-12-29 02:03:09	--	- for Hugo and Locus Awards in 1990) and 'Gate to Women's
+2014-12-29 02:03:09	--	- Country' (1988).
+2014-12-29 02:03:09	--	-
+2014-12-29 02:03:09	--	- Welcome to freenode - supporting the free and open source
+2014-12-29 02:03:09	--	- software communities since 1998.
+2014-12-29 02:03:09	--	-
+2014-12-29 02:03:09	--	- **************************************************************
+2014-12-29 02:03:09	--	-                       SECURITY ALERT
+2014-12-29 02:03:09	--	-
+2014-12-29 02:03:09	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-12-29 02:03:09	--	- some compromised binaries present on a number of servers.
+2014-12-29 02:03:09	--	- The servers in question have been removed from the network and
+2014-12-29 02:03:09	--	- shut down.  However, it's possible that network traffic  -
+2014-12-29 02:03:09	--	- including SSL traffic - has been sniffed and passwords
+2014-12-29 02:03:09	--	- exposed.
+2014-12-29 02:03:09	--	-
+2014-12-29 02:03:09	--	- We therefore recommend that all users change their nickserv
+2014-12-29 02:03:09	--	- password(s) to a new value which is not shared with any
+2014-12-29 02:03:09	--	- other service.
+2014-12-29 02:03:09	--	-
+2014-12-29 02:03:09	--	- You can do this with /msg nickserv set password newpasshere
+2014-12-29 02:03:09	--	-
+2014-12-29 02:03:09	--	- Please note that investigation is ongoing to discover the root
+2014-12-29 02:03:09	--	- cause of the attack, and until this investigation is complete
+2014-12-29 02:03:09	--	- we cannot be 100% certain that all traces of the compromises
+2014-12-29 02:03:09	--	- have been removed. We may have to ask you to change your
+2014-12-29 02:03:09	--	- passwords again after analysis has completed.
+2014-12-29 02:03:09	--	-
+2014-12-29 02:03:09	--	- Further details will appear on https://blog.freenode.net/
+2014-12-29 02:03:09	--	-
+2014-12-29 02:03:09	--	- **************************************************************
+2014-12-29 02:03:09	--	-
+2014-12-29 02:03:09	--	- By connecting to freenode you indicate that you have read and
+2014-12-29 02:03:09	--	- accept our policies as set out on http://www.freenode.net
+2014-12-29 02:03:09	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-29 02:03:09	--	- any network-related questions or queries, where a number of
+2014-12-29 02:03:09	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-29 02:03:09	--	-
+2014-12-29 02:03:09	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-29 02:03:09	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-29 02:03:09	--	- real-life collaboration.
+2014-12-29 02:03:09	--	-
+2014-12-29 02:03:09	--	- We would like to thank Private Internet Access
+2014-12-29 02:03:09	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-29 02:03:09	--	- organisations that help keep freenode and our other projects
+2014-12-29 02:03:09	--	- running for their sustained support.
+2014-12-29 02:03:09	--	-
+2014-12-29 02:03:09	--	- In particular we would like to thank the sponsor
+2014-12-29 02:03:09	--	- of this server, details of which can be found above.
+2014-12-29 02:03:09	--	-
+2014-12-29 02:03:09	--	End of /MOTD command.
+2014-12-29 02:03:09	--	User mode [+Zi] by aajjbb
+2014-12-29 02:03:09	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-29 02:03:14	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-29 13:57:07	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-29 13:57:07	--	gnutls: receiving 2 certificates
+2014-12-29 13:57:07	--	 - certificate[1] info:
+2014-12-29 13:57:07	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-29 13:57:07	--	 - certificate[2] info:
+2014-12-29 13:57:07	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-29 13:57:07	--	gnutls: peer's certificate is trusted
+2014-12-29 13:57:07	--	irc: connected to chat.freenode.net/7000 (64.32.24.176)
+2014-12-29 13:57:07	--	morgan.freenode.net: *** Looking up your hostname...
+2014-12-29 13:57:07	--	morgan.freenode.net: *** Checking Ident
+2014-12-29 13:57:07	--	morgan.freenode.net: *** Couldn't look up your hostname
+2014-12-29 13:57:16	--	morgan.freenode.net: *** No Ident response
+2014-12-29 13:57:16	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-29 13:57:16	--	MSG(nickserv): identify ******
+2014-12-29 13:57:16	--	Your host is morgan.freenode.net[64.32.24.176/7000], running version ircd-seven-1.1.3
+2014-12-29 13:57:16	--	This server was created Thu Jul 31 2014 at 17:07:15 UTC
+2014-12-29 13:57:16	--	morgan.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-29 13:57:16	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-29 13:57:16	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-29 13:57:16	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-29 13:57:16	--	There are 180 users and 88379 invisible on 26 servers
+2014-12-29 13:57:16	--	26 :IRC Operators online
+2014-12-29 13:57:16	--	20 :unknown connection(s)
+2014-12-29 13:57:16	--	48116 :channels formed
+2014-12-29 13:57:16	--	I have 9230 clients and 1 servers
+2014-12-29 13:57:16	--	9230 11029 :Current local users 9230, max 11029
+2014-12-29 13:57:16	--	88559 101901 :Current global users 88559, max 101901
+2014-12-29 13:57:16	--	Highest connection count: 11030 (11029 clients) (2070078 connections received)
+2014-12-29 13:57:16	--	- morgan.freenode.net Message of the Day -
+2014-12-29 13:57:16	--	- Welcome to morgan.freenode.net in Chicago, IL, USA! Thank
+2014-12-29 13:57:16	--	- you to psyprus for sponsoring this server!
+2014-12-29 13:57:16	--	-
+2014-12-29 13:57:16	--	- MORGAN, RICHARD K. (1965-) is an English science fiction
+2014-12-29 13:57:16	--	- author. Morgan's books are generally set in a dystopian world.
+2014-12-29 13:57:16	--	- His breakout novel Altered Carbon won the Philip K. Dick Award,
+2014-12-29 13:57:16	--	- and he has written many successful and amazing works to follow.
+2014-12-29 13:57:16	--	- His more recent writings explore the theme of autonomy
+2014-12-29 13:57:16	--	- in science fiction and escapism in fantasy.
+2014-12-29 13:57:16	--	-
+2014-12-29 13:57:16	--	-
+2014-12-29 13:57:16	--	- Welcome to freenode - supporting the free and open source
+2014-12-29 13:57:16	--	- software communities since 1998.
+2014-12-29 13:57:16	--	-
+2014-12-29 13:57:16	--	- **************************************************************
+2014-12-29 13:57:16	--	-                       SECURITY ALERT
+2014-12-29 13:57:16	--	-
+2014-12-29 13:57:16	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-12-29 13:57:16	--	- some compromised binaries present on a number of servers.
+2014-12-29 13:57:16	--	- The servers in question have been removed from the network and
+2014-12-29 13:57:16	--	- shut down.  However, it's possible that network traffic  -
+2014-12-29 13:57:16	--	- including SSL traffic - has been sniffed and passwords
+2014-12-29 13:57:16	--	- exposed.
+2014-12-29 13:57:16	--	-
+2014-12-29 13:57:16	--	- We therefore recommend that all users change their nickserv
+2014-12-29 13:57:16	--	- password(s) to a new value which is not shared with any
+2014-12-29 13:57:16	--	- other service.
+2014-12-29 13:57:16	--	-
+2014-12-29 13:57:16	--	- You can do this with /msg nickserv set password newpasshere
+2014-12-29 13:57:16	--	-
+2014-12-29 13:57:16	--	- Please note that investigation is ongoing to discover the root
+2014-12-29 13:57:16	--	- cause of the attack, and until this investigation is complete
+2014-12-29 13:57:16	--	- we cannot be 100% certain that all traces of the compromises
+2014-12-29 13:57:16	--	- have been removed. We may have to ask you to change your
+2014-12-29 13:57:16	--	- passwords again after analysis has completed.
+2014-12-29 13:57:16	--	-
+2014-12-29 13:57:16	--	- Further details will appear on https://blog.freenode.net/
+2014-12-29 13:57:16	--	-
+2014-12-29 13:57:16	--	- **************************************************************
+2014-12-29 13:57:16	--	-
+2014-12-29 13:57:16	--	- By connecting to freenode you indicate that you have read and
+2014-12-29 13:57:16	--	- accept our policies as set out on http://www.freenode.net
+2014-12-29 13:57:16	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-29 13:57:16	--	- any network-related questions or queries, where a number of
+2014-12-29 13:57:16	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-29 13:57:16	--	-
+2014-12-29 13:57:16	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-29 13:57:16	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-29 13:57:16	--	- real-life collaboration.
+2014-12-29 13:57:16	--	-
+2014-12-29 13:57:16	--	- We would like to thank Private Internet Access
+2014-12-29 13:57:16	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-29 13:57:16	--	- organisations that help keep freenode and our other projects
+2014-12-29 13:57:16	--	- running for their sustained support.
+2014-12-29 13:57:16	--	-
+2014-12-29 13:57:16	--	- In particular we would like to thank the sponsor
+2014-12-29 13:57:16	--	- of this server, details of which can be found above.
+2014-12-29 13:57:16	--	-
+2014-12-29 13:57:16	--	End of /MOTD command.
+2014-12-29 13:57:16	--	User mode [+Zi] by aajjbb
+2014-12-29 13:57:16	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-29 13:57:22	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-30 20:45:09	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-30 20:45:09	--	gnutls: receiving 2 certificates
+2014-12-30 20:45:09	--	 - certificate[1] info:
+2014-12-30 20:45:09	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-30 20:45:09	--	 - certificate[2] info:
+2014-12-30 20:45:09	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-30 20:45:09	--	gnutls: peer's certificate is trusted
+2014-12-30 20:45:09	--	irc: connected to chat.freenode.net/7000 (31.13.222.109)
+2014-12-30 20:45:10	--	hitchcock.freenode.net: *** Looking up your hostname...
+2014-12-30 20:45:10	--	hitchcock.freenode.net: *** Checking Ident
+2014-12-30 20:45:10	--	hitchcock.freenode.net: *** Couldn't look up your hostname
+2014-12-30 20:45:19	--	hitchcock.freenode.net: *** No Ident response
+2014-12-30 20:45:19	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-30 20:45:19	--	MSG(nickserv): identify ******
+2014-12-30 20:45:19	--	Your host is hitchcock.freenode.net[31.13.222.109/7000], running version ircd-seven-1.1.3
+2014-12-30 20:45:19	--	This server was created Sat Oct 11 2014 at 13:43:24 UTC
+2014-12-30 20:45:19	--	hitchcock.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-30 20:45:19	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-30 20:45:19	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-30 20:45:19	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-30 20:45:19	--	There are 174 users and 87633 invisible on 26 servers
+2014-12-30 20:45:19	--	26 :IRC Operators online
+2014-12-30 20:45:19	--	9 :unknown connection(s)
+2014-12-30 20:45:19	--	48549 :channels formed
+2014-12-30 20:45:19	--	I have 4074 clients and 1 servers
+2014-12-30 20:45:19	--	4074 4803 :Current local users 4074, max 4803
+2014-12-30 20:45:19	--	87807 101901 :Current global users 87807, max 101901
+2014-12-30 20:45:19	--	Highest connection count: 4804 (4803 clients) (766872 connections received)
+2014-12-30 20:45:19	--	- hitchcock.freenode.net Message of the Day -
+2014-12-30 20:45:19	--	-
+2014-12-30 20:45:19	--	- Welcome to hitchcock.freenode.net in Sofia, Bulgaria, EU, kindly sponsored by
+2014-12-30 20:45:19	--	- Neterra Communications (www.neterra.net)
+2014-12-30 20:45:19	--	-
+2014-12-30 20:45:19	--	- HITCHCOCK, SIR ALFRED [1899 - 1980] Born in Essex,
+2014-12-30 20:45:19	--	- England, Sir Alfred Hitchcock was a noted film director
+2014-12-30 20:45:19	--	- and producer. Over a long career he pioneered many modern
+2014-12-30 20:45:19	--	- techniques in film-making, made more than 50 feature films,
+2014-12-30 20:45:19	--	- and influenced many present-day directors and producers.
+2014-12-30 20:45:19	--	-
+2014-12-30 20:45:19	--	- Welcome to freenode - supporting the free and open source
+2014-12-30 20:45:19	--	- software communities since 1998.
+2014-12-30 20:45:19	--	-
+2014-12-30 20:45:19	--	- **************************************************************
+2014-12-30 20:45:19	--	-                       SECURITY ALERT
+2014-12-30 20:45:19	--	-
+2014-12-30 20:45:19	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-12-30 20:45:19	--	- some compromised binaries present on a number of servers.
+2014-12-30 20:45:19	--	- The servers in question have been removed from the network and
+2014-12-30 20:45:19	--	- shut down.  However, it's possible that network traffic  -
+2014-12-30 20:45:19	--	- including SSL traffic - has been sniffed and passwords
+2014-12-30 20:45:19	--	- exposed.
+2014-12-30 20:45:19	--	-
+2014-12-30 20:45:19	--	- We therefore recommend that all users change their nickserv
+2014-12-30 20:45:19	--	- password(s) to a new value which is not shared with any
+2014-12-30 20:45:19	--	- other service.
+2014-12-30 20:45:19	--	-
+2014-12-30 20:45:19	--	- You can do this with /msg nickserv set password newpasshere
+2014-12-30 20:45:19	--	-
+2014-12-30 20:45:19	--	- Please note that investigation is ongoing to discover the root
+2014-12-30 20:45:19	--	- cause of the attack, and until this investigation is complete
+2014-12-30 20:45:19	--	- we cannot be 100% certain that all traces of the compromises
+2014-12-30 20:45:19	--	- have been removed. We may have to ask you to change your
+2014-12-30 20:45:19	--	- passwords again after analysis has completed.
+2014-12-30 20:45:19	--	-
+2014-12-30 20:45:19	--	- Further details will appear on https://blog.freenode.net/
+2014-12-30 20:45:19	--	-
+2014-12-30 20:45:19	--	- **************************************************************
+2014-12-30 20:45:19	--	-
+2014-12-30 20:45:19	--	- By connecting to freenode you indicate that you have read and
+2014-12-30 20:45:19	--	- accept our policies as set out on http://www.freenode.net
+2014-12-30 20:45:19	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-30 20:45:19	--	- any network-related questions or queries, where a number of
+2014-12-30 20:45:19	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-30 20:45:19	--	-
+2014-12-30 20:45:19	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-30 20:45:19	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-30 20:45:19	--	- real-life collaboration.
+2014-12-30 20:45:19	--	-
+2014-12-30 20:45:19	--	- We would like to thank Private Internet Access
+2014-12-30 20:45:19	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-30 20:45:19	--	- organisations that help keep freenode and our other projects
+2014-12-30 20:45:19	--	- running for their sustained support.
+2014-12-30 20:45:19	--	-
+2014-12-30 20:45:19	--	- In particular we would like to thank the sponsor
+2014-12-30 20:45:19	--	- of this server, details of which can be found above.
+2014-12-30 20:45:19	--	-
+2014-12-30 20:45:19	--	End of /MOTD command.
+2014-12-30 20:45:19	--	User mode [+Zi] by aajjbb
+2014-12-30 20:45:19	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-30 20:45:25	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-30 20:51:04	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-30 20:51:04	--	gnutls: receiving 2 certificates
+2014-12-30 20:51:04	--	 - certificate[1] info:
+2014-12-30 20:51:04	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-30 20:51:04	--	 - certificate[2] info:
+2014-12-30 20:51:04	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-30 20:51:04	--	gnutls: peer's certificate is trusted
+2014-12-30 20:51:04	--	irc: connected to chat.freenode.net/7000 (185.30.166.38)
+2014-12-30 20:51:04	--	orwell.freenode.net: *** Looking up your hostname...
+2014-12-30 20:51:04	--	orwell.freenode.net: *** Checking Ident
+2014-12-30 20:51:05	--	orwell.freenode.net: *** Couldn't look up your hostname
+2014-12-30 20:51:14	--	orwell.freenode.net: *** No Ident response
+2014-12-30 20:51:14	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-30 20:51:14	--	MSG(nickserv): identify ******
+2014-12-30 20:51:14	--	Your host is orwell.freenode.net[185.30.166.38/7000], running version ircd-seven-1.1.3
+2014-12-30 20:51:14	--	This server was created Sat Feb 22 2014 at 16:03:54 BRT
+2014-12-30 20:51:14	--	orwell.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-30 20:51:14	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-30 20:51:14	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-30 20:51:14	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-30 20:51:14	--	There are 175 users and 87440 invisible on 26 servers
+2014-12-30 20:51:14	--	26 :IRC Operators online
+2014-12-30 20:51:14	--	6 :unknown connection(s)
+2014-12-30 20:51:14	--	48550 :channels formed
+2014-12-30 20:51:14	--	I have 7891 clients and 1 servers
+2014-12-30 20:51:14	--	7891 15001 :Current local users 7891, max 15001
+2014-12-30 20:51:14	--	87615 104047 :Current global users 87615, max 104047
+2014-12-30 20:51:14	--	Highest connection count: 15002 (15001 clients) (2658277 connections received)
+2014-12-30 20:51:14	--	- orwell.freenode.net Message of the Day -
+2014-12-30 20:51:14	--	- Welcome to orwell.freenode.net in Amsterdam, NL.
+2014-12-30 20:51:14	--	- Thanks to http://www.hyperfilter.com/ for sponsoring
+2014-12-30 20:51:14	--	- this server!
+2014-12-30 20:51:14	--	-
+2014-12-30 20:51:14	--	- ORWELL, GEORGE [1903 - 1950] Born in India, his mother
+2014-12-30 20:51:14	--	- moved him to England when he was one year old, and it
+2014-12-30 20:51:14	--	- was in England where he was educated and spent most of
+2014-12-30 20:51:14	--	- his life.  Orwell is perhaps best known for his novels
+2014-12-30 20:51:14	--	- Nineteen Eighty-Four and Animal Farm.
+2014-12-30 20:51:14	--	-
+2014-12-30 20:51:14	--	-
+2014-12-30 20:51:14	--	- Welcome to freenode - supporting the free and open source
+2014-12-30 20:51:14	--	- software communities since 1998.
+2014-12-30 20:51:14	--	-
+2014-12-30 20:51:14	--	- **************************************************************
+2014-12-30 20:51:14	--	-                       SECURITY ALERT
+2014-12-30 20:51:14	--	-
+2014-12-30 20:51:14	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-12-30 20:51:14	--	- some compromised binaries present on a number of servers.
+2014-12-30 20:51:14	--	- The servers in question have been removed from the network and
+2014-12-30 20:51:14	--	- shut down.  However, it's possible that network traffic  -
+2014-12-30 20:51:14	--	- including SSL traffic - has been sniffed and passwords
+2014-12-30 20:51:14	--	- exposed.
+2014-12-30 20:51:14	--	-
+2014-12-30 20:51:14	--	- We therefore recommend that all users change their nickserv
+2014-12-30 20:51:14	--	- password(s) to a new value which is not shared with any
+2014-12-30 20:51:14	--	- other service.
+2014-12-30 20:51:14	--	-
+2014-12-30 20:51:14	--	- You can do this with /msg nickserv set password newpasshere
+2014-12-30 20:51:14	--	-
+2014-12-30 20:51:14	--	- Please note that investigation is ongoing to discover the root
+2014-12-30 20:51:14	--	- cause of the attack, and until this investigation is complete
+2014-12-30 20:51:14	--	- we cannot be 100% certain that all traces of the compromises
+2014-12-30 20:51:14	--	- have been removed. We may have to ask you to change your
+2014-12-30 20:51:14	--	- passwords again after analysis has completed.
+2014-12-30 20:51:14	--	-
+2014-12-30 20:51:14	--	- Further details will appear on https://blog.freenode.net/
+2014-12-30 20:51:14	--	-
+2014-12-30 20:51:14	--	- **************************************************************
+2014-12-30 20:51:14	--	-
+2014-12-30 20:51:14	--	- By connecting to freenode you indicate that you have read and
+2014-12-30 20:51:14	--	- accept our policies as set out on http://www.freenode.net
+2014-12-30 20:51:14	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-30 20:51:14	--	- any network-related questions or queries, where a number of
+2014-12-30 20:51:14	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-30 20:51:14	--	-
+2014-12-30 20:51:14	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-30 20:51:14	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-30 20:51:14	--	- real-life collaboration.
+2014-12-30 20:51:14	--	-
+2014-12-30 20:51:14	--	- We would like to thank Private Internet Access
+2014-12-30 20:51:14	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-30 20:51:14	--	- organisations that help keep freenode and our other projects
+2014-12-30 20:51:14	--	- running for their sustained support.
+2014-12-30 20:51:14	--	-
+2014-12-30 20:51:14	--	- In particular we would like to thank the sponsor
+2014-12-30 20:51:14	--	- of this server, details of which can be found above.
+2014-12-30 20:51:14	--	-
+2014-12-30 20:51:14	--	End of /MOTD command.
+2014-12-30 20:51:14	--	User mode [+Zi] by aajjbb
+2014-12-30 20:51:14	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-30 20:51:21	--	NickServ (NickServ@services.): You are now identified for aajjbb.
+2014-12-30 22:01:46	--	gnutls: connected using 1024-bit Diffie-Hellman shared secret exchange
+2014-12-30 22:01:46	--	gnutls: receiving 2 certificates
+2014-12-30 22:01:46	--	 - certificate[1] info:
+2014-12-30 22:01:46	--	   - subject `OU=Domain Control Validated,OU=Gandi Standard Wildcard SSL,CN=*.freenode.net', issuer `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', RSA key 2048 bits, signed using RSA-SHA1, activated `2014-01-13 00:00:00 UTC', expires `2015-01-14 23:59:59 UTC', SHA-1 fingerprint `a0fde217de32fae602fe67409697e15ac06f0286'
+2014-12-30 22:01:46	--	 - certificate[2] info:
+2014-12-30 22:01:46	--	   - subject `C=FR,O=GANDI SAS,CN=Gandi Standard SSL CA', issuer `C=US,ST=UT,L=Salt Lake City,O=The USERTRUST Network,OU=http://www.usertrust.com,CN=UTN-USERFirst-Hardware', RSA key 2048 bits, signed using RSA-SHA1, activated `2008-10-23 00:00:00 UTC', expires `2020-05-30 10:48:38 UTC', SHA-1 fingerprint `a9f79883a075ce82d20d274d1368e876140d33b3'
+2014-12-30 22:01:46	--	gnutls: peer's certificate is trusted
+2014-12-30 22:01:46	--	irc: connected to chat.freenode.net/7000 (64.32.24.176)
+2014-12-30 22:01:46	--	morgan.freenode.net: *** Looking up your hostname...
+2014-12-30 22:01:46	--	morgan.freenode.net: *** Checking Ident
+2014-12-30 22:01:46	--	morgan.freenode.net: *** Couldn't look up your hostname
+2014-12-30 22:01:55	--	morgan.freenode.net: *** No Ident response
+2014-12-30 22:01:55	--	Welcome to the freenode Internet Relay Chat Network aajjbb
+2014-12-30 22:01:55	--	MSG(nickserv): identify ******
+2014-12-30 22:01:55	--	Your host is morgan.freenode.net[64.32.24.176/7000], running version ircd-seven-1.1.3
+2014-12-30 22:01:55	--	This server was created Thu Jul 31 2014 at 17:07:15 UTC
+2014-12-30 22:01:55	--	morgan.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2014-12-30 22:01:55	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2014-12-30 22:01:55	--	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2014-12-30 22:01:55	--	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+2014-12-30 22:01:55	--	There are 171 users and 85111 invisible on 26 servers
+2014-12-30 22:01:55	--	26 :IRC Operators online
+2014-12-30 22:01:55	--	10 :unknown connection(s)
+2014-12-30 22:01:55	--	48359 :channels formed
+2014-12-30 22:01:56	--	I have 9089 clients and 1 servers
+2014-12-30 22:01:56	--	9089 11029 :Current local users 9089, max 11029
+2014-12-30 22:01:56	--	85282 101901 :Current global users 85282, max 101901
+2014-12-30 22:01:56	--	Highest connection count: 11030 (11029 clients) (2098241 connections received)
+2014-12-30 22:01:56	--	- morgan.freenode.net Message of the Day -
+2014-12-30 22:01:56	--	- Welcome to morgan.freenode.net in Chicago, IL, USA! Thank
+2014-12-30 22:01:56	--	- you to psyprus for sponsoring this server!
+2014-12-30 22:01:56	--	-
+2014-12-30 22:01:56	--	- MORGAN, RICHARD K. (1965-) is an English science fiction
+2014-12-30 22:01:56	--	- author. Morgan's books are generally set in a dystopian world.
+2014-12-30 22:01:56	--	- His breakout novel Altered Carbon won the Philip K. Dick Award,
+2014-12-30 22:01:56	--	- and he has written many successful and amazing works to follow.
+2014-12-30 22:01:56	--	- His more recent writings explore the theme of autonomy
+2014-12-30 22:01:56	--	- in science fiction and escapism in fantasy.
+2014-12-30 22:01:56	--	-
+2014-12-30 22:01:56	--	-
+2014-12-30 22:01:56	--	- Welcome to freenode - supporting the free and open source
+2014-12-30 22:01:56	--	- software communities since 1998.
+2014-12-30 22:01:56	--	-
+2014-12-30 22:01:56	--	- **************************************************************
+2014-12-30 22:01:56	--	-                       SECURITY ALERT
+2014-12-30 22:01:56	--	-
+2014-12-30 22:01:56	--	- Over the weekend of 13th-14th September freenode staff noticed
+2014-12-30 22:01:56	--	- some compromised binaries present on a number of servers.
+2014-12-30 22:01:56	--	- The servers in question have been removed from the network and
+2014-12-30 22:01:56	--	- shut down.  However, it's possible that network traffic  -
+2014-12-30 22:01:56	--	- including SSL traffic - has been sniffed and passwords
+2014-12-30 22:01:56	--	- exposed.
+2014-12-30 22:01:56	--	-
+2014-12-30 22:01:56	--	- We therefore recommend that all users change their nickserv
+2014-12-30 22:01:56	--	- password(s) to a new value which is not shared with any
+2014-12-30 22:01:56	--	- other service.
+2014-12-30 22:01:56	--	-
+2014-12-30 22:01:56	--	- You can do this with /msg nickserv set password newpasshere
+2014-12-30 22:01:56	--	-
+2014-12-30 22:01:56	--	- Please note that investigation is ongoing to discover the root
+2014-12-30 22:01:56	--	- cause of the attack, and until this investigation is complete
+2014-12-30 22:01:56	--	- we cannot be 100% certain that all traces of the compromises
+2014-12-30 22:01:56	--	- have been removed. We may have to ask you to change your
+2014-12-30 22:01:56	--	- passwords again after analysis has completed.
+2014-12-30 22:01:56	--	-
+2014-12-30 22:01:56	--	- Further details will appear on https://blog.freenode.net/
+2014-12-30 22:01:56	--	-
+2014-12-30 22:01:56	--	- **************************************************************
+2014-12-30 22:01:56	--	-
+2014-12-30 22:01:56	--	- By connecting to freenode you indicate that you have read and
+2014-12-30 22:01:56	--	- accept our policies as set out on http://www.freenode.net
+2014-12-30 22:01:56	--	- freenode runs an open proxy scanner. Please join #freenode for
+2014-12-30 22:01:56	--	- any network-related questions or queries, where a number of
+2014-12-30 22:01:56	--	- volunteer staff and helpful users will be happy to assist you.
+2014-12-30 22:01:56	--	-
+2014-12-30 22:01:56	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2014-12-30 22:01:56	--	- together with like-minded FOSS enthusiasts for talks and
+2014-12-30 22:01:56	--	- real-life collaboration.
+2014-12-30 22:01:56	--	-
+2014-12-30 22:01:56	--	- We would like to thank Private Internet Access
+2014-12-30 22:01:56	--	- (https://www.privateinternetaccess.com/) and the other
+2014-12-30 22:01:56	--	- organisations that help keep freenode and our other projects
+2014-12-30 22:01:56	--	- running for their sustained support.
+2014-12-30 22:01:56	--	-
+2014-12-30 22:01:56	--	- In particular we would like to thank the sponsor
+2014-12-30 22:01:56	--	- of this server, details of which can be found above.
+2014-12-30 22:01:56	--	-
+2014-12-30 22:01:56	--	End of /MOTD command.
+2014-12-30 22:01:56	--	User mode [+Zi] by aajjbb
+2014-12-30 22:01:56	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2014-12-30 22:02:01	--	NickServ (NickServ@services.): You are now identified for aajjbb.
