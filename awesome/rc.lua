@@ -53,6 +53,27 @@ end
 
 run_once("")
 
+function spawn_once(command, class, tag)
+   -- create move callback
+   local callback
+   callback = function(c)
+	  if c.instance == class then
+		 awful.client.movetotag(tag, c)
+		 client.disconnect_signal("manage", callback)
+	  end
+   end
+   client.connect_signal("manage", callback)
+   -- now check if not already running!
+   local findme = command
+   local firstspace = findme:find(" ")
+   if firstspace then
+	  findme = findme:sub(0, firstspace-1)
+   end
+   -- finally run it
+   awful.util.spawn_with_shell("pgrep -u $USER -x " .. findme .. " > /dev/null || (" .. command .. ")")
+end
+
+
 -- }}}
 
 -- {{{ Variable definitions
@@ -80,11 +101,13 @@ im = "pidgin"
 music = "ario"
 video = "vlc"
 files = "caja --no-desktop"
-screenshot = "scrot '%Y-%m-%d-%k-%M-%S_$wx$h.png' -e 'mv $f ~/Pictures/shots/'"
+screenshot = "scrot -q 100 '%Y-%m-%d-%k-%M-%S_$wx$h.png' -e 'mv $f ~/Pictures/shots/'"
 
 local layouts = {
     awful.layout.suit.max,
-    awful.layout.suit.tile.bottom
+    awful.layout.suit.tile.bottom,
+	awful.layout.suit.spiral,
+	awful.layout.suit.tile.magnifier
 }
 -- }}}
 
@@ -98,6 +121,7 @@ tags = {
         "mail",
         "chat",
         "skype",
+		"music",
         "other"
     },
     layout = { 
@@ -107,8 +131,9 @@ tags = {
         layouts[1], 
         layouts[1], 
         layouts[1], 
-        layouts[2], 
-        layouts[1]
+        layouts[1], 
+        layouts[1],
+		layouts[1]
     }
 }
 for s = 1, screen.count() do
@@ -173,7 +198,7 @@ mytextclock = awful.widget.textclock(markup("#7788af", "%d %B %Y ") .. markup("#
 lain.widgets.calendar:attach(mytextclock, { 
     font_size = 10,
     font = "Source Code Pro Medium" 
-    })
+})
 
 -- Weather
 weathericon = wibox.widget.imagebox(beautiful.widget_weather)
@@ -227,7 +252,7 @@ tempwidget = lain.widgets.temp({
     settings = function()
         widget:set_markup(markup("#f1af5f", coretemp_now .. "°C "))
     end
-})
+   })
 
 -- Battery
 baticon = wibox.widget.imagebox(beautiful.widget_batt)
@@ -249,16 +274,19 @@ batwidget = lain.widgets.bat({
 -- ALSA volume
 volicon = wibox.widget.imagebox(beautiful.widget_vol)
 volumewidget = lain.widgets.alsa({
-    settings = function()
-        if volume_now.status == "off" then
+	  timeout = 0.2,
+	  channel = "Master",
+	  settings = function()
+		 if volume_now.status == "off" then
             volume_now.level = volume_now.level .. "M"
-        end
-
-        widget:set_markup(markup("#7493d2", volume_now.level .. "% "))
-    end
+		 end
+		 
+		 widget:set_markup(markup("#7493d2", volume_now.level .. "% "))
+	  end
 })
 
 -- Net
+netssid = wibox.widget.textbox()
 netdownicon = wibox.widget.imagebox(beautiful.widget_netdown)
 --netdownicon.align = "middle"
 netdowninfo = wibox.widget.textbox()
@@ -273,6 +301,7 @@ netupinfo = lain.widgets.net({
         end
 
         widget:set_markup(markup("#e54c62", net_now.sent .. " "))
+		netssid:set_markup(markup("#cc66ff", net_now.ssid .. " "))
         netdowninfo:set_markup(markup("#87af5f", net_now.received .. " "))
     end
 })
@@ -400,19 +429,20 @@ for s = 1, screen.count() do
     -- Widgets that are aligned to the upper right
     local right_layout = wibox.layout.fixed.horizontal()
     --right_layout:add(mailicon)
-    --right_layout:add(mailwidget)
---    right_layout:add(netdownicon)
---    right_layout:add(netdowninfo)
---    right_layout:add(netupicon)
---    right_layout:add(netupinfo)
+    --right_layout:add(mailwidget)	
+	right_layout:add(netssid)
+    right_layout:add(netdownicon)
+	right_layout:add(netdowninfo)
+	right_layout:add(netupicon)
+	right_layout:add(netupinfo)
     right_layout:add(volicon)
     right_layout:add(volumewidget)
     right_layout:add(memicon)
     right_layout:add(memwidget)
     right_layout:add(cpuicon)
     right_layout:add(cpuwidget)
-    --right_layout:add(fsicon)
---    right_layout:add(fswidget)
+    right_layout:add(fsicon)
+	right_layout:add(fswidget)
 	--    right_layout:add(weathericon)
 	--    right_layout:add(yawn.widget)
     --right_layout:add(tempicon)
@@ -462,9 +492,9 @@ root.buttons(awful.util.table.join(
 -- {{{ Key bindings
 globalkeys = awful.util.table.join(
     -- Take a screenshot
-    awful.key({ altkey }, "p", function () 
-        awful.util.spawn_with_shell(screenshot)
-    end),
+   awful.key({}, "Print", function () 
+		 awful.util.spawn_with_shell(screenshot)
+   end),
 
     -- Tag browsing
     awful.key({ modkey }, "Left",   awful.tag.viewprev       ),
@@ -685,30 +715,34 @@ awful.rules.rules = {
             buttons = clientbuttons,
             size_hints_honor = false } },
 
-    { rule = { class = "libreoffice" },
-        properties = { tag = tags[1][4] } },
-
-     { rule = { class = "Google-chrome-stable" },
+    { rule = { class = "web" },
         properties = { tag = tags[1][1] } },
+
+	{ rule = { class = "emacs" },
+	  properties = { tag = tags[1][2] } },
+
+    { rule = { class = "term" },
+	  properties = { tag = tags[1][3] } },	
+
+	{ rule = { class = "doc" },
+	  properties = { tag = tags[1][4] } },	
     
-    { rule = { class = "Thunderbird" },
+    { rule = { class = "mail" },
         properties = { tag = tags[1][5] } },
 
-    { rule = { class = "Pidgin" },
+    { rule = { class = "chat" },
         properties = { tag = tags[1][6] } },
 
-    { rule = { class = "Gimp" },
-        properties = { tag = tags[1][8] } },
-
-    { rule = { class = "Ario" },
+    { rule = { class = "skype" },
+	  properties = { tag = tags[1][7] } },
+	
+    { rule = { class = "music" },
+	  properties = { tag = tags[1][8] } },
+	
+    { rule = { class = "other" },
         properties = { tag = tags[1][9] } },
 
-    { rule = { class = "Vlc" },
-        properties = { tag = tags[1][8] } },
-
-    { rule = { class = "Caja" },
-        properties = { tag = tags[1][8] } },
-
+	
     { rule = { class = "Gimp", role = "gimp-image-window" },
           properties = { maximized_horizontal = true,
                          maximized_vertical = true } },
@@ -811,3 +845,8 @@ end
 -- }}}
 
 awful.util.spawn_with_shell("xrdb -merge ~/.Xresources")
+
+-- spawn_once("google-chrome-stable", "web", tags[1][4])
+-- spawn_once("emacs-24.3", "emacs", tags[1][2])
+-- spawn_once("xterm -name other", "other", tags[1][9])
+
