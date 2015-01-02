@@ -2,10 +2,13 @@
      Starbreaker Awesome WM config 0.1
      github.com/demifiend
 
-     Based on...
+   Based on...
 
      Multicolor Awesome WM config 2.0 
      github.com/copycat-killer                              
+
+   Modified by aajjbb:
+   github.com/aajjbb
 --]]
 
 -- {{{ Required libraries
@@ -335,8 +338,26 @@ mpdwidget = lain.widgets.mpd({
             title  = ""
             mpdicon:set_image(nil)
         end
-        widget:set_markup(markup("#e54c62", artist) .. markup("#b2b2b2", title))
+        widget:set_markup(markup("#e54c62", artist) .. markup("#b2b2b2", title) .. "")
     end
+})
+
+-- cmus widget
+
+cmuswidget = wibox.widget.textbox()
+cmuswidget = lain.widgets.cmus({
+	  settings = function()
+		 if cmus_now.state == "playing" then
+			artist = cmus_now.artist
+			title = cmus_now.title
+			widget:set_markup(markup("#e54c62", artist) .. ", " .. markup("#b2b2b2", title) .. " ")
+		 elseif cmus_now.state == "paused" then
+			widget:set_markup(markup("#e54c62", "cmus paused")  .. " ")
+		 else
+			artist = ""
+			title = ""
+		 end
+	  end
 })
 
 -- Spacer
@@ -428,13 +449,12 @@ for s = 1, screen.count() do
 
     -- Widgets that are aligned to the upper right
     local right_layout = wibox.layout.fixed.horizontal()
-    --right_layout:add(mailicon)
-    --right_layout:add(mailwidget)	
+	right_layout:add(cmuswidget)
 	right_layout:add(netssid)
-    right_layout:add(netdownicon)
-	right_layout:add(netdowninfo)
-	right_layout:add(netupicon)
-	right_layout:add(netupinfo)
+    --right_layout:add(netdownicon)
+	--right_layout:add(netdowninfo)
+	--right_layout:add(netupicon)
+	--right_layout:add(netupinfo)
     right_layout:add(volicon)
     right_layout:add(volumewidget)
     right_layout:add(memicon)
@@ -443,10 +463,8 @@ for s = 1, screen.count() do
     right_layout:add(cpuwidget)
     right_layout:add(fsicon)
 	right_layout:add(fswidget)
-	--    right_layout:add(weathericon)
-	--    right_layout:add(yawn.widget)
-    --right_layout:add(tempicon)
-	--    right_layout:add(tempwidget)
+    right_layout:add(tempicon)
+	right_layout:add(tempwidget)
     right_layout:add(baticon)
     right_layout:add(batwidget)
     right_layout:add(clockicon)
