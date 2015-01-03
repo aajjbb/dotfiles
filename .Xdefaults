@@ -49,6 +49,7 @@ xterm*secondaryScroll:    true
 
 xterm.iso14755: False 
 
+xterm*wideFont: TakaoExMincho	
 xterm*font: xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true:hinting=true
 xterm*boldFont: xft:Bitstream Vera Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
 xterm*faceName: xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true:hinting=true

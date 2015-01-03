@@ -21,7 +21,6 @@ my %files = (
 	".gitconfig" => $root,
 	".tmux.conf" => $root,
 	".vimrc" => $root,
-	".xbindkeysrc" => $root,	
 	".Xdefaults" => $root,
 	".Xresources" => $root,	
 );

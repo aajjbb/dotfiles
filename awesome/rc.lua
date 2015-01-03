@@ -219,27 +219,6 @@ fswidget = lain.widgets.fs({
     end
 })
 
---[[ Mail IMAP check
--- commented because it needs to be set before use
-mailicon = wibox.widget.imagebox()
-mailicon:buttons(awful.util.table.join(awful.button({ }, 1, function () awful.util.spawn(mail) end)))
-mailwidget = lain.widgets.imap({
-    timeout  = 180,
-    server   = "server",
-    mail     = "mail",
-    password = "keyring get mail",
-    settings = function()
-        if mailcount > 0 then
-            mailicon:set_image(beautiful.widget_mail)
-            widget:set_markup(markup("#cccccc", mailcount .. " "))
-        else
-            widget:set_text("")
-            mailicon:set_image(nil)
-        end
-    end
-})
-]]
-
 -- CPU
 cpuicon = wibox.widget.imagebox()
 cpuicon:set_image(beautiful.widget_cpu)
@@ -290,11 +269,12 @@ volumewidget = lain.widgets.alsa({
 
 -- Net
 netssid = wibox.widget.textbox()
+
 netdownicon = wibox.widget.imagebox(beautiful.widget_netdown)
---netdownicon.align = "middle"
 netdowninfo = wibox.widget.textbox()
+
 netupicon = wibox.widget.imagebox(beautiful.widget_netup)
---netupicon.align = "middle"
+
 netupinfo = lain.widgets.net({
     settings = function()
         if iface ~= "network off" and
@@ -317,33 +297,8 @@ memwidget = lain.widgets.mem({
     end
 })
 
--- MPD
-mpdicon = wibox.widget.imagebox()
-mpdwidget = lain.widgets.mpd({
-    settings = function()
-        mpd_notification_preset = {
-            text = string.format("%s [%s] - %s\n%s", mpd_now.artist,
-                   mpd_now.album, mpd_now.date, mpd_now.title)
-        }
-
-        if mpd_now.state == "play" then
-            artist = mpd_now.artist .. " > "
-            title  = mpd_now.title .. " "
-            mpdicon:set_image(beautiful.widget_note_on)
-        elseif mpd_now.state == "pause" then
-            artist = "mpd "
-            title  = "paused "
-        else
-            artist = ""
-            title  = ""
-            mpdicon:set_image(nil)
-        end
-        widget:set_markup(markup("#e54c62", artist) .. markup("#b2b2b2", title) .. "")
-    end
-})
-
 -- cmus widget
-
+cmusicon = wibox.widget.imagebox()
 cmuswidget = wibox.widget.textbox()
 cmuswidget = lain.widgets.cmus({
 	  settings = function()
@@ -351,11 +306,12 @@ cmuswidget = lain.widgets.cmus({
 			artist = cmus_now.artist
 			title = cmus_now.title
 			widget:set_markup(markup("#e54c62", artist) .. ", " .. markup("#b2b2b2", title) .. " ")
+			cmusicon:set_image(beautiful.widget_note_on)
 		 elseif cmus_now.state == "paused" then
-			widget:set_markup(markup("#e54c62", "cmus paused")  .. " ")
+			widget:set_markup(markup("#e54c62", ""))
+			cmusicon:set_image(beautiful.widget_note)
 		 else
-			artist = ""
-			title = ""
+			cmusicon = wibox.widget.imagebox()
 		 end
 	  end
 })
@@ -444,12 +400,11 @@ for s = 1, screen.count() do
     local left_layout = wibox.layout.fixed.horizontal()
     left_layout:add(mytaglist[s])
     left_layout:add(mypromptbox[s])
-    left_layout:add(mpdicon)
-    left_layout:add(mpdwidget)
 
     -- Widgets that are aligned to the upper right
     local right_layout = wibox.layout.fixed.horizontal()
 	right_layout:add(cmuswidget)
+	right_layout:add(cmusicon)
 	right_layout:add(netssid)
     --right_layout:add(netdownicon)
 	--right_layout:add(netdowninfo)
@@ -480,8 +435,7 @@ for s = 1, screen.count() do
 
     -- Create the bottom wibox
     mybottomwibox[s] = awful.wibox({ position = "bottom", screen = s, border_width = 0, height = 24 })
-    --mybottomwibox[s].visible = false
-
+    
     -- Widgets that are aligned to the bottom left
     bottom_left_layout = wibox.layout.fixed.horizontal()
     if s == 1 then bottom_left_layout:add(wibox.widget.systray()) end
@@ -600,17 +554,16 @@ globalkeys = awful.util.table.join(
     -- Dropdown terminal
     awful.key({ modkey,	          }, "z",      function () drop(terminal) end),
 
-    -- Widgets popups
-    awful.key({ altkey,           }, "c",      function () lain.widgets.calendar:show(7) end),
-    awful.key({ altkey,           }, "h",      function () fswidget.show(7) end),
---    awful.key({ altkey,           }, "w",      function () yawn.show(7) end),
-
     -- ALSA volume control	
-	-- volume buttons
 
 	awful.key({ }, "XF86AudioRaiseVolume",    function () awful.util.spawn("amixer set Master 2%+") end),
 	awful.key({ }, "XF86AudioLowerVolume",    function () awful.util.spawn("amixer set Master 2%-") end),
 	awful.key({ }, "XF86AudioMute", function () awful.util.spawn("amixer set Master toggle") end),
+
+	awful.key({ }, "XF86AudioPlay",    function () awful.util.spawn("cmus-remote -u") end),
+	awful.key({ }, "XF86AudioPrev",    function () awful.util.spawn("cmus-remote -r") end),
+	awful.key({ }, "XF86AudioNext ",    function () awful.util.spawn("cmus-remote -n") end),
+	
 	-- end
 
     -- MPD control
