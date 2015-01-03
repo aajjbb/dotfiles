@@ -562,7 +562,7 @@ globalkeys = awful.util.table.join(
 
 	awful.key({ }, "XF86AudioPlay",    function () awful.util.spawn("cmus-remote -u") end),
 	awful.key({ }, "XF86AudioPrev",    function () awful.util.spawn("cmus-remote -r") end),
-	awful.key({ }, "XF86AudioNext ",    function () awful.util.spawn("cmus-remote -n") end),
+	awful.key({ }, "XF86AudioNext",    function () awful.util.spawn("cmus-remote -n") end),
 	
 	-- end
 
