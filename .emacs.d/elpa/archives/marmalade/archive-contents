@@ -1895,7 +1895,7 @@
 	      [(0 1)
 	       nil "Become an Emacs master" single])
  (marshal .
-	  [(0 1 1)
+	  [(0 2 0)
 	   ((eieio
 	     (1 4)))
 	   "eieio extension for automatic (un)marshalling" single])
