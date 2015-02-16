@@ -65,5 +65,5 @@ PATH="`ruby -e 'print Gem.user_dir'`/bin:$PATH"
 
 # prompt
 #PS1='\u@\h:\w\$ ' default
-PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[92m\]\w\[\e[m\] \[\e[35m\]\$\[\e[31m\] '
+PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[92m\]\w\[\e[m\] \[\e[35m\]\$\[\e[37m\] '
 
