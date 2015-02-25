@@ -63,8 +63,6 @@ export JAVA_HOME='/usr/lib64/jvm/java-8-openjdk'
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
 export _JAVA_AWT_WM_NONREPARENTING=1
 
-PATH="`ruby -e 'print Gem.user_dir'`/bin:$PATH"
-
 # prompt
 PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[92m\]\w\[\e[m\] \[\e[35m\]\$\[\e[m\] '
 

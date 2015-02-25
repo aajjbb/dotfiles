@@ -23,6 +23,7 @@ my %files = (
 	".vimrc" => $root,
 	".Xdefaults" => $root,
 	".Xresources" => $root,	
+	".tmux" => $root
 );
 
 =doc
