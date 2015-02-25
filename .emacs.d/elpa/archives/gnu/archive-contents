@@ -29,13 +29,6 @@
 		[(3 0)
 		 nil "Indent and dedent Lisp code, automatically adjust close parens" tar
 		 ((:url . "http://elpa.gnu.org/packages/adjust-parens.html"))])
- (ahungry-theme .
-		[(1 0 5)
-		 ((emacs
-		   (24)))
-		 "Ahungry color theme for Emacs.  Make sure to (load-theme 'ahungry)." tar
-		 ((:keywords "ahungry" "palette" "color" "theme" "emacs" "color-theme" "deftheme")
-		  (:url . "https://github.com/ahungry/color-theme-ahungry"))])
  (all .
       [(1 0)
        nil "Edit all lines matching a given regexp" single
@@ -47,7 +40,7 @@
 			((:url . "http://www.gnuvola.org/software/aa2u/")
 			 (:keywords "ascii" "unicode" "box-drawing"))])
  (auctex .
-	 [(11 88 2)
+	 [(11 88)
 	  nil "Integrated environment for *TeX*" tar
 	  ((:url . "http://www.gnu.org/software/auctex/"))])
  (aumix-mode .
@@ -55,11 +48,6 @@
 	      nil "run the aumix program in a buffer" single
 	      ((:url . "http://user42.tuxfamily.org/aumix-mode/index.html")
 	       (:keywords "multimedia" "mixer" "aumix"))])
- (auto-overlays .
-		[(0 10 9)
-		 nil "Automatic regexp-delimited overlays" tar
-		 ((:keywords "extensions")
-		  (:url . "http://www.dr-qubit.org/emacs.php"))])
  (caps-lock .
 	    [(1 0)
 	     nil "Caps-lock as a minor mode" single
@@ -72,11 +60,6 @@
 	 "Play chess in GNU Emacs" tar
 	 ((:keywords "games")
 	  (:url . "http://elpa.gnu.org/packages/chess.html"))])
- (cl-generic .
-	     [(0 1)
-	      nil "Forward cl-generic compatibility for Emacs<25" single
-	      ((:url . "http://elpa.gnu.org/packages/cl-generic.html")
-	       (:keywords))])
  (cl-lib .
 	 [(0 5)
 	  nil "Properly prefixed CL functions and macros" single
@@ -88,7 +71,7 @@
 	       ((:url . "http://github.com/defunkt/coffee-mode")
 		(:keywords "coffeescript" "major" "mode"))])
  (company .
-	  [(0 8 11)
+	  [(0 8 7)
 	   ((emacs
 	     (24 1))
 	    (cl-lib
@@ -96,24 +79,6 @@
 	   "Modular text completion framework" tar
 	   ((:keywords "abbrev" "convenience" "matching")
 	    (:url . "http://company-mode.github.io/"))])
- (company-statistics .
-		     [(0 1 1)
-		      ((emacs
-			(24 3))
-		       (company
-			(0 8 5)))
-		      "Sort candidates using completion history" tar
-		      ((:keywords "abbrev" "convenience" "matching")
-		       (:url . "https://github.com/company-mode/company-statistics"))])
- (context-coloring .
-		   [(6 0 0)
-		    ((emacs
-		      (24))
-		     (js2-mode
-		      (20150126)))
-		    "Syntax highlighting, except not for syntax." single
-		    ((:url . "https://github.com/jacksonrayhamilton/context-coloring")
-		     (:keywords "context" "coloring" "syntax" "highlighting"))])
  (crisp .
 	[(1 3 4)
 	 nil "CRiSP/Brief Emacs emulator" single
@@ -228,7 +193,7 @@
 	   ((:url . "http://elpa.gnu.org/packages/flylisp.html")
 	    (:keywords))])
  (ggtags .
-	 [(0 8 9)
+	 [(0 8 8)
 	  ((emacs
 	    (24))
 	   (cl-lib
@@ -259,13 +224,6 @@
 	nil "Heap (a.k.a. priority queue) data structure" single
 	((:url . "http://www.dr-qubit.org/emacs.php")
 	 (:keywords "extensions" "data structures" "heap" "priority queue"))])
- (hydra .
-	[(0 9 0)
-	 ((cl-lib
-	   (0 5)))
-	 "Make bindings that stick around" tar
-	 ((:keywords "bindings")
-	  (:url . "https://github.com/abo-abo/hydra"))])
  (ioccur .
 	 [(2 4)
 	  nil "Incremental occur" single
@@ -284,11 +242,9 @@
 	       ((:url . "http://elpa.gnu.org/packages/jgraph-mode.html")
 		(:keywords "tex" "wp"))])
  (js2-mode .
-	   [(20150202)
+	   [(20141118)
 	    ((emacs
-	      (24 1))
-	     (cl-lib
-	      (0 5)))
+	      (24 1)))
 	    "Improved JavaScript editing mode" tar
 	    ((:keywords "languages" "javascript")
 	     (:url . "https://github.com/mooz/js2-mode/"))])
@@ -344,7 +300,7 @@
 	((:keywords "hypermedia")
 	 (:url . "http://mwolson.org/projects/EmacsMuse.html"))])
  (names .
-	[(20150115 1)
+	[(20141119)
 	 ((emacs
 	   (24 1))
 	  (cl-lib
@@ -358,7 +314,7 @@
 	      ((:url . "http://elpa.gnu.org/packages/nhexl-mode.html")
 	       (:keywords "data"))])
  (nlinum .
-	 [(1 6)
+	 [(1 5)
 	  nil "Show line numbers in the margin" single
 	  ((:url . "http://elpa.gnu.org/packages/nlinum.html")
 	   (:keywords "convenience"))])
@@ -382,7 +338,7 @@
 	    ((:url . "http://elpa.gnu.org/packages/omn-mode.html")
 	     (:keywords))])
  (org .
-      [(20150209)
+      [(20141229)
        nil "Outline-based notes management and organizer" tar nil])
  (osc .
       [(0 1)
@@ -429,11 +385,6 @@
 		  nil "restore original position after scrolling" single
 		  ((:url . "http://elpa.gnu.org/packages/scroll-restore.html")
 		   (:keywords "scrolling"))])
- (seq .
-      [(1 2)
-       nil "Sequence manipulation functions" single
-       ((:url . "http://elpa.gnu.org/packages/seq.html")
-	(:keywords "sequences"))])
  (shen-mode .
 	    [(0 1)
 	     nil "A major mode for editing shen source code" tar
@@ -445,7 +396,7 @@
 	     ((:url . "http://elpa.gnu.org/packages/sisu-mode.html")
 	      (:keywords "text" "processes" "tools"))])
  (sml-mode .
-	   [(6 7)
+	   [(6 5)
 	    nil "Major mode for editing (Standard) ML" single
 	    ((:url . "http://elpa.gnu.org/packages/sml-mode.html")
 	     (:keywords "sml"))])

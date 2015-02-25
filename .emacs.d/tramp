@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*- <14/12/16 15:14:28 /home/aajjbb/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <15/02/11 17:31:55 /home/morpho/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
@@ -21,5 +21,7 @@
   ("gid-string" "root")
   ("gid-integer" 0)
   ("uid-integer" 0))
- (["scp" nil "sudo" nil nil]
+ (["scp" nil "sftp" nil nil]
+  nil)
+ (["sftp" "jeferson" "server" nil nil]
   nil))

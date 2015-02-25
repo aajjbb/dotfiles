@@ -32,9 +32,8 @@ alias caja='caja --no-desktop'
 
 # ex - archive extractor
 # usage: ex <file>
-ex ()
-{
-  if [ -f $1 ] ; then
+ex () {
+	if [ -f $1 ] ; then
     case $1 in
       *.tar.bz2)   tar xjf $1   ;;
       *.tar.gz)    tar xzf $1   ;;
@@ -58,12 +57,14 @@ ex ()
 
 export EDITOR='emacs'
 export TERM='xterm-256color'
+export JC_HOME='/home/morpho/Devel/JavaCard/JCDK222'
+export JAVA_HOME='/usr/lib64/jvm/java-8-openjdk'
+
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 PATH="`ruby -e 'print Gem.user_dir'`/bin:$PATH"
 
 # prompt
-#PS1='\u@\h:\w\$ ' default
-PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[92m\]\w\[\e[m\] \[\e[35m\]\$\[\e[37m\] '
+PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[92m\]\w\[\e[m\] \[\e[35m\]\$\[\e[m\] '
 
