@@ -1,0 +1,515 @@
+vim t.cpp 
+rm t.cpp 
+ls
+which perl
+cd Devel/central-server/
+ls
+vim script/central_server.pl 
+which perl
+echo $PERL5LIB 
+cpan Catalyst::ScriptRunner
+vim script/central_server.pl 
+script/central_server.pl 
+sudo cpanm Catalyst::Devel Catalyst::Runtime
+clear
+script/central_server.pl 
+which perl
+exit
+sudo pacman -Syyuu
+clear
+sudo pacman -S bash-completion
+clear
+sudo pacman -Syyuu
+perlbrew 
+ls
+clear
+perlbrew install perl-5.16.0
+perlbrew install perl-5.20.1
+perlbrew switch perl-5.20.1
+which perl
+perlbrew --instal-cpanm
+perlbrew --install-cpanm
+perlbrew install-cpanm
+cpanm Catalyst::Devel
+cd Devel/central-server/
+ls
+script/central_server.pl 
+ls -la script/central_server.pl 
+ls
+perl script/central_server.pl 
+clear
+echo $PERL5LIB
+ls
+script/central_server.pl 
+clear
+sudo killall java
+ps aux | grep java
+sudo kill -9 10584
+cd Devel/contest-files/UVA/
+rm FactorialAgain.cpp 
+cd ..
+cd URI/
+g++ FactorialAgain.cpp && ./a.out < i.in 
+cd
+ls
+cd Devel/contest-files/
+clear
+cd A2/
+g++ CupOfCowards.cpp && ./a.out < i.in 
+cd ..
+vim Guia\ De\ Referencia\ -\ MaratonaFINAL.txt 
+cd SPOJ
+g++ Blefe.cpp && ./a.out < i.in 
+cd Devel/contest-files/LiveArchive/PowerPlant.cpp
+cd Devel/contest-files/LiveArchive/
+ls
+g++ PowerPlant.cpp && ./a.out < i.in 
+ghci
+sudo pacman -S haskell
+sudo pacman -S ghc
+ghci
+cd Devel/contest-files/
+ls
+cd COJ/
+ls
+vim TobbyAndPrimoshkasII.cpp 
+mosh jeferson@192.168.2.100
+vim Devel/quick.py 
+exec ssh -l jeferson  -e none 192.168.2.100
+ls
+clear
+mosh jeferson@192.168.2.100
+ls
+cd Devel/central-server/
+ls
+lx
+ls
+clear
+ls
+perl auth_script.pl 
+clear
+perl auth_script.pl 
+ls
+perl auth_script.pl 
+ls
+perl auth_script.pl 
+ip addr
+perl auth_script.pl 
+ls
+git add .
+git checkout -b "working"
+git add .
+git push origin master
+git push origin working
+perl auth_script.pl 
+clear
+git push origin working
+perl auth_script.pl 
+curl -H "Content-Type: application/json" http://localhost:3001/handler/?user_id=1
+curl -H "Content-Type: application/json" http://localhost:3001/handler/fill/?user_id=1
+clear
+curl --data "user_id=1" "Content-Type: application/json" http://localhost:3001/handler/fill/
+curl --data "user_id=1" "Content-Type: appliclocalhost:3001/handler/fill/
+curl --data "user_id=1" "Content-Type: http://localhost:3001/handler/fill/
+curl --data "user_id=1" "Content-Type: http://localhost:3001/handler/fill
+curl --data "user_id=1" http://localhost:3001/handler/fill
+perl auth_script.pl 
+clear
+perl auth_script.pl 
+curl --data "username=aajjbb&password=aajjbb" http://localhost:3000/handler/fill
+curl --data "username=aajjbb&password=aajjbb" -H "Content-Type:text/json" http://localhost:3000/handler/fill
+curl --data "username=aajjbb&password=aajjbb" -H "Content-Type:text/plain" http://localhost:3000/handler/fill
+curl --data "username=aajjbb&password=aajjbb" -H "Content-Typhttp://localhost:3000/handler/fill
+curl --data "username=aajjbb&password=aajjbb" http://localhost:3000/handler/fill
+curl -H "Content-Type:text/plain" --data "username=aajjbb&password=aajjbb" http://localhost:3000/handler/fill
+curl -H "Content-Type:text/plain" --dapplication/json"me=aajjbb&password=aajjbb" http://localhost:3000/handler/fill
+curl --data "username=aajjbb&password=aajjbb" -H "Content-Type:text/json" http    host:3000/handler/fill
+curl -H "Content-Type:text/plain" --e=aajjbb&password=aajjbb" http://localhost:3000/handler/fill
+curl -H "Content-Type:application/json" --data "username=aajjbb&password=aajjbb" http://localhost:3000/handler/fill
+perl auth_script.pl 
+curl -H "Content-Type:application/json" --data "username=aajjbb&password=aajjbb" http://localhost:3000/handler/fill
+curl -H "Content-Type=aajjbb&password=aajjbb" http://localhost:3000/handler/fill
+curl --data "username=aajjbb&password=aajjbb" http://localhost:3000/handler/fill
+perl auth_script.pl 
+exit
+ls
+mosh jeferson@192.168.2.100
+exit
+sudo pacman -Syyuu
+mosh jeferson@192.168.2.100
+ls
+cd Devel/ls
+ls
+cd Devel/
+ls
+cd central-server/
+ls
+script/central_server.pl 
+which perl
+perlbrew exec perl script/central_server.pl 
+perl script/central_server.pl 
+which cpanm
+cpanm Catalyst::View::JSON
+clear
+perl script/central_server.pl 
+cpanm JSON
+perl script/central_server.pl 
+lsd
+ls
+script/central_create.pl model central_server DBIC::Schema Central::SchemaClass create=static dbi:mysql:central_database aajjbb cdvjjj mysql_socket=/tmp/mysql.sock
+perl script/central_create.pl model central_server DBIC::Schema Central::SchemaClass create=static dbi:mysql:central_database aajjbb cdvjjj mysql_socket=/tmp/mysql.sock
+cpanm DBIx::Class::Schema::Loader
+perl script/central_create.pl model central_server DBIC::Schema Central::SchemaClass create=static dbi:mysql:central_database aajjbb cdvjjj mysql_socket=/tmp/mysql.sock
+perl script/central_create.pl model central_server DBIC::Schema Central::SchemaClass create=static dbi:mysql:central_database aajjbb cdvjjj overwrite_modifications=1 mysql_socket=/tmp/mysql.sock
+cpanm DBD::mysql
+vim /home/morpho/.cpanm/work/1415636572.7602/build.log 
+cpanm --force DBD::mysql
+perl script/central_create.pl model central_server DBIC::Schema Central::SchemaClass create=static dbi:mysql:central_database aajjbb cdvjjj overwrite_modifications=1 mysql_socket=/tmp/mysql.sock
+perl script/central_create.pl model central_server DBIC::Schema Central::SchemaClass create=static dbi:mysql:central_database aajjbb cdvjjj 
+perl script/central_create.pl model central_server DBIC::Schema Central::SchemaClass create=static dbi:mysql:central_database aajjbb cdvjjj overwrite_modifications=1
+perl script/central_create.pl model central_server DBIC::Schema Central::SchemaClass create=static dbi:mysql:central_database aajjbb aajjbb overwrite_modifications=1
+perl script/central_create.pl model central_server DBIC::Schema Central::SchemaClass create=static dbi:mysql:central_database aajjbb aajjbb
+perl script/central_create.pl model CentralDB DBIC::Schema Central::SchemaClass create=static dbi:mysql:central_database aajjbb aajjbb
+ls
+cd lib/
+ls
+cd Central/
+ls
+vim SchemaClass
+vim SchemaClass.pm 
+vim SchemaClass/Result/User.pm 
+ls
+mr SchemaClass
+rm SchemaClass
+rm SchemaClass.pm 
+rm -r SchemaClass.pm 
+rm -r SchemaClass
+ls
+cd ..
+ls
+rm -r Central/
+ls
+cd central/
+ls
+cd Model/
+ls
+rm CentralDB.pm*
+rm CpfDB.pm 
+ls
+cd ..
+ls
+cd ..
+ls
+perl script/central_create.pl model central_server DBIC::Schema Central::SchemaClass create=static dbi:mysql:central_database aajjbb aajjbb
+cd ..
+ls
+perl script/central_create.pl model central_server DBIC::Schema Central::SchemaClass create=static dbi:mysql:central_database aajjbb aajjbb
+ls
+cd lib/
+ls
+cd Central/
+ls
+vim SchemaClass/Result/User.pm 
+cd ..
+ls
+mysql -u aajjbb -p
+mysql -u root
+mysql -u aajjbb -p
+mysql -u root
+ls
+mosh jeferson@192.168.2.100
+ls
+mysql
+mysql -u root
+mysql -u aajjbb -p
+mysql -u root
+mysql -u aajjbb -p
+mosh jeferson@192.168.2.100
+ls
+Devel/
+ls
+cd Devel/
+ls
+perl catalyst.pl cpf-server
+catalyst.pl cpf-server
+catalyst.pl cpfserver
+ls
+cd cpfserver/
+ls
+cd ..
+mv cpfserver/ cpf-server/
+ls
+cd cpf-server/
+ls
+script/cpfserver_create.pl model cpf_server DBIC::Schema Central::SchemaClass create=static dbi:mysql:cpf_database cpf cpf
+GRANT ALL PRIVILEGES ON cpf_database.* TO 'cpf'@'%' WITH GRANT OPTION;
+script/cpfserver_create.pl model cpf_server DBIC::Schema Central::SchemaClass create=static dbi:mysql:cpf_database cpf cpf
+script/cpfserver_create.pl Controller Handler
+ls
+tmux
+ls
+perl script/cpfserver_server.pl -p 3001
+git init
+git remote add origin git@bitbucket.org:aajjbb/cpf_server.git
+git add .
+git commit -am "initial commit"
+git push origin master
+perl script/cpfserver_server.pl -p 3001
+script/cpfserver_create.pl view JSON
+perl script/cpfserver_server.pl -p 3001
+vim lib/cpfserver/View/JSON.pm 
+perl script/cpfserver_server.pl -p 3001
+script/cpfserver_create.pl view JSON JSON
+perl script/cpfserver_server.pl -p 3001
+script/cpfserver_create.pl view JSON JSON
+perl script/cpfserver_server.pl -p 3001
+ls
+rm lib/cpfserver/View/JSON.pm
+mv lib/cpfserver/View/JSON.pm.new lib/cpfserver/View/JSON.pm
+perl script/cpfserver_server.pl -p 3001
+git add .
+git commit -am "initial commit"
+git push origin master
+git log
+routef
+sudo pkill -KILL -u morpho
+mosh jeferson@192.168.2.100
+ifcfg 
+ip addr
+cd Devel/contest-files/UVA/
+g++ SmallFactors.cpp && ./a.out < i.in 
+cd Devel/contest-files/Codeforces/
+g++ UnbearableControversy.cpp && ./a.out < i.in 
+cd Devel/contest-files/UVA/
+g++ SmallFactors.cpp && ./a.out < i.in 
+ls
+cd ..
+git add .
+git commit -am "work changes"
+git pull origin master
+git add .
+git commit -am "stash"
+git push origin master
+cd Codeforces/
+g++ TeamOlympiad.cpp && ./a.out < i.in 
+g++ QueueLunch.cpp && ./a.out < i.in 
+g++ HackingAttempt.cpp 
+g++ HackingAttempt.cpp && ./a.out < i.in 
+g++ Chocolate.cpp && ./a.out < i.in 
+cd Devel/contest-files/Red/
+g++ ArrangementOfContest.cpp && ./a.out < i.in 
+g++ Trener.cpp && ./a.out < i.in 
+g++ BallotAnalyzingDevice.cpp 
+g++ BallotAnalyzingDevice.cpp && ./a.out  <i.in 
+ls
+git add .
+git commit -am "job changes"
+git pull origin master
+git add .
+git commit -am "stashing"
+git add .
+git commit -am "stashing"
+git pull origin master
+git push origin master
+git pull origin master
+g++ BallotAnalyzingDevice.cpp && ./a.out  <i.in 
+clear
+g++ BallotAnalyzingDevice.cpp && ./a.out  <i.in 
+clear
+g++ BallotAnalyzingDevice.cpp && ./a.out  <i.in 
+clear
+g++ BallotAnalyzingDevice.cpp && ./a.out  <i.in 
+clea
+clear
+clea
+clear
+g++ BallotAnalyzingDevice.cpp && ./a.out  <i.in 
+clear
+g++ BallotAnalyzingDevice.cpp && ./a.out  <i.in 
+g++ Kusac.cpp && ./a.out < i.in 
+g++ EnergyTycoon.cpp && ./a.out < i.in 
+g++ Garage.cpp && ./a.out < i.in 
+g++ BallotAnalyzingDevice.cpp && ./a.out < i.in 
+g++ Lopov.cpp && ./a.out < i.in 
+g++ BallotAnalyzingDevice.cpp && ./a.out < i.in 
+g++ Lopov.cpp && ./a.out < i.in 
+g++ BallotAnalyzingDevice.cpp && ./a.out < i.in 
+g++ Lopov.cpp && ./a.out < i.in 
+g++ BallotAnalyzingDevice.cpp && ./a.out < i.in 
+clear
+g++ BallotAnalyzingDevice.cpp && ./a.out < i.in 
+clear
+g++ BallotAnalyzingDevice.cpp && ./a.out < i.in 
+clear
+g++ BallotAnalyzingDevice.cpp && ./a.out < i.in 
+clear
+g++ BallotAnalyzingDevice.cpp && ./a.out < i.in 
+clear
+g++ BallotAnalyzingDevice.cpp && ./a.out < i.in 
+git add .
+git commit -am "added from red"
+git push origin master
+ip addr
+networkctl 
+net
+man net
+netctl-auto 
+netctl-auto current
+netctl
+networkctl 
+ip addr
+ls
+cd Devel/
+ls
+cd dotfiles/
+ls
+git pull origin master
+ls
+perl dotmanager.pl -install
+ls
+cd ~/.config/awesome/lain/
+ls
+ls -la
+ls
+git clone https://github.com/copycat-killer/lain.git
+ls
+mv lain/ lains
+ls
+mv lains/ ../
+ls
+cd ..
+ls
+rm -rf lain
+ls
+mv lains/ lain
+ls
+cd lain/
+ls
+git branch 
+ls
+rm -rf layout/
+ls
+git clone https://github.com/aajjbb/lain.git
+ls
+cd
+ls
+cd Devel/dotfiles/
+perl dotmanager.pl -install
+cd
+ls
+cd ~/.config/awesome/
+ls
+cd lain/
+ls
+git branch 
+ls
+cd ..
+ls
+cd lain/
+ls
+git pull origin master 
+ls
+cd ..
+rm -rf lain/
+git clone https://github.com/aajjbb/lain.git
+ls
+rm awesome-config/
+rm -rf awesome-config/
+rm -rf awesome-shifty/
+ls
+rm -rf eminent/
+ls
+rm -rf scratchdrop/
+ls
+rm -rf starbreaker/
+ls
+rm rc.lua.backup 
+rm rc.lua.standard 
+ls
+ls
+sudo pacman -S xterm
+sudo pacman -Syyuu
+sudo pacman -Syyuu
+sudo pacman -S weechat 
+\curl -L http://install.perlbrew.pl | bash
+sudo pacman -S ruby
+sudo pacman -S rubygems
+ls
+clear
+clea
+clear
+ls
+clea
+clear
+echo $TERM
+cleatr
+clear
+echo $TERM
+exit
+tmux source-file ~/.tmux.conf
+exit
+tmux
+ls
+rm vinao/
+rm -rf vinao/
+ls
+rm a.out 
+ls
+cd Rel
+ls
+ls
+cat Rel 
+clear
+ls
+source ~/.bashrc 
+source ~/.bashrc 
+tr -d '\n\r' < .bashrc 
+clear
+source ~/.bashrc 
+source ~/.bashrc 
+source ~/.bashrc 
+source ~/.bashrc 
+source ~/.bashrc 
+source ~/.bashrc 
+source ~/.bashrc 
+perl -pi -e 's/\r//' .bashrc 
+source ~/.bashrc 
+clear
+source ~/.bashrc 
+lslsl
+clear
+tmux 
+echo $TERM
+ls
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+ls
+tmux 
+exit
+ls
+xterm 
+exit
+echo $TERM
+sudo pacman -R rxvt-unicode
+sudo pacman -R rxvt
+sudo pacman -R rxvt-unicode
+sudo pacman -R urxvt-perls 
+sudo pacman -R rxvt-unicode
+sudo pacman -R rxvt-unicode-terminfo 
+ls
+clear
+exit
+ls
+exit
+cd ~/.tmux/
+ls
+tmux source-file ~/.tmux.conf
+ls
+cd plugins/
+ls
+cd tpm/
+ls
+./tpm 
+exit
+tmux 
+exit
+ls

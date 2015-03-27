@@ -1,0 +1,3 @@
+pane	0	0	:bash	1	:*	0	:/home/morpho	1	bash	:
+window	0	0	1	:*	bbdd,273x72,0,0,0
+state	0	
