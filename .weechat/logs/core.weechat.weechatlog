@@ -1,0 +1,885 @@
+2014-12-09 22:22:39		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-10 16:07:51		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-10 16:08:24		Option changed: irc.server.freenode.autojoin = "#emacs, #manjaro"  (default: (undefined))
+2014-12-11 12:54:13		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-13 00:08:43		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-16 15:53:16		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-16 18:55:28		Option changed: irc.server.freenode.autoconnect = on  (default: (undefined))
+2014-12-16 18:55:36		Option changed: irc.server.freenode.autoconnect = on  (default: (undefined))
+2014-12-16 18:56:06		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-16 18:57:08		Option changed: irc.server.freenode.addresses = "chat.freenode.net/7000"  (default: (undefined))
+2014-12-16 18:57:17		Option changed: irc.server.freenode.ssl = on  (default: (undefined))
+2014-12-16 18:57:23		Option changed: irc.server.freenode.ssl_dhkey_size = 1024  (default: (undefined))
+2014-12-16 18:57:53		Option changed: irc.server.freenode.command = "/msg nickserv identify cdvjjj"  (default: (undefined))
+2014-12-16 18:58:36		Option changed: irc.server.freenode.autojoin = "#archlinux,#emacs"  (default: (undefined))
+2014-12-16 19:01:57		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-16 19:09:08		irc: server oftc created
+2014-12-16 19:09:23	=!=	irc: server "oftc" already exists, can't create it!
+2014-12-16 19:10:11	=!=	irc: server "oftc" already exists, can't create it!
+2014-12-16 19:10:19		irc: server oft created (temporary server, NOT SAVED!)
+2014-12-16 19:10:34	=!=	Error: unknown command "/" (type /help for help)
+2014-12-16 19:10:35	=!=	Error: unknown command "/" (type /help for help)
+2014-12-16 19:11:15		[irc]  /connect  <server> [<server>...] [-<option>[=<value>]] [-no<option>] [-nojoin] [-switch]
+2014-12-16 19:11:15		                 -all|-auto|-open [-nojoin] [-switch]
+2014-12-16 19:11:15		connect to IRC server(s)
+2014-12-16 19:11:15		    server: server name, which can be:
+2014-12-16 19:11:15		            - internal server name (created by /server add, recommended usage)
+2014-12-16 19:11:15		            - hostname/port or IP/port (this will create a TEMPORARY server), port is 6667 by default
+2014-12-16 19:11:15		            - URL with format: irc[6][s]://[nickname[:password]@]irc.example.org[:port][/#channel1][,#channel2[...]]
+2014-12-16 19:11:15		    option: set option for server (for boolean option, value can be omitted)
+2014-12-16 19:11:15		  nooption: set boolean option to 'off' (for example: -nossl)
+2014-12-16 19:11:15		      -all: connect to all servers defined in configuration
+2014-12-16 19:11:15		     -auto: connect to servers with autoconnect enabled
+2014-12-16 19:11:15		     -open: connect to all opened servers that are not currently connected
+2014-12-16 19:11:15		   -nojoin: do not join any channel (even if autojoin is enabled on server)
+2014-12-16 19:11:15		   -switch: switch to next server address
+2014-12-16 19:11:15		To disconnect from a server or stop any connection attempt, use command /disconnect.
+2014-12-16 19:11:15		Examples:
+2014-12-16 19:11:15		  /connect freenode
+2014-12-16 19:11:15		  /connect irc.oftc.net/6667
+2014-12-16 19:11:15		  /connect irc6.oftc.net/6667 -ipv6
+2014-12-16 19:11:15		  /connect irc6.oftc.net/6697 -ipv6 -ssl
+2014-12-16 19:11:15		  /connect my.server.org/6697 -ssl -password=test
+2014-12-16 19:11:15		  /connect irc://nick@irc.oftc.net/#channel
+2014-12-16 19:11:15		  /connect -switch
+2014-12-16 19:11:40	=!=	No help available, "sotp" is not a command or an option
+2014-12-16 19:11:43	=!=	No help available, "stop" is not a command or an option
+2014-12-16 19:11:48		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-16 19:14:30		Option changed: irc.server.oftc.autoconnect = on  (default: (undefined))
+2014-12-16 19:15:17		Option changed: irc.server.oftc.autojoin = "#awesome"  (default: (undefined))
+2014-12-17 15:37:08		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-17 15:38:04		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-18 17:25:31		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-18 17:26:11		irc: server irc.perl.org created (temporary server, NOT SAVED!)
+2014-12-18 17:34:27	=!=	Error: option "irc.perl.org.autoconnect" not found
+2014-12-18 17:35:09	=!=	Error: option "irc.perl.org.autoconnect" not found
+2014-12-18 17:41:15		Option changed: irc.server.freenode.addresses = "chat.freenode.net/7000"  (default: (undefined))
+2014-12-18 17:41:24		Option changed: irc.server.freenode.ssl = on  (default: (undefined))
+2014-12-18 17:41:31		Option changed: irc.server.freenode.ssl_dhkey_size = 1024  (default: (undefined))
+2014-12-18 17:42:08		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-18 17:43:36		irc: server perl created
+2014-12-18 17:44:05		irc: server irc.perl.org created (temporary server, NOT SAVED!)
+2014-12-18 17:44:34	=!=	Error: option "irc.perl.org.autoconnect" not found
+2014-12-19 18:14:51		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-22 17:41:38		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-22 19:07:32		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-23 18:57:03		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-24 00:27:19		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-24 12:02:36		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-26 12:16:57		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-28 16:36:16		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-29 02:03:03		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-29 13:57:07		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-30 20:45:09		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-30 20:46:58		irc: server perl created
+2014-12-30 20:47:34	=!=	Error: option "ssl.irc.perl.org.nicks" not found
+2014-12-30 20:47:56	=!=	irc: server "perl" already exists, can't create it!
+2014-12-30 20:50:59	=!=	irc: command "quiet" must be executed on connected irc server
+2014-12-30 20:51:03		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-30 20:51:29	=!=	Error with command "/server perl irc.perl.org/6667" (help on command: /help server)
+2014-12-30 20:51:35	=!=	irc: server "perl" already exists, can't create it!
+2014-12-30 20:51:38		irc: server sperl created
+2014-12-30 20:53:16		Option changed: irc.server.sperl.autoconnect = on  (default: (undefined))
+2014-12-30 20:53:37		Option changed: irc.server.sperl.autoconnect = on  (default: (undefined))
+2014-12-30 20:53:51		Option changed: irc.server.sperl.autojoin = "#sao-paulo.pm"  (default: (undefined))
+2014-12-30 22:01:45		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-30 22:21:06		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-31 12:13:38		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-02 14:08:51		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-03 13:56:03		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-04 12:44:47		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-04 23:33:01		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-05 18:43:03		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-06 18:58:50		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-07 19:01:06		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-08 19:05:04		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-09 19:32:02		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-10 13:57:15		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-10 20:06:14		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-11 14:28:00		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-12 19:27:48		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-14 01:19:31		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-14 21:03:15		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-15 19:43:31		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-15 20:04:36		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-15 20:04:44		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-16 23:37:24		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-17 20:19:46		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-18 12:53:01		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-18 12:53:06	=!=	irc: command "quiet" must be executed on connected irc server
+2015-01-18 12:53:29		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-19 19:22:36		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-20 19:17:56		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-22 21:00:53		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-23 21:40:53		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-24 17:25:19		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-24 19:15:49		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-25 01:42:02		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-25 17:32:56		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-27 22:10:19		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-02-01 22:04:49		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-02-02 19:13:49		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-02-04 19:30:09		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-02-05 18:59:05		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-02-06 19:55:21		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-02-07 13:36:36		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-02-07 19:48:44		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-02-08 13:36:50		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-02-09 21:25:41		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-02-11 21:02:29		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-02-13 19:02:27		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-02-14 20:15:01		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-02-15 13:59:47		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-02-16 15:24:02		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-02-16 15:24:44		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-02-16 16:13:08		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-02-16 17:27:57		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-02-16 17:57:30		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-02-16 18:13:37		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-01 16:29:29		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-02 19:17:35		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-11 00:47:27		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-12 23:40:34		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-13 22:01:15		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-14 13:14:09		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-14 19:26:44		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-14 20:24:08		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-15 13:46:19		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-15 17:15:05		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-16 20:27:45		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-20 19:34:58		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-21 17:33:14		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-22 12:42:55		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-23 00:34:18		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-23 10:25:57		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-23 22:59:18		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-24 23:45:59		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-27 22:53:43		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-27 22:59:48		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-28 19:24:18		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-29 22:07:39		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-30 11:34:36		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-03-30 19:11:40		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-01 00:22:12		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-01 09:56:17		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-02 00:45:39		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-02 00:46:17		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-02 11:29:59		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-02 19:52:59		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-03 00:22:39		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-03 01:33:21		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-03 22:49:47		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-03 22:49:55		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-04 13:40:47		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-04 13:41:56		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-04 15:52:20		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-04 15:53:45		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-05 22:00:07		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-06 14:04:37		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-07 19:09:22		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-08 23:36:18		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-09 23:44:05		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-10 19:53:41		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-11 14:36:16		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-11 18:33:56		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-12 22:42:34		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-13 00:47:56		Option changed: irc.look.smart_filter_join = on
+2015-04-13 00:48:08		Option changed: irc.look.smart_filter_quit = on
+2015-04-13 00:50:30		Option changed: irc.look.server_buffer = independent  (default: merge_with_core)
+2015-04-13 01:07:30		Filter "irc_smart" added:
+2015-04-13 01:07:30		  [irc_smart] buffer: * / tags: irc_smart_filter / regex: * 
+2015-04-13 01:47:15		Options saved to sec.conf
+2015-04-13 01:47:15		Options saved to weechat.conf
+2015-04-13 01:47:15		Options saved to plugins.conf
+2015-04-13 01:47:15		Options saved to exec.conf
+2015-04-13 01:47:15		Options saved to charset.conf
+2015-04-13 01:47:15		Options saved to irc.conf
+2015-04-13 01:47:15		Options saved to xfer.conf
+2015-04-13 01:47:15		Options saved to script.conf
+2015-04-13 01:47:15		Options saved to trigger.conf
+2015-04-13 01:47:15		Options saved to relay.conf
+2015-04-13 01:47:15		Options saved to logger.conf
+2015-04-13 01:47:15		Options saved to aspell.conf
+2015-04-13 01:47:15		Options saved to alias.conf
+2015-04-13 01:49:21	=!=	irc: command "part" must be executed on irc buffer (server or channel)
+2015-04-13 01:49:44		Option changed: weechat.color.chat_nick_colors = "red,green,brown,blue,magenta,cyan,white,lightred,lightgreen,yellow,lightblue,lightmagenta,lightcyan"  (default: "cyan,magenta,green,brown,lightblue,default,lightcyan,lightmagenta,lightgreen,blue")
+2015-04-13 01:51:16		script: downloading list of scripts...
+2015-04-13 01:51:19		script: 292 scripts for WeeChat 1.1.1
+2015-04-13 01:51:21		perl: loading script "/home/aajjbb/.weechat/perl/buffers.pl"
+2015-04-13 01:51:21		perl: registered script "buffers", version 5.0 (Sidebar with list of buffers)
+2015-04-13 01:51:21		New key binding (context "mouse"): @bar(buffers):ctrl-wheeldown => hsignal:buffers_mouse
+2015-04-13 01:51:21		New key binding (context "mouse"): @bar(buffers):ctrl-wheelup => hsignal:buffers_mouse
+2015-04-13 01:51:21		New key binding (context "mouse"): @item(buffers):button2* => hsignal:buffers_mouse
+2015-04-13 01:51:21		New key binding (context "mouse"): @item(buffers):button1* => hsignal:buffers_mouse
+2015-04-13 01:54:46		perl: loading script "/home/aajjbb/.weechat/perl/iset.pl"
+2015-04-13 01:54:46		perl: registered script "iset", version 3.6 (Interactive Set for configuration options)
+2015-04-13 01:54:46		New key binding (context "mouse"): @chat(perl.iset):button1 => hsignal:iset_mouse
+2015-04-13 01:54:46		New key binding (context "mouse"): @chat(perl.iset):button2* => hsignal:iset_mouse
+2015-04-13 01:54:46		New key binding (context "mouse"): @chat(perl.iset):wheeldown => /repeat 5 /iset **down
+2015-04-13 01:54:46		New key binding (context "mouse"): @chat(perl.iset):wheelup => /repeat 5 /iset **up
+2015-04-13 01:56:40		perl: loading script "/home/aajjbb/.weechat/perl/highmon.pl"
+2015-04-13 01:56:40		perl: registered script "highmon", version 2.5 (Highlight Monitor)
+2015-04-13 01:56:40		This appears to be the first time highmon has been run. For help and common set up hints see /highmon help
+2015-04-13 01:57:28		Highmon buffer has been closed but output is still set to buffer, unusual results may occur. To recreate the buffer use /highmon fix
+2015-04-13 01:57:35	=!=	Error with command "/buffer highmon" (help on command: /help buffer)
+2015-04-13 01:57:44		Highmon Help
+2015-04-13 01:57:44		/highmon [help] | [monitor [channel [server]]] | [clean default|orphan|all] | clearbar
+2015-04-13 01:57:44		 Command wrapper for highmon commands
+2015-04-13 01:57:44		/highmon clean default|orphan|all will clean the config section of default 'on' entries, channels you are no longer joined, or both
+2015-04-13 01:57:44		/highmon clearbar will clear the contents of highmon's bar output
+2015-04-13 01:57:44		/highmon monitor [channel] [server] is used to toggle a highlight monitoring on and off, this can be used in the channel buffer for the channel you wish to toggle, or be given with arguments e.g. /highmon monitor #weechat freenode
+2015-04-13 01:57:44		/set plugins.var.perl.highmon.alignment
+2015-04-13 01:57:44		 The config setting "alignment" can be changed to;
+2015-04-13 01:57:44		 "channel", "schannel", "nchannel", "channel,nick", "schannel,nick", "nchannel,nick"
+2015-04-13 01:57:44		 to change how the monitor appears
+2015-04-13 01:57:44		 The 'channel'  value will show: "#weechat"
+2015-04-13 01:57:44		 The 'schannel' value will show: "6"
+2015-04-13 01:57:44		 The 'nchannel' value will show: "6:#weechat"
+2015-04-13 01:57:44		/set plugins.var.perl.highmon.short_names
+2015-04-13 01:57:44		 Setting this to 'on' will trim the network name from highmon, ala buffers.pl
+2015-04-13 01:57:44		/set plugins.var.perl.highmon.merge_private
+2015-04-13 01:57:44		 Setting this to 'on' will merge private messages to highmon's display
+2015-04-13 01:57:44		/set plugins.var.perl.highmon.color_buf
+2015-04-13 01:57:44		 This turns colored buffer names on or off, you can also set a single fixed color by using a weechat color name.
+2015-04-13 01:57:44		 This must be a valid color name, or weechat will likely do unexpected things :)
+2015-04-13 01:57:44		/set plugins.var.perl.highmon.hotlist_show
+2015-04-13 01:57:44		Setting this to 'on' will let the highmon buffer appear in hotlists (status bar/buffer.pl)
+2015-04-13 01:57:44		/set plugins.var.perl.highmon.away_only
+2015-04-13 01:57:44		Setting this to 'on' will only put messages in the highmon buffer when you set your status to away
+2015-04-13 01:57:44		/set plugins.var.perl.highmon.logging
+2015-04-13 01:57:44		 Toggles logging status for highmon buffer (default: off)
+2015-04-13 01:57:44		/set plugins.var.perl.highmon.output
+2015-04-13 01:57:44		 Changes where output method of highmon; takes either "bar" or "buffer" (default; buffer)
+2015-04-13 01:57:44		/set plugins.var.perl.highmon.bar_lines
+2015-04-13 01:57:44		 Changes the amount of lines the output bar will hold.
+2015-04-13 01:57:44		 (Only appears once output has been set to bar, defaults to 10)
+2015-04-13 01:57:44		/set plugins.var.perl.highmon.bar_scrolldown
+2015-04-13 01:57:44		 Toggles the bar scrolling at the bottom when new highlights are received
+2015-04-13 01:57:44		 (Only appears once output has been set to bar, defaults to off)
+2015-04-13 01:57:44		/set plugins.var.perl.highmon.nick_prefix
+2015-04-13 01:57:44		/set plugins.var.perl.highmon.nick_suffix
+2015-04-13 01:57:44		 Sets the prefix and suffix chars in the highmon buffer
+2015-04-13 01:57:44		 (Defaults to <> if nothing set, and blank if there is)
+2015-04-13 01:57:44		servername.#channel
+2015-04-13 01:57:44		 servername is the internal name for the server (set when you use /server add)
+2015-04-13 01:57:44		 #channel is the channel name, (where # is whatever channel type that channel happens to be)
+2015-04-13 01:57:44		Optional, set up tweaks; Hide the status and input lines on highmon
+2015-04-13 01:57:44		/set weechat.bar.status.conditions "${window.buffer.full_name} != perl.highmon"
+2015-04-13 01:57:44		/set weechat.bar.input.conditions "${window.buffer.full_name} != perl.highmon"
+2015-04-13 01:57:55		script: script "highmon.pl" is already installed and up-to-date
+2015-04-13 01:59:37		perl: loading script "/home/aajjbb/.weechat/perl/colorize_lines.pl"
+2015-04-13 01:59:37		perl: registered script "colorize_lines", version 3.3 (colors text in chat area with according nick color, including highlights)
+2015-04-13 02:00:21		script: autoload enabled for script "buffers.pl"
+2015-04-13 02:01:21		script: autoload enabled for script "colorize_lines.pl"
+2015-04-13 02:01:30	=!=	irc: command "part" must be executed on irc buffer (server or channel)
+2015-04-13 02:01:52		No command is running
+2015-04-13 02:02:01		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-13 02:03:00	=!=	Error with command "/layout save" (help on command: /help layout)
+2015-04-13 02:03:12		[core]  /layout  store [<name>] [buffers|windows]
+2015-04-13 02:03:12		                 apply [<name>] [buffers|windows]
+2015-04-13 02:03:12		                 leave
+2015-04-13 02:03:12		                 del [<name>] [buffers|windows]
+2015-04-13 02:03:12		                 rename <name> <new_name>
+2015-04-13 02:03:12		manage buffers/windows layouts
+2015-04-13 02:03:12		  store: store current buffers/windows in a layout
+2015-04-13 02:03:12		  apply: apply stored layout
+2015-04-13 02:03:12		  leave: leave current layout (does not update any layout)
+2015-04-13 02:03:12		    del: delete buffers and/or windows in a stored layout
+2015-04-13 02:03:12		         (if neither "buffers" nor "windows" is given after the name, the layout is deleted)
+2015-04-13 02:03:12		 rename: rename a layout
+2015-04-13 02:03:12		   name: name for stored layout (default is "default")
+2015-04-13 02:03:12		buffers: store/apply only buffers (order of buffers)
+2015-04-13 02:03:12		windows: store/apply only windows (buffer displayed by each window)
+2015-04-13 02:03:12		Without argument, this command displays stored layouts.
+2015-04-13 02:05:58		Layout of windows stored in "default" (current layout: default)
+2015-04-13 02:06:05		Layout of buffers stored in "default" (current layout: default)
+2015-04-13 02:06:07		No command is running
+2015-04-13 02:06:11		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-13 11:40:21		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-13 19:18:15		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-13 20:27:51		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-13 20:56:56		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-13 21:00:32		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-14 23:09:52		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-14 23:09:52		script: 292 scripts for WeeChat 1.1.1
+2015-04-15 23:15:32		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-15 23:15:33		script: 292 scripts for WeeChat 1.1.1
+2015-04-16 23:22:17		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-16 23:22:17		script: 292 scripts for WeeChat 1.1.1
+2015-04-17 10:07:22		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-17 22:02:03		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-22 01:28:14		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-22 01:28:14		script: 292 scripts for WeeChat 1.1.1
+2015-04-22 01:28:44		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-22 10:51:36		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-22 11:50:13		Option changed: irc.server.freenode.autojoin = ""  (default: (undefined))
+2015-04-22 13:09:31		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-22 23:02:06		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-23 10:51:13		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-23 10:51:14	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-04-23 10:52:18		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-23 10:52:26		script: 292 scripts for WeeChat 1.1.1
+2015-04-23 11:54:44		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-23 11:54:50		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-23 23:07:39		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-23 23:26:05		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-23 23:35:16		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-24 01:27:10		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-24 01:35:53		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-24 01:41:05		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-24 10:16:30		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-24 12:21:03		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-24 12:21:04	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-04-24 16:30:52		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-24 16:30:53		script: 292 scripts for WeeChat 1.1.1
+2015-04-24 16:34:29		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-24 17:39:15		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-24 19:27:57		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-24 19:28:39		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-24 23:21:15		irc: server indymedia created
+2015-04-24 23:27:38		irc: server indymedia has been deleted
+2015-04-24 23:30:22		irc: server indymedia created
+2015-04-24 23:43:06		irc: server indymedia has been deleted
+2015-04-25 14:08:19		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-25 14:15:16		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-25 15:51:54		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-25 15:53:27		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-25 16:14:42		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-26 13:31:28		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-26 13:31:29		script: 292 scripts for WeeChat 1.1.1
+2015-04-26 22:22:34		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-26 22:23:26		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-27 01:49:31		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-27 01:49:43		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-27 12:04:02		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-27 19:05:24		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-27 19:05:25	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-04-27 19:06:02		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-27 19:06:05		script: 292 scripts for WeeChat 1.1.1
+2015-04-27 19:59:11		irc: server indymedia created
+2015-04-28 23:15:11		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-28 23:15:12		script: 292 scripts for WeeChat 1.1.1
+2015-04-28 23:30:06		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-29 02:10:30		irc: server indymedia created
+2015-04-29 02:11:44		irc: server indymedia has been deleted
+2015-04-29 02:11:48		irc: server indymedia created
+2015-04-29 02:12:42	=!=	Error: unknown command "/msh" (type /help for help)
+2015-04-29 02:12:54	=!=	Error: unknown command "/msh" (type /help for help)
+2015-04-29 02:13:17	=!=	Error: unknown command "/msh" (type /help for help)
+2015-04-29 02:13:20	=!=	Error: unknown command "/msh" (type /help for help)
+2015-04-29 02:16:08		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-29 02:18:03		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-29 02:18:39		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-29 02:19:10		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-29 10:42:46		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-29 10:43:29		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-29 10:44:08		Option changed: irc.server.indymedia.autoconnect = on  (default: (undefined))
+2015-04-29 10:44:21		Option changed: irc.server.indymedia.autojoin = "#sarava"  (default: (undefined))
+2015-04-29 23:10:21		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-29 23:29:32		Option changed: irc.server.indymedia.autoconnect = on  (default: (undefined))
+2015-04-30 11:42:36		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-30 11:42:37		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-30 11:42:38	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-04-30 11:46:23		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-30 11:46:23	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-04-30 11:47:00		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-04-30 11:47:00	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-05-01 03:09:23		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-01 03:09:24	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-05-01 13:58:35		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-01 13:58:36		script: 292 scripts for WeeChat 1.1.1
+2015-05-01 13:58:42		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-01 19:56:05		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-01 19:56:19		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-01 21:20:19	=!=	Error: unknown command "/get" (type /help for help)
+2015-05-01 21:20:27		[server] (irc.conf)
+2015-05-01 21:20:27		  irc.server.indymedia.autoconnect
+2015-05-01 21:20:27		1 option (matching with "irc.server.indymedia.autoconnect")
+2015-05-01 21:20:37		Option changed: irc.server.indymedia.autoconnect = on  (default: (undefined))
+2015-05-01 21:20:41		Option changed: irc.server.indymedia.autoconnect = on  (default: (undefined))
+2015-05-01 21:20:56		Option changed: irc.server.indymedia.autoreconnect = on  (default: (undefined))
+2015-05-01 21:21:06		Option changed: irc.server.indymedia.autojoin = "#sarava, #brasil"  (default: (undefined))
+2015-05-01 21:21:08	=!=	irc: command "join" must be executed on irc buffer (server or channel)
+2015-05-01 21:33:24		Option changed: irc.server.indymedia.username = "aajjbb"  (default: (undefined))
+2015-05-01 21:33:30		Option changed: irc.server.indymedia.password = "cdvjjj"  (default: (undefined))
+2015-05-01 21:34:09		Option changed: irc.server.indymedia.ssl_dhkey_size = 1024  (default: (undefined))
+2015-05-02 00:53:34		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-02 11:19:53		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-02 11:20:10		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-03 21:33:41		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-03 21:33:42		script: 292 scripts for WeeChat 1.1.1
+2015-05-04 00:15:58		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-04 00:27:36		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-04 13:34:18		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-05 10:15:00		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-05 10:15:01		script: 292 scripts for WeeChat 1.1.1
+2015-05-06 10:36:26		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-06 10:36:26	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-05-06 23:06:35		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-06 23:06:36	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-05-06 23:28:32		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-06 23:28:32		script: 292 scripts for WeeChat 1.1.1
+2015-05-07 11:10:44		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-08 09:58:27		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-08 09:58:28		script: 292 scripts for WeeChat 1.1.1
+2015-05-08 13:51:44		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-08 15:26:30		Proxy "tor" created
+2015-05-08 15:27:04		irc: server freenode-tor created
+2015-05-08 15:27:11		Option changed: irc.server.freenode-tor.proxy = "tor"  (default: (undefined))
+2015-05-08 15:27:31		Option changed: irc.server.freenode-tor.nicks = "aajjbb, aajjbb1, aajjbb2"  (default: (undefined))
+2015-05-08 15:27:41		Option changed: irc.server.freenode-tor.realname = "aajjbb"  (default: (undefined))
+2015-05-08 15:27:53		Option changed: irc.server.freenode-tor.username = "aajjbb"  (default: (undefined))
+2015-05-08 15:28:20	=!=	Error: failed to set option "irc.server.freenode-tor.sasl_mechanism"
+2015-05-08 15:28:33	=!=	Error: failed to set option "irc.server.freenode-tor.sasl_mechanism"
+2015-05-08 15:28:51		Option changed: irc.server.freenode-tor.sasl_mechanism = plain  (default: (undefined))
+2015-05-08 15:29:00		Option changed: irc.server.freenode-tor.sasl_username = "aajjbb"  (default: (undefined))
+2015-05-08 15:29:05		Option changed: irc.server.freenode-tor.sasl_password = "cdvjjjj"  (default: (undefined))
+2015-05-08 15:29:15		Option changed: irc.server.freenode-tor.sasl_password = "cdvjjj"  (default: (undefined))
+2015-05-08 15:30:31	=!=	You can not write text in this buffer
+2015-05-08 15:30:42		Option changed: irc.server.freenode-tor.ssl = on  (default: (undefined))
+2015-05-08 15:30:50	=!=	You can not write text in this buffer
+2015-05-08 15:30:54	=!=	Error: option "irc.server.freenode-tor.dhkey_size" not found
+2015-05-08 15:35:26	=!=	Error: option "irc.server.freenode-tor.dhkey_size" not found
+2015-05-08 15:35:46	=!=	Error: failed to set option "irc.server.freenode-tor.ssl_verify"
+2015-05-08 15:35:54		Option changed: irc.server.freenode-tor.ssl_verify = off  (default: (undefined))
+2015-05-08 15:36:07	=!=	Error: failed to set option "irc.server.freenode-tor.ssl_dhkey_size"
+2015-05-08 15:36:11	=!=	Error: failed to set option "irc.server.freenode-tor.ssl_dhkey_size"
+2015-05-08 15:36:21		Option changed: irc.server.freenode-tor.ssl_dhkey_size = 1024  (default: (undefined))
+2015-05-08 15:36:29		Options saved to sec.conf
+2015-05-08 15:36:29		Options saved to weechat.conf
+2015-05-08 15:36:29		Options saved to plugins.conf
+2015-05-08 15:36:29		Options saved to exec.conf
+2015-05-08 15:36:29		Options saved to charset.conf
+2015-05-08 15:36:29		Options saved to irc.conf
+2015-05-08 15:36:29		Options saved to xfer.conf
+2015-05-08 15:36:29		Options saved to script.conf
+2015-05-08 15:36:29		Options saved to trigger.conf
+2015-05-08 15:36:29		Options saved to relay.conf
+2015-05-08 15:36:29		Options saved to buffers.conf
+2015-05-08 15:36:29		Options saved to iset.conf
+2015-05-08 15:36:29		Options saved to logger.conf
+2015-05-08 15:36:29		Options saved to aspell.conf
+2015-05-08 15:36:29		Options saved to alias.conf
+2015-05-08 19:23:46		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-09 10:46:51		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-09 10:46:52	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-05-09 18:50:07		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-09 18:50:08	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-05-10 00:02:36		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-10 00:02:39		script: 292 scripts for WeeChat 1.1.1
+2015-05-10 11:30:45		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-10 18:43:08		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-10 18:54:12	=!=	irc: command "whois" must be executed on irc buffer (server or channel)
+2015-05-10 21:42:56		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-11 11:28:08		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-11 11:28:08	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-05-11 23:02:24		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-11 23:02:25		script: 292 scripts for WeeChat 1.1.1
+2015-05-12 19:10:26		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-13 10:29:13		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-13 10:29:14		script: 292 scripts for WeeChat 1.1.1
+2015-05-13 19:03:21		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-13 22:31:21		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-13 22:34:49		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-14 01:17:28		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-14 12:25:37		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-14 12:25:39	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-05-14 13:31:03		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-14 13:31:04	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-05-14 22:58:54		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-14 22:58:55		script: 292 scripts for WeeChat 1.1.1
+2015-05-15 10:41:52		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-15 20:41:57		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-16 11:43:13		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-16 11:43:13	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-05-16 20:45:26		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-16 20:45:28	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-05-17 16:35:22		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-17 16:35:23	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-05-17 23:11:33		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-17 23:11:33	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-05-17 23:25:53		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-17 23:25:53	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-05-17 23:34:02		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-17 23:34:04		script: 292 scripts for WeeChat 1.1.1
+2015-05-18 00:28:15		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_9866"
+2015-05-18 00:28:19		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-18 00:28:19		script: 292 scripts for WeeChat 1.2
+2015-05-18 00:28:19		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-18 11:43:48		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1396"
+2015-05-18 11:43:52		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-18 11:43:54		script: 292 scripts for WeeChat 1.2
+2015-05-18 11:43:54		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-18 22:19:27		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1620"
+2015-05-18 22:19:28		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-18 22:19:31		script: 292 scripts for WeeChat 1.2
+2015-05-18 22:19:31		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-18 22:39:06		Scripts loaded:
+2015-05-18 22:39:06		 * ia   buffers.pl 5.0 (Sidebar with list of buffers)
+2015-05-18 22:39:06		   ia   colorize_lines.pl 3.3 (colors text in chat area with according nick color, including highlights)
+2015-05-18 22:39:06		   ia   highmon.pl 2.5 (Highlight Monitor)
+2015-05-18 22:39:06		 * ia N iset.pl 3.6 (Interactive Set for configuration options)
+2015-05-18 22:42:46		perl: unloading script "colorize_lines"
+2015-05-18 22:42:46		perl: script "colorize_lines" unloaded
+2015-05-18 22:42:55		perl: loading script "/home/aajjbb/.weechat/perl/autoload/colorize_lines.pl"
+2015-05-18 22:42:55		perl: registered script "colorize_lines", version 3.3 (colors text in chat area with according nick color, including highlights)
+2015-05-18 22:43:00		perl: unloading script "colorize_lines"
+2015-05-18 22:43:00		perl: script "colorize_lines" unloaded
+2015-05-18 22:43:22		Plugins loaded:
+2015-05-18 22:43:22		  exec: Execution of external commands in WeeChat
+2015-05-18 22:43:22		  charset: Charset conversions
+2015-05-18 22:43:22		  irc: IRC (Internet Relay Chat) protocol
+2015-05-18 22:43:22		  xfer: DCC file transfer and direct chat
+2015-05-18 22:43:22		  script: Scripts manager
+2015-05-18 22:43:22		  trigger: Text replacement and command execution on events triggered by WeeChat/plugins
+2015-05-18 22:43:22		  python: Support of python scripts
+2015-05-18 22:43:22		  relay: Relay WeeChat data to remote application (irc/weechat protocols)
+2015-05-18 22:43:22		  ruby: Support of ruby scripts
+2015-05-18 22:43:22		  tcl: Support of tcl scripts
+2015-05-18 22:43:22		  perl: Support of perl scripts
+2015-05-18 22:43:22		  fifo: FIFO pipe for remote control
+2015-05-18 22:43:22		  logger: Log buffers to files
+2015-05-18 22:43:22		  guile: Support of scheme scripts (with Guile)
+2015-05-18 22:43:22		  aspell: Spell checker for input (with Aspell)
+2015-05-18 22:43:22		  lua: Support of lua scripts
+2015-05-18 22:43:22		  alias: Alias commands
+2015-05-18 22:43:35		perl: loading script "/home/aajjbb/.weechat/perl/autoload/colorize_lines.pl"
+2015-05-18 22:43:35		perl: registered script "colorize_lines", version 3.3 (colors text in chat area with according nick color, including highlights)
+2015-05-18 22:49:12		[var] (plugins.conf)
+2015-05-18 22:49:12		  plugins.var.perl.colorize_lines.blacklist_buffers = ""
+2015-05-18 22:49:12		1 option (matching with "plugins.var.perl.colorize_lines.blacklist_buffers")
+2015-05-19 00:18:49		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-19 00:18:49		script: downloading list of scripts...
+2015-05-19 00:18:49		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-19 00:18:51		script: 292 scripts for WeeChat 1.2
+2015-05-19 12:17:14		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-19 12:17:14		script: 292 scripts for WeeChat 1.2
+2015-05-19 12:17:14		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-19 13:59:21		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1405"
+2015-05-19 13:59:26		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-19 13:59:27		script: 292 scripts for WeeChat 1.2
+2015-05-19 13:59:27		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-20 16:19:14		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1411"
+2015-05-20 16:19:17		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-20 16:19:17		script: downloading list of scripts...
+2015-05-20 16:19:17		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-20 16:19:18	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-05-21 10:12:31		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1363"
+2015-05-21 10:12:35		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-21 10:12:36		script: downloading list of scripts...
+2015-05-21 10:12:36		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-21 10:12:42		script: 292 scripts for WeeChat 1.2
+2015-05-21 19:27:05		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1549"
+2015-05-21 19:27:08		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-21 19:27:08		script: 292 scripts for WeeChat 1.2
+2015-05-21 19:27:08		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-22 10:51:44		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1526"
+2015-05-22 10:51:47		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-22 10:51:47		script: downloading list of scripts...
+2015-05-22 10:51:47		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-22 10:51:50		script: 292 scripts for WeeChat 1.2
+2015-05-22 19:17:47		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1556"
+2015-05-22 19:17:50		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-22 19:17:51		script: 292 scripts for WeeChat 1.2
+2015-05-22 19:17:51		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-22 20:00:14		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1520"
+2015-05-22 20:00:18		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-22 20:00:20		script: 292 scripts for WeeChat 1.2
+2015-05-22 20:00:20		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-22 20:13:53		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1211"
+2015-05-22 20:13:54		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-22 20:13:55		script: 292 scripts for WeeChat 1.2
+2015-05-22 20:13:55		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-23 17:06:44		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1683"
+2015-05-23 17:06:48		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-23 17:06:48		script: downloading list of scripts...
+2015-05-23 17:06:48		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-23 17:06:49	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-05-23 23:04:28		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_18708"
+2015-05-23 23:04:33		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-23 23:04:35		script: 292 scripts for WeeChat 1.2
+2015-05-23 23:04:35		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-23 23:08:22		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1535"
+2015-05-23 23:08:23		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-23 23:08:24		script: 292 scripts for WeeChat 1.2
+2015-05-23 23:08:24		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-24 12:32:39		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1410"
+2015-05-24 12:32:42		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-24 12:32:42		script: 292 scripts for WeeChat 1.2
+2015-05-24 12:32:42		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-25 10:17:28		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_989"
+2015-05-25 10:17:31		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-25 10:17:31		script: downloading list of scripts...
+2015-05-25 10:17:31		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-25 10:17:32	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-05-25 10:58:37		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_949"
+2015-05-25 10:58:40		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-25 10:58:41		script: downloading list of scripts...
+2015-05-25 10:58:41		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-25 10:58:42	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-05-25 11:09:31		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-25 11:09:31		script: downloading list of scripts...
+2015-05-25 11:09:31		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-25 11:09:33		script: 292 scripts for WeeChat 1.2
+2015-05-25 11:11:41		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-25 11:11:41		script: 292 scripts for WeeChat 1.2
+2015-05-25 11:11:41		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-25 11:26:49		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-25 11:26:49		script: 292 scripts for WeeChat 1.2
+2015-05-25 11:26:49		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-25 22:44:17		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_29617"
+2015-05-25 22:44:33		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-25 22:44:36		script: 292 scripts for WeeChat 1.2
+2015-05-25 22:44:36		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-26 11:22:52		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1487"
+2015-05-26 11:22:57		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-26 11:22:58		script: downloading list of scripts...
+2015-05-26 11:22:58		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-26 11:23:00		script: 292 scripts for WeeChat 1.2
+2015-05-26 23:17:31		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1528"
+2015-05-26 23:17:34		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-26 23:17:34		script: 292 scripts for WeeChat 1.2
+2015-05-26 23:17:34		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-26 23:27:13		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_977"
+2015-05-26 23:27:15		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-26 23:27:17		script: 292 scripts for WeeChat 1.2
+2015-05-26 23:27:17		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-27 23:12:25		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_979"
+2015-05-27 23:12:28		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-27 23:12:28		script: downloading list of scripts...
+2015-05-27 23:12:28		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-27 23:12:30	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-05-28 11:35:47		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_925"
+2015-05-28 11:35:50		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-28 11:35:50		script: downloading list of scripts...
+2015-05-28 11:35:50		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-28 11:35:54		script: 292 scripts for WeeChat 1.2
+2015-05-28 22:46:13		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_979"
+2015-05-28 22:46:16		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-28 22:46:17		script: 292 scripts for WeeChat 1.2
+2015-05-28 22:46:17		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-28 23:44:11		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1383"
+2015-05-28 23:44:15		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-28 23:44:16		script: 292 scripts for WeeChat 1.2
+2015-05-28 23:44:16		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-29 19:11:43		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_908"
+2015-05-29 19:11:45		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-29 19:11:46		script: downloading list of scripts...
+2015-05-29 19:11:46		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-29 19:11:46	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-05-29 19:15:24		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1385"
+2015-05-29 19:15:25		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-29 19:15:27		script: downloading list of scripts...
+2015-05-29 19:15:27		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-29 19:15:29	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-05-29 19:26:58		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_941"
+2015-05-29 19:27:00		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-29 19:27:01		script: downloading list of scripts...
+2015-05-29 19:27:01		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-29 19:27:03	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-05-31 02:06:23		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1049"
+2015-05-31 02:06:24		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-31 02:06:25		script: downloading list of scripts...
+2015-05-31 02:06:25		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-31 02:06:25	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-05-31 12:33:04		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1384"
+2015-05-31 12:33:07		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-05-31 12:33:08		script: downloading list of scripts...
+2015-05-31 12:33:08		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-05-31 12:33:11		script: 292 scripts for WeeChat 1.2
+2015-06-01 10:35:59		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1563"
+2015-06-01 10:36:01		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-01 10:36:02		script: 292 scripts for WeeChat 1.2
+2015-06-01 10:36:02		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-01 19:03:44		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1973"
+2015-06-01 19:03:46		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-01 19:03:47		script: downloading list of scripts...
+2015-06-01 19:03:47		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-01 19:03:50		script: 292 scripts for WeeChat 1.2
+2015-06-02 12:23:25		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1533"
+2015-06-02 12:23:29		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-02 12:23:30		script: 292 scripts for WeeChat 1.2
+2015-06-02 12:23:30		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-02 22:59:00		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1537"
+2015-06-02 22:59:06		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-02 22:59:06		script: downloading list of scripts...
+2015-06-02 22:59:06		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-02 22:59:07	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-06-02 23:06:33		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_975"
+2015-06-02 23:06:35		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-02 23:06:35		script: downloading list of scripts...
+2015-06-02 23:06:35		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-02 23:06:38		script: 292 scripts for WeeChat 1.2
+2015-06-03 22:57:08		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1021"
+2015-06-03 22:57:12		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-03 22:57:14		script: 292 scripts for WeeChat 1.2
+2015-06-03 22:57:14		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-03 23:06:06		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_980"
+2015-06-03 23:06:07		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-03 23:06:08		script: 292 scripts for WeeChat 1.2
+2015-06-03 23:06:08		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-04 12:39:37		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_983"
+2015-06-04 12:39:39		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-04 12:39:39		script: downloading list of scripts...
+2015-06-04 12:39:39		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-04 12:39:41	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-06-04 13:28:29		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1333"
+2015-06-04 13:28:35		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-04 13:28:37		script: downloading list of scripts...
+2015-06-04 13:28:37		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-04 13:28:41		script: 292 scripts for WeeChat 1.2
+2015-06-04 15:01:35		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1021"
+2015-06-04 15:01:38		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-04 15:01:39		script: 292 scripts for WeeChat 1.2
+2015-06-04 15:01:39		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-04 16:46:53		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_930"
+2015-06-04 16:46:56		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-04 16:46:56		script: 292 scripts for WeeChat 1.2
+2015-06-04 16:46:56		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-04 18:48:53		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_910"
+2015-06-04 18:48:56		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-04 18:48:56		script: 292 scripts for WeeChat 1.2
+2015-06-04 18:48:56		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-04 18:54:27		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1383"
+2015-06-04 18:54:29		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-04 18:54:29		script: 292 scripts for WeeChat 1.2
+2015-06-04 18:54:29		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-05 13:02:25		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1385"
+2015-06-05 13:02:29		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-05 13:02:30		script: 292 scripts for WeeChat 1.2
+2015-06-05 13:02:30		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-05 23:37:15		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1892"
+2015-06-05 23:37:18		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-05 23:37:19		script: downloading list of scripts...
+2015-06-05 23:37:19		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-05 23:37:19	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-06-06 00:06:57		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-06 00:06:57		script: downloading list of scripts...
+2015-06-06 00:06:57		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-06 00:07:11		script: 292 scripts for WeeChat 1.2
+2015-06-06 01:47:05		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1116"
+2015-06-06 01:47:06		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-06 01:47:08		script: 292 scripts for WeeChat 1.2
+2015-06-06 01:47:08		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-06 22:11:07		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_926"
+2015-06-06 22:11:10		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-06 22:11:10		script: 292 scripts for WeeChat 1.2
+2015-06-06 22:11:10		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-07 11:56:48		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1387"
+2015-06-07 11:56:52		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-07 11:56:53		script: downloading list of scripts...
+2015-06-07 11:56:53		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-07 11:56:54	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-06-07 17:06:33		irc: server ircnet created
+2015-06-07 17:07:05		irc: server ircnet has been deleted
+2015-06-07 17:14:32		irc: server ircnet created
+2015-06-07 17:15:03		irc: server ircnet has been deleted
+2015-06-07 17:15:16		irc: server ircnet created
+2015-06-08 10:37:04		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1458"
+2015-06-08 10:37:09		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-08 10:37:10		script: downloading list of scripts...
+2015-06-08 10:37:10		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-08 10:37:11	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-06-09 09:10:17		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1419"
+2015-06-09 09:10:22		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-09 09:10:23		script: downloading list of scripts...
+2015-06-09 09:10:23		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-09 09:10:24	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-06-09 09:18:05		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_952"
+2015-06-09 09:18:08		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-09 09:18:08		script: downloading list of scripts...
+2015-06-09 09:18:08		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-09 09:18:09	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-06-09 23:15:28		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1394"
+2015-06-09 23:15:36		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-09 23:15:39		script: downloading list of scripts...
+2015-06-09 23:15:39		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-09 23:15:42		script: 292 scripts for WeeChat 1.2
+2015-06-10 23:03:07		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_975"
+2015-06-10 23:03:10		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-10 23:03:10		script: 292 scripts for WeeChat 1.2
+2015-06-10 23:03:10		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-11 23:06:17		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1396"
+2015-06-11 23:06:23		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-11 23:06:25		script: downloading list of scripts...
+2015-06-11 23:06:25		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-11 23:06:29		script: 292 scripts for WeeChat 1.2
+2015-06-17 21:59:46		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-17 21:59:46		script: downloading list of scripts...
+2015-06-17 21:59:46		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-17 21:59:48		script: 299 scripts for WeeChat 1.2
+2015-06-19 12:01:46		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_18338"
+2015-06-19 12:01:49		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-19 12:01:49		script: downloading list of scripts...
+2015-06-19 12:01:49		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-19 12:01:50	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-06-20 22:23:18		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_2009"
+2015-06-20 22:23:24		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-20 22:23:24		script: downloading list of scripts...
+2015-06-20 22:23:24		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-20 22:23:25	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-06-20 22:31:10		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1052"
+2015-06-20 22:31:16		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-20 22:31:17		script: downloading list of scripts...
+2015-06-20 22:31:17		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-20 22:31:23		script: 299 scripts for WeeChat 1.2
+2015-06-23 00:12:29		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1413"
+2015-06-23 00:12:32		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-23 00:12:32		script: downloading list of scripts...
+2015-06-23 00:12:32		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-23 00:12:33	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-06-23 00:17:27		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1448"
+2015-06-23 00:17:31		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-23 00:17:32		script: downloading list of scripts...
+2015-06-23 00:17:32		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-23 00:17:35		script: 299 scripts for WeeChat 1.2
+2015-06-23 19:11:24		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1465"
+2015-06-23 19:11:26		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-23 19:11:27		script: 299 scripts for WeeChat 1.2
+2015-06-23 19:11:27		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-23 19:14:37		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-23 19:14:37		script: 299 scripts for WeeChat 1.2
+2015-06-23 19:14:37		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-24 02:46:28		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1383"
+2015-06-24 02:46:33		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-24 02:46:35		script: downloading list of scripts...
+2015-06-24 02:46:35		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-24 02:46:39		script: 299 scripts for WeeChat 1.2
+2015-06-24 22:45:27		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1368"
+2015-06-24 22:45:33		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-24 22:45:33		script: 299 scripts for WeeChat 1.2
+2015-06-24 22:45:33		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-26 13:07:32		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1473"
+2015-06-26 13:07:35		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-26 13:07:35		script: downloading list of scripts...
+2015-06-26 13:07:35		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-26 13:07:36	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-06-26 19:36:43		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-26 19:36:43		script: downloading list of scripts...
+2015-06-26 19:36:43		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-26 19:36:53		script: 299 scripts for WeeChat 1.2
+2015-06-26 19:40:14		Option changed: irc.server.freenode.sasl_mechanism = dh-blowfish  (default: (undefined))
+2015-06-26 19:40:32		Option changed: irc.server.indymedia.sasl_mechanism = dh-blowfish  (default: (undefined))
+2015-06-26 19:40:52		Option changed: irc.server_default.sasl_mechanism = dh-blowfish  (default: plain)
+2015-06-26 19:40:53	=!=	You can not write text in this buffer
+2015-06-26 19:40:59		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-26 19:40:59		script: 299 scripts for WeeChat 1.2
+2015-06-26 19:40:59		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-26 19:42:00		irc: server freenode-tor has been deleted
+2015-06-26 19:42:03	=!=	You can not write text in this buffer
+2015-06-26 20:38:43		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-26 20:38:43		script: 299 scripts for WeeChat 1.2
+2015-06-26 20:38:43		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-26 20:39:57		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-26 20:39:57		script: 299 scripts for WeeChat 1.2
+2015-06-26 20:39:57		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-28 14:32:52		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-28 14:32:54		script: downloading list of scripts...
+2015-06-28 14:32:54		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-28 14:32:57		script: 299 scripts for WeeChat 1.2
+2015-06-28 14:38:46		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-28 14:38:46		script: 299 scripts for WeeChat 1.2
+2015-06-28 14:38:46		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-28 14:40:57		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-28 14:40:57		script: 299 scripts for WeeChat 1.2
+2015-06-28 14:40:57		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer

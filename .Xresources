@@ -1,0 +1,66 @@
+!Xft.dpi: 96
+!Xft.antialias: true
+!Xft.hinting: true
+!Xft.rgba: rgb
+!Xft.autohint: false
+!Xft.hintstyle: hintslight
+!Xft.lcdfilter: lcddefault
+
+!xterm configs
+xterm*utf8: 1
+xterm*termName: xterm-256color
+xterm*locale: true
+	
+!fix clipboard issue
+
+xterm*selectToClipboard: true
+xterm*VT100.*translations:      #override \
+        Shift Ctrl C: select-end(CLIPBOARD, CUT_BUFFER0) \n\
+        Shift Ctrl V: insert-selection(CLIPBOARD, CUT_BUFFER0)
+			
+xterm*saveLines: 9000
+
+xterm.scrollBar: false
+xterm.borderLess: false
+
+xterm*loginShell:         true
+xterm*scrollBar:         false
+xterm*secondaryScroll:    true
+
+xterm.iso14755: False 
+
+xterm*faceNameDoublesize: xft:vlgothic :style=Regular :pixelsize=12
+xterm*font: MesloLGM :pixelsize=13:antialias=true:hinting=true
+xterm*boldFont: MesloLGM :bold:pixelsize=12:antialias=true:hinting=true
+xterm*faceName: MesloLGM :pixelsize=12:antialias=true:hinting=true
+	
+!general settings
+
+*.background:               #1b1b1b
+*.foreground:               #FFFFFF
+	
+!special
+!Black
+*color0:                        #3D3D3D
+*color8:                        #4D4D4D 
+!Red
+*color1:                        #6673BF
+*color9:                        #899AFF 
+!Green
+*color2:                        #3EA290
+*color10:                       #52AD91
+!Yellow
+*color3:                        #B0EAD9
+*color11:                       #98C9BB
+!Blue
+*color4:                        #31658C
+*color12:                       #477AB3
+!Magenta
+*color5:                        #596196
+*color13:                       #7882BF
+!Cyan
+*color6:                        #8292B2
+*color14:                       #95A7CC
+!White
+*color7:                        #C8CACC
+*color15:                       #EDEFF2      
