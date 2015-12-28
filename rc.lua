@@ -23,6 +23,8 @@ local lain      = require("lain")
 local rev       = require("awesome-revelation")
 local xrandr    = require("xrandr")
 
+local lain_icons_dir = require("lain.helpers").icons_dir
+
 require("awful.autofocus")
 awful.rules     = require("awful.rules")
 
@@ -176,6 +178,30 @@ mymainmenu = awful.menu.new({ items = {
 },
 							  theme = { height = 16, width = 150 }})
 -- }}}
+
+-- Widgets
+
+-- Redshift
+
+local rs_on = lain_icons_dir .. "/redshift/redshift_on.png"
+local rs_off = lain_icons_dir .. "/redshift/redshift_off.png"
+
+redshift = lain.widgets.contrib.redshift
+redshift_widget = wibox.widget.imagebox(rs_on)
+
+redshift:attach(
+   redshift_widget,
+   function ()
+	  if redshift:is_active() then
+		 redshift_widget:set_image(rs_on)
+	  else
+		 redshift_widget:set_image(rs_off)
+	  end 
+   end 
+)
+
+redshift_widget:buttons(awful.util.table.join(
+						   awful.button({ }, 1, function () redshift:toggle() end)))
 
 
 
@@ -439,6 +465,7 @@ for s = 1, screen.count() do
 
    -- Widgets that are aligned to the upper right
    local right_layout = wibox.layout.fixed.horizontal()
+   right_layout:add(redshift_widget)
    right_layout:add(mpdicon)
    right_layout:add(mpdwidget)
    -- right_layout:add(cmuswidget)
