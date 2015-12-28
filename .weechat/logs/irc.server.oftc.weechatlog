@@ -20235,3 +20235,423 @@
 2015-06-29 18:59:51	--	-         The OFTC team
 2015-06-29 18:59:51	--	End of /MOTD command.
 2015-06-29 18:59:51	--	User mode [+i] by aajjbb
+2015-06-29 21:01:42	--	irc: connecting to server irc.oftc.net/6667...
+2015-06-29 21:01:43	--	irc: connected to irc.oftc.net/6667 (109.169.7.194)
+2015-06-29 21:01:43	--	kinetic.oftc.net: *** Looking up your hostname...
+2015-06-29 21:01:43	--	kinetic.oftc.net: *** Checking Ident
+2015-06-29 21:01:43	--	kinetic.oftc.net: *** Couldn't look up your hostname
+2015-06-29 21:01:53	--	kinetic.oftc.net: *** No Ident response
+2015-06-29 21:01:53	--	Welcome to the OFTC Internet Relay Chat Network aajjbb
+2015-06-29 21:01:53	--	Your host is kinetic.oftc.net[109.169.7.194/6667], running version hybrid-7.2.2+oftc1.6.17
+2015-06-29 21:01:53	--	This server was created Mar 19 2015 at 11:20:52
+2015-06-29 21:01:53	--	kinetic.oftc.net hybrid-7.2.2+oftc1.6.17 CDGPRSabcdfgiklnorsuwxyz biklmnopstveI bkloveI
+2015-06-29 21:01:53	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=390 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2015-06-29 21:01:53	--	CHANLIMIT=#:70 CHANNELLEN=50 CHANMODES=eIqb,k,l,imnpstMRS KNOCK AWAYLEN=160 ELIST=CMNTU SAFELIST EXCEPTS=e INVEX=I :are supported by this server
+2015-06-29 21:01:53	--	0SGAABVV8 :your unique ID
+2015-06-29 21:01:53	--	There are 35 users and 10285 invisible on 20 servers
+2015-06-29 21:01:53	--	21 :IRC Operators online
+2015-06-29 21:01:53	--	5 :unknown connection(s)
+2015-06-29 21:01:53	--	2326 :channels formed
+2015-06-29 21:01:53	--	I have 1796 clients and 1 servers
+2015-06-29 21:01:53	--	Current local users: 1796  Max: 1917
+2015-06-29 21:01:53	--	Current global users: 10320  Max: 11558
+2015-06-29 21:01:53	--	Highest connection count: 1918 (1917 clients) (74663 connections received)
+2015-06-29 21:01:53	--	- kinetic.oftc.net Message of the Day -
+2015-06-29 21:01:53	--	-   O
+2015-06-29 21:01:53	--	-    \   The Open and Free
+2015-06-29 21:01:53	--	-     O
+2015-06-29 21:01:53	--	-    /|  Technology Community
+2015-06-29 21:01:53	--	- O-O O
+2015-06-29 21:01:53	--	-
+2015-06-29 21:01:53	--	- Welcome to OFTC's IRC network.
+2015-06-29 21:01:53	--	-
+2015-06-29 21:01:53	--	- The Open and Free Technology Community was founded at the
+2015-06-29 21:01:53	--	- end of 2001 by a group of experienced members of the Open
+2015-06-29 21:01:53	--	- Source and Free Software communities; it is aimed at
+2015-06-29 21:01:53	--	- providing these communities with better communication,
+2015-06-29 21:01:53	--	- development, and support infrastructure. Our goal is to
+2015-06-29 21:01:53	--	- provide stable services to members of the community in any
+2015-06-29 21:01:53	--	- part of the world, while listening closely to their needs
+2015-06-29 21:01:53	--	- and desires.
+2015-06-29 21:01:53	--	-
+2015-06-29 21:01:53	--	- We are not a general purpose chat platform, but a topical
+2015-06-29 21:01:53	--	- network intent on providing the open source and free
+2015-06-29 21:01:53	--	- software communities a means to cooperate and communicate.
+2015-06-29 21:01:53	--	- As such, illegal and off-topic activity, such as warez
+2015-06-29 21:01:53	--	- trading, may result in being barred from access.
+2015-06-29 21:01:53	--	-
+2015-06-29 21:01:53	--	- For more information on OFTC, please visit http://www.oftc.net/.
+2015-06-29 21:01:53	--	-
+2015-06-29 21:01:53	--	- If you require assistance stop by in channel #oftc, or email
+2015-06-29 21:01:53	--	- support@oftc.net with details.
+2015-06-29 21:01:53	--	-
+2015-06-29 21:01:53	--	- Thanks and enjoy your stay,
+2015-06-29 21:01:53	--	-
+2015-06-29 21:01:53	--	-         The OFTC team
+2015-06-29 21:01:53	--	End of /MOTD command.
+2015-06-29 21:01:53	--	User mode [+i] by aajjbb
+2015-06-30 11:26:45	=!=	irc: reading data on socket: error 110 Connection timed out
+2015-06-30 11:26:45	--	irc: disconnecting from server...
+2015-06-30 11:26:45	--	irc: disconnected from server
+2015-06-30 11:26:45	--	irc: reconnecting to server in 10 seconds
+2015-06-30 11:26:55	--	irc: reconnecting to server...
+2015-06-30 11:26:55	--	irc: connecting to server irc.oftc.net/6667...
+2015-06-30 11:26:56	--	irc: connected to irc.oftc.net/6667 (130.239.18.116)
+2015-06-30 11:26:56	--	helix.oftc.net: *** Looking up your hostname...
+2015-06-30 11:26:56	--	helix.oftc.net: *** Checking Ident
+2015-06-30 11:26:56	--	helix.oftc.net: *** Couldn't look up your hostname
+2015-06-30 11:27:06	--	helix.oftc.net: *** No Ident response
+2015-06-30 11:27:06	--	Welcome to the OFTC Internet Relay Chat Network aajjbb
+2015-06-30 11:27:06	--	Your host is helix.oftc.net[130.239.18.116/6667], running version hybrid-7.2.2+oftc1.6.17
+2015-06-30 11:27:06	--	This server was created Apr 10 2015 at 14:22:51
+2015-06-30 11:27:06	--	helix.oftc.net hybrid-7.2.2+oftc1.6.17 CDGPRSabcdfgiklnorsuwxyz biklmnopstveI bkloveI
+2015-06-30 11:27:06	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=390 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2015-06-30 11:27:06	--	CHANLIMIT=#:70 CHANNELLEN=50 CHANMODES=eIqb,k,l,imnpstMRS AWAYLEN=160 KNOCK ELIST=CMNTU SAFELIST EXCEPTS=e INVEX=I :are supported by this server
+2015-06-30 11:27:06	--	3DDAABUEL :your unique ID
+2015-06-30 11:27:06	--	There are 35 users and 10811 invisible on 20 servers
+2015-06-30 11:27:06	--	21 :IRC Operators online
+2015-06-30 11:27:06	--	10 :unknown connection(s)
+2015-06-30 11:27:06	--	2336 :channels formed
+2015-06-30 11:27:06	--	I have 1065 clients and 1 servers
+2015-06-30 11:27:06	--	Current local users: 1065  Max: 1339
+2015-06-30 11:27:06	--	Current global users: 10846  Max: 11283
+2015-06-30 11:27:06	--	Highest connection count: 1340 (1339 clients) (72732 connections received)
+2015-06-30 11:27:06	--	- helix.oftc.net Message of the Day -
+2015-06-30 11:27:06	--	-   O
+2015-06-30 11:27:06	--	-    \   The Open and Free
+2015-06-30 11:27:06	--	-     O
+2015-06-30 11:27:06	--	-    /|  Technology Community
+2015-06-30 11:27:06	--	- O-O O
+2015-06-30 11:27:06	--	-
+2015-06-30 11:27:06	--	- Welcome to OFTC's IRC network.
+2015-06-30 11:27:06	--	-
+2015-06-30 11:27:06	--	- The Open and Free Technology Community was founded at the
+2015-06-30 11:27:06	--	- end of 2001 by a group of experienced members of the Open
+2015-06-30 11:27:06	--	- Source and Free Software communities; it is aimed at
+2015-06-30 11:27:06	--	- providing these communities with better communication,
+2015-06-30 11:27:06	--	- development, and support infrastructure. Our goal is to
+2015-06-30 11:27:06	--	- provide stable services to members of the community in any
+2015-06-30 11:27:06	--	- part of the world, while listening closely to their needs
+2015-06-30 11:27:06	--	- and desires.
+2015-06-30 11:27:06	--	-
+2015-06-30 11:27:06	--	- We are not a general purpose chat platform, but a topical
+2015-06-30 11:27:06	--	- network intent on providing the open source and free
+2015-06-30 11:27:06	--	- software communities a means to cooperate and communicate.
+2015-06-30 11:27:06	--	- As such, illegal and off-topic activity, such as warez
+2015-06-30 11:27:06	--	- trading, may result in being barred from access.
+2015-06-30 11:27:06	--	-
+2015-06-30 11:27:06	--	- For more information on OFTC, please visit http://www.oftc.net/.
+2015-06-30 11:27:06	--	-
+2015-06-30 11:27:06	--	- If you require assistance stop by in channel #oftc, or email
+2015-06-30 11:27:06	--	- support@oftc.net with details.
+2015-06-30 11:27:06	--	-
+2015-06-30 11:27:06	--	- Thanks and enjoy your stay,
+2015-06-30 11:27:06	--	-
+2015-06-30 11:27:06	--	-         The OFTC team
+2015-06-30 11:27:06	--	End of /MOTD command.
+2015-06-30 11:27:06	--	User mode [+i] by aajjbb
+2015-06-30 19:37:04	=!=	irc: reading data on socket: error 110 Connection timed out
+2015-06-30 19:37:04	--	irc: disconnecting from server...
+2015-06-30 19:37:04	--	irc: disconnected from server
+2015-06-30 19:37:04	--	irc: reconnecting to server in 10 seconds
+2015-06-30 19:37:14	--	irc: reconnecting to server...
+2015-06-30 19:37:14	--	irc: connecting to server irc.oftc.net/6667...
+2015-06-30 19:37:15	--	irc: connected to irc.oftc.net/6667 (140.211.166.64)
+2015-06-30 19:37:15	--	larich.oftc.net: *** Looking up your hostname...
+2015-06-30 19:37:15	--	larich.oftc.net: *** Checking Ident
+2015-06-30 19:37:16	--	larich.oftc.net: *** Couldn't look up your hostname
+2015-06-30 19:37:25	--	larich.oftc.net: *** No Ident response
+2015-06-30 19:37:25	--	Welcome to the OFTC Internet Relay Chat Network aajjbb
+2015-06-30 19:37:25	--	Your host is larich.oftc.net[140.211.166.64/6667], running version hybrid-7.2.2+oftc1.6.17
+2015-06-30 19:37:25	--	This server was created Mar 19 2015 at 11:15:27
+2015-06-30 19:37:25	--	larich.oftc.net hybrid-7.2.2+oftc1.6.17 CDGPRSabcdfgiklnorsuwxyz biklmnopstveI bkloveI
+2015-06-30 19:37:25	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=390 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2015-06-30 19:37:25	--	CHANLIMIT=#:70 CHANNELLEN=50 CHANMODES=eIqb,k,l,imnpstMRS AWAYLEN=160 KNOCK ELIST=CMNTU SAFELIST EXCEPTS=e INVEX=I :are supported by this server
+2015-06-30 19:37:25	--	5NZAAEJW9 :your unique ID
+2015-06-30 19:37:25	--	There are 30 users and 10408 invisible on 20 servers
+2015-06-30 19:37:25	--	22 :IRC Operators online
+2015-06-30 19:37:25	--	13 :unknown connection(s)
+2015-06-30 19:37:25	--	2323 :channels formed
+2015-06-30 19:37:25	--	I have 1707 clients and 1 servers
+2015-06-30 19:37:25	--	Current local users: 1707  Max: 1808
+2015-06-30 19:37:25	--	Current global users: 10438  Max: 11558
+2015-06-30 19:37:25	--	Highest connection count: 1809 (1808 clients) (199116 connections received)
+2015-06-30 19:37:25	--	- larich.oftc.net Message of the Day -
+2015-06-30 19:37:25	--	-   O
+2015-06-30 19:37:25	--	-    \   The Open and Free
+2015-06-30 19:37:25	--	-     O
+2015-06-30 19:37:25	--	-    /|  Technology Community
+2015-06-30 19:37:25	--	- O-O O
+2015-06-30 19:37:25	--	-
+2015-06-30 19:37:25	--	- Welcome to OFTC's IRC network.
+2015-06-30 19:37:25	--	-
+2015-06-30 19:37:25	--	- The Open and Free Technology Community was founded at the
+2015-06-30 19:37:25	--	- end of 2001 by a group of experienced members of the Open
+2015-06-30 19:37:25	--	- Source and Free Software communities; it is aimed at
+2015-06-30 19:37:25	--	- providing these communities with better communication,
+2015-06-30 19:37:25	--	- development, and support infrastructure. Our goal is to
+2015-06-30 19:37:25	--	- provide stable services to members of the community in any
+2015-06-30 19:37:25	--	- part of the world, while listening closely to their needs
+2015-06-30 19:37:25	--	- and desires.
+2015-06-30 19:37:25	--	-
+2015-06-30 19:37:25	--	- We are not a general purpose chat platform, but a topical
+2015-06-30 19:37:25	--	- network intent on providing the open source and free
+2015-06-30 19:37:25	--	- software communities a means to cooperate and communicate.
+2015-06-30 19:37:25	--	- As such, illegal and off-topic activity, such as warez
+2015-06-30 19:37:25	--	- trading, may result in being barred from access.
+2015-06-30 19:37:25	--	-
+2015-06-30 19:37:25	--	- For more information on OFTC, please visit http://www.oftc.net/.
+2015-06-30 19:37:25	--	-
+2015-06-30 19:37:25	--	- If you require assistance stop by in channel #oftc, or email
+2015-06-30 19:37:25	--	- support@oftc.net with details.
+2015-06-30 19:37:25	--	-
+2015-06-30 19:37:25	--	- Thanks and enjoy your stay,
+2015-06-30 19:37:25	--	-
+2015-06-30 19:37:25	--	-         The OFTC team
+2015-06-30 19:37:25	--	End of /MOTD command.
+2015-06-30 19:37:25	--	User mode [+i] by aajjbb
+2015-06-30 22:45:48	--	irc: connecting to server irc.oftc.net/6667...
+2015-06-30 22:45:49	--	irc: connected to irc.oftc.net/6667 (109.169.7.194)
+2015-06-30 22:45:49	--	kinetic.oftc.net: *** Looking up your hostname...
+2015-06-30 22:45:49	--	kinetic.oftc.net: *** Checking Ident
+2015-06-30 22:45:50	--	kinetic.oftc.net: *** Couldn't look up your hostname
+2015-06-30 22:46:00	--	kinetic.oftc.net: *** No Ident response
+2015-06-30 22:46:00	--	irc: nickname "aajjbb" is already in use, trying nickname "aajjbb1"
+2015-06-30 22:46:00	--	Welcome to the OFTC Internet Relay Chat Network aajjbb1
+2015-06-30 22:46:00	--	Your host is kinetic.oftc.net[109.169.7.194/6667], running version hybrid-7.2.2+oftc1.6.17
+2015-06-30 22:46:00	--	This server was created Mar 19 2015 at 11:20:52
+2015-06-30 22:46:00	--	kinetic.oftc.net hybrid-7.2.2+oftc1.6.17 CDGPRSabcdfgiklnorsuwxyz biklmnopstveI bkloveI
+2015-06-30 22:46:00	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=390 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2015-06-30 22:46:00	--	CHANLIMIT=#:70 CHANNELLEN=50 CHANMODES=eIqb,k,l,imnpstMRS KNOCK AWAYLEN=160 ELIST=CMNTU SAFELIST EXCEPTS=e INVEX=I :are supported by this server
+2015-06-30 22:46:00	--	0SGAABXFX :your unique ID
+2015-06-30 22:46:00	--	There are 34 users and 10152 invisible on 20 servers
+2015-06-30 22:46:00	--	22 :IRC Operators online
+2015-06-30 22:46:00	--	5 :unknown connection(s)
+2015-06-30 22:46:00	--	2308 :channels formed
+2015-06-30 22:46:00	--	I have 1773 clients and 1 servers
+2015-06-30 22:46:00	--	Current local users: 1773  Max: 1947
+2015-06-30 22:46:00	--	Current global users: 10186  Max: 11558
+2015-06-30 22:46:00	--	Highest connection count: 1948 (1947 clients) (76668 connections received)
+2015-06-30 22:46:00	--	- kinetic.oftc.net Message of the Day -
+2015-06-30 22:46:00	--	-   O
+2015-06-30 22:46:00	--	-    \   The Open and Free
+2015-06-30 22:46:00	--	-     O
+2015-06-30 22:46:00	--	-    /|  Technology Community
+2015-06-30 22:46:00	--	- O-O O
+2015-06-30 22:46:00	--	-
+2015-06-30 22:46:00	--	- Welcome to OFTC's IRC network.
+2015-06-30 22:46:00	--	-
+2015-06-30 22:46:00	--	- The Open and Free Technology Community was founded at the
+2015-06-30 22:46:00	--	- end of 2001 by a group of experienced members of the Open
+2015-06-30 22:46:00	--	- Source and Free Software communities; it is aimed at
+2015-06-30 22:46:00	--	- providing these communities with better communication,
+2015-06-30 22:46:00	--	- development, and support infrastructure. Our goal is to
+2015-06-30 22:46:00	--	- provide stable services to members of the community in any
+2015-06-30 22:46:00	--	- part of the world, while listening closely to their needs
+2015-06-30 22:46:00	--	- and desires.
+2015-06-30 22:46:00	--	-
+2015-06-30 22:46:00	--	- We are not a general purpose chat platform, but a topical
+2015-06-30 22:46:00	--	- network intent on providing the open source and free
+2015-06-30 22:46:00	--	- software communities a means to cooperate and communicate.
+2015-06-30 22:46:00	--	- As such, illegal and off-topic activity, such as warez
+2015-06-30 22:46:00	--	- trading, may result in being barred from access.
+2015-06-30 22:46:00	--	-
+2015-06-30 22:46:00	--	- For more information on OFTC, please visit http://www.oftc.net/.
+2015-06-30 22:46:00	--	-
+2015-06-30 22:46:00	--	- If you require assistance stop by in channel #oftc, or email
+2015-06-30 22:46:00	--	- support@oftc.net with details.
+2015-06-30 22:46:00	--	-
+2015-06-30 22:46:00	--	- Thanks and enjoy your stay,
+2015-06-30 22:46:00	--	-
+2015-06-30 22:46:00	--	-         The OFTC team
+2015-06-30 22:46:00	--	End of /MOTD command.
+2015-06-30 22:46:00	--	User mode [+i] by aajjbb1
+2015-07-01 21:46:52	=!=	irc: reading data on socket: error 110 Connection timed out
+2015-07-01 21:46:52	--	irc: disconnecting from server...
+2015-07-01 21:46:52	--	irc: disconnected from server
+2015-07-01 21:46:52	--	irc: reconnecting to server in 10 seconds
+2015-07-01 21:47:02	--	irc: reconnecting to server...
+2015-07-01 21:47:02	--	irc: connecting to server irc.oftc.net/6667...
+2015-07-01 21:47:03	--	irc: connected to irc.oftc.net/6667 (130.239.18.116)
+2015-07-01 21:47:03	--	helix.oftc.net: *** Looking up your hostname...
+2015-07-01 21:47:03	--	helix.oftc.net: *** Checking Ident
+2015-07-01 21:47:04	--	helix.oftc.net: *** Couldn't look up your hostname
+2015-07-01 21:47:13	--	helix.oftc.net: *** No Ident response
+2015-07-01 21:47:13	--	Welcome to the OFTC Internet Relay Chat Network aajjbb1
+2015-07-01 21:47:13	--	Your host is helix.oftc.net[130.239.18.116/6667], running version hybrid-7.2.2+oftc1.6.17
+2015-07-01 21:47:13	--	This server was created Apr 10 2015 at 14:22:51
+2015-07-01 21:47:13	--	helix.oftc.net hybrid-7.2.2+oftc1.6.17 CDGPRSabcdfgiklnorsuwxyz biklmnopstveI bkloveI
+2015-07-01 21:47:13	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=390 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2015-07-01 21:47:13	--	CHANLIMIT=#:70 CHANNELLEN=50 CHANMODES=eIqb,k,l,imnpstMRS AWAYLEN=160 KNOCK ELIST=CMNTU SAFELIST EXCEPTS=e INVEX=I :are supported by this server
+2015-07-01 21:47:13	--	3DDAABWEC :your unique ID
+2015-07-01 21:47:13	--	There are 34 users and 10183 invisible on 20 servers
+2015-07-01 21:47:13	--	22 :IRC Operators online
+2015-07-01 21:47:13	--	12 :unknown connection(s)
+2015-07-01 21:47:13	--	2318 :channels formed
+2015-07-01 21:47:13	--	I have 959 clients and 1 servers
+2015-07-01 21:47:13	--	Current local users: 959  Max: 1339
+2015-07-01 21:47:13	--	Current global users: 10217  Max: 11283
+2015-07-01 21:47:13	--	Highest connection count: 1340 (1339 clients) (75315 connections received)
+2015-07-01 21:47:13	--	- helix.oftc.net Message of the Day -
+2015-07-01 21:47:13	--	-   O
+2015-07-01 21:47:13	--	-    \   The Open and Free
+2015-07-01 21:47:13	--	-     O
+2015-07-01 21:47:13	--	-    /|  Technology Community
+2015-07-01 21:47:13	--	- O-O O
+2015-07-01 21:47:13	--	-
+2015-07-01 21:47:13	--	- Welcome to OFTC's IRC network.
+2015-07-01 21:47:13	--	-
+2015-07-01 21:47:13	--	- The Open and Free Technology Community was founded at the
+2015-07-01 21:47:13	--	- end of 2001 by a group of experienced members of the Open
+2015-07-01 21:47:13	--	- Source and Free Software communities; it is aimed at
+2015-07-01 21:47:13	--	- providing these communities with better communication,
+2015-07-01 21:47:13	--	- development, and support infrastructure. Our goal is to
+2015-07-01 21:47:13	--	- provide stable services to members of the community in any
+2015-07-01 21:47:13	--	- part of the world, while listening closely to their needs
+2015-07-01 21:47:13	--	- and desires.
+2015-07-01 21:47:13	--	-
+2015-07-01 21:47:13	--	- We are not a general purpose chat platform, but a topical
+2015-07-01 21:47:13	--	- network intent on providing the open source and free
+2015-07-01 21:47:13	--	- software communities a means to cooperate and communicate.
+2015-07-01 21:47:13	--	- As such, illegal and off-topic activity, such as warez
+2015-07-01 21:47:13	--	- trading, may result in being barred from access.
+2015-07-01 21:47:13	--	-
+2015-07-01 21:47:13	--	- For more information on OFTC, please visit http://www.oftc.net/.
+2015-07-01 21:47:13	--	-
+2015-07-01 21:47:13	--	- If you require assistance stop by in channel #oftc, or email
+2015-07-01 21:47:13	--	- support@oftc.net with details.
+2015-07-01 21:47:13	--	-
+2015-07-01 21:47:13	--	- Thanks and enjoy your stay,
+2015-07-01 21:47:13	--	-
+2015-07-01 21:47:13	--	-         The OFTC team
+2015-07-01 21:47:13	--	End of /MOTD command.
+2015-07-01 21:47:13	--	User mode [+i] by aajjbb1
+2015-07-02 19:02:49	--	irc: connecting to server irc.oftc.net/6667...
+2015-07-02 19:02:49	=!=	irc: address "irc.oftc.net" not found
+2015-07-02 19:02:49	=!=	irc: error: Name or service not known
+2015-07-02 19:02:49	--	irc: reconnecting to server in 10 seconds
+2015-07-02 19:02:59	--	irc: reconnecting to server...
+2015-07-02 19:02:59	--	irc: connecting to server irc.oftc.net/6667...
+2015-07-02 19:02:59	=!=	irc: address "irc.oftc.net" not found
+2015-07-02 19:02:59	=!=	irc: error: Name or service not known
+2015-07-02 19:02:59	--	irc: reconnecting to server in 20 seconds
+2015-07-02 19:03:19	--	irc: reconnecting to server...
+2015-07-02 19:03:19	--	irc: connecting to server irc.oftc.net/6667...
+2015-07-02 19:03:19	=!=	irc: address "irc.oftc.net" not found
+2015-07-02 19:03:19	=!=	irc: error: Name or service not known
+2015-07-02 19:03:19	--	irc: reconnecting to server in 40 seconds
+2015-07-02 19:03:59	--	irc: reconnecting to server...
+2015-07-02 19:03:59	--	irc: connecting to server irc.oftc.net/6667...
+2015-07-02 19:03:59	=!=	irc: address "irc.oftc.net" not found
+2015-07-02 19:03:59	=!=	irc: error: Name or service not known
+2015-07-02 19:03:59	--	irc: reconnecting to server in 1 minute, 20 seconds
+2015-07-02 21:48:23	--	irc: connecting to server irc.oftc.net/6667...
+2015-07-02 21:48:26	--	irc: connected to irc.oftc.net/6667 (109.169.7.194)
+2015-07-02 21:48:26	--	kinetic.oftc.net: *** Looking up your hostname...
+2015-07-02 21:48:26	--	kinetic.oftc.net: *** Checking Ident
+2015-07-02 21:48:27	--	kinetic.oftc.net: *** Couldn't look up your hostname
+2015-07-02 21:48:36	--	kinetic.oftc.net: *** No Ident response
+2015-07-02 21:48:36	--	Welcome to the OFTC Internet Relay Chat Network aajjbb
+2015-07-02 21:48:36	--	Your host is kinetic.oftc.net[109.169.7.194/6667], running version hybrid-7.2.2+oftc1.6.17
+2015-07-02 21:48:36	--	This server was created Mar 19 2015 at 11:20:52
+2015-07-02 21:48:36	--	kinetic.oftc.net hybrid-7.2.2+oftc1.6.17 CDGPRSabcdfgiklnorsuwxyz biklmnopstveI bkloveI
+2015-07-02 21:48:36	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=390 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2015-07-02 21:48:36	--	CHANLIMIT=#:70 CHANNELLEN=50 CHANMODES=eIqb,k,l,imnpstMRS KNOCK AWAYLEN=160 ELIST=CMNTU SAFELIST EXCEPTS=e INVEX=I :are supported by this server
+2015-07-02 21:48:36	--	0SGAABZ7N :your unique ID
+2015-07-02 21:48:36	--	There are 32 users and 10126 invisible on 20 servers
+2015-07-02 21:48:36	--	22 :IRC Operators online
+2015-07-02 21:48:36	--	9 :unknown connection(s)
+2015-07-02 21:48:36	--	2327 :channels formed
+2015-07-02 21:48:36	--	I have 1768 clients and 1 servers
+2015-07-02 21:48:36	--	Current local users: 1768  Max: 1947
+2015-07-02 21:48:36	--	Current global users: 10158  Max: 11558
+2015-07-02 21:48:36	--	Highest connection count: 1948 (1947 clients) (80258 connections received)
+2015-07-02 21:48:36	--	- kinetic.oftc.net Message of the Day -
+2015-07-02 21:48:36	--	-   O
+2015-07-02 21:48:36	--	-    \   The Open and Free
+2015-07-02 21:48:36	--	-     O
+2015-07-02 21:48:36	--	-    /|  Technology Community
+2015-07-02 21:48:36	--	- O-O O
+2015-07-02 21:48:36	--	-
+2015-07-02 21:48:36	--	- Welcome to OFTC's IRC network.
+2015-07-02 21:48:36	--	-
+2015-07-02 21:48:36	--	- The Open and Free Technology Community was founded at the
+2015-07-02 21:48:36	--	- end of 2001 by a group of experienced members of the Open
+2015-07-02 21:48:36	--	- Source and Free Software communities; it is aimed at
+2015-07-02 21:48:36	--	- providing these communities with better communication,
+2015-07-02 21:48:36	--	- development, and support infrastructure. Our goal is to
+2015-07-02 21:48:36	--	- provide stable services to members of the community in any
+2015-07-02 21:48:36	--	- part of the world, while listening closely to their needs
+2015-07-02 21:48:36	--	- and desires.
+2015-07-02 21:48:36	--	-
+2015-07-02 21:48:36	--	- We are not a general purpose chat platform, but a topical
+2015-07-02 21:48:36	--	- network intent on providing the open source and free
+2015-07-02 21:48:36	--	- software communities a means to cooperate and communicate.
+2015-07-02 21:48:36	--	- As such, illegal and off-topic activity, such as warez
+2015-07-02 21:48:36	--	- trading, may result in being barred from access.
+2015-07-02 21:48:36	--	-
+2015-07-02 21:48:36	--	- For more information on OFTC, please visit http://www.oftc.net/.
+2015-07-02 21:48:36	--	-
+2015-07-02 21:48:36	--	- If you require assistance stop by in channel #oftc, or email
+2015-07-02 21:48:36	--	- support@oftc.net with details.
+2015-07-02 21:48:36	--	-
+2015-07-02 21:48:36	--	- Thanks and enjoy your stay,
+2015-07-02 21:48:36	--	-
+2015-07-02 21:48:36	--	-         The OFTC team
+2015-07-02 21:48:36	--	End of /MOTD command.
+2015-07-02 21:48:36	--	User mode [+i] by aajjbb
+2015-07-03 19:21:07	--	irc: connecting to server irc.oftc.net/6667...
+2015-07-03 19:21:08	--	irc: connected to irc.oftc.net/6667 (109.169.7.194)
+2015-07-03 19:21:08	--	kinetic.oftc.net: *** Looking up your hostname...
+2015-07-03 19:21:08	--	kinetic.oftc.net: *** Checking Ident
+2015-07-03 19:21:09	--	kinetic.oftc.net: *** Couldn't look up your hostname
+2015-07-03 19:21:19	--	kinetic.oftc.net: *** No Ident response
+2015-07-03 19:21:19	--	Welcome to the OFTC Internet Relay Chat Network aajjbb
+2015-07-03 19:21:19	--	Your host is kinetic.oftc.net[109.169.7.194/6667], running version hybrid-7.2.2+oftc1.6.17
+2015-07-03 19:21:19	--	This server was created Mar 19 2015 at 11:20:52
+2015-07-03 19:21:19	--	kinetic.oftc.net hybrid-7.2.2+oftc1.6.17 CDGPRSabcdfgiklnorsuwxyz biklmnopstveI bkloveI
+2015-07-03 19:21:19	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=390 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2015-07-03 19:21:19	--	CHANLIMIT=#:70 CHANNELLEN=50 CHANMODES=eIqb,k,l,imnpstMRS KNOCK AWAYLEN=160 ELIST=CMNTU SAFELIST EXCEPTS=e INVEX=I :are supported by this server
+2015-07-03 19:21:19	--	0SGAAB1EG :your unique ID
+2015-07-03 19:21:19	--	There are 31 users and 10139 invisible on 20 servers
+2015-07-03 19:21:19	--	22 :IRC Operators online
+2015-07-03 19:21:19	--	9 :unknown connection(s)
+2015-07-03 19:21:19	--	2320 :channels formed
+2015-07-03 19:21:19	--	I have 1790 clients and 1 servers
+2015-07-03 19:21:19	--	Current local users: 1790  Max: 1947
+2015-07-03 19:21:19	--	Current global users: 10170  Max: 11558
+2015-07-03 19:21:19	--	Highest connection count: 1948 (1947 clients) (81799 connections received)
+2015-07-03 19:21:19	--	- kinetic.oftc.net Message of the Day -
+2015-07-03 19:21:19	--	-   O
+2015-07-03 19:21:19	--	-    \   The Open and Free
+2015-07-03 19:21:19	--	-     O
+2015-07-03 19:21:19	--	-    /|  Technology Community
+2015-07-03 19:21:19	--	- O-O O
+2015-07-03 19:21:19	--	-
+2015-07-03 19:21:19	--	- Welcome to OFTC's IRC network.
+2015-07-03 19:21:19	--	-
+2015-07-03 19:21:19	--	- The Open and Free Technology Community was founded at the
+2015-07-03 19:21:19	--	- end of 2001 by a group of experienced members of the Open
+2015-07-03 19:21:19	--	- Source and Free Software communities; it is aimed at
+2015-07-03 19:21:19	--	- providing these communities with better communication,
+2015-07-03 19:21:19	--	- development, and support infrastructure. Our goal is to
+2015-07-03 19:21:19	--	- provide stable services to members of the community in any
+2015-07-03 19:21:19	--	- part of the world, while listening closely to their needs
+2015-07-03 19:21:19	--	- and desires.
+2015-07-03 19:21:19	--	-
+2015-07-03 19:21:19	--	- We are not a general purpose chat platform, but a topical
+2015-07-03 19:21:19	--	- network intent on providing the open source and free
+2015-07-03 19:21:19	--	- software communities a means to cooperate and communicate.
+2015-07-03 19:21:19	--	- As such, illegal and off-topic activity, such as warez
+2015-07-03 19:21:19	--	- trading, may result in being barred from access.
+2015-07-03 19:21:19	--	-
+2015-07-03 19:21:19	--	- For more information on OFTC, please visit http://www.oftc.net/.
+2015-07-03 19:21:19	--	-
+2015-07-03 19:21:19	--	- If you require assistance stop by in channel #oftc, or email
+2015-07-03 19:21:19	--	- support@oftc.net with details.
+2015-07-03 19:21:19	--	-
+2015-07-03 19:21:19	--	- Thanks and enjoy your stay,
+2015-07-03 19:21:19	--	-
+2015-07-03 19:21:19	--	-         The OFTC team
+2015-07-03 19:21:19	--	End of /MOTD command.
+2015-07-03 19:21:19	--	User mode [+i] by aajjbb

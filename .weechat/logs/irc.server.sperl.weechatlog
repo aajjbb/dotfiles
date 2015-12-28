@@ -14762,3 +14762,322 @@
 2015-06-29 19:00:01	--	-
 2015-06-29 19:00:01	--	End of /MOTD command.
 2015-06-29 19:00:01	--	User mode [+i] by aajjbb
+2015-06-29 21:01:42	--	irc: connecting to server irc.perl.org/6667...
+2015-06-29 21:01:43	--	irc: connected to irc.perl.org/6667 (217.168.150.38)
+2015-06-29 21:01:44	--	spectral.shadowcat.co.uk: *** Looking up your hostname...
+2015-06-29 21:01:44	--	spectral.shadowcat.co.uk: *** Checking Ident
+2015-06-29 21:01:44	--	spectral.shadowcat.co.uk: *** Couldn't look up your hostname
+2015-06-29 21:01:55	--	spectral.shadowcat.co.uk: *** No Ident response
+2015-06-29 21:01:55	--	Welcome to the MAGnet Internet Relay Chat Network aajjbb
+2015-06-29 21:01:55	--	Your host is spectral.shadowcat.co.uk[0.0.0.0/6667], running version hybrid-7.2.3
+2015-06-29 21:01:55	--	This server was created Feb  8 2010 at 21:26:22
+2015-06-29 21:01:55	--	spectral.shadowcat.co.uk hybrid-7.2.3 CDGabcdfgiklnorsuwxyz biklmnopstveIh bkloveIh
+2015-06-29 21:01:55	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=19 PREFIX=(ohv)@%+ STATUSMSG=@%+ TOPICLEN=390 NETWORK=MAGnet MAXLIST=beI:50 MAXTARGETS=4 CHANTYPES=#& :are supported by this server
+2015-06-29 21:01:55	--	CHANLIMIT=#&:50 CHANNELLEN=50 CHANMODES=eIb,k,l,imnpst ELIST=CMNTU SAFELIST KNOCK AWAYLEN=160 EXCEPTS=e INVEX=I :are supported by this server
+2015-06-29 21:01:55	--	There are 7 users and 1125 invisible on 1 servers
+2015-06-29 21:01:55	--	20 :IRC Operators online
+2015-06-29 21:01:55	--	25 :unknown connection(s)
+2015-06-29 21:01:55	--	501 :channels formed
+2015-06-29 21:01:55	--	I have 1132 clients and 0 servers
+2015-06-29 21:01:55	--	Current local users: 1132  Max: 1744
+2015-06-29 21:01:55	--	Current global users: 1132  Max: 1744
+2015-06-29 21:01:55	--	- spectral.shadowcat.co.uk Message of the Day -
+2015-06-29 21:01:55	--	-                      _             _
+2015-06-29 21:01:55	--	-  ___ _ __   ___  ___| |_ _ __ __ _| |
+2015-06-29 21:01:55	--	- / __| '_ \ / _ \/ __| __| '__/ _` | |
+2015-06-29 21:01:55	--	- \__ \ |_) |  __/ (__| |_| | | (_| | |  _
+2015-06-29 21:01:55	--	- |___/ .__/ \___|\___|\__|_|  \__,_|_| (_)
+2015-06-29 21:01:55	--	-     |_|
+2015-06-29 21:01:55	--	-      _               _                        _
+2015-06-29 21:01:55	--	-  ___| |__   __ _  __| | _____      _____ __ _| |_
+2015-06-29 21:01:55	--	- / __| '_ \ / _` |/ _` |/ _ \ \ /\ / / __/ _` | __|
+2015-06-29 21:01:55	--	- \__ \ | | | (_| | (_| | (_) \ V  V / (_| (_| | |_
+2015-06-29 21:01:55	--	- |___/_| |_|\__,_|\__,_|\___/ \_/\_/ \___\__,_|\__|
+2015-06-29 21:01:55	--	-
+2015-06-29 21:01:55	--	- We scan all connecting clients for open proxies and other
+2015-06-29 21:01:55	--	- exploitable nasties. If you don't wish to be scanned,
+2015-06-29 21:01:55	--	- don't connect again, and sorry for scanning you this time.
+2015-06-29 21:01:55	--	-
+2015-06-29 21:01:55	--	- This server is run by http://www.shadowcat.co.uk/ as part
+2015-06-29 21:01:55	--	- of the http://www.irc.perl.org/ network. Please configure
+2015-06-29 21:01:55	--	- your client to /connect irc.perl.org, not directly.
+2015-06-29 21:01:55	--	End of /MOTD command.
+2015-06-29 21:01:55	--	User mode [+i] by aajjbb
+2015-06-30 11:26:41	=!=	irc: reading data on socket: error 110 Connection timed out
+2015-06-30 11:26:41	--	irc: disconnecting from server...
+2015-06-30 11:26:41	--	irc: disconnected from server
+2015-06-30 11:26:41	--	irc: reconnecting to server in 10 seconds
+2015-06-30 11:26:51	--	irc: reconnecting to server...
+2015-06-30 11:26:51	--	irc: connecting to server irc.perl.org/6667...
+2015-06-30 11:26:52	--	irc: connected to irc.perl.org/6667 (217.168.150.39)
+2015-06-30 11:26:52	--	astral.shadowcat.co.uk: *** Looking up your hostname...
+2015-06-30 11:26:52	--	astral.shadowcat.co.uk: *** Checking Ident
+2015-06-30 11:26:53	--	astral.shadowcat.co.uk: *** Couldn't look up your hostname
+2015-06-30 11:27:02	--	astral.shadowcat.co.uk: *** No Ident response
+2015-06-30 11:27:02	--	Welcome to the MAGnet Internet Relay Chat Network aajjbb
+2015-06-30 11:27:02	--	Your host is astral.shadowcat.co.uk[217.168.150.39/6667], running version hybrid-7.2.3
+2015-06-30 11:27:02	--	This server was created Feb 15 2010 at 23:39:34
+2015-06-30 11:27:02	--	astral.shadowcat.co.uk hybrid-7.2.3 CDGabcdfgiklnorsuwxyz biklmnopstveIh bkloveIh
+2015-06-30 11:27:02	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=19 PREFIX=(ohv)@%+ STATUSMSG=@%+ TOPICLEN=390 NETWORK=MAGnet MAXLIST=beI:50 MAXTARGETS=4 CHANTYPES=#& :are supported by this server
+2015-06-30 11:27:02	--	CHANLIMIT=#&:50 CHANNELLEN=50 EXCEPTS=e INVEX=I CHANMODES=eIb,k,l,imnpst KNOCK ELIST=CMNTU SAFELIST AWAYLEN=160 :are supported by this server
+2015-06-30 11:27:02	--	There are 7 users and 1184 invisible on 1 servers
+2015-06-30 11:27:02	--	20 :IRC Operators online
+2015-06-30 11:27:02	--	1 :unknown connection(s)
+2015-06-30 11:27:02	--	504 :channels formed
+2015-06-30 11:27:02	--	I have 1191 clients and 0 servers
+2015-06-30 11:27:02	--	Current local users: 1191  Max: 1236
+2015-06-30 11:27:02	--	Current global users: 1191  Max: 1236
+2015-06-30 11:27:02	--	- astral.shadowcat.co.uk Message of the Day -
+2015-06-30 11:27:02	--	-            _             _
+2015-06-30 11:27:02	--	-   __ _ ___| |_ _ __ __ _| |
+2015-06-30 11:27:02	--	-  / _` / __| __| '__/ _` | |
+2015-06-30 11:27:02	--	- | (_| \__ \ |_| | | (_| | |  _
+2015-06-30 11:27:02	--	-  \__,_|___/\__|_|  \__,_|_| (_)
+2015-06-30 11:27:02	--	-      _               _                        _
+2015-06-30 11:27:02	--	-  ___| |__   __ _  __| | _____      _____ __ _| |_
+2015-06-30 11:27:02	--	- / __| '_ \ / _` |/ _` |/ _ \ \ /\ / / __/ _` | __|
+2015-06-30 11:27:02	--	- \__ \ | | | (_| | (_| | (_) \ V  V / (_| (_| | |_
+2015-06-30 11:27:02	--	- |___/_| |_|\__,_|\__,_|\___/ \_/\_/ \___\__,_|\__|
+2015-06-30 11:27:02	--	-
+2015-06-30 11:27:02	--	- We scan all connecting clients for open proxies and other
+2015-06-30 11:27:02	--	- exploitable nasties. If you don't wish to be scanned,
+2015-06-30 11:27:02	--	- don't connect again, and sorry for scanning you this time.
+2015-06-30 11:27:02	--	-
+2015-06-30 11:27:02	--	- This server is run by http://www.shadowcat.co.uk/ as part
+2015-06-30 11:27:02	--	- of the http://www.irc.perl.org/ network. Please configure
+2015-06-30 11:27:02	--	- your client to /connect irc.perl.org, not directly.
+2015-06-30 11:27:02	--	End of /MOTD command.
+2015-06-30 11:27:02	--	User mode [+i] by aajjbb
+2015-06-30 19:36:27	=!=	irc: reading data on socket: error 110 Connection timed out
+2015-06-30 19:36:27	--	irc: disconnecting from server...
+2015-06-30 19:36:27	--	irc: disconnected from server
+2015-06-30 19:36:27	--	irc: reconnecting to server in 10 seconds
+2015-06-30 19:36:37	--	irc: reconnecting to server...
+2015-06-30 19:36:37	--	irc: connecting to server irc.perl.org/6667...
+2015-06-30 19:36:42	--	irc: connected to irc.perl.org/6667 (217.168.150.38)
+2015-06-30 19:36:43	--	spectral.shadowcat.co.uk: *** Looking up your hostname...
+2015-06-30 19:36:43	--	spectral.shadowcat.co.uk: *** Checking Ident
+2015-06-30 19:36:43	--	spectral.shadowcat.co.uk: *** Couldn't look up your hostname
+2015-06-30 19:36:53	--	spectral.shadowcat.co.uk: *** No Ident response
+2015-06-30 19:36:53	--	Welcome to the MAGnet Internet Relay Chat Network aajjbb
+2015-06-30 19:36:53	--	Your host is spectral.shadowcat.co.uk[0.0.0.0/6667], running version hybrid-7.2.3
+2015-06-30 19:36:53	--	This server was created Feb  8 2010 at 21:26:22
+2015-06-30 19:36:53	--	spectral.shadowcat.co.uk hybrid-7.2.3 CDGabcdfgiklnorsuwxyz biklmnopstveIh bkloveIh
+2015-06-30 19:36:53	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=19 PREFIX=(ohv)@%+ STATUSMSG=@%+ TOPICLEN=390 NETWORK=MAGnet MAXLIST=beI:50 MAXTARGETS=4 CHANTYPES=#& :are supported by this server
+2015-06-30 19:36:53	--	CHANLIMIT=#&:50 CHANNELLEN=50 CHANMODES=eIb,k,l,imnpst ELIST=CMNTU SAFELIST KNOCK AWAYLEN=160 EXCEPTS=e INVEX=I :are supported by this server
+2015-06-30 19:36:53	--	There are 6 users and 1139 invisible on 1 servers
+2015-06-30 19:36:53	--	20 :IRC Operators online
+2015-06-30 19:36:53	--	25 :unknown connection(s)
+2015-06-30 19:36:53	--	499 :channels formed
+2015-06-30 19:36:53	--	I have 1145 clients and 0 servers
+2015-06-30 19:36:53	--	Current local users: 1145  Max: 1744
+2015-06-30 19:36:53	--	Current global users: 1145  Max: 1744
+2015-06-30 19:36:53	--	- spectral.shadowcat.co.uk Message of the Day -
+2015-06-30 19:36:53	--	-                      _             _
+2015-06-30 19:36:53	--	-  ___ _ __   ___  ___| |_ _ __ __ _| |
+2015-06-30 19:36:53	--	- / __| '_ \ / _ \/ __| __| '__/ _` | |
+2015-06-30 19:36:53	--	- \__ \ |_) |  __/ (__| |_| | | (_| | |  _
+2015-06-30 19:36:53	--	- |___/ .__/ \___|\___|\__|_|  \__,_|_| (_)
+2015-06-30 19:36:53	--	-     |_|
+2015-06-30 19:36:53	--	-      _               _                        _
+2015-06-30 19:36:53	--	-  ___| |__   __ _  __| | _____      _____ __ _| |_
+2015-06-30 19:36:53	--	- / __| '_ \ / _` |/ _` |/ _ \ \ /\ / / __/ _` | __|
+2015-06-30 19:36:53	--	- \__ \ | | | (_| | (_| | (_) \ V  V / (_| (_| | |_
+2015-06-30 19:36:53	--	- |___/_| |_|\__,_|\__,_|\___/ \_/\_/ \___\__,_|\__|
+2015-06-30 19:36:53	--	-
+2015-06-30 19:36:53	--	- We scan all connecting clients for open proxies and other
+2015-06-30 19:36:53	--	- exploitable nasties. If you don't wish to be scanned,
+2015-06-30 19:36:53	--	- don't connect again, and sorry for scanning you this time.
+2015-06-30 19:36:53	--	-
+2015-06-30 19:36:53	--	- This server is run by http://www.shadowcat.co.uk/ as part
+2015-06-30 19:36:53	--	- of the http://www.irc.perl.org/ network. Please configure
+2015-06-30 19:36:54	--	- your client to /connect irc.perl.org, not directly.
+2015-06-30 19:36:54	--	End of /MOTD command.
+2015-06-30 19:36:54	--	User mode [+i] by aajjbb
+2015-06-30 22:45:48	--	irc: connecting to server irc.perl.org/6667...
+2015-06-30 22:45:54	--	irc: connected to irc.perl.org/6667 (217.168.150.39)
+2015-06-30 22:45:54	--	astral.shadowcat.co.uk: *** Looking up your hostname...
+2015-06-30 22:45:54	--	astral.shadowcat.co.uk: *** Checking Ident
+2015-06-30 22:45:54	--	astral.shadowcat.co.uk: *** Couldn't look up your hostname
+2015-06-30 22:46:05	--	astral.shadowcat.co.uk: *** No Ident response
+2015-06-30 22:46:05	--	irc: nickname "aajjbb" is already in use, trying nickname "aajjbb1"
+2015-06-30 22:46:05	--	Welcome to the MAGnet Internet Relay Chat Network aajjbb1
+2015-06-30 22:46:05	--	Your host is astral.shadowcat.co.uk[217.168.150.39/6667], running version hybrid-7.2.3
+2015-06-30 22:46:05	--	This server was created Feb 15 2010 at 23:39:34
+2015-06-30 22:46:05	--	astral.shadowcat.co.uk hybrid-7.2.3 CDGabcdfgiklnorsuwxyz biklmnopstveIh bkloveIh
+2015-06-30 22:46:05	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=19 PREFIX=(ohv)@%+ STATUSMSG=@%+ TOPICLEN=390 NETWORK=MAGnet MAXLIST=beI:50 MAXTARGETS=4 CHANTYPES=#& :are supported by this server
+2015-06-30 22:46:05	--	CHANLIMIT=#&:50 CHANNELLEN=50 EXCEPTS=e INVEX=I CHANMODES=eIb,k,l,imnpst KNOCK ELIST=CMNTU SAFELIST AWAYLEN=160 :are supported by this server
+2015-06-30 22:46:05	--	There are 6 users and 1132 invisible on 1 servers
+2015-06-30 22:46:05	--	20 :IRC Operators online
+2015-06-30 22:46:05	--	1 :unknown connection(s)
+2015-06-30 22:46:05	--	499 :channels formed
+2015-06-30 22:46:05	--	I have 1138 clients and 0 servers
+2015-06-30 22:46:05	--	Current local users: 1138  Max: 1236
+2015-06-30 22:46:05	--	Current global users: 1138  Max: 1236
+2015-06-30 22:46:05	--	- astral.shadowcat.co.uk Message of the Day -
+2015-06-30 22:46:05	--	-            _             _
+2015-06-30 22:46:05	--	-   __ _ ___| |_ _ __ __ _| |
+2015-06-30 22:46:05	--	-  / _` / __| __| '__/ _` | |
+2015-06-30 22:46:05	--	- | (_| \__ \ |_| | | (_| | |  _
+2015-06-30 22:46:05	--	-  \__,_|___/\__|_|  \__,_|_| (_)
+2015-06-30 22:46:05	--	-      _               _                        _
+2015-06-30 22:46:05	--	-  ___| |__   __ _  __| | _____      _____ __ _| |_
+2015-06-30 22:46:05	--	- / __| '_ \ / _` |/ _` |/ _ \ \ /\ / / __/ _` | __|
+2015-06-30 22:46:05	--	- \__ \ | | | (_| | (_| | (_) \ V  V / (_| (_| | |_
+2015-06-30 22:46:05	--	- |___/_| |_|\__,_|\__,_|\___/ \_/\_/ \___\__,_|\__|
+2015-06-30 22:46:05	--	-
+2015-06-30 22:46:05	--	- We scan all connecting clients for open proxies and other
+2015-06-30 22:46:05	--	- exploitable nasties. If you don't wish to be scanned,
+2015-06-30 22:46:05	--	- don't connect again, and sorry for scanning you this time.
+2015-06-30 22:46:05	--	-
+2015-06-30 22:46:05	--	- This server is run by http://www.shadowcat.co.uk/ as part
+2015-06-30 22:46:05	--	- of the http://www.irc.perl.org/ network. Please configure
+2015-06-30 22:46:05	--	- your client to /connect irc.perl.org, not directly.
+2015-06-30 22:46:05	--	End of /MOTD command.
+2015-06-30 22:46:05	--	User mode [+i] by aajjbb1
+2015-07-01 21:44:58	=!=	irc: reading data on socket: error 110 Connection timed out
+2015-07-01 21:44:58	--	irc: disconnecting from server...
+2015-07-01 21:44:58	--	irc: disconnected from server
+2015-07-01 21:44:58	--	irc: reconnecting to server in 10 seconds
+2015-07-01 21:45:08	--	irc: reconnecting to server...
+2015-07-01 21:45:08	--	irc: connecting to server irc.perl.org/6667...
+2015-07-01 21:45:10	--	irc: connected to irc.perl.org/6667 (173.246.105.227)
+2015-07-01 21:45:10	--	irc.sungo.us: *** Looking up your hostname...
+2015-07-01 21:45:10	--	irc.sungo.us: *** Checking Ident
+2015-07-01 21:45:10	--	irc.sungo.us: *** Couldn't look up your hostname
+2015-07-01 21:45:21	--	irc.sungo.us: *** No Ident response
+2015-07-01 21:45:21	--	Welcome to the MAGnet Internet Relay Chat Network aajjbb1
+2015-07-01 21:45:21	--	Your host is irc.sungo.us[0.0.0.0/6667], running version hybrid-7.2.3
+2015-07-01 21:45:21	--	This server was created Jun  2 2014 at 22:20:05
+2015-07-01 21:45:21	--	irc.sungo.us hybrid-7.2.3 CDGabcdfgiklnorsuwxyz biklmnopstveIh bkloveIh
+2015-07-01 21:45:21	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=19 PREFIX=(ohv)@%+ STATUSMSG=@%+ TOPICLEN=390 NETWORK=MAGnet MAXLIST=beI:50 MAXTARGETS=4 CHANTYPES=#& :are supported by this server
+2015-07-01 21:45:21	--	CHANLIMIT=#&:500 CHANNELLEN=50 CHANMODES=eIb,k,l,imnpst AWAYLEN=160 ELIST=CMNTU SAFELIST KNOCK EXCEPTS=e INVEX=I :are supported by this server
+2015-07-01 21:45:21	--	There are 6 users and 1133 invisible on 1 servers
+2015-07-01 21:45:21	--	21 :IRC Operators online
+2015-07-01 21:45:21	--	8 :unknown connection(s)
+2015-07-01 21:45:21	--	502 :channels formed
+2015-07-01 21:45:21	--	I have 1139 clients and 0 servers
+2015-07-01 21:45:21	--	Current local users: 1139  Max: 1715
+2015-07-01 21:45:21	--	Current global users: 1139  Max: 1715
+2015-07-01 21:45:21	--	- irc.sungo.us Message of the Day -
+2015-07-01 21:45:21	--	-
+2015-07-01 21:45:21	--	- You will be / have been scanned via an automated process to check for
+2015-07-01 21:45:21	--	- various disallowed and insecure services.
+2015-07-01 21:45:21	--	-
+2015-07-01 21:45:21	--	-
+2015-07-01 21:45:21	--	- Usage of this server is a privilege, not a right. Your access can be
+2015-07-01 21:45:21	--	- revoked at any time for any reason. The reason doesn't have to make
+2015-07-01 21:45:21	--	- sense to you and it doesn't have to be fair.  This server does not exist
+2015-07-01 21:45:21	--	- to make you feel happy and special. Play nice and keep the emo to
+2015-07-01 21:45:21	--	- yourself.
+2015-07-01 21:45:21	--	-
+2015-07-01 21:45:21	--	-
+2015-07-01 21:45:21	--	- Please also read the FAQ, particularly the section about #perl:
+2015-07-01 21:45:21	--	- http://www.irc.perl.org/faq.html
+2015-07-01 21:45:21	--	-
+2015-07-01 21:45:21	--	- For all the rules and guidelines, please see
+2015-07-01 21:45:21	--	- http://www.irc.perl.org/rules.html
+2015-07-01 21:45:21	--	-
+2015-07-01 21:45:21	--	End of /MOTD command.
+2015-07-01 21:45:21	--	User mode [+i] by aajjbb1
+2015-07-02 19:02:49	--	irc: connecting to server irc.perl.org/6667...
+2015-07-02 19:02:49	=!=	irc: address "irc.perl.org" not found
+2015-07-02 19:02:49	=!=	irc: error: Name or service not known
+2015-07-02 19:02:49	--	irc: reconnecting to server in 10 seconds
+2015-07-02 19:02:59	--	irc: reconnecting to server...
+2015-07-02 19:02:59	--	irc: connecting to server irc.perl.org/6667...
+2015-07-02 19:02:59	=!=	irc: address "irc.perl.org" not found
+2015-07-02 19:02:59	=!=	irc: error: Name or service not known
+2015-07-02 19:02:59	--	irc: reconnecting to server in 20 seconds
+2015-07-02 19:03:19	--	irc: reconnecting to server...
+2015-07-02 19:03:19	--	irc: connecting to server irc.perl.org/6667...
+2015-07-02 19:03:19	=!=	irc: address "irc.perl.org" not found
+2015-07-02 19:03:19	=!=	irc: error: Name or service not known
+2015-07-02 19:03:19	--	irc: reconnecting to server in 40 seconds
+2015-07-02 19:03:59	--	irc: reconnecting to server...
+2015-07-02 19:03:59	--	irc: connecting to server irc.perl.org/6667...
+2015-07-02 19:03:59	=!=	irc: address "irc.perl.org" not found
+2015-07-02 19:03:59	=!=	irc: error: Name or service not known
+2015-07-02 19:03:59	--	irc: reconnecting to server in 1 minute, 20 seconds
+2015-07-02 21:48:23	--	irc: connecting to server irc.perl.org/6667...
+2015-07-02 21:48:30	--	irc: connected to irc.perl.org/6667 (217.168.150.38)
+2015-07-02 21:48:30	--	spectral.shadowcat.co.uk: *** Looking up your hostname...
+2015-07-02 21:48:30	--	spectral.shadowcat.co.uk: *** Checking Ident
+2015-07-02 21:48:30	--	spectral.shadowcat.co.uk: *** Couldn't look up your hostname
+2015-07-02 21:48:41	--	spectral.shadowcat.co.uk: *** No Ident response
+2015-07-02 21:48:41	--	Welcome to the MAGnet Internet Relay Chat Network aajjbb
+2015-07-02 21:48:41	--	Your host is spectral.shadowcat.co.uk[0.0.0.0/6667], running version hybrid-7.2.3
+2015-07-02 21:48:41	--	This server was created Feb  8 2010 at 21:26:22
+2015-07-02 21:48:41	--	spectral.shadowcat.co.uk hybrid-7.2.3 CDGabcdfgiklnorsuwxyz biklmnopstveIh bkloveIh
+2015-07-02 21:48:41	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=19 PREFIX=(ohv)@%+ STATUSMSG=@%+ TOPICLEN=390 NETWORK=MAGnet MAXLIST=beI:50 MAXTARGETS=4 CHANTYPES=#& :are supported by this server
+2015-07-02 21:48:41	--	CHANLIMIT=#&:50 CHANNELLEN=50 CHANMODES=eIb,k,l,imnpst ELIST=CMNTU SAFELIST KNOCK AWAYLEN=160 EXCEPTS=e INVEX=I :are supported by this server
+2015-07-02 21:48:41	--	There are 6 users and 1124 invisible on 1 servers
+2015-07-02 21:48:41	--	20 :IRC Operators online
+2015-07-02 21:48:41	--	25 :unknown connection(s)
+2015-07-02 21:48:41	--	498 :channels formed
+2015-07-02 21:48:41	--	I have 1130 clients and 0 servers
+2015-07-02 21:48:41	--	Current local users: 1130  Max: 1744
+2015-07-02 21:48:41	--	Current global users: 1130  Max: 1744
+2015-07-02 21:48:41	--	- spectral.shadowcat.co.uk Message of the Day -
+2015-07-02 21:48:41	--	-                      _             _
+2015-07-02 21:48:41	--	-  ___ _ __   ___  ___| |_ _ __ __ _| |
+2015-07-02 21:48:41	--	- / __| '_ \ / _ \/ __| __| '__/ _` | |
+2015-07-02 21:48:41	--	- \__ \ |_) |  __/ (__| |_| | | (_| | |  _
+2015-07-02 21:48:41	--	- |___/ .__/ \___|\___|\__|_|  \__,_|_| (_)
+2015-07-02 21:48:41	--	-     |_|
+2015-07-02 21:48:41	--	-      _               _                        _
+2015-07-02 21:48:41	--	-  ___| |__   __ _  __| | _____      _____ __ _| |_
+2015-07-02 21:48:41	--	- / __| '_ \ / _` |/ _` |/ _ \ \ /\ / / __/ _` | __|
+2015-07-02 21:48:41	--	- \__ \ | | | (_| | (_| | (_) \ V  V / (_| (_| | |_
+2015-07-02 21:48:41	--	- |___/_| |_|\__,_|\__,_|\___/ \_/\_/ \___\__,_|\__|
+2015-07-02 21:48:41	--	-
+2015-07-02 21:48:41	--	- We scan all connecting clients for open proxies and other
+2015-07-02 21:48:41	--	- exploitable nasties. If you don't wish to be scanned,
+2015-07-02 21:48:41	--	- don't connect again, and sorry for scanning you this time.
+2015-07-02 21:48:41	--	-
+2015-07-02 21:48:41	--	- This server is run by http://www.shadowcat.co.uk/ as part
+2015-07-02 21:48:41	--	- of the http://www.irc.perl.org/ network. Please configure
+2015-07-02 21:48:41	--	- your client to /connect irc.perl.org, not directly.
+2015-07-02 21:48:41	--	End of /MOTD command.
+2015-07-02 21:48:41	--	User mode [+i] by aajjbb
+2015-07-03 19:21:07	--	irc: connecting to server irc.perl.org/6667...
+2015-07-03 19:21:08	--	irc: connected to irc.perl.org/6667 (217.168.150.38)
+2015-07-03 19:21:09	--	spectral.shadowcat.co.uk: *** Looking up your hostname...
+2015-07-03 19:21:09	--	spectral.shadowcat.co.uk: *** Checking Ident
+2015-07-03 19:21:09	--	spectral.shadowcat.co.uk: *** Couldn't look up your hostname
+2015-07-03 19:21:19	--	spectral.shadowcat.co.uk: *** No Ident response
+2015-07-03 19:21:19	--	Welcome to the MAGnet Internet Relay Chat Network aajjbb
+2015-07-03 19:21:19	--	Your host is spectral.shadowcat.co.uk[0.0.0.0/6667], running version hybrid-7.2.3
+2015-07-03 19:21:19	--	This server was created Feb  8 2010 at 21:26:22
+2015-07-03 19:21:19	--	spectral.shadowcat.co.uk hybrid-7.2.3 CDGabcdfgiklnorsuwxyz biklmnopstveIh bkloveIh
+2015-07-03 19:21:19	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=19 PREFIX=(ohv)@%+ STATUSMSG=@%+ TOPICLEN=390 NETWORK=MAGnet MAXLIST=beI:50 MAXTARGETS=4 CHANTYPES=#& :are supported by this server
+2015-07-03 19:21:19	--	CHANLIMIT=#&:50 CHANNELLEN=50 CHANMODES=eIb,k,l,imnpst ELIST=CMNTU SAFELIST KNOCK AWAYLEN=160 EXCEPTS=e INVEX=I :are supported by this server
+2015-07-03 19:21:19	--	There are 6 users and 1116 invisible on 1 servers
+2015-07-03 19:21:19	--	20 :IRC Operators online
+2015-07-03 19:21:19	--	25 :unknown connection(s)
+2015-07-03 19:21:19	--	496 :channels formed
+2015-07-03 19:21:19	--	I have 1122 clients and 0 servers
+2015-07-03 19:21:19	--	Current local users: 1122  Max: 1744
+2015-07-03 19:21:19	--	Current global users: 1122  Max: 1744
+2015-07-03 19:21:19	--	- spectral.shadowcat.co.uk Message of the Day -
+2015-07-03 19:21:19	--	-                      _             _
+2015-07-03 19:21:19	--	-  ___ _ __   ___  ___| |_ _ __ __ _| |
+2015-07-03 19:21:19	--	- / __| '_ \ / _ \/ __| __| '__/ _` | |
+2015-07-03 19:21:19	--	- \__ \ |_) |  __/ (__| |_| | | (_| | |  _
+2015-07-03 19:21:19	--	- |___/ .__/ \___|\___|\__|_|  \__,_|_| (_)
+2015-07-03 19:21:19	--	-     |_|
+2015-07-03 19:21:19	--	-      _               _                        _
+2015-07-03 19:21:19	--	-  ___| |__   __ _  __| | _____      _____ __ _| |_
+2015-07-03 19:21:19	--	- / __| '_ \ / _` |/ _` |/ _ \ \ /\ / / __/ _` | __|
+2015-07-03 19:21:19	--	- \__ \ | | | (_| | (_| | (_) \ V  V / (_| (_| | |_
+2015-07-03 19:21:19	--	- |___/_| |_|\__,_|\__,_|\___/ \_/\_/ \___\__,_|\__|
+2015-07-03 19:21:19	--	-
+2015-07-03 19:21:19	--	- We scan all connecting clients for open proxies and other
+2015-07-03 19:21:19	--	- exploitable nasties. If you don't wish to be scanned,
+2015-07-03 19:21:19	--	- don't connect again, and sorry for scanning you this time.
+2015-07-03 19:21:19	--	-
+2015-07-03 19:21:19	--	- This server is run by http://www.shadowcat.co.uk/ as part
+2015-07-03 19:21:19	--	- of the http://www.irc.perl.org/ network. Please configure
+2015-07-03 19:21:19	--	- your client to /connect irc.perl.org, not directly.
+2015-07-03 19:21:19	--	End of /MOTD command.
+2015-07-03 19:21:19	--	User mode [+i] by aajjbb

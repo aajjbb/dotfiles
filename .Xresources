@@ -1,16 +1,17 @@
 !Xft.dpi: 96
-!Xft.antialias: true
-!Xft.hinting: true
-!Xft.rgba: rgb
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
 !Xft.autohint: false
-!Xft.hintstyle: hintslight
+Xft.hintstyle: hintslight
 !Xft.lcdfilter: lcddefault
 
 !xterm configs
 xterm*utf8: 1
 xterm*termName: xterm-256color
 xterm*locale: true
-	
+xterm*metaSendsEscape: true
+xterm*eightBitInput: false	
 !fix clipboard issue
 
 xterm*selectToClipboard: true

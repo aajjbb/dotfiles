@@ -11,12 +11,20 @@ my $root = $ENV{'HOME'};
 my $current_dir = $ENV{'PWD'};
 
 my %files = (
-	"awesome" => $root . "/.config",
-	".weechat" => $root,
+	#awesome
+	"menugen.lua" => $root . "/.config/awesome",
+	"rc.lua"      => $root . "/.config/awesome",
+	"widgets.lua" => $root . "/.config/awesome",
+	"xrandr.lua"  => $root . "/.config/awesome",
+
+	#weechat
+	".weechat/irc.conf" => $root . "/weechat",
+	".weechat/plugins.conf" => $root . "/weechat",
+
+	#general
 	".bash_profile" => $root,
 	".bashrc" => $root,
 	".emacs" => $root,
-	".emacs.d" => $root,
 	".gitconfig" => $root,
 	".tmux.conf" => $root,
 	".vimrc" => $root,

@@ -883,3 +883,26 @@
 2015-06-28 14:40:57		perl scripts loaded: buffers, colorize_lines, highmon, iset
 2015-06-28 14:40:57		script: 299 scripts for WeeChat 1.2
 2015-06-28 14:40:57		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-29 21:01:42		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-29 21:01:42		script: downloading list of scripts...
+2015-06-29 21:01:42		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-29 21:01:45		script: 299 scripts for WeeChat 1.2
+2015-06-30 22:45:45		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1412"
+2015-06-30 22:45:48		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-06-30 22:45:48		script: downloading list of scripts...
+2015-06-30 22:45:48		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-06-30 22:45:53		script: 299 scripts for WeeChat 1.2
+2015-07-02 19:02:47		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1518"
+2015-07-02 19:02:48		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-07-02 19:02:49		script: downloading list of scripts...
+2015-07-02 19:02:49		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-07-02 19:02:49	=!=	script: error downloading list of scripts: curl error 6 (Could not resolve host: weechat.org) (URL: "https://weechat.org/files/plugins.xml.gz")
+2015-07-02 21:48:20		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1477"
+2015-07-02 21:48:22		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-07-02 21:48:23		script: downloading list of scripts...
+2015-07-02 21:48:23		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-07-02 21:48:28		script: 299 scripts for WeeChat 1.2
+2015-07-03 19:21:03		fifo: removing old fifo pipe "/home/aajjbb/.weechat/weechat_fifo_1538"
+2015-07-03 19:21:06		perl scripts loaded: buffers, colorize_lines, highmon, iset
+2015-07-03 19:21:06		script: 299 scripts for WeeChat 1.2
+2015-07-03 19:21:06		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer

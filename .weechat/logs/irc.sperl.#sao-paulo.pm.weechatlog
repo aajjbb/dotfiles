@@ -4950,3 +4950,197 @@
 2015-06-29 19:00:01	--	Channel #sao-paulo.pm: 24 nicks (5 ops, 0 halfops, 18 voices, 1 normal)
 2015-06-29 19:00:03	--	Channel created on Sat, 26 Jul 2008 05:41:01
 2015-06-29 19:05:54	<--	renan (~renan@177.148.152.62) has quit (Quit: Leaving.)
+2015-06-29 21:01:55	-->	aajjbb (~aajjbb@179.154.117.36) has joined #sao-paulo.pm
+2015-06-29 21:01:55	--	Topic for #sao-paulo.pm is "Viva o grande Brasil, nosso país \o/ |Peça voice (+v) se você não for um bot | São Paulo/SP  http://sao-paulo.pm.org/"
+2015-06-29 21:01:55	--	Topic set by mantovani (mantovani@redacted) on Mon, 27 Apr 2015 15:28:45
+2015-06-29 21:01:55	--	Channel #sao-paulo.pm: 23 nicks (5 ops, 0 halfops, 17 voices, 1 normal)
+2015-06-29 21:01:57	--	Channel created on Sat, 26 Jul 2008 05:41:01
+2015-06-29 21:58:30	-->	frederic_ (~textual@201.62.116.59) has joined #sao-paulo.pm
+2015-06-29 23:28:14	@mantovani	merda de mongodb
+2015-06-29 23:28:27	@mantovani	AHHHHHHHHH
+2015-06-29 23:28:31	@mantovani	ESSE LIXO NAO SUPORTA PIPE
+2015-06-29 23:28:42	@mantovani	PRA FAZER BULKD IMPORT/EXPORT
+2015-06-29 23:28:45	@mantovani	COKOM ISSO HE POSSIVEL
+2015-06-29 23:28:50	@mantovani	JESUS DEUS MARIA E JOSE
+2015-06-29 23:28:56	@mantovani	ODIN
+2015-06-29 23:28:58	@mantovani	THOR
+2015-06-29 23:44:38	frederic_	http://devel.imovlr.com:3000/page/19
+2015-06-29 23:44:41	frederic_	obra de arte do dvinciguerra 
+2015-06-29 23:56:09	+dvinciguerra	frederic_: obra do meu irmão :P
+2015-06-29 23:57:23	frederic_	dvinciguerra cara
+2015-06-29 23:57:34	frederic_	como ta mega separado o html
+2015-06-29 23:57:41	frederic_	foi boiada picar ele e colocar no ar
+2015-06-29 23:57:51	frederic_	cloquei em devel primeiro 
+2015-06-29 23:57:55	frederic_	foi por em producao agora
+2015-06-29 23:57:58	frederic_	bem legal
+2015-06-30 00:16:01	+dvinciguerra	frederic_: massa cara! :)
+2015-06-30 00:24:14	frederic_	dvinciguerra http://yapcbrasil2015.org/page/60  falta detalhes, amanha os minions de Taubate fecham a porra toda ;)
+2015-06-30 00:27:04	+dvinciguerra	boaaa fred, valeu! :)
+2015-06-30 00:27:38	<--	frederic_ (~textual@201.62.116.59) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2015-06-30 00:28:26	@mantovani	frederico: vc já anunciou a grade de palestras?
+2015-06-30 00:54:18	<--	dvinciguerra (~dvincigue@189.79.238.168) has quit (Ping timeout: 360 seconds)
+2015-06-30 11:26:41	--	irc: disconnected from server
+2015-06-30 11:27:03	-->	aajjbb (~aajjbb@179.154.117.36) has joined #sao-paulo.pm
+2015-06-30 11:27:03	--	Topic for #sao-paulo.pm is "Viva o grande Brasil, nosso país \o/ |Peça voice (+v) se você não for um bot | São Paulo/SP  http://sao-paulo.pm.org/"
+2015-06-30 11:27:03	--	Topic set by mantovani (mantovani@redacted) on Mon, 27 Apr 2015 15:28:45
+2015-06-30 11:27:03	--	Channel #sao-paulo.pm: 26 nicks (5 ops, 0 halfops, 19 voices, 2 normals)
+2015-06-30 11:27:04	--	Channel created on Sat, 26 Jul 2008 05:41:01
+2015-06-30 11:53:05	-->	carneirao (~carneirao@177.148.152.62) has joined #sao-paulo.pm
+2015-06-30 11:53:15	carneirao	Alguém aí manja de vagrant ?
+2015-06-30 11:53:53	carneirao	Estou com um problema e gostaria que alguém me desse uma luz, por gentileza.
+2015-06-30 12:26:13	+hernan604	Lucas1: alto numero de processos ? judiciais ? wtf
+2015-06-30 12:27:12	+Lucas1	hernan604: é sim
+2015-06-30 12:29:29	+hernan604	nada a ver!!
+2015-06-30 12:29:51	+hernan604	revoltante... nego é funcionário público e não quer ter nome publicado
+2015-06-30 12:29:54	+hernan604	que idiotice
+2015-06-30 12:30:51	+hernan604	carneirao: faltou vc fazer a pergunta
+2015-06-30 13:31:34	+renan	frederico: e o site ?
+2015-06-30 19:36:27	--	irc: disconnected from server
+2015-06-30 19:36:54	-->	aajjbb (~aajjbb@179.154.117.36) has joined #sao-paulo.pm
+2015-06-30 19:36:54	--	Topic for #sao-paulo.pm is "Viva o grande Brasil, nosso país \o/ |Peça voice (+v) se você não for um bot | São Paulo/SP  http://sao-paulo.pm.org/"
+2015-06-30 19:36:54	--	Topic set by mantovani (mantovani@redacted) on Mon, 27 Apr 2015 15:28:45
+2015-06-30 19:36:54	--	Channel #sao-paulo.pm: 25 nicks (5 ops, 0 halfops, 15 voices, 5 normals)
+2015-06-30 19:36:55	--	Channel created on Sat, 26 Jul 2008 05:41:01
+2015-06-30 20:27:05	<--	carneirao (~carneirao@177.148.183.27) has quit (Remote host closed the connection)
+2015-06-30 20:47:12	-->	frederic_ (~textual@201.62.116.59) has joined #sao-paulo.pm
+2015-06-30 20:47:54	<--	frederico (~frederico@ps80344.dreamhost.com) has quit (Quit: leaving)
+2015-06-30 22:46:06	-->	aajjbb1 (~aajjbb@179.154.117.36) has joined #sao-paulo.pm
+2015-06-30 22:46:06	--	Topic for #sao-paulo.pm is "Viva o grande Brasil, nosso país \o/ |Peça voice (+v) se você não for um bot | São Paulo/SP  http://sao-paulo.pm.org/"
+2015-06-30 22:46:06	--	Topic set by mantovani (mantovani@redacted) on Mon, 27 Apr 2015 15:28:45
+2015-06-30 22:46:06	--	Channel #sao-paulo.pm: 25 nicks (5 ops, 0 halfops, 15 voices, 5 normals)
+2015-06-30 22:46:06	<--	aajjbb (~aajjbb@179.154.117.36) has quit (Read error: Connection reset by peer)
+2015-06-30 22:46:07	--	Channel created on Sat, 26 Jul 2008 05:41:01
+2015-06-30 23:06:23	-->	Rafael (~rafael@177.193.234.211) has joined #sao-paulo.pm
+2015-06-30 23:25:22	<--	Rafael (~rafael@177.193.234.211) has left #sao-paulo.pm
+2015-07-01 21:44:58	--	irc: disconnected from server
+2015-07-01 21:45:21	-->	aajjbb1 (~aajjbb@179.154.117.36) has joined #sao-paulo.pm
+2015-07-01 21:45:21	--	Topic for #sao-paulo.pm is "Viva o grande Brasil, nosso país \o/ |Peça voice (+v) se você não for um bot | São Paulo/SP  http://sao-paulo.pm.org/"
+2015-07-01 21:45:21	--	Topic set by mantovani (mantovani@redacted) on Mon, 27 Apr 2015 15:28:45
+2015-07-01 21:45:21	--	Channel #sao-paulo.pm: 21 nicks (5 ops, 0 halfops, 15 voices, 1 normal)
+2015-07-01 21:45:23	--	Channel created on Sat, 26 Jul 2008 05:41:01
+2015-07-01 23:05:54	-->	shonorio (~shonorio@201-0-206-53.dial-up.telesp.net.br) has joined #sao-paulo.pm
+2015-07-01 23:05:54	--	Mode #sao-paulo.pm [+o shonorio] by Bender1
+2015-07-01 23:11:59	<--	shonorio (~shonorio@201-0-206-53.dial-up.telesp.net.br) has quit (Ping timeout: 360 seconds)
+2015-07-02 00:54:45	-->	shonorio (~shonorio@201-0-206-53.dial-up.telesp.net.br) has joined #sao-paulo.pm
+2015-07-02 00:54:45	--	Mode #sao-paulo.pm [+o shonorio] by Bender1
+2015-07-02 01:00:45	<--	shonorio (~shonorio@201-0-206-53.dial-up.telesp.net.br) has quit (Ping timeout: 360 seconds)
+2015-07-02 02:43:36	-->	shonorio (~shonorio@201-0-206-53.dial-up.telesp.net.br) has joined #sao-paulo.pm
+2015-07-02 02:43:36	--	Mode #sao-paulo.pm [+o shonorio] by Bender1
+2015-07-02 02:49:40	<--	shonorio (~shonorio@201-0-206-53.dial-up.telesp.net.br) has quit (Ping timeout: 360 seconds)
+2015-07-02 04:32:30	-->	shonorio (~shonorio@201-0-206-53.dial-up.telesp.net.br) has joined #sao-paulo.pm
+2015-07-02 04:32:30	--	Mode #sao-paulo.pm [+o shonorio] by Bender1
+2015-07-02 04:38:35	<--	shonorio (~shonorio@201-0-206-53.dial-up.telesp.net.br) has quit (Ping timeout: 360 seconds)
+2015-07-02 05:14:31	<--	Goncales (~goncales@ps80344.dreamhost.com) has quit (Ping timeout: 360 seconds)
+2015-07-02 05:17:17	-->	Goncales (~goncales@ps80344.dreamhost.com) has joined #sao-paulo.pm
+2015-07-02 05:17:17	--	Mode #sao-paulo.pm [+v Goncales] by Bender1
+2015-07-02 06:21:20	-->	shonorio (~shonorio@177.148.183.27) has joined #sao-paulo.pm
+2015-07-02 06:27:23	<--	shonorio (~shonorio@177.148.183.27) has quit (Ping timeout: 360 seconds)
+2015-07-02 07:14:20	@lmc	Então, o imbecil do gestor de projetos aqui me envia email dizendo que eu tenho de fechar a tarefa na ferramenta de gestão de projetos dele junto com o ticket que eu resolvi… eu pedi desculpas e sugeri que, para evitar que as ferramentas saiam de sincronia, no futuro ele deveria rastrear as tarefas OU por uma, OU pela outra…
+2015-07-02 07:14:43	@lmc	karma pmo
+2015-07-02 07:14:43	+purl	pmo has neutral karma
+2015-07-02 07:14:50	@lmc	karma (project manager)
+2015-07-02 07:14:50	+purl	(project manager) has neutral karma
+2015-07-02 07:15:04	@lmc	pmo-- # imbecil
+2015-07-02 07:15:18	@lmc	(project manager)-- # imbecil
+2015-07-02 07:15:23	@lmc	karma (project manager)
+2015-07-02 07:15:23	+purl	(project manager) has neutral karma
+2015-07-02 07:15:29	@lmc	karma pmo
+2015-07-02 07:15:29	+purl	pmo has karma of -1
+2015-07-02 07:15:37	@lmc	karma project manager
+2015-07-02 07:15:37	+purl	project manager has karma of -1
+2015-07-02 08:10:11	-->	shonorio (~shonorio@201-0-206-53.dial-up.telesp.net.br) has joined #sao-paulo.pm
+2015-07-02 08:10:11	--	Mode #sao-paulo.pm [+o shonorio] by Bender1
+2015-07-02 08:16:15	<--	shonorio (~shonorio@201-0-206-53.dial-up.telesp.net.br) has quit (Ping timeout: 360 seconds)
+2015-07-02 09:41:00	-->	frederico (~frederico@ps80344.dreamhost.com) has joined #sao-paulo.pm
+2015-07-02 09:41:00	--	Mode #sao-paulo.pm [+v frederico] by Bender1
+2015-07-02 09:48:24	-->	luma (~luma@200.205.38.106) has joined #sao-paulo.pm
+2015-07-02 09:48:24	--	Mode #sao-paulo.pm [+v luma] by Bender1
+2015-07-02 09:51:55	-->	Rafael (~rafael@ps80344.dreamhost.com) has joined #sao-paulo.pm
+2015-07-02 09:51:55	--	Mode #sao-paulo.pm [+v Rafael] by Bender1
+2015-07-02 09:53:40	+Rafael	bom dia
+2015-07-02 09:59:04	-->	shonorio (~shonorio@201-0-206-53.dial-up.telesp.net.br) has joined #sao-paulo.pm
+2015-07-02 09:59:04	--	Mode #sao-paulo.pm [+o shonorio] by Bender1
+2015-07-02 10:05:05	<--	shonorio (~shonorio@201-0-206-53.dial-up.telesp.net.br) has quit (Ping timeout: 360 seconds)
+2015-07-02 11:10:02	+Lucas1	bom dia
+2015-07-02 11:10:14	+Lucas1	evento bacana para Agosto http://pgdaycampinas.com.br/
+2015-07-02 11:15:35	-->	shonorio (~shonorio@201-0-206-53.dial-up.telesp.net.br) has joined #sao-paulo.pm
+2015-07-02 11:15:35	--	Mode #sao-paulo.pm [+o shonorio] by Bender1
+2015-07-02 11:17:39	@mantovani	bom dia
+2015-07-02 11:17:42	@mantovani	garotas
+2015-07-02 11:17:59	@mantovani	lmc: vc ta mto nervoso
+2015-07-02 11:18:01	@mantovani	lmc: fuma uma erva
+2015-07-02 11:18:46	@mantovani	11:18 < mantovani> bmo dia cariocas fracassados
+2015-07-02 11:18:50	@mantovani	#rio-pm
+2015-07-02 11:18:52	@mantovani	kakakakak
+2015-07-02 11:19:12	@lmc	mantovani: uh?
+2015-07-02 11:19:20	@lmc	mantovani: Ah!
+2015-07-02 11:19:58	@lmc	Sim, eu estava nervoso. Tem um tio aqui do meu lado que está o tempo todo dando piti, e isso não ajuda nada a lidar com gente idiota…
+2015-07-02 11:19:59	@mantovani	maluco: ontem fui naquele bar que a gente foi há 8 anos atrás
+2015-07-02 11:20:08	@mantovani	KAKAKAKAKAKKA
+2015-07-02 11:20:10	@mantovani	eu sei mto bem isso
+2015-07-02 11:20:34	@mantovani	no rio de janeiro
+2015-07-02 11:21:37	+maluco	mantovani: qual bar ???
+2015-07-02 11:21:57	+maluco	eu alzheimer, não lembro de coisas assim tão antigas
+2015-07-02 11:22:10	@mantovani	maluco: lembra no YAPC do Rio de Janeiro correto ?
+2015-07-02 11:22:16	+maluco	lembro
+2015-07-02 11:22:23	@mantovani	lembra aquele bar no rio de janeiro que eu peguei uma carioca ?
+2015-07-02 11:22:30	@mantovani	vc me chamou pra ir embora e eu tava pegando uma carioca ?!
+2015-07-02 11:22:40	+maluco	caraí, direto do túnel do tempo
+2015-07-02 11:22:41	+maluco	lembrei
+2015-07-02 11:22:44	@mantovani	que tinha mesa de bilhar em cada andar
+2015-07-02 11:22:48	+maluco	já faz 8 anos isso ?!
+2015-07-02 11:23:15	@mantovani	sim
+2015-07-02 11:23:23	@mantovani	eu tinha 18 anos, hoje eu tenho 25
+2015-07-02 11:23:55	+maluco	caralho
+2015-07-02 11:24:00	@mantovani	maluco: fui lá de novo, foi sensacional
+2015-07-02 11:24:10	+maluco	pegou alguém lá ?
+2015-07-02 11:24:12	@mantovani	sim
+2015-07-02 11:24:18	@mantovani	meu amigo tb
+2015-07-02 11:24:22	@mantovani	duas minas do sul
+2015-07-02 11:24:27	@mantovani	turistas tb
+2015-07-02 11:36:33	--	lmc has changed topic for #sao-paulo.pm from "Viva o grande Brasil, nosso país \o/ |Peça voice (+v) se você não for um bot | São Paulo/SP  http://sao-paulo.pm.org/" to "Pauta de Hoje: A Vida Sexual do Jovem Mantovani | Viva o grande Brasil, nosso país \o/ |Peça voice (+v) se você não for um bot | São Paulo/SP  http://sao-paulo.pm.org/"
+2015-07-02 11:38:11	@mantovani	RenatoCRON: http://sao-paulo.pm.org/pub/manipulando-binarios-cobol-com-perl as imagens não estão aparecendo
+2015-07-02 11:41:33	+frederico	eu to nervoso
+2015-07-02 11:41:55	+frederico	2 horas de reuniao com um cara da india que nao queria migrar para git ( do svn )
+2015-07-02 11:42:09	+frederico	soltou uma 
+2015-07-02 11:42:18	+frederico	procurei no google e o gogole disse que svn e melhor que git
+2015-07-02 11:42:51	@mantovani	nossa
+2015-07-02 11:42:51	@mantovani	sem zoeira
+2015-07-02 11:42:52	@mantovani	eu devo estar mto velho
+2015-07-02 11:42:53	@mantovani	vc realmente gastou 2 horas do seu tempo por causa disso ?
+2015-07-02 11:42:53	@mantovani	eu ia migrar e prontop
+2015-07-02 11:43:25	+frederico	mantovani: entao, prefiro gastar duas horas do que ir para a india
+2015-07-02 11:43:40	@mantovani	cara, a india é um país foda
+2015-07-02 11:43:44	@mantovani	se a empresa que for pagar
+2015-07-02 11:43:49	@mantovani	eu iria fácil, ficaria 2 semanas lá
+2015-07-02 11:43:55	@mantovani	a india é um pais ruim se vc mora lá
+2015-07-02 11:43:58	@mantovani	mas pra visitar, é foda
+2015-07-02 11:44:02	+frederico	mantovani: depende 
+2015-07-02 11:44:08	+frederico	a fabrica fica num lugar mega pobre
+2015-07-02 11:45:10	@mantovani	as indianas sao gostosas
+2015-07-02 11:45:12	@mantovani	meus amigos foram pra la
+2015-07-02 11:45:19	@mantovani	sairam 3 vezes pra uma balada lá 
+2015-07-02 11:45:23	@mantovani	e comeram indianas nas 3 vezes
+2015-07-02 11:45:30	@mantovani	(balada cara)
+2015-07-02 11:47:10	+frederico	o ultimo maluco que foi para la ficou doente por dsemanas
+2015-07-02 11:47:39	@mantovani	o último gringo que veio aqui sofreu latrocinio :P
+2015-07-02 11:49:43	<--	shonorio (~shonorio@201-0-206-53.dial-up.telesp.net.br) has quit (Quit: Leaving...)
+2015-07-02 12:02:57	-->	renan (~Avell_B15@189-69-143-37.dial-up.telesp.net.br) has joined #sao-paulo.pm
+2015-07-02 12:18:04	@lmc	frederico: e se não migrar, qual é o problema?
+2015-07-02 21:48:41	-->	aajjbb (~aajjbb@179.154.117.36) has joined #sao-paulo.pm
+2015-07-02 21:48:41	--	Topic for #sao-paulo.pm is "Pauta de Hoje: A Vida Sexual do Jovem Mantovani | Viva o grande Brasil, nosso país \o/ |Peça voice (+v) se você não for um bot | São Paulo/SP  http://sao-paulo.pm.org/"
+2015-07-02 21:48:41	--	Topic set by lmc (~lmc@dust.soleus.nu) on Thu, 02 Jul 2015 11:36:32
+2015-07-02 21:48:41	--	Channel #sao-paulo.pm: 22 nicks (5 ops, 0 halfops, 16 voices, 1 normal)
+2015-07-02 21:48:43	--	Channel created on Sat, 26 Jul 2008 05:41:01
+2015-07-03 19:21:19	-->	aajjbb (~aajjbb@177.193.225.201) has joined #sao-paulo.pm
+2015-07-03 19:21:19	--	Topic for #sao-paulo.pm is "FELIZ ANIVERSÁRIO SOLLI M HONORIO | Se você não for paulista tudo bem, todo mundo tem defeitos. |Peça voice (+v) a um operador se você não for um bot |   São Paulo/SP  http://sao-paulo.pm.org/"
+2015-07-03 19:21:19	--	Topic set by mantovani (mantovani@redacted) on Fri, 03 Jul 2015 16:16:10
+2015-07-03 19:21:19	--	Channel #sao-paulo.pm: 21 nicks (5 ops, 0 halfops, 14 voices, 2 normals)
+2015-07-03 19:21:21	--	Channel created on Sat, 26 Jul 2008 05:41:01
+2015-07-03 19:38:17	<--	Rafael (~rafael@ps80344.dreamhost.com) has left #sao-paulo.pm
+2015-07-03 23:26:24	-->	renan1 (~Avell_B15@191.206.247.109) has joined #sao-paulo.pm
+2015-07-03 23:29:02	<--	renan (~Avell_B15@189-69-143-37.dial-up.telesp.net.br) has quit (Ping timeout: 360 seconds)
+2015-07-04 00:30:38	-->	renan (~Avell_B15@189-69-143-37.dial-up.telesp.net.br) has joined #sao-paulo.pm
+2015-07-04 00:30:38	--	Mode #sao-paulo.pm [+v renan] by Bender1
+2015-07-04 00:33:25	<--	renan1 (~Avell_B15@191.206.247.109) has quit (Ping timeout: 360 seconds)
+2015-07-04 00:37:11	<--	renan (~Avell_B15@189-69-143-37.dial-up.telesp.net.br) has left #sao-paulo.pm

@@ -80,4 +80,8 @@ PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[92m\]\w\[\e[m\] \[\e[35m\]\$\[\e[37m\] '
 #gitprompt config
 GIT_PROMPT_ONLY_IN_REPO=1
 GIT_PROMPT_THEME=Single_line_Ubuntu
+
 source ~/.bash-git-prompt/gitprompt.sh
+source /home/aajjbb/.rvm/scripts/rvm
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

@@ -9664,3 +9664,391 @@
 2015-06-28 14:41:12	--	Channel #archlinux-unregistered: 468 nicks (6 ops, 0 voices, 462 normals)
 2015-06-28 14:41:12	@evilgrawity	aajjbb: You can "/join #archlinux" now.
 2015-06-28 14:41:12	--	Channel created on Sat, 27 Dec 2014 21:49:46
+2015-06-29 21:01:54	-->	aajjbb (~aajjbb@179.154.117.36) has joined #archlinux-unregistered
+2015-06-29 21:01:54	--	Topic for #archlinux-unregistered is "=== You cannot join #archlinux until you are identified with NickServ.  Register and identify by following the instructions at <http://freenode.net/faq.shtml#nicksetup>.  You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there.  ===   No one will see what you say in here.  ==="
+2015-06-29 21:01:54	--	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on Sun, 28 Dec 2014 16:13:19
+2015-06-29 21:01:54	--	Channel #archlinux-unregistered: 442 nicks (6 ops, 0 voices, 436 normals)
+2015-06-29 21:01:55	@evilgrawity	aajjbb: You can "/join #archlinux" now.
+2015-06-29 21:01:55	--	Channel created on Sat, 27 Dec 2014 21:49:46
+2015-06-29 21:02:11	<--	ValekCOS (~ValekCOS@cpe-74-133-229-145.kya.res.rr.com) has quit (Changing host)
+2015-06-29 21:02:11	-->	ValekCOS (~ValekCOS@unaffiliated/valekcos) has joined #archlinux-unregistered
+2015-06-29 21:02:11	@evilgrawity	ValekCOS: You can "/join #archlinux" now.
+2015-06-29 21:02:52	<--	Hessesian1 (~Juraj@nat-88-212-44-143.antik.sk) has quit (Quit: Leaving.)
+2015-06-29 21:04:19	<--	QKO (~reaVer@a83-162-252-233.adsl.xs4all.nl) has quit (Ping timeout: 276 seconds)
+2015-06-29 21:04:29	-->	QKO (~reaVer@a83-162-252-233.adsl.xs4all.nl) has joined #archlinux-unregistered
+2015-06-29 21:05:10	<--	ValekCOS (~ValekCOS@unaffiliated/valekcos) has left #archlinux-unregistered
+2015-06-29 21:05:28	-->	gartral (~gartral@ip24-252-247-107.cl.ri.cox.net) has joined #archlinux-unregistered
+2015-06-29 21:05:29	<--	gartral (~gartral@ip24-252-247-107.cl.ri.cox.net) has quit (Changing host)
+2015-06-29 21:05:29	-->	gartral (~gartral@unaffiliated/gartral) has joined #archlinux-unregistered
+2015-06-29 21:05:29	@evilgrawity	gartral: You can "/join #archlinux" now.
+2015-06-29 21:07:28	-->	Binero (~jeroen@2a02:1810:952f:9300:c646:19ff:fea3:5c76) has joined #archlinux-unregistered
+2015-06-29 21:07:28	@evilgrawity	Binero: You can "/join #archlinux" now.
+2015-06-29 21:07:38	<--	Binero (~jeroen@2a02:1810:952f:9300:c646:19ff:fea3:5c76) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2015-06-29 21:08:28	-->	faisal (~faisal@212.17.34.54) has joined #archlinux-unregistered
+2015-06-29 21:11:27	<--	aureianimus (~quassel@s55963df3.adsl.online.nl) has quit (Ping timeout: 256 seconds)
+2015-06-29 21:14:30	-->	babai (~babai@14.96.5.45) has joined #archlinux-unregistered
+2015-06-29 21:14:40	<--	babai (~babai@14.96.5.45) has left #archlinux-unregistered
+2015-06-29 21:14:52	<--	shinnya (~shinnya@23.22.100.220.dy.bbexcite.jp) has quit (Ping timeout: 250 seconds)
+2015-06-30 22:46:06	-->	aajjbb (~aajjbb@179.154.117.36) has joined #archlinux-unregistered
+2015-06-30 22:46:06	--	Topic for #archlinux-unregistered is "=== You cannot join #archlinux until you are identified with NickServ.  Register and identify by following the instructions at <http://freenode.net/faq.shtml#nicksetup>.  You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there.  ===   No one will see what you say in here.  ==="
+2015-06-30 22:46:06	--	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on Sun, 28 Dec 2014 16:13:19
+2015-06-30 22:46:06	--	Channel #archlinux-unregistered: 445 nicks (6 ops, 0 voices, 439 normals)
+2015-06-30 22:46:06	--	Channel created on Sat, 27 Dec 2014 21:49:46
+2015-06-30 22:47:58	-->	Leno (~Thunderbi@60.247.111.213) has joined #archlinux-unregistered
+2015-06-30 22:50:29	-->	Okpc (~Okpc@ber19-3-78-220-252-108.fbx.proxad.net) has joined #archlinux-unregistered
+2015-06-30 22:50:32	<--	Okpc (~Okpc@ber19-3-78-220-252-108.fbx.proxad.net) has quit (Excess Flood)
+2015-06-30 22:50:51	<--	DUKENUKEM (~DPR3@45.55.132.183) has left #archlinux-unregistered
+2015-06-30 22:50:56	-->	aborazmeh (~aborazmeh@88.235.229.97) has joined #archlinux-unregistered
+2015-06-30 22:50:57	<--	aborazmeh (~aborazmeh@88.235.229.97) has quit (Changing host)
+2015-06-30 22:50:57	-->	aborazmeh (~aborazmeh@unaffiliated/aborazmeh) has joined #archlinux-unregistered
+2015-06-30 22:50:57	@evilgrawity	aborazmeh: You can "/join #archlinux" now.
+2015-06-30 22:51:54	-->	eyqb (~eyqb@ber19-3-78-220-252-108.fbx.proxad.net) has joined #archlinux-unregistered
+2015-06-30 22:52:01	<--	eyqb (~eyqb@ber19-3-78-220-252-108.fbx.proxad.net) has quit (Excess Flood)
+2015-06-30 22:53:06	-->	vucrn (~vucrn@ber19-3-78-220-252-108.fbx.proxad.net) has joined #archlinux-unregistered
+2015-06-30 22:53:07	<--	vucrn (~vucrn@ber19-3-78-220-252-108.fbx.proxad.net) has quit (Excess Flood)
+2015-06-30 22:54:03	-->	woodjrx (~woodjrx@woodonia.com) has joined #archlinux-unregistered
+2015-06-30 22:54:56	<--	ginseng (~ginseng@unaffiliated/ginseng) has quit (Quit: Leaving)
+2015-06-30 22:55:57	-->	Iaw (~Iaw@ber19-3-78-220-252-108.fbx.proxad.net) has joined #archlinux-unregistered
+2015-06-30 22:55:59	<--	Iaw (~Iaw@ber19-3-78-220-252-108.fbx.proxad.net) has quit (Excess Flood)
+2015-06-30 22:56:55	-->	Oaje (~Oaje@ber19-3-78-220-252-108.fbx.proxad.net) has joined #archlinux-unregistered
+2015-06-30 22:56:59	<--	Oaje (~Oaje@ber19-3-78-220-252-108.fbx.proxad.net) has quit (Excess Flood)
+2015-06-30 22:58:28	-->	uooa (~uooa@ber19-3-78-220-252-108.fbx.proxad.net) has joined #archlinux-unregistered
+2015-06-30 22:58:30	<--	uooa (~uooa@ber19-3-78-220-252-108.fbx.proxad.net) has quit (Excess Flood)
+2015-06-30 22:58:39	-->	Mr_A (~Mr_Anders@pool-71-122-132-98.tampfl.fios.verizon.net) has joined #archlinux-unregistered
+2015-06-30 22:58:43	<--	Mr_A (~Mr_Anders@pool-71-122-132-98.tampfl.fios.verizon.net) has left #archlinux-unregistered
+2015-06-30 22:59:30	-->	JohnDory (JohnDory@192.227.236.224) has joined #archlinux-unregistered
+2015-06-30 23:00:00	-->	aojbv (~aojbv@ber19-3-78-220-252-108.fbx.proxad.net) has joined #archlinux-unregistered
+2015-06-30 23:00:00	<--	aojbv (~aojbv@ber19-3-78-220-252-108.fbx.proxad.net) has quit (Excess Flood)
+2015-06-30 23:00:29	-->	Uket (~Uket@ber19-3-78-220-252-108.fbx.proxad.net) has joined #archlinux-unregistered
+2015-06-30 23:00:35	<--	Uket (~Uket@ber19-3-78-220-252-108.fbx.proxad.net) has quit (Excess Flood)
+2015-06-30 23:02:53	-->	inae (~inae@ber19-3-78-220-252-108.fbx.proxad.net) has joined #archlinux-unregistered
+2015-06-30 23:02:57	<--	inae (~inae@ber19-3-78-220-252-108.fbx.proxad.net) has quit (Excess Flood)
+2015-06-30 23:03:32	-->	Seylerius (~seylerius@104.152.206.27) has joined #archlinux-unregistered
+2015-06-30 23:03:45	@evilgrawity	Seylerius: You can "/join #archlinux" now.
+2015-06-30 23:03:52	<--	kutio (~kutio@2001:4b98:dc2:41:216:3eff:fe55:d050) has quit (Ping timeout: 246 seconds)
+2015-06-30 23:06:55	-->	nomasteryoda (~nomastery@ip72-210-69-143.mc.at.cox.net) has joined #archlinux-unregistered
+2015-06-30 23:07:17	<--	Seylerius (~seylerius@104.152.206.27) has left #archlinux-unregistered
+2015-06-30 23:07:23	<--	timmyBsd_ (~root@mailserver.1n3t.de) has quit (Read error: Connection reset by peer)
+2015-06-30 23:07:36	-->	timmyBsd (~root@mailserver.1n3t.de) has joined #archlinux-unregistered
+2015-06-30 23:08:16	-->	matiaslina (~matias@190.11.172.207) has joined #archlinux-unregistered
+2015-06-30 23:12:47	<--	ajvpot (~ajvpot@head.largepenis.club) has quit (Ping timeout: 276 seconds)
+2015-06-30 23:14:19	<--	ThePub (~nathan@184-155-126-16.cpe.cableone.net) has left #archlinux-unregistered
+2015-06-30 23:14:46	-->	ajvpot (~ajvpot@head.largepenis.club) has joined #archlinux-unregistered
+2015-07-02 21:48:42	-->	aajjbb (~aajjbb@179.154.117.36) has joined #archlinux-unregistered
+2015-07-02 21:48:42	--	Topic for #archlinux-unregistered is "=== You cannot join #archlinux until you are identified with NickServ.  Register and identify by following the instructions at <http://freenode.net/faq.shtml#nicksetup>.  You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there.  ===   No one will see what you say in here.  ==="
+2015-07-02 21:48:42	--	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on Sun, 28 Dec 2014 16:13:19
+2015-07-02 21:48:42	--	Channel #archlinux-unregistered: 486 nicks (6 ops, 0 voices, 480 normals)
+2015-07-02 21:48:42	--	Channel created on Sat, 27 Dec 2014 21:49:46
+2015-07-02 21:48:46	@evilgrawity	aajjbb: You can "/join #archlinux" now.
+2015-07-02 21:51:10	@evilgrawity	raddog: You can "/join #archlinux" now.
+2015-07-02 21:51:21	<--	raddog (~raddog@71-80-136-101.static.hspr.ca.charter.com) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2015-07-02 21:52:40	-->	skorgon (~skorgon@unaffiliated/skorgon) has joined #archlinux-unregistered
+2015-07-02 21:55:31	-->	watchat2 (~nodebot@MTLXPQAK-1242495078.sdsl.bell.ca) has joined #archlinux-unregistered
+2015-07-03 19:21:23	-->	aajjbb (~aajjbb@177.193.225.201) has joined #archlinux-unregistered
+2015-07-03 19:21:23	--	Topic for #archlinux-unregistered is "=== You cannot join #archlinux until you are identified with NickServ.  Register and identify by following the instructions at <http://freenode.net/faq.shtml#nicksetup>.  You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there.  ===   No one will see what you say in here.  ==="
+2015-07-03 19:21:23	--	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on Sun, 28 Dec 2014 16:13:19
+2015-07-03 19:21:23	--	Channel #archlinux-unregistered: 503 nicks (5 ops, 0 voices, 498 normals)
+2015-07-03 19:21:23	@evilgrawity	aajjbb: You can "/join #archlinux" now.
+2015-07-03 19:21:24	--	Channel created on Sat, 27 Dec 2014 21:49:46
+2015-07-03 19:22:10	<--	dNbatcp_ (~dNbatcp@2a02:8108:8d80:1c28:96de:80ff:fea6:6901) has quit (Remote host closed the connection)
+2015-07-03 19:22:19	-->	shoshi (~shoshi@2001:67c:24fc:2:ac6f:e696:7e0b:9d1) has joined #archlinux-unregistered
+2015-07-03 19:22:19	@evilgrawity	shoshi: You can "/join #archlinux" now.
+2015-07-03 19:22:37	-->	Ogdp (~Ogdp@ARennes-656-1-252-90.w86-214.abo.wanadoo.fr) has joined #archlinux-unregistered
+2015-07-03 19:22:52	<--	Ogdp (~Ogdp@ARennes-656-1-252-90.w86-214.abo.wanadoo.fr) has quit (Max SendQ exceeded)
+2015-07-03 19:23:11	@evilgrawity	Indigestion: You can "/join #archlinux" now.
+2015-07-03 19:23:30	<--	Indigestion (~Indigesti@d142-58-122-235.burnaby.sfu.ca) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2015-07-03 19:24:24	-->	aIternatif (~tulay_^@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:24:24	-->	neferbeIIa (~eIveda@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:24:24	-->	Iennie (~|ozGe|@rrcs-98-101-143-116.midsouth.biz.rr.com) has joined #archlinux-unregistered
+2015-07-03 19:24:24	-->	yeIda (~SEKER^^@104.220.39.95) has joined #archlinux-unregistered
+2015-07-03 19:24:24	-->	[christian] (~LaDy_tHe_@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:24:24	-->	dengesiz (~|GONCA|@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:24:25	-->	avukat26 (~selin^@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:24:25	-->	IceGirl`weak (~BarbyGirl@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:24:27	-->	zeynep (~BABY`23`@24.115.132.200.res-cmts.sth3.ptd.net) has joined #archlinux-unregistered
+2015-07-03 19:24:27	-->	zebani (~girL21]@104.220.39.95) has joined #archlinux-unregistered
+2015-07-03 19:24:29	-->	celik (~^Angelice@24.115.132.200.res-cmts.sth3.ptd.net) has joined #archlinux-unregistered
+2015-07-03 19:24:30	-->	kiziIok (~ferdi@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:24:30	-->	futboI (~meryem@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:24:30	-->	Ieylak (~Turkey@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:24:30	-->	musa (~GiRL24]@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:24:30	-->	Guest198749 (~^^Selda^^@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:24:31	-->	Ye_Beni (~R]uDe-G]@104.220.39.95) has joined #archlinux-unregistered
+2015-07-03 19:24:32	-->	berna (~firegrL@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:24:32	-->	tembeI (~muammer@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:24:33	-->	keIebek (~BABY`23`@rrcs-98-101-143-116.midsouth.biz.rr.com) has joined #archlinux-unregistered
+2015-07-03 19:24:37	-->	resul (~HANDE^^@104.220.39.95) has joined #archlinux-unregistered
+2015-07-03 19:24:37	-->	selin^ (~Meryem^^@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:24:38	-->	hello_girI (~BaRBiee@24.115.132.200.res-cmts.sth3.ptd.net) has joined #archlinux-unregistered
+2015-07-03 19:24:40	-->	selin17 (~sanemmm^@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:24:41	-->	tume_r (~^quEEn^@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:24:41	-->	Cindy|gambling| (~^yellowgi@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:24:42	-->	Gambit18f (~cooI@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:24:42	-->	yasar (~Girl^^17^@104.220.39.95) has joined #archlinux-unregistered
+2015-07-03 19:24:45	-->	`froggirl (~^X^_^Girl@24.115.132.200.res-cmts.sth3.ptd.net) has joined #archlinux-unregistered
+2015-07-03 19:24:47	-->	eInur (~Rosalinda@24.115.132.200.res-cmts.sth3.ptd.net) has joined #archlinux-unregistered
+2015-07-03 19:24:47	-->	Linda^is^a^geniu (~ShE20]@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:24:47	-->	ninjaa (~baby^^15^@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:24:48	-->	ox (~^Sertab@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:24:49	-->	alice16f (~^alicia19@rrcs-98-101-143-116.midsouth.biz.rr.com) has joined #archlinux-unregistered
+2015-07-03 19:24:52	-->	DeatHGirL^ (~^^angle^^@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:24:54	--	ox is now known as Guest16148
+2015-07-03 19:25:04	-->	perihan (~FaTMa_16@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:25:04	-->	catIak (~aIp@104.220.39.95) has joined #archlinux-unregistered
+2015-07-03 19:25:04	-->	Madonna___ (~biIgenur@104.220.39.95) has joined #archlinux-unregistered
+2015-07-03 19:25:04	-->	CelinaDion (~diLek`18@104.220.39.95) has joined #archlinux-unregistered
+2015-07-03 19:25:04	-->	emma_was_a_copie (~Mega_Girl@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:25:04	-->	cemay (~^^Deniz18@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:25:04	-->	bIack (~LaDyuQ]@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:25:06	-->	LemonGirL` (~koksaI@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:25:07	-->	Guest521098 (~reha@104.220.39.95) has joined #archlinux-unregistered
+2015-07-03 19:25:08	-->	beatifuI (~Sevim^`@static-100-39-18-16.lsanca.dsl-w.verizon.net) has joined #archlinux-unregistered
+2015-07-03 19:25:09	<--	aIternatif (~tulay_^@ns3278605.ip-5-39-90.eu) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	Iennie (~|ozGe|@rrcs-98-101-143-116.midsouth.biz.rr.com) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	neferbeIIa (~eIveda@ns3278605.ip-5-39-90.eu) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	avukat26 (~selin^@ns3278605.ip-5-39-90.eu) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	kiziIok (~ferdi@ns3278605.ip-5-39-90.eu) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	futboI (~meryem@ns3278605.ip-5-39-90.eu) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	Ieylak (~Turkey@ns3278605.ip-5-39-90.eu) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	selin^ (~Meryem^^@ns3278605.ip-5-39-90.eu) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	Linda^is^a^geniu (~ShE20]@ns3278605.ip-5-39-90.eu) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	tembeI (~muammer@ns3278605.ip-5-39-90.eu) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	ninjaa (~baby^^15^@ns3278605.ip-5-39-90.eu) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	Guest16148 (~^Sertab@ns3278605.ip-5-39-90.eu) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	yeIda (~SEKER^^@104.220.39.95) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	perihan (~FaTMa_16@ns3278605.ip-5-39-90.eu) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	keIebek (~BABY`23`@rrcs-98-101-143-116.midsouth.biz.rr.com) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	alice16f (~^alicia19@rrcs-98-101-143-116.midsouth.biz.rr.com) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	LemonGirL` (~koksaI@ns3278605.ip-5-39-90.eu) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	zebani (~girL21]@104.220.39.95) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	Ye_Beni (~R]uDe-G]@104.220.39.95) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	resul (~HANDE^^@104.220.39.95) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	yasar (~Girl^^17^@104.220.39.95) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	CelinaDion (~diLek`18@104.220.39.95) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	Madonna___ (~biIgenur@104.220.39.95) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	Guest521098 (~reha@104.220.39.95) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	catIak (~aIp@104.220.39.95) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	beatifuI (~Sevim^`@static-100-39-18-16.lsanca.dsl-w.verizon.net) has quit (Read error: Connection reset by peer)
+2015-07-03 19:25:09	<--	dengesiz (~|GONCA|@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	[christian] (~LaDy_tHe_@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	IceGirl`weak (~BarbyGirl@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	emma_was_a_copie (~Mega_Girl@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	berna (~firegrL@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	Gambit18f (~cooI@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	DeatHGirL^ (~^^angle^^@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	tume_r (~^quEEn^@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	selin17 (~sanemmm^@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	cemay (~^^Deniz18@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:25:09	<--	musa (~GiRL24]@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:25:10	<--	Guest198749 (~^^Selda^^@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:25:10	<--	Cindy|gambling| (~^yellowgi@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:25:10	<--	bIack (~LaDyuQ]@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:25:17	<--	hello_girI (~BaRBiee@24.115.132.200.res-cmts.sth3.ptd.net) has quit (Read error: Connection reset by peer)
+2015-07-03 19:25:17	-->	LaDy22` (~baIik@24.115.132.200.res-cmts.sth3.ptd.net) has joined #archlinux-unregistered
+2015-07-03 19:25:18	<--	LaDy22` (~baIik@24.115.132.200.res-cmts.sth3.ptd.net) has quit (Read error: Connection reset by peer)
+2015-07-03 19:25:21	-->	Rtzq (~Rtzq@ARennes-656-1-252-90.w86-214.abo.wanadoo.fr) has joined #archlinux-unregistered
+2015-07-03 19:25:22	<--	zeynep (~BABY`23`@24.115.132.200.res-cmts.sth3.ptd.net) has quit (Read error: Connection reset by peer)
+2015-07-03 19:25:25	<--	`froggirl (~^X^_^Girl@24.115.132.200.res-cmts.sth3.ptd.net) has quit (Read error: Connection reset by peer)
+2015-07-03 19:25:32	<--	celik (~^Angelice@24.115.132.200.res-cmts.sth3.ptd.net) has quit (Read error: Connection reset by peer)
+2015-07-03 19:25:53	<--	Rtzq (~Rtzq@ARennes-656-1-252-90.w86-214.abo.wanadoo.fr) has quit (Excess Flood)
+2015-07-03 19:26:45	<--	inzaghi (~admin@77.81.104.150) has quit (Quit: changing servers)
+2015-07-03 19:26:45	-->	yasemin (~faruk@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:26:45	-->	Guest121535 (~Julia_19@rrcs-98-101-143-116.midsouth.biz.rr.com) has joined #archlinux-unregistered
+2015-07-03 19:26:45	-->	hasan (~ICQ@104.220.39.95) has joined #archlinux-unregistered
+2015-07-03 19:26:46	-->	CuteGirLs_ (~DeatHGirL@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:26:46	-->	{Sweet_GirL} (~adriyatik@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:26:46	-->	sebnem (~dursun@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:26:46	-->	aIIy (~Miss-tURk@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:26:46	-->	Barby[talkative] (~Prenses]@24.115.132.200.res-cmts.sth3.ptd.net) has joined #archlinux-unregistered
+2015-07-03 19:26:46	-->	Princesss (~swimming@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:26:46	-->	teIci (~baby^^21^@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:26:52	-->	Miss|Cool (~Girl21`@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:26:52	-->	Guest527948 (~mimar32@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:26:52	-->	quadro (~necla@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:26:52	-->	kumarbaz (~bAnU03`pi@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:26:52	-->	haydar (~J_E_S_I_C@rrcs-98-101-143-116.midsouth.biz.rr.com) has joined #archlinux-unregistered
+2015-07-03 19:26:52	-->	tikIa (~Katerina`@static-100-39-18-16.lsanca.dsl-w.verizon.net) has joined #archlinux-unregistered
+2015-07-03 19:26:52	-->	deli_KIZ^^ (~baby^^25^@104.220.39.95) has joined #archlinux-unregistered
+2015-07-03 19:26:52	-->	soner (~woman-USA@static-100-39-18-16.lsanca.dsl-w.verizon.net) has joined #archlinux-unregistered
+2015-07-03 19:26:53	-->	nilufer (~{Sweet}_{@24.115.132.200.res-cmts.sth3.ptd.net) has joined #archlinux-unregistered
+2015-07-03 19:27:03	-->	max (~turker@24.115.132.200.res-cmts.sth3.ptd.net) has joined #archlinux-unregistered
+2015-07-03 19:27:06	<--	deli_KIZ^^ (~baby^^25^@104.220.39.95) has quit (K-Lined)
+2015-07-03 19:27:06	<--	hasan (~ICQ@104.220.39.95) has quit (K-Lined)
+2015-07-03 19:27:07	-->	diabLoGirll (~mazhar@static-100-39-18-16.lsanca.dsl-w.verizon.net) has joined #archlinux-unregistered
+2015-07-03 19:27:09	--	max is now known as Guest89218
+2015-07-03 19:27:09	-->	cetveI (~cool__gir@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:27:09	-->	zebani (~eIveda@static-100-39-18-16.lsanca.dsl-w.verizon.net) has joined #archlinux-unregistered
+2015-07-03 19:27:09	-->	haldun (~Baby15]@rrcs-98-101-143-116.midsouth.biz.rr.com) has joined #archlinux-unregistered
+2015-07-03 19:27:09	-->	iIetken (~lezi^@rrcs-98-101-143-116.midsouth.biz.rr.com) has joined #archlinux-unregistered
+2015-07-03 19:27:09	-->	kartal (~perihan^^@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:27:09	-->	expIorer (~girL14]@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:27:09	-->	axeI (~deniz@24.115.132.200.res-cmts.sth3.ptd.net) has joined #archlinux-unregistered
+2015-07-03 19:27:11	-->	gui__ (~guilherme@89.180.155.229) has joined #archlinux-unregistered
+2015-07-03 19:27:12	<--	diabLoGirll (~mazhar@static-100-39-18-16.lsanca.dsl-w.verizon.net) has quit (K-Lined)
+2015-07-03 19:27:13	<--	zebani (~eIveda@static-100-39-18-16.lsanca.dsl-w.verizon.net) has quit (K-Lined)
+2015-07-03 19:27:13	<--	tikIa (~Katerina`@static-100-39-18-16.lsanca.dsl-w.verizon.net) has quit (K-Lined)
+2015-07-03 19:27:13	<--	soner (~woman-USA@static-100-39-18-16.lsanca.dsl-w.verizon.net) has quit (K-Lined)
+2015-07-03 19:27:13	-->	turker (~LeSBiaN``@24.115.132.200.res-cmts.sth3.ptd.net) has joined #archlinux-unregistered
+2015-07-03 19:27:15	-->	coII (~teIeset@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:27:15	-->	uItra (~minE03`@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:27:15	-->	kiziIay (~isIam@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:27:15	-->	street (~LARAx15f]@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:27:18	-->	Lolita`not_stron (~LaNeT_gIr@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:27:18	-->	ebru (~yaPraK^@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:27:18	-->	emma_19 (~seIindaa@rrcs-98-101-143-116.midsouth.biz.rr.com) has joined #archlinux-unregistered
+2015-07-03 19:27:18	-->	burak (~NesLiHan`@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:27:18	-->	lezbian_ (~sovaIye@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:27:20	-->	N-a-T-a-S-C-H-a (~Chatgirl0@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:27:22	-->	CooL_girl (~TeenHot-1@24.115.132.200.res-cmts.sth3.ptd.net) has joined #archlinux-unregistered
+2015-07-03 19:27:22	-->	demet (~teIevoIe@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:27:27	-->	vaIve (~ReNGiN`@rrcs-98-101-143-116.midsouth.biz.rr.com) has joined #archlinux-unregistered
+2015-07-03 19:27:28	-->	`skygirl_ (~metali{cc@rrcs-98-101-143-116.midsouth.biz.rr.com) has joined #archlinux-unregistered
+2015-07-03 19:27:29	--	burak is now known as Guest26828
+2015-07-03 19:27:30	-->	Corvus__ (~guilherme@89-180-155-229.net.novis.pt) has joined #archlinux-unregistered
+2015-07-03 19:27:36	-->	Guest121538 (~soIo@rrcs-98-101-143-116.midsouth.biz.rr.com) has joined #archlinux-unregistered
+2015-07-03 19:27:36	-->	swimming (~ChatGirl0@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:27:39	-->	aIexia (~Lock@ns3278605.ip-5-39-90.eu) has joined #archlinux-unregistered
+2015-07-03 19:27:39	-->	reaImadrid (~burcu_19@64.15.138.12) has joined #archlinux-unregistered
+2015-07-03 19:27:41	<--	gui__ (~guilherme@89.180.155.229) has quit (Client Quit)
+2015-07-03 19:27:46	-->	]Louise[ (~GiRL18]@24.115.132.200.res-cmts.sth3.ptd.net) has joined #archlinux-unregistered
+2015-07-03 19:27:52	<--	aIexia (~Lock@ns3278605.ip-5-39-90.eu) has quit (K-Lined)
+2015-07-03 19:27:52	<--	demet (~teIevoIe@ns3278605.ip-5-39-90.eu) has quit (K-Lined)
+2015-07-03 19:27:52	<--	N-a-T-a-S-C-H-a (~Chatgirl0@ns3278605.ip-5-39-90.eu) has quit (K-Lined)
+2015-07-03 19:27:52	<--	ebru (~yaPraK^@ns3278605.ip-5-39-90.eu) has quit (K-Lined)
+2015-07-03 19:27:52	<--	Lolita`not_stron (~LaNeT_gIr@ns3278605.ip-5-39-90.eu) has quit (K-Lined)
+2015-07-03 19:27:52	<--	coII (~teIeset@ns3278605.ip-5-39-90.eu) has quit (K-Lined)
+2015-07-03 19:27:52	<--	uItra (~minE03`@ns3278605.ip-5-39-90.eu) has quit (K-Lined)
+2015-07-03 19:27:52	<--	quadro (~necla@ns3278605.ip-5-39-90.eu) has quit (K-Lined)
+2015-07-03 19:27:52	<--	cetveI (~cool__gir@ns3278605.ip-5-39-90.eu) has quit (K-Lined)
+2015-07-03 19:27:52	<--	kumarbaz (~bAnU03`pi@ns3278605.ip-5-39-90.eu) has quit (K-Lined)
+2015-07-03 19:27:52	<--	yasemin (~faruk@ns3278605.ip-5-39-90.eu) has quit (K-Lined)
+2015-07-03 19:27:52	<--	Guest527948 (~mimar32@ns3278605.ip-5-39-90.eu) has quit (K-Lined)
+2015-07-03 19:27:52	<--	Miss|Cool (~Girl21`@ns3278605.ip-5-39-90.eu) has quit (K-Lined)
+2015-07-03 19:27:58	<--	Guest121535 (~Julia_19@rrcs-98-101-143-116.midsouth.biz.rr.com) has quit (Remote host closed the connection)
+2015-07-03 19:27:59	<--	haldun (~Baby15]@rrcs-98-101-143-116.midsouth.biz.rr.com) has quit (Remote host closed the connection)
+2015-07-03 19:27:59	<--	haydar (~J_E_S_I_C@rrcs-98-101-143-116.midsouth.biz.rr.com) has quit (Remote host closed the connection)
+2015-07-03 19:27:59	<--	iIetken (~lezi^@rrcs-98-101-143-116.midsouth.biz.rr.com) has quit (Remote host closed the connection)
+2015-07-03 19:27:59	<--	Guest121538 (~soIo@rrcs-98-101-143-116.midsouth.biz.rr.com) has quit (Remote host closed the connection)
+2015-07-03 19:27:59	<--	vaIve (~ReNGiN`@rrcs-98-101-143-116.midsouth.biz.rr.com) has quit (Remote host closed the connection)
+2015-07-03 19:27:59	<--	emma_19 (~seIindaa@rrcs-98-101-143-116.midsouth.biz.rr.com) has quit (Remote host closed the connection)
+2015-07-03 19:27:59	<--	`skygirl_ (~metali{cc@rrcs-98-101-143-116.midsouth.biz.rr.com) has quit (Remote host closed the connection)
+2015-07-03 19:27:59	<--	CuteGirLs_ (~DeatHGirL@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:27:59	<--	sebnem (~dursun@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:27:59	<--	aIIy (~Miss-tURk@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:27:59	<--	{Sweet_GirL} (~adriyatik@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:27:59	<--	Princesss (~swimming@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:27:59	<--	teIci (~baby^^21^@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:27:59	<--	swimming (~ChatGirl0@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:27:59	<--	reaImadrid (~burcu_19@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:27:59	<--	kartal (~perihan^^@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:27:59	<--	lezbian_ (~sovaIye@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:27:59	<--	Guest26828 (~NesLiHan`@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:27:59	<--	expIorer (~girL14]@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:27:59	<--	kiziIay (~isIam@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:27:59	<--	street (~LARAx15f]@64.15.138.12) has quit (Remote host closed the connection)
+2015-07-03 19:28:02	<--	axeI (~deniz@24.115.132.200.res-cmts.sth3.ptd.net) has quit (Read error: Connection reset by peer)
+2015-07-03 19:28:02	<--	Barby[talkative] (~Prenses]@24.115.132.200.res-cmts.sth3.ptd.net) has quit (Read error: Connection reset by peer)
+2015-07-03 19:28:03	<--	CooL_girl (~TeenHot-1@24.115.132.200.res-cmts.sth3.ptd.net) has quit (Read error: Connection reset by peer)
+2015-07-03 19:28:03	<--	nilufer (~{Sweet}_{@24.115.132.200.res-cmts.sth3.ptd.net) has quit (Read error: Connection reset by peer)
+2015-07-03 19:28:04	<--	Guest89218 (~turker@24.115.132.200.res-cmts.sth3.ptd.net) has quit (Read error: Connection reset by peer)
+2015-07-03 19:28:04	<--	turker (~LeSBiaN``@24.115.132.200.res-cmts.sth3.ptd.net) has quit (Read error: Connection reset by peer)
+2015-07-03 19:28:06	<--	]Louise[ (~GiRL18]@24.115.132.200.res-cmts.sth3.ptd.net) has quit (Read error: Connection reset by peer)
+2015-07-03 19:28:12	<--	eInur (~Rosalinda@24.115.132.200.res-cmts.sth3.ptd.net) has quit (K-Lined)
+2015-07-03 19:28:16	<--	Lynkzz (~snypzz@c-73-177-240-243.hsd1.va.comcast.net) has quit (Quit: Leaving)
+2015-07-03 19:28:27	-->	qvd (~qvd@ber19-3-78-220-252-108.fbx.proxad.net) has joined #archlinux-unregistered
+2015-07-03 19:28:29	-->	inzaghi (~admin@archlinux.es) has joined #archlinux-unregistered
+2015-07-03 19:28:56	<--	qvd (~qvd@ber19-3-78-220-252-108.fbx.proxad.net) has quit (Excess Flood)
+2015-07-03 19:29:04	<--	Corvus__ (~guilherme@89-180-155-229.net.novis.pt) has left #archlinux-unregistered
+2015-07-03 19:29:42	-->	KarboniteKream (5d671cab@gateway/web/freenode/ip.93.103.28.171) has joined #archlinux-unregistered
+2015-07-03 19:29:47	-->	Eezos (~Eezos@ber19-3-78-220-252-108.fbx.proxad.net) has joined #archlinux-unregistered
+2015-07-03 19:29:47	@evilgrawity	KarboniteKream: You can "/join #archlinux" now.
+2015-07-03 19:29:54	<--	KarboniteKream (5d671cab@gateway/web/freenode/ip.93.103.28.171) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2015-07-03 19:30:52	<--	Eezos (~Eezos@ber19-3-78-220-252-108.fbx.proxad.net) has quit (Excess Flood)
+2015-07-03 19:30:52	-->	azbarcea (~alex@c-98-218-37-197.hsd1.va.comcast.net) has joined #archlinux-unregistered
+2015-07-03 19:32:02	-->	Ntyo (~Ntyo@ber19-3-78-220-252-108.fbx.proxad.net) has joined #archlinux-unregistered
+2015-07-03 19:32:03	-->	fIstIk_GirL (~sanemmmmm@broadband-5-228-153-165.nationalcablenetworks.ru) has joined #archlinux-unregistered
+2015-07-03 19:32:08	-->	bIink (~^nisanur^@061244048220.static.ctinets.com) has joined #archlinux-unregistered
+2015-07-03 19:32:26	-->	ICQ (~Lolitaa_@broadband-5-228-153-165.nationalcablenetworks.ru) has joined #archlinux-unregistered
+2015-07-03 19:32:28	-->	maI (~Emma_was_@061244048220.static.ctinets.com) has joined #archlinux-unregistered
+2015-07-03 19:32:29	<--	gi0 (~gi0@46.12.123.40.dsl.dyn.forthnet.gr) has quit (Read error: Connection reset by peer)
+2015-07-03 19:32:29	-->	wexes (~poI@broadband-5-228-153-165.nationalcablenetworks.ru) has joined #archlinux-unregistered
+2015-07-03 19:32:31	<--	maI (~Emma_was_@061244048220.static.ctinets.com) has quit (Read error: Connection reset by peer)
+2015-07-03 19:32:32	<--	bIink (~^nisanur^@061244048220.static.ctinets.com) has quit (Remote host closed the connection)
+2015-07-03 19:32:34	-->	_Thalia_ (~CuteGirLs@broadband-5-228-153-165.nationalcablenetworks.ru) has joined #archlinux-unregistered
+2015-07-03 19:32:44	-->	Iucy (~AHU^^^^@broadband-5-228-153-165.nationalcablenetworks.ru) has joined #archlinux-unregistered
+2015-07-03 19:32:52	-->	Bat[She]ba (~lady15`@broadband-5-228-153-165.nationalcablenetworks.ru) has joined #archlinux-unregistered
+2015-07-03 19:32:58	<--	Ntyo (~Ntyo@ber19-3-78-220-252-108.fbx.proxad.net) has quit (Excess Flood)
+2015-07-03 19:32:58	-->	haIuk (~GiRL23]@061244048220.static.ctinets.com) has joined #archlinux-unregistered
+2015-07-03 19:32:59	-->	ahmet (~yellowgir@061244048220.static.ctinets.com) has joined #archlinux-unregistered
+2015-07-03 19:32:59	-->	yiIdirim (~NurCann__@061244048220.static.ctinets.com) has joined #archlinux-unregistered
+2015-07-03 19:32:59	-->	ersan (~poI@061244048220.static.ctinets.com) has joined #archlinux-unregistered
+2015-07-03 19:32:59	-->	coolgirl_eating (~iksir@061244048220.static.ctinets.com) has joined #archlinux-unregistered
+2015-07-03 19:33:00	-->	Madonna___ (~mediha@broadband-5-228-153-165.nationalcablenetworks.ru) has joined #archlinux-unregistered
+2015-07-03 19:33:05	<--	Madonna___ (~mediha@broadband-5-228-153-165.nationalcablenetworks.ru) has quit (K-Lined)
+2015-07-03 19:33:05	<--	Bat[She]ba (~lady15`@broadband-5-228-153-165.nationalcablenetworks.ru) has quit (K-Lined)
+2015-07-03 19:33:05	<--	Iucy (~AHU^^^^@broadband-5-228-153-165.nationalcablenetworks.ru) has quit (K-Lined)
+2015-07-03 19:33:05	<--	_Thalia_ (~CuteGirLs@broadband-5-228-153-165.nationalcablenetworks.ru) has quit (K-Lined)
+2015-07-03 19:33:05	<--	wexes (~poI@broadband-5-228-153-165.nationalcablenetworks.ru) has quit (K-Lined)
+2015-07-03 19:33:05	<--	ICQ (~Lolitaa_@broadband-5-228-153-165.nationalcablenetworks.ru) has quit (K-Lined)
+2015-07-03 19:33:05	<--	fIstIk_GirL (~sanemmmmm@broadband-5-228-153-165.nationalcablenetworks.ru) has quit (K-Lined)
+2015-07-03 19:33:10	<--	haIuk (~GiRL23]@061244048220.static.ctinets.com) has quit (K-Lined)
+2015-07-03 19:33:11	<--	ahmet (~yellowgir@061244048220.static.ctinets.com) has quit (K-Lined)
+2015-07-03 19:33:11	<--	yiIdirim (~NurCann__@061244048220.static.ctinets.com) has quit (K-Lined)
+2015-07-03 19:33:11	<--	ersan (~poI@061244048220.static.ctinets.com) has quit (K-Lined)
+2015-07-03 19:33:11	<--	coolgirl_eating (~iksir@061244048220.static.ctinets.com) has quit (K-Lined)
+2015-07-03 19:34:17	-->	Gaps (~Gaps@ber19-3-78-220-252-108.fbx.proxad.net) has joined #archlinux-unregistered
+2015-07-03 19:34:54	<--	Gaps (~Gaps@ber19-3-78-220-252-108.fbx.proxad.net) has quit (Excess Flood)
+2015-07-03 19:35:47	-->	tarok (~tarok@mon75-4-82-224-194-165.fbx.proxad.net) has joined #archlinux-unregistered
+2015-07-03 19:35:50	-->	Dai (~Dai@ber19-3-78-220-252-108.fbx.proxad.net) has joined #archlinux-unregistered
+2015-07-03 19:35:50	-->	tarok_ (~tarok@mon75-4-82-224-194-165.fbx.proxad.net) has joined #archlinux-unregistered
+2015-07-03 19:36:01	<--	tarok_ (~tarok@mon75-4-82-224-194-165.fbx.proxad.net) has quit (Client Quit)
+2015-07-03 19:36:02	<--	shoshi (~shoshi@2001:67c:24fc:2:ac6f:e696:7e0b:9d1) has quit (Ping timeout: 246 seconds)
+2015-07-03 19:36:06	<--	Dai (~Dai@ber19-3-78-220-252-108.fbx.proxad.net) has quit (Excess Flood)
+2015-07-03 19:36:07	<--	tarok (~tarok@mon75-4-82-224-194-165.fbx.proxad.net) has left #archlinux-unregistered
+2015-07-03 19:36:34	-->	Dispotricator (~Zombie@pc-166-98-164-190.cm.vtr.net) has joined #archlinux-unregistered
+2015-07-03 19:37:44	-->	shoshi (~shoshi@2001:67c:24fc:2:ac6f:e696:7e0b:9d1) has joined #archlinux-unregistered
+2015-07-03 19:38:02	-->	Gfkk (~Gfkk@ARennes-656-1-252-90.w86-214.abo.wanadoo.fr) has joined #archlinux-unregistered
+2015-07-03 19:38:05	<--	Gfkk (~Gfkk@ARennes-656-1-252-90.w86-214.abo.wanadoo.fr) has quit (Max SendQ exceeded)
+2015-07-03 19:38:11	<--	sL1pKn07 (~sl1pkn07@unaffiliated/sl1pkn07) has quit (Ping timeout: 246 seconds)
+2015-07-03 19:38:13	<--	inzaghi (~admin@archlinux.es) has left #archlinux-unregistered
+2015-07-03 19:38:32	-->	youngwolf (~youngwolf@117.217.184.118) has joined #archlinux-unregistered
+2015-07-03 19:38:32	@evilgrawity	youngwolf: You can "/join #archlinux" now.
+2015-07-03 19:38:45	<--	youngwolf (~youngwolf@117.217.184.118) has left #archlinux-unregistered (requested by evilgrawity (Go back to #archlinux now.))
+2015-07-03 19:39:49	<--	iiddnn (~iacopodee@host185-239-dynamic.9-87-r.retail.telecomitalia.it) has quit (Quit: iiddnn)
+2015-07-03 19:39:58	-->	ebife (~ebife@ber19-3-78-220-252-108.fbx.proxad.net) has joined #archlinux-unregistered
+2015-07-03 19:40:03	<--	ebife (~ebife@ber19-3-78-220-252-108.fbx.proxad.net) has quit (Max SendQ exceeded)
+2015-07-03 19:41:12	-->	sh4wn (~sh4wn@2a02:2308::216:3eff:fe33:c370) has joined #archlinux-unregistered
+2015-07-03 19:41:33	-->	cfei (~cfei@ber19-3-78-220-252-108.fbx.proxad.net) has joined #archlinux-unregistered
+2015-07-03 19:41:39	<--	cfei (~cfei@ber19-3-78-220-252-108.fbx.proxad.net) has quit (Excess Flood)
+2015-07-03 19:42:33	-->	etg (~etg@ber19-3-78-220-252-108.fbx.proxad.net) has joined #archlinux-unregistered
+2015-07-03 19:43:03	<--	samzorn_ (~samzorn@dyndsl-092-252-113-117.ewe-ip-backbone.de) has quit (Read error: Connection reset by peer)
+2015-07-03 19:43:07	<--	etg (~etg@ber19-3-78-220-252-108.fbx.proxad.net) has quit (Excess Flood)
+2015-07-03 19:43:10	-->	samzorn (~samzorn@dyndsl-092-252-113-117.ewe-ip-backbone.de) has joined #archlinux-unregistered
+2015-07-03 19:43:14	-->	Anaxagoras (~quaLity@130.193.255.60) has joined #archlinux-unregistered
+2015-07-03 19:43:50	-->	sL1pKn07 (~sl1pkn07@unaffiliated/sl1pkn07) has joined #archlinux-unregistered
+2015-07-03 19:44:52	-->	Okf (~Okf@ber19-3-78-220-252-108.fbx.proxad.net) has joined #archlinux-unregistered
+2015-07-03 19:44:55	<--	Okf (~Okf@ber19-3-78-220-252-108.fbx.proxad.net) has quit (K-Lined)
+2015-07-03 19:45:41	-->	WillRun4Fun (~Lingo@68.68.153.70) has joined #archlinux-unregistered
+2015-07-03 19:47:15	<--	shoshi (~shoshi@2001:67c:24fc:2:ac6f:e696:7e0b:9d1) has quit (Ping timeout: 246 seconds)
+2015-07-03 19:47:51	<--	Anaxagoras (~quaLity@130.193.255.60) has quit
+2015-07-03 19:49:26	-->	shoshi (~shoshi@2001:67c:24fc:2:ac6f:e696:7e0b:9d1) has joined #archlinux-unregistered
+2015-07-03 19:49:27	@evilgrawity	shoshi: You can "/join #archlinux" now.
+2015-07-03 19:50:58	<--	TheRealJohnGalt (uid29986@gateway/web/irccloud.com/x-cwarxzzrkhbrsiqp) has quit (Quit: Connection closed for inactivity)
+2015-07-03 19:52:24	-->	Uela (~Uela@ARennes-656-1-252-90.w86-214.abo.wanadoo.fr) has joined #archlinux-unregistered
+2015-07-03 19:52:58	<--	Uela (~Uela@ARennes-656-1-252-90.w86-214.abo.wanadoo.fr) has quit (Excess Flood)
+2015-07-03 19:53:49	<--	WillRun4Fun (~Lingo@68.68.153.70) has quit (Quit: Be back later ...)
+2015-07-03 19:54:09	-->	Ciojp (~Ciojp@ARennes-656-1-252-90.w86-214.abo.wanadoo.fr) has joined #archlinux-unregistered
+2015-07-03 19:54:59	<--	Ciojp (~Ciojp@ARennes-656-1-252-90.w86-214.abo.wanadoo.fr) has quit (Excess Flood)
+2015-07-03 19:58:44	<--	sL1pKn07 (~sl1pkn07@unaffiliated/sl1pkn07) has quit (Remote host closed the connection)
+2015-07-03 19:59:33	-->	sL1pKn07 (~sl1pkn07@unaffiliated/sl1pkn07) has joined #archlinux-unregistered
+2015-07-03 19:59:33	@evilgrawity	sL1pKn07: You can "/join #archlinux" now.
+2015-07-03 20:00:18	-->	grawity (grawity@virgule.cluenet.org) has joined #archlinux-unregistered
+2015-07-03 20:00:18	--	Mode #archlinux-unregistered [+o grawity] by ChanServ
+2015-07-03 20:03:59	<--	thoffmeyer (~tim@unaffiliated/thoffmeyer) has left #archlinux-unregistered
+2015-07-03 20:06:58	-->	Claus_ (~Claus@80-71-135-32.u.parknet.dk) has joined #archlinux-unregistered
+2015-07-03 20:09:17	<--	shoshi (~shoshi@2001:67c:24fc:2:ac6f:e696:7e0b:9d1) has quit (Ping timeout: 246 seconds)
+2015-07-03 20:09:20	<--	HuMu (~Huub@41.73.98.221) has quit (Quit: Lost terminal)
+2015-07-03 20:09:20	<--	JeanCarloMachado (~jean@177.97.166.214) has quit (Ping timeout: 256 seconds)
+2015-07-03 20:10:17	-->	Corvus__ (~guilherme@89.180.155.229) has joined #archlinux-unregistered
+2015-07-03 20:10:19	-->	shoshi (~shoshi@2001:67c:24fc:2:ac6f:e696:7e0b:9d1) has joined #archlinux-unregistered
+2015-07-03 20:10:20	@evilgrawity	shoshi: You can "/join #archlinux" now.

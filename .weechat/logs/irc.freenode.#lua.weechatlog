@@ -47516,3 +47516,1943 @@
 2015-06-29 20:53:53	<--	joconnor_ (~joconnor@97.64.124.16) has quit (Ping timeout: 256 seconds)
 2015-06-29 20:56:36	<--	Lerg (~Lerg@188.226.45.254) has quit
 2015-06-29 20:58:06	<--	azrael_ (~azrael@117.208.39.198) has left #lua ("Leaving")
+2015-06-29 21:01:55	-->	aajjbb (~aajjbb@179.154.117.36) has joined #lua
+2015-06-29 21:01:55	--	Topic for #lua is "http://lua-users.org/wiki/IrcChannel :: Paste on http://codepad.org/?lang=Lua :: Please consider registering with NickServ if you haven't already. :: Pay no attention to Soni :: * is zero or more"
+2015-06-29 21:01:55	--	Topic set by rjek (~rjek@gateway/shell/pepperfish/x-aitwunmuwtabbrob) on Wed, 04 Mar 2015 12:59:41
+2015-06-29 21:01:55	--	Channel #lua: 320 nicks (0 ops, 0 voices, 320 normals)
+2015-06-29 21:01:55	--	URL for #lua: http://lua-users.org/
+2015-06-29 21:01:58	--	Channel created on Sun, 26 Nov 2006 04:42:55
+2015-06-29 21:05:13	<--	osa1 (~omer@2001-18e8-2-28dc-f000-752.dhcp6-bl.indiana.edu) has quit (Ping timeout: 256 seconds)
+2015-06-29 21:07:56	<--	chris_99 (~chris_99@unaffiliated/chris-99/x-3062929) has quit (Remote host closed the connection)
+2015-06-29 21:15:32	-->	enquora (~davidr@S0106306023d6dab3.cg.shawcable.net) has joined #lua
+2015-06-29 21:16:35	-->	tertu (~tertu@143.44.78.174) has joined #lua
+2015-06-29 21:22:30	<--	enquora (~davidr@S0106306023d6dab3.cg.shawcable.net) has quit (Remote host closed the connection)
+2015-06-29 21:22:37	<--	Bantalon (~Bantalon@c83-251-43-122.bredband.comhem.se) has quit (Remote host closed the connection)
+2015-06-29 21:22:47	<--	envi_|2 (kvirc@121.169.10.159) has quit (Ping timeout: 256 seconds)
+2015-06-29 21:23:00	-->	enquora (~davidr@S0106306023d6dab3.cg.shawcable.net) has joined #lua
+2015-06-29 21:26:18	<--	enquora (~davidr@S0106306023d6dab3.cg.shawcable.net) has quit (Remote host closed the connection)
+2015-06-29 21:27:41	-->	Kawata_ (~Kawata@cpe-69-207-10-206.buffalo.res.rr.com) has joined #lua
+2015-06-29 21:29:20	-->	osa1 (~omer@2601:801:1:4a07:2ab2:bdff:fedf:fa66) has joined #lua
+2015-06-29 21:30:06	<--	osa1 (~omer@2601:801:1:4a07:2ab2:bdff:fedf:fa66) has quit (Client Quit)
+2015-06-29 21:30:06	<--	Kawata (~Kawata@cpe-69-207-10-206.buffalo.res.rr.com) has quit (Ping timeout: 248 seconds)
+2015-06-29 21:32:20	-->	Baribal__ (~baribal@x2f0e555.dyn.telefonica.de) has joined #lua
+2015-06-29 21:32:58	-->	Bantalon (~Bantalon@c83-251-43-122.bredband.comhem.se) has joined #lua
+2015-06-29 21:35:15	<--	Bantalon (~Bantalon@c83-251-43-122.bredband.comhem.se) has quit (Remote host closed the connection)
+2015-06-29 21:36:17	<--	Baribal_ (~baribal@x2f0ef72.dyn.telefonica.de) has quit (Ping timeout: 272 seconds)
+2015-06-29 21:38:11	daurnimator	pyteste: you're about to find a really poorly maintained rabbit hole
+2015-06-29 21:38:35	pyteste	you mean lua is not good for that specifically ?
+2015-06-29 21:39:07	-->	Bantalon (~Bantalon@c83-251-43-122.bredband.comhem.se) has joined #lua
+2015-06-29 21:42:22	<--	Earlo (~Earlo@81.198.95.166) has quit (Remote host closed the connection)
+2015-06-29 21:44:12	daurnimator	pyteste: I mean that there is no good http library for lua.
+2015-06-29 21:44:45	daurnimator	pyteste: luasocket is probably the most used one. but it sucks at a lot of things. e.g. redirects; and it doesn't support https without luasec. which adds a whole new set of problems
+2015-06-29 21:45:26	daurnimator	pyteste: but if you need to do a POST; and know there's not going to be redirects; and know that it's non-HTTPS; then luasocket will be okay :P
+2015-06-29 21:45:41	pyteste	:p
+2015-06-29 21:45:45	pyteste	ok
+2015-06-29 21:45:48	pyteste	thanks for the hints
+2015-06-29 21:46:28	daurnimator	pyteste: I'm working on a replacement over at https://github.com/daurnimator/lua-http , but I choose to spend this weekend working on dbus support instead.
+2015-06-29 21:47:07	daurnimator	pyteste: if you need more advanced features 'right now', and don't need async; then perhaps look at some of the curl bindings
+2015-06-29 21:47:30	pyteste	well i do need async
+2015-06-29 21:47:39	pyteste	im trying to move some crawlers into lua
+2015-06-29 21:47:53	pyteste	to see if i can make more requests and use less resources
+2015-06-29 21:48:12	daurnimator	pyteste: heh. you probably really want lua-http then. sorry :P
+2015-06-29 21:48:49	pyteste	whats your deadline?
+2015-06-29 21:49:13	daurnimator	I don't have deadlines; I do this stuff in my free time on weekends/after work when the rest of my family is watching TV
+2015-06-29 21:49:20	Vornicus	curl is my bestest buddy in about every language I use and it has bindings for
+2015-06-29 21:49:35	pyteste	ok daurnimator =))
+2015-06-29 21:49:38	daurnimator	Vornicus: sadly none of the lua curl bindings have the async interface sorted out
+2015-06-29 21:50:02	Vornicus	Sadness.
+2015-06-29 21:54:02	<--	nikki93_ (~nikki93@78.101.24.29) has quit (Ping timeout: 252 seconds)
+2015-06-29 21:57:11	<--	DarkGod (~dg@was59-4-88-175-39-63.fbx.proxad.net) has quit (Ping timeout: 272 seconds)
+2015-06-29 21:59:48	furq	yeah the curl situation is a bit of a mess
+2015-06-29 22:00:05	Neffi	fix it furq 
+2015-06-29 22:00:10	furq	there's at least four separate bindings and they're all called "luacurl" or "lua-curl"
+2015-06-29 22:00:18	furq	and none of them are particularly great
+2015-06-29 22:00:23	furq	especially not for async stuff as daurnimator said
+2015-06-29 22:00:25	Neffi	gem from another channel: "[Lua] code isn't actually code, it's just text that is being interpreted and based on it it will execute certain functions"
+2015-06-29 22:00:31	Neffi	sounding good furq
+2015-06-29 22:00:37	furq	what channel is this
+2015-06-29 22:00:58	Neffi	It's somebody quoting somebody else. Hopefully I'm not in any channels inhabited by people this dumb. 
+2015-06-29 22:01:30	furq	i'm too lazy to think of a clever way to say "what about this one"
+2015-06-29 22:01:32	furq	so
+2015-06-29 22:01:33	furq	what about this one
+2015-06-29 22:01:45	Neffi	you don't count 
+2015-06-29 22:01:51	Neffi	because it's not your fault
+2015-06-29 22:02:47	furq	actually i could have said "surely that's all the channels you inhabit"
+2015-06-29 22:02:54	Neffi	too late
+2015-06-29 22:02:56	furq	forget the previous remark, i'm going with that one
+2015-06-29 22:03:00	furq	surely that's all the channels you inhabit
+2015-06-29 22:03:08	furq	because you are dumb
+2015-06-29 22:03:11	furq	do you see
+2015-06-29 22:03:21	Neffi	no you already messed up your chance
+2015-06-29 22:03:24	Neffi	you can't just go backl
+2015-06-29 22:03:28	furq	i just did
+2015-06-29 22:03:28	Neffi	what do you think this is? 
+2015-06-29 22:03:32	furq	what are you going to do about it
+2015-06-29 22:03:36	<--	benjamingr (uid23465@gateway/web/irccloud.com/x-czzsijmmewdpzclr) has quit (Quit: Connection closed for inactivity)
+2015-06-29 22:03:48	-->	nikki93 (~nikki93@176.203.157.17) has joined #lua
+2015-06-29 22:03:55	Neffi	i'll tell your mom
+2015-06-29 22:04:13	furq	what are you going to tell her
+2015-06-29 22:04:26	Neffi	that you're not playing fair
+2015-06-29 22:04:40	furq	what if she asks for more details
+2015-06-29 22:04:57	Neffi	I will send her my logs of this channel along with annotations by yours truly 
+2015-06-29 22:05:05	furq	and you think she'll understand that, will you
+2015-06-29 22:05:14	furq	s/will/do/
+2015-06-29 22:05:40	furq	also it's nice of you to say that you are mine truly
+2015-06-29 22:05:59	Neffi	np buddy
+2015-06-29 22:13:01	-->	TheBunny (~TheBunny@c-73-213-38-254.hsd1.md.comcast.net) has joined #lua
+2015-06-29 22:13:22	<--	tertu (~tertu@143.44.78.174) has quit (Ping timeout: 250 seconds)
+2015-06-29 22:15:58	<--	Bantalon (~Bantalon@c83-251-43-122.bredband.comhem.se) has quit
+2015-06-29 22:18:19	-->	mary5030 (~mary5030@2602:304:b0d5:9060:5ddd:68c7:ee69:8251) has joined #lua
+2015-06-29 22:21:24	<--	J_Darnley (~J_Darnley@d51a44418.access.telenet.be) has quit (Ping timeout: 264 seconds)
+2015-06-29 22:27:58	Neffi	nice web site furq http://isithackday.com/html5-rimshot/
+2015-06-29 22:29:14	<--	nikki93 (~nikki93@176.203.157.17) has quit (Read error: Connection reset by peer)
+2015-06-29 22:29:39	-->	nikki93 (~nikki93@176.203.157.17) has joined #lua
+2015-06-29 22:31:05	-->	dimday (~amcvega@119.81.124.83-static.reverse.softlayer.com) has joined #lua
+2015-06-29 22:31:31	<--	LavaLevel (~chatzilla@2601:2c6:4304:3579:a513:d5af:dea8:1e4e) has quit (Remote host closed the connection)
+2015-06-29 22:32:02	-->	LavaLevel (~chatzilla@2601:2c6:4304:3579:a513:d5af:dea8:1e4e) has joined #lua
+2015-06-29 22:32:54	furq	http://www.clickhole.com/blogpost/ability-play-bowser-has-made-our-society-more-evil-1644
+2015-06-29 22:33:00	furq	looking good Neffi 
+2015-06-29 22:33:22	Neffi	"When did the world go wrong?"  oh god
+2015-06-29 22:34:43	icelesstea	I'm pretty certain furq had something to do with that.
+2015-06-29 22:38:13	<--	bakaneko (~anonymous@AMontsouris-651-1-237-231.w86-212.abo.wanadoo.fr) has quit (Ping timeout: 244 seconds)
+2015-06-29 22:46:21	-->	FreeBirdLjj (~freebirdl@180.110.16.203) has joined #lua
+2015-06-29 22:46:24	<--	FreeBirdLjj (~freebirdl@180.110.16.203) has quit (Remote host closed the connection)
+2015-06-29 22:47:01	-->	FreeBirdLjj (~freebirdl@180.110.16.203) has joined #lua
+2015-06-29 22:51:51	<--	Kawata_ (~Kawata@cpe-69-207-10-206.buffalo.res.rr.com) has quit (Read error: Connection reset by peer)
+2015-06-29 22:52:13	-->	Kawata_ (~Kawata@cpe-69-207-10-206.buffalo.res.rr.com) has joined #lua
+2015-06-29 22:57:13	<--	joconnor (~joconnor@97.64.124.16) has quit (Remote host closed the connection)
+2015-06-29 23:24:21	furq	https://www.youtube.com/watch?v=QhIz2Dz_KEE
+2015-06-29 23:24:23	furq	looking good Neffi 
+2015-06-29 23:26:56	-->	govt (uid95065@gateway/web/irccloud.com/x-zrssftuvtjtltkpw) has joined #lua
+2015-06-29 23:27:03	Neffi	ok
+2015-06-29 23:27:10	<--	govt (uid95065@gateway/web/irccloud.com/x-zrssftuvtjtltkpw) has quit (Changing host)
+2015-06-29 23:27:10	-->	govt (uid95065@unaffiliated/work-op/x-9031893) has joined #lua
+2015-06-29 23:27:10	<--	govt (uid95065@unaffiliated/work-op/x-9031893) has quit (Changing host)
+2015-06-29 23:27:10	-->	govt (uid95065@gateway/web/irccloud.com/x-zrssftuvtjtltkpw) has joined #lua
+2015-06-29 23:30:09	-->	koz_ (~koz_@wireless-nat-student.aut.ac.nz) has joined #lua
+2015-06-29 23:30:56	cmtptr	how the fuck do I draw an elipse in gimp
+2015-06-29 23:32:44	furq	hit . three times
+2015-06-29 23:34:32	cmtptr	I guess I was in baby mode
+2015-06-29 23:34:57	furq	is that the mode where it only shows seven windows
+2015-06-29 23:34:57	cmtptr	I went into preferences and clicked "reset window positions to default" and then restarted and now there are tools there that weren't there before
+2015-06-29 23:35:35	cmtptr	although I'm still not seeing an ellipse tool
+2015-06-29 23:35:40	cmtptr	or any kind of shape for that matter
+2015-06-29 23:36:51	Neffi	single window mode 
+2015-06-29 23:36:58	Neffi	it makes gimp 80% less shitty
+2015-06-29 23:37:02	Neffi	it's still pretty shitty, but it helps
+2015-06-29 23:37:17	cmtptr	yeah I use that
+2015-06-29 23:37:24	cmtptr	but seriously there's no shape tool
+2015-06-29 23:37:40	darkstalker	what gimp version?
+2015-06-29 23:37:43	cmtptr	I guess I have to make a new layer, select an ellipse-shaped selection, fill, shrink selection, delete
+2015-06-29 23:38:05	cmtptr	2.8.0
+2015-06-29 23:38:14	Neffi	I think there's a "stroke" 
+2015-06-29 23:38:17	 *	Neffi strokes cmtptr 
+2015-06-29 23:38:30	xyzzy_	gimp's floating layers or w/e make me want to murder someone
+2015-06-29 23:39:27	darkstalker	yea duno about a circle drawing tool. never needed one lol
+2015-06-29 23:39:33	xyzzy_	the only thing i actually like about gimp is the separated save/export thing, which is kind of nice since you don't have to keep switching between xcf and png/jpg all the time
+2015-06-29 23:39:55	darkstalker	duno what you're trying to do. if you need to draw polygons maybe use something like inkscape
+2015-06-29 23:39:58	xyzzy_	although it's kinda annoying that you HAVE to use export for non-xcf types if you aren't actually working in xcf
+2015-06-29 23:40:15	xyzzy_	like if you just needed to crop an image
+2015-06-29 23:40:34	darkstalker	yes the save/export thing is weird
+2015-06-29 23:40:43	cmtptr	the only thing I would ever need to use an image editing program for is to circle something in a screenshot to attach to a bug tracker
+2015-06-29 23:41:02	xyzzy_	oh i thought you were an arteest
+2015-06-29 23:41:09	<--	leafo1 (~leafo@206.169.213.106) has quit (Quit: WeeChat 1.2)
+2015-06-29 23:41:19	darkstalker	an artist would draw the circle by hand
+2015-06-29 23:42:32	darkstalker	btw you don't need to shrink selections, just convert it to border
+2015-06-29 23:42:37	-->	Dee_ (~Dee@71-15-255-239.dhcp.jcsn.tn.charter.com) has joined #lua
+2015-06-29 23:46:06	<--	Dee (~Dee@71-15-255-239.dhcp.jcsn.tn.charter.com) has quit (Ping timeout: 248 seconds)
+2015-06-29 23:46:30	cmtptr	oh
+2015-06-29 23:46:32	cmtptr	too late
+2015-06-29 23:48:40	darkstalker	looking good cmtptr https://33.media.tumblr.com/d02a15532a9cfa7b33635c62fb6042ba/tumblr_nqqhbvNLXF1tlb56zo1_400.gif
+2015-06-29 23:49:23	ttmrichter	Nice to see I'm not the only one who thinks The Gimp is a bit anemic.
+2015-06-29 23:49:38	furq	no it is just you
+2015-06-29 23:49:41	furq	everyone else thinks it's great
+2015-06-29 23:49:55	darkstalker	photoshop is bad too
+2015-06-29 23:49:57	darkstalker	everything sucks
+2015-06-29 23:50:11	Neffi	you're starting to get it, darkstalker!
+2015-06-29 23:50:26	ttmrichter	darkstalker: Fair point.  Software sucks.  No exceptions.
+2015-06-29 23:51:03	furq	what about asp.net
+2015-06-29 23:51:05	furq	everyone likes that
+2015-06-29 23:52:51	furq	what about my new coffeescript fastcgi web framework which uses HAML templates, YAML configuration files and only does HEAD requests
+2015-06-29 23:53:03	furq	i'd like to see you find anything bad to say about that
+2015-06-29 23:53:13	darkstalker	it doesn't support HTML6, it sucks
+2015-06-29 23:53:21	furq	sure it does
+2015-06-29 23:53:46	furq	if you blow into the microphone while a request is being served then haml generates an html6 doctype
+2015-06-29 23:53:52	furq	simple
+2015-06-29 23:55:18	furq	it's not mentioned in the docs but there is a blog post about it which you can find by googling for "naughty hamster gets punished"
+2015-06-29 23:58:08	-->	tertu (~tertu@143.44.78.174) has joined #lua
+2015-06-30 00:05:10	<--	Kawata_ (~Kawata@cpe-69-207-10-206.buffalo.res.rr.com) has quit (Read error: Connection reset by peer)
+2015-06-30 00:09:34	<--	aquanight (~aquanight@96-18-7-133.cpe.cableone.net) has quit (Ping timeout: 248 seconds)
+2015-06-30 00:09:50	<--	dmail (~dmail@cpc33-live22-2-0-cust204.17-2.cable.virginm.net) has quit (Ping timeout: 264 seconds)
+2015-06-30 00:11:15	-->	dmail (~dmail@cpc33-live22-2-0-cust204.17-2.cable.virginm.net) has joined #lua
+2015-06-30 00:11:41	<--	nikki93 (~nikki93@176.203.157.17) has quit (Remote host closed the connection)
+2015-06-30 00:14:45	-->	overclk (vshankar@nat/redhat/x-okzvhvckpfdbdgbx) has joined #lua
+2015-06-30 00:16:05	-->	nikki93 (~nikki93@176.203.157.17) has joined #lua
+2015-06-30 00:23:46	<--	nikki93 (~nikki93@176.203.157.17) has quit (Remote host closed the connection)
+2015-06-30 00:35:36	<--	SpaceAlien (a7a0743f@gateway/web/cgi-irc/kiwiirc.com/ip.167.160.116.63) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2015-06-30 00:40:44	-->	nikki93 (~nikki93@176.203.157.17) has joined #lua
+2015-06-30 00:42:15	<--	overclk (vshankar@nat/redhat/x-okzvhvckpfdbdgbx) has quit (Quit: Leaving)
+2015-06-30 00:42:33	-->	overclk (vshankar@nat/redhat/x-vaecbgrrubujjbsf) has joined #lua
+2015-06-30 00:44:15	-->	Oka (~Oka@hlfxns016cw-156034016072.dhcp-dynamic.FibreOP.ns.bellaliant.net) has joined #lua
+2015-06-30 00:48:48	<--	Oka (~Oka@hlfxns016cw-156034016072.dhcp-dynamic.FibreOP.ns.bellaliant.net) has quit (Remote host closed the connection)
+2015-06-30 00:51:49	-->	Oka (~Oka@hlfxns016cw-156034016072.dhcp-dynamic.FibreOP.ns.bellaliant.net) has joined #lua
+2015-06-30 00:52:11	<--	BitPuffin|osx (~isak@199.72.208.46.dyn.plus.net) has quit (Ping timeout: 265 seconds)
+2015-06-30 00:54:52	<--	TheBunny (~TheBunny@c-73-213-38-254.hsd1.md.comcast.net) has quit (Quit: Leaving.)
+2015-06-30 00:56:57	-->	TheBunny (~TheBunny@c-73-213-38-254.hsd1.md.comcast.net) has joined #lua
+2015-06-30 01:01:50	-->	Lyqyd (~quassel@184-100-220-231.ptld.qwest.net) has joined #lua
+2015-06-30 01:04:47	-->	XedMada (~XedMada@cpe-72-182-34-126.austin.res.rr.com) has joined #lua
+2015-06-30 01:06:44	<--	psy_ (~psy@43.224.156.106) has quit (Quit: Leaving)
+2015-06-30 01:07:07	-->	psy (~psy@43.224.156.106) has joined #lua
+2015-06-30 01:07:44	<--	psy (~psy@43.224.156.106) has quit (Max SendQ exceeded)
+2015-06-30 01:08:33	-->	psy (~psy@43.224.156.106) has joined #lua
+2015-06-30 01:10:38	<--	mary5030 (~mary5030@2602:304:b0d5:9060:5ddd:68c7:ee69:8251) has quit (Remote host closed the connection)
+2015-06-30 01:10:54	<--	koz_ (~koz_@wireless-nat-student.aut.ac.nz) has quit (Ping timeout: 248 seconds)
+2015-06-30 01:17:43	-->	joconnor (~joconnor@173-11-74-161-SFBA.hfc.comcastbusiness.net) has joined #lua
+2015-06-30 01:17:58	<--	abirchall (~abirchall@2620:10d:c082:1054:6203:8ff:fe8a:d0ba) has quit (Remote host closed the connection)
+2015-06-30 01:21:08	<--	nikki93 (~nikki93@176.203.157.17) has quit (Read error: Connection reset by peer)
+2015-06-30 01:21:36	-->	nikki93 (~nikki93@176.203.157.17) has joined #lua
+2015-06-30 01:22:36	-->	astrobunny (~astrobunn@CF211018213233.cims.jp) has joined #lua
+2015-06-30 01:25:24	-->	s3shs (~s3shs@ip68-99-253-150.ph.ph.cox.net) has joined #lua
+2015-06-30 01:26:50	-->	typohatguy (~LPGhatguy@host-72-174-70-146.msl-mt.client.bresnan.net) has joined #lua
+2015-06-30 01:28:49	-->	abirchall (~abirchall@2620:10d:c081:1110:8000::2377) has joined #lua
+2015-06-30 01:29:32	<--	lpghatguy (~LPGhatguy@host-72-174-70-146.msl-mt.client.bresnan.net) has quit (Ping timeout: 246 seconds)
+2015-06-30 01:31:00	<--	nikki93 (~nikki93@176.203.157.17) has quit (Ping timeout: 255 seconds)
+2015-06-30 01:32:09	-->	whitebook (~whitebook@46-116-102-110.bb.netvision.net.il) has joined #lua
+2015-06-30 01:32:16	<--	leafo (~leafo@76.14.73.7) has quit (Ping timeout: 250 seconds)
+2015-06-30 01:34:18	-->	riidom (~Riidom@ipservice-047-070-203-036.pools.arcor-ip.net) has joined #lua
+2015-06-30 01:35:55	<--	psy (~psy@43.224.156.106) has quit (Disconnected by services)
+2015-06-30 01:36:45	-->	psy_ (~psy@43.224.156.106) has joined #lua
+2015-06-30 01:36:51	-->	frogdr (uid71668@gateway/web/irccloud.com/x-phwffbmnsksrhkgl) has joined #lua
+2015-06-30 01:39:22	-->	nikki93 (~nikki93@178.152.216.152) has joined #lua
+2015-06-30 01:46:36	<--	xxleite (~leite@unaffiliated/xxleite) has quit (Read error: Connection reset by peer)
+2015-06-30 01:47:58	-->	leafo (~leafo@76.14.73.7) has joined #lua
+2015-06-30 01:51:45	-->	koz_ (~koz_@118.148.135.18) has joined #lua
+2015-06-30 01:55:06	-->	xxleite (~leite@unaffiliated/xxleite) has joined #lua
+2015-06-30 01:55:20	 *	koz_ submitted my Master's thesis today.
+2015-06-30 01:55:25	koz_	Thought you'd all like to know.
+2015-06-30 01:59:20	daurnimator	koz_: title?
+2015-06-30 01:59:53	koz_	Dynamic algorithms for partially-sorted lists.
+2015-06-30 11:26:47	--	irc: disconnected from server
+2015-06-30 11:27:13	-->	aajjbb (~aajjbb@179.154.117.36) has joined #lua
+2015-06-30 11:27:13	--	Topic for #lua is "http://lua-users.org/wiki/IrcChannel :: Paste on http://codepad.org/?lang=Lua :: Please consider registering with NickServ if you haven't already. :: Pay no attention to Soni :: * is zero or more"
+2015-06-30 11:27:13	--	Topic set by rjek (~rjek@gateway/shell/pepperfish/x-aitwunmuwtabbrob) on Wed, 04 Mar 2015 12:59:41
+2015-06-30 11:27:13	--	Channel #lua: 334 nicks (0 ops, 0 voices, 334 normals)
+2015-06-30 11:27:13	--	URL for #lua: http://lua-users.org/
+2015-06-30 11:27:19	--	Channel created on Sun, 26 Nov 2006 04:42:55
+2015-06-30 11:28:49	cmtptr	ttmrichter, in china, probably nil
+2015-06-30 11:30:09	<--	Spacemonkey (~SpaceMonk@82.133.8.67) has quit (Ping timeout: 244 seconds)
+2015-06-30 11:31:04	xyzzy_	we don't serve communists!
+2015-06-30 11:31:37	<--	bobryan (~h36sa@freebsd/contributor/bobryan) has quit (Ping timeout: 264 seconds)
+2015-06-30 11:31:58	ttmrichter	OK, good.
+2015-06-30 11:32:03	cmtptr	no, it's that they're one of our biggest competators
+2015-06-30 11:32:14	ttmrichter	Because I don't want whatever I'm using to suddenly explode for no adequately explored reason.  :D
+2015-06-30 11:32:15	cmtptr	so I don't see any chance of them buying our products
+2015-06-30 11:33:40	<--	benjamingr (uid23465@gateway/web/irccloud.com/x-zppbdcdiiofumfhe) has quit (Quit: Connection closed for inactivity)
+2015-06-30 11:36:56	-->	bobryan (~h36sa@freebsd/contributor/bobryan) has joined #lua
+2015-06-30 11:37:18	-->	jimmio (~Jim@pool-72-94-167-104.phlapa.fios.verizon.net) has joined #lua
+2015-06-30 11:37:58	jimmio	If I add a function to a table.. and the table also has int keyed members.. how can I access those members in said function?
+2015-06-30 11:38:08	-->	tavish (~tavish@unaffiliated/tavish) has joined #lua
+2015-06-30 11:41:20	<--	bobryan (~h36sa@freebsd/contributor/bobryan) has quit (Ping timeout: 248 seconds)
+2015-06-30 11:43:03	ttmrichter	table.function(table, p1, p2, p3) or equivalently table:function(p1, p2, p3).  Just make the table the first argument to the function.
+2015-06-30 11:43:31	ttmrichter	% print "hello"
+2015-06-30 11:43:32	yalb	ttmrichter: hello
+2015-06-30 11:43:37	ttmrichter	OK, it's up.
+2015-06-30 11:43:58	-->	LavaLevel (~chatzilla@2601:2c6:4304:3579:f9ae:4a1a:a76f:aeaf) has joined #lua
+2015-06-30 11:44:36	jimmio	ttmrichter: Thanks, that's done it.
+2015-06-30 11:45:06	-->	Elish (~x@unaffiliated/elish) has joined #lua
+2015-06-30 11:45:26	jimmio	ttmrichter: I was defining it like myTable.Func = function (params) ... end and didn't realize I needed to specify I wanted the table as a parameter
+2015-06-30 11:45:35	ttmrichter	% t = { "c", "b", "a" } t.f = function(t) print(t[1], t[2], t[3]) end t.f(t) t:f()
+2015-06-30 11:45:35	yalb	ttmrichter: c b a; c b a
+2015-06-30 11:45:56	ttmrichter	Yep.  You have to pass in the table, but that's sugared with the : notation.
+2015-06-30 11:46:55	-->	Protogenes (~Protogene@dslb-084-062-245-091.084.062.pools.vodafone-ip.de) has joined #lua
+2015-06-30 11:48:44	<--	govt (uid95065@gateway/web/irccloud.com/x-cdvljmhydegaaseq) has quit (Quit: Connection closed for inactivity)
+2015-06-30 11:51:00	-->	bobryan (~h36sa@104.220.31.126) has joined #lua
+2015-06-30 11:51:01	<--	bobryan (~h36sa@104.220.31.126) has quit (Changing host)
+2015-06-30 11:51:01	-->	bobryan (~h36sa@freebsd/contributor/bobryan) has joined #lua
+2015-06-30 11:58:23	<--	Zer0 (~Zer0@h203n5-ksn2-a12.ias.bredband.telia.com) has quit (Ping timeout: 248 seconds)
+2015-06-30 11:58:24	-->	Zer0_ (~Zer0@h203n5-ksn2-a12.ias.bredband.telia.com) has joined #lua
+2015-06-30 12:00:28	<--	etandel (~etandel@200.201.176.130) has quit (Remote host closed the connection)
+2015-06-30 12:00:49	-->	etandel (~etandel@200.201.176.130) has joined #lua
+2015-06-30 12:02:54	Schwarzbaer	How do I check whether thy byte representation of a character is equal to a given hex value? In particular, some website that shall remain unnamed uses the Windows-CP-1252 encoding to represent , which ends up as the character 0x80. How do I check whether a given character is that character?
+2015-06-30 12:03:49	<--	torpor (~Adium@2001:858:5:3a41:8c92:27c1:2d5a:634b) has quit (Read error: Connection reset by peer)
+2015-06-30 12:03:59	-->	abirchall (~abirchall@2620:10d:c081:1101:6203:8ff:fe8a:d0ba) has joined #lua
+2015-06-30 12:04:00	-->	torpor (~Adium@213.129.230.10) has joined #lua
+2015-06-30 12:04:25	lu324_	% return string.byte('A') == 0x41 -- Schwarzbaer 
+2015-06-30 12:04:25	yalb	lu324_: true
+2015-06-30 12:04:38	Schwarzbaer	Thanks!
+2015-06-30 12:05:07	lu324_	Schwarzbaer, also you can do char == "\128"
+2015-06-30 12:08:31	<--	abirchall (~abirchall@2620:10d:c081:1101:6203:8ff:fe8a:d0ba) has quit (Ping timeout: 248 seconds)
+2015-06-30 12:09:11	-->	dvx (~dvx@178.217.148.153) has joined #lua
+2015-06-30 12:10:01	<--	nct (~dellos@softbank126130146048.bbtec.net) has quit (Quit: Leaving...)
+2015-06-30 12:12:39	-->	whitebook (~whitebook@bzq-79-181-162-142.red.bezeqint.net) has joined #lua
+2015-06-30 12:14:10	<--	dvx (~dvx@178.217.148.153) has quit (Ping timeout: 256 seconds)
+2015-06-30 12:15:30	-->	dvx (~dvx@178.217.148.153) has joined #lua
+2015-06-30 12:15:43	<--	torpor (~Adium@213.129.230.10) has quit (Quit: Leaving.)
+2015-06-30 12:17:16	<--	whitebook (~whitebook@bzq-79-181-162-142.red.bezeqint.net) has quit (Ping timeout: 272 seconds)
+2015-06-30 12:20:07	jimmio	If I include none of Lua's default libraries, will myStr = "abc"; myStr:sub(2,2) work?
+2015-06-30 12:22:24	jimmio	That'd be a no. So.. how can I implement sub for strings?
+2015-06-30 12:25:06	<--	Lappy (~lappy@znc.netros.co) has quit (Ping timeout: 246 seconds)
+2015-06-30 12:25:33	lu324_	jimmio, try luaopen_string(L); lua_pop(L, 1);
+2015-06-30 12:26:39	-->	Lappy (~lappy@gamio.netros.in) has joined #lua
+2015-06-30 12:26:44	-->	Betal (~Betal@unaffiliated/betal) has joined #lua
+2015-06-30 12:27:30	jimmio	lu324_: I could still write my own functions for strings though, couldn't I? Not that I really need to; the default string lib is perfect for what I'll need.
+2015-06-30 12:27:51	jimmio	lu324_: I'll add that and see where I'm at.
+2015-06-30 12:27:52	-->	torpor (~Adium@2001:858:5:3a41:8c92:27c1:2d5a:634b) has joined #lua
+2015-06-30 12:28:55	bone	are you trying to reduce memory pressure? why not just open them all?
+2015-06-30 12:29:20	-->	envi_|2 (kvirc@121.169.10.159) has joined #lua
+2015-06-30 12:30:07	jimmio	bone: I'm using Lua to call C functions and I don't (didn't) want any of the Lua libraries to interfere with it (mainly the file related ones; C side will provide file ops that are safer)
+2015-06-30 12:32:00	bone	you're embedding in a game or something and you don't want scripts to do stuff outside of your engine?
+2015-06-30 12:34:51	jimmio	Basically, yeah.
+2015-06-30 12:35:41	jimmio	I see that I need the string library though.. and I'd much rather they be able to lookup the Lua documentation and find something that works vs. having no idea what to use.
+2015-06-30 12:38:37	-->	Eyes (~Eyes@WiseOS/Founder/Eyes) has joined #lua
+2015-06-30 12:41:58	<--	lrea (~luca@fast100.tomato.it) has quit (Remote host closed the connection)
+2015-06-30 12:42:10	cmtptr	oh my fucking god who wrote this software?
+2015-06-30 12:42:26	cmtptr	another bug attributed to using uint8_t everywhere
+2015-06-30 12:42:51	cmtptr	I even found a case of "uint8_t hdrSize = sizeof (something)"
+2015-06-30 12:43:08	-->	FreeBirdLjj (~freebirdl@180.111.184.161) has joined #lua
+2015-06-30 12:43:29	-->	luanatic (~luanatic@254.164.116.89.mobile.mezon.lt) has joined #lua
+2015-06-30 12:43:42	<--	FreeBirdLjj (~freebirdl@180.111.184.161) has quit (Remote host closed the connection)
+2015-06-30 12:44:15	-->	FreeBirdLjj (~freebirdl@180.111.184.161) has joined #lua
+2015-06-30 12:46:27	<--	Schwarzbaer (~baribal@p5DC18D43.dip0.t-ipconnect.de) has quit (Ping timeout: 246 seconds)
+2015-06-30 12:47:21	-->	Keanu73 (Keanu73@unaffiliated/keanu73) has joined #lua
+2015-06-30 12:49:31	--	SpaceMonkey_2 is now known as Spacemonkey
+2015-06-30 12:51:34	<--	envi_|2 (kvirc@121.169.10.159) has quit (Ping timeout: 256 seconds)
+2015-06-30 12:51:34	<--	BitPuffin|osx (~isak@199.72.208.46.dyn.plus.net) has quit (Ping timeout: 256 seconds)
+2015-06-30 13:00:25	AlexMax	at least they're using standard integer types
+2015-06-30 13:01:32	<--	etandel (~etandel@200.201.176.130) has quit (Remote host closed the connection)
+2015-06-30 13:01:52	-->	etandel (~etandel@200.201.176.130) has joined #lua
+2015-06-30 13:02:55	-->	psy_ (~psy@43.224.156.123) has joined #lua
+2015-06-30 13:03:15	-->	Kawata (~Kawata@cpe-69-207-10-206.buffalo.res.rr.com) has joined #lua
+2015-06-30 13:05:18	<--	xrlabs (~xrlabs@84.201.34.22) has quit (Quit: This computer has gone to sleep)
+2015-06-30 13:06:11	q66	cmtptr, save dem bytes obviously
+2015-06-30 13:09:32	-->	xrlabs (~xrlabs@84.201.34.22) has joined #lua
+2015-06-30 13:13:06	<--	kansuu (~kaneru@109-124-164-236.customer.t3.se) has quit (Read error: Connection reset by peer)
+2015-06-30 13:14:09	<--	zemanel (~zemanel@cpc4-sgyl29-2-0-cust203.sgyl.cable.virginm.net) has quit (Quit: D'Artagnan m*f*)
+2015-06-30 13:14:37	-->	kansuu (~kaneru@109-124-164-236.customer.t3.se) has joined #lua
+2015-06-30 13:18:34	-->	Chromix (~Chromix@55d41f12.access.ecotel.net) has joined #lua
+2015-06-30 13:22:12	-->	hogarius (0c0d841e@gateway/web/freenode/ip.12.13.132.30) has joined #lua
+2015-06-30 13:24:12	-->	jlfhdvfjabsdfg (~J_Darnley@d51A44418.access.telenet.be) has joined #lua
+2015-06-30 13:24:12	<--	J_Darnley (~J_Darnley@d51a44418.access.telenet.be) has quit (Disconnected by services)
+2015-06-30 13:24:14	--	jlfhdvfjabsdfg is now known as J_Darnley
+2015-06-30 13:32:43	<--	Terminar (~Terminar@uranus.belnet.de) has quit (Quit: Leaving.)
+2015-06-30 13:34:09	<--	AlexYT (~sanches@212.69.111.41) has left #lua
+2015-06-30 13:34:46	-->	abirchall (~abirchall@2620:10d:c081:1101:6203:8ff:fe8a:d0ba) has joined #lua
+2015-06-30 13:37:21	--	_Getty is now known as Getty
+2015-06-30 19:36:55	--	irc: disconnected from server
+2015-06-30 19:37:20	-->	aajjbb (~aajjbb@179.154.117.36) has joined #lua
+2015-06-30 19:37:20	--	Topic for #lua is "http://lua-users.org/wiki/IrcChannel :: Paste on http://codepad.org/?lang=Lua :: Please consider registering with NickServ if you haven't already. :: Pay no attention to Soni :: * is zero or more"
+2015-06-30 19:37:20	--	Topic set by rjek (~rjek@gateway/shell/pepperfish/x-aitwunmuwtabbrob) on Wed, 04 Mar 2015 12:59:41
+2015-06-30 19:37:20	--	Channel #lua: 331 nicks (0 ops, 0 voices, 331 normals)
+2015-06-30 19:37:20	--	URL for #lua: http://lua-users.org/
+2015-06-30 19:37:26	--	Channel created on Sun, 26 Nov 2006 04:42:55
+2015-06-30 19:37:47	<--	mary5030 (~mary5030@72.32.115.233) has quit (Ping timeout: 255 seconds)
+2015-06-30 19:38:37	<--	wolfmitchell_ (~wolfmitch@ns510198.ip-198-27-68.net) has left #lua
+2015-06-30 19:40:08	-->	ajacksified (~ajacksifi@173.247.192.6) has joined #lua
+2015-06-30 19:40:48	<--	greatwolf (greatwolf@gateway/shell/panicbnc/x-ywovawunrdppdyjw) has quit (Ping timeout: 248 seconds)
+2015-06-30 19:44:54	-->	greatwolf (greatwolf@gateway/shell/panicbnc/x-ejfzsnqunbkagrxs) has joined #lua
+2015-06-30 19:46:21	<--	tertu (~tertu@143.44.78.174) has quit (Ping timeout: 252 seconds)
+2015-06-30 19:51:10	-->	mary5030 (~mary5030@75-13-89-6.lightspeed.austtx.sbcglobal.net) has joined #lua
+2015-06-30 19:52:20	<--	Zer0 (~Zer0@h203n5-ksn2-a12.ias.bredband.telia.com) has quit (Ping timeout: 244 seconds)
+2015-06-30 19:57:27	<--	mary5030 (~mary5030@75-13-89-6.lightspeed.austtx.sbcglobal.net) has quit (Remote host closed the connection)
+2015-06-30 19:58:18	<--	lritter (~lritter@f053083243.adsl.alicedsl.de) has quit (Quit: Leaving)
+2015-06-30 19:59:48	-->	fatguylaughing (~fatguylau@ip24-253-206-55.ok.ok.cox.net) has joined #lua
+2015-06-30 20:00:31	<--	einsteinK (uid29353@gateway/web/irccloud.com/x-iqccidgchbrzoabz) has quit (Quit: Connection closed for inactivity)
+2015-06-30 20:06:41	-->	kex (~kex@31.11.67.182) has joined #lua
+2015-06-30 20:11:36	<--	kex (~kex@31.11.67.182) has quit (Ping timeout: 250 seconds)
+2015-06-30 20:11:37	-->	17SACYGY2 (~Vorn@c-76-19-15-99.hsd1.ct.comcast.net) has joined #lua
+2015-06-30 20:11:38	-->	7GHAALHM0 (~Vorn@c-76-19-15-99.hsd1.ct.comcast.net) has joined #lua
+2015-06-30 20:11:44	<--	17SACYGY2 (~Vorn@c-76-19-15-99.hsd1.ct.comcast.net) has quit (Client Quit)
+2015-06-30 20:12:06	-->	Lerg (~Lerg@188.226.45.254) has joined #lua
+2015-06-30 20:12:25	<--	nikki93 (~nikki93@37.211.98.5) has quit (Remote host closed the connection)
+2015-06-30 20:13:13	-->	Zer0 (~Zer0@h203n5-ksn2-a12.ias.bredband.telia.com) has joined #lua
+2015-06-30 20:14:12	<--	chris_99 (~chris_99@unaffiliated/chris-99/x-3062929) has quit (Remote host closed the connection)
+2015-06-30 20:18:39	<--	basiliscos (~basilisco@80.94.232.71) has quit (Ping timeout: 246 seconds)
+2015-06-30 20:22:00	-->	Lerg_ (~Lerg@188.226.45.254) has joined #lua
+2015-06-30 20:22:35	-->	nikki93 (~nikki93@37.211.98.5) has joined #lua
+2015-06-30 20:22:46	<--	nikki93 (~nikki93@37.211.98.5) has quit (Read error: Connection reset by peer)
+2015-06-30 20:24:29	-->	nikki93 (~nikki93@37.211.98.5) has joined #lua
+2015-06-30 20:24:44	<--	nikki93 (~nikki93@37.211.98.5) has quit (Read error: Connection reset by peer)
+2015-06-30 20:24:59	-->	Betal (~Betal@unaffiliated/betal) has joined #lua
+2015-06-30 20:25:02	-->	nikki93 (~nikki93@37.211.98.5) has joined #lua
+2015-06-30 20:25:05	<--	Lerg (~Lerg@188.226.45.254) has quit (Ping timeout: 276 seconds)
+2015-06-30 20:25:07	<--	Zupoman (~mistrzmag@unaffiliated/zupoman) has quit (Read error: Connection reset by peer)
+2015-06-30 20:25:11	<--	Bantalon (~Bantalon@c83-251-43-122.bredband.comhem.se) has quit
+2015-06-30 20:26:26	<--	Tribeam (~Tribeam@68-185-238-218.dhcp.slid.la.charter.com) has quit (Read error: Connection reset by peer)
+2015-06-30 20:26:45	<--	pixelport (~pixelport@2a02:8108:8100:1928:a171:abf0:8811:d8b1) has quit (Quit: Leaving)
+2015-06-30 20:36:58	<--	Zer0 (~Zer0@h203n5-ksn2-a12.ias.bredband.telia.com) has quit (Ping timeout: 272 seconds)
+2015-06-30 20:37:04	-->	Lerg (~Lerg@188.226.45.254) has joined #lua
+2015-06-30 20:38:16	-->	kex (~kex@31.11.67.182) has joined #lua
+2015-06-30 20:39:42	<--	Lerg_ (~Lerg@188.226.45.254) has quit (Ping timeout: 252 seconds)
+2015-06-30 20:39:45	<--	Neffi (~Neffi@pool-151-202-49-117.nycmny.fios.verizon.net) has quit (Quit: Leaving)
+2015-06-30 20:40:01	<--	hexagoxel (~hexagoxel@x4d067db9.dyn.telefonica.de) has quit (Ping timeout: 264 seconds)
+2015-06-30 20:41:25	-->	hexagoxel (~hexagoxel@x4d066374.dyn.telefonica.de) has joined #lua
+2015-06-30 20:42:37	<--	idafyaid (~irssi@unaffiliated/idafyaid) has quit (Ping timeout: 256 seconds)
+2015-06-30 20:43:00	-->	lpghatguy (~LPGhatguy@host-72-174-70-146.msl-mt.client.bresnan.net) has joined #lua
+2015-06-30 20:43:17	<--	kex (~kex@31.11.67.182) has quit (Ping timeout: 276 seconds)
+2015-06-30 20:44:19	-->	Lyqyd (~quassel@184-100-220-231.ptld.qwest.net) has joined #lua
+2015-06-30 20:50:53	-->	FreeBirdLjj (~freebirdl@180.111.184.161) has joined #lua
+2015-06-30 20:53:30	<--	Johannes13 (~Johannes@unaffiliated/johannes13) has quit (Read error: Connection reset by peer)
+2015-06-30 20:53:34	-->	zwzsg (Tricycle@haz95-3-88-182-2-4.fbx.proxad.net) has joined #lua
+2015-06-30 20:53:46	-->	Johannes13 (qnet@unaffiliated/johannes13) has joined #lua
+2015-06-30 20:55:38	<--	Tricycle (~CGI278@haz95-3-88-182-2-4.fbx.proxad.net) has quit (Ping timeout: 276 seconds)
+2015-06-30 20:56:36	<--	FreeBirdLjj (~freebirdl@180.111.184.161) has quit (Ping timeout: 272 seconds)
+2015-06-30 21:00:02	mniip	% =os.date("%c")
+2015-06-30 21:00:02	yalb	mniip: "Wed Jul 1 00:00:00 2015"
+2015-06-30 21:00:08	mniip	shit
+2015-06-30 21:00:10	mniip	missed it
+2015-06-30 21:01:47	cmtptr	I don't think you'd see it, would you?
+2015-06-30 21:02:11	Neffiphone	lol
+2015-06-30 21:02:35	mniip	cmtptr, yes you would
+2015-06-30 21:02:46	mniip	it should show 23:59:60
+2015-06-30 21:03:20	J_Darnley	I missed it too, don't feel bad.
+2015-06-30 21:03:33	xyzzy_	i want to believe you actually stayed up to see that just for it to not happen
+2015-06-30 21:03:53	furq	01:00:01 ( mniip) % =os.date("%c")
+2015-06-30 21:04:04	cmtptr	% = os.date("%c", 1435723198), os.date("%c", 1435723199), os.date("%c", 1435723200)
+2015-06-30 21:04:04	yalb	cmtptr: "Wed Jul 1 03:59:58 2015", "Wed Jul 1 03:59:59 2015", "Wed Jul 1 04:00:00 2015"
+2015-06-30 21:04:29	cmtptr	what is the mechanism that would cause you to see a :60?
+2015-06-30 21:04:53	cmtptr	oh shit you're in a different timezone
+2015-06-30 21:04:54	J_Darnley	xyzzy_: certainly didn't.  I'm always up this late.  The joys of being jobless
+2015-06-30 21:05:07	<--	Reno (~quassel@2601:881:1:57c3:9931:1518:40ff:ec4c) has quit (Remote host closed the connection)
+2015-06-30 21:05:59	cmtptr	% = os.date("%c", 1435723199-3600*4), os.date("%c", 1435723200-3600*4)
+2015-06-30 21:05:59	yalb	cmtptr: "Tue Jun 30 23:59:59 2015", "Wed Jul 1 00:00:00 2015"
+2015-06-30 21:06:02	cmtptr	there we go
+2015-06-30 21:06:06	<--	yorick (~yorick@oftn/member/yorick) has quit (Ping timeout: 272 seconds)
+2015-06-30 21:06:37	Neffiphone	does the os even have a mechanism for leap seconds?
+2015-06-30 21:07:05	cmtptr	no, I don't think the POSIX timestamp spec allows for it
+2015-06-30 21:07:05	Neffiphone	I thought it'd just fall behind one sec and then eventually sync back if you were running ntpd sync
+2015-06-30 21:07:11	cmtptr	same
+2015-06-30 21:07:15	furq	https://lwn.net/Articles/648313/
+2015-06-30 21:07:57	-->	yorick (~yorick@oftn/member/yorick) has joined #lua
+2015-06-30 21:08:03	-->	mary5030 (~mary5030@2602:304:b0d5:9060:21b5:2915:9ee9:97fe) has joined #lua
+2015-06-30 21:10:05	furq	http://pubs.opengroup.org/onlinepubs/009695399/basedefs/time.h.html
+2015-06-30 21:10:15	furq	it is documented that tm_sec might be 60 but afaik every OS deals with it differently
+2015-06-30 21:10:21	furq	and also POSIX doesn't allow for it
+2015-06-30 21:11:28	furq	but with all that said, who cares
+2015-06-30 21:11:31	furq	leap seconds are shit
+2015-06-30 21:11:45	cmtptr	so is your face
+2015-06-30 21:11:54	furq	;_;
+2015-06-30 21:12:01	furq	i'm sorry i'm just mad because i was born on a leap second
+2015-06-30 21:12:24	icelesstea	;_; ← shit running down your face
+2015-06-30 21:13:03	<--	mary5030 (~mary5030@2602:304:b0d5:9060:21b5:2915:9ee9:97fe) has quit (Ping timeout: 248 seconds)
+2015-06-30 21:13:12	furq	https://www.youtube.com/watch?v=_nhuiq2sgE0&t=60
+2015-06-30 21:13:15	furq	still looking good icelesstea 
+2015-06-30 21:14:18	icelesstea	Cheers mate, means a lot coming from you.
+2015-06-30 21:14:26	furq	you're such a flute man
+2015-06-30 21:14:36	<--	Aconitin (~Aconitin@dslb-094-217-055-097.094.217.pools.vodafone-ip.de) has quit
+2015-06-30 21:15:10	icelesstea	I'd like to play your magic flute, too, furq ( ͡° ͜ʖ ͡°)
+2015-06-30 21:17:49	<--	ajacksified (~ajacksifi@173.247.192.6) has quit (Remote host closed the connection)
+2015-06-30 21:18:17	furq	there is autumn's sadness, there is the pain of life
+2015-06-30 21:18:20	furq	my flute plays all that
+2015-06-30 21:19:03	furq	and if you play my magic flute you will definitely experience the smallness of man under the universe
+2015-06-30 21:19:12	--	7GHAALHM0 is now known as Vornicus
+2015-06-30 21:19:24	<--	lKinx (~lKinx@76.126.31.163) has quit (Ping timeout: 272 seconds)
+2015-06-30 21:20:10	-->	ajacksified (~ajacksifi@173.247.192.6) has joined #lua
+2015-06-30 21:20:19	Neffiphone	wtf are you on about m8?
+2015-06-30 21:20:44	furq	the never ending belief in a better future
+2015-06-30 21:21:03	<--	Oka (~Oka@hlfxns016cw-156034016072.dhcp-dynamic.FibreOP.ns.bellaliant.net) has quit (Remote host closed the connection)
+2015-06-30 21:21:19	<--	yorick (~yorick@oftn/member/yorick) has quit (Ping timeout: 252 seconds)
+2015-06-30 21:22:27	<--	Lerg (~Lerg@188.226.45.254) has quit
+2015-06-30 21:22:36	<--	J_Darnley (~J_Darnley@d51A44418.access.telenet.be) has quit (Ping timeout: 252 seconds)
+2015-06-30 21:27:01	-->	legumbre_ (~user@ec2-23-22-67-172.compute-1.amazonaws.com) has joined #lua
+2015-06-30 21:27:52	<--	eerf (~eerf@ec2-54-193-16-72.us-west-1.compute.amazonaws.com) has quit (Ping timeout: 250 seconds)
+2015-06-30 21:27:58	<--	legumbre (~user@ec2-23-22-67-172.compute-1.amazonaws.com) has quit (Disconnected by services)
+2015-06-30 21:28:03	<--	ajacksified (~ajacksifi@173.247.192.6) has quit (Remote host closed the connection)
+2015-06-30 21:28:03	--	legumbre_ is now known as legumbre
+2015-06-30 21:30:10	<--	EatThePath (~ubuntu@ec2-54-186-58-93.us-west-2.compute.amazonaws.com) has quit (Ping timeout: 272 seconds)
+2015-06-30 21:31:01	-->	EatThePath (~ubuntu@ec2-54-186-58-93.us-west-2.compute.amazonaws.com) has joined #lua
+2015-06-30 21:31:20	-->	Schwarzbaer_ (~baribal@x2f15c46.dyn.telefonica.de) has joined #lua
+2015-06-30 21:31:26	-->	Baribal_ (~baribal@x2f15c46.dyn.telefonica.de) has joined #lua
+2015-06-30 21:34:52	<--	Schwarzbaer (~baribal@x2f0e555.dyn.telefonica.de) has quit (Ping timeout: 265 seconds)
+2015-06-30 21:35:13	<--	Baribal__ (~baribal@x2f0e555.dyn.telefonica.de) has quit (Ping timeout: 264 seconds)
+2015-06-30 21:36:01	-->	ftsf (~ftsf@2407:7800:400:107f:3db5:daca:8457:e66a) has joined #lua
+2015-06-30 21:43:10	<--	ProjectRevoTPP (~quassel@unaffiliated/twitch-plays-pbr/x-9644567) has quit (Read error: Connection reset by peer)
+2015-06-30 21:44:24	-->	sertsa (~sertsa@69.39.10.252) has joined #lua
+2015-06-30 21:44:25	-->	ProjectRevoTPP (~quassel@unaffiliated/twitch-plays-pbr/x-9644567) has joined #lua
+2015-06-30 21:48:39	-->	Oka (~Oka@hlfxns016cw-156034016072.dhcp-dynamic.FibreOP.ns.bellaliant.net) has joined #lua
+2015-06-30 21:52:20	-->	Akagi201 (~akagi201@116.226.179.56) has joined #lua
+2015-06-30 21:57:53	<--	EatThePath (~ubuntu@ec2-54-186-58-93.us-west-2.compute.amazonaws.com) has left #lua ("WeeChat 0.4.2")
+2015-06-30 21:59:38	<--	Betal (~Betal@unaffiliated/betal) has quit (Remote host closed the connection)
+2015-06-30 22:02:51	-->	lKinx (~lKinx@76.126.31.163) has joined #lua
+2015-06-30 22:02:52	-->	lKinx_ (~lKinx@76.126.31.163) has joined #lua
+2015-06-30 22:03:34	<--	lKinx (~lKinx@76.126.31.163) has quit (Client Quit)
+2015-06-30 22:03:40	<--	lKinx_ (~lKinx@76.126.31.163) has quit (Client Quit)
+2015-06-30 22:05:02	<--	sertsa (~sertsa@69.39.10.252) has quit (Read error: Connection reset by peer)
+2015-06-30 22:05:25	-->	s3shs (~s3shs@ip68-99-253-150.ph.ph.cox.net) has joined #lua
+2015-06-30 22:05:50	<--	Protogenes (~Protogene@dslb-084-062-245-091.084.062.pools.vodafone-ip.de) has quit (Ping timeout: 276 seconds)
+2015-06-30 22:06:39	-->	tertu (~tertu@143.44.78.174) has joined #lua
+2015-06-30 22:07:20	<--	Lyqyd (~quassel@184-100-220-231.ptld.qwest.net) has quit (Remote host closed the connection)
+2015-06-30 22:10:45	<--	nikki93 (~nikki93@37.211.98.5) has quit (Remote host closed the connection)
+2015-06-30 22:12:00	-->	kex (~kex@31.11.67.182) has joined #lua
+2015-06-30 22:18:02	<--	DarkGod (~dg@was59-4-88-175-39-63.fbx.proxad.net) has quit (Ping timeout: 244 seconds)
+2015-06-30 22:18:47	-->	LavaLevel_ (~chatzilla@2601:2c6:4304:3579:106a:763e:1fdb:76a4) has joined #lua
+2015-06-30 22:19:43	<--	LavaLevel (~chatzilla@2601:2c6:4304:3579:f9ae:4a1a:a76f:aeaf) has quit (Ping timeout: 248 seconds)
+2015-06-30 22:19:51	--	LavaLevel_ is now known as LavaLevel
+2015-06-30 22:20:06	<--	teroshan (~teroshan@APuteaux-653-1-85-244.w90-61.abo.wanadoo.fr) has quit (Ping timeout: 244 seconds)
+2015-06-30 22:22:06	-->	Reno (~quassel@2601:881:1:57c3:9931:1518:40ff:ec4c) has joined #lua
+2015-06-30 22:23:39	<--	benjamingr (uid23465@gateway/web/irccloud.com/x-fjpayxbwikkautab) has quit (Quit: Connection closed for inactivity)
+2015-06-30 22:24:28	-->	TheBunny (~TheBunny@c-73-213-38-254.hsd1.md.comcast.net) has joined #lua
+2015-06-30 22:24:35	<--	TheBunny (~TheBunny@c-73-213-38-254.hsd1.md.comcast.net) has quit (Client Quit)
+2015-06-30 22:25:08	-->	TheBunny (~TheBunny@c-73-213-38-254.hsd1.md.comcast.net) has joined #lua
+2015-06-30 22:29:57	-->	Tribeam (~Tribeam@108-199-158-223.lightspeed.nworla.sbcglobal.net) has joined #lua
+2015-06-30 22:31:37	-->	Kawata (~Kawata@cpe-69-207-10-206.buffalo.res.rr.com) has joined #lua
+2015-06-30 22:33:32	<--	jimmio (~Jim@pool-72-94-167-104.phlapa.fios.verizon.net) has quit (Read error: Connection reset by peer)
+2015-06-30 22:41:02	<--	zwzsg (Tricycle@haz95-3-88-182-2-4.fbx.proxad.net) has quit
+2015-06-30 22:46:06	-->	aajjbb (~aajjbb@179.154.117.36) has joined #lua
+2015-06-30 22:46:06	--	Topic for #lua is "http://lua-users.org/wiki/IrcChannel :: Paste on http://codepad.org/?lang=Lua :: Please consider registering with NickServ if you haven't already. :: Pay no attention to Soni :: * is zero or more"
+2015-06-30 22:46:06	--	Topic set by rjek (~rjek@gateway/shell/pepperfish/x-aitwunmuwtabbrob) on Wed, 04 Mar 2015 12:59:41
+2015-06-30 22:46:06	--	Channel #lua: 315 nicks (0 ops, 0 voices, 315 normals)
+2015-06-30 22:46:06	--	URL for #lua: http://lua-users.org/
+2015-06-30 22:46:11	--	Channel created on Sun, 26 Nov 2006 04:42:55
+2015-06-30 22:49:24	-->	FreeBirdLjj (~freebirdl@180.110.16.202) has joined #lua
+2015-06-30 22:52:31	<--	joconnor (~joconnor@97.64.124.16) has quit (Ping timeout: 272 seconds)
+2015-06-30 22:56:24	ttmrichter	Man, furq, that Finnish guy with the dead eyes keeps giving me the chills when you link him.
+2015-06-30 22:56:55	ttmrichter	And I thought Nuku pommiin was their worst Eurovision entry...
+2015-06-30 22:57:52	furq	nuku pommiin is like the fourth worst
+2015-06-30 22:58:13	furq	https://www.youtube.com/watch?v=31k3YDH7Qvg&t=70
+2015-06-30 22:58:16	furq	this is your favourite
+2015-06-30 22:58:45	furq	although iirc the eurovision judges agree with you because nuku pommiin is the only one that got nil points
+2015-06-30 22:59:04	ttmrichter	https://www.youtube.com/watch?v=xUoKFwc3U8c&t=78
+2015-06-30 23:00:05	furq	this wouldn't be bad if the singer wasn't so hopeless
+2015-06-30 23:00:15	ttmrichter	1982 was the last Eurovision I saw in Germany.  The Finns were absolutely furious over the 0 points given to their entry.
+2015-06-30 23:00:28	ttmrichter	Everybody else said "what the fuck did you expect!?"
+2015-06-30 23:00:50	ttmrichter	Singer?  You forgot to decline for the plural case.
+2015-06-30 23:01:06	furq	actually
+2015-06-30 23:01:08	furq	https://www.youtube.com/watch?v=7EEw7xAvjjE
+2015-06-30 23:01:14	furq	this one's in contention too
+2015-06-30 23:02:06	ttmrichter	Let's just face it: Eurovision is shit.  Finland bottoms out every time.  Ergo Finland's music is shit.  Q.E.D.  :D
+2015-06-30 23:02:37	furq	they won it in 2006
+2015-06-30 23:03:06	ttmrichter	They hired someone from outside of Finland to write their song, obviously.
+2015-06-30 23:03:19	furq	i don't want to endorse that song at all
+2015-06-30 23:04:07	furq	anything after eurovision removed the rule that every competitor had to sing in their native language is null and void
+2015-06-30 23:05:05	ttmrichter	Oh, wait.  2006 was the death metal thing?
+2015-06-30 23:05:14	furq	yeah
+2015-06-30 23:05:27	furq	that's their only top 5 placing
+2015-06-30 23:05:31	ttmrichter	Sorry.  I stand by my original point: Finland bottoms out.
+2015-06-30 23:05:36	ttmrichter	I'm not saying that the judges agreed.
+2015-06-30 23:05:41	ttmrichter	I'm saying it was shit.
+2015-06-30 23:06:40	<--	phyber (phyber@unaffiliated/phyber) has quit (Ping timeout: 250 seconds)
+2015-06-30 23:06:40	<--	LavaLevel (~chatzilla@2601:2c6:4304:3579:106a:763e:1fdb:76a4) has quit (Ping timeout: 248 seconds)
+2015-06-30 23:06:46	ttmrichter	I have a bit of a bias against Lordi, though, because I had a coworker who listened to practically nothing but.
+2015-06-30 23:06:55	ttmrichter	I emphasize the past tense there.
+2015-06-30 23:07:13	furq	https://www.youtube.com/watch?v=eo0VrY5C-ow
+2015-06-30 23:07:15	-->	phyber (phyber@irssi.co.uk) has joined #lua
+2015-06-30 23:07:15	<--	phyber (phyber@irssi.co.uk) has quit (Changing host)
+2015-06-30 23:07:15	-->	phyber (phyber@unaffiliated/phyber) has joined #lua
+2015-06-30 23:07:16	furq	looking good ttmrichter 
+2015-06-30 23:07:16	<--	FreeBirdLjj (~freebirdl@180.110.16.202) has quit
+2015-06-30 23:07:47	ttmrichter	Better than Finland.
+2015-06-30 23:08:36	-->	mary5030 (~mary5030@75-13-89-6.lightspeed.austtx.sbcglobal.net) has joined #lua
+2015-06-30 23:08:39	ttmrichter	Man, I see what you mean about the native language rule.
+2015-06-30 23:08:42	furq	this beat finland
+2015-06-30 23:08:45	ttmrichter	Holy shit do they sound like crap.
+2015-06-30 23:08:47	furq	and they're not even in europe
+2015-06-30 23:09:11	ttmrichter	If you're going to sing in another language, LEARN THAT FUCKING LANGUAGE FIRST!
+2015-06-30 23:09:27	furq	yeah i looked up the lyrics for this
+2015-06-30 23:09:29	furq	they were surprising
+2015-06-30 23:09:41	ttmrichter	(Same applies to anglophone pop tarts who suddenly decide to get pretentious and sing in Italian or whatever.)
+2015-06-30 23:10:03	ttmrichter	I can barely spot that they're singing in English in this one.
+2015-06-30 23:10:17	ttmrichter	What they're singing?  No clue.
+2015-06-30 23:12:06	-->	TheBunny1 (~TheBunny@c-73-213-38-254.hsd1.md.comcast.net) has joined #lua
+2015-06-30 23:12:16	<--	TheBunny1 (~TheBunny@c-73-213-38-254.hsd1.md.comcast.net) has quit (Client Quit)
+2015-06-30 23:12:24	furq	it's also no good since a slightly drunk terry wogan stopped doing the british commentary
+2015-06-30 23:12:46	-->	TheBunny1 (~TheBunny@c-73-213-38-254.hsd1.md.comcast.net) has joined #lua
+2015-06-30 23:12:49	<--	TheBunny (~TheBunny@c-73-213-38-254.hsd1.md.comcast.net) has quit (Read error: Connection reset by peer)
+2015-06-30 23:13:15	<--	dantarion (~quassel@ps164606.dreamhost.com) has quit (Quit: No Ping reply in 180 seconds.)
+2015-06-30 23:13:28	<--	scruple (~l0nd@web220.webfaction.com) has quit (Ping timeout: 265 seconds)
+2015-06-30 23:14:22	-->	dantarion (~quassel@ps164606.dreamhost.com) has joined #lua
+2015-06-30 23:14:59	<--	TheBunny1 (~TheBunny@c-73-213-38-254.hsd1.md.comcast.net) has quit (Client Quit)
+2015-06-30 23:15:19	-->	TheBunny (~TheBunny@c-73-213-38-254.hsd1.md.comcast.net) has joined #lua
+2015-06-30 23:16:29	-->	djdduty (~quassel@unaffiliated/djdduty) has joined #lua
+2015-06-30 23:21:09	ttmrichter	I never watched the British commentary so I have no dog in this fight.
+2015-06-30 23:23:11	<--	xyzzy_ (~xyzzy@ip68-229-228-164.ok.ok.cox.net) has quit (Ping timeout: 276 seconds)
+2015-06-30 23:26:39	furq	i can only imagine the germans treating it with great reverence
+2015-06-30 23:27:09	furq	whereas the british pretend not to care until it looks like we might win and then we act like it's very exciting
+2015-06-30 23:27:20	furq	maybe "we" is the wrong word to use here
+2015-06-30 23:28:43	-->	LavaLevel (~chatzilla@2601:2c6:4304:3579:d83d:fb0a:c3a:42ca) has joined #lua
+2015-06-30 23:30:12	-->	xyzzy_ (~xyzzy@ip68-97-130-52.ok.ok.cox.net) has joined #lua
+2015-06-30 23:38:42	<--	mary5030 (~mary5030@75-13-89-6.lightspeed.austtx.sbcglobal.net) has quit (Remote host closed the connection)
+2015-06-30 23:51:01	furq	https://pbs.twimg.com/media/CH37ZhAWEAApqXd.jpg
+2015-06-30 23:51:03	furq	looking good cmtptr 
+2015-06-30 23:51:11	ttmrichter	The Germans treated it with professionalism and gravitas.
+2015-06-30 23:53:39	furq	well maybe things were different in the 80s
+2015-06-30 23:55:32	cmtptr	my cat scratched me on the very tip of my index finger and it hurts
+2015-06-30 23:57:27	xxleite	:()
+2015-06-30 23:57:40	furq	i am sympathetic to your plight
+2015-06-30 23:58:09	furq	ps im not, you deserve it
+2015-06-30 23:58:30	cmtptr	I am synthetic to your blighttown
+2015-07-01 00:01:12	furq	https://pbs.twimg.com/media/CFnXSjsWIAAaSld.jpg
+2015-07-01 00:01:15	furq	looking good cmtptr 
+2015-07-01 00:03:21	cmtptr	cool but I'm not either of those things, nor do I know anything about tennis
+2015-07-01 00:03:34	furq	https://pbs.twimg.com/media/CFnXSjpWoAAb9Ld.jpg
+2015-07-01 00:03:37	furq	maybe this is more your thing
+2015-07-01 00:04:12	cmtptr	nice novelty priest garb
+2015-07-01 00:04:25	furq	https://pbs.twimg.com/media/CFnXSjEW0AEA41L.jpg
+2015-07-01 00:04:27	furq	what about this
+2015-07-01 00:05:57	<--	bakaneko (~anonymous@AMontsouris-651-1-237-231.w86-212.abo.wanadoo.fr) has quit (Ping timeout: 252 seconds)
+2015-07-01 00:06:23	cmtptr	stop
+2015-07-01 00:13:06	<--	abirchall (~abirchall@2620:10d:c082:1054:6203:8ff:fe8a:d0ba) has quit (Remote host closed the connection)
+2015-07-01 00:13:41	ttmrichter	Lookin' good, furq!  http://i.imgur.com/vb1FcxV.jpg
+2015-07-01 00:14:01	<--	TheCycoONE (~TheCycoON@dsl-69-172-67-47.acanac.net) has quit (Quit: And then there was n-1)
+2015-07-01 00:14:14	synbyte	I can't use stdscr:mvaddstr to output higher ascii/ansi chars in my terminal, but can using ansi escape codes. I get grabled output like ^V, instead of blocks. Any ideas?
+2015-07-01 00:18:51	ttmrichter	synbyte: First you could tell us which library/environment this is?
+2015-07-01 00:19:30	ttmrichter	Next you could tell us what you mean by "higher ascii" or "ansi chars".
+2015-07-01 00:19:45	cmtptr	pretty sure he's using lcurses
+2015-07-01 00:19:51	ttmrichter	Ah.
+2015-07-01 00:20:05	cmtptr	can't answer the second one
+2015-07-01 00:23:03	synbyte	Well, just about any unicode I throw at it, it won't render it properly.
+2015-07-01 00:23:13	ttmrichter	What platform?
+2015-07-01 00:23:21	ttmrichter	And "Unicode" isn't "Higher ASCII".
+2015-07-01 00:23:27	ttmrichter	Also, what encoding?
+2015-07-01 00:24:33	synbyte	GNu/Linux, IBM862.
+2015-07-01 00:24:59	furq	you probably need to setlocale to a utf-8 locale in the script
+2015-07-01 00:25:26	ttmrichter	IBM862?  I think I'm at the point of discovering why your characters aren't displaying correctly.
+2015-07-01 00:25:38	furq	or in your environment, if it's not set there
+2015-07-01 00:26:34	synbyte	I'm already on UTF8. I can pipe a .ans ile through cat and display it perfectly. It's only when I'm using any method in stdscr that I don't get the expected output.
+2015-07-01 00:26:43	ttmrichter	Ignoring the incorrect terminology: http://www.fileformat.info/info/charset/IBM862/list.htm has the list of all characters in IBM862.
+2015-07-01 00:26:56	ttmrichter	synbyte: How can you be in IBM862 and Unicode at the same time?
+2015-07-01 00:27:12	ttmrichter	s/Unicode/UTF-8/
+2015-07-01 00:27:21	-->	overclk (vshankar@nat/redhat/x-kzqirbezqjduhuam) has joined #lua
+2015-07-01 00:27:33	ttmrichter	"I'm using a 4-bit MCU with a 64-bit data and address bus."
+2015-07-01 00:28:01	synbyte	Ugh, I'm not. What I'm saying is that I can only get proper output from stdscr when using standard characters, ie. letters of the alphabet. Anything else doesn't output properly.
+2015-07-01 00:28:17	ttmrichter	Yes.  Which is why I'm asking what encoding you're using.
+2015-07-01 00:28:24	ttmrichter	And you're saying IBM862.  And UTF-8.
+2015-07-01 00:28:30	ttmrichter	Which are mutually exclusive.
+2015-07-01 00:29:21	ttmrichter	If you want to use the box drawing characters from IBM862, you're going to have to use the code points provided in that link I just posted.
+2015-07-01 00:29:49	ttmrichter	So instead of using, say, 0xce for the double vertical/horizontal intersection, you'll have to use U+256C.
+2015-07-01 00:30:05	ttmrichter	However that's encoded.
+2015-07-01 00:30:24	<--	xSmurf (MrSmurf@gateway/vpn/mullvad/x-lbonctwjsmzvvtue) has quit (Ping timeout: 248 seconds)
+2015-07-01 00:30:37	<--	lmartin92 (i@copyfree/contributor/lmartin92) has quit (Read error: Connection reset by peer)
+2015-07-01 00:32:11	-->	xSmurf (MrSmurf@gateway/vpn/mullvad/x-zlcrmiservzbpbnz) has joined #lua
+2015-07-01 00:32:15	-->	lmartin92 (i@copyfree/contributor/lmartin92) has joined #lua
+2015-07-01 00:35:36	synbyte	Ok, how would I print them?
+2015-07-01 00:36:28	synbyte	I've only been around LUA for around a week, so all this is relatively new to me.
+2015-07-01 00:37:06	furq	synbyte: lua sets your locale to C by default
+2015-07-01 00:37:15	daurnimator	furq: lua doesn't set anything
+2015-07-01 00:37:16	furq	if you explicitly os.setlocale to a utf-8 locale it should work
+2015-07-01 00:37:19	daurnimator	synbyte: this is not lua specific.
+2015-07-01 00:38:02	furq	daurnimator: sure it does, by virtue of being written in C
+2015-07-01 00:38:32	daurnimator	furq: AFAIK lua will inherit the locale from the parent process. i.e. your terminal
+2015-07-01 00:38:37	synbyte	This isn't to do with my locale. Like I said, if I cat a file with various glyphs and such, I see them.
+2015-07-01 00:38:50	daurnimator	synbyte: yes it is....
+2015-07-01 00:39:08	furq	$ locale | grep LANG=; lua -e 'print(os.setlocale())'
+2015-07-01 00:39:09	furq	LANG=en_GB.UTF-8
+2015-07-01 00:39:09	furq	C
+2015-07-01 00:39:20	synbyte	Then why can I not see the exact same characters when using stdscr?
+2015-07-01 00:39:31	furq	the interactive interpreter appears to inherit your locale
+2015-07-01 00:40:02	daurnimator	synbyte: what do you see if you: $ lua -e 'print("\u{256C}")
+2015-07-01 00:40:33	furq	$ lua5.2 -e 'print("\u{256C}")'
+2015-07-01 00:40:34	furq	lua5.2: (command line):1: invalid escape sequence near '\u'
+2015-07-01 00:40:45	daurnimator	oh right; that's new in 5.3
+2015-07-01 00:40:48	daurnimator	ugh
+2015-07-01 00:41:01	furq	either way i just tested this with curses
+2015-07-01 00:41:15	furq	i have a utf-8 locale, mvaddstr with a utf-8 string doesn't work unless i setlocale
+2015-07-01 00:41:47	furq	lua doesn't inherit the calling process' locale
+2015-07-01 00:45:03	daurnimator	oh hmm, for some reason I recalled the C inherited locales
+2015-07-01 00:45:47	synbyte	Setting the locale in lua doesn't seem to help.
+2015-07-01 00:46:22	furq	you'll probably want to assert(os.setlocale("he_IL.UTF-8")) or whatever your locale is
+2015-07-01 00:46:28	furq	it won't throw an error if the locale doesn't exist
+2015-07-01 00:46:39	daurnimator	os.setlocale(os.getenv("LANG")) ?
+2015-07-01 00:47:00	furq	that works
+2015-07-01 00:48:13	synbyte	Fucking hell, it does. 
+2015-07-01 00:48:22	synbyte	Thanks. <3
+2015-07-01 00:48:33	synbyte	It's nearly 6am. I can now sleep happily.
+2015-07-01 00:50:49	-->	FreeBird_ (~freebirdl@180.110.16.202) has joined #lua
+2015-07-01 00:51:34	<--	FreeBird_ (~freebirdl@180.110.16.202) has quit (Client Quit)
+2015-07-01 00:52:15	<--	TheBunny (~TheBunny@c-73-213-38-254.hsd1.md.comcast.net) has quit (Quit: Leaving.)
+2015-07-01 00:53:58	-->	jmcnutt (jmcnutt@gateway/shell/devio.us/x-dljrtnlowvrefogl) has joined #lua
+2015-07-01 00:54:27	-->	TheBunny (~TheBunny@c-73-213-38-254.hsd1.md.comcast.net) has joined #lua
+2015-07-01 00:55:13	<--	jmcnutt (jmcnutt@gateway/shell/devio.us/x-dljrtnlowvrefogl) has quit (Client Quit)
+2015-07-01 00:57:10	-->	Neffi (~Neffi@pool-151-202-49-117.nycmny.fios.verizon.net) has joined #lua
+2015-07-01 00:59:23	cmtptr	now fix my problem
+2015-07-01 00:59:45	furq	i'd love to but i'm not a cosmetic surgeon
+2015-07-01 00:59:56	-->	Dylan_P (6f5f4d36@gateway/web/freenode/ip.111.95.77.54) has joined #lua
+2015-07-01 01:00:32	cmtptr	no not that
+2015-07-01 01:00:49	-->	paulk2 (~paulk@50.35.12.248) has joined #lua
+2015-07-01 01:01:04	Dylan_P	The following quote is from lua programming book that I read,"Another use for tables is in what is known as object-oriented programming. In this style of programming, functions that deal with a particular type of value are themselves part of that value",What is that mean?
+2015-07-01 01:01:52	-->	riidom (~Riidom@ltea-047-067-154-091.pools.arcor-ip.net) has joined #lua
+2015-07-01 01:01:53	cmtptr	it means that methods are attached to the objects they operate on
+2015-07-01 01:02:02	<--	paulk2 (~paulk@50.35.12.248) has quit (Read error: Connection reset by peer)
+2015-07-01 01:02:27	-->	paulk2 (~paulk@50.35.12.248) has joined #lua
+2015-07-01 01:03:57	Dylan_P	Okay...then what object and method mean? For example in http://codepad.org/Gy5owuX9 ,what is object and what is method?
+2015-07-01 01:04:32	<--	LavaLevel (~chatzilla@2601:2c6:4304:3579:d83d:fb0a:c3a:42ca) has quit (Ping timeout: 248 seconds)
+2015-07-01 01:04:51	<--	paulk (~paulk@2002:3223:cf8:0:45de:7609:71a3:23b0) has quit (Ping timeout: 256 seconds)
+2015-07-01 01:05:04	furq	nothing in that paste is either of those things
+2015-07-01 01:05:45	Dylan_P	That become method and object if I use it to processing input?
+2015-07-01 01:07:27	daurnimator	Dylan_P: that's just a table of functions. nothing that resembles an object in sight
+2015-07-01 01:07:47	cmtptr	that's not true
+2015-07-01 01:08:01	cmtptr	Get and Inc are closures
+2015-07-01 01:08:01	daurnimator	if you're coming from certain languages; you *could* equate them with 'static' methods.....
+2015-07-01 01:08:39	cmtptr	this is by some definition an implementation of some kind of object
+2015-07-01 01:08:57	daurnimator	cmtptr: which definition
+2015-07-01 01:09:11	daurnimator	I'm sure you can find one somewhere I guess :P
+2015-07-01 01:09:15	cmtptr	the one that closures are objects with a single method
+2015-07-01 01:10:18	furq	https://github.com/systemd/systemd/issues/437
+2015-07-01 01:10:20	furq	looking good daurnimator 
+2015-07-01 01:11:59	daurnimator	?
+2015-07-01 01:12:02	cmtptr	what the fuck is ntp doing in systemd?
+2015-07-01 01:12:26	furq	https://github.com/systemd/systemd/issues/437#issuecomment-117427124
+2015-07-01 01:12:28	furq	specifically that
+2015-07-01 01:12:42	furq	google asks systemd to please stop using their ntp servers, and lennart refuses because "systemd is not a product"
+2015-07-01 01:13:04	daurnimator	furq: uh... no
+2015-07-01 01:13:35	darkstalker	furqd
+2015-07-01 01:13:43	<--	leafo1 (~leafo@206.169.213.106) has quit (Quit: WeeChat 1.2)
+2015-07-01 01:13:52	darkstalker	systemctl disable furq
+2015-07-01 01:13:59	daurnimator	furq: 1. people ask systemd to stop using google's timeserver and swap to ntp.org's. 2. ntp.org says "don't use us as a default unless you're a product and register with us" 3. systemd says "we aren't a product, but a tool to use a distro; hence we don't meet the ntp.org requirements"
+2015-07-01 01:14:25	darkstalker	and ntp isn't part of systemd (yet) afaik
+2015-07-01 01:14:43	darkstalker	eventually all processes will be assimilated
+2015-07-01 01:14:44	daurnimator	darkstalker: systemd-timesyncd certainly is; but it's optional. and off by default
+2015-07-01 01:15:54	daurnimator	darkstalker: you can turn it on the system's ntp syncing with: 'timedatectl set-ntp on'. if the distro hasn't registered any other ntp daemon (e.g. ntpd), then it falls back to systemd-timesyncd.
+2015-07-01 01:16:35	darkstalker	my arch box is running ntpd
+2015-07-01 01:17:07	daurnimator	darkstalker: okay.....
+2015-07-01 01:17:16	cmtptr	"If the googl time servers" - Lennart Poettering, 2015
+2015-07-01 01:17:20	<--	aquanight (~aquanight@96-18-7-133.cpe.cableone.net) has quit (Ping timeout: 248 seconds)
+2015-07-01 21:46:53	--	irc: disconnected from server
+2015-07-01 21:47:18	-->	aajjbb (~aajjbb@179.154.117.36) has joined #lua
+2015-07-01 21:47:18	--	Topic for #lua is "http://lua-users.org/wiki/IrcChannel :: Paste on http://codepad.org/?lang=Lua :: Please consider registering with NickServ if you haven't already. :: Pay no attention to Soni :: * is zero or more"
+2015-07-01 21:47:18	--	Topic set by rjek (~rjek@gateway/shell/pepperfish/x-aitwunmuwtabbrob) on Wed, 04 Mar 2015 12:59:41
+2015-07-01 21:47:18	--	Channel #lua: 317 nicks (0 ops, 0 voices, 317 normals)
+2015-07-01 21:47:18	--	URL for #lua: http://lua-users.org/
+2015-07-01 21:47:24	--	Channel created on Sun, 26 Nov 2006 04:42:55
+2015-07-01 21:47:55	<--	juanfra (~juanfra@unaffiliated/juanfra) has quit (Disconnected by services)
+2015-07-01 21:48:02	-->	juanfra10 (~juanfra@84.76.233.227) has joined #lua
+2015-07-01 21:48:04	<--	juanfra10 (~juanfra@84.76.233.227) has quit (Client Quit)
+2015-07-01 21:48:33	-->	juanfra (~juanfra@84.76.233.227) has joined #lua
+2015-07-01 21:48:45	<--	juanfra (~juanfra@84.76.233.227) has quit (Changing host)
+2015-07-01 21:48:45	-->	juanfra (~juanfra@unaffiliated/juanfra) has joined #lua
+2015-07-01 21:50:03	<--	juanfra (~juanfra@unaffiliated/juanfra) has quit (Client Quit)
+2015-07-01 21:51:01	-->	juanfra (~juanfra@unaffiliated/juanfra) has joined #lua
+2015-07-01 21:53:49	-->	AlissaCubed (~AlissaCub@108.220.174.81) has joined #lua
+2015-07-01 21:53:51	<--	AlissaCubed (~AlissaCub@108.220.174.81) has quit (Client Quit)
+2015-07-01 21:56:34	<--	q66 (~quaker66@enlightenment/developer/q66) has quit (Remote host closed the connection)
+2015-07-01 22:03:12	<--	Akagi201 (~akagi201@116.226.179.56) has quit (Ping timeout: 246 seconds)
+2015-07-01 22:04:10	-->	Lyqyd_ (~quassel@184-100-220-231.ptld.qwest.net) has joined #lua
+2015-07-01 22:05:41	-->	Kaedenn (~kaedenn@unaffiliated/kaedenn) has joined #lua
+2015-07-01 22:05:48	Kaedenn	Does lua have a form of docstrings?
+2015-07-01 22:06:11	Kaedenn	Or, a form of inline documentation that's available to users at runtime?
+2015-07-01 22:06:15	Kaedenn	(via introspection or something)
+2015-07-01 22:06:45	<--	Lyqyd (~quassel@184-100-220-231.ptld.qwest.net) has quit (Ping timeout: 246 seconds)
+2015-07-01 22:06:51	Spark	i think people have added that kind of stuff
+2015-07-01 22:06:59	Spark	but it's not part of standard lua as far as i know
+2015-07-01 22:07:23	-->	q66 (~quaker66@enlightenment/developer/q66) has joined #lua
+2015-07-01 22:08:27	Kaedenn	Also, say I have a table at stack location 2, and I'd love to generate a string that describes that table. There are a bunch of introspection functions people have made in pure Lua for examining a table and its contents; has anyone made such a thing for C?
+2015-07-01 22:09:12	-->	Akagi201 (~akagi201@116.226.179.56) has joined #lua
+2015-07-01 22:10:25	J_Darnley	Just call some Lua code for it.
+2015-07-01 22:12:00	<--	DarkGod (~dg@was59-4-88-175-39-63.fbx.proxad.net) has quit (Ping timeout: 246 seconds)
+2015-07-01 22:12:40	Spark	you can do it in c
+2015-07-01 22:13:01	Spark	it will obviously be more ugly
+2015-07-01 22:15:09	Kaedenn	So, how do I push a copy of an item at a given stack offset onto the top of the stack?
+2015-07-01 22:16:25	J_Darnley	Move?  lua_insert.  Copy?  Not sure
+2015-07-01 22:18:08	furq	Kaedenn: lua_pushvalue
+2015-07-01 22:18:26	Kaedenn	Thank you
+2015-07-01 22:20:46	-->	ajacksified (~ajacksifi@c-76-103-24-239.hsd1.ca.comcast.net) has joined #lua
+2015-07-01 22:22:34	<--	Akagi201 (~akagi201@116.226.179.56) has quit (Ping timeout: 265 seconds)
+2015-07-01 22:23:35	-->	dimday (~amcvega@119.81.124.80-static.reverse.softlayer.com) has joined #lua
+2015-07-01 22:25:45	<--	eerf (~eerf@ec2-54-193-16-72.us-west-1.compute.amazonaws.com) has quit (Ping timeout: 252 seconds)
+2015-07-01 22:29:15	-->	Akagi201 (~akagi201@116.226.179.56) has joined #lua
+2015-07-01 22:32:06	<--	lritter (~lritter@x5ce5256f.dyn.telefonica.de) has quit (Quit: Leaving)
+2015-07-01 22:33:01	<--	J_Darnley (~J_Darnley@d51A44418.access.telenet.be) has quit (Ping timeout: 256 seconds)
+2015-07-01 22:34:57	<--	ajacksified (~ajacksifi@c-76-103-24-239.hsd1.ca.comcast.net) has quit (Remote host closed the connection)
+2015-07-01 22:37:46	-->	TheBunny (~TheBunny@c-73-213-38-254.hsd1.md.comcast.net) has joined #lua
+2015-07-01 22:38:57	-->	sauvin (~sauvin@about/linux/staff/sauvin) has joined #lua
+2015-07-01 22:44:42	<--	hogarius (~hogarius@75-131-8-66.dhcp.bufr.ga.charter.com) has quit (Quit: liteIRC for Android)
+2015-07-01 22:54:40	<--	joconnor (~joconnor@97.64.124.16) has quit (Ping timeout: 244 seconds)
+2015-07-01 22:57:05	<--	itkor (~k@2001:0:53aa:64c:91:3fab:7d15:4faa) has quit (Remote host closed the connection)
+2015-07-01 23:02:25	<--	teroshan (~teroshan@APuteaux-653-1-72-91.w86-195.abo.wanadoo.fr) has quit (Ping timeout: 252 seconds)
+2015-07-01 23:20:44	Kaedenn	Can you access the registry from within Lua?
+2015-07-01 23:21:05	Kaedenn	The Lua registry table, that is
+2015-07-01 23:22:44	<--	abirchall (~abirchall@2620:10d:c082:1054:6203:8ff:fe8a:d0ba) has quit (Remote host closed the connection)
+2015-07-01 23:23:44	xyzzy_	if you have access to the debug library, yes
+2015-07-01 23:25:00	Kaedenn	...oh, right. x_x I knew that.
+2015-07-01 23:25:28	Kaedenn	When invoking a script via dofile, is there a way for the script to say "hey I'm done here, ignore all the code below"?
+2015-07-01 23:25:40	Kaedenn	Like ___END___ in Perl or something
+2015-07-01 23:25:53	Kaedenn	Can I return from a script?
+2015-07-01 23:26:01	xyzzy_	do return end
+2015-07-01 23:28:05	<--	nikki93 (~nikki93@78.101.51.251) has quit (Remote host closed the connection)
+2015-07-01 23:29:38	Kaedenn	Okay, in a CFunction, how do I get the current line number of the script that called the cfunction?
+2015-07-01 23:29:43	-->	kex (~kex@31.11.67.182) has joined #lua
+2015-07-01 23:30:16	furq	%? lua_getinfo
+2015-07-01 23:30:16	yalb	furq: http://lua.org/manual/5.2/manual.html#lua_getinfo
+2015-07-01 23:30:26	-->	nikki93 (~nikki93@78.101.51.251) has joined #lua
+2015-07-01 23:30:42	Kaedenn	Aha. Thank you.
+2015-07-01 23:30:54	furq	actually i'm not sure that'll show where it was called
+2015-07-01 23:31:15	furq	maybe currentline
+2015-07-01 23:31:53	Kaedenn	Why is the variable called `ar'?
+2015-07-01 23:32:01	Kaedenn	I can't figure out what that stands for
+2015-07-01 23:32:11	<--	jellysnakes (~jellysnak@bru1516703.lnk.telstra.net) has quit (Ping timeout: 250 seconds)
+2015-07-01 23:32:16	furq	The parameter ar must be a valid activation record that was filled by a previous call to lua_getstack or given as argument to a hook (see lua_Hook). 
+2015-07-01 23:32:37	furq	it was on the news this mroing
+2015-07-01 23:34:30	<--	kex (~kex@31.11.67.182) has quit (Ping timeout: 252 seconds)
+2015-07-01 23:34:57	<--	nikki93 (~nikki93@78.101.51.251) has quit (Ping timeout: 246 seconds)
+2015-07-01 23:37:04	-->	frogdr (uid71668@gateway/web/irccloud.com/x-pmmbzridjigzkufw) has joined #lua
+2015-07-01 23:37:17	Kaedenn	All I want is the current line number :(
+2015-07-01 23:38:32	Kaedenn	Ah, got it
+2015-07-01 23:38:58	Kaedenn	lua_getstack(L, 1, &ar); lua_getinfo(L, "nSl", &ar);
+2015-07-01 23:43:34	<--	zodiak (~Stef@dhcp-0-21-1a-c4-e9-48.cpe.ezlink.ca) has quit (Read error: Connection reset by peer)
+2015-07-01 23:53:34	<--	bakaneko (~anonymous@AMontsouris-651-1-237-231.w86-212.abo.wanadoo.fr) has quit (Ping timeout: 244 seconds)
+2015-07-01 23:55:22	-->	bakaneko (~anonymous@AMontsouris-651-1-185-160.w82-123.abo.wanadoo.fr) has joined #lua
+2015-07-01 23:58:24	<--	captainkraft_ (~captainkr@cpe-76-84-92-205.neb.res.rr.com) has quit (Ping timeout: 248 seconds)
+2015-07-02 00:07:38	-->	jellysnakes (~jellysnak@bru1516703.lnk.telstra.net) has joined #lua
+2015-07-02 00:08:11	cmtptr	ar15
+2015-07-02 00:14:31	-->	Neffi (~Neffi@pool-151-202-49-117.nycmny.fios.verizon.net) has joined #lua
+2015-07-02 00:14:41	<--	Neffi (~Neffi@pool-151-202-49-117.nycmny.fios.verizon.net) has quit (Remote host closed the connection)
+2015-07-02 00:15:02	-->	fracting (~fracting@103.6.85.136) has joined #lua
+2015-07-02 00:16:04	-->	Neffi (~Neffi@pool-151-202-49-117.nycmny.fios.verizon.net) has joined #lua
+2015-07-02 00:17:25	-->	blahdodo (~blahdodo@69.172.153.217) has joined #lua
+2015-07-02 00:17:46	-->	BitPuffin|osx (~isak@199.72.208.46.dyn.plus.net) has joined #lua
+2015-07-02 00:18:00	<--	Kaedenn (~kaedenn@unaffiliated/kaedenn) has left #lua
+2015-07-02 00:21:41	cmtptr	http://i.kinja-img.com/gawker-media/image/upload/s--leHgzzc9--/c_fit,fl_progressive,q_80,w_636/1305923960628187819.jpg
+2015-07-02 00:22:29	-->	teroshan (~teroshan@APuteaux-653-1-72-91.w86-195.abo.wanadoo.fr) has joined #lua
+2015-07-02 00:25:20	<--	aquanight (~aquanight@96-18-7-133.cpe.cableone.net) has quit (Ping timeout: 276 seconds)
+2015-07-02 00:31:21	-->	nikki93 (~nikki93@78.101.51.251) has joined #lua
+2015-07-02 00:35:41	<--	nikki93 (~nikki93@78.101.51.251) has quit (Ping timeout: 255 seconds)
+2015-07-02 00:38:22	<--	nighty^_ (~nighty@static-68-179-124-161.ptr.terago.net) has quit (Read error: Connection reset by peer)
+2015-07-02 00:39:07	ttmrichter	WTF is this supposed to be, furq?  http://i.imgur.com/FOaTfPH.jpg
+2015-07-02 00:39:57	<--	fracting (~fracting@103.6.85.136) has quit (Ping timeout: 252 seconds)
+2015-07-02 00:41:19	Neffi	and why is it wet? 
+2015-07-02 00:41:34	-->	nighty^ (~nighty@TOROON12-1279662182.sdsl.bell.ca) has joined #lua
+2015-07-02 00:42:04	<--	nighty^ (~nighty@TOROON12-1279662182.sdsl.bell.ca) has quit (Read error: Connection reset by peer)
+2015-07-02 00:42:33	-->	overclk (~vshankar@59.93.226.253) has joined #lua
+2015-07-02 00:45:05	ttmrichter	That's just a glop of the varnish that wasn't properly cleaned up.
+2015-07-02 00:46:25	-->	nighty^ (~nighty@static-68-179-124-161.ptr.terago.net) has joined #lua
+2015-07-02 00:47:08	-->	Kawata_ (~Kawata@cpe-69-207-10-206.buffalo.res.rr.com) has joined #lua
+2015-07-02 00:49:05	-->	NightKawata (~Kawata@cpe-69-207-10-206.buffalo.res.rr.com) has joined #lua
+2015-07-02 00:51:20	<--	Kawata (~Kawata@cpe-69-207-10-206.buffalo.res.rr.com) has quit (Ping timeout: 276 seconds)
+2015-07-02 00:52:25	<--	Kawata_ (~Kawata@cpe-69-207-10-206.buffalo.res.rr.com) has quit (Ping timeout: 256 seconds)
+2015-07-02 01:01:32	<--	beatboxchad (~cassady@50-206-82-151-static.hfc.comcastbusiness.net) has quit (Quit: Leaving.)
+2015-07-02 01:04:51	-->	nikki93 (~nikki93@78.101.51.251) has joined #lua
+2015-07-02 01:11:26	<--	nikki93 (~nikki93@78.101.51.251) has quit (Read error: Connection reset by peer)
+2015-07-02 01:11:30	-->	nikki93_ (~nikki93@78.101.51.251) has joined #lua
+2015-07-02 01:12:08	<--	teroshan (~teroshan@APuteaux-653-1-72-91.w86-195.abo.wanadoo.fr) has quit (Ping timeout: 255 seconds)
+2015-07-02 01:15:53	<--	Vornicus (~Vorn@c-76-19-15-99.hsd1.ct.comcast.net) has quit (Read error: Connection reset by peer)
+2015-07-02 01:16:37	-->	eerf (~eerf@ec2-54-193-16-72.us-west-1.compute.amazonaws.com) has joined #lua
+2015-07-02 01:17:48	-->	kex (~kex@31.11.67.182) has joined #lua
+2015-07-02 01:20:45	<--	nikki93_ (~nikki93@78.101.51.251) has quit (Ping timeout: 256 seconds)
+2015-07-02 01:22:29	<--	kex (~kex@31.11.67.182) has quit (Ping timeout: 255 seconds)
+2015-07-02 01:24:05	<--	ahv (~ahv@81-175-192-167.bb.dnainternet.fi) has quit (Remote host closed the connection)
+2015-07-02 01:26:06	<--	bakaneko (~anonymous@AMontsouris-651-1-185-160.w82-123.abo.wanadoo.fr) has quit (Ping timeout: 264 seconds)
+2015-07-02 01:44:06	<--	BitPuffin|osx (~isak@199.72.208.46.dyn.plus.net) has quit (Ping timeout: 264 seconds)
+2015-07-02 01:51:01	-->	luanatic (~luanatic@34.130.140.82.mobile.mezon.lt) has joined #lua
+2015-07-02 01:51:13	-->	KristaMHill (~krista@32.216.214.138) has joined #lua
+2015-07-02 01:51:40	-->	Dylan16807 (~dylan@cpe-74-131-240-148.kya.res.rr.com) has joined #lua
+2015-07-02 01:55:33	<--	dustinm` (~dustinm@105.ip-167-114-152.net) has quit (Quit: Leaving)
+2015-07-02 01:57:41	<--	KristaMHill (~krista@32.216.214.138) has quit (Quit: Ex-Chat)
+2015-07-02 01:57:48	-->	KristaMHill (~krista@32.216.214.138) has joined #lua
+2015-07-02 02:01:55	<--	overclk (~vshankar@59.93.226.253) has quit (Quit: Leaving)
+2015-07-02 02:03:32	-->	dustinm` (~dustinm@105.ip-167-114-152.net) has joined #lua
+2015-07-02 02:08:31	-->	FrankXu (~textual@180.102.114.149) has joined #lua
+2015-07-02 02:10:31	<--	Betal (~Betal@unaffiliated/betal) has quit (Remote host closed the connection)
+2015-07-02 02:10:34	<--	KristaMHill (~krista@32.216.214.138) has quit (Quit: Ex-Chat)
+2015-07-02 02:11:11	<--	psyprus (~psyprus@199.115.98.226) has quit (Ping timeout: 248 seconds)
+2015-07-02 02:11:50	<--	Dylan16807 (~dylan@cpe-74-131-240-148.kya.res.rr.com) has quit (Ping timeout: 264 seconds)
+2015-07-02 02:12:25	-->	psyprus (~psyprus@199.115.98.226) has joined #lua
+2015-07-02 02:15:31	<--	Alissa (~alissa@bravo.alissa.ml) has quit (Quit: http://is.gd/bmN9kV ~ I'm out ~)
+2015-07-02 02:15:51	-->	Alissa (~alissa@bravo.alissa.ml) has joined #lua
+2015-07-02 02:21:58	-->	Dylan16807 (~dylan@cpe-74-131-240-148.kya.res.rr.com) has joined #lua
+2015-07-02 02:23:22	-->	nikki93 (~nikki93@78.101.51.251) has joined #lua
+2015-07-02 02:25:32	-->	fracting (~fracting@103.6.85.136) has joined #lua
+2015-07-02 02:28:14	<--	Zahr (~zinzarg@narbondel.org) has left #lua
+2015-07-02 02:28:16	<--	FrankXu (~textual@180.102.114.149) has quit (Max SendQ exceeded)
+2015-07-02 02:31:12	-->	tavish (~tavish@unaffiliated/tavish) has joined #lua
+2015-07-02 02:31:18	-->	astrobunny (~astrobunn@CF211018213233.cims.jp) has joined #lua
+2015-07-02 02:31:52	-->	riidom (~Riidom@ltea-047-067-154-091.pools.arcor-ip.net) has joined #lua
+2015-07-02 02:32:33	-->	_abc_ (~user@unaffiliated/ccbbaa) has joined #lua
+2015-07-02 02:39:45	<--	_abc_ (~user@unaffiliated/ccbbaa) has quit (Ping timeout: 246 seconds)
+2015-07-02 02:41:27	-->	_abc_ (~user@unaffiliated/ccbbaa) has joined #lua
+2015-07-02 02:43:02	-->	Kaedenn (~kaedenn@unaffiliated/kaedenn) has joined #lua
+2015-07-02 02:52:57	<--	Kaedenn (~kaedenn@unaffiliated/kaedenn) has left #lua
+2015-07-02 02:52:59	-->	overclk (vshankar@nat/redhat/x-pjownopuqnvuxnjq) has joined #lua
+2015-07-02 03:01:07	-->	Terminar (~Terminar@uranus.belnet.de) has joined #lua
+2015-07-02 03:06:02	-->	kex (~kex@31.11.67.182) has joined #lua
+2015-07-02 03:11:06	<--	kex (~kex@31.11.67.182) has quit (Ping timeout: 265 seconds)
+2015-07-02 03:16:38	<--	NightKawata (~Kawata@cpe-69-207-10-206.buffalo.res.rr.com) has quit (Quit: I put on my robe and wizard hat.)
+2015-07-02 03:18:18	<--	psyprus (~psyprus@199.115.98.226) has quit (Read error: Connection reset by peer)
+2015-07-02 03:18:20	<--	frogdr (uid71668@gateway/web/irccloud.com/x-pmmbzridjigzkufw) has quit (Quit: Connection closed for inactivity)
+2015-07-02 03:18:29	<--	Xiti (~Xiti-@unaffiliated/xiti) has quit (Quit: Xiti)
+2015-07-02 03:18:42	-->	psyprus (~psyprus@199.115.98.226) has joined #lua
+2015-07-02 03:18:48	-->	Xiti (~Xiti-@unaffiliated/xiti) has joined #lua
+2015-07-02 03:22:04	<--	lpghatguy (~LPGhatguy@host-72-174-70-146.msl-mt.client.bresnan.net) has quit (Quit: Goodbye, world!)
+2015-07-02 03:24:45	-->	FunkyAss (~Funky@unaffiliated/funkyass) has joined #lua
+2015-07-02 03:27:36	<--	nikki93 (~nikki93@78.101.51.251) has quit (Remote host closed the connection)
+2015-07-02 03:28:09	-->	nikki93 (~nikki93@78.101.51.251) has joined #lua
+2015-07-02 03:28:31	<--	psyprus (~psyprus@199.115.98.226) has quit (Ping timeout: 248 seconds)
+2015-07-02 03:29:15	-->	psyprus (~psyprus@199.115.98.226) has joined #lua
+2015-07-02 03:29:22	Alissa	For anyone who has used cqueues, how can I make a boolean into a pollable object?
+2015-07-02 03:32:49	<--	nikki93 (~nikki93@78.101.51.251) has quit (Ping timeout: 264 seconds)
+2015-07-02 03:34:47	-->	nikki93 (~nikki93@78.101.51.251) has joined #lua
+2015-07-02 03:35:00	<--	Gertm (~Gertm@2a00:f10:121:400:418:90ff:fe00:148a) has quit (Ping timeout: 246 seconds)
+2015-07-02 03:36:15	<--	Dylan16807 (~dylan@cpe-74-131-240-148.kya.res.rr.com) has quit (Ping timeout: 244 seconds)
+2015-07-02 03:37:19	-->	kostja_osipov (~kostja@94.198.111.69) has joined #lua
+2015-07-02 03:37:28	<--	rhg135 (~rhg135@unaffiliated/rhg135) has quit (Ping timeout: 255 seconds)
+2015-07-02 03:38:48	<--	Lyqyd_ (~quassel@184-100-220-231.ptld.qwest.net) has quit (Remote host closed the connection)
+2015-07-02 03:40:13	-->	Dylan16807 (~dylan@cpe-74-131-240-148.kya.res.rr.com) has joined #lua
+2015-07-02 03:41:19	-->	Gertm (~Gertm@2a00:f10:121:400:418:90ff:fe00:148a) has joined #lua
+2015-07-02 03:46:36	furq	http://i.imgur.com/f1I0dbn.jpg
+2015-07-02 03:46:39	furq	looking good ttmrichter 
+2015-07-02 03:46:45	<--	Shadox (Shadox@24-231-183-209.dhcp.bycy.mi.charter.com) has quit (Quit: Leaving)
+2015-07-02 03:47:03	-->	kaeza (~kaeza@unaffiliated/kaeza) has joined #lua
+2015-07-02 03:47:29	<--	diemartin (~kaeza@unaffiliated/kaeza) has quit (Ping timeout: 276 seconds)
+2015-07-02 04:02:36	<--	paulk3 (~paulk@50.35.12.248) has quit (Ping timeout: 244 seconds)
+2015-07-02 04:02:42	<--	TheBunny (~TheBunny@c-73-213-38-254.hsd1.md.comcast.net) has quit (Quit: Leaving.)
+2015-07-02 04:06:13	-->	lrea (~luca@fast100.tomato.it) has joined #lua
+2015-07-02 04:08:53	<--	nikki93 (~nikki93@78.101.51.251) has quit (Remote host closed the connection)
+2015-07-02 04:09:03	<--	LavaLevel (~chatzilla@2601:2c6:4304:3579:4f2:23bb:e9c9:4066) has quit (Ping timeout: 248 seconds)
+2015-07-02 04:16:11	<--	ProjectRevoTPP (~quassel@unaffiliated/twitch-plays-pbr/x-9644567) has quit (Read error: Connection reset by peer)
+2015-07-02 04:16:59	-->	Burga (~andrewm@124-148-38-210.dyn.iinet.net.au) has joined #lua
+2015-07-02 04:18:46	-->	Tribeam_ (~Tribeam@108-199-158-223.lightspeed.nworla.sbcglobal.net) has joined #lua
+2015-07-02 04:18:54	-->	ProjectRevoTPP (~quassel@unaffiliated/twitch-plays-pbr/x-9644567) has joined #lua
+2015-07-02 04:19:02	<--	ProjectRevoTPP (~quassel@unaffiliated/twitch-plays-pbr/x-9644567) has quit (Client Quit)
+2015-07-02 04:21:18	<--	Tribeam (~Tribeam@108-199-158-223.lightspeed.nworla.sbcglobal.net) has quit (Read error: Connection reset by peer)
+2015-07-02 04:22:08	<--	wow (~wow@158.85.48.118-static.reverse.softlayer.com) has quit (Read error: Connection reset by peer)
+2015-07-02 04:23:05	-->	wow (~wow@158.85.48.118-static.reverse.softlayer.com) has joined #lua
+2015-07-02 04:24:34	-->	einsteinK (uid29353@gateway/web/irccloud.com/x-lqdeccyhddpprfum) has joined #lua
+2015-07-02 04:30:13	-->	nikki93 (~nikki93@78.101.51.251) has joined #lua
+2015-07-02 04:33:59	<--	_abc_ (~user@unaffiliated/ccbbaa) has quit (Quit: leaving)
+2015-07-02 04:34:10	Neffiphone	lookin good furq https://youtu.be/vTIIMJ9tUc8
+2015-07-02 04:39:59	<--	Contigi (~Contigi@cpe-76-95-56-233.socal.res.rr.com) has quit (Read error: Connection reset by peer)
+2015-07-02 04:41:03	-->	Contigi (~Contigi@cpe-76-95-56-233.socal.res.rr.com) has joined #lua
+2015-07-02 04:42:46	gynotikolobomass	Neffiphone, that bloody music video is like crack cocaine for the eyes
+2015-07-02 04:44:17	<--	nikki93 (~nikki93@78.101.51.251) has quit (Remote host closed the connection)
+2015-07-02 04:44:57	gynotikolobomass	Daler Mehndi is my most favourite thing for the day now.
+2015-07-02 04:46:47	<--	Rena (~rena@bas13-kitchener06-845530774.dsl.bell.ca) has quit (Ping timeout: 250 seconds)
+2015-07-02 04:49:39	<--	jnwhiteh (jnwhiteh@WoWUIDev/WoWI/Featured/Dongle/cladhaire) has quit (Ping timeout: 252 seconds)
+2015-07-02 04:51:49	furq	have you really never seen that before
+2015-07-02 04:52:07	<--	dantarion (~quassel@ps164606.dreamhost.com) has quit (Ping timeout: 256 seconds)
+2015-07-02 04:52:19	gynotikolobomass	furq yep
+2015-07-02 04:52:20	-->	dantarion (~quassel@ps164606.dreamhost.com) has joined #lua
+2015-07-02 04:52:24	gynotikolobomass	Also I found this https://www.youtube.com/watch?v=3MteSlpxCpo
+2015-07-02 04:52:34	gynotikolobomass	I really wanted to HATE it. It its kinda amazing.
+2015-07-02 04:52:47	-->	abirchall (~abirchall@2620:10d:c081:1101:6203:8ff:fe8a:d0ba) has joined #lua
+2015-07-02 04:54:14	-->	kex (~kex@31.11.67.182) has joined #lua
+2015-07-02 04:58:55	<--	kex (~kex@31.11.67.182) has quit (Ping timeout: 250 seconds)
+2015-07-02 05:06:10	-->	jnwhiteh (jnwhiteh@WoWUIDev/WoWI/Featured/Dongle/cladhaire) has joined #lua
+2015-07-02 05:07:21	<--	ftsf (~ftsf@2407:7800:400:107f:3db5:daca:8457:e66a) has quit (Quit: :q!)
+2015-07-02 05:07:57	gynotikolobomass	furq, There is something about a cappella, If you are at a concert and sometimes they manage to bully the their way on stage, technically I am often impressed. But after 3 songs the lameness starts to build to an intolerable level.
+2015-07-02 05:08:55	-->	basiliscos (~basilisco@80.94.232.71) has joined #lua
+2015-07-02 05:11:19	<--	Neffiphone (~Neffi@pool-151-202-49-117.nycmny.fios.verizon.net) has quit (Ping timeout: 244 seconds)
+2015-07-02 05:12:22	-->	Dylan2401 (~dylan@cpe-74-131-240-148.kya.res.rr.com) has joined #lua
+2015-07-02 05:13:52	<--	Dylan16807 (~dylan@cpe-74-131-240-148.kya.res.rr.com) has quit (Ping timeout: 265 seconds)
+2015-07-02 05:14:07	<--	koz_ (~koz_@121.99.235.239) has quit (Ping timeout: 248 seconds)
+2015-07-02 05:14:18	-->	Rena (~rena@bas13-kitchener06-845530774.dsl.bell.ca) has joined #lua
+2015-07-02 05:18:40	-->	DarkGod (~dg@was59-4-88-175-39-63.fbx.proxad.net) has joined #lua
+2015-07-02 05:23:14	-->	Aconitin (~Aconitin@dslb-094-217-055-097.094.217.pools.vodafone-ip.de) has joined #lua
+2015-07-02 05:29:32	<--	jellysnakes (~jellysnak@bru1516703.lnk.telstra.net) has quit (Ping timeout: 276 seconds)
+2015-07-02 05:31:26	-->	jellysnakes (~jellysnak@bru1516703.lnk.telstra.net) has joined #lua
+2015-07-02 05:32:13	<--	gremly (~gremly@190.85.36.58) has quit (Ping timeout: 255 seconds)
+2015-07-02 05:33:05	-->	Neffiphone (~Neffi@pool-151-202-49-117.nycmny.fios.verizon.net) has joined #lua
+2015-07-02 05:34:52	-->	ShrewdSpirit (~ShrewdSpi@5.78.0.130) has joined #lua
+2015-07-02 05:36:11	<--	ShrewdSpirit (~ShrewdSpi@5.78.0.130) has quit (Remote host closed the connection)
+2015-07-02 05:40:53	<--	abirchall (~abirchall@2620:10d:c081:1101:6203:8ff:fe8a:d0ba) has quit (Quit: Leaving...)
+2015-07-02 05:41:27	-->	gremly (~gremly@190.85.36.58) has joined #lua
+2015-07-02 05:44:24	--	sztanp3t is now known as sztanpet
+2015-07-02 05:49:36	<--	dimday (~amcvega@119.81.124.80-static.reverse.softlayer.com) has quit (Ping timeout: 252 seconds)
+2015-07-02 06:01:33	-->	xrlabs (~xrlabs@84.201.34.22) has joined #lua
+2015-07-02 06:09:19	-->	nighty-_ (~nighty@hokuriku.rural-networks.com) has joined #lua
+2015-07-02 06:13:22	-->	x10A94 (x10A94@178.252.73.97) has joined #lua
+2015-07-02 06:13:46	-->	Lerg (~Lerg@188.226.45.254) has joined #lua
+2015-07-02 06:19:37	-->	Earlo (~Earlo@line-10441.dyn.kponet.fi) has joined #lua
+2015-07-02 06:20:45	-->	chris_99 (~chris_99@unaffiliated/chris-99/x-3062929) has joined #lua
+2015-07-02 06:23:54	-->	koz_ (~koz_@121.99.235.239) has joined #lua
+2015-07-02 06:26:40	<--	luanatic (~luanatic@34.130.140.82.mobile.mezon.lt) has quit (Ping timeout: 255 seconds)
+2015-07-02 06:30:32	<--	einsteinK (uid29353@gateway/web/irccloud.com/x-lqdeccyhddpprfum) has quit (Quit: Connection closed for inactivity)
+2015-07-02 06:42:27	-->	kex (~kex@31.11.67.182) has joined #lua
+2015-07-02 06:44:36	gynotikolobomass	Anyone know a open source way of opening a winmail.dat?
+2015-07-02 06:47:43	<--	kex (~kex@31.11.67.182) has quit (Ping timeout: 256 seconds)
+2015-07-02 06:48:04	rjek	rm
+2015-07-02 06:48:24	xt	vim
+2015-07-02 06:50:29	furq	a 3d printed crowbar
+2015-07-02 06:57:11	<--	kaeza (~kaeza@unaffiliated/kaeza) has quit (Quit: Leaving)
+2015-07-02 06:57:48	-->	hmstrmn (~hmstrmn@cm-84.213.206.171.getinternet.no) has joined #lua
+2015-07-02 07:05:38	gynotikolobomass	Cool, I opened it, and guess what was inside it? - a file.
+2015-07-02 07:06:01	gynotikolobomass	a winmail.dat file with exactly the same binary contents as the original container....spooky
+2015-07-02 07:06:08	rjek	The contents of winmail.dat is of no interest or use to anything but Outlook.
+2015-07-02 07:06:24	gynotikolobomass	rjek, its winmail.dats all the way down
+2015-07-02 07:06:52	-->	J_Darnley (~J_Darnley@d51a44418.access.telenet.be) has joined #lua
+2015-07-02 07:10:17	furq	maybe if you keep extracting them you'll eventually find the secret
+2015-07-02 07:11:08	gynotikolobomass	I already know the secret. And its not nice.
+2015-07-02 07:11:34	--	gynotikolobomass is now known as Spacemonkey
+2015-07-02 07:11:48	furq	is the secret that it's winmail.dat
+2015-07-02 07:12:10	Spacemonkey	msg NickServ identify furqIsScary123
+2015-07-02 07:12:10	<--	xrlabs (~xrlabs@84.201.34.22) has quit (Quit: This computer has gone to sleep)
+2015-07-02 07:12:18	Spacemonkey	furq, ignore that
+2015-07-02 07:12:20	furq	omfg ur password
+2015-07-02 07:12:20	-->	Oka (~Oka@hlfxns016cw-156034016072.dhcp-dynamic.FibreOP.ns.bellaliant.net) has joined #lua
+2015-07-02 07:12:23	furq	your real password
+2015-07-02 07:12:29	furq	what are we ever to do now
+2015-07-02 07:12:30	Spacemonkey	its ok I trust #lua etc
+2015-07-02 07:12:53	furq	brb hacking u
+2015-07-02 07:13:02	Spacemonkey	much LOLS 
+2015-07-02 07:13:42	furq	the swat team are en route as we speak
+2015-07-02 07:13:53	furq	they should be landing at stansted in about 14 hours
+2015-07-02 07:14:02	furq	so once they're out of baggage claim, get ready
+2015-07-02 07:14:42	 *	Spacemonkey makes a mad dash for the Ecuadorian Embassy
+2015-07-02 07:15:09	Spacemonkey	Im off to hang with (Alleged) Sex pest Julian.
+2015-07-02 07:15:22	furq	don't you think they've suffered enough
+2015-07-02 07:16:12	<--	hmstrmn (~hmstrmn@cm-84.213.206.171.getinternet.no) has quit (Ping timeout: 246 seconds)
+2015-07-02 07:16:15	Spacemonkey	furq, Dont you think Julian looks a lot like Mr Humphries? .... hmmm there is a conspiracy afoot
+2015-07-02 07:16:38	Spacemonkey	The phrase "I'm free" does not spring to mind
+2015-07-02 07:16:38	furq	i thought you meant john humprhys for a minute there
+2015-07-02 07:16:56	furq	er. humphrys
+2015-07-02 07:17:05	furq	john humprhys is a welsh gay porn star
+2015-07-02 07:17:12	Spacemonkey	on Radio 4?
+2015-07-02 07:17:26	furq	which one
+2015-07-02 07:17:30	-->	scwizard (~ec2-user@ec2-54-164-126-47.compute-1.amazonaws.com) has joined #lua
+2015-07-02 07:17:33	scwizard	http://codepad.org/pV6464TE
+2015-07-02 07:17:51	scwizard	is there any way I can run the first function in the array?
+2015-07-02 07:17:57	scwizard	erm table
+2015-07-02 07:18:00	furq	sure, you do what you did on line 7
+2015-07-02 07:18:08	furq	you just need to put a function in the array first
+2015-07-02 07:18:19	scwizard	furq: ok, how do I do that?
+2015-07-02 07:18:28	furq	actions[1] = function() end
+2015-07-02 07:18:29	scwizard	s/array/table/
+2015-07-02 07:18:32	Spacemonkey	http://codepad.org/vpnKrin5
+2015-07-02 07:18:58	furq	i suspect what you're actually asking for is next(actions)()
+2015-07-02 07:19:05	furq	which won't always return the same function
+2015-07-02 07:19:49	Spacemonkey	I like the idea of firing functions in a random order. Makes software more interesting.
+2015-07-02 07:19:56	scwizard	furq: not worky :( http://codepad.org/a6XCmJor
+2015-07-02 07:19:59	scwizard	also lemme try that
+2015-07-02 07:20:03	scwizard	the next thingy
+2015-07-02 07:20:29	Spacemonkey	scwizard, what are you trying to achieve here?
+2015-07-02 07:20:41	scwizard	Spacemonkey: I want to run each function of a table in order
+2015-07-02 07:20:45	furq	that's right stouffer, you help
+2015-07-02 07:20:57	<--	tavish (~tavish@unaffiliated/tavish) has quit (Quit: leaving)
+2015-07-02 07:21:17	Spacemonkey	scwizard, keep a seperate table with the order you want and a numeric index
+2015-07-02 07:21:39	furq	that is the actual answer
+2015-07-02 07:21:47	furq	the hash part of a table is unordered
+2015-07-02 07:22:11	furq	you could just pairs() through the table and run each function, but the order isn't guaranteed
+2015-07-02 07:22:20	scwizard	Spacemonkey: so two tables, one with the function one with the order?
+2015-07-02 07:22:30	scwizard	i don't understand how the one with the order would look
+2015-07-02 07:22:36	-->	tavish (~tavish@unaffiliated/tavish) has joined #lua
+2015-07-02 07:22:38	Spacemonkey	yeah, you dont really need to keep your functions in a table anyway.
+2015-07-02 07:23:02	scwizard	ok, well I need some table with an order
+2015-07-02 07:23:09	furq	http://codepad.org/dytX6uKU
+2015-07-02 07:23:46	Spacemonkey	scwizard, do what I do and keep asking until furq gets annoyed and provides the answer :)
+2015-07-02 07:24:03	furq	http://codepad.org/IICQ5GO1
+2015-07-02 07:24:05	furq	or that, even
+2015-07-02 07:24:22	<--	cyphase (~cyphase@unaffiliated/cyphase) has quit (Read error: Connection reset by peer)
+2015-07-02 07:24:28	scwizard	furq: the problem here, is I want to place the table with the ordering above the actual functions in the code
+2015-07-02 07:24:41	furq	well then don't want to do that
+2015-07-02 07:24:59	scwizard	say again?
+2015-07-02 07:25:22	furq	the solution to your problem is to not want to do that
+2015-07-02 07:25:25	-->	cyphase (~cyphase@unaffiliated/cyphase) has joined #lua
+2015-07-02 07:25:26	Spacemonkey	Just definte your empty functions early
+2015-07-02 07:25:54	-->	bakaneko (~anonymous@AMontsouris-651-1-185-160.w82-123.abo.wanadoo.fr) has joined #lua
+2015-07-02 07:26:07	scwizard	Spacemonkey: can they be defeind early inside a table?
+2015-07-02 07:26:23	Spacemonkey	Yeah, probably. 
+2015-07-02 07:26:34	furq	do you actually need to call actions.hello with that name anywhere
+2015-07-02 07:26:46	furq	there's no reason to use string indices if you don't
+2015-07-02 07:26:47	scwizard	furq: no
+2015-07-02 07:26:49	furq	well yeah
+2015-07-02 07:26:54	furq	just store the functions directly in an array
+2015-07-02 07:27:29	scwizard	furq: but the crux, is I want that array to appear at the top of the script, rather than at the bottom
+2015-07-02 07:27:32	scwizard	*near the bottom
+2015-07-02 07:27:46	furq	it appears wherever you want
+2015-07-02 07:28:20	scwizard	alright, what's the syntax to store functions idrectly in an array?
+2015-07-02 07:28:28	furq	http://codepad.org/NaakNxZD
+2015-07-02 07:29:54	Spacemonkey	furq, That shotcut seems like most NLEs in that its impossible to use out of the box.
+2015-07-02 07:30:05	furq	i've never had cause to use an nle
+2015-07-02 07:30:25	furq	i don't have any video creation needs more complex than ffmpeg can handle
+2015-07-02 07:30:39	scwizard	not at all what I'm looking for still :(
+2015-07-02 07:30:39	Spacemonkey	I am special needs
+2015-07-02 07:31:15	scwizard	I want a list of function names at the top of the code, and the meat of the functions at the bottom
+2015-07-02 07:31:16	Spacemonkey	scwizard, for more complex questions you need to use furq's premium #lua service.
+2015-07-02 07:31:23	furq	there are no function names
+2015-07-02 07:31:31	scwizard	yes, but I want there to be function names
+2015-07-02 07:31:49	furq	i just asked if you needed there to be function names and you said no
+2015-07-02 07:31:55	scwizard	i was confuse :(
+2015-07-02 07:31:57	scwizard	i meant yes
+2015-07-02 07:32:18	scwizard	i guess what could also work
+2015-07-02 07:32:22	scwizard	is a table mapping strings to functions
+2015-07-02 07:32:25	scwizard	maybe that's what I want
+2015-07-02 07:32:42	Spacemonkey	Kinnison, do you have the URL for #lua premier service, offering HOT lua solutions?
+2015-07-02 07:32:43	ttmrichter	Whatever happened to that "gynotikolobomass" guy?  What a jerk he was!
+2015-07-02 07:32:53	ttmrichter	Oh, Spacemonkey!  Welcome back!
+2015-07-02 07:33:08	Spacemonkey	ttmrichter, good riddance, is was a true idiot.
+2015-07-02 07:34:25	Spacemonkey	can you get me a teaching gig in China (not teaching english though - I am barely capable of that)?
+2015-07-02 07:36:22	ttmrichter	Spacemonkey: Teaching other things would be harder to land.  You'd have to be credentialed up the wazoo.
+2015-07-02 07:36:37	furq	can you get me a job teaching how to respect eggs
+2015-07-02 07:36:48	ttmrichter	furq: Yes.
+2015-07-02 07:36:59	furq	you all sicken me 101
+2015-07-02 07:37:09	-->	dmail (~dmail@cpc33-live22-2-0-cust204.17-2.cable.virginm.net) has joined #lua
+2015-07-02 07:37:11	ttmrichter	Send me $10,000 to help smooth over the paperwork though.
+2015-07-02 07:37:33	Spacemonkey	ttmrichter, I pmed you my REAL information, trying to prevent furq stalking me.
+2015-07-02 07:37:38	furq	$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+2015-07-02 07:37:42	furq	how many's that
+2015-07-02 07:37:47	furq	that's got to be at least 2000
+2015-07-02 07:37:59	Spacemonkey	furq, do you even know what the currency in china is?
+2015-07-02 07:38:04	furq	renminbi
+2015-07-02 07:38:16	furq	or yuan if you're fancy
+2015-07-02 07:38:37	Spacemonkey	furq, its like say pound vs sterling
+2015-07-02 07:38:45	furq	pound vs sterling
+2015-07-02 07:38:56	Spacemonkey	personally I feel we should call our monies 'sterlings' like the USA
+2015-07-02 07:39:16	<--	tavish (~tavish@unaffiliated/tavish) has quit (Quit: leaving)
+2015-07-02 07:39:44	ttmrichter	Renminbi.
+2015-07-02 07:39:48	ttmrichter	Yuan is the measure word.
+2015-07-02 07:39:57	ttmrichter	Or Kuai if you're going for vernacular.
+2015-07-02 07:40:31	Spacemonkey	ttmrichter, is that $10,000 Malawi Dollars? Like £1.20?
+2015-07-02 07:41:04	furq	why have i started getting really inept russian bride spam
+2015-07-02 07:41:18	furq	i have emails from "ekaterina nice" and "woman nataliya"
+2015-07-02 07:41:29	furq	ekaterina didn't even send a picture
+2015-07-02 07:41:31	furq	lazy tbh
+2015-07-02 07:42:41	Spacemonkey	furq, this is extrememly useful on that scort https://www.youtube.com/watch?v=PuCoZD0W6GY
+2015-07-02 07:43:31	furq	is this a real man's voice or a computer
+2015-07-02 07:44:58	Spacemonkey	are YOU a real man or a computer?
+2015-07-02 07:45:43	furq	what do you think
+2015-07-02 07:46:24	-->	tavish (~tavish@unaffiliated/tavish) has joined #lua
+2015-07-02 07:46:35	<--	JesseH (~JesseH@oftn/member/JesseH) has quit (Read error: Connection reset by peer)
+2015-07-02 07:47:10	Spacemonkey	furq, Sometimes I am almost convinced you are human, but then you go ahead and do something that shatters my confidence.
+2015-07-02 07:48:21	scwizard	i figured it out: http://codepad.org/9RrR17Xr
+2015-07-02 07:48:22	Spacemonkey	e.g. All of a sudden you seem to be expert in a non lua field that I happen to be currently interested in. So you are definately a google avatar and in my browser cache. You along with q66.
+2015-07-02 07:49:12	furq	yes i just became interested in game music yesterday
+2015-07-02 07:49:14	-->	JesseH (~JesseH@oftn/member/JesseH) has joined #lua
+2015-07-02 07:50:25	<--	astrobunny (~astrobunn@CF211018213233.cims.jp) has quit (Remote host closed the connection)
+2015-07-02 07:50:47	-->	nct (~dellos@softbank126130146048.bbtec.net) has joined #lua
+2015-07-02 07:50:51	Spacemonkey	furq, yes and before that, time wasting videos on youtube
+2015-07-02 07:51:05	furq	you mean that thing that only the two of us are interested in
+2015-07-02 07:51:33	Spacemonkey	furq, now you are applying your cold calculating AI logic
+2015-07-02 07:52:31	Spacemonkey	also you could not provide scwizard a suitable answer because your natural language subroutines could not process the subtleties of his request.
+2015-07-02 07:53:07	Spacemonkey	... despite running the rest of the time like a fu**ing grammer and spellchecker! Its all adding up.
+2015-07-02 07:53:13	furq	of all the people to criticise my natural language ability
+2015-07-02 07:53:14	-->	Francisco (~Fr4n@unaffiliated/fr4n) has joined #lua
+2015-07-02 07:53:53	furq	also since when were computers any good at grammar
+2015-07-02 07:54:03	furq	if i was a computer i'd just constantly be shouting FRAGMENT (NO SUGGESTIONS)
+2015-07-02 07:56:42	<--	Fran__ (~Fr4n@unaffiliated/fr4n) has quit (Ping timeout: 264 seconds)
+2015-07-02 07:58:56	<--	CapsAdmin (~CapsAdmin@109.199.217.23) has quit (Read error: Connection reset by peer)
+2015-07-02 07:59:18	-->	CapsAdmin (~CapsAdmin@109.199.217.23) has joined #lua
+2015-07-02 08:04:21	Spacemonkey	furq, your AI agression routines are kicking in now.
+2015-07-02 08:05:51	<--	tlund (~tlund@envy.nxs.se) has quit (Ping timeout: 248 seconds)
+2015-07-02 08:05:55	<--	basiliscos (~basilisco@80.94.232.71) has quit (Ping timeout: 256 seconds)
+2015-07-02 08:06:04	-->	tlund (~tlund@envy.nxs.se) has joined #lua
+2015-07-02 08:06:21	Alissa	http://phosphor.i0i0.me/7zg1kvMB Any idea why that gives me a "Initialization from invalid pointer type"?
+2015-07-02 08:06:37	Alissa	At the {"userfrompid", getpid} line?
+2015-07-02 08:06:52	-->	xrlabs (~xrlabs@84.201.34.22) has joined #lua
+2015-07-02 08:10:27	<--	zexon (~zeljko@188.117.195.239) has quit (Quit: Leaving)
+2015-07-02 08:17:44	tavish	Alissa: http://www.lua.org/manual/5.2/manual.html#lua_CFunction
+2015-07-02 08:18:12	 *	cmtptr triggered
+2015-07-02 08:18:18	cmtptr	NULL
+2015-07-02 08:18:42	tavish	Alissa: typedef struct luaL_Reg { const char *name; lua_CFunction func; } luaL_Reg;
+2015-07-02 08:19:29	<--	Akagi201 (~akagi201@116.226.179.56) has quit (Remote host closed the connection)
+2015-07-02 08:27:00	 *	ttmrichter jazz-hands cmtptr for his bravery in acknowledging his triggers.
+2015-07-02 08:27:40	tavish	trigger warning: lua
+2015-07-02 08:28:18	<--	mark_otaris (uid14803@gateway/web/irccloud.com/x-ekbjmeztpxcrkmrb) has quit (Quit: Connection closed for inactivity)
+2015-07-02 08:28:52	ttmrichter	http://i.imgur.com/RPFitMm.png
+2015-07-02 08:29:41	x10A94	Nice meme
+2015-07-02 08:30:51	-->	kex (~kex@31.11.67.182) has joined #lua
+2015-07-02 08:34:09	Alissa	wait i think i totally failed that didn't i.
+2015-07-02 08:34:24	Alissa	totally forgot to add that wrapper function
+2015-07-02 08:35:42	<--	kex (~kex@31.11.67.182) has quit (Ping timeout: 252 seconds)
+2015-07-02 08:42:38	<--	fracting (~fracting@103.6.85.136) has quit (Ping timeout: 244 seconds)
+2015-07-02 08:50:34	-->	fracting (~fracting@107.191.52.248) has joined #lua
+2015-07-02 08:52:15	-->	ksjdflsjldf (~ksldjflks@107.181.178.166) has joined #lua
+2015-07-02 08:52:18	<--	Lerg (~Lerg@188.226.45.254) has quit
+2015-07-02 09:01:05	-->	ksjdflsj_ (~ksldjflks@27.115.6.34) has joined #lua
+2015-07-02 09:03:12	-->	mbalmer_ (~mbalmer@2001:4060:c0dd:0:c080:2393:697e:39ae) has joined #lua
+2015-07-02 09:03:12	<--	mbalmer (~mbalmer@netbsd/developer/mbalmer) has quit (Read error: Connection reset by peer)
+2015-07-02 09:04:54	<--	ksjdflsjldf (~ksldjflks@107.181.178.166) has quit (Ping timeout: 265 seconds)
+2015-07-02 09:10:43	<--	jnwhiteh (jnwhiteh@WoWUIDev/WoWI/Featured/Dongle/cladhaire) has quit (Ping timeout: 252 seconds)
+2015-07-02 09:11:00	-->	jnwhiteh (jnwhiteh@WoWUIDev/WoWI/Featured/Dongle/cladhaire) has joined #lua
+2015-07-02 09:12:33	<--	hdon (~hdon@65.160.209.146) has quit (Ping timeout: 252 seconds)
+2015-07-02 09:17:47	-->	hdon (~hdon@65.160.209.146) has joined #lua
+2015-07-02 09:19:42	<--	Burga (~andrewm@124-148-38-210.dyn.iinet.net.au) has quit (Ping timeout: 252 seconds)
+2015-07-02 09:28:27	<--	tavish (~tavish@unaffiliated/tavish) has quit (Ping timeout: 250 seconds)
+2015-07-02 09:32:49	cmtptr	bone, http://www.theory11.com/forums/threads/any-one-know-heard-what-the-shadow-stack-is.31236/
+2015-07-02 09:33:24	Habbie	lol
+2015-07-02 09:37:52	-->	ineil (~ineil@boole.london.hackspace.org.uk) has joined #lua
+2015-07-02 09:46:19	-->	einsteinK (uid29353@gateway/web/irccloud.com/x-lmtocfnyanwhncxn) has joined #lua
+2015-07-02 09:47:15	Spacemonkey	http://www.bfi.org.uk/are-you-a-replicant/
+2015-07-02 09:47:20	Spacemonkey	looking good furq
+2015-07-02 09:47:33	-->	basiliscos (~basilisco@e-vote.basnet.by) has joined #lua
+2015-07-02 09:50:57	<--	hdon (~hdon@65.160.209.146) has quit (Ping timeout: 246 seconds)
+2015-07-02 09:54:19	-->	Myrl-oneechan (~myrl@unaffiliated/myrl) has joined #lua
+2015-07-02 09:54:40	-->	hdon (~hdon@65.160.209.146) has joined #lua
+2015-07-02 09:55:20	Myrl-oneechan	One advantage of Lua is strings are immutable. Will string.sub allocatea new string, or will it point to the original string?
+2015-07-02 09:55:34	rjek	You've answered your own question
+2015-07-02 09:55:39	rjek	Strings are immutable.
+2015-07-02 09:55:46	rjek	It will thus create a new string.
+2015-07-02 09:55:52	rjek	(and return it)
+2015-07-02 09:56:04	furq	good use of "you've answered your own question"
+2015-07-02 09:56:13	Myrl-oneechan	rjek: Yes, but the immutability of a string would allow one to point to the same portion of memory.
+2015-07-02 09:56:29	rjek	It does not overlap strings, if that is what you mean.
+2015-07-02 09:56:38	rjek	That makes GC an arse
+2015-07-02 09:56:41	Spacemonkey	nob = string.sub(nob, "cheese", "pizza")
+2015-07-02 09:57:31	Myrl-oneechan	Spacemonkey: wat
+2015-07-02 09:58:28	Spacemonkey	just curious if you get a new nob 
+2015-07-02 09:58:52	furq	don't talk to your japanese sister like that
+2015-07-02 09:59:35	 *	Spacemonkey is pondering on the safety of rethreads
+2015-07-02 10:01:01	<--	Terminar (~Terminar@uranus.belnet.de) has quit (Quit: Leaving.)
+2015-07-02 10:01:13	<--	Oka (~Oka@hlfxns016cw-156034016072.dhcp-dynamic.FibreOP.ns.bellaliant.net) has quit (Remote host closed the connection)
+2015-07-02 10:01:48	-->	Oka (~Oka@hlfxns016cw-156034016072.dhcp-dynamic.FibreOP.ns.bellaliant.net) has joined #lua
+2015-07-02 10:01:55	-->	aquanight (~aquanight@96-18-7-133.cpe.cableone.net) has joined #lua
+2015-07-02 10:02:09	Spacemonkey	furq, so, were does the nob go? Do you get a new nob and the old nob gets chucked in the garbage?
+2015-07-02 10:02:26	furq	i'm not answering this question
+2015-07-02 10:02:55	Spacemonkey	furq, I will take that as a yes
+2015-07-02 10:06:16	<--	Oka (~Oka@hlfxns016cw-156034016072.dhcp-dynamic.FibreOP.ns.bellaliant.net) has quit (Ping timeout: 255 seconds)
+2015-07-02 10:08:34	<--	ksjdflsj_ (~ksldjflks@27.115.6.34) has quit (Remote host closed the connection)
+2015-07-02 10:09:01	-->	ksjdflsjldf (~ksldjflks@107.181.178.166) has joined #lua
+2015-07-02 10:13:47	-->	Droolio (~drool@host81-147-71-192.range81-147.btcentralplus.com) has joined #lua
+2015-07-02 10:13:51	<--	Droolio (~drool@host81-147-71-192.range81-147.btcentralplus.com) has quit (Excess Flood)
+2015-07-02 10:17:00	<--	overclk (vshankar@nat/redhat/x-pjownopuqnvuxnjq) has quit (Quit: Leaving)
+2015-07-02 10:18:55	-->	kex (~kex@31.11.67.182) has joined #lua
+2015-07-02 10:21:58	furq	http://www.bbc.co.uk/news/world-us-canada-33357892
+2015-07-02 10:22:01	furq	looking good Spacemonkey 
+2015-07-02 10:23:40	-->	snakenerd (~Thunderbi@querubim.tecgraf.puc-rio.br) has joined #lua
+2015-07-02 10:24:07	-->	absolutego (~absoluteg@104.167.117.229) has joined #lua
+2015-07-02 10:24:10	<--	kex (~kex@31.11.67.182) has quit (Ping timeout: 265 seconds)
+2015-07-02 10:26:26	-->	Droolio (~drool@host81-147-71-192.range81-147.btcentralplus.com) has joined #lua
+2015-07-02 10:26:52	<--	jellysnakes (~jellysnak@bru1516703.lnk.telstra.net) has quit (Ping timeout: 256 seconds)
+2015-07-02 10:27:43	-->	Spacew00t (~Spacew00t@rrcs-208-105-38-162.nyc.biz.rr.com) has joined #lua
+2015-07-02 10:27:56	-->	hogarius (0c0d841e@gateway/web/freenode/ip.12.13.132.30) has joined #lua
+2015-07-02 10:30:34	Spacemonkey	BEST LINE EVER: Not only did the animal break his wife Chrissie's ankles but he said it had also punched his daughter in the face.
+2015-07-02 10:30:53	-->	AlexYT (~sanches@212.69.111.41) has joined #lua
+2015-07-02 10:31:16	<--	ineil (~ineil@boole.london.hackspace.org.uk) has quit (Quit: ineil)
+2015-07-02 10:32:11	Spacemonkey	Does anyone know of a tool that will calculate the PSNR of pdf files?
+2015-07-02 10:32:44	rjek	echo 0
+2015-07-02 10:36:27	-->	Jovest (~Jovest@c83-251-43-122.bredband.comhem.se) has joined #lua
+2015-07-02 10:37:02	furq	http://i.imgur.com/Kr7324n.gifv
+2015-07-02 10:37:04	furq	looking good rjek 
+2015-07-02 10:37:33	rjek	Your mistake is that is actually me.
+2015-07-02 10:37:54	furq	how is that a mistake
+2015-07-02 10:38:24	<--	xrlabs (~xrlabs@84.201.34.22) has quit (Quit: This computer has gone to sleep)
+2015-07-02 10:38:44	Spacemonkey	furq, echo 0 works great, thanks.
+2015-07-02 10:38:50	-->	xrlabs (~xrlabs@84.201.34.22) has joined #lua
+2015-07-02 10:38:54	-->	BitPuffin|osx (~isak@199.72.208.46.dyn.plus.net) has joined #lua
+2015-07-02 10:39:14	furq	oh i get it
+2015-07-02 10:39:20	furq	rjek's precognition is acting up again
+2015-07-02 10:39:39	rjek	Spacemonkey: That was my idea :(
+2015-07-02 10:40:12	Spacemonkey	rjek, I do apologise. +1 to rjek
+2015-07-02 10:40:20	furq	was that an actual question
+2015-07-02 10:40:27	furq	or are you testing out your new acronym blender
+2015-07-02 10:41:07	Spacemonkey	I am doing some signal processing and trying to see if the tools have developed in the last 15 years. Alas no, and I still have to write my own bloody code to do this.
+2015-07-02 10:41:42	furq	what does this have to do with pdf files
+2015-07-02 10:41:48	-->	ksjdflsj_ (~ksldjflks@27.115.6.34) has joined #lua
+2015-07-02 10:41:52	-->	kex (~kex@31.11.67.182) has joined #lua
+2015-07-02 10:42:07	Spacemonkey	furq, just to save transcoding the PDF into a bitmap prior to the calculation
+2015-07-02 10:42:14	Spacemonkey	that is really just sugar.
+2015-07-02 10:42:22	furq	you can just extract the images
+2015-07-02 10:42:37	Spacemonkey	its the PSNR calculator I would like
+2015-07-02 10:42:40	-->	Akagi201 (~akagi201@180.158.15.109) has joined #lua
+2015-07-02 10:42:50	<--	ksjdflsj_ (~ksldjflks@27.115.6.34) has quit (Client Quit)
+2015-07-02 10:43:06	Spacemonkey	a nice general purpose one would be neat, its not rocket science, but I am sure someone would have written one by now.
+2015-07-02 10:43:40	J_Darnley	The psnr calculation might be trivial but the input format decoding isn't
+2015-07-02 10:43:58	Spacemonkey	Yeah it is
+2015-07-02 10:44:22	Spacemonkey	There must be a billion libraries to convert to raw bitmaps.
+2015-07-02 10:45:08	J_Darnley	Sure but each one decodes one thing.
+2015-07-02 10:45:15	Spacemonkey	I will try http://qpsnr.youlink.org/
+2015-07-02 10:45:26	<--	ksjdflsjldf (~ksldjflks@107.181.178.166) has quit (Ping timeout: 265 seconds)
+2015-07-02 10:45:53	Spacemonkey	Its just random no one has written something general. Lazy researchers :)
+2015-07-02 10:46:11	J_Darnley	Wait, if you want to do it for video why are you looking anywhere other than FFmpeg?
+2015-07-02 10:46:17	Spacemonkey	I dont
+2015-07-02 10:46:56	Spacemonkey	Im just going to see if I can coerce qpsnr into running on still images.
+2015-07-02 10:47:40	J_Darnley	Sure, a 1 frame video is a still image.
+2015-07-02 10:47:53	furq	apparently you can do it with ffmpeg
+2015-07-02 10:48:06	Spacemonkey	Hmm, I guess I should have looked in the most obvious place first: http://www.imagemagick.org/script/compare.php I can use this and wrap it in a lua script
+2015-07-02 10:48:11	J_Darnley	That tool appears to use ffmpeg's libraries anyway
+2015-07-02 10:49:46	Spacemonkey	J_Darnley, its running...seems to be working on pdf's
+2015-07-02 10:50:30	furq	$ ffmpeg -i original.jpg -i converted.jpg -filter_complex "psnr" out.jpg
+2015-07-02 10:50:31	furq	[Parsed_psnr_0 @ 0x80883ec20] PSNR average:44.89 min:44.89 max:44.89
+2015-07-02 10:50:35	Spacemonkey	takes a fair while to do surprisingly, but I think it is decoding the PDFs into raster first
+2015-07-02 10:52:33	Spacemonkey	furq, thats crazy good pdf
+2015-07-02 10:52:40	Spacemonkey	I mean PSNR, duh
+2015-07-02 10:52:55	furq	 $ ffmpeg -i original.jpg -i original.jpg -filter_complex "psnr" out2.jpg 2>&1 | tail -1
+2015-07-02 10:52:58	furq	[Parsed_psnr_0 @ 0x80883ec20] PSNR average:inf min:inf max:inf
+2015-07-02 10:53:01	furq	not as good as that
+2015-07-02 10:53:20	J_Darnley	Best way to keep quality: do nothing.
+2015-07-02 10:53:28	furq	anyway in summary ffmpeg can do everything
+2015-07-02 10:53:36	furq	except read chapter markers from ifo files for some reason
+2015-07-02 10:53:38	J_Darnley	except decode PDF
+2015-07-02 10:54:01	furq	that's what poppler is for
+2015-07-02 10:54:07	Spacemonkey	I am using this as a way of giving me a score between two files, so really PSNR isnt a great metric anyway, but better than nothing.
+2015-07-02 10:54:33	<--	turmfalke (~turmfalke@p54A68FDE.dip0.t-ipconnect.de) has quit (Disconnected by services)
+2015-07-02 10:54:38	-->	turmfalke_ (~turmfalke@p54A693D8.dip0.t-ipconnect.de) has joined #lua
+2015-07-02 10:55:37	Spacemonkey	Under the hood it is converting to a 16985x2523 16-bit PNG. What a monster
+2015-07-02 10:55:47	J_Darnley	ffmpeg probably also provides ssim
+2015-07-02 10:56:09	Jovest	Hello, how can I look through a table with two subtables inside it, 1 iteration each subtable at a time?
+2015-07-02 10:57:06	Jovest	eg for i=1, #t do -> for x=1, #t.subTable do (Check t[1].subTable[1] first, then t[2].subTable[1], then t[1].subTable[2] and so n?
+2015-07-02 10:57:18	Jovest	for x=1, #t[i].subTable* it should be sorry
+2015-07-02 10:57:50	Jovest	should I just do it manually? get the length of the subTable and then manually check each subelement, or can I use a loop to do it?
+2015-07-02 10:58:10	J_Darnley	Pehaps you want ipairs()
+2015-07-02 10:58:39	J_Darnley	Or a recursive function for arbitrary levels of nested tables
+2015-07-02 11:00:03	Jovest	hm
+2015-07-02 11:01:33	Jovest	okay got it
+2015-07-02 11:04:21	<--	fatguylaughing (~fatguylau@68.12.7.242) has quit (Quit: fatguylaughing)
+2015-07-02 11:13:29	-->	Netlynx (~me@lugwv/member/Netlynx) has joined #lua
+2015-07-02 11:16:30	Spacemonkey	Can I get the result of a command bash 'into' bash variable?
+2015-07-02 11:17:39	Spacemonkey	e.g. like using io.popen in lua?
+2015-07-02 11:18:24	kansuu_	blah=$(cmd)
+2015-07-02 11:18:26	kansuu_	?
+2015-07-02 11:18:41	--	kansuu_ is now known as kansuu
+2015-07-02 11:18:51	-->	fatguylaughing (~fatguylau@worx01.meridian-ds.com) has joined #lua
+2015-07-02 11:20:20	Spacemonkey	kansuu, something like codepad.org/ScKxcOeH
+2015-07-02 11:21:21	Spacemonkey	basically I am trying to use the output of one command and include it in a filename.
+2015-07-02 11:21:24	ttmrichter	Well, first you have to print out the result.  Then you put the printout onto a wooden table and photograph it.  Then you run that photograph through a character recognition program.  You then take the output of that, after manually correcting the OCR errors, and insert that into your program.
+2015-07-02 11:21:36	ttmrichter	Or, more seriously, $().
+2015-07-02 11:21:46	q66	or ``
+2015-07-02 11:21:58	ttmrichter	$() is less error-prone.
+2015-07-02 11:22:08	ttmrichter	But yeah, backquotes are acceptable in most shells too.
+2015-07-02 11:22:13	q66	there's a slight semantic difference too
+2015-07-02 11:22:17	q66	but i don't remember what it was
+2015-07-02 11:22:22	Spacemonkey	ttmrichter, Can you please please please give me an example.
+2015-07-02 11:22:26	ttmrichter	ls *_$(date -I)
+2015-07-02 11:22:42	cmtptr	you can't nest ``
+2015-07-02 11:22:52	cmtptr	that's the difference
+2015-07-02 11:23:01	q66	nah, there was something else
+2015-07-02 11:23:05	J_Darnley	isn't one of them a bash-ism
+2015-07-02 11:23:06	q66	something about evaluation of the string
+2015-07-02 11:23:12	q66	J_Darnley, neither is a bashism
+2015-07-02 11:23:13	furq	nameOne=`echo $1 | cut -f1 -d'.'`
+2015-07-02 11:23:14	furq	no ;_;
+2015-07-02 11:23:31	furq	nameOne=${1%.*}
+2015-07-02 11:23:33	Spacemonkey	:( I hate bash soooo much
+2015-07-02 11:23:39	furq	also #!/bin/sh tia
+2015-07-02 11:23:56	Spacemonkey	First person to make that work I will paypal £1 to
+2015-07-02 11:24:04	cmtptr	> advocates using bash parameter expansion
+2015-07-02 11:24:07	ttmrichter	Spacemonkey: Make what work?
+2015-07-02 11:24:09	furq	what do you actually want it to do
+2015-07-02 11:24:13	ttmrichter	I just showed you how to use $().
+2015-07-02 11:24:13	cmtptr	> advocates she-banging with sh, not bash
+2015-07-02 11:24:40	ttmrichter	Try "touch foo_$(date -I)" and see what file you have in your directory now.
+2015-07-02 11:24:53	<--	xrlabs (~xrlabs@84.201.34.22) has quit (Quit: This computer has gone to sleep)
+2015-07-02 11:24:55	Spacemonkey	ttmrichter, 1 sec, touching my foo
+2015-07-02 11:25:00	furq	that parameter expansion isn't bash-specific is it
+2015-07-02 11:25:12	cmtptr	aren't all of them?
+2015-07-02 11:26:10	J_Darnley	Next you'll have someone complain that they don't have /bin/bash
+2015-07-02 11:26:25	rjek	5/win 33
+2015-07-02 11:26:26	rjek	x
+2015-07-02 11:27:08	furq	cmtptr: no
+2015-07-02 11:27:26	furq	that works fine with /bin/sh
+2015-07-02 11:27:35	cmtptr	http://pubs.opengroup.org/onlinepubs/009695399/utilities/xcu_chap02.html
+2015-07-02 11:27:38	cmtptr	yeah
+2015-07-02 11:27:40	cmtptr	this is news to me
+2015-07-02 11:27:48	-->	Tricycle (CGI272@haz95-3-88-182-2-4.fbx.proxad.net) has joined #lua
+2015-07-02 11:28:39	furq	oh
+2015-07-02 11:28:40	furq	i get it
+2015-07-02 11:29:49	<--	x10A94 (x10A94@178.252.73.97) has quit (Read error: Connection reset by peer)
+2015-07-02 11:29:58	furq	Spacemonkey: http://codepad.org/0c1bRGQL
+2015-07-02 11:30:16	-->	x10A94 (~x10A94@178.252.73.97) has joined #lua
+2015-07-02 11:33:32	Spacemonkey	furq, sorry, was in a mini-meeting about GIT branch naming conventions. Will have a look
+2015-07-02 11:33:53	cmtptr	I bet furq is an expert at naming git branches
+2015-07-02 11:35:48	zash	git checkout -b whatever13211231421hutnaeshu
+2015-07-02 11:36:11	furq	Spacemonkey: http://codepad.org/x67bkwa3
+2015-07-02 11:36:13	furq	i am bored
+2015-07-02 11:38:29	Spacemonkey	furq, my system hates the braces in line 3
+2015-07-02 11:39:29	Spacemonkey	furq, I also need to make compare 'shut the feck up' as despite the -quiet flag its shouting crap over everything
+2015-07-02 11:39:36	<--	BitPuffin|osx (~isak@199.72.208.46.dyn.plus.net) has quit (Remote host closed the connection)
+2015-07-02 11:39:44	furq	probably 2>/dev/null
+2015-07-02 11:39:56	cmtptr	wtf is compare
+2015-07-02 11:39:58	furq	if you mean line 3 of the second paste then apparently it's because you put brackets in an echo
+2015-07-02 11:40:02	furq	compare is imagemagick
+2015-07-02 11:40:04	cmtptr	oh
+2015-07-02 11:40:50	furq	Spacemonkey: that won't work unless the output of compare is one line
+2015-07-02 11:40:55	furq	and preferably one line which is just the psnr
+2015-07-02 11:41:13	Spacemonkey	it is supposed to, but it barfs warnings out despite the quiet operator
+2015-07-02 11:41:24	furq	i assume that you want file1file2-33.0.pdf or something
+2015-07-02 11:41:33	-->	Lerg (~Lerg@188.226.45.254) has joined #lua
+2015-07-02 11:41:45	Spacemonkey	yeah, just adding the 'score' to the filename.
+2015-07-02 11:41:59	furq	that will just append the entire output of compare to the filename
+2015-07-02 11:42:01	Spacemonkey	It could be quite a nice script in general for transcoding malarky
+2015-07-02 11:42:04	furq	so you'll need to filter that down first
+2015-07-02 11:42:13	-->	BitPuffin|osx (~isak@199.72.208.46.dyn.plus.net) has joined #lua
+2015-07-02 11:42:21	furq	you can probably just do compare | tail -1
+2015-07-02 11:42:38	furq	or compare | tail -1 | cut -whatever
+2015-07-02 11:42:51	Spacemonkey	yeah, tail was my next thought
+2015-07-02 11:43:03	Spacemonkey	isnt it tail -n 1
+2015-07-02 11:43:29	furq	they're the same
+2015-07-02 11:44:30	-->	Elish (~x@unaffiliated/elish) has joined #lua
+2015-07-02 11:45:37	Spacemonkey	furq, I may have to concede and output the value to a file.
+2015-07-02 11:45:49	furq	what's the output
+2015-07-02 11:46:03	-->	Dylan16807 (~dylan@cpe-74-131-240-148.kya.res.rr.com) has joined #lua
+2015-07-02 11:46:29	Spacemonkey	furq, www.codepad.org/O2XWpMJI
+2015-07-02 11:47:00	furq	compare -quiet -metric PSNR one.pdf two.pdf dump.pdf 2>/dev/null | tail -n 1
+2015-07-02 11:47:36	<--	Dylan2401 (~dylan@cpe-74-131-240-148.kya.res.rr.com) has quit (Ping timeout: 244 seconds)
+2015-07-02 11:48:02	-->	mary5030 (~mary5030@50.56.230.39) has joined #lua
+2015-07-02 11:48:13	<--	mary5030 (~mary5030@50.56.230.39) has quit (Remote host closed the connection)
+2015-07-02 11:48:40	Spacemonkey	its churning away, these PDFs are so huge.
+2015-07-02 11:49:44	-->	mary5030 (~mary5030@72.32.115.233) has joined #lua
+2015-07-02 11:49:48	furq	actually i don't think you'll need to do that
+2015-07-02 11:50:04	furq	only stdout is captured by the subshell
+2015-07-02 11:50:13	Spacemonkey	furq, www.codepad.org/iiM4lZ9b
+2015-07-02 11:50:31	furq	that's a 404
+2015-07-02 11:50:32	<--	einsteinK (uid29353@gateway/web/irccloud.com/x-lmtocfnyanwhncxn) has quit (Quit: Connection closed for inactivity)
+2015-07-02 11:50:36	furq	also i can't click links that don't start with http
+2015-07-02 11:50:36	Spacemonkey	oops http://codepad.org/iiM4IZ9b
+2015-07-02 11:50:53	furq	fun
+2015-07-02 11:51:00	Spacemonkey	yeah sorry, my VM shared buffer is kaput so I need to do lameness
+2015-07-02 11:51:45	Spacemonkey	furq, whoever wrote this command is taking the piss it does not like to play nicely with others
+2015-07-02 11:52:24	furq	it's the same as ffmpeg
+2015-07-02 11:52:26	 *	Spacemonkey remembers why he uses lua and not shell
+2015-07-02 11:52:40	aquanight	can compare even do pdfs?
+2015-07-02 11:52:40	furq	presumably it can output the image on stdout, so all messages need to go on stderr
+2015-07-02 11:52:50	furq	which makes it a ballache to use the output
+2015-07-02 11:53:05	Spacemonkey	aquanight, yeah all the actual compare stuff works fine, it does all the transcoding automatically etc.
+2015-07-02 11:53:55	Spacemonkey	furq, ahh that would explain it, its hard to coerce it to output to a file in the nornmal way
+2015-07-02 11:54:49	furq	try compare 2>&1 | tail -1
+2015-07-02 11:55:00	aquanight	yeah if 'output-file' is '-' it outputs on stdout
+2015-07-02 11:55:04	Spacemonkey	snap :) (its running)
+2015-07-02 11:55:32	aquanight	freaking stderr, this is why we can't have nice things
+2015-07-02 11:56:07	furq	also is it just me who always types 2&>1
+2015-07-02 11:56:18	Spacemonkey	furq, its looking positive, trying it in the script itself now
+2015-07-02 11:56:22	aquanight	I always thought it had to be >&
+2015-07-02 11:56:29	furq	i meant by accident
+2015-07-02 11:56:35	aquanight	oh
+2015-07-02 11:56:49	aquanight	no I'm pretty sure I've attempted something of the sort on occasion
+2015-07-02 11:57:19	Spacemonkey	http://codepad.org/VKyXEIem
+2015-07-02 11:57:24	Spacemonkey	looking good furq
+2015-07-02 11:57:36	furq	does that work
+2015-07-02 11:57:40	Spacemonkey	In reality, we can lose the pdf and this can compare anything.
+2015-07-02 11:57:58	aquanight	furq: it doesn't help that while 2&>1 isn't valid while 2>&1 is, both &>file and >&file are valid for dumping both stdout and stderr to file
+2015-07-02 11:58:03	Spacemonkey	Yes, I might put the PSNR at the front so I can sort by lameness, i.e. if PSNR too low I will do something
+2015-07-02 11:58:38	Spacemonkey	So if you had a bunch of vids to transcode you could technically use this to see if your settings were too aggressive
+2015-07-02 11:59:10	furq	psnr isn't a very good measurement for x264 anyway
+2015-07-02 11:59:20	Spacemonkey	furq, I always used SSIM.
+2015-07-02 11:59:48	Spacemonkey	I believe SSIM is an available metric option here. an mse
+2015-07-02 12:00:37	furq	psy-rd and psy-trellis hurt the psnr score
+2015-07-02 12:00:41	furq	and probably some other stuff
+2015-07-02 12:00:56	<--	etandel (~etandel@200.201.176.130) has quit (Remote host closed the connection)
+2015-07-02 12:01:14	-->	etandel (~etandel@200.201.176.130) has joined #lua
+2015-07-02 12:01:21	furq	i would expect it'd do the same for ssim but i'm not a smart enough guy to know for sure
+2015-07-02 12:02:14	Spacemonkey	furq, what do you know of H264?
+2015-07-02 12:02:14	furq	>> psy-rd lowers PSNR and SSIM while subjectively increases quality so
+2015-07-02 12:02:14	furq	>> you shouldn't trust these metrics too much while using psychovisual
+2015-07-02 12:02:15	furq	>> options like adaptive quantization and psy-rd.
+2015-07-02 12:02:23	furq	er
+2015-07-02 12:02:29	furq	i know it's a good video codec
+2015-07-02 12:03:14	<--	chris_99 (~chris_99@unaffiliated/chris-99/x-3062929) has quit (Quit: Ex-Chat)
+2015-07-02 12:04:17	Spacemonkey	furq, ok I was just curious. I did a bunch on H264 back in the day (before anyone heard of it)
+2015-07-02 12:04:25	furq	i don't know a great deal about how it works beyond how to get reasonably good looking encodes
+2015-07-02 12:04:42	-->	chris_99 (~chris_99@unaffiliated/chris-99/x-3062929) has joined #lua
+2015-07-02 12:05:35	Spacemonkey	furq, I know too much about how it works and its scary.
+2015-07-02 12:07:25	Spacemonkey	I used to do a lot with it. I remember some algorithms I had in the encoder actually removed macroblocks from the output screen and my modified decoder would reconstruct the missing data. It was a technique to reduce transmission bandwidth.
+2015-07-02 12:07:26	furq	i bet you're one of those people who wrote custom quantisation matrices for xvid
+2015-07-02 12:08:07	Spacemonkey	furq, no, im one of the people who wrote algorithms to dynamically create and adjust quantisation matrices :)
+2015-07-02 12:08:18	rjek	https://twitter.com/stuheritage/status/616354599453257728
+2015-07-02 12:08:40	<--	kostja_osipov (~kostja@94.198.111.69) has quit (Remote host closed the connection)
+2015-07-02 12:08:56	-->	kostja_osipov (~kostja@94.198.111.69) has joined #lua
+2015-07-02 12:09:11	Spacemonkey	rjek, topical, I actually bought the 'sun' today to drool over naked baps etc. Not one in there. Just my luck. Back to the Daily Mail.
+2015-07-02 12:09:49	furq	you live in oxfordshire so it's impossible to tell if that's sarcasm
+2015-07-02 12:10:01	<--	nct (~dellos@softbank126130146048.bbtec.net) has quit (Quit: Leaving...)
+2015-07-02 12:10:11	furq	actually i guess nobody in oxfordshire would buy the sun
+2015-07-02 12:11:05	Spacemonkey	furq, we use to as bedding for our horses
+2015-07-02 12:11:13	Spacemonkey	but we prefer the Daily Mail
+2015-07-02 12:11:19	furq	you also don't call them "baps"
+2015-07-02 12:11:24	<--	chris_99 (~chris_99@unaffiliated/chris-99/x-3062929) has quit (Remote host closed the connection)
+2015-07-02 12:11:25	furq	you call them waitrose olive ciabatta
+2015-07-02 12:11:46	Spacemonkey	well I do live in Oxfordshire, but I am not from Oxfordshire
+2015-07-02 12:12:02	furq	like jeremy clarkson
+2015-07-02 12:12:15	<--	Dylan16807 (~dylan@cpe-74-131-240-148.kya.res.rr.com) has quit (Ping timeout: 250 seconds)
+2015-07-02 12:12:20	Spacemonkey	yeah exactly, and he says baps all the time.
+2015-07-02 12:12:44	Spacemonkey	Personally, I prefer the term norks, but that got hijacked by the Koreans
+2015-07-02 12:12:47	furq	yeah but he uses it as an acronym for brake-assisted power slide
+2015-07-02 12:13:24	furq	it's one of his less racist acronyms
+2015-07-02 12:14:41	Spacemonkey	is there any way in github to see if anyone has pulled your code?
+2015-07-02 12:15:25	<--	Laie_ (laie@218.153.116.24) has quit (Ping timeout: 264 seconds)
+2015-07-02 12:16:18	Spacemonkey	Im really annoyed that http://www.99-bottles-of-beer.net have NOT accepted my alternative lua contribution. 
+2015-07-02 12:17:06	Spacemonkey	http://codepad.org/f456TJSu
+2015-07-02 12:17:19	furq	http://www.99-bottles-of-beer.net/language-lua-2056.html
+2015-07-02 12:17:22	furq	how is yours better than this
+2015-07-02 12:17:22	-->	frogdr (uid71668@gateway/web/irccloud.com/x-dcoapqepumqzzbnr) has joined #lua
+2015-07-02 12:17:27	Spacemonkey	philistines
+2015-07-02 12:17:38	-->	kgee (~kgee@mail2.tbadigital.com) has joined #lua
+2015-07-02 12:17:42	Spacemonkey	furq, because its readable
+2015-07-02 12:17:50	furq	i don't think that's the intention
+2015-07-02 12:18:40	Spacemonkey	its not for showing off, its for meeting the spec with clear, maintainable code and outputting in the correct format.
+2015-07-02 12:18:50	Spacemonkey	Most of they are crap on the boundary cases.
+2015-07-02 12:19:07	Spacemonkey	e.g. : 1 bottles of beer on the wall, 1 bottles of beer.
+2015-07-02 12:19:15	-->	paulk3 (~paulk@50.35.12.248) has joined #lua
+2015-07-02 12:19:21	furq	http://www.99-bottles-of-beer.net/language-java-3.html
+2015-07-02 12:19:24	furq	i think this is what you want
+2015-07-02 12:19:29	-->	ProjectRevoTPP (~quassel@unaffiliated/twitch-plays-pbr/x-9644567) has joined #lua
+2015-07-02 12:19:45	Spacemonkey	also I like my retrospective substitution method.
+2015-07-02 12:20:03	-->	Chromix (~Chromix@55d41171.access.ecotel.net) has joined #lua
+2015-07-02 12:20:04	<--	kostja_osipov (~kostja@94.198.111.69) has quit (Remote host closed the connection)
+2015-07-02 12:20:05	ttmrichter	I love the comment in the Java one: "Short and simple, true Java-way"
+2015-07-02 12:20:20	-->	kostja_osipov (~kostja@94.198.111.69) has joined #lua
+2015-07-02 12:20:20	ttmrichter	That unreadable mess of braces is "short and simple".
+2015-07-02 12:20:38	furq	http://99-bottles-of-beer.net/language-python-1154.html
+2015-07-02 12:20:40	furq	looking good ttmrichter 
+2015-07-02 12:20:44	ttmrichter	http://www.99-bottles-of-beer.net/language-forth-793.html
+2015-07-02 12:20:49	ttmrichter	That's my style.
+2015-07-02 12:20:50	Spacemonkey	ttmrichter, If Java were a person, it would be a wet-lipped paedo ready to be shot in the face with a shotgun full of paperclips and acid
+2015-07-02 12:21:18	Eyes	if java was a person
+2015-07-02 12:21:21	Eyes	it'd be crying right now
+2015-07-02 12:21:22	Eyes	you bullies
+2015-07-02 12:21:23	ttmrichter	http://www.99-bottles-of-beer.net/language-prolog-1114.html
+2015-07-02 12:21:25	ttmrichter	Or that one.
+2015-07-02 12:21:59	ttmrichter	http://www.99-bottles-of-beer.net/language-modula-3-402.html
+2015-07-02 12:22:01	ttmrichter	Or that one.
+2015-07-02 12:22:28	furq	http://www.99-bottles-of-beer.net/language-go-2537.html
+2015-07-02 12:22:29	furq	wtf
+2015-07-02 12:22:45	-->	Betal (~Betal@unaffiliated/betal) has joined #lua
+2015-07-02 12:22:59	ttmrichter	Hell, even this is better than the Java one: http://www.99-bottles-of-beer.net/language-brainfuck-2542.html
+2015-07-02 12:23:52	 *	rjek laughs at corsix's http://www.99-bottles-of-beer.net/language-lua-2056.html
+2015-07-02 12:25:46	-->	chris_99 (~chris_99@unaffiliated/chris-99/x-3062929) has joined #lua
+2015-07-02 12:26:28	furq	http://www.99-bottles-of-beer.net/language-assembler-%28dec-pdp-11%29-2391.html
+2015-07-02 12:26:31	furq	surely this is your type of thing ttmrichter 
+2015-07-02 12:27:09	zash	what the heck is up with that lua one?
+2015-07-02 12:27:27	furq	which, the obfuscated one?
+2015-07-02 12:27:32	zash	does it rely on the next() order?
+2015-07-02 12:28:04	zash	oh, length of name?
+2015-07-02 12:28:15	-->	beatboxchad (~cassady@50-206-82-151-static.hfc.comcastbusiness.net) has joined #lua
+2015-07-02 12:28:31	Spacemonkey	ttmrichter, seems forth was optimised for this single problem
+2015-07-02 12:29:30	-->	Dylan16807 (~dylan@cpe-74-131-240-148.kya.res.rr.com) has joined #lua
+2015-07-02 12:30:58	-->	joconnor (~joconnor@173-11-74-161-SFBA.hfc.comcastbusiness.net) has joined #lua
+2015-07-02 12:31:11	-->	GamerEqualDevelo (~Laie@218.153.116.24) has joined #lua
+2015-07-02 12:31:26	Spacemonkey	I am not convinced of some design descisions I made in my version now :(
+2015-07-02 21:48:42	-->	aajjbb (~aajjbb@179.154.117.36) has joined #lua
+2015-07-02 21:48:42	--	Topic for #lua is "http://lua-users.org/wiki/IrcChannel :: Paste on http://codepad.org/?lang=Lua :: Please consider registering with NickServ if you haven't already. :: Pay no attention to Soni :: * is zero or more"
+2015-07-02 21:48:42	--	Topic set by rjek (~rjek@gateway/shell/pepperfish/x-aitwunmuwtabbrob) on Wed, 04 Mar 2015 12:59:41
+2015-07-02 21:48:42	--	Channel #lua: 320 nicks (0 ops, 0 voices, 320 normals)
+2015-07-02 21:48:42	--	Notice(hobana.freenode.net): [freenode-info] why register and identify? your IRC nick is how people know you. http://freenode.net/faq.shtml#nicksetup
+2015-07-02 21:48:46	--	URL for #lua: http://lua-users.org/
+2015-07-02 21:48:46	--	Channel created on Sun, 26 Nov 2006 04:42:55
+2015-07-02 21:51:25	Alissa	yeah that fixes it cmtptr 
+2015-07-02 21:53:00	cmtptr	that's funny
+2015-07-02 21:54:54	cmtptr	Alissa, it's because there's a getuid externed by your libc and it's apparently taking precedence over yours
+2015-07-02 21:57:04	-->	singalaut (~mami@unaffiliated/tomoe-mami/x-1769741) has joined #lua
+2015-07-02 21:57:04	-->	TheBunny (~TheBunny@c-73-213-38-254.hsd1.md.comcast.net) has joined #lua
+2015-07-02 21:57:04	<--	TheBunny (~TheBunny@c-73-213-38-254.hsd1.md.comcast.net) has quit (Client Quit)
+2015-07-02 21:57:15	<--	TheBetterBobby (~BobbyJone@pool-173-71-106-59.cmdnnj.fios.verizon.net) has quit (Read error: No route to host)
+2015-07-02 21:57:16	-->	TheBunny (~TheBunny@c-73-213-38-254.hsd1.md.comcast.net) has joined #lua
+2015-07-02 21:58:32	<--	singalaut- (~mami@unaffiliated/tomoe-mami/x-1769741) has quit (Ping timeout: 252 seconds)
+2015-07-02 21:58:39	<--	Neffi (~Neffi@pool-151-202-49-117.nycmny.fios.verizon.net) has quit (Quit: Leaving)
+2015-07-02 22:01:04	<--	abirchall (~abirchall@2620:10d:c082:1054:6203:8ff:fe8a:d0ba) has quit (Remote host closed the connection)
+2015-07-02 22:01:07	<--	alvarops (~alvaros@cable-192.222.193.111.electronicbox.net) has quit (Quit: Leaving)
+2015-07-02 22:01:44	-->	kex (~kex@31.11.67.182) has joined #lua
+2015-07-02 22:01:54	<--	Alissa (~alissa@bravo.alissa.ml) has quit (Quit: http://is.gd/bmN9kV ~ I'm out ~)
+2015-07-02 22:02:08	henriquegogo	how to pack a lua application and all its libraries (rocks) into a single file?
+2015-07-02 22:02:08	-->	Alissa (alissa@bravo.alissa.ml) has joined #lua
+2015-07-02 22:02:30	Alissa	well, cmtptr, it works.
+2015-07-02 22:02:32	Alissa	ident is set :3
+2015-07-02 22:03:54	-->	Neffi (~Neffi@pool-151-202-49-117.nycmny.fios.verizon.net) has joined #lua
+2015-07-02 22:04:08	kaeza	I personally tend to prefix all functions that are meant for Lua with 'L_' or 'l_' to avoid (or at least reduce) these kinds of problems
+2015-07-02 22:04:08	cmtptr	henriquegogo, tar
+2015-07-02 22:04:47	kaeza	and of course, almost everything prefixed with static
+2015-07-02 22:05:06	henriquegogo	cmtpr, Its possible to do a tar that run its contents?
+2015-07-02 22:05:20	Alissa	i was thinking about it but i was really hoping i didn't need to.
+2015-07-02 22:05:29	Alissa	Probably doable.
+2015-07-02 22:05:49	Alissa	Either that or a program with the tar built into the program in some meta space or whatever
+2015-07-02 22:06:35	henriquegogo	cmtptr, (...) "into a single executable file" :D
+2015-07-02 22:09:45	cmtptr	Alissa, those functions should be static anyway, and if you do that then the collision isn't a problem unless you actually need to call the external one
+2015-07-02 22:11:11	-->	s3shs (~s3shs@ip68-99-253-150.ph.ph.cox.net) has joined #lua
+2015-07-02 22:13:50	<--	Kilroo (~Kilroo@98.27.26.236) has quit (Max SendQ exceeded)
+2015-07-02 22:14:29	<--	s3shs (~s3shs@ip68-99-253-150.ph.ph.cox.net) has quit (Max SendQ exceeded)
+2015-07-02 22:14:42	Alissa	How can I make gcc search a specific directory for when I want to compile with a specific Lua version?
+2015-07-02 22:15:23	-->	s3shs (~s3shs@ip68-99-253-150.ph.ph.cox.net) has joined #lua
+2015-07-02 22:17:29	-->	Kilroo (~Kilroo@98.27.26.236) has joined #lua
+2015-07-02 22:20:44	<--	bakhtiya (~me@office.addictivemobility.com) has quit (Ping timeout: 264 seconds)
+2015-07-02 22:22:38	-->	bakhtiya (~me@office.addictivemobility.com) has joined #lua
+2015-07-02 22:23:16	J_Darnley	-I for headers and -L for libraries
+2015-07-02 22:28:56	-->	abirchal_ (~abirchall@199.201.64.2) has joined #lua
+2015-07-02 22:32:02	-->	acharles (~acharles@c-67-188-215-141.hsd1.ca.comcast.net) has joined #lua
+2015-07-02 22:32:50	<--	acharles (~acharles@c-67-188-215-141.hsd1.ca.comcast.net) has quit (Client Quit)
+2015-07-02 22:33:28	<--	Neffi (~Neffi@pool-151-202-49-117.nycmny.fios.verizon.net) has quit (Quit: Leaving)
+2015-07-02 22:34:51	-->	teroshan (~teroshan@APuteaux-653-1-72-91.w86-195.abo.wanadoo.fr) has joined #lua
+2015-07-02 22:35:04	-->	acharles (~acharles@c-67-188-215-141.hsd1.ca.comcast.net) has joined #lua
+2015-07-02 22:38:40	-->	dimday (~amcvega@119.81.124.88) has joined #lua
+2015-07-02 22:44:50	-->	askatasuna (~askatasun@181.47.105.14) has joined #lua
+2015-07-02 22:44:51	<--	mva (mva@gentoo/contributor/mva) has quit (Ping timeout: 256 seconds)
+2015-07-02 22:47:36	<--	J_Darnley (~J_Darnley@d51a44418.access.telenet.be) has quit (Ping timeout: 276 seconds)
+2015-07-02 22:48:35	<--	Fran__ (~Fr4n@unaffiliated/fr4n) has quit (Quit: Leaving)
+2015-07-02 22:54:55	<--	joconnor (~joconnor@97.64.124.16) has quit (Remote host closed the connection)
+2015-07-02 22:55:19	-->	noiro (~noiro@c-76-17-29-38.hsd1.ga.comcast.net) has joined #lua
+2015-07-02 23:00:02	-->	Neffi (~Neffi@pool-151-202-49-117.nycmny.fios.verizon.net) has joined #lua
+2015-07-02 23:03:41	<--	benjamingr (uid23465@gateway/web/irccloud.com/x-yjsbkaptccsvcbek) has quit (Quit: Connection closed for inactivity)
+2015-07-02 23:07:40	<--	Lerg (~Lerg@188.226.45.254) has quit
+2015-07-02 23:08:42	<--	leafo1 (~leafo@206.169.213.106) has quit (Quit: WeeChat 1.2)
+2015-07-02 23:09:43	-->	Fr4n (~Fr4n@unaffiliated/fr4n) has joined #lua
+2015-07-02 23:10:09	-->	Walpurgisnacht (~Nihilumbr@74-61-60-199.war.clearwire-wmx.net) has joined #lua
+2015-07-02 23:11:34	-->	mva (mva@gentoo/contributor/mva) has joined #lua
+2015-07-02 23:14:38	<--	abirchal_ (~abirchall@199.201.64.2) has quit (Ping timeout: 265 seconds)
+2015-07-02 23:19:15	<--	noiro (~noiro@c-76-17-29-38.hsd1.ga.comcast.net) has quit (Ping timeout: 256 seconds)
+2015-07-02 23:20:14	-->	LavaLevel (~chatzilla@2601:2c6:4304:3579:e5db:3579:3207:1570) has joined #lua
+2015-07-02 23:21:09	-->	idafyaid (~irssi@unaffiliated/idafyaid) has joined #lua
+2015-07-02 23:22:26	<--	mark_otaris (uid14803@gateway/web/irccloud.com/x-aqvxppgzelebvwlx) has left #lua
+2015-07-02 23:29:34	<--	lritter (~lritter@x5ce5264b.dyn.telefonica.de) has quit (Quit: Leaving)
+2015-07-02 23:36:05	-->	Akagi201 (~akagi201@221.239.144.86) has joined #lua
+2015-07-02 23:37:46	<--	koz_ (~koz_@121.99.235.239) has quit (Remote host closed the connection)
+2015-07-02 23:44:34	-->	Akagi201_ (~akagi201@221.239.144.86) has joined #lua
+2015-07-02 23:44:53	-->	koz_ (~koz_@121.99.235.239) has joined #lua
+2015-07-02 23:45:20	<--	kex (~kex@31.11.67.182) has quit (Remote host closed the connection)
+2015-07-02 23:47:29	<--	koz_ (~koz_@121.99.235.239) has quit (Remote host closed the connection)
+2015-07-02 23:47:49	<--	Akagi201 (~akagi201@221.239.144.86) has quit (Ping timeout: 246 seconds)
+2015-07-02 23:48:23	-->	koz_ (~koz_@121.99.235.239) has joined #lua
+2015-07-02 23:51:48	<--	Neffi (~Neffi@pool-151-202-49-117.nycmny.fios.verizon.net) has quit (Quit: Leaving)
+2015-07-02 23:53:11	<--	ProjectRevoTPP (~quassel@unaffiliated/twitch-plays-pbr/x-9644567) has quit (Read error: Connection reset by peer)
+2015-07-02 23:53:40	-->	Neffi (~Neffi@pool-151-202-49-117.nycmny.fios.verizon.net) has joined #lua
+2015-07-02 23:54:11	<--	Fr4n (~Fr4n@unaffiliated/fr4n) has quit (Quit: Leaving)
+2015-07-02 23:54:28	-->	ProjectRevoTPP (~quassel@unaffiliated/twitch-plays-pbr/x-9644567) has joined #lua
+2015-07-02 23:56:49	-->	whitebook (~whitebook@bzq-79-178-62-77.red.bezeqint.net) has joined #lua
+2015-07-03 00:00:59	<--	ProjectRevoTPP (~quassel@unaffiliated/twitch-plays-pbr/x-9644567) has quit (Read error: Connection reset by peer)
+2015-07-03 00:02:14	-->	ProjectRevoTPP (~quassel@unaffiliated/twitch-plays-pbr/x-9644567) has joined #lua
+2015-07-03 00:02:28	<--	Neffi (~Neffi@pool-151-202-49-117.nycmny.fios.verizon.net) has quit (Quit: Leaving)
+2015-07-03 00:05:00	-->	Neffi (~Neffi@pool-151-202-49-117.nycmny.fios.verizon.net) has joined #lua
+2015-07-03 00:10:35	-->	blaaaaargh (~kaeza@unaffiliated/kaeza) has joined #lua
+2015-07-03 00:12:22	<--	kaeza (~kaeza@unaffiliated/kaeza) has quit (Ping timeout: 252 seconds)
+2015-07-03 00:12:33	--	blaaaaargh is now known as kaeza
+2015-07-03 00:16:55	<--	nikki93 (~nikki93@78.101.34.138) has quit (Remote host closed the connection)
+2015-07-03 00:19:25	<--	bakaneko (~anonymous@AMontsouris-651-1-185-160.w82-123.abo.wanadoo.fr) has quit (Ping timeout: 250 seconds)
+2015-07-03 00:29:39	<--	Betal_q (~Betal@unaffiliated/betal) has quit (Ping timeout: 276 seconds)
+2015-07-03 00:31:34	-->	noiro (~noiro@c-76-17-29-38.hsd1.ga.comcast.net) has joined #lua
+2015-07-03 00:33:22	<--	noiro (~noiro@c-76-17-29-38.hsd1.ga.comcast.net) has quit (Remote host closed the connection)
+2015-07-03 00:34:21	-->	FreeBirdLjj (~freebirdl@180.110.18.66) has joined #lua
+2015-07-03 00:34:47	-->	noiro (~noiro@c-76-17-29-38.hsd1.ga.comcast.net) has joined #lua
+2015-07-03 00:38:23	-->	astrobun_ (~astrobunn@CF211018213233.cims.jp) has joined #lua
+2015-07-03 00:39:52	<--	koz_ (~koz_@121.99.235.239) has quit (Ping timeout: 252 seconds)
+2015-07-03 00:44:59	xxleite	hi
+2015-07-03 00:45:37	xxleite	theres another way to get table/function address in other than tostring Lua?
+2015-07-03 00:46:33	xxleite	:s/Lua//
+2015-07-03 00:47:49	kaeza	why do you need the address?
+2015-07-03 00:48:25	xxleite	i'm going to traverse a tree of tables
+2015-07-03 00:48:40	xxleite	and check if its the same table
+2015-07-03 00:48:55	kaeza	use == (or rawequal)
+2015-07-03 00:49:36	xxleite	i see, but what about parent tables
+2015-07-03 00:50:00	xxleite	like i have a parent key with a address of a parent table
+2015-07-03 00:50:07	<--	teroshan (~teroshan@APuteaux-653-1-72-91.w86-195.abo.wanadoo.fr) has quit (Ping timeout: 246 seconds)
+2015-07-03 00:50:30	kaeza	tables are references; you just use the value
+2015-07-03 00:50:34	kaeza	% t1={} t2={x=t1} print(t1==t2.x)
+2015-07-03 00:50:35	yalb	kaeza: true
+2015-07-03 00:51:05	kaeza	% t1={a=1} t2={x=t1} print(t2.x.a)
+2015-07-03 00:51:05	yalb	kaeza: 1
+2015-07-03 00:51:20	kaeza	or something like that
+2015-07-03 00:51:26	xxleite	nice
+2015-07-03 00:51:46	xxleite	ty, may allah reward you
+2015-07-03 00:51:56	kaeza	yw
+2015-07-03 00:52:09	Vornicus	beware: if your table's meta has an __eq method, it'll try that instead
+2015-07-03 00:52:15	darkstalker	% t={}; asd={ stuff=42 }; t{asd} = 1337; return t{asd}
+2015-07-03 00:52:15	yalb	darkstalker: sandbox:1: syntax error near '='
+2015-07-03 00:52:22	darkstalker	% t={}; asd={ stuff=42 }; t[asd] = 1337; return t{asd}
+2015-07-03 00:52:22	yalb	darkstalker: sandbox:1: attempt to call global 't' (a table value); stack traceback:; sandbox:1: in main chunk
+2015-07-03 00:52:32	darkstalker	i think i should be sleeping
+2015-07-03 00:52:40	kaeza	:)
+2015-07-03 00:52:54	xxleite	me too
+2015-07-03 00:52:55	darkstalker	% t={}; asd={ stuff=42 }; t[asd] = 1337; return t[asd]
+2015-07-03 00:52:56	yalb	darkstalker: 1337
+2015-07-03 00:53:04	darkstalker	^ table used as a key
+2015-07-03 00:53:12	darkstalker	that's what was he was asking
+2015-07-03 00:53:29	kaeza	Vornicus, that only works if both tables have the exact same metatable IIRC
+2015-07-03 00:54:29	-->	kex (~kex@31.11.67.182) has joined #lua
+2015-07-03 00:54:44	Vornicus	Exact same eq method.  Though objects of the same 'class' would do that
+2015-07-03 00:54:56	Vornicus	Use rawequal if you want to check object identity.
+2015-07-03 00:55:20	aquanight	21:52:10/E9467 < Vornicus> beware: if your table's meta has an __eq method, it'll try that instead <- rawequal says hi
+2015-07-03 00:55:32	kaeza	too late
+2015-07-03 00:55:46	xxleite	% local t={} t[1] = {name='for'} t[2]={name='bar'} t[1][1]={name='fizz', parent=t[1]} print(t[1], t[1][1].parent)
+2015-07-03 00:55:46	yalb	xxleite: table: 0x107ca90 table: 0x107ca90
+2015-07-03 00:56:31	xxleite	% local t={} t[1] = {name='for'} t[2]={name='bar'} t[1][1]={name='fizz', parent=t[1]} print(t[1], t[1][1].parent, rawequal(t[1], t[1][1].parent))
+2015-07-03 00:56:31	yalb	xxleite: table: 0x786b20 table: 0x786b20 true
+2015-07-03 00:57:27	<--	whitebook (~whitebook@bzq-79-178-62-77.red.bezeqint.net) has quit (Ping timeout: 256 seconds)
+2015-07-03 00:58:26	aquanight	hmm for some reason I thought eq/lt/le only needed left to have a meta and both to have the same type()
+2015-07-03 00:58:31	-->	whitebook (~whitebook@78.143.250.143) has joined #lua
+2015-07-03 00:59:03	xxleite	% local t={} t[1] = {name='for'} t[2]={name='bar'} t[1][1]={name='fizz', parent=t[1]} print(t[1], t[1][1].parent, rawequal(t[1], t[1][1].parent), rawequal(t[2], t[1][1].parent)
+2015-07-03 00:59:03	yalb	xxleite: sandbox:2: ')' expected (to close '(' at line 1) near <eof>
+2015-07-03 00:59:15	xxleite	% local t={} t[1] = {name='for'} t[2]={name='bar'} t[1][1]={name='fizz', parent=t[1]} print(t[1], t[1][1].parent, rawequal(t[1], t[1][1].parent), rawequal(t[2], t[1][1].parent))
+2015-07-03 00:59:15	yalb	xxleite: table: 0xab7b20 table: 0xab7b20 true false
+2015-07-03 00:59:33	<--	kex (~kex@31.11.67.182) has quit (Ping timeout: 276 seconds)
+2015-07-03 01:00:17	xxleite	ty again ... i have another question, rawequal or == which one is faster?
+2015-07-03 01:00:39	aquanight	== is faster if you know for certain there is no metamethod
+2015-07-03 01:00:48	xxleite	hmmm
+2015-07-03 01:00:57	xxleite	ok
+2015-07-03 01:01:09	aquanight	rawequal has a function call overhead (which really isn't all that much all things considered) but is your only option if you are unsure about metatable
+2015-07-03 01:01:18	<--	Diaoul (~Diaoul@static-5-51-3-145.ftth.abo.bbox.fr) has quit (Quit: ZNC - http://znc.in)
+2015-07-03 01:02:28	-->	whiteboo_ (~whitebook@78.143.250.143) has joined #lua
+2015-07-03 01:02:48	aquanight	note that if == trips a metamethod, then you get function call overhad anyway, so == is probably only faster in the actual case that there is no metamethod
+2015-07-03 01:02:48	xxleite	% local t={} t[1] = {name='for'} t[2]={name='bar'} t[1][1]={name='fizz', parent=t[1]} print(t[1], t[1][1].parent, t[1]==t[1][1].parent, t[2]==t[1][1].parent)
+2015-07-03 01:02:49	yalb	xxleite: table: 0x1957b20 table: 0x1957b20 true false
+2015-07-03 01:03:09	aquanight	if you need to be certain, the best option would be to benchmark it
+2015-07-03 01:04:57	<--	whitebook (~whitebook@78.143.250.143) has quit (Ping timeout: 255 seconds)
+2015-07-03 01:05:34	aquanight	holy shit I way underestimated the hit
+2015-07-03 01:05:44	aquanight	I got rawequal taking 3 x as long as ==
+2015-07-03 01:06:32	-->	whitebook (~whitebook@78.143.250.143) has joined #lua
+2015-07-03 01:06:44	<--	whiteboo_ (~whitebook@78.143.250.143) has quit (Read error: No route to host)
+2015-07-03 01:07:31	aquanight	metatable == is also 3x faster than unmeta'd ==
+2015-07-03 01:07:34	aquanight	so yeah
+2015-07-03 01:07:34	Neffi	It doesn't matter how long it takes if it doesn't behave correctly 
+2015-07-03 01:07:37	aquanight	function overhead is a bitch
+2015-07-03 01:07:40	Neffi	The two have pretty much opposite semantics 
+2015-07-03 01:07:55	Neffi	I can't imagine why you would need to compare the speed. You should know which one you need. 
+2015-07-03 01:07:59	<--	Walpurgisnacht (~Nihilumbr@74-61-60-199.war.clearwire-wmx.net) has quit (Quit: Onii-chan you're the best especially when you touch my breast)
+2015-07-03 01:08:04	aquanight	Neffi: I know, but the question of which was faster was asked, so knowing exactly how bad the hit is is useful
+2015-07-03 01:08:08	-->	Diaoul (~Diaoul@static-5-51-3-145.ftth.abo.bbox.fr) has joined #lua
+2015-07-03 01:08:19	aquanight	Neffi: f.ex it might be faster to strip the metatables and restore them afterward
+2015-07-03 01:08:23	 *	Neffi touches aquanight and measures the interaction. 
+2015-07-03 01:08:51	Neffi	I doubt it. And if it were it would be marginally so such that code clarity trumps. 
+2015-07-03 01:09:03	aquanight	I understand this
+2015-07-03 01:09:16	Neffi	So you should avoid saying otherwise in the presence of people who may not 
+2015-07-03 01:09:28	aquanight	but there's a very marked penalty in using rawequal() over an == that does not invoke a meta
+2015-07-03 01:09:39	aquanight	enough of one to be very much worth mentioning
+2015-07-03 01:09:48	<--	henriquegogo (~henrique@177.207.54.233.dynamic.adsl.gvt.net.br) has quit (Quit: henriquegogo)
+2015-07-03 01:09:51	aquanight	I consider a 3x slower issue to be worth considering
+2015-07-03 01:10:09	xxleite	cool
+2015-07-03 01:10:10	aquanight	if you are doing one-off compares, sure rawequal is fine
+2015-07-03 01:10:18	aquanight	if you're going to do a loop checking one table against many
+2015-07-03 01:10:29	aquanight	and this needs to be done in a reasonable amount of time
+2015-07-03 01:10:46	aquanight	it might be worth considering stripping off the metatable so you can do unmeta'd ==s and then restore it afterward
+2015-07-03 01:11:24	Neffi	lookin good aquanight http://i.imgur.com/jjkmS0s.gif
+2015-07-03 01:11:26	Neffi	:3
+2015-07-03 01:11:38	aquanight	le sigh
+2015-07-03 01:12:06	Neffi	Don't be like that
+2015-07-03 01:12:24	Neffi	Being touched by the dank lookin good meme is the highest form of flattery known to us 
+2015-07-03 01:12:25	aquanight	22:00:18/EAB89 < xxleite> ty again ... i have another question, rawequal or == which one is faster? <- this is why I even mention this at all
+2015-07-03 01:12:43	Neffi	Fair enough 
+2015-07-03 01:12:45	aquanight	a question like that I take to mean "performance is at least somewhat important"
+2015-07-03 01:12:59	furq	this is a conversation
+2015-07-03 01:13:19	<--	dimday (~amcvega@119.81.124.88) has quit (Ping timeout: 256 seconds)
+2015-07-03 01:13:32	aquanight	so I dug and figured out what would be the best way to do mass metamethodless table comparing in a situation where performance might be essential
+2015-07-03 01:13:37	<--	osa1 (~omer@2601:801:1:4a07:2ab2:bdff:fedf:fa66) has quit (Ping timeout: 248 seconds)
+2015-07-03 01:13:47	aquanight	obviously if you want metamethods respected then you're just going to be in for a bad time
+2015-07-03 01:13:52	aquanight	because metamethods will ruin your day
+2015-07-03 01:14:07	furq	alternatively you could just look and see if you're putting any metatables on the tables you want to compare
+2015-07-03 01:14:10	furq	and if you're not then use ==
+2015-07-03 01:14:17	aquanight	yes
+2015-07-03 01:14:19	furq	as will be the case almost all the time
+2015-07-03 01:14:27	aquanight	if you're for-certain there are no metas then you can just give no shits
+2015-07-03 01:14:39	aquanight	if you're uncertain but you want fast metaless, strip and == and restore
+2015-07-03 01:14:54	aquanight	if you don't care about fast but want metaless, then rawequal
+2015-07-03 01:15:11	aquanight	if you want meta respected, use == with no tricks and prepare for "bad times" when a meta'd table fucks your performance
+2015-07-03 01:15:20	xxleite	i did a benchmark ... they seems to be equal https://asciinema.org/a/22893
+2015-07-03 01:15:49	furq	why is this on asciinema
+2015-07-03 01:16:34	aquanight	hmm
+2015-07-03 01:16:48	Neffi	what the hell is this
+2015-07-03 01:16:52	aquanight	xxleite: you're creating a table inside the loop - create it outside so that ==/rawequal gets more share of the time
+2015-07-03 01:16:57	Neffi	this is so hipster I think I just had an aneurysm 
+2015-07-03 01:17:06	furq	it's a recording of a terminal which displays the output of one command
+2015-07-03 01:17:11	aquanight	table creation is always going to ruin your day
+2015-07-03 01:17:16	Neffi	why the fuck is there a recording of a terminal 
+2015-07-03 01:17:17	furq	pastebins are so web 0.9
+2015-07-03 01:17:21	aquanight	also what the heck is -jp=a
+2015-07-03 01:17:41	xxleite	Oh, i'm using luajit 2.1
+2015-07-03 01:17:48	furq	why is your luajit aliased to lua
+2015-07-03 01:18:06	aquanight	that might explain the difference
+2015-07-03 01:18:16	xxleite	i got tired of trying to make luarocks work with lua and luajit
+2015-07-03 01:18:17	furq	well this has been a good conversation
+2015-07-03 01:18:21	furq	well done everyone
+2015-07-03 01:18:35	aquanight	my bench was done on plain lua
+2015-07-03 01:18:47	aquanight	if you are targeting luajit then you can probably give zero fucks and use rawequal
+2015-07-03 01:18:47	Neffi	lookin good furq http://i.imgur.com/T9XjKEI.jpg?1
+2015-07-03 01:19:06	furq	Neffi: i have actually used asciinema once for something a pastebin couldn't represent
+2015-07-03 01:19:09	furq	it was useful
+2015-07-03 01:19:12	xxleite	nice, i gonna give it zero furqs
+2015-07-03 01:19:12	furq	it is however not useful for this
+2015-07-03 01:19:13	aquanight	as I think luajit likes to optimize things like that
+2015-07-03 01:19:18	Neffi	furq: and what was that? 
+2015-07-03 01:19:25	furq	curses
+2015-07-03 01:19:38	Neffi	don't curse furq, it makes god cry 
+2015-07-03 01:19:51	xxleite	subhanallah
+2015-07-03 01:19:58	furq	you know full well that's not the kind of curse i meant, and also there is no god
+2015-07-03 01:20:15	xxleite	good god!
+2015-07-03 01:20:17	furq	i know you're a christian and you don't want to hear this
+2015-07-03 01:20:19	furq	but it's true
+2015-07-03 01:21:23	Neffi	lookin good furq https://asciinema.org/a/8qosauwtvwa6x9cbw1rxe1ubv
+2015-07-03 01:21:35	<--	hdon (~hdon@65.160.209.146) has quit (Ping timeout: 246 seconds)
+2015-07-03 01:22:09	<--	psyprus (~psyprus@unaffiliated/psyprus) has quit (Ping timeout: 248 seconds)
+2015-07-03 01:22:10	furq	the fuck kind of prompt is that
+2015-07-03 01:22:14	furq	nice prompt...for an idiot
+2015-07-03 01:22:22	Neffi	thx bro 
+2015-07-03 01:22:38	furq	your hostname is a game of thrones character
+2015-07-03 01:22:42	Neffi	yes
+2015-07-03 01:22:56	xxleite	fancy Neffi
+2015-07-03 01:23:21	Neffi	asciinema fucked it up though 
+2015-07-03 01:23:33	Neffi	the colors and font rendering are just off enough to make it look like shit
+2015-07-03 01:23:42	furq	i disagree
+2015-07-03 01:23:48	Neffi	here it comes
+2015-07-03 01:23:59	furq	here what comes
+2015-07-03 01:24:02	Neffi	the joke
+2015-07-03 01:24:10	furq	that was the joke
+2015-07-03 01:24:15	Neffi	what? 
+2015-07-03 01:24:17	Neffi	that's it? 
+2015-07-03 01:24:25	furq	do i really need to explain it further
+2015-07-03 01:24:30	Neffi	maybe 
+2015-07-03 01:24:40	Neffi	can you put it into .txt format and upload it to asciinema? 
+2015-07-03 01:24:41	furq	i'm not your remedial class teacher
+2015-07-03 01:24:49	xxleite	do it, i'm not good at english puns
+2015-07-03 01:24:50	furq	take a break and see if you can figure it out
+2015-07-03 01:24:50	Vornicus	what the furq
+2015-07-03 01:24:56	furq	then you get to play with the flintstones phone
+2015-07-03 01:28:14	Neffi	lookin good furq https://asciinema.org/a/20946
+2015-07-03 01:28:24	<--	FreeBirdLjj (~freebirdl@180.110.18.66) has quit (Remote host closed the connection)
+2015-07-03 01:28:37	furq	the colours are wrong
+2015-07-03 01:28:46	-->	psyprus (~psyprus@199.115.98.226) has joined #lua
+2015-07-03 01:28:58	-->	dimday (~amcvega@119.81.124.88-static.reverse.softlayer.com) has joined #lua
+2015-07-03 01:29:01	-->	FreeBirdLjj (~freebirdl@180.110.18.66) has joined #lua
+2015-07-03 01:29:49	xxleite	cool, like a youtube gameplay
+2015-07-03 01:30:03	<--	Vornicus (~Vorn@c-76-19-15-99.hsd1.ct.comcast.net) has quit (Read error: Connection reset by peer)
+2015-07-03 01:30:26	-->	hdon (~hdon@65.160.209.146) has joined #lua
+2015-07-03 01:30:56	furq	no
+2015-07-03 01:31:03	furq	this is what tetris looks like on youtube
+2015-07-03 01:31:05	furq	https://www.youtube.com/watch?v=Zt2umIhuTD4
+2015-07-03 01:32:54	xxleite	why japanese are so turned in tetris?
+2015-07-03 01:33:32	Neffi	is furq japanese? 
+2015-07-03 01:33:51	-->	ajacksified (~ajacksifi@c-76-103-24-239.hsd1.ca.comcast.net) has joined #lua
+2015-07-03 01:33:53	xxleite	no the video was made by one i think
+2015-07-03 01:34:20	furq	well it's either this or watch animes
+2015-07-03 01:34:27	furq	i'd pick tetris too
+2015-07-03 01:34:43	<--	Akagi201_ (~akagi201@221.239.144.86) has quit (Remote host closed the connection)
+2015-07-03 01:40:42	<--	Lyqyd (~quassel@184-100-220-231.ptld.qwest.net) has quit (Remote host closed the connection)
+2015-07-03 01:42:13	-->	Fr4n (~Fr4n@unaffiliated/fr4n) has joined #lua
+2015-07-03 19:21:23	-->	aajjbb (~aajjbb@177.193.225.201) has joined #lua
+2015-07-03 19:21:23	--	Topic for #lua is "http://lua-users.org/wiki/IrcChannel :: Paste on http://codepad.org/?lang=Lua :: Please consider registering with NickServ if you haven't already. :: Pay no attention to Soni :: * is zero or more"
+2015-07-03 19:21:23	--	Topic set by rjek (~rjek@gateway/shell/pepperfish/x-aitwunmuwtabbrob) on Wed, 04 Mar 2015 12:59:41
+2015-07-03 19:21:23	--	Channel #lua: 324 nicks (0 ops, 0 voices, 324 normals)
+2015-07-03 19:21:23	--	URL for #lua: http://lua-users.org/
+2015-07-03 19:21:28	--	Channel created on Sun, 26 Nov 2006 04:42:55
+2015-07-03 19:21:42	<--	Terminar (~Terminar@p4FFCBD47.dip0.t-ipconnect.de) has quit (Quit: Leaving.)
+2015-07-03 19:22:39	-->	Vornicus (~Vorn@c-76-19-15-99.hsd1.ct.comcast.net) has joined #lua
+2015-07-03 19:24:03	<--	Neffi (~Neffi@pool-151-202-49-117.nycmny.fios.verizon.net) has quit (Remote host closed the connection)
+2015-07-03 19:25:12	-->	Neffi (~Neffi@pool-151-202-49-117.nycmny.fios.verizon.net) has joined #lua
+2015-07-03 19:25:26	-->	kex (~kex@31.11.67.182) has joined #lua
+2015-07-03 19:26:35	<--	Neffi (~Neffi@pool-151-202-49-117.nycmny.fios.verizon.net) has quit (Client Quit)
+2015-07-03 19:26:52	<--	TheBunny (~TheBunny@c-73-213-38-254.hsd1.md.comcast.net) has quit (Remote host closed the connection)
+2015-07-03 19:27:17	-->	TheBunny (~TheBunny@c-73-213-38-254.hsd1.md.comcast.net) has joined #lua
+2015-07-03 19:34:41	-->	Akagi201 (~akagi201@180.158.15.109) has joined #lua
+2015-07-03 19:37:55	<--	Earlo (~Earlo@line-10441.dyn.kponet.fi) has quit (Remote host closed the connection)
+2015-07-03 19:39:31	-->	nikki93 (~nikki93@78.101.34.138) has joined #lua
+2015-07-03 19:50:10	-->	DelphiWorld (~HyperVoIp@openvpn/user/DelphiWorld) has joined #lua
+2015-07-03 19:50:15	DelphiWorld	hi luatech
+2015-07-03 19:50:35	DelphiWorld	any framework for lua like node.js that let me dev a web app using lua?
+2015-07-03 19:52:31	develCuy	DelphiWorld: luvit
+2015-07-03 19:52:48	DelphiWorld	develCuy: thank, i'll take a look!
+2015-07-03 19:53:56	-->	Neffi (~Neffi@pool-151-202-49-117.nycmny.fios.verizon.net) has joined #lua
+2015-07-03 19:58:56	<--	Lerg (~Lerg@188.226.45.254) has quit
+2015-07-03 20:01:10	<--	Neffi (~Neffi@pool-151-202-49-117.nycmny.fios.verizon.net) has quit (Remote host closed the connection)
+2015-07-03 20:05:42	-->	Neffi (~Neffi@pool-151-202-49-117.nycmny.fios.verizon.net) has joined #lua
+2015-07-03 20:15:05	Kaedenn	If I call lua_getfield or something on a value that does not exist, it'll push nil, right?
+2015-07-03 20:15:05	cmtptr	yes
+2015-07-03 20:15:05	Kaedenn	Good, thank you
+2015-07-03 20:15:05	cmtptr	assuming you mean the key doesn't exist in the table
+2015-07-03 20:15:05	Kaedenn	Yes.
+2015-07-03 20:15:07	DelphiWorld	develCuy: will luvit let me create a rest style app, then execute whatever i want inside the system?
+2015-07-03 20:15:19	Kaedenn	I have a module I've made in C, Vis, and I want the user to do 'Vis.kb_callback = function...'
+2015-07-03 20:15:27	Kaedenn	If they don't do that, then I won't bother calling it.
+2015-07-03 20:15:35	cmtptr	yeah that's fine
+2015-07-03 20:15:47	<--	basiliscos (~basilisco@80.94.232.71) has quit (Ping timeout: 252 seconds)
+2015-07-03 20:15:51	Kaedenn	When pushing parameters, do I go in reverse order?
+2015-07-03 20:15:57	cmtptr	no
+2015-07-03 20:16:02	Kaedenn	Oh okay
+2015-07-03 20:16:14	cmtptr	push the function first, then the parameters in the order you want them to be passed.  the manual explains all of this
+2015-07-03 20:16:15	Kaedenn	fn(a, b, c) -> push a, b, c, then call fn
+2015-07-03 20:16:25	cmtptr	push fn first
+2015-07-03 20:16:28	Kaedenn	Yes
+2015-07-03 20:16:30	Kaedenn	Okay.
+2015-07-03 20:16:36	Kaedenn	Alright I got it, thanks.
+2015-07-03 20:17:36	cmtptr	Kaedenn, http://www.lua.org/manual/5.3/manual.html#lua_call
+2015-07-03 20:17:50	Kaedenn	Yeap, already headed there
+2015-07-03 20:30:17	<--	osa1 (~omer@2001:18e8:2:1008:2ad2:44ff:feea:e0b0) has quit (Ping timeout: 246 seconds)
+2015-07-03 20:31:11	<--	Nickeeh (~quassel@foo.kassala.de) has quit (Ping timeout: 252 seconds)
+2015-07-03 20:31:23	-->	Nickeeh (~quassel@foo.kassala.de) has joined #lua
+2015-07-03 20:31:30	<--	fatguylaughing (~fatguylau@68.12.7.242) has quit (Ping timeout: 276 seconds)
+2015-07-03 20:31:33	<--	jnwhiteh (jnwhiteh@WoWUIDev/WoWI/Featured/Dongle/cladhaire) has quit (Ping timeout: 252 seconds)
+2015-07-03 20:31:55	<--	zack6849 (zack6849@unaffiliated/zack6849) has quit (Ping timeout: 252 seconds)
+2015-07-03 20:32:47	<--	FunkyAss (~Funky@unaffiliated/funkyass) has quit (Quit: Make my Funk the P-Funk)
+2015-07-03 20:33:24	-->	jnwhiteh (jnwhiteh@WoWUIDev/WoWI/Featured/Dongle/cladhaire) has joined #lua
+2015-07-03 20:37:39	<--	hexagoxel (~hexagoxel@x5f76869f.dyn.telefonica.de) has quit (Ping timeout: 264 seconds)
+2015-07-03 20:37:44	<--	FabioGNR- (~FabioGNR@2a03:b0c0:2:d0::226:3001) has quit (K-Lined)
+2015-07-03 20:38:15	-->	hexagoxel (~hexagoxel@x5f77b8e7.dyn.telefonica.de) has joined #lua
+2015-07-03 20:38:19	-->	zack6849 (zack6849@zack6849.com) has joined #lua
+2015-07-03 20:38:19	<--	zack6849 (zack6849@zack6849.com) has quit (Changing host)
+2015-07-03 20:38:19	-->	zack6849 (zack6849@unaffiliated/zack6849) has joined #lua
+2015-07-03 20:39:35	<--	Kaedenn (~kaedenn@unaffiliated/kaedenn) has left #lua
+2015-07-03 20:41:11	-->	fatguylaughing (~fatguylau@68.12.7.242) has joined #lua
+2015-07-03 20:42:11	-->	osa1 (~omer@2601:801:1:4a07:2ab2:bdff:fedf:fa66) has joined #lua
+2015-07-03 20:43:22	<--	Fr4n (~Fr4n@unaffiliated/fr4n) has quit (Ping timeout: 244 seconds)
+2015-07-03 20:43:29	<--	idafyaid (~irssi@unaffiliated/idafyaid) has quit (Ping timeout: 256 seconds)
+2015-07-03 20:45:04	-->	singalaut- (~mami@unaffiliated/tomoe-mami/x-1769741) has joined #lua
+2015-07-03 20:45:17	cmtptr	om excuse me
+2015-07-03 20:45:19	<--	Jovest (~Jovest@c83-251-43-122.bredband.comhem.se) has quit
+2015-07-03 20:45:19	<--	BobbyJones (~BobbyJone@pool-173-71-106-59.cmdnnj.fios.verizon.net) has quit (Read error: Connection reset by peer)
+2015-07-03 20:45:35	cmtptr	why is c stomping on my assembly's .bss variable
+2015-07-03 20:46:31	<--	mfranzwa (~mike@c-73-41-13-29.hsd1.ca.comcast.net) has quit (Quit: mfranzwa)
+2015-07-03 20:46:50	Neffiphone	lookin good cmtptr http://i.imgur.com/JUiZVmm.jpg
+2015-07-03 20:46:57	<--	DelphiWorld (~HyperVoIp@openvpn/user/DelphiWorld) has quit (Read error: No route to host)
+2015-07-03 20:48:01	<--	singalaut (~mami@unaffiliated/tomoe-mami/x-1769741) has quit (Ping timeout: 256 seconds)
+2015-07-03 20:52:03	<--	fatguylaughing (~fatguylau@68.12.7.242) has quit (Ping timeout: 264 seconds)
+2015-07-03 20:55:20	cmtptr	I always rob balloon guys
+2015-07-03 20:55:26	cmtptr	they tend to have the most balloons
+2015-07-03 20:56:16	<--	Neffi (~Neffi@pool-151-202-49-117.nycmny.fios.verizon.net) has quit (Quit: Leaving)
+2015-07-03 20:56:52	-->	fatguylaughing (~fatguylau@68.12.7.242) has joined #lua
+2015-07-03 21:00:35	<--	einsteinK (uid29353@gateway/web/irccloud.com/x-bxcosiwkvagffeud) has quit (Quit: Connection closed for inactivity)
+2015-07-03 21:08:42	-->	FabioGNR (~FabioGNR@2a03:b0c0:2:d0::226:3001) has joined #lua
+2015-07-03 21:15:54	<--	Lyqyd (~quassel@184-100-220-231.ptld.qwest.net) has quit (Remote host closed the connection)
+2015-07-03 21:19:53	<--	Akagi201 (~akagi201@180.158.15.109) has quit (Remote host closed the connection)
+2015-07-03 21:25:38	-->	Fr4n (~Fr4n@unaffiliated/fr4n) has joined #lua
+2015-07-03 21:28:06	-->	Baribal__ (~baribal@x2f0445e.dyn.telefonica.de) has joined #lua
+2015-07-03 21:28:41	<--	chris_99 (~chris_99@unaffiliated/chris-99/x-3062929) has quit (Remote host closed the connection)
+2015-07-03 21:31:39	<--	Baribal_ (~baribal@x2f157bf.dyn.telefonica.de) has quit (Ping timeout: 256 seconds)
+2015-07-03 21:33:58	<--	ShadowNinja (~owen@unaffiliated/shadowninja) has quit (Remote host closed the connection)
+2015-07-03 21:34:09	-->	Tesseract (~owen@unaffiliated/shadowninja) has joined #lua
+2015-07-03 21:37:25	-->	singalaut (~mami@unaffiliated/tomoe-mami/x-1769741) has joined #lua
+2015-07-03 21:38:50	<--	DarkGod (~dg@was59-4-88-175-39-63.fbx.proxad.net) has quit (Ping timeout: 252 seconds)
+2015-07-03 21:39:01	<--	kaeza (~kaeza@unaffiliated/kaeza) has quit (Read error: Connection reset by peer)
+2015-07-03 21:40:12	<--	singalaut- (~mami@unaffiliated/tomoe-mami/x-1769741) has quit (Ping timeout: 244 seconds)
+2015-07-03 21:47:39	ttmrichter	furq: Confess.  You made this ad copy, right?  http://i.imgur.com/EyIdlfZ.jpg
+2015-07-03 21:48:05	-->	Neffi (~Neffi@pool-151-202-49-117.nycmny.fios.verizon.net) has joined #lua
+2015-07-03 21:51:27	<--	J_Darnley (~J_Darnley@d51a44418.access.telenet.be) has quit (Ping timeout: 264 seconds)
+2015-07-03 21:59:18	-->	Walpurgisnacht (~Nihilumbr@74-61-60-199.war.clearwire-wmx.net) has joined #lua
+2015-07-03 21:59:52	-->	leafo1 (~leafo@76.14.73.7) has joined #lua
+2015-07-03 22:03:03	-->	hmstrmn_ (~hmstrmn@cm-84.213.206.171.getinternet.no) has joined #lua
+2015-07-03 22:04:30	<--	hmstrmn (~hmstrmn@cm-84.213.206.171.getinternet.no) has quit (Ping timeout: 255 seconds)
+2015-07-03 22:07:50	-->	kaeza (~kaeza@unaffiliated/kaeza) has joined #lua
+2015-07-03 22:16:33	-->	diemartin (~kaeza@unaffiliated/kaeza) has joined #lua
+2015-07-03 22:16:37	<--	kaeza (~kaeza@unaffiliated/kaeza) has quit (Read error: Connection reset by peer)
+2015-07-03 22:19:35	<--	diemartin (~kaeza@unaffiliated/kaeza) has quit (Read error: Connection reset by peer)
+2015-07-03 22:20:05	<--	jnwhiteh (jnwhiteh@WoWUIDev/WoWI/Featured/Dongle/cladhaire) has quit (Ping timeout: 252 seconds)
+2015-07-03 22:20:37	-->	kaeza (~kaeza@unaffiliated/kaeza) has joined #lua
+2015-07-03 22:21:05	-->	mfranzwa (~mike@c-73-41-13-29.hsd1.ca.comcast.net) has joined #lua
+2015-07-03 22:21:39	-->	jnwhiteh (jnwhiteh@WoWUIDev/WoWI/Featured/Dongle/cladhaire) has joined #lua
+2015-07-03 22:24:42	<--	kaeza (~kaeza@unaffiliated/kaeza) has quit (Read error: Connection reset by peer)
+2015-07-03 22:36:16	<--	fatguylaughing (~fatguylau@68.12.7.242) has quit (Ping timeout: 256 seconds)
+2015-07-03 22:39:17	<--	hogarius (~hogarius@75-131-8-66.dhcp.bufr.ga.charter.com) has quit (Quit: liteIRC for Android)
+2015-07-03 22:39:22	<--	bobryan (~h36sa@freebsd/contributor/bobryan) has quit (Ping timeout: 264 seconds)
+2015-07-03 22:40:38	-->	fatguylaughing (~fatguylau@68.12.7.242) has joined #lua
+2015-07-03 22:41:31	-->	lKinx (~lKinx@76.126.31.163) has joined #lua
+2015-07-03 22:47:24	<--	mfranzwa (~mike@c-73-41-13-29.hsd1.ca.comcast.net) has quit (Quit: mfranzwa)
+2015-07-03 22:52:37	-->	Burga (~andrewm@124-148-38-210.dyn.iinet.net.au) has joined #lua
+2015-07-03 22:56:04	-->	mfranzwa (~mike@c-73-41-13-29.hsd1.ca.comcast.net) has joined #lua
+2015-07-03 22:59:49	-->	idafyaid (~irssi@unaffiliated/idafyaid) has joined #lua
+2015-07-03 23:07:24	-->	bobryan (~h36sa@freebsd/contributor/bobryan) has joined #lua
+2015-07-03 23:11:05	<--	dik_dak (~dik_dak@c-73-222-88-74.hsd1.ca.comcast.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2015-07-03 23:13:57	-->	Lyqyd (~quassel@184-100-220-231.ptld.qwest.net) has joined #lua
+2015-07-03 23:14:58	<--	Walpurgisnacht (~Nihilumbr@74-61-60-199.war.clearwire-wmx.net) has quit (Quit: Onii-chan you're the best especially when you touch my breast)
+2015-07-03 23:15:26	<--	lritter (~lritter@f053080041.adsl.alicedsl.de) has quit (Remote host closed the connection)
+2015-07-03 23:17:06	-->	Laie__ (~Laie@121.138.207.203) has joined #lua
+2015-07-03 23:18:12	-->	nct (~dellos@softbank126130146048.bbtec.net) has joined #lua
+2015-07-03 23:18:41	<--	mfranzwa (~mike@c-73-41-13-29.hsd1.ca.comcast.net) has quit (Quit: mfranzwa)
+2015-07-03 23:21:08	<--	Laie_ (~Laie@121.138.207.203) has quit (Ping timeout: 252 seconds)
+2015-07-03 23:23:09	-->	psy_ (~psy@43.224.156.113) has joined #lua
+2015-07-03 23:26:24	<--	hmstrmn_ (~hmstrmn@cm-84.213.206.171.getinternet.no) has quit (Ping timeout: 255 seconds)
+2015-07-03 23:32:31	<--	Tricycle (CGI272@haz95-3-88-182-2-4.fbx.proxad.net) has quit
+2015-07-03 23:32:46	<--	aquanight (~aquanight@96-18-7-133.cpe.cableone.net) has quit (Ping timeout: 264 seconds)
+2015-07-03 23:46:17	-->	mikenovikov (~mikenovik@176.195.252.218) has joined #lua
+2015-07-03 23:58:25	<--	BitPuffin|osx (~isak@199.72.208.46.dyn.plus.net) has quit (Ping timeout: 256 seconds)
+2015-07-04 00:01:28	<--	Betal (~Betal@unaffiliated/betal) has quit (Ping timeout: 276 seconds)
+2015-07-04 00:15:25	<--	jimmio (~Jim@pool-72-94-167-104.phlapa.fios.verizon.net) has left #lua
+2015-07-04 00:15:49	-->	diemartin (~kaeza@unaffiliated/kaeza) has joined #lua
+2015-07-04 00:15:55	-->	byroniczero (~byronicze@cpe-198-72-128-40.socal.res.rr.com) has joined #lua
+2015-07-04 00:18:49	<--	byroniczero (~byronicze@cpe-198-72-128-40.socal.res.rr.com) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2015-07-04 00:20:24	-->	byroniczero (~byronicze@cpe-198-72-128-40.socal.res.rr.com) has joined #lua
+2015-07-04 00:22:17	-->	Betal (~Betal@unaffiliated/betal) has joined #lua
+2015-07-04 00:25:58	-->	dik_dak (~dik_dak@c-73-222-88-74.hsd1.ca.comcast.net) has joined #lua
+2015-07-04 00:26:33	<--	dik_dak (~dik_dak@c-73-222-88-74.hsd1.ca.comcast.net) has quit (Max SendQ exceeded)
+2015-07-04 00:27:09	-->	dik_dak (~dik_dak@c-73-222-88-74.hsd1.ca.comcast.net) has joined #lua
+2015-07-04 00:32:38	<--	hdon (~hdon@65.160.209.146) has quit (Ping timeout: 252 seconds)
+2015-07-04 00:33:36	<--	nikki93 (~nikki93@78.101.34.138) has quit (Remote host closed the connection)
+2015-07-04 00:39:12	-->	gyani (~gyani@116.72.220.234) has joined #lua
+2015-07-04 00:46:20	<--	dik_dak (~dik_dak@c-73-222-88-74.hsd1.ca.comcast.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2015-07-04 00:46:41	<--	alacerda (~alacerda@138.59.56.3) has quit (Read error: Connection reset by peer)
+2015-07-04 00:47:09	-->	alacerda (~alacerda@138.59.56.3) has joined #lua
+2015-07-04 00:47:51	-->	bb010g (uid21050@gateway/web/irccloud.com/x-ymyqyknuolcgjudl) has joined #lua
+2015-07-04 00:55:01	<--	envi (kvirc@121.169.10.159) has quit (Ping timeout: 265 seconds)
+2015-07-04 00:56:12	-->	blaaaaargh (~kaeza@unaffiliated/kaeza) has joined #lua
+2015-07-04 00:58:05	<--	diemartin (~kaeza@unaffiliated/kaeza) has quit (Ping timeout: 244 seconds)
+2015-07-04 01:12:23	<--	blaaaaargh (~kaeza@unaffiliated/kaeza) has quit (Read error: Connection reset by peer)
+2015-07-04 01:12:24	-->	diemartin (~kaeza@unaffiliated/kaeza) has joined #lua
+2015-07-04 01:14:24	-->	Netlynx (~me@94-226-72-50.access.telenet.be) has joined #lua
+2015-07-04 01:14:24	<--	Netlynx (~me@94-226-72-50.access.telenet.be) has quit (Changing host)
+2015-07-04 01:14:24	-->	Netlynx (~me@lugwv/member/Netlynx) has joined #lua
+2015-07-04 01:19:34	<--	Contigi (~Contigi@cpe-76-95-56-233.socal.res.rr.com) has quit (Quit: Leaving)
+2015-07-04 01:27:32	<--	cyphase (~cyphase@unaffiliated/cyphase) has quit (Quit: cyphase.com)
+2015-07-04 01:30:30	-->	singalaut- (~mami@unaffiliated/tomoe-mami/x-1769741) has joined #lua
+2015-07-04 01:32:54	<--	singalaut (~mami@unaffiliated/tomoe-mami/x-1769741) has quit (Ping timeout: 256 seconds)
+2015-07-04 01:36:28	<--	osa1 (~omer@2601:801:1:4a07:2ab2:bdff:fedf:fa66) has quit (Remote host closed the connection)
+2015-07-04 01:37:25	-->	osa1 (~omer@2601:801:1:4a07:2ab2:bdff:fedf:fa66) has joined #lua
+2015-07-04 01:40:11	<--	Vornicus (~Vorn@c-76-19-15-99.hsd1.ct.comcast.net) has quit (Quit: Leaving)
+2015-07-04 01:42:00	Neffiphone	lookin good furq http://i.imgur.com/5UIpZ.jpg
+2015-07-04 01:47:22	-->	Guest82228 (~cyphase@2601:640:c400:2220:e4aa:8585:f358:3811) has joined #lua
+2015-07-04 02:01:12	<--	fracting (~fracting@110.210.32.169) has quit (Ping timeout: 255 seconds)
+2015-07-04 02:04:44	<--	kex (~kex@31.11.67.182) has quit (Remote host closed the connection)

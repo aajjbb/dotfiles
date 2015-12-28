@@ -1,50 +1,36 @@
-[2015-06-28 14:40:57] WeeChat 1.2 (compiled on May 12 2015 19:42:29)
-[2015-06-28 14:40:57] Reading configuration file sec.conf
-[2015-06-28 14:40:57] Reading configuration file weechat.conf
-[2015-06-28 14:40:57] Reading configuration file plugins.conf
-[2015-06-28 14:40:57] Reading configuration file charset.conf
-[2015-06-28 14:40:57] Reading configuration file logger.conf
-[2015-06-28 14:40:57] Reading configuration file exec.conf
-[2015-06-28 14:40:57] Reading configuration file trigger.conf
-[2015-06-28 14:40:57] Reading configuration file aspell.conf
-[2015-06-28 14:40:57] Reading configuration file alias.conf
-[2015-06-28 14:40:57] Reading configuration file xfer.conf
-[2015-06-28 14:40:57] Reading configuration file irc.conf
-[2015-06-28 14:40:57] Reading configuration file relay.conf
-[2015-06-28 14:40:57] Reading configuration file buffers.conf
-[2015-06-28 14:40:57] Reading configuration file iset.conf
-[2015-06-28 14:40:57] Reading configuration file script.conf
-[2015-06-28 14:40:57] irc: connecting to server chat.freenode.net/7000 (SSL)...
-[2015-06-28 14:40:57] irc: connecting to server irc.oftc.net/6667...
-[2015-06-28 14:40:57] irc: connecting to server irc.perl.org/6667...
-[2015-06-28 14:40:57] irc: connecting to server irc.indymedia.org/6697 (SSL)...
-[2015-06-28 16:55:42] irc: connecting to server irc.perl.org/6667...
-[2015-06-28 16:55:58] irc: connecting to server chat.freenode.net/7000 (SSL)...
-[2015-06-28 16:56:00] irc: connecting to server irc.oftc.net/6667...
-[2015-06-28 16:56:56] irc: connecting to server irc.indymedia.org/6697 (SSL)...
-[2015-06-29 09:28:49] irc: connecting to server chat.freenode.net/7000 (SSL)...
-[2015-06-29 10:10:24] irc: connecting to server irc.oftc.net/6667...
-[2015-06-29 10:11:05] irc: connecting to server irc.perl.org/6667...
-[2015-06-29 10:11:43] irc: connecting to server irc.indymedia.org/6697 (SSL)...
-[2015-06-29 10:13:13] irc: connecting to server chat.freenode.net/7000 (SSL)...
-[2015-06-29 18:01:12] irc: connecting to server chat.freenode.net/7000 (SSL)...
-[2015-06-29 18:47:57] irc: connecting to server chat.freenode.net/7000 (SSL)...
-[2015-06-29 18:59:39] irc: connecting to server irc.oftc.net/6667...
-[2015-06-29 18:59:46] irc: connecting to server irc.perl.org/6667...
-[2015-06-29 19:01:21] irc: connecting to server irc.indymedia.org/6697 (SSL)...
-[2015-06-29 21:00:26] Signal SIGHUP received, exiting WeeChat...
-[2015-06-29 21:00:26] Writing configuration file plugins.conf
-[2015-06-29 21:00:26] Writing configuration file alias.conf
-[2015-06-29 21:00:26] Writing configuration file aspell.conf
-[2015-06-29 21:00:26] Writing configuration file logger.conf
-[2015-06-29 21:00:26] Writing configuration file buffers.conf
-[2015-06-29 21:00:26] Writing configuration file iset.conf
-[2015-06-29 21:00:26] Writing configuration file relay.conf
-[2015-06-29 21:00:26] Writing configuration file trigger.conf
-[2015-06-29 21:00:26] Writing configuration file script.conf
-[2015-06-29 21:00:26] Writing configuration file xfer.conf
-[2015-06-29 21:00:26] Writing configuration file irc.conf
-[2015-06-29 21:00:26] Writing configuration file charset.conf
-[2015-06-29 21:00:26] Writing configuration file exec.conf
-[2015-06-29 21:00:26] Writing configuration file weechat.conf
-[2015-06-29 21:00:26] Writing configuration file sec.conf
+[2015-07-03 19:21:01] WeeChat 1.2 (compiled on May 12 2015 19:42:29)
+[2015-07-03 19:21:01] Reading configuration file sec.conf
+[2015-07-03 19:21:01] Reading configuration file weechat.conf
+[2015-07-03 19:21:02] Reading configuration file plugins.conf
+[2015-07-03 19:21:03] Reading configuration file charset.conf
+[2015-07-03 19:21:03] Reading configuration file logger.conf
+[2015-07-03 19:21:03] Reading configuration file exec.conf
+[2015-07-03 19:21:03] Reading configuration file trigger.conf
+[2015-07-03 19:21:03] Reading configuration file aspell.conf
+[2015-07-03 19:21:03] Reading configuration file alias.conf
+[2015-07-03 19:21:03] Reading configuration file xfer.conf
+[2015-07-03 19:21:03] Reading configuration file irc.conf
+[2015-07-03 19:21:03] Reading configuration file relay.conf
+[2015-07-03 19:21:06] Reading configuration file buffers.conf
+[2015-07-03 19:21:06] Reading configuration file iset.conf
+[2015-07-03 19:21:06] Reading configuration file script.conf
+[2015-07-03 19:21:07] irc: connecting to server chat.freenode.net/7000 (SSL)...
+[2015-07-03 19:21:07] irc: connecting to server irc.oftc.net/6667...
+[2015-07-03 19:21:07] irc: connecting to server irc.perl.org/6667...
+[2015-07-03 19:21:07] irc: connecting to server irc.indymedia.org/6697 (SSL)...
+[2015-07-04 02:05:41] Signal SIGHUP received, exiting WeeChat...
+[2015-07-04 02:05:41] Writing configuration file plugins.conf
+[2015-07-04 02:05:41] Writing configuration file alias.conf
+[2015-07-04 02:05:41] Writing configuration file aspell.conf
+[2015-07-04 02:05:41] Writing configuration file logger.conf
+[2015-07-04 02:05:41] Writing configuration file buffers.conf
+[2015-07-04 02:05:41] Writing configuration file iset.conf
+[2015-07-04 02:05:41] Writing configuration file relay.conf
+[2015-07-04 02:05:41] Writing configuration file trigger.conf
+[2015-07-04 02:05:41] Writing configuration file script.conf
+[2015-07-04 02:05:41] Writing configuration file xfer.conf
+[2015-07-04 02:05:41] Writing configuration file irc.conf
+[2015-07-04 02:05:41] Writing configuration file charset.conf
+[2015-07-04 02:05:41] Writing configuration file exec.conf
+[2015-07-04 02:05:41] Writing configuration file weechat.conf
+[2015-07-04 02:05:41] Writing configuration file sec.conf

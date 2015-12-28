@@ -11544,3 +11544,420 @@
 2015-06-29 20:47:15	<--	normalra (~normal@37.244.203.160) has quit (Quit: Good night.)
 2015-06-29 20:59:18	<--	fstd (~fstd@xdsl-81-173-191-178.netcologne.de) has quit (Remote host closed the connection)
 2015-06-29 20:59:29	-->	fstd (~fstd@xdsl-87-78-9-242.netcologne.de) has joined #awesome
+2015-06-29 21:01:53	-->	aajjbb (~aajjbb@179.154.117.36) has joined #awesome
+2015-06-29 21:01:53	--	Topic for #awesome is " Welcome to the land of the awesome, home to the ludicrous | http://awesome.naquadah.org | awesome 3.5.6 `For Those About To Rock' released | https://flattr.com/thing/48025/awesome-window-manager | Have a look at http://awesome.naquadah.org/wiki/Awesome_3.4_to_3.5 and awesome's stderr before asking questions... | Don't ask to ask, ask!    "
+2015-06-29 21:01:53	--	Topic set by psychon (psychon@psybnc.out.znc.in) on Sat, 10 Jan 2015 17:48:59
+2015-06-29 21:01:53	--	Channel #awesome: 156 nicks (0 ops, 0 voices, 156 normals)
+2015-06-29 21:01:55	--	Channel created on Mon, 15 Sep 2008 23:59:49
+2015-06-29 21:08:54	<--	artemm (~artemm@136-148-93-178.pool.ukrtel.net) has quit (Ping timeout: 480 seconds)
+2015-06-29 21:18:23	<--	endiruna1 (~endiendir@x5ce5661e.dyn.telefonica.de) has quit (Ping timeout: 480 seconds)
+2015-06-29 21:18:49	-->	GermanG (~rooot@186.62.54.51) has joined #awesome
+2015-06-29 21:26:07	elb	so am I correct that awesome 3.5.6 lua can't receive broadcast messages on teh system bus?
+2015-06-29 21:26:21	elb	it looks like connect_signal can't specify a bus
+2015-06-29 21:35:16	Osleg	elb: iirc there was some issue reported and fixed about that
+2015-06-29 21:35:21	Osleg	and staged to 3.6
+2015-06-29 21:36:07	<--	GermanG (~rooot@186.62.54.51) has quit (Ping timeout: 480 seconds)
+2015-06-29 21:36:36	Osleg	https://github.com/awesomeWM/awesome/pull/191
+2015-06-29 21:36:42	Osleg	https://github.com/awesomeWM/awesome/pull/198
+2015-06-29 21:36:45	Osleg	this two
+2015-06-29 21:49:21	-->	GermanG (~rooot@186.62.54.51) has joined #awesome
+2015-06-29 22:04:08	-->	huntxu (~hunt@ec2-52-69-8-38.ap-northeast-1.compute.amazonaws.com) has joined #awesome
+2015-06-29 22:11:13	-->	reashlin (~reashlin@cpc3-lee211-2-0-cust212.7-1.cable.virginm.net) has joined #awesome
+2015-06-29 22:18:31	-->	razieliyo (~razieliyo@190.Red-83-35-119.dynamicIP.rima-tde.net) has joined #awesome
+2015-06-29 22:18:35	razieliyo	hi
+2015-06-29 22:19:10	razieliyo	I'm just desperate: is there any way to run awesomewm without xorg? i.e.: I have my drivers broken and would like to run it even with some shitty ones
+2015-06-29 22:19:31	razieliyo	or however, this may be a very dumb question, but had to ask
+2015-06-29 22:24:26	-->	razieliy1 (~razieliyo@190.Red-83-35-119.dynamicIP.rima-tde.net) has joined #awesome
+2015-06-29 22:24:26	<--	razieliyo (~razieliyo@190.Red-83-35-119.dynamicIP.rima-tde.net) has quit (Read error: Connection reset by peer)
+2015-06-29 23:02:14	-->	Marmotte_ (~Marmotte@ACaen-654-1-109-199.w83-115.abo.wanadoo.fr) has joined #awesome
+2015-06-29 23:04:12	<--	Marmotte (~Marmotte@0001b050.user.oftc.net) has quit (Ping timeout: 480 seconds)
+2015-06-29 23:08:38	-->	Marmotte (~Marmotte@0001b050.user.oftc.net) has joined #awesome
+2015-06-29 23:10:38	<--	Marmotte_ (~Marmotte@ACaen-654-1-109-199.w83-115.abo.wanadoo.fr) has quit (Ping timeout: 480 seconds)
+2015-06-29 23:14:08	<--	razieliy1 (~razieliyo@190.Red-83-35-119.dynamicIP.rima-tde.net) has quit (Ping timeout: 480 seconds)
+2015-06-29 23:37:11	-->	oarion07 (~ryan@50.48.205.108) has joined #awesome
+2015-06-29 23:58:59	-->	SolarAquarion (~solaraqua@ool-18b84f3f.dyn.optonline.net) has joined #awesome
+2015-06-29 23:59:25	<--	SolarAquarion (~solaraqua@ool-18b84f3f.dyn.optonline.net) has quit (Remote host closed the connection)
+2015-06-29 23:59:54	-->	SolarAquarion (~solaraqua@ool-18b84f3f.dyn.optonline.net) has joined #awesome
+2015-06-30 00:03:15	-->	McLenin (~McLenin@APN-123-190-201-gprs.simobil.net) has joined #awesome
+2015-06-30 00:16:49	<--	McLenin (~McLenin@APN-123-190-201-gprs.simobil.net) has quit (Quit: May all the world forget you ever stood and may all the world regret you did no good.)
+2015-06-30 00:18:11	-->	lostson_ (~lostson@cpe-174-103-236-110.new.res.rr.com) has joined #awesome
+2015-06-30 00:23:50	elb	Osleg: cool, thanks
+2015-06-30 01:15:11	<--	arselinux (~dicks@173-24-183-225.client.mchsi.com) has quit (Remote host closed the connection)
+2015-06-30 01:24:43	<--	TripleH (~su@hst-247-146.splius.lt) has quit (Ping timeout: 480 seconds)
+2015-06-30 01:25:06	-->	TripleH (~su@hst-247-146.splius.lt) has joined #awesome
+2015-06-30 01:30:17	<--	fling (~fling@00019cb6.user.oftc.net) has quit (Quit: ZNC - http://znc.in)
+2015-06-30 01:33:07	<--	TripleH (~su@hst-247-146.splius.lt) has quit (Ping timeout: 480 seconds)
+2015-06-30 01:33:12	-->	fling (~fling@00019cb6.user.oftc.net) has joined #awesome
+2015-06-30 01:33:21	-->	TripleH (~su@hst-247-146.splius.lt) has joined #awesome
+2015-06-30 01:36:38	<--	lostson_ (~lostson@cpe-174-103-236-110.new.res.rr.com) has quit (Quit: Leaving)
+2015-06-30 01:37:48	lostson	top
+2015-06-30 01:39:02	<--	lostson (~lostson@cpe-174-103-236-110.new.res.rr.com) has left #awesome (Leaving)
+2015-06-30 01:59:44	-->	Knaldgas (~pdj@dhcp-5-103-109-134.seas-nve.net) has joined #awesome
+2015-06-30 02:00:34	-->	damex (~damex@117.6.162.58) has joined #awesome
+2015-06-30 11:26:45	--	irc: disconnected from server
+2015-06-30 11:27:06	-->	aajjbb (~aajjbb@179.154.117.36) has joined #awesome
+2015-06-30 11:27:06	--	Topic for #awesome is " Welcome to the land of the awesome, home to the ludicrous | http://awesome.naquadah.org | awesome 3.5.6 `For Those About To Rock' released | https://flattr.com/thing/48025/awesome-window-manager | Have a look at http://awesome.naquadah.org/wiki/Awesome_3.4_to_3.5 and awesome's stderr before asking questions... | Don't ask to ask, ask!    "
+2015-06-30 11:27:06	--	Topic set by psychon (psychon@psybnc.out.znc.in) on Sat, 10 Jan 2015 17:48:59
+2015-06-30 11:27:06	--	Channel #awesome: 165 nicks (0 ops, 0 voices, 165 normals)
+2015-06-30 11:27:08	--	Channel created on Mon, 15 Sep 2008 23:59:49
+2015-06-30 11:35:37	<--	Unode (~unode@fw1igc.igc.gulbenkian.pt) has quit (Quit: WeeChat 1.1.1)
+2015-06-30 11:45:49	-->	nemesis (nemesis@triton.blinkenshell.org) has joined #awesome
+2015-06-30 11:46:27	--	nemesis is now known as Guest3476
+2015-06-30 11:56:33	-->	minde (~minde@ctv-86-100-226-46.ip.rygveda.lt) has joined #awesome
+2015-06-30 12:06:34	von	so, I have this lua script I want to use to update a textbox on the panel. Now I do os.execute() with pipe into awesome-client. Is there a better way?
+2015-06-30 12:07:06	Elv1313	von: You can use GLib async calls
+2015-06-30 12:07:19	elb	update from outside of awesome?
+2015-06-30 12:07:21	elb	seems legit
+2015-06-30 12:11:34	Elv1313	Here are a few examples of async calls https://github.com/Elv13/awesome-configs/blob/master/utils/fd_async.lua
+2015-06-30 12:11:41	von	Elv1313, thank you
+2015-06-30 12:11:42	-->	Unode (~unode@fw1igc.igc.gulbenkian.pt) has joined #awesome
+2015-06-30 12:11:49	Unode	hi everyone.
+2015-06-30 12:12:08	-->	alxgnon (~alxgnon@2607:5300:60:a3d::1) has joined #awesome
+2015-06-30 12:12:54	Elv1313	von: you can use it like module.exec.command("ls") : connect_signal("request::completed", function(result) print(result) end)
+2015-06-30 12:13:08	Unode	Is there any builtin function (similar to run_or_raise) that instead of checking by window attributes checks by process existence? Like pgrep or similar variants.
+2015-06-30 12:13:32	Elv1313	Unode: you can always write one
+2015-06-30 12:15:41	Unode	Elv1313: :)
+2015-06-30 12:16:00	Unode	Elv1313: just wondering if something existed. Since I figure it'd be quite common.
+2015-06-30 12:16:36	Elv1313	People use tags very differently, you would be surprised of how rich the "workflow ecosystem" around Awesome is
+2015-06-30 12:20:05	alxgnon	I would like awesome to ignore modkey combinations that don't exist instead of passing the keys through to the client. For example, if I press `modkey + Q` and that shortcut does not exist, I do not want the letter q to be typed into the client.
+2015-06-30 12:21:54	Unode	alxgnon: you'd probably need some form of "catch all".
+2015-06-30 12:22:05	minde	Elv1313: hey, have you tried to run a GLib.spawn_async_with_pipes() and timer together ?
+2015-06-30 12:22:34	alxgnon	The dumbest, easiest solution I can think of is assigning empty functions to every single shortcut possible. It could be done programmatically. But I would prefer a smarter solution if it exists.
+2015-06-30 12:22:39	Elv1313	minde: hello, long time! Some users have reported that it crashed LGI
+2015-06-30 12:22:45	-->	Greg (~Icedove@80.175.10.59) has joined #awesome
+2015-06-30 12:22:47	minde	Elv1313: it does not work for me, Awesome WM stops and waits until the process is finished its work :/
+2015-06-30 12:23:51	Elv1313	minde: I currently don't have much free time, I havn't worked on Awesome in months, I don't think I will be able to fix that anytime soon
+2015-06-30 12:24:03	Elv1313	(and I have no idea how to fix it anyway)
+2015-06-30 12:24:34	Elv1313	The same happen with recursive async calls and gdbus too
+2015-06-30 12:24:54	-->	SolarAquarion (~solaraqua@ool-18b84f3f.dyn.optonline.net) has joined #awesome
+2015-06-30 12:26:58	<--	codders (~at@89.16.176.158) has quit (Quit: Leaving)
+2015-06-30 12:29:50	-->	McLenin (~McLenin@APN-123-194-110-gprs.simobil.net) has joined #awesome
+2015-06-30 12:29:51	<--	rbistolfi (~rbistolfi@190.55.138.24) has quit (Read error: Connection reset by peer)
+2015-06-30 12:35:28	<--	Guest3476 (nemesis@triton.blinkenshell.org) has left #awesome
+2015-06-30 12:45:49	-->	SpaghettiCat (~Spaghetti@x5d8408fb.dyn.telefonica.de) has joined #awesome
+2015-06-30 12:56:54	<--	artemm (~artemm@193.254.196.9) has quit (Ping timeout: 480 seconds)
+2015-06-30 13:01:03	raph_ael	hi, I'm looking for a way to display in a textbox widget the content of "task list" (taskwarrior) ie some lines of text, what's the best way to achieve it  simply ? (I'm not much a coder)
+2015-06-30 13:01:07	raph_ael	thanks
+2015-06-30 13:01:29	Elv1313	:set_text()
+2015-06-30 13:02:39	raph_ael	like mywidget:set_text("task list") or am I totally wrong ?
+2015-06-30 13:03:03	Elv1313	yes, like that
+2015-06-30 13:03:11	raph_ael	Elv1313: thanks a lot
+2015-06-30 13:04:57	raph_ael	I missed to add that I wanted the text to appear on mouse over :)
+2015-06-30 13:15:15	-->	seschwar (~seschwar@2a02:8109:b00:1e84::3) has joined #awesome
+2015-06-30 13:21:13	Unode	raph_ael: are you familiar with https://github.com/copycat-killer/lain/blob/master/widgets/contrib/task.lua ?
+2015-06-30 13:25:42	<--	Greg (~Icedove@80.175.10.59) has quit (Remote host closed the connection)
+2015-06-30 13:27:38	<--	Elv1313 (~etudiant@2607:fad8:4:6:5cda:7c4:9878:9b6d) has quit (Ping timeout: 480 seconds)
+2015-06-30 19:37:04	--	irc: disconnected from server
+2015-06-30 19:37:25	-->	aajjbb (~aajjbb@179.154.117.36) has joined #awesome
+2015-06-30 19:37:25	--	Topic for #awesome is " Welcome to the land of the awesome, home to the ludicrous | http://awesome.naquadah.org | awesome 3.5.6 `For Those About To Rock' released | https://flattr.com/thing/48025/awesome-window-manager | Have a look at http://awesome.naquadah.org/wiki/Awesome_3.4_to_3.5 and awesome's stderr before asking questions... | Don't ask to ask, ask!    "
+2015-06-30 19:37:25	--	Topic set by psychon (psychon@psybnc.out.znc.in) on Sat, 10 Jan 2015 17:48:59
+2015-06-30 19:37:26	--	Channel #awesome: 165 nicks (0 ops, 0 voices, 165 normals)
+2015-06-30 19:37:27	--	Channel created on Mon, 15 Sep 2008 23:59:49
+2015-06-30 19:43:55	<--	normalra (~normal@31.45.151.78) has quit (Quit: goodnight)
+2015-06-30 19:47:49	-->	oarion7 (~ryan@50.48.205.108) has joined #awesome
+2015-06-30 19:49:37	<--	Osleg (~Akira@180.191.100.113) has quit (Remote host closed the connection)
+2015-06-30 19:52:49	-->	Osleg (~Akira@180.191.100.113) has joined #awesome
+2015-06-30 20:02:15	f4lk0	Elv1313: I downloaded [awesome_3.5.6-1.debian.tar.xz] and I have tried to compile it to generate the deb, but I have a problem...
+2015-06-30 20:02:33	f4lk0	it need lua-ldoc libxcb-cursor-dev (>= 0.1.0-2)
+2015-06-30 20:02:51	f4lk0	And my apt-get does not find them
+2015-06-30 20:03:05	f4lk0	any suggestions?
+2015-06-30 20:06:23	<--	Elv1313 (~etudiant@2607:fad8:4:6:4cb:b001:dc26:60ce) has quit (Ping timeout: 480 seconds)
+2015-06-30 20:09:58	<--	wicope (~wicope@0001fd8a.user.oftc.net) has quit (Read error: Connection reset by peer)
+2015-06-30 20:12:18	<--	lonewulf` (~lonewulf@00020897.user.oftc.net) has quit (Quit: leaving)
+2015-06-30 20:13:06	aajjbb	why not install it through apt-get ?
+2015-06-30 20:13:45	f4lk0	aajjbb: install what?
+2015-06-30 20:14:20	f4lk0	I have already installed awesome via apt-get but get an older version (3.4.13-1 (Octopus))
+2015-06-30 20:14:38	<--	notis (~notis@193.92.50.56.dsl.dyn.forthnet.gr) has quit (Remote host closed the connection)
+2015-06-30 20:23:48	aajjbb	which distribution are you running ?
+2015-06-30 20:23:56	f4lk0	kali-linux
+2015-06-30 20:24:40	-->	notis (~notis@193.92.50.56.dsl.dyn.forthnet.gr) has joined #awesome
+2015-06-30 20:25:12	aajjbb	if it uses apt-get, you can add this ppa: ppa:klaus-vormweg/awesome
+2015-06-30 20:26:39	f4lk0	aajjbb: Thank you very much, but it was enough, this distro is not meant to be used as a normal distro, but as a tool, I'll change to debian testing now
+2015-06-30 20:26:59	f4lk0	Muchas gracias, pero ya fue suficiente, esta distro no está hecha para ser usada como una distro normal, sino como una herramienta, me cambiaré a debian testing
+2015-06-30 20:35:08	aajjbb	ok, good choice.
+2015-06-30 20:35:17	Jikan	Hi. I just did a debian 8 fresh install, then installed awesome (reusing my "old" rc.lua) and I'm using 2 screens. It used to work very well but now, my wibox (I think it's how it's called) on the left screen overlaps the one of the right screen. Any clue?
+2015-06-30 20:36:15	<--	f4lk0 (~falk@190.204.202.239) has quit (Quit: "bye :)")
+2015-06-30 20:37:15	aajjbb	same versions on both installs ?
+2015-06-30 20:38:14	Jikan	Good question. I don't know but I don't think so, I was using latest ubuntu before.
+2015-06-30 20:40:32	aajjbb	how do you run xrandr to call the other monitor ?
+2015-06-30 20:43:07	Jikan	Custom command line at startup.
+2015-06-30 20:43:29	Jikan	After awesome startup actually, given it's run by my rc.lua
+2015-06-30 20:44:54	aajjbb	can you show the snippet ? is it from the awesome wiki on using multiple monitors ?
+2015-06-30 20:46:01	Jikan	It's not from awesome wiki. I use xrandr --output VGA-1 --mode 1440x900 --rate 75 --pos 0x0 --rotate right --output DVI-I-1 --primary --mode 2560x1440 --pos 900x0 --rotate normal
+2015-06-30 20:46:04	<--	DarkDefender (~zed@c-c284e555.05-89-6c6b7013.cust.bredbandsbolaget.se) has quit (Quit: WeeChat 1.2)
+2015-06-30 20:59:20	<--	fstd (~fstd@xdsl-84-44-145-196.netcologne.de) has quit (Remote host closed the connection)
+2015-06-30 20:59:31	-->	fstd (~fstd@xdsl-87-78-15-228.netcologne.de) has joined #awesome
+2015-06-30 21:01:18	<--	Jester01 (~jester-of@91.147.247.182) has quit (Ping timeout: 480 seconds)
+2015-06-30 21:02:31	Jikan	'k, it's rather a randr/screens config issue than an awesome issue because my screen area is not exactly 900x1440. It seems to be about 1000x1400 u_u
+2015-06-30 21:07:56	-->	yorick (~yorick@ip51cd0513.speed.planet.nl) has joined #awesome
+2015-06-30 21:09:05	<--	yorick_ (~yorick@ip51cd0513.speed.planet.nl) has quit (Ping timeout: 480 seconds)
+2015-06-30 21:20:41	-->	estranho (~estranho@187-13-190-117.user.veloxzone.com.br) has joined #awesome
+2015-06-30 21:22:01	aajjbb	As I throught. The script in wiki is handy, but somehow it's not working here now. I'm trying to fix it.
+2015-06-30 21:23:52	aajjbb	Did it.
+2015-06-30 21:24:47	<--	yorick (~yorick@ip51cd0513.speed.planet.nl) has quit (Ping timeout: 480 seconds)
+2015-06-30 21:34:58	-->	lonewulf` (~lonewulf@00020897.user.oftc.net) has joined #awesome
+2015-06-30 21:55:24	<--	SolarAquarion (~solaraqua@ool-18b84f3f.dyn.optonline.net) has quit (Remote host closed the connection)
+2015-06-30 22:09:35	--	Katy is now known as wowaname
+2015-06-30 22:28:54	<--	oarion7 (~ryan@50.48.205.108) has quit (Ping timeout: 480 seconds)
+2015-06-30 22:46:00	-->	aajjbb1 (~aajjbb@179.154.117.36) has joined #awesome
+2015-06-30 22:46:00	--	Topic for #awesome is " Welcome to the land of the awesome, home to the ludicrous | http://awesome.naquadah.org | awesome 3.5.6 `For Those About To Rock' released | https://flattr.com/thing/48025/awesome-window-manager | Have a look at http://awesome.naquadah.org/wiki/Awesome_3.4_to_3.5 and awesome's stderr before asking questions... | Don't ask to ask, ask!    "
+2015-06-30 22:46:00	--	Topic set by psychon (psychon@psybnc.out.znc.in) on Sat, 10 Jan 2015 17:48:59
+2015-06-30 22:46:00	--	Channel #awesome: 159 nicks (0 ops, 0 voices, 159 normals)
+2015-06-30 22:46:00	<--	aajjbb (~aajjbb@179.154.117.36) has quit (Read error: Connection reset by peer)
+2015-06-30 22:46:02	--	Channel created on Mon, 15 Sep 2008 23:59:49
+2015-06-30 23:10:26	-->	endiruna (~endiendir@poisson.phc.unipi.it) has joined #awesome
+2015-06-30 23:13:11	-->	huntxu (~hunt@ec2-52-69-8-38.ap-northeast-1.compute.amazonaws.com) has joined #awesome
+2015-06-30 23:18:31	<--	endiruna (~endiendir@poisson.phc.unipi.it) has quit (Ping timeout: 480 seconds)
+2015-06-30 23:20:28	-->	lostson_ (~lostson@cpe-174-103-236-110.new.res.rr.com) has joined #awesome
+2015-06-30 23:38:48	-->	McLenin (~McLenin@APN-123-194-110-gprs.simobil.net) has joined #awesome
+2015-06-30 23:43:44	<--	lostson_ (~lostson@cpe-174-103-236-110.new.res.rr.com) has quit (Quit: Leaving)
+2015-06-30 23:47:05	-->	lostson_ (~lostson@cpe-174-103-236-110.new.res.rr.com) has joined #awesome
+2015-06-30 23:49:13	-->	oarion7 (~ryan@50.48.205.108) has joined #awesome
+2015-06-30 23:50:06	<--	lostson_ (~lostson@cpe-174-103-236-110.new.res.rr.com) has quit (Remote host closed the connection)
+2015-07-01 00:07:20	<--	fling (~fling@00019cb6.user.oftc.net) has quit (Ping timeout: 480 seconds)
+2015-07-01 00:18:06	-->	fling (~fling@00019cb6.user.oftc.net) has joined #awesome
+2015-07-01 00:18:58	<--	Osleg (~Akira@180.191.100.113) has quit (Remote host closed the connection)
+2015-07-01 00:40:09	-->	sim590 (~sim590@modemcable113.237-176-173.mc.videotron.ca) has joined #awesome
+2015-07-01 00:49:17	sim590	how can I make menubar scan for .desktop files recursively under ~/.local/share/applications/ ?
+2015-07-01 00:49:53	sim590	It doesn't find .dekstop files under ~/.local/share/applications/wine
+2015-07-01 00:50:17	<--	oarion7 (~ryan@50.48.205.108) has quit (Ping timeout: 480 seconds)
+2015-07-01 00:53:38	<--	McLenin (~McLenin@APN-123-194-110-gprs.simobil.net) has quit (Quit: May all the world forget you ever stood and may all the world regret you did no good.)
+2015-07-01 00:59:27	<--	estranho (~estranho@187-13-190-117.user.veloxzone.com.br) has quit (Quit: leaving)
+2015-07-01 21:46:52	--	irc: disconnected from server
+2015-07-01 21:47:14	-->	aajjbb1 (~aajjbb@179.154.117.36) has joined #awesome
+2015-07-01 21:47:14	--	Topic for #awesome is " Welcome to the land of the awesome, home to the ludicrous | http://awesome.naquadah.org | awesome 3.5.6 `For Those About To Rock' released | https://flattr.com/thing/48025/awesome-window-manager | Have a look at http://awesome.naquadah.org/wiki/Awesome_3.4_to_3.5 and awesome's stderr before asking questions... | Don't ask to ask, ask!    "
+2015-07-01 21:47:14	--	Topic set by psychon (psychon@psybnc.out.znc.in) on Sat, 10 Jan 2015 17:48:59
+2015-07-01 21:47:14	--	Channel #awesome: 159 nicks (0 ops, 0 voices, 159 normals)
+2015-07-01 21:47:15	--	Channel created on Mon, 15 Sep 2008 23:59:49
+2015-07-01 21:52:02	-->	Osleg (~Akira@180.191.96.83) has joined #awesome
+2015-07-01 21:56:30	f4lk0	Hi guys, I have installed awesome v3.5.6 on my Debian testing, Im trying to make this actual config likely to my old config (3.4)
+2015-07-01 21:56:41	f4lk0	I has wrote the following behind mytextclok
+2015-07-01 21:56:49	f4lk0	separator = wibox.widget.textbox()
+2015-07-01 21:56:54	f4lk0	separator.text  = " | "
+2015-07-01 21:57:01	f4lk0	and left_layout:add(separator) behind left_layout:add(mylauncher)
+2015-07-01 21:57:10	f4lk0	But it does not work, and I don't know why
+2015-07-01 21:57:19	f4lk0	maybe I must register that widget?
+2015-07-01 22:06:59	<--	sim590 (~sim590@modemcable113.237-176-173.mc.videotron.ca) has quit (Ping timeout: 480 seconds)
+2015-07-01 22:15:32	-->	sim590 (~sim590@modemcable113.237-176-173.mc.videotron.ca) has joined #awesome
+2015-07-01 22:38:24	-->	huntxu (~hunt@ec2-52-69-8-38.ap-northeast-1.compute.amazonaws.com) has joined #awesome
+2015-07-01 22:56:29	<--	SolarAquarion (~solaraqua@ool-18b84f3f.dyn.optonline.net) has quit (Ping timeout: 480 seconds)
+2015-07-01 22:59:26	-->	lostson_ (~lostson@cpe-174-103-236-110.new.res.rr.com) has joined #awesome
+2015-07-01 23:28:43	<--	huntxu (~hunt@ec2-52-69-8-38.ap-northeast-1.compute.amazonaws.com) has quit (Remote host closed the connection)
+2015-07-01 23:35:07	-->	hunt_O (~hunt@ec2-52-69-8-38.ap-northeast-1.compute.amazonaws.com) has joined #awesome
+2015-07-01 23:48:53	-->	SolarAquarion (~solaraqua@ool-18b84f3f.dyn.optonline.net) has joined #awesome
+2015-07-01 23:50:47	<--	lostson_ (~lostson@cpe-174-103-236-110.new.res.rr.com) has quit (Quit: Leaving)
+2015-07-01 23:51:29	-->	lostson_ (~lostson@cpe-174-103-236-110.new.res.rr.com) has joined #awesome
+2015-07-01 23:56:05	<--	trollixx (~trollixx@sf.wisetroll.net) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2015-07-01 23:56:16	-->	trollixx (~trollixx@sf.wisetroll.net) has joined #awesome
+2015-07-02 00:03:24	<--	lostson_ (~lostson@cpe-174-103-236-110.new.res.rr.com) has quit (Quit: Leaving)
+2015-07-02 00:11:01	-->	fling (~fling@00019cb6.user.oftc.net) has joined #awesome
+2015-07-02 00:14:01	-->	McLenin (~McLenin@APN-122-248-48-gprs.simobil.net) has joined #awesome
+2015-07-02 00:28:08	f4lk0	It is possible config a graph memwidget?
+2015-07-02 00:28:52	f4lk0	It does not move properly, I have copied the cpu grap code, replacing vicious.widgets.cpu for vicious.widgets.mem
+2015-07-02 00:52:40	-->	fstd_ (~fstd@xdsl-84-44-227-145.netcologne.de) has joined #awesome
+2015-07-02 00:58:21	<--	fstd (~fstd@xdsl-87-78-81-2.netcologne.de) has quit (Ping timeout: 480 seconds)
+2015-07-02 00:58:22	--	fstd_ is now known as fstd
+2015-07-02 01:06:52	<--	McLenin (~McLenin@APN-122-248-48-gprs.simobil.net) has quit (Quit: May all the world forget you ever stood and may all the world regret you did no good.)
+2015-07-02 01:31:26	<--	damex (~damex@113.176.3.58) has quit (Ping timeout: 480 seconds)
+2015-07-02 01:31:40	<--	f4lk0 (~falk@190.201.5.126) has quit (Quit: ">>")
+2015-07-02 01:44:13	-->	damex (~damex@113.190.242.149) has joined #awesome
+2015-07-02 01:53:10	<--	SolarAquarion (~solaraqua@ool-18b84f3f.dyn.optonline.net) has quit (Remote host closed the connection)
+2015-07-02 01:53:43	-->	SolarAquarion (~solaraqua@ool-18b84f3f.dyn.optonline.net) has joined #awesome
+2015-07-02 01:54:43	-->	GenesisAquarion (~solaraqua@ool-18b84f3f.dyn.optonline.net) has joined #awesome
+2015-07-02 01:55:34	<--	dustinm` (~dustinm`@2607:5300:100:200::160d) has quit (Quit: Leaving)
+2015-07-02 02:01:59	<--	SolarAquarion (~solaraqua@ool-18b84f3f.dyn.optonline.net) has quit (Ping timeout: 480 seconds)
+2015-07-02 02:02:14	<--	damex (~damex@113.190.242.149) has quit (Ping timeout: 480 seconds)
+2015-07-02 02:05:52	-->	dustinm` (~dustinm`@2607:5300:100:200::160d) has joined #awesome
+2015-07-02 02:10:53	-->	damex (~damex@113.190.242.149) has joined #awesome
+2015-07-02 02:15:31	<--	Alissa (~alissa@bravo.alissa.ml) has quit (Quit: http://is.gd/bmN9kV ~ I'm out ~)
+2015-07-02 02:15:50	-->	Alissa (~alissa@bravo.alissa.ml) has joined #awesome
+2015-07-02 02:16:27	<--	damex (~damex@113.190.242.149) has quit (Quit: damex)
+2015-07-02 02:33:40	<--	notis (~notis@193.92.50.56.dsl.dyn.forthnet.gr) has quit (Remote host closed the connection)
+2015-07-02 02:34:09	<--	GenesisAquarion (~solaraqua@ool-18b84f3f.dyn.optonline.net) has quit (Ping timeout: 480 seconds)
+2015-07-02 02:40:32	<--	arselinux (~dicks@173-24-183-225.client.mchsi.com) has quit (Remote host closed the connection)
+2015-07-02 02:40:49	<--	Osleg (~Akira@180.191.96.83) has quit (Read error: Connection reset by peer)
+2015-07-02 02:57:45	<--	sim590 (~sim590@modemcable113.237-176-173.mc.videotron.ca) has quit (Quit: Lost terminal)
+2015-07-02 03:00:47	-->	JohnnyRun (~gianni@92-223-187-114.ip275.fastwebnet.it) has joined #awesome
+2015-07-02 03:30:37	<--	Fluor (ssmeenk@dot.freshdot.net) has left #awesome
+2015-07-02 03:45:09	-->	Osleg (~Akira@180.191.96.156) has joined #awesome
+2015-07-02 03:58:22	-->	artemm (~artemm@65-172-94-178.pool.ukrtel.net) has joined #awesome
+2015-07-02 04:21:24	-->	codders (~at@89.16.176.158) has joined #awesome
+2015-07-02 04:36:06	-->	bjp (~user@91.190.115.250) has joined #awesome
+2015-07-02 04:39:35	<--	bjp (~user@91.190.115.250) has left #awesome
+2015-07-02 04:52:43	-->	wicope (~wicope@0001fd8a.user.oftc.net) has joined #awesome
+2015-07-02 05:06:44	Alissa	Forgot if I asked this before, but is there a way to move one application from one of the tabs to another?
+2015-07-02 05:17:20	konni	Alissa: mod+shift+#
+2015-07-02 05:17:34	Alissa	Awesome. :D
+2015-07-02 05:17:38	konni	Alissa: try man awesome or read your rc.lua... the keybinds are quite readable
+2015-07-02 05:17:55	konni	and the basic steps are well explained in man awesome
+2015-07-02 05:18:02	konni	until you mess with the keybinds of course ;)
+2015-07-02 05:18:02	Alissa	I must've passed over it. I spent quite a bit of time reading the rc.lua
+2015-07-02 05:18:43	konni	yes its a lot at first
+2015-07-02 05:18:55	konni	you get used to it though ;)
+2015-07-02 05:20:13	Alissa	I tried to spread it out over multiple files once, like I do most things.
+2015-07-02 05:20:26	Alissa	I quit after less than 1/3 of it.
+2015-07-02 05:21:40	konni	you can do that, but then you have to remove the 'local' from the includes
+2015-07-02 05:21:50	Alissa	Yeah, I was pretty much rewriting it.
+2015-07-02 05:21:54	konni	and from some variables
+2015-07-02 05:22:19	konni	i also did that... but now just put some functions in another file
+2015-07-02 06:00:37	-->	DarkDefender (~zed@c-c284e555.05-89-6c6b7013.cust.bredbandsbolaget.se) has joined #awesome
+2015-07-02 06:09:51	-->	bjp (~user@91.190.115.250) has joined #awesome
+2015-07-02 06:13:27	-->	oarion7 (~ryan@50.48.205.108) has joined #awesome
+2015-07-02 06:16:26	bjp	What C functions are called when one presses modkey+ctrl+r? 
+2015-07-02 06:35:59	<--	artemm (~artemm@65-172-94-178.pool.ukrtel.net) has quit (Ping timeout: 480 seconds)
+2015-07-02 06:47:10	-->	damex (~damex@113.190.242.149) has joined #awesome
+2015-07-02 06:56:58	<--	Matrixiumn (zack@apertron.net) has quit (Quit: :q!)
+2015-07-02 06:57:40	-->	Matrixiumn (zack@apertron.net) has joined #awesome
+2015-07-02 06:58:06	Alissa	Check awful.client.movetotag()
+2015-07-02 07:08:16	<--	oarion7 (~ryan@50.48.205.108) has quit (Ping timeout: 480 seconds)
+2015-07-02 07:08:34	<--	hunt_O (~hunt@ec2-52-69-8-38.ap-northeast-1.compute.amazonaws.com) has quit (Remote host closed the connection)
+2015-07-02 07:10:25	-->	huntxu (~hunt@ec2-52-69-8-38.ap-northeast-1.compute.amazonaws.com) has joined #awesome
+2015-07-02 07:22:19	<--	przemoc (~przemoc@89-74-38-183.dynamic.chello.pl) has quit (Ping timeout: 480 seconds)
+2015-07-02 07:31:42	<--	codders (~at@89.16.176.158) has quit (Ping timeout: 480 seconds)
+2015-07-02 07:41:27	<--	huntxu (~hunt@ec2-52-69-8-38.ap-northeast-1.compute.amazonaws.com) has quit (Remote host closed the connection)
+2015-07-02 07:55:41	-->	GenesisAquarion (~solaraqua@ool-18b84f3f.dyn.optonline.net) has joined #awesome
+2015-07-02 08:12:29	<--	damex (~damex@113.190.242.149) has quit (Ping timeout: 480 seconds)
+2015-07-02 08:54:32	<--	DarkDefender (~zed@c-c284e555.05-89-6c6b7013.cust.bredbandsbolaget.se) has quit (Quit: WeeChat 1.2)
+2015-07-02 08:58:40	-->	nodulaire (~nodulaire@ns363764.ip-91-121-181.eu) has joined #awesome
+2015-07-02 08:58:56	nodulaire	Hello all
+2015-07-02 08:59:23	<--	fstd (~fstd@xdsl-84-44-227-145.netcologne.de) has quit (Remote host closed the connection)
+2015-07-02 08:59:34	-->	fstd (~fstd@xdsl-84-44-146-51.netcologne.de) has joined #awesome
+2015-07-02 08:59:44	nodulaire	I'm trying to figure out why my command "os.execute("setxkbmap fr")
+2015-07-02 08:59:47	nodulaire	"
+2015-07-02 09:00:07	nodulaire	doesn't work at the end of my rc.lua
+2015-07-02 09:00:24	nodulaire	i'm on awesome v3.4.15 (Never Gonna Give You Up)
+2015-07-02 09:01:02	<--	Knaldgas (~pdj@dhcp-5-103-109-134.seas-nve.net) has quit (Quit: Leaving)
+2015-07-02 09:01:05	nodulaire	I saw this topic and it seems i'm not the only one on this case 
+2015-07-02 09:01:07	nodulaire	https://bugs.launchpad.net/ubuntu/+source/awesome/+bug/1176862
+2015-07-02 09:06:35	<--	Greg (~Icedove@fw.mango-solutions.com) has quit (Ping timeout: 480 seconds)
+2015-07-02 09:06:52	nodulaire	Nobody can give me a hand here ? 
+2015-07-02 09:10:32	<--	fstd (~fstd@xdsl-84-44-146-51.netcologne.de) has quit (Ping timeout: 480 seconds)
+2015-07-02 09:11:34	-->	fstd (~fstd@xdsl-87-78-17-196.netcologne.de) has joined #awesome
+2015-07-02 09:15:50	konni	did you try awful.util.spawn instead?
+2015-07-02 09:20:18	nodulaire	yeah and i'm stuck on the login page
+2015-07-02 09:20:28	-->	Greg (~Icedove@fw.mango-solutions.com) has joined #awesome
+2015-07-02 09:20:33	nodulaire	I wil put it on .xynitrc 
+2015-07-02 09:20:36	nodulaire	mays be more secure
+2015-07-02 09:29:39	<--	GenesisAquarion (~solaraqua@ool-18b84f3f.dyn.optonline.net) has quit (Ping timeout: 480 seconds)
+2015-07-02 09:31:08	konni	i'd put it in .xprofile
+2015-07-02 09:31:19	konni	which is where i put all my autostart apps
+2015-07-02 09:31:36	konni	pro: it gets executed once when X loads, not when awesome is restarted
+2015-07-02 09:36:11	nodulaire	konni: Thank's :)  Where is .Xprofile ? Locate doesn't find it 
+2015-07-02 09:36:21	konni	in your home
+2015-07-02 09:36:28	konni	if it does not exist, create it
+2015-07-02 09:36:57	nodulaire	ok and the syntax is the patern to a bash script ? Or a specific syntax ?
+2015-07-02 09:38:34	raph_ael	nodulaire: did you try to put it in the first lines of your rc.lua ?
+2015-07-02 09:39:10	nodulaire	raph_ael: no the documentation said on the last one :$ 
+2015-07-02 09:40:04	raph_ael	nodulaire: on my 3.4 config I set it just after layouts={}
+2015-07-02 09:40:36	nodulaire	Ok I try the xprofile thing and if doesn't work I look at your solution :)
+2015-07-02 09:40:48	raph_ael	it worked, even if it should work, have you tried setxkbmap fr in a terminal to see if there are any errors ?
+2015-07-02 09:44:02	nodulaire	re, konni : xprofile tell me he doens't know setxkmap command.  raph_ael yeah I do it at each connexion into a term and it work perfectly
+2015-07-02 09:44:14	nodulaire	I try your solution now raph_ael 
+2015-07-02 09:47:46	nodulaire	Hum it doesnt work either
+2015-07-02 09:48:07	nodulaire	I will try harder tonigh need to work now. Thank's guys
+2015-07-02 09:49:20	piti	nodulaire: are you the only user of this computer ?
+2015-07-02 09:49:40	piti	shouldn't you setup the keyboard layout through Xorg.conf ?
+2015-07-02 09:50:15	-->	GermanG (~rooot@181.119.60.146) has joined #awesome
+2015-07-02 09:50:21	raph_ael	nodulaire: maybe setxkbmap is not in the path
+2015-07-02 09:50:30	raph_ael	which sounds strange
+2015-07-02 09:52:18	<--	fstd (~fstd@xdsl-87-78-17-196.netcologne.de) has quit (Quit: leaving)
+2015-07-02 09:52:59	<--	GermanG (~rooot@181.119.60.146) has quit
+2015-07-02 09:53:14	-->	GermanG (~rooot@181.119.60.146) has joined #awesome
+2015-07-02 09:54:18	-->	fstd (~fstd@xdsl-87-78-17-196.netcologne.de) has joined #awesome
+2015-07-02 09:59:59	<--	mmarker (~crichton@00020805.user.oftc.net) has quit (Ping timeout: 480 seconds)
+2015-07-02 10:02:41	-->	minde (~minde@ctv-86-100-226-46.ip.rygveda.lt) has joined #awesome
+2015-07-02 10:09:37	-->	charwood (~charwood@24.111.12.82) has joined #awesome
+2015-07-02 10:11:00	charwood	I just discovered the magic of awesome-client.  Where does a print() statement end up?
+2015-07-02 10:11:14	charwood	That is, to what is stdout attached?
+2015-07-02 10:12:10	-->	nonsch (~nonsch@0001f6da.user.oftc.net) has joined #awesome
+2015-07-02 10:17:29	-->	Nightwolf (~Nightwolf@v2201412760721964.yourvserver.net) has joined #awesome
+2015-07-02 10:17:32	Nightwolf	hi
+2015-07-02 10:26:44	charwood	Looking in /proc/<awesome_pid>/fd, it looks like awesome is redirected to /dev/null on my system.  I changed it to go to a file, but print("Hello") still doesn't show up there.
+2015-07-02 10:27:04	charwood	Presumably people who hack on awesome have a way to do this and it's well documented somewhere, I'm just having trouble finding that place.
+2015-07-02 10:43:54	<--	bjp (~user@91.190.115.250) has quit (Ping timeout: 480 seconds)
+2015-07-02 10:49:26	Nightwolf	when i run xrandr to change the primary screen my memory widget and my cpu widgets go away. restarting awesome doesn't help. they are back when i log out and in again with mirrored screens. any ideas?
+2015-07-02 11:05:18	-->	whirm (~whirm@a83-161-224-81.adsl.xs4all.nl) has joined #awesome
+2015-07-02 11:05:58	-->	Greg1 (~Icedove@fw.mango-solutions.com) has joined #awesome
+2015-07-02 11:06:53	<--	charwood (~charwood@24.111.12.82) has quit (Remote host closed the connection)
+2015-07-02 11:08:19	-->	artemm (~artemm@193.254.196.9) has joined #awesome
+2015-07-02 11:11:27	<--	Greg (~Icedove@fw.mango-solutions.com) has quit (Ping timeout: 480 seconds)
+2015-07-02 11:12:51	-->	swimmer (~swimmer@88.159.38.195) has joined #awesome
+2015-07-02 11:23:49	Osleg	charwood: people who hach awesome use xephyr for this and they see output back there
+2015-07-02 11:24:14	Osleg	i personally use naughty:notify when i'm tinkering with awesome-client
+2015-07-02 11:24:23	Osleg	and bam... he is not here
+2015-07-02 11:26:08	-->	Elv1313 (~etudiant@2607:fad8:4:6:f1c7:f36f:ddfe:6ebf) has joined #awesome
+2015-07-02 11:45:44	<--	Jester01 (~jester-of@91.147.247.182) has quit (Ping timeout: 480 seconds)
+2015-07-02 11:48:46	<--	GermanG (~rooot@181.119.60.146) has quit (Ping timeout: 480 seconds)
+2015-07-02 11:49:07	<--	Osleg (~Akira@180.191.96.156) has quit (Ping timeout: 480 seconds)
+2015-07-02 11:53:55	-->	Jester01 (~jester-of@91.147.247.182) has joined #awesome
+2015-07-02 11:56:01	elb	heh
+2015-07-02 11:57:19	-->	GermanG (~rooot@181.119.60.146) has joined #awesome
+2015-07-02 12:25:43	<--	Lky (~Lucky@hydra.lky.cc) has quit (Quit: Lost terminal)
+2015-07-02 12:29:04	-->	seschwar (~seschwar@2a02:8109:b00:1e84:d267:e5ff:fe33:23d8) has joined #awesome
+2015-07-02 12:30:50	-->	Lky (~Lucky@hydra.lky.cc) has joined #awesome
+2015-07-02 21:48:37	-->	aajjbb (~aajjbb@179.154.117.36) has joined #awesome
+2015-07-02 21:48:37	--	Topic for #awesome is " Welcome to the land of the awesome, home to the ludicrous | http://awesome.naquadah.org | awesome 3.5.6 `For Those About To Rock' released | https://flattr.com/thing/48025/awesome-window-manager | Have a look at http://awesome.naquadah.org/wiki/Awesome_3.4_to_3.5 and awesome's stderr before asking questions... | Don't ask to ask, ask!    "
+2015-07-02 21:48:37	--	Topic set by psychon (psychon@psybnc.out.znc.in) on Sat, 10 Jan 2015 17:48:59
+2015-07-02 21:48:37	--	Channel #awesome: 157 nicks (0 ops, 0 voices, 157 normals)
+2015-07-02 21:48:38	--	Channel created on Mon, 15 Sep 2008 23:59:49
+2015-07-02 21:54:25	-->	Osleg (~Akira@180.191.96.10) has joined #awesome
+2015-07-02 22:04:45	<--	DarkDefender (~zed@c-c284e555.05-89-6c6b7013.cust.bredbandsbolaget.se) has quit (Quit: WeeChat 1.2)
+2015-07-02 22:28:42	-->	f4lk0 (~falk@190.201.5.126) has joined #awesome
+2015-07-02 22:30:12	f4lk0	Hi, guys I have installed a cpu graph widget, but its have a weird behaviour, the graph is strange, I think the height is wrong
+2015-07-02 22:31:03	f4lk0	Because I only see maximum and middle values, graphically equivalent to 100% and 50% of use, and my text cpu usage widget shows 1%-2%
+2015-07-02 22:31:06	f4lk0	:\
+2015-07-02 22:31:51	f4lk0	I have not set height param to the wibox and widget
+2015-07-02 22:32:24	f4lk0	I assume it take from default, but it is odd, anyone can be so kind to help me to fix this?
+2015-07-02 22:40:08	<--	tadakuni (~tadakuni@host-89-31-115-2.academ.org) has quit (Ping timeout: 480 seconds)
+2015-07-02 22:41:29	-->	mmarker (~crichton@00020805.user.oftc.net) has joined #awesome
+2015-07-02 22:44:20	<--	mmarker (~crichton@00020805.user.oftc.net) has quit (Quit: ZNC - 1.6.0 - http://znc.in)
+2015-07-02 22:44:21	<--	Osleg (~Akira@180.191.96.10) has quit (Read error: Connection reset by peer)
+2015-07-02 23:03:37	-->	Osleg (~Akira@180.191.96.10) has joined #awesome
+2015-07-02 23:11:10	-->	huntxu (~hunt@ec2-52-69-8-38.ap-northeast-1.compute.amazonaws.com) has joined #awesome
+2015-07-02 23:41:32	-->	oarion7 (~ryan@50.48.205.108) has joined #awesome
+2015-07-02 23:41:45	<--	oarion7 (~ryan@50.48.205.108) has quit
+2015-07-03 00:24:09	<--	f4lk0 (~falk@190.201.5.126) has quit (Quit: leaving)
+2015-07-03 01:10:09	-->	knoppix_ (~knoppix@cpc68025-stok17-2-0-cust114.1-4.cable.virginm.net) has joined #awesome
+2015-07-03 01:10:10	--	knoppix_ is now known as Guest3788
+2015-07-03 19:21:19	-->	aajjbb (~aajjbb@177.193.225.201) has joined #awesome
+2015-07-03 19:21:19	--	Topic for #awesome is " Welcome to the land of the awesome, home to the ludicrous | http://awesome.naquadah.org | awesome 3.5.6 `For Those About To Rock' released | https://flattr.com/thing/48025/awesome-window-manager | Have a look at http://awesome.naquadah.org/wiki/Awesome_3.4_to_3.5 and awesome's stderr before asking questions... | Don't ask to ask, ask!    "
+2015-07-03 19:21:19	--	Topic set by psychon (psychon@psybnc.out.znc.in) on Sat, 10 Jan 2015 17:48:59
+2015-07-03 19:21:19	--	Channel #awesome: 162 nicks (0 ops, 0 voices, 162 normals)
+2015-07-03 19:21:21	--	Channel created on Mon, 15 Sep 2008 23:59:49
+2015-07-03 19:35:23	-->	Jester01 (~jester-of@91.147.247.182) has joined #awesome
+2015-07-03 19:42:57	<--	AstralStorm (~astralsto@89-72-180-108.dynamic.chello.pl) has quit (Ping timeout: 480 seconds)
+2015-07-03 19:43:21	<--	Elv1313 (~etudiant@2607:fad8:4:6:e582:c5d9:444:ea1d) has quit (Ping timeout: 480 seconds)
+2015-07-03 19:48:55	-->	species_4981 (~species_4@108.180.112.87.dyn.plus.net) has joined #awesome
+2015-07-03 19:53:31	<--	minde (~minde@ctv-86-100-226-46.ip.rygveda.lt) has quit (Quit: rebooting emacs brb.)
+2015-07-03 19:54:20	<--	species_4981 (~species_4@108.180.112.87.dyn.plus.net) has quit (Quit: Leaving)
+2015-07-03 20:01:00	<--	arselinux (~dicks@173-24-183-225.client.mchsi.com) has quit (Remote host closed the connection)
+2015-07-03 20:01:18	<--	seschwar (~seschwar@2a02:8109:b00:1e84:d267:e5ff:fe33:23d8) has quit (Quit: :qa)
+2015-07-03 20:01:35	<--	notis (~notis@46.246.129.20.dsl.dyn.forthnet.gr) has quit (Remote host closed the connection)
+2015-07-03 20:01:55	-->	arselinux (~dicks@173-24-183-225.client.mchsi.com) has joined #awesome
+2015-07-03 20:12:28	-->	notis (~notis@46.246.129.20.dsl.dyn.forthnet.gr) has joined #awesome
+2015-07-03 20:41:24	-->	AstralStorm (~astralsto@89-72-180-108.dynamic.chello.pl) has joined #awesome
+2015-07-03 20:44:40	-->	Rooneye (~Roonix@cpc16-stkn14-2-0-cust639.11-2.cable.virginm.net) has joined #awesome
+2015-07-03 20:48:48	<--	artemm (~artemm@113-172-94-178.pool.ukrtel.net) has quit (Ping timeout: 480 seconds)
+2015-07-03 20:51:09	<--	Roonix (~Roonix@cpc16-stkn14-2-0-cust639.11-2.cable.virginm.net) has quit (Ping timeout: 480 seconds)
+2015-07-03 20:59:23	<--	fstd (~fstd@xdsl-81-173-184-192.netcologne.de) has quit (Remote host closed the connection)
+2015-07-03 20:59:33	-->	fstd (~fstd@xdsl-87-78-17-249.netcologne.de) has joined #awesome
+2015-07-03 21:07:48	<--	DarkDefender (~zed@c-c284e555.05-89-6c6b7013.cust.bredbandsbolaget.se) has quit (Quit: WeeChat 1.2)
+2015-07-03 21:30:49	-->	species_4981 (~species_4@108.180.112.87.dyn.plus.net) has joined #awesome
+2015-07-03 21:34:41	<--	lonewulf` (~lonewulf@00020897.user.oftc.net) has quit (Quit: leaving)
+2015-07-03 21:39:13	<--	jarle (~jarle@135.92-221-33.customer.lyse.net) has quit (Ping timeout: 480 seconds)
+2015-07-03 22:08:00	-->	Osleg (~Akira@180.191.96.10) has joined #awesome
+2015-07-03 22:14:50	-->	lonewulf` (~lone@00020897.user.oftc.net) has joined #awesome
+2015-07-03 23:08:47	<--	Rooneye (~Roonix@cpc16-stkn14-2-0-cust639.11-2.cable.virginm.net) has quit (Ping timeout: 480 seconds)
+2015-07-03 23:28:23	-->	bjp (~user@91.190.115.250) has joined #awesome
+2015-07-03 23:51:34	<--	bjp (~user@91.190.115.250) has left #awesome (ERC (IRC client for Emacs 24.5.1))
+2015-07-03 23:51:37	-->	bjp (~user@91.190.115.250) has joined #awesome
+2015-07-03 23:51:41	<--	bjp (~user@91.190.115.250) has left #awesome (ERC (IRC client for Emacs 24.5.1))
+2015-07-03 23:51:52	-->	bjp (~user@91.190.115.250) has joined #awesome
+2015-07-03 23:52:42	<--	lonewulf` (~lone@00020897.user.oftc.net) has quit (Quit: leaving)
+2015-07-03 23:55:26	-->	lonewulf` (~lonewulf@00020897.user.oftc.net) has joined #awesome
+2015-07-03 23:55:46	<--	bjp (~user@91.190.115.250) has quit (Remote host closed the connection)
+2015-07-04 00:26:01	-->	McLenin (~McLenin@APN-122-26-147-gprs.simobil.net) has joined #awesome
+2015-07-04 00:26:05	<--	McLenin (~McLenin@APN-122-26-147-gprs.simobil.net) has quit
+2015-07-04 00:46:49	-->	nuck (~Nuck@c-67-181-18-100.hsd1.ca.comcast.net) has joined #awesome
+2015-07-04 00:57:56	-->	jarle (~jarle@135.92-221-33.customer.lyse.net) has joined #awesome
+2015-07-04 01:51:45	<--	arselinux (~dicks@173-24-183-225.client.mchsi.com) has quit (Remote host closed the connection)
