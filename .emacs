@@ -1,3 +1,9 @@
+;;; package --- Summary This is my .emacs file
+
+;;; Commentary:
+
+;;; Code:
+
 (package-initialize)
 ;; control backup files
 (setq backup-directory-alist `(("." . "~/.saves")))
@@ -8,7 +14,7 @@
 	  `((".*" ,temporary-file-directory t)))
 
 
-;; load plugins 
+;; load plugins
 ;; (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.emacs.d/plugins/")
 
@@ -17,7 +23,7 @@
 (setq-default tab-width 4)
 (setq indent-line-function 'insert-tab)
 
-(set-default-font "Droid Sans Mono Slashed 11")
+(set-frame-font "Droid Sans Mono Slashed 11")
     
 
 ;; block annoying home screen
@@ -44,7 +50,7 @@
 
 ;; dos2unix function
 (defun dos2unix ()
-  "Replace DOS eolns CR LF with Unix eolns CR"
+  "Replace DOS eolns CR LF with Unix eolns CR."
   (interactive)
   (goto-char (point-min))
   (while (search-forward "\r" nil t) (replace-match "")))
@@ -130,5 +136,9 @@
 ;; C++ 11 in flycheck
 (add-hook 'c++-mode-hook (lambda () (setq flycheck-gcc-language-standard "c++11")))
 
-;; Python mode Jedi
-;; (add-hook 'python-mode-hook 'jedi:setup)
+;; uniquify
+(require 'uniquify)
+
+
+
+;;; .emacs ends here

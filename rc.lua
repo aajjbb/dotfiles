@@ -327,6 +327,7 @@ memwidget = lain.widgets.mem({
 })
 
 -- mpd widget
+--[[
 mpdicon   = wibox.widget.imagebox(beautiful.widget_note)
 mpdwidget = lain.widgets.mpd({
 	  settings = function()
@@ -340,11 +341,10 @@ mpdwidget = lain.widgets.mpd({
 		 widget:set_markup(markup("#e54c62", mpd_now.artist) .. " - " .. markup("#b2b2b2", mpd_now.title) .. " ")
 	  end
 })
+]]
 
 -- cmus widget
---[[ 
 cmusicon = wibox.widget.imagebox(beautiful.widget_note)
-
 cmuswidget = lain.widgets.abase({	  
 	  cmd = "cmus-remote -Q",
 	  timeout = 2, 
@@ -371,7 +371,6 @@ cmuswidget = lain.widgets.abase({
 		 widget:set_markup(markup("#e54c62", artist) .. " - " .. markup("#b2b2b2", title) .. " ")
 	  end
 })
-]]
 
 -- Spacer
 spacer = wibox.widget.textbox(" ")
@@ -466,9 +465,10 @@ for s = 1, screen.count() do
    -- Widgets that are aligned to the upper right
    local right_layout = wibox.layout.fixed.horizontal()
    right_layout:add(redshift_widget)
-   right_layout:add(mpdicon)
-   right_layout:add(mpdwidget)
-   -- right_layout:add(cmuswidget)
+   --right_layout:add(mpdicon)
+   --right_layout:add(mpdwidget)
+   right_layout:add(cmusicon)	  
+   right_layout:add(cmuswidget)
    right_layout:add(netssid)
    --right_layout:add(netdownicon)
    --right_layout:add(netdowninfo)
@@ -636,14 +636,13 @@ globalkeys = awful.util.table.join(
    awful.key({ }, "XF86AudioLowerVolume",    function () awful.util.spawn("amixer set Master 2%-") end),
    awful.key({ }, "XF86AudioMute", function () awful.util.spawn("amixer set Master toggle") end),
 
-   -- cmus
-   --[[
+   -- cmus   
    awful.key({ }, "XF86AudioPlay",    function () awful.util.spawn("cmus-remote -u") end),
    awful.key({ }, "XF86AudioPrev",    function () awful.util.spawn("cmus-remote -r") end),
    awful.key({ }, "XF86AudioNext",    function () awful.util.spawn("cmus-remote -n") end),
-   ]]
    
    -- mpd
+   --[[
    awful.key({ }, "XF86AudioPlay",
 	  function ()		 
 		 awful.util.spawn("mpc toggle")
@@ -659,7 +658,7 @@ globalkeys = awful.util.table.join(
 		 awful.util.spawn("mpc next")
 		 mpdwidget.update()
    end),
-
+   ]]
    -- end
 
    -- Add xrandr module to deal with multiple monitor user 'Display' key
