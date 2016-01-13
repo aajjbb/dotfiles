@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*- <15/02/11 17:31:55 /home/morpho/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <15/03/27 14:47:12 /home/morpho/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
@@ -24,4 +24,19 @@
  (["scp" nil "sftp" nil nil]
   nil)
  (["sftp" "jeferson" "server" nil nil]
-  nil))
+  ("uname" "Linux 3.5.0-54-generic")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("remote-shell" "/bin/sh")
+  ("locale" "LC_ALL=en_US.utf8")
+  ("file-exists" "test -e")
+  ("~" "/home/jeferson")
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("readlink" "\\readlink")
+  ("stat" "\\stat")
+  ("id" "/usr/bin/id")
+  ("gid-integer" 1002)
+  ("gid-string" "jeferson")))

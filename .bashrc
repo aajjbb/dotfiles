@@ -68,3 +68,5 @@ PATH="`ruby -e 'print Gem.user_dir'`/bin:$PATH"
 # prompt
 PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[92m\]\w\[\e[m\] \[\e[35m\]\$\[\e[m\] '
 
+source /home/morpho/.rvm/scripts/rvm
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

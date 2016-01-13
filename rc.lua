@@ -21,6 +21,7 @@ local beautiful = require("beautiful")
 local naughty   = require("naughty")
 local lain      = require("lain")
 local rev       = require("revelation")
+local cyclefocus = require("cyclefocus")
 
 -- }}}
 
@@ -193,12 +194,11 @@ lain.widgets.calendar:attach(mytextclock, {
 })
 
 -- Weather
-weathericon = wibox.widget.imagebox(beautiful.widget_weather)
-yawn = lain.widgets.yawn(444148, {
-    settings = function()
-        widget:set_markup(markup("#eca4c4", forecast:lower() .. " @ " .. units .. "°C "))
-    end
-})
+--yawn = lain.widgets.yawn(444148, {
+--    settings = function()
+--        widget:set_markup(markup("#eca4c4", forecast:lower() .. " @ " .. units .. "°C "))
+--    end
+--})
 
 -- / fs
 fsicon = wibox.widget.imagebox(beautiful.widget_fs)
@@ -213,7 +213,7 @@ cpuicon = wibox.widget.imagebox()
 cpuicon:set_image(beautiful.widget_cpu)
 cpuwidget = lain.widgets.cpu({
     settings = function()
-        widget:set_markup(markup("#e33a6e", cpu_now.usage .. "% "))
+        widget:set_markup(markup("#e33a6e", string.format("%2d", cpu_now.usage) .. "% "))
     end
 })
 
@@ -273,14 +273,9 @@ netupicon = wibox.widget.imagebox(beautiful.widget_netup)
 
 netupinfo = lain.widgets.net({
     settings = function()
-        if iface ~= "network off" and
-           string.match(yawn.widget._layout.text, "N/A")
-        then
-		   --yawn.fetch_weather()
-        end
 
         widget:set_markup(markup("#e54c62", " " .. net_now.sent .. " "))
-		netssid:set_markup(markup("#cc66ff", " " .. net_now.ssid .. " "))
+		--netssid:set_markup(markup("#cc66ff", " " .. net_now.ssid .. " "))
         netdowninfo:set_markup(markup("#87af5f", " " .. net_now.received .. " "))
     end
 })
@@ -293,24 +288,6 @@ memwidget = lain.widgets.mem({
     end
 })
 
--- cmus widget
-cmusicon = wibox.widget.imagebox()
-cmuswidget = wibox.widget.textbox()
-cmuswidget = lain.widgets.cmus({
-	  settings = function()
-		 if cmus_now.state == "playing" then
-			artist = cmus_now.artist
-			title = cmus_now.title
-			widget:set_markup(markup("#e54c62", artist) .. ", " .. markup("#b2b2b2", title) .. " ")
-			cmusicon:set_image(beautiful.widget_note_on)
-		 elseif cmus_now.state == "paused" then
-			widget:set_markup(markup("#e54c62", ""))
-			cmusicon:set_image(beautiful.widget_note)
-		 else
-			cmusicon = wibox.widget.imagebox()
-		 end
-	  end
-})
 
 -- Spacer
 spacer = wibox.widget.textbox(" ")
@@ -399,9 +376,6 @@ for s = 1, screen.count() do
 
     -- Widgets that are aligned to the upper right
     local right_layout = wibox.layout.fixed.horizontal()
-	right_layout:add(cmuswidget)
-	right_layout:add(cmusicon)
-	--right_layout:add(netssid)
     right_layout:add(netdownicon)
 	right_layout:add(netdowninfo)
 	right_layout:add(netupicon)
@@ -416,6 +390,7 @@ for s = 1, screen.count() do
 	right_layout:add(fswidget)
     right_layout:add(tempicon)
 	right_layout:add(tempwidget)
+	--right_layout:add(yawn.icon)
     --right_layout:add(baticon)
     --right_layout:add(batwidget)
     right_layout:add(clockicon)
@@ -430,7 +405,7 @@ for s = 1, screen.count() do
     mywibox[s]:set_widget(layout)
 
     -- Create the bottom wibox
-    mybottomwibox[s] = awful.wibox({ position = "bottom", screen = s, border_width = 0, height = 24 })
+    mybottomwibox[s] = awful.wibox({ position = "bottom", screen = s, border_width = 1, height = 24 })
     
     -- Widgets that are aligned to the bottom left
     bottom_left_layout = wibox.layout.fixed.horizontal()
@@ -467,6 +442,16 @@ globalkeys = awful.util.table.join(
    -- Revelation 
    awful.key({modkey}, "e", rev),
 
+   -- Cyclefocus
+   awful.key({ modkey }, "Tab",
+	  function ()
+		 cyclefocus.cycle(1, {modifier="Super_L"})
+	  end
+   ),
+
+   awful.key({ modkey, "Shift" }, "Tab", function(c)
+		 cyclefocus.cycle(-1, {modifier="Super_L"})
+   end),
 
     -- Tag browsing
     awful.key({ modkey }, "Left",   awful.tag.viewprev       ),
@@ -712,7 +697,8 @@ awful.rules.rules = {
 	
     { rule = { class = "other" },
         properties = { tag = tags[1][9] } },
-
+	{ rule = { class = "XTerm" },
+	    properties = { opacity = 0.95  } },
 	
     { rule = { class = "Gimp", role = "gimp-image-window" },
           properties = { maximized_horizontal = true,

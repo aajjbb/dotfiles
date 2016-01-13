@@ -11,19 +11,25 @@ my $root = $ENV{'HOME'};
 my $current_dir = $ENV{'PWD'};
 
 my %files = (
-	"awesome" => $root . "/.config",
-	"irc.conf" => $root . "/.weechat",
-	"weechat.conf" => $root . "/.weechat",
+	#awesome
+	"freedesktop" => $root . "/.config/awesome",
+	"scratchdrop" => $root . "/.config/awesome",
+	"starbreaker" => $root . "/.config/awesome/themes",
+	
+	"menugen.lua" => $root . "/.config/awesome",
+	"rc.lua"      => $root . "/.config/awesome",
+	"widgets.lua" => $root . "/.config/awesome",
+	"xrandr.lua"  => $root . "/.config/awesome",
+
+	#general
 	".bash_profile" => $root,
 	".bashrc" => $root,
 	".emacs" => $root,
-	".emacs.d" => $root,
 	".gitconfig" => $root,
 	".tmux.conf" => $root,
 	".vimrc" => $root,
-	".Xdefaults" => $root,
-	".Xresources" => $root,	
-	".tmux" => $root
+	".Xresources" => $root,
+    ".Xdefaults" => $root,	
 );
 
 =doc

@@ -30,7 +30,9 @@ urxvt*perl-ext-common: default, matcher, clipboard
 !xterm configs
 xterm*termName: xterm-256color
 xterm*locale: true
-	
+xterm*metaSendsEscape: true
+xterm*eightBitInput: false
+
 !fix clipboard issue
 
 xterm*selectToClipboard: true
@@ -49,10 +51,14 @@ xterm*secondaryScroll:    true
 
 xterm.iso14755: False 
 
-xterm*wideFont: TakaoExMincho	
-xterm*font: xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true:hinting=true
-xterm*boldFont: xft:Bitstream Vera Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
-xterm*faceName: xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true:hinting=true
+xterm*wideFont: TakaoExMincho
+xterm*font: xft:Droid Sans Mono:pixelsize=12:antialias=true:hinting=true
+xterm*boldFont: xft:Droid Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
+xterm*faceName: xft:Droid Sans Mono:pixelsize=12:antialias=true:hinting=true
+
+!xterm*font: xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true:hinting=true
+!xterm*boldFont: xft:Bitstream Vera Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
+!xterm*faceName: xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true:hinting=true
 
 !! fonts bank
 !!URxvt*font: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
