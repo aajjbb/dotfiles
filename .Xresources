@@ -37,31 +37,67 @@ xterm*faceName: MesloLGM :pixelsize=12:antialias=true:hinting=true
 	
 !general settings
 
-*.background:               #1b1b1b
-*.foreground:               #FFFFFF
+!*.background:               #1b1b1b
+!*.foreground:               #FFFFFF
 	
 !special
 !Black
-*color0:                        #3D3D3D
-*color8:                        #4D4D4D 
+!*color0:                        #3D3D3D
+!*color8:                        #4D4D4D 
 !Red
-*color1:                        #6673BF
-*color9:                        #899AFF 
+!*color1:                        #6673BF
+!*color9:                        #899AFF 
 !Green
-*color2:                        #3EA290
-*color10:                       #52AD91
+!*color2:                        #3EA290
+!*color10:                       #52AD91
 !Yellow
-*color3:                        #B0EAD9
-*color11:                       #98C9BB
+!*color3:                        #B0EAD9
+!*color11:                       #98C9BB
 !Blue
-*color4:                        #31658C
-*color12:                       #477AB3
+!*color4:                        #31658C
+!*color12:                       #477AB3
 !Magenta
-*color5:                        #596196
-*color13:                       #7882BF
+!*color5:                        #596196
+!*color13:                       #7882BF
 !Cyan
-*color6:                        #8292B2
-*color14:                       #95A7CC
+!*color6:                        #8292B2
+!*color14:                       #95A7CC
 !White
-*color7:                        #C8CACC
-*color15:                       #EDEFF2      
+!*color7:                        #C8CACC
+!*color15:                       #EDEFF2      
+
+*.foreground:   #babcc8
+*.background:   #111625
+*.cursorColor:  #babcc8
+
+! black
+*.color0:       #000000
+*.color8:       #555555
+
+! red
+*.color1:       #dd5030
+*.color9:       #e17f64
+
+! green
+*.color2:       #6cbd3a
+*.color10:      #7fba5a
+
+! yellow
+*.color3:       #e6d72d
+*.color11:      #ffff55
+
+! blue
+*.color4:       #2670fc
+*.color12:      #5d8ff3
+
+! magenta
+*.color5:       #f258b9
+*.color13:      #fa83c0
+
+! cyan
+*.color6:       #38b2da
+*.color14:      #78cee7
+
+! white
+*.color7:       #bbbbbb
+*.color15:      #ffffff
