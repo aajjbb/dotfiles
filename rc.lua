@@ -129,6 +129,7 @@ tags = {
 		layouts[1]
     }
 }
+
 for s = 1, screen.count() do
 -- Each screen has its own tag table.
    tags[s] = awful.tag(tags.names, s, tags.layout)
@@ -145,6 +146,7 @@ end
 
 -- {{{ Freedesktop Menu
 freedesktopmenu = require("menugen").build_menu()
+
 starbreakermenu = {
 	{ "Without Bloodshed", withoutbloodshed },
 	{ "The Blackened Phoenix", blackenedphoenix },
@@ -162,7 +164,8 @@ awesomemenu = {
     { "restart", awesome.restart },
     { "quit", awesome.quit }
 }
-mymainmenu = awful.menu.new({ items = {
+
+main_menu = awful.menu.new({ items = {
                                 { "starbreaker", starbreakermenu },
                                 { "web projects", webprojectmenu },
                                 { "music", music },
@@ -173,12 +176,20 @@ mymainmenu = awful.menu.new({ items = {
                                 { "web browser", browser },
                                 { "lightweight browser", browser2 },
                                 { "mail", mail },
-                                { "im", im },
                                 { "apps", freedesktopmenu },
                                 { "awesome", awesomemenu }
                             },
                             theme = { height = 16, width = 150 }})
 -- }}}
+
+main_menu_widget = wibox.widget.imagebox(beautiful.submenu_icon)
+
+main_menu_widget:buttons(awful.util.table.join(
+							awful.button({ }, 1, function (c)
+								  main_menu:toggle()
+							end)
+))
+
 
 -- {{{ Wibox
 markup = lain.util.markup
@@ -190,15 +201,14 @@ mytextclock = awful.widget.textclock(markup("#7788af", "%d %B %Y ") .. markup("#
 -- Calendar
 lain.widgets.calendar:attach(mytextclock, { 
     font_size = 10,
-    font = "Source Code Pro Medium" 
 })
 
 -- Weather
---yawn = lain.widgets.yawn(444148, {
---    settings = function()
---        widget:set_markup(markup("#eca4c4", forecast:lower() .. " @ " .. units .. "°C "))
---    end
---})
+weather_widget = lain.widgets.weather({
+      APPID = "478eda85868a0fa0f0f60e56f84f7583",
+      city_id = 3453837,
+      lang = "pt"
+})
 
 -- / fs
 fsicon = wibox.widget.imagebox(beautiful.widget_fs)
@@ -287,10 +297,6 @@ memwidget = lain.widgets.mem({
         widget:set_markup(markup("#e0da37", mem_now.used .. "M "))
     end
 })
-
-
--- Spacer
-spacer = wibox.widget.textbox(" ")
 
 -- }}}
 
@@ -390,12 +396,14 @@ for s = 1, screen.count() do
 	right_layout:add(fswidget)
     right_layout:add(tempicon)
 	right_layout:add(tempwidget)
-	--right_layout:add(yawn.icon)
+    right_layout:add(weather_widget)
+	right_layout:add(weather_widget.icon)
     --right_layout:add(baticon)
     --right_layout:add(batwidget)
     right_layout:add(clockicon)
     right_layout:add(mytextclock)
-
+    right_layout:add(main_menu_widget)
+	
     -- Now bring it all together (with the tasklist in the middle)
     local layout = wibox.layout.align.horizontal()
     layout:set_left(left_layout)
@@ -426,7 +434,7 @@ end
 
 -- {{{ Mouse Bindings
 root.buttons(awful.util.table.join(
-    awful.button({ }, 3, function () mymainmenu:toggle() end),
+    awful.button({ }, 3, function () main_menu:toggle() end),
     awful.button({ }, 4, awful.tag.viewnext),
     awful.button({ }, 5, awful.tag.viewprev)
 ))
@@ -443,11 +451,11 @@ globalkeys = awful.util.table.join(
    awful.key({modkey}, "e", rev),
 
    -- Cyclefocus
-   awful.key({ modkey }, "Tab",
-	  function ()
-		 cyclefocus.cycle(1, {modifier="Super_L"})
-	  end
-   ),
+   --awful.key({ modkey }, "Tab",
+   --function ()
+   --cyclefocus.cycle(1, {modifier="Super_L"})
+   --end
+   --),
 
    awful.key({ modkey, "Shift" }, "Tab", function(c)
 		 cyclefocus.cycle(-1, {modifier="Super_L"})
@@ -499,7 +507,7 @@ globalkeys = awful.util.table.join(
     -- Show Menu
     awful.key({ modkey }, "w",
         function ()
-            mymainmenu:show({ keygrabber = true })
+            main_menu:show({ keygrabber = true })
         end),
 
     -- Show/Hide Wibox
