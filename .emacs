@@ -148,6 +148,6 @@
 
 
 ;; remap RET
-(define-key key-translation-map (kbd "RET") (kbd "C-j"))
+;; (define-key key-translation-map (kbd "RET") (kbd "C-j"))
 
 ;;; .emacs ends here

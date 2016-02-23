@@ -66,38 +66,36 @@ xterm*faceName: MesloLGM :pixelsize=12:antialias=true:hinting=true
 !*color7:                        #C8CACC
 !*color15:                       #EDEFF2      
 
-*.foreground:   #babcc8
-*.background:   #111625
-*.cursorColor:  #babcc8
+*foreground: #DDCCBB
 
-! black
-*.color0:       #000000
-*.color8:       #555555
+! Brown BG
+!*background: #30251D
 
-! red
-*.color1:       #dd5030
-*.color9:       #e17f64
+! Grey BG
+*background: #151515
 
-! green
-*.color2:       #6cbd3a
-*.color10:      #7fba5a
 
-! yellow
-*.color3:       #e6d72d
-*.color11:      #ffff55
-
-! blue
-*.color4:       #2670fc
-*.color12:      #5d8ff3
-
-! magenta
-*.color5:       #f258b9
-*.color13:      #fa83c0
-
-! cyan
-*.color6:       #38b2da
-*.color14:      #78cee7
-
-! white
-*.color7:       #bbbbbb
-*.color15:      #ffffff
+!black
+*color0:     #393939
+*color8:     #AF875F
+!red
+*color1:     #BF1E2D
+*color9:     #E7212A
+!green
+*color2:     #9DBA3A
+*color10:    #A9C938
+!yellow
+*color3:     #F5B915
+*color11:    #F7D325
+!blue
+*color4:     #1CA1DB
+*color12:    #00AFDA
+!magenta
+*color5:     #652F90
+*color13:    #894E9F
+!cyan
+*color6:     #EA7D24
+*color14:    #F79321
+!white
+*color7:     #E7E8E9
+*color15:    #F3F3F4
