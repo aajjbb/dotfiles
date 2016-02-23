@@ -3,6 +3,8 @@
 use strict;
 use warnings;
 
+use File::Copy::Recursive qw(dircopy fcopy);
+
 use feature 'say';
 
 my $root = $ENV{'HOME'}; 
