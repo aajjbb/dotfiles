@@ -29,7 +29,9 @@ alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano PKGBUILD'
 alias caja='caja --no-desktop'
+
 alias lastupd='expac --timefmt="%Y-%m-%d %T" "%l\t%n" | sort | tail -300'
+alias rs="rsync --human-readable --archive --verbose --compress --progress"
 
 # ex - archive extractor
 # usage: ex <file>

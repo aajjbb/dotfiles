@@ -18,10 +18,15 @@ local awful     = require("awful")
 local wibox     = require("wibox")
 local beautiful = require("beautiful")
 local naughty   = require("naughty")
+
+-- External
 local drop      = require("scratchdrop")
 local lain      = require("lain")
 local rev       = require("awesome-revelation")
 local xrandr    = require("xrandr")
+
+-- Support to utf8 string sub, install with luautf8 with luarocks
+local utf8      = require 'lua-utf8'
 
 local lain_icons_dir = require("lain.helpers").icons_dir
 
@@ -211,8 +216,8 @@ mytextclock = awful.widget.textclock(markup("#7788af", "%d %B %Y ") .. markup("#
 
 -- Calendar
 lain.widgets.calendar:attach(mytextclock, { 
-                                font_size = 10
-         --                       font = "MesloLGM 9"
+                                font_size = 10,
+                                position = "top_right"         --                       font = "MesloLGM 9"
 })
 
 -- Weather
@@ -365,8 +370,8 @@ cmuswidget = lain.widgets.abase({
          artist = cmus_now.artist
          title  = cmus_now.title
          
-         if title:len() > 25 then
-            title = string.sub(title, 0, 25) .. " ..."
+         if utf8.len(title) > 25 then
+            title = utf8.sub(title, 0, 25) .. " ..."
          end
          
          widget:set_markup(markup("#e54c62", artist) .. " - " .. markup("#b2b2b2", title) .. " ")
