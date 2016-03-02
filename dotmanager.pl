@@ -20,7 +20,6 @@ my %files = (
     "xrandr.lua"  => $root . "/.config/awesome",
 
     #weechat
-    ".weechat/irc.conf" => $root,
     ".weechat/plugins.conf" => $root,
 
     #general
