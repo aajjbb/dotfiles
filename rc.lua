@@ -88,6 +88,7 @@ os.setlocale(os.getenv("LANG"))
 -- beautiful init
 beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/starbreaker/theme.lua")
 --beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/awesome-themes-3.5/dust/heme.lua")
+
 -- awesome-revelation init
 rev.init()
 
@@ -116,10 +117,9 @@ local layouts = {
    awful.layout.suit.max,
    awful.layout.suit.max.fullscreen,
    awful.layout.suit.tile.bottom,
-   awful.layout.suit.tile.left,
-   awful.layout.suit.fair,
    awful.layout.suit.floating,
-   lain.layout.uselesstile
+   lain.layout.uselesstile,
+   lain.layout.uselessfair
 }
 -- }}}
 
@@ -186,10 +186,13 @@ mymainmenu = awful.menu.new({ items = {
 
 -- Widgets
 
--- Redshift
+-- Menu buttom
 
-local rs_on = lain_icons_dir .. "/redshift/redshift_on.png"
-local rs_off = lain_icons_dir .. "/redshift/redshift_off.png"
+menu_buttom = wibox.widget.imagebox(beautiful.submenu_icon)
+menu_buttom:buttons(awful.util.table.join(
+                       awful.button({ }, 1, function () mymainmenu:toggle() end)))
+
+-- Redshift
 
 redshift = lain.widgets.contrib.redshift
 redshift_widget = wibox.widget.imagebox(rs_on)
@@ -197,6 +200,9 @@ redshift_widget = wibox.widget.imagebox(rs_on)
 redshift:attach(
    redshift_widget,
    function ()
+      local rs_on  = lain_icons_dir .. "/redshift/redshift_on.png"
+      local rs_off = lain_icons_dir .. "/redshift/redshift_off.png"
+
       if redshift:is_active() then
          redshift_widget:set_image(rs_on)
       else
@@ -208,8 +214,6 @@ redshift:attach(
 redshift_widget:buttons(awful.util.table.join(
                            awful.button({ }, 1, function () redshift:toggle() end)))
 
-
-
 -- Textclock
 clockicon   = wibox.widget.imagebox(beautiful.widget_clock)
 mytextclock = awful.widget.textclock(markup("#7788af", "%d %B %Y ") .. markup("#eee8d5", ">") .. markup("#de5e1e", " %I:%M %p "))
@@ -217,7 +221,8 @@ mytextclock = awful.widget.textclock(markup("#7788af", "%d %B %Y ") .. markup("#
 -- Calendar
 lain.widgets.calendar:attach(mytextclock, { 
                                 font_size = 10,
-                                position = "top_right"         --                       font = "MesloLGM 9"
+                                position = "top_right"
+                             -- font = "MesloLGM 9"
 })
 
 -- Weather
@@ -470,6 +475,7 @@ for s = 1, screen.count() do
 
    -- Widgets that are aligned to the upper right
    local right_layout = wibox.layout.fixed.horizontal()
+
    right_layout:add(redshift_widget)
    --right_layout:add(mpdicon)
    --right_layout:add(mpdwidget)
@@ -496,7 +502,8 @@ for s = 1, screen.count() do
    right_layout:add(batwidget)
    right_layout:add(clockicon)
    right_layout:add(mytextclock)
-
+   right_layout:add(menu_buttom)   
+   
    -- Now bring it all together (with the tasklist in the middle)
    local layout = wibox.layout.align.horizontal()
    layout:set_left(left_layout)
@@ -526,7 +533,7 @@ end
 
 -- {{{ Mouse Bindings
 root.buttons(awful.util.table.join(
-                awful.button({ }, 3, function () mymainmenu:toggle() end),
+                --awful.button({ }, 3, function () mymainmenu:toggle() end),
                 awful.button({ }, 4, awful.tag.viewnext),
                 awful.button({ }, 5, awful.tag.viewprev)
 ))

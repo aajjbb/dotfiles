@@ -84,5 +84,12 @@ theme.layout_fullscreen             = theme.confdir .. "/icons/fullscreen.png"
 theme.layout_magnifier              = theme.confdir .. "/icons/magnifier.png"
 theme.layout_floating               = theme.confdir .. "/icons/floating.png"
 
+theme.useless_gap_width = 5
+
+theme.lain_icons         = os.getenv("HOME") .. "/.config/awesome/lain/icons/layout/default/"
+theme.layout_termfair    = theme.lain_icons .. "termfairw.png"
+theme.layout_cascade     = theme.lain_icons .. "cascadew.png"
+theme.layout_cascadetile = theme.lain_icons .. "cascadetilew.png"
+theme.layout_centerwork  = theme.lain_icons .. "centerworkw.png"
 
 return theme

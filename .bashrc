@@ -32,6 +32,7 @@ alias caja='caja --no-desktop'
 
 alias lastupd='expac --timefmt="%Y-%m-%d %T" "%l\t%n" | sort | tail -300'
 alias rs="rsync --human-readable --archive --verbose --compress --progress"
+alias git="git-achievements"
 
 # ex - archive extractor
 # usage: ex <file>
@@ -88,6 +89,8 @@ source /home/aajjbb/.rvm/scripts/rvm
 
 source ~/.profile
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+PATH="$PATH:$HOME/Devel/git-achievements"
+export PATH
 
 screenfetch

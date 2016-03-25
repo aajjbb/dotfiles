@@ -128,6 +128,10 @@
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.tt2\\'" . web-mode))
 
+;; Defining js2 as main method for Javascript
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+
+
 ;; Adding flycheck support
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
@@ -141,7 +145,7 @@
 (setq scroll-step 1) ;; keyboard scroll one line at a time
 
 ;; C++ 11 in flycheck
-(add-hook 'c++-mode-hook (lambda () (setq flycheck-gcc-language-standard "c++11")))
+(add-hook 'c++-mode-hook (lambda () (setq-default flycheck-gcc-language-standard "c++11")))
 
 ;; uniquify
 (require 'uniquify)

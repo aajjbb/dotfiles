@@ -27,3 +27,7 @@
 	untracked = red bold
 [github]
 	user = aajjbb
+[achievement]
+	upload = true
+[credential]
+	helper = cache --timeout=3600000
