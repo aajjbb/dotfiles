@@ -29,6 +29,7 @@ alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano PKGBUILD'
 alias caja='caja --no-desktop'
+alias git="git-achievements"
 
 # ex - archive extractor
 # usage: ex <file>
@@ -69,6 +70,10 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[92m\]\w\[\e[m\] \[\e[35m\]\$\[\e[m\] '
 
 source /home/morpho/.rvm/scripts/rvm
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+PATH="$PATH:$HOME/Devel/git-achievements"
+
+export PATH
 
 screenfetch;

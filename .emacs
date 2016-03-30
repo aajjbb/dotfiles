@@ -20,7 +20,7 @@
 (add-to-list 'load-path "~/.emacs.d/plugins/")
 (set-frame-font "Droid Sans Mono Dotted 11")
 ;; (set-default-font "Bitstream Vera Sans Mono 11")
-    
+
 
 ;; block annoying home screen
 (custom-set-variables
@@ -101,9 +101,20 @@
 ;; remove scrool bar
 (toggle-scroll-bar -1)
 
+;; web-mode mapping
+(require 'web-mode)
+(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tt2\\'" . web-mode))
+
 ;; smooth scoll
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
-(setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling 
+(setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
 (setq scroll-step 1) ;; keyboard scroll one line at a time
 
 ;; match brackes etc
@@ -115,5 +126,6 @@
 ;; Add c++11 support to flychec
 (add-hook 'c++-mode-hook (lambda () (setq-default flycheck-gcc-language-standard "c++11")))
 (put 'erase-buffer 'disabled nil)
+
 
 ;;; .emacs ends here

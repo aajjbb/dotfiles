@@ -27,3 +27,5 @@
 	untracked = red bold
 [github]
 	user = aajjbb
+[achievement]
+	upload = true
