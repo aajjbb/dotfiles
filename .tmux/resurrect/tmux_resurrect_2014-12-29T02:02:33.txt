@@ -1,3 +1,0 @@
-pane	0	0	:bash	1	:*	0	:/home/aajjbb	1	bash	:
-window	0	0	1	:*	b0bd,194x50,0,0,0
-state	0	
