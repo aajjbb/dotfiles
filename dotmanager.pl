@@ -10,27 +10,28 @@ my $current_dir = $ENV{'PWD'};
 
 my %files = (
     #awesome
-    "freedesktop" => $root . "/.config/awesome",
-    "scratchdrop" => $root . "/.config/awesome",
-    "starbreaker" => $root . "/.config/awesome/themes",
+    "freedesktop"   => $root . "/.config/awesome",
+    "scratchdrop"   => $root . "/.config/awesome",
+    "starbreaker"   => $root . "/.config/awesome/themes",
     
-    "menugen.lua" => $root . "/.config/awesome",
-    "rc.lua"      => $root . "/.config/awesome",
-    "widgets.lua" => $root . "/.config/awesome",
-    "xrandr.lua"  => $root . "/.config/awesome",
+    "menugen.lua"   => $root . "/.config/awesome",
+    "rc.lua"        => $root . "/.config/awesome",
+    "widgets.lua"   => $root . "/.config/awesome",
+    "xrandr.lua"    => $root . "/.config/awesome",
 
     #weechat
-    ".weechat/plugins.conf" => $root,
-
+    "plugins.conf"  => $root . "/.weechat",
+    "irc.conf"      => $root . "/.weechat", 
+    
     #general
     ".bash_profile" => $root,
-    ".bashrc" => $root,
-    ".emacs" => $root,
-    ".gitconfig" => $root,
-    ".tmux.conf" => $root,
-    ".vimrc" => $root,
-    ".xbindkeysrc" => $root,	
-    ".Xresources" => $root,	
+    ".bashrc"       => $root,
+    ".emacs"        => $root,
+    ".gitconfig"    => $root,
+    ".tmux.conf"    => $root,
+    ".vimrc"        => $root,
+    ".xbindkeysrc"  => $root,	
+    ".Xresources"   => $root,	
 );
 
 =doc

@@ -119,7 +119,7 @@ local layouts = {
    awful.layout.suit.tile.bottom,
    awful.layout.suit.floating,
    lain.layout.uselesstile,
-   lain.layout.uselessfair
+   lain.layout.uselessfair,
 }
 -- }}}
 
@@ -222,7 +222,7 @@ mytextclock = awful.widget.textclock(markup("#7788af", "%d %B %Y ") .. markup("#
 lain.widgets.calendar:attach(mytextclock, { 
                                 font_size = 10,
                                 position = "top_right"
-                             -- font = "MesloLGM 9"
+                                -- font = "MesloLGM 9"
 })
 
 -- Weather
@@ -809,6 +809,7 @@ awful.rules.rules = {
 
 -- {{{ Signals
 -- signal function to execute when a new client appears.
+
 client.connect_signal("manage", function (c, startup)
                          -- enable sloppy focus
                          c:connect_signal("mouse::enter", function(c)
