@@ -92,6 +92,10 @@ beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/starbreaker/theme.l
 -- awesome-revelation init
 rev.init()
 
+
+--
+
+
 -- common
 markup     = lain.util.markup
 modkey     = "Mod4"
@@ -151,11 +155,50 @@ end
 -- }}}
 
 -- {{{ Wallpaper
-if beautiful.wallpaper then
-   for s = 1, screen.count() do
-      gears.wallpaper.maximized(beautiful.wallpaper, s, true)
-   end
+
+wp_index = 1
+wp_timeout  = 10
+wp_path = os.getenv("HOME") .. "/.config/awesome/themes/starbreaker/"
+wp_files = { "1.jpg",
+             "2.jpg",
+             "3.jpg",
+             "4.jpg",
+             "5.jpg",
+             "6.jpg",
+             "7.jpg",
+             "8.jpg",
+             "9.jpg",
+             "10.jpg",
+             "11.jpg",
+             "12.jpg",
+             "13.jpg"
+}
+
+for s = 1, screen.count() do
+   -- Random Wallpaper
+   -- configuration - edit to your liking
+   
+   -- setup the timer
+   wp_timer = timer { timeout = wp_timeout }
+   wp_timer:connect_signal("timeout", function()                           
+                              -- set wallpaper to current index
+                              gears.wallpaper.maximized(wp_path .. wp_files[wp_index] , s, true)
+                              
+                              -- stop the timer (we don't need multiple instances running at the same time)
+                              wp_timer:stop()
+                              
+                              -- get next random index
+                              wp_index = math.random( 1, #wp_files)
+                              
+                              --restart the timer
+                              wp_timer.timeout = wp_timeout
+                              wp_timer:start()
+   end)
 end
+-- initial start when rc.lua is first run
+--gears.wallpaper.maximized(beautiful.wallpaper, s, true)
+wp_timer:start()
+
 -- }}}
 
 -- {{{ Freedesktop Menu
@@ -673,9 +716,9 @@ globalkeys = awful.util.table.join(
       end),
    ]]
    -- end
-   
+      
    -- Add xrandr module to deal with multiple monitor user 'Display' key
-
+      
    awful.key({}, "XF86WWW", function() xrandr.xrandr() end),
 
    -- Copy to clipboard
@@ -911,4 +954,5 @@ spawn_once("xterm -title term  -e tmux -S /tmp/pair", "term", tags[1][3])
 spawn_once("xterm -title chat  -e weechat", "chat", tags[1][4])
 spawn_once("xterm -title music -e cmus", "music", tags[1][5])
 spawn_once("nm-applet", "other", tags[1][6])
+spawn_once("compton --config " .. os.getenv("HOME") .. ".compton.conf", "other", tags[1][6])
 --spawn_once("xterm -name doc", "doc", tags[1][4])

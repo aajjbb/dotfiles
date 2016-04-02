@@ -31,7 +31,8 @@ my %files = (
     ".tmux.conf"    => $root,
     ".vimrc"        => $root,
     ".xbindkeysrc"  => $root,	
-    ".Xresources"   => $root,	
+    ".Xresources"   => $root,
+    ".compton.conf" => $root,	
 );
 
 =doc
