@@ -1,3 +1,5 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!Xft
 !Xft.dpi: 96
 Xft.antialias: true
 Xft.hinting: true
@@ -5,13 +7,15 @@ Xft.rgba: rgb
 !Xft.autohint: false
 Xft.hintstyle: hintslight
 !Xft.lcdfilter: lcddefault
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-!xterm configs
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!xterm
 xterm*utf8: 1
 xterm*termName: xterm-256color
 xterm*locale: true
 xterm*metaSendsEscape: true
-xterm*eightBitInput: false	
+xterm*eightBitInput: false
 !fix clipboard issue
 
 xterm*selectToClipboard: true
@@ -34,7 +38,40 @@ xterm*faceNameDoublesize: xft:vlgothic :style=Regular :pixelsize=12
 xterm*font: MesloLGM :pixelsize=13:antialias=true:hinting=true
 xterm*boldFont: MesloLGM :bold:pixelsize=12:antialias=true:hinting=true
 xterm*faceName: MesloLGM :pixelsize=12:antialias=true:hinting=true
-	
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!urxvt
+urxvt*termName: rxvt-unicode
+urxvt*saveLines: 9000
+
+urxvt.scrollBar: false
+urxvt.borderLess: false
+
+urxvt.letterSpace: -2
+urxvt*font: xft:MesloLGM:pixelsize=11.5:antialias=true:hinting=true
+
+urxvt*loginShell:         true
+urxvt*scrollBar:         false
+urxvt*secondaryScroll:    true
+
+!urxvt.keysym.Shift-Control-V: perl:clipboard:paste 
+urxvt.iso14755: False
+
+urxvt.perl-ext:
+urxvt.perl-ext-common:
+
+!Make transparency
+urxvt*transparent: true
+urxvt*shading: 10
+
+!Home-End keys
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+
 !general settings
 
 !*.background:               #1b1b1b

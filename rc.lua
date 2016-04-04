@@ -100,7 +100,7 @@ rev.init()
 markup     = lain.util.markup
 modkey     = "Mod4"
 altkey     = "Mod1"
-terminal   = "xterm" or "urxvtc"
+terminal   = "urxvtc" or "xterm"
 editor     = "emacs" or "vim"
 editor_cmd = terminal .. " -e " .. editor .. " -nw "
 
@@ -148,6 +148,7 @@ tags = {
       layouts[1]
    }
 }
+
 for s = 1, screen.count() do
    -- Each screen has its own tag table.
    tags[s] = awful.tag(tags.names, s, tags.layout)
@@ -315,7 +316,7 @@ tempwidget = lain.widgets.temp({
 -- Battery
 baticon = wibox.widget.imagebox(beautiful.widget_batt)
 batwidget = lain.widgets.bat({
-      timeout = 0.1,
+      timeout = 50,
       battery = "BAT1",
       notify = "on",
       
@@ -354,6 +355,7 @@ netdownicon = wibox.widget.imagebox(beautiful.widget_netdown)
 netdowninfo = wibox.widget.textbox()
 
 netupicon = wibox.widget.imagebox(beautiful.widget_netup)
+--[[
 netupinfo = lain.widgets.net({
       settings = function()
          file_helper = io.popen("iwgetid -r")
@@ -368,6 +370,8 @@ netupinfo = lain.widgets.net({
          netdowninfo:set_markup(markup("#87af5f", net_now.received .. " "))
       end
 })
+]]
+--
 netssid:buttons(awful.util.table.join(
                    awful.button({ }, 1, function () awful.util.spawn("nm-applet") end)
 ))
@@ -548,12 +552,14 @@ for s = 1, screen.count() do
    right_layout:add(menu_buttom)   
    
    -- Now bring it all together (with the tasklist in the middle)
-   local layout = wibox.layout.align.horizontal()
-   layout:set_left(left_layout)
+   local layout_top = wibox.layout.align.horizontal()
+   layout_top:set_left(left_layout)
    --layout:set_middle(mytasklist[s])
-   layout:set_right(right_layout)
+   layout_top:set_right(right_layout)
 
-   mywibox[s]:set_widget(layout)
+   mywibox[s]:set_widget(layout_top)
+
+   --Layout from bottom wibox
 
    
    -- Widgets that are aligned to the bottom left
@@ -947,12 +953,16 @@ end
 -- }}}
 
 awful.util.spawn_with_shell("xrdb -merge ~/.Xresources")
+awful.util.spawn_with_shell("urxvtd")
 
 --spawn_once("google-chrome-stable -title web", "web", tags[1][1])
+
+spawn_once("compton", "", tags[1][1])
+
 spawn_once("emacs -title emacs", "emacs", tags[1][2])
-spawn_once("xterm -title term  -e tmux -S /tmp/pair", "term", tags[1][3])
-spawn_once("xterm -title chat  -e weechat", "chat", tags[1][4])
-spawn_once("xterm -title music -e cmus", "music", tags[1][5])
+spawn_once("urxvtc -title term  -e tmux -S /tmp/pair", "term", tags[1][3])
+spawn_once("urxvtc -title chat  -e weechat", "chat", tags[1][4])
+spawn_once("urxvtc -title music -e cmus", "music", tags[1][5])
 spawn_once("nm-applet", "other", tags[1][6])
-spawn_once("compton --config " .. os.getenv("HOME") .. ".compton.conf", "other", tags[1][6])
+
 --spawn_once("xterm -name doc", "doc", tags[1][4])
