@@ -1,18 +1,21 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!Xft
 !Xft.dpi: 96
-!Xft.antialias: true
-!Xft.hinting: true
-!Xft.rgba: rgb
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
 !Xft.autohint: false
-!Xft.hintstyle: hintslight
+Xft.hintstyle: hintslight
 !Xft.lcdfilter: lcddefault
-! grassland by bohoomil
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-
-!xterm configs
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!xterm
 xterm*utf8: 1
 xterm*termName: xterm-256color
 xterm*locale: true
-	
+xterm*metaSendsEscape: true
+xterm*eightBitInput: false
 !fix clipboard issue
 
 xterm*selectToClipboard: true
@@ -31,56 +34,105 @@ xterm*secondaryScroll:    true
 
 xterm.iso14755: False 
 
-xterm*faceNameDoublesize: xft:Sazanami Mincho:style=Regular :pixelsize=12
-xterm*font: xft:MesloLGM :pixelsize=13:antialias=true:hinting=true
-xterm*boldFont: xft:MesloLGM :bold:pixelsize=12:antialias=true:hinting=true
-xterm*faceName: xft:MesloLGM :pixelsize=12:antialias=true:hinting=true
-	
-!xterm*font: xft:Monospace :pixelsize=12:antialias=true:hinting=true	
-!xterm*boldFont: xft:Bitstream Vera Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
-!xterm*faceName: xft:Monospace :pixelsize=12:antialias=true:hinting=true
+xterm*faceNameDoublesize: xft:vlgothic :style=Regular :pixelsize=12
+xterm*font: MesloLGM :pixelsize=13:antialias=true:hinting=true
+xterm*boldFont: MesloLGM :bold:pixelsize=12:antialias=true:hinting=true
+xterm*faceName: MesloLGM :pixelsize=12:antialias=true:hinting=true
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-!! fonts bank
-!!URxvt*font: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
-!!URxvt*boldFont: xft:DejaVu Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
-!!URxvt*font: xft:Liberation Mono:pixelsize=13:antialias=true:hinting=true
-!!URxvt*boldFont: xft:Liberation Mono:bold:pixelsize=13:antialias=true:hinting=true
-!!URxvt*font: xft:terminus:pixelsize=15
-!!URxvt*boldFont: xft:terminus:bold:pixelsize=15
-!!URxvt*font:-*-courier-medium-r-normal-*-14-*-*-*-*-*-iso8859-1
-!!URxvt*boldFont:-*-courier-bold-r-normal-*-14-*-*-*-*-*-iso8859-1
-!!urxvt*font:        -xos4-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
-!!urxvt*boldFont:    -xos4-terminus-bold-*-*-*-12-*-*-*-*-*-*-*
-!!urxvt*font: terminus
-!!urxvt*boldFont: terminus-12
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!urxvt
+urxvt*termName: rxvt-unicode
+urxvt*saveLines: 9000
+
+urxvt.scrollBar: false
+urxvt.borderLess: false
+
+urxvt.letterSpace: -2
+urxvt*font: xft:MesloLGM:pixelsize=11.5:antialias=true:hinting=true
+
+urxvt*loginShell:         true
+urxvt*scrollBar:         false
+urxvt*secondaryScroll:    true
+
+!urxvt.keysym.Shift-Control-V: perl:clipboard:paste 
+urxvt.iso14755: False
+
+urxvt.perl-ext:
+urxvt.perl-ext-common:
+
+!Make transparency
+urxvt*transparent: true
+urxvt*shading: 10
+
+!Home-End keys
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
 
 !general settings
-!special
 
-*background:         #0C0C0C
-*foreground:         #AAAAB3
+!*.background:               #1b1b1b
+!*.foreground:               #FFFFFF
+	
+!special
+!Black
+!*color0:                        #3D3D3D
+!*color8:                        #4D4D4D 
+!Red
+!*color1:                        #6673BF
+!*color9:                        #899AFF 
+!Green
+!*color2:                        #3EA290
+!*color10:                       #52AD91
+!Yellow
+!*color3:                        #B0EAD9
+!*color11:                       #98C9BB
+!Blue
+!*color4:                        #31658C
+!*color12:                       #477AB3
+!Magenta
+!*color5:                        #596196
+!*color13:                       #7882BF
+!Cyan
+!*color6:                        #8292B2
+!*color14:                       #95A7CC
+!White
+!*color7:                        #C8CACC
+!*color15:                       #EDEFF2      
+
+*foreground: #DDCCBB
+
+! Brown BG
+!*background: #30251D
+
+! Grey BG
+*background: #151515
+
 
 !black
-*color0:     #252525
-*color8:     #454545
+*color0:     #393939
+*color8:     #AF875F
 !red
-*color1:     #EF6769
-*color9:     #FC7CA5
+*color1:     #BF1E2D
+*color9:     #E7212A
 !green
-*color2:     #A6E22E
-*color10:    #B6E354
+*color2:     #9DBA3A
+*color10:    #A9C938
 !yellow
-*color3:     #FD971F
-*color11:    #FD971F
+*color3:     #F5B915
+*color11:    #F7D325
 !blue
-*color4:     #6495ED
-*color12:    #87CEEB
+*color4:     #1CA1DB
+*color12:    #00AFDA
 !magenta
-*color5:     #DEB887
-*color13:    #996600
+*color5:     #652F90
+*color13:    #894E9F
 !cyan
-*color6:     #B0C4DE
-*color14:    #87CEEB
+*color6:     #EA7D24
+*color14:    #F79321
 !white
-*color7:     #DBDCDC
-*color15:    #FDFDFD
+*color7:     #E7E8E9
+*color15:    #F3F3F4

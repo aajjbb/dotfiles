@@ -127,5 +127,9 @@
 (add-hook 'c++-mode-hook (lambda () (setq-default flycheck-gcc-language-standard "c++11")))
 (put 'erase-buffer 'disabled nil)
 
+;; Emacs transparency
+(set-frame-parameter (selected-frame) 'alpha '(90 90))
+(add-to-list 'default-frame-alist '(alpha 90 90))
+
 
 ;;; .emacs ends here

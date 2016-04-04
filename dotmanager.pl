@@ -5,29 +5,30 @@ use warnings;
 
 use feature 'say';
 
-my $root = $ENV{'HOME'}; 
+my $root = $ENV{'HOME'};
 my $current_dir = $ENV{'PWD'};
 
 my %files = (
     #awesome
-    "freedesktop" => $root . "/.config/awesome",
-    "starbreaker" => $root . "/.config/awesome/themes",
-    
-    "menugen.lua" => $root . "/.config/awesome",
-    "rc.lua"      => $root . "/.config/awesome",
+    "freedesktop"     => $root . "/.config/awesome",
+    "starbreaker"     => $root . "/.config/awesome/themes",
+
+    "menugen.lua"     => $root . "/.config/awesome",
+    "rc.lua"          => $root . "/.config/awesome",
 
     #weechat
-    ".weechat/irc.conf" => $root,
-    ".weechat/plugins.conf" => $root,
+    "irc.conf"        => $root . "/.weechat",
+    "plugins.conf"    => $root . "/.weechat",
 
     #general
-    ".bash_profile" => $root,
-    ".bashrc" => $root,
-    ".emacs" => $root,
-    ".gitconfig" => $root,
-    ".tmux.conf" => $root,
-    ".vimrc" => $root,
-    ".Xresources" => $root,	
+    ".bash_profile"   => $root,
+    ".bashrc"         => $root,
+    ".emacs"          => $root,
+    ".gitconfig"      => $root,
+    ".tmux.conf"      => $root,
+    ".vimrc"          => $root,
+    ".Xresources"     => $root,
+    ".inputrc"        => $root,
 );
 
 =doc
@@ -42,7 +43,7 @@ sub install {
         print("Installing " . $key . " in " . $destiny_file . "\n");
 
         my $result = `cp -TR $source_file $destiny_file`;
-        
+
         if ($result) {
             say "Failed to install " . $key . " is probably being used by other application or it does not exists";
         }

@@ -80,7 +80,7 @@ rev.init()
 -- common
 modkey     = "Mod4"
 altkey     = "Mod1"
-terminal   = "xterm" or "urxvtc"
+terminal   = "urxvtc" or "xterm"
 editor     = "emacs" or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -137,11 +137,47 @@ end
 -- }}}
 
 -- {{{ Wallpaper
-if beautiful.wallpaper then
+
+wp_index = 1
+wp_timeout  = 10
+wp_path = os.getenv("HOME") .. "/.config/awesome/themes/starbreaker/"
+wp_files = { "1.jpg",
+             "2.jpg",
+             "3.jpg",
+             "4.jpg",
+             "5.jpg",
+}
+
+if beautiful.wallpaper then  
+   -- Random Wallpaper
+   -- configuration - edit to your liking
+   
+   -- setup the timer
+   
    for s = 1, screen.count() do
-      gears.wallpaper.maximized(beautiful.wallpaper, s, true)
+      wp_timer = timer { timeout = wp_timeout }
+      wp_timer:connect_signal("timeout", function()                           
+                                 -- set wallpaper to current index
+                                 gears.wallpaper.maximized(wp_path .. wp_files[wp_index] , s, true)
+                                 
+                                 -- stop the timer (we don't need multiple instances running at the same time)
+                                 wp_timer:stop()
+                                 
+                                 -- get next random index
+                                 wp_index = math.random( 1, #wp_files)
+                                 
+                                 --restart the timer
+                                 wp_timer.timeout = wp_timeout
+                                 wp_timer:start()
+                                 
+      end)
    end
 end
+
+-- initial start when rc.lua is first run
+-- gears.wallpaper.maximized(beautiful.wallpaper, s, true)
+wp_timer:start()
+
 -- }}}
 
 -- {{{ Freedesktop Menu
@@ -729,7 +765,7 @@ client.connect_signal("manage", function (c, startup)
                             awful.placement.no_offscreen(c)
                          end
 
-                         local titlebars_enabled = false
+                         local titlebars_enabled = true
                          if titlebars_enabled and (c.type == "normal" or c.type == "dialog") then
                             -- buttons for the titlebar
                             local buttons = awful.util.table.join(
@@ -808,6 +844,7 @@ end
 -- }}}
 
 awful.util.spawn_with_shell("xrdb -merge ~/.Xresources")
+awful.util.spawn_with_shell("compton")
 
 -- spawn_once("google-chrome-stable", "web", tags[1][4])
 -- spawn_once("emacs-24.3", "emacs", tags[1][2])
