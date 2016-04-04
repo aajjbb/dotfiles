@@ -150,6 +150,9 @@
 ;; uniquify
 (require 'uniquify)
 
+;; Emacs transparency
+(set-frame-parameter (selected-frame) 'alpha '(90 90))
+(add-to-list 'default-frame-alist '(alpha 90 90))
 
 ;; remap RET
 ;; (define-key key-translation-map (kbd "RET") (kbd "C-j"))
