@@ -28,7 +28,7 @@ my %files = (
     ".tmux.conf"      => $root,
     ".vimrc"          => $root,
     ".Xresources"     => $root,
-    ".inputrc"        => $root,
+    ".inputrc"        => $root
 );
 
 =doc

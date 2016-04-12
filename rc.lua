@@ -98,9 +98,11 @@ screenshot = "scrot -q 100 '%Y-%m-%d-%k-%M-%S_$wx$h.png' -e 'mv $f ~/Pictures/Sc
 
 local layouts = {
    awful.layout.suit.max,
+   awful.layout.suit.max.fullscreen,
    awful.layout.suit.tile.bottom,
-   awful.layout.suit.tile.magnifier,
-   lain.layout.uselessfair
+   awful.layout.suit.floating,
+   lain.layout.uselesstile,
+   lain.layout.uselessfair,
 }
 -- }}}
 
@@ -447,7 +449,7 @@ for s = 1, screen.count() do
    mywibox[s]:set_widget(layout)
 
    -- Create the bottom wibox
-   mybottomwibox[s] = awful.wibox({ position = "bottom", screen = s, border_width = 1, height = 24 })
+   mybottomwibox[s] = awful.wibox({ position = "bottom", screen = s, border_width = 0, height = 24 })
    
    -- Widgets that are aligned to the bottom left
    bottom_left_layout = wibox.layout.fixed.horizontal()
@@ -845,8 +847,9 @@ end
 
 awful.util.spawn_with_shell("xrdb -merge ~/.Xresources")
 awful.util.spawn_with_shell("compton")
+awful.util.spawn_with_shell("urxvtd")
 
 -- spawn_once("google-chrome-stable", "web", tags[1][4])
--- spawn_once("emacs-24.3", "emacs", tags[1][2])
+spawn_once("emacs", "emacs", tags[1][2])
 -- spawn_once("xterm -name other", "other", tags[1][9])
 

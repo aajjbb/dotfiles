@@ -1,4 +1,4 @@
-
+ 
 --[[
      Starbreaker Awesome WM config 0.1
      github.com/demifiend
@@ -16,8 +16,8 @@ theme.wallpaper                     = theme.confdir .. "/wallpaper-lain.jpg"
 theme.font                          = "MesloLGM 9"
 --theme.font                          = "DejaVu Sans Mono 8"
 --theme.taglist_font                =
-theme.menu_bg_normal                = "#073642"
-theme.menu_bg_focus                 = "#002b36"
+theme.menu_bg_normal                = "#002b36"
+theme.menu_bg_focus                 = "#5baec9"
 theme.bg_normal                     = "#000000"
 theme.bg_focus                      = "#033333"
 theme.bg_urgent                     = "#586e75"
