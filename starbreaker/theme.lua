@@ -1,8 +1,9 @@
- 
 --[[
      Starbreaker Awesome WM config 0.1
      github.com/demifiend
+
      Based on...
+
      Multicolor Awesome WM config 2.0 
      github.com/copycat-killer                              
 --]]
@@ -13,13 +14,14 @@ theme.confdir                       = os.getenv("HOME") .. "/.config/awesome/the
 theme.wallpaper                     = theme.confdir .. "/wallpaper-lain.jpg"
 
 --theme.font                          = "Source Code Pro Regular 8"
+--theme.font                          = "Mono One 9"
 theme.font                          = "MesloLGM 9"
 --theme.font                          = "DejaVu Sans Mono 8"
 --theme.taglist_font                =
-theme.menu_bg_normal                = "#002b36"
-theme.menu_bg_focus                 = "#5baec9"
+theme.menu_bg_normal                = "#073642"
+theme.menu_bg_focus                 = "#002b36"
 theme.bg_normal                     = "#000000"
-theme.bg_focus                      = "#033333"
+theme.bg_focus                      = "#2b2b2b"
 theme.bg_urgent                     = "#586e75"
 theme.fg_normal                     = "#eee8d5"
 theme.fg_focus                      = "#fdf6e3"
@@ -82,5 +84,12 @@ theme.layout_fullscreen             = theme.confdir .. "/icons/fullscreen.png"
 theme.layout_magnifier              = theme.confdir .. "/icons/magnifier.png"
 theme.layout_floating               = theme.confdir .. "/icons/floating.png"
 
+theme.useless_gap_width = 5
+
+theme.lain_icons         = os.getenv("HOME") .. "/.config/awesome/lain/icons/layout/default/"
+theme.layout_termfair    = theme.lain_icons .. "termfairw.png"
+theme.layout_cascade     = theme.lain_icons .. "cascadew.png"
+theme.layout_cascadetile = theme.lain_icons .. "cascadetilew.png"
+theme.layout_centerwork  = theme.lain_icons .. "centerworkw.png"
 
 return theme

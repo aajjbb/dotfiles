@@ -29,12 +29,17 @@ alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano PKGBUILD'
 alias caja='caja --no-desktop'
-alias git="git-achievements"
+
+alias lastupd='expac --timefmt="%Y-%m-%d %T" "%l\t%n" | sort | tail -300'
+alias rs="rsync --human-readable --archive --verbose --compress --progress"
+#alias git="git-achievements"
+alias aup="yaourt -Syua"
 
 # ex - archive extractor
 # usage: ex <file>
-ex () {
-	if [ -f $1 ] ; then
+ex ()
+{
+  if [ -f $1 ] ; then
     case $1 in
       *.tar.bz2)   tar xjf $1   ;;
       *.tar.gz)    tar xzf $1   ;;
@@ -54,26 +59,38 @@ ex () {
   fi
 }
 
-#vars
+# Unified history between terminals
+# Avoid duplicates
+export HISTCONTROL=ignoredups:erasedups  
+# When the shell exits, append to the history file instead of overwriting it
+shopt -s histappend
 
+# After each command, append to the history file and reread it
+export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
+#
+
+#vars
 export EDITOR='emacs'
 export TERM='xterm-256color'
-export JC_HOME='/home/morpho/Devel/JavaCard/JCDKLINUX222/java_card_kit-2_2_2'
-export JAVA_HOME='/usr/lib64/jvm/java-8-openjdk'
-
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 #PATH="`ruby -e 'print Gem.user_dir'`/bin:$PATH"
 
-# prompt
-PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[92m\]\w\[\e[m\] \[\e[35m\]\$\[\e[m\] '
+#prompt
+#PS1='\u@\h:\w\$ ' default
+PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[92m\]\w\[\e[m\] \[\e[15m\]\$\[\e[37m\] '
 
-source /home/morpho/.rvm/scripts/rvm
+#gitprompt config
+GIT_PROMPT_ONLY_IN_REPO=1
+GIT_PROMPT_THEME=Single_line_Ubuntu
+
+#source ~/.bash-git-prompt/gitprompt.sh
+source ~/.rvm/scripts/rvm
+source ~/perl5/perlbrew/etc/bashrc
 
 PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-PATH="$PATH:$HOME/Devel/git-achievements"
-
+#PATH="$PATH:$HOME/Devel/git-achievements"
 export PATH
 
-screenfetch;
+screenfetch

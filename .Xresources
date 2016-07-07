@@ -49,7 +49,7 @@ urxvt.scrollBar: false
 urxvt.borderLess: false
 
 urxvt.letterSpace: -2
-urxvt*font: xft:MesloLGM:pixelsize=11.5:antialias=true:hinting=true
+urxvt*font: MesloLGM :pixelsize=11.5 :antialias=true :hinting=true
 
 urxvt*loginShell:         true
 urxvt*scrollBar:         false

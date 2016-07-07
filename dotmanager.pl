@@ -16,19 +16,15 @@ my %files = (
     "menugen.lua"     => $root . "/.config/awesome",
     "rc.lua"          => $root . "/.config/awesome",
 
-    #weechat
-    "irc.conf"        => $root . "/.weechat",
-    "plugins.conf"    => $root . "/.weechat",
-
     #general
     ".bash_profile"   => $root,
     ".bashrc"         => $root,
     ".emacs"          => $root,
+	"xclip.el"		  => $root . "/.emacs.d",
     ".gitconfig"      => $root,
     ".tmux.conf"      => $root,
     ".vimrc"          => $root,
     ".Xresources"     => $root,
-    ".inputrc"        => $root
 );
 
 =doc

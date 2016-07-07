@@ -1,5 +1,5 @@
 [user]
-	email = aajjbb@aajjbb.com
+	email = jefersonlsiq@gmail.com
 	name = aajjbb
 	username = aajjbb
 [color]
@@ -29,3 +29,5 @@
 	user = aajjbb
 [achievement]
 	upload = true
+[credential]
+	helper = cache --timeout=3600000

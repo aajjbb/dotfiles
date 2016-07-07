@@ -1,8 +1,6 @@
-filetype plugin indent on
-
-set tabstop=4
-set shiftwidth=4
-set expandtab
+set ts=4
+set sw=2
+set noet
 
 set number
 
