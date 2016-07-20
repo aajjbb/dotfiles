@@ -20,7 +20,7 @@ local beautiful = require("beautiful")
 local naughty   = require("naughty")
 
 -- External
-local drop      = require("scratchdrop")
+--local drop      = require("scratchdrop")
 local lain      = require("lain")
 local rev       = require("awesome-revelation")
 local xrandr    = require("xrandr")
@@ -58,7 +58,7 @@ end
 
 -- {{{ Autostart applications
 
-function spawn_once(command, class, tag)
+local spawn_once = function(command, class, tag)
    -- create move callback
    local callback
    callback = function(c)
@@ -97,25 +97,21 @@ rev.init()
 
 
 -- common
-markup     = lain.util.markup
-modkey     = "Mod4"
-altkey     = "Mod1"
-terminal   = "urxvtc" or "xterm"
-editor     = "emacs" or "vim"
-editor_cmd = terminal .. " -e " .. editor .. " -nw "
+local markup     = lain.util.markup
+local modkey     = "Mod4"
+local altkey     = "Mod1"
+local terminal   = "urxvtc" or "xterm"
 
 -- user defined
-browser = "firefox"
-browser2 = "google-chrome-stable"
-gui_editor = "emacs"
-graphics = "pinta"
-mail = "thunderbird"
-word_processor = "libreoffice --writer"
-im = "pidgin"
-music = "cmus"
-video = "vlc"
-files = "caja --no-desktop"
-screenshot = "scrot -q 100 '%Y-%m-%d-%k-%M-%S_$wx$h.png' -e 'mv $f ~/Pictures/Screenshot/'"
+local browser = "xfirefox"
+local browser2 = "xgoogle-chrome-stable"
+local gui_editor = "emacs"
+local graphics = "pinta"
+local mail = "thunderbird"
+local word_processor = "libreoffice --writer"
+local music = "cmus"
+local files = "caja --no-desktop"
+local screenshot = "scrot -q 100 '%Y-%m-%d-%k-%M-%S_$wx$h.png' -e 'mv $f ~/Pictures/Screenshot/'"
 
 local layouts = {
    awful.layout.suit.max,
@@ -128,7 +124,7 @@ local layouts = {
 -- }}}
 
 -- {{{ Tags
-tags = {
+local tags = {
    names = { 
       "web",
       "emacs",
@@ -157,10 +153,10 @@ end
 
 -- {{{ Wallpaper
 
-wp_index = 1
-wp_timeout  = 10
-wp_path = os.getenv("HOME") .. "/.config/awesome/themes/starbreaker/"
-wp_files = { "1.jpg",
+local wp_index = 1
+local wp_timeout  = 40
+local wp_path = os.getenv("HOME") .. "/.config/awesome/themes/starbreaker/"
+local wp_files = { "1.jpg",
              "2.jpg",
              "3.jpg",
              "4.jpg",
@@ -195,16 +191,16 @@ for s = 1, screen.count() do
                               wp_timer.timeout = wp_timeout
                               wp_timer:start()
    end)
-end
+      end
 -- initial start when rc.lua is first run
---gears.wallpaper.maximized(beautiful.wallpaper, s, true)
+-- gears.wallpaper.maximized(beautiful.wallpaper, s, true)
 wp_timer:start()
-
+   
 -- }}}
 
 -- {{{ Freedesktop Menu
 freedesktopmenu = require("menugen").build_menu()
-awesomemenu = {
+local awesomemenu = {
    { "manual", terminal .. " -e man awesome" },
    { "config", gui_editor .. " ~/.config/awesome/rc.lua" },
    { ".Xresources", gui_editor .. " ~/.Xresources" },
@@ -212,7 +208,8 @@ awesomemenu = {
    { "restart", awesome.restart },
    { "quit", awesome.quit }
 }
-mymainmenu = awful.menu.new({ items = {
+
+local mymainmenu = awful.menu.new({ items = {
                                  { "music", music },
                                  { "terminal", terminal },
                                  { "files", files },
@@ -232,14 +229,15 @@ mymainmenu = awful.menu.new({ items = {
 
 -- Menu buttom
 
-menu_buttom = wibox.widget.imagebox(beautiful.submenu_icon)
+local menu_buttom = wibox.widget.imagebox(beautiful.submenu_icon)
+
 menu_buttom:buttons(awful.util.table.join(
                        awful.button({ }, 1, function () mymainmenu:toggle() end)))
 
 -- Redshift
 
-redshift = lain.widgets.contrib.redshift
-redshift_widget = wibox.widget.imagebox(rs_on)
+local redshift = lain.widgets.contrib.redshift
+local redshift_widget = wibox.widget.imagebox(rs_on)
 
 redshift:attach(
    redshift_widget,
@@ -259,8 +257,8 @@ redshift_widget:buttons(awful.util.table.join(
                            awful.button({ }, 1, function () redshift:toggle() end)))
 
 -- Textclock
-clockicon   = wibox.widget.imagebox(beautiful.widget_clock)
-mytextclock = awful.widget.textclock(markup("#7788af", "%d %B %Y ") .. markup("#eee8d5", ">") .. markup("#de5e1e", " %I:%M %p "))
+local clockicon   = wibox.widget.imagebox(beautiful.widget_clock)
+local mytextclock = awful.widget.textclock(markup("#7788af", "%d %B %Y ") .. markup("#eee8d5", ">") .. markup("#de5e1e", " %I:%M %p "))
 
 -- Calendar
 lain.widgets.calendar:attach(mytextclock, { 
@@ -270,19 +268,19 @@ lain.widgets.calendar:attach(mytextclock, {
 })
 
 -- Weather
-weather = lain.widgets.weather({
+local weather = lain.widgets.weather({
       city_id = 3453837,
       settings = function()
          if weather_now then
-            units = math.floor(weather_now["main"]["temp"])
-            widget:set_markup(markup("#eca4c4", " " .. units .. "°C "))
+            local units = math.floor(weather_now["main"]["temp"])
+            widget:set_markup(markup("#eca4c4", " " .. string.format("%2d", units) .. "°C "))
          end
       end
 })
 
 -- fs
-fsicon = wibox.widget.imagebox(beautiful.widget_fs)
-fswidget = lain.widgets.fs({
+local fsicon = wibox.widget.imagebox(beautiful.widget_fs)
+local fswidget = lain.widgets.fs({
       settings  = function()
          local script_response = io.popen('./.config/awesome/lain/scripts/dfs')
          local text = script_response:read('*all')
@@ -295,52 +293,49 @@ fswidget = lain.widgets.fs({
 })
 
 -- CPU
-cpuicon = wibox.widget.imagebox()
+local cpuicon = wibox.widget.imagebox()
 cpuicon:set_image(beautiful.widget_cpu)
-cpuwidget = lain.widgets.cpu({
+
+local cpuwidget = lain.widgets.cpu({
       settings = function()
-         widget:set_markup(markup("#e33a6e", cpu_now.usage .. "% "))
+         widget:set_markup(markup("#e33a6e", string.format("%3d", cpu_now.usage) .. "% "))
       end
 })
 
 -- Coretemp
-tempicon = wibox.widget.imagebox(beautiful.widget_temp)
-tempwidget = lain.widgets.temp({
+local tempicon = wibox.widget.imagebox(beautiful.widget_temp)
+local tempwidget = lain.widgets.temp({
       timeout = 0.5,
       tempfile = "/sys/class/thermal/thermal_zone1/temp", 
       settings = function()
-         widget:set_markup(markup("#f1af5f", coretemp_now .. "°C "))
+         widget:set_markup(markup("#f1af5f", string.format("%3.1f", coretemp_now) .. "°C "))
       end
 })
 
 -- Battery
-baticon = wibox.widget.imagebox(beautiful.widget_batt)
-batwidget = lain.widgets.bat({
-      timeout = 50,
-      battery = "BAT1",
+local baticon = wibox.widget.imagebox(beautiful.widget_batt)
+local batwidget = lain.widgets.bat({
+      timeout = 0.1,
+      batteries = {"BAT1"},
       notify = "on",
       
       settings = function()
-         if bat_now.perc == "N/A" then
-            bat_now.perc = "AC "
-         else
-            bat_now.perc = bat_now.perc .. "% "
-         end
-         widget:set_text(bat_now.perc .. bat_now.status .. " ")
+         widget:set_text(string.format("%3d", bat_now.perc) .. "% " .. bat_now.status .. " ")
       end
 })
 
 -- ALSA volume
-volicon = wibox.widget.imagebox(beautiful.widget_vol)
-volumewidget = lain.widgets.alsa({
+local volicon = wibox.widget.imagebox(beautiful.widget_vol)
+local volumewidget = lain.widgets.alsa({
       timeout = 0.2,
       channel = "Master",
       settings = function()
          if volume_now.status == "off" then
             volume_now.level = volume_now.level .. "M"
          end
-         
-         widget:set_markup(markup("#7493d2", volume_now.level .. "% "))
+         if volume_now.level then
+            widget:set_markup(markup("#7493d2", string.format("%2d", volume_now.level) .. "% "))
+         end 
       end
 })
 volumewidget:buttons(awful.util.table.join(
@@ -350,11 +345,11 @@ volumewidget:buttons(awful.util.table.join(
 ))
 
 -- Net
-netssid = wibox.widget.textbox()
-netdownicon = wibox.widget.imagebox(beautiful.widget_netdown)
-netdowninfo = wibox.widget.textbox()
+--netssid = wibox.widget.textbox()
+--netdownicon = wibox.widget.imagebox(beautiful.widget_netdown)
+--netdowninfo = wibox.widget.textbox()
 
-netupicon = wibox.widget.imagebox(beautiful.widget_netup)
+--netupicon = wibox.widget.imagebox(beautiful.widget_netup)
 --[[
 netupinfo = lain.widgets.net({
       settings = function()
@@ -372,15 +367,15 @@ netupinfo = lain.widgets.net({
 })
 ]]
 --
-netssid:buttons(awful.util.table.join(
-                   awful.button({ }, 1, function () awful.util.spawn("nm-applet") end)
-))
+--netssid:buttons(awful.util.table.join(
+--                   awful.button({ }, 1, function () awful.util.spawn("nm-applet") end)
+--))
 
 -- MEM
-memicon = wibox.widget.imagebox(beautiful.widget_mem)
-memwidget = lain.widgets.mem({
+local memicon = wibox.widget.imagebox(beautiful.widget_mem)
+local memwidget = lain.widgets.mem({
       settings = function()
-         widget:set_markup(markup("#e0da37", mem_now.used .. "M "))
+         widget:set_markup(markup("#e0da37", string.format("%4d", mem_now.used) .. "M "))
       end
 })
 
@@ -402,12 +397,12 @@ memwidget = lain.widgets.mem({
 ]]
 
 -- cmus widget
-cmusicon = wibox.widget.imagebox(beautiful.widget_note)
-cmuswidget = lain.widgets.abase({	  
+local cmusicon = wibox.widget.imagebox(beautiful.widget_note)
+local cmuswidget = lain.widgets.abase({	  
       cmd = "cmus-remote -Q",
       timeout = 2, 
       settings = function()
-         cmus_now = {
+         local cmus_now = {
             state   = "N/A",
             artist  = "N/A",
             title   = "N/A",
@@ -415,12 +410,12 @@ cmuswidget = lain.widgets.abase({
          }
 
          for w in string.gmatch(output, "(.-)tag") do
-            a, b = w:match("(%w+) (.-)\n")
+            local a, b = w:match("(%w+) (.-)\n")
             cmus_now[a] = b
          end
 
-         artist = cmus_now.artist
-         title  = cmus_now.title
+         local artist = cmus_now.artist
+         local title  = cmus_now.title
          
          if utf8.len(title) > 25 then
             title = utf8.sub(title, 0, 25) .. " ..."
@@ -431,20 +426,20 @@ cmuswidget = lain.widgets.abase({
 })
 
 -- Spacer
-spacer = wibox.widget.textbox(" ")
+local spacer = wibox.widget.textbox(" ")
 
 -- }}}
 
 -- {{{ Layout
 
 -- Create a wibox for each screen and add it
-mywibox = {}
-mybottomwibox = {}
+local mywibox = {}
+local mybottomwibox = {}
 
-mypromptbox = {}
-mylayoutbox = {}
-mytasklist  = {}
-mytaglist   = {}
+local mypromptbox = {}
+local mylayoutbox = {}
+local mytasklist  = {}
+local mytaglist   = {}
 
 mytaglist.buttons = awful.util.table.join(
    awful.button({ }, 1, awful.tag.viewonly),
@@ -517,12 +512,20 @@ for s = 1, screen.count() do
    
    -- Widgets that are aligned to the upper left
    local left_layout = wibox.layout.fixed.horizontal()
+   --left_layout:add(awful.titlebar.widget.iconwidget(c))
    left_layout:add(mytaglist[s])
    left_layout:add(mypromptbox[s])
 
    -- Widgets that are aligned to the upper right
    local right_layout = wibox.layout.fixed.horizontal()
 
+      -- Add system tray
+   if s == 1 then
+      right_layout:add(wibox.widget.systray())
+   end
+
+
+   
    right_layout:add(redshift_widget)
    --right_layout:add(mpdicon)
    --right_layout:add(mpdwidget)
@@ -563,15 +566,16 @@ for s = 1, screen.count() do
 
    
    -- Widgets that are aligned to the bottom left
-   bottom_left_layout = wibox.layout.fixed.horizontal()
-   if s == 1 then bottom_left_layout:add(wibox.widget.systray()) end
-
+   local bottom_left_layout = wibox.layout.fixed.horizontal()
+   
    -- Widgets that are aligned to the bottom right
-   bottom_right_layout = wibox.layout.fixed.horizontal()
+   local bottom_right_layout = wibox.layout.fixed.horizontal()
+
+   
    bottom_right_layout:add(mylayoutbox[s])
 
    -- Now bring it all together (with the tasklist in the middle)
-   bottom_layout = wibox.layout.align.horizontal()
+   local bottom_layout = wibox.layout.align.horizontal()
    bottom_layout:set_left(bottom_left_layout)
    bottom_layout:set_middle(mytasklist[s])
    bottom_layout:set_right(bottom_right_layout)
@@ -690,7 +694,7 @@ globalkeys = awful.util.table.join(
    awful.key({ modkey, "Shift"   }, "q",      awesome.quit),
 
    -- Dropdown terminal
-   awful.key({ modkey,	          }, "z",      function () drop(terminal) end),
+   --awful.key({ modkey,	          }, "z",      function () drop(terminal) end),
 
    -- ALSA volume control	
 
@@ -874,7 +878,7 @@ client.connect_signal("manage", function (c, startup)
                             awful.placement.no_offscreen(c)
                          end
 
-                         local titlebars_enabled = false
+                         local titlebars_enabled = true
                          if titlebars_enabled and (c.type == "normal" or c.type == "dialog") then
                             -- buttons for the titlebar
                             local buttons = awful.util.table.join(
@@ -953,16 +957,18 @@ end
 -- }}}
 
 awful.util.spawn_with_shell("xrdb -merge ~/.Xresources")
+
 awful.util.spawn_with_shell("urxvtd")
 
 --spawn_once("google-chrome-stable -title web", "web", tags[1][1])
 
 spawn_once("compton", "", tags[1][1])
 
-spawn_once("emacs -title emacs", "emacs", tags[1][2])
-spawn_once("urxvtc -title term  -e tmux -S /tmp/pair", "term", tags[1][3])
+--spawn_once("emacs -title emacs", "emacs", tags[1][2])
+--spawn_once("urxvtc -title term  -e tmux -S /tmp/pair", "term", tags[1][3])
 spawn_once("urxvtc -title chat  -e weechat", "chat", tags[1][4])
 spawn_once("urxvtc -title music -e cmus", "music", tags[1][5])
+
 spawn_once("nm-applet", "other", tags[1][6])
 
 --spawn_once("xterm -name doc", "doc", tags[1][4])

@@ -60,14 +60,14 @@
   #  Control + b:2 + Release
 
 
-"cmus-remote -u"
-  XF86AudioPlay
-"cmus-remote -r"
-  XF86AudioPrev
-"cmus-remote -n"
-  XF86AudioNext 
-"cmus-remote -u"
-  XF86AudioStop 
+#"cmus-remote -u"
+#  XF86AudioPlay
+#"cmus-remote -r"
+#  XF86AudioPrev
+#"cmus-remote -n"
+#  XF86AudioNext 
+#"cmus-remote -u"
+#  XF86AudioStop 
 
 # Play/Pause
 "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"

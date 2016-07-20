@@ -16,7 +16,6 @@ my %files = (
     
     "menugen.lua"   => $root . "/.config/awesome",
     "rc.lua"        => $root . "/.config/awesome",
-    "widgets.lua"   => $root . "/.config/awesome",
     "xrandr.lua"    => $root . "/.config/awesome",
 
     #weechat

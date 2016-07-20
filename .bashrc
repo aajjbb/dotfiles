@@ -32,7 +32,7 @@ alias caja='caja --no-desktop'
 
 alias lastupd='expac --timefmt="%Y-%m-%d %T" "%l\t%n" | sort | tail -300'
 alias rs="rsync --human-readable --archive --verbose --compress --progress"
-alias git="git-achievements"
+#alias git="git-achievements"
 alias aup="yaourt -Syua"
 
 # ex - archive extractor
