@@ -306,7 +306,7 @@ local cpuwidget = lain.widgets.cpu({
 local tempicon = wibox.widget.imagebox(beautiful.widget_temp)
 local tempwidget = lain.widgets.temp({
       timeout = 0.5,
-      tempfile = "/sys/class/thermal/thermal_zone1/temp", 
+      tempfile = "/sys/class/thermal/thermal_zone2/temp", 
       settings = function()
          widget:set_markup(markup("#f1af5f", string.format("%3.1f", coretemp_now) .. "°C "))
       end

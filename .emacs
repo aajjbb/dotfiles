@@ -154,11 +154,15 @@
 (setq scroll-step 1) ;; keyboard scroll one line at a time
 
 ;; Emacs transparency
-(set-frame-parameter (selected-frame) 'alpha '(90 90))
-(add-to-list 'default-frame-alist '(alpha 90 90))
+(set-frame-parameter (selected-frame) 'alpha '(92 92))
+(add-to-list 'default-frame-alist '(alpha 92 92))
 
 ;; Rainbow minor mode (show real colors of rgb colors
 (rainbow-mode 1)
+
+;; binds C-C <arrows> using smart-shift mode
+(when (require 'smart-shift nil 'noerror)
+  (global-smart-shift-mode 1))
 
 ;; remap RET
 ;; (define-key key-translation-map (kbd "RET") (kbd "C-j"))

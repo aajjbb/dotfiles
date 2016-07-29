@@ -34,7 +34,7 @@ alias lastupd='expac --timefmt="%Y-%m-%d %T" "%l\t%n" | sort | tail -300'
 alias rs="rsync --human-readable --archive --verbose --compress --progress"
 #alias git="git-achievements"
 alias aup="yaourt -Syua"
-
+alias mycpp="g++ -Wall -Wextra -pedantic -std=c++11 -O2 -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -fsanitize=address -fsanitize=undefined -fno-sanitize-recover -fstack-protector"
 # ex - archive extractor
 # usage: ex <file>
 ex ()
