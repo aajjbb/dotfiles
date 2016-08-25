@@ -31,7 +31,10 @@ my %files = (
     ".vimrc"        => $root,
     ".xbindkeysrc"  => $root,	
     ".Xresources"   => $root,
-    ".compton.conf" => $root,	
+    ".compton.conf" => $root,
+
+    ".lock.sh" => $root,
+    ".mysuspend.sh" => $root,	
 );
 
 =doc

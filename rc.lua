@@ -156,19 +156,11 @@ end
 local wp_index = 1
 local wp_timeout  = 40
 local wp_path = os.getenv("HOME") .. "/.config/awesome/themes/starbreaker/"
-local wp_files = { "1.jpg",
-             "2.jpg",
-             "3.jpg",
-             "4.jpg",
-             "5.jpg",
-             "6.jpg",
-             "7.jpg",
-             "8.jpg",
-             "9.jpg",
-             "10.jpg",
-             "11.jpg",
-             "12.jpg",
-             "13.jpg"
+local wp_files = {
+   "1.jpg",
+   "2.jpg",
+   "3.jpg",
+   "4.jpg"
 }
 
 for s = 1, screen.count() do
@@ -320,7 +312,7 @@ local batwidget = lain.widgets.bat({
       notify = "on",
       
       settings = function()
-         widget:set_text(string.format("%3d", bat_now.perc) .. "% " .. bat_now.status .. " ")
+         widget:set_text(bat_now.perc .. "% " .. bat_now.status .. " ")
       end
 })
 
@@ -331,11 +323,10 @@ local volumewidget = lain.widgets.alsa({
       channel = "Master",
       settings = function()
          if volume_now.status == "off" then
-            volume_now.level = volume_now.level .. "M"
-         end
-         if volume_now.level then
-            widget:set_markup(markup("#7493d2", string.format("%2d", volume_now.level) .. "% "))
-         end 
+            volume_now.level = "M"
+	 else
+            widget:set_markup(markup("#7493d2", volume_now.level .. "% "))            
+	 end
       end
 })
 volumewidget:buttons(awful.util.table.join(
