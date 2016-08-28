@@ -33,7 +33,7 @@ my %files = (
     ".Xresources"   => $root,
     ".compton.conf" => $root,
 
-    ".lock.sh" => $root,
+    ".lock.sh"      => $root,
     ".mysuspend.sh" => $root,	
 );
 
