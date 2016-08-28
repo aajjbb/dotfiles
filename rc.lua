@@ -948,7 +948,7 @@ end
 -- }}}
 
 awful.util.spawn_with_shell("xrdb -merge ~/.Xresources")
-
+awful.util.spawn_with_shell('xmodmap -e "keycode 118 ="')
 awful.util.spawn_with_shell("urxvtd")
 
 --spawn_once("google-chrome-stable -title web", "web", tags[1][1])
