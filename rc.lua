@@ -164,15 +164,6 @@ wp_files = { "1.jpg",
              "2.jpg",
              "3.jpg",
              "4.jpg",
-             "5.jpg",
-             "6.jpg",
-             "7.jpg",
-             "8.jpg",
-             "9.jpg",
-             "10.jpg",
-             "11.jpg",
-             "12.jpg",
-             "13.jpg"
 }
 
 for s = 1, screen.count() do
@@ -307,7 +298,7 @@ cpuwidget = lain.widgets.cpu({
 tempicon = wibox.widget.imagebox(beautiful.widget_temp)
 tempwidget = lain.widgets.temp({
       timeout = 0.5,
-      tempfile = "/sys/class/thermal/thermal_zone1/temp", 
+      tempfile = "/sys/class/thermal/thermal_zone0/temp", 
       settings = function()
          widget:set_markup(markup("#f1af5f", coretemp_now .. "°C "))
       end
@@ -936,14 +927,18 @@ end
 awful.util.spawn_with_shell("xrdb -merge ~/.Xresources")
 awful.util.spawn_with_shell("urxvtd")
 
+-- Disable "Insert" key
+awful.util.spawn_with_shell('xmodmap -e "keycode 118 ="')
+
 --spawn_once("google-chrome-stable -title web", "web", tags[1][1])
+
 
 spawn_once("compton", "", tags[1][1])
 
 spawn_once("emacs -title emacs", "emacs", tags[1][2])
 spawn_once("urxvtc -title term  -e tmux -S /tmp/pair", "term", tags[1][3])
-spawn_once("urxvtc -title chat  -e weechat", "chat", tags[1][4])
-spawn_once("urxvtc -title music -e cmus", "music", tags[1][5])
-spawn_once("nm-applet", "other", tags[1][6])
+--spawn_once("xterm -title chat  -e weechat", "chat", tags[1][4])
+--spawn_once("urxvtc -title music -e cmus", "music", tags[1][5])
+--spawn_once("nm-applet", "other", tags[1][6])
 
 --spawn_once("xterm -name doc", "doc", tags[1][4])

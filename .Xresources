@@ -49,13 +49,10 @@ urxvt.scrollBar: false
 urxvt.borderLess: false
 
 urxvt.letterSpace: -2
-urxvt*font: MesloLGM :pixelsize=11.5 :antialias=true :hinting=true
-
 urxvt*loginShell:         true
 urxvt*scrollBar:         false
 urxvt*secondaryScroll:    true
 
-!urxvt.keysym.Shift-Control-V: perl:clipboard:paste 
 urxvt.iso14755: False
 
 urxvt.perl-ext:
@@ -65,6 +62,9 @@ urxvt.perl-ext-common:
 urxvt*transparent: true
 urxvt*shading: 10
 
+!Font
+urxvt*font: xft: MesloLGM :pixelsize=12:antialias=true:hinting=true
+!urxvt.perl-ext-common: default,clipboard, selection-to-clipboard, tabbed
 !Home-End keys
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 

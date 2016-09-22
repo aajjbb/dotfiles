@@ -34,6 +34,7 @@ alias lastupd='expac --timefmt="%Y-%m-%d %T" "%l\t%n" | sort | tail -300'
 alias rs="rsync --human-readable --archive --verbose --compress --progress"
 #alias git="git-achievements"
 alias aup="yaourt -Syua"
+alias mycpp='g++ -Wall -Wextra -pedantic -std=c++11 -O2 -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -fsanitize=address -fsanitize=undefined -fno-sanitize-recover -fstack-protector'
 
 # ex - archive extractor
 # usage: ex <file>
@@ -88,6 +89,9 @@ GIT_PROMPT_THEME=Single_line_Ubuntu
 #source ~/.bash-git-prompt/gitprompt.sh
 source ~/.rvm/scripts/rvm
 source ~/perl5/perlbrew/etc/bashrc
+
+
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk/bin
 
 PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 #PATH="$PATH:$HOME/Devel/git-achievements"
