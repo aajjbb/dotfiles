@@ -20,11 +20,11 @@ my %files = (
     ".bash_profile"   => $root,
     ".bashrc"         => $root,
     ".emacs"          => $root,
-	"xclip.el"		  => $root . "/.emacs.d",
     ".gitconfig"      => $root,
     ".tmux.conf"      => $root,
     ".vimrc"          => $root,
     ".Xresources"     => $root,
+    ".zshrc"          => $root,
 );
 
 =doc
