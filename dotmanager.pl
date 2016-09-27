@@ -32,7 +32,9 @@ my %files = (
     ".xbindkeysrc"  => $root,	
     ".Xresources"   => $root,
     ".compton.conf" => $root,
-
+    
+    ".zshrc"        => $root,
+        
     ".lock.sh"      => $root,
     ".mysuspend.sh" => $root,	
 );

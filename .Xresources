@@ -59,7 +59,7 @@ urxvt*secondaryScroll:    true
 urxvt.iso14755: False
 
 urxvt.perl-ext:
-urxvt.perl-ext-common:
+urxvt.perl-ext-common: 
 
 !Make transparency
 urxvt*transparent: true
