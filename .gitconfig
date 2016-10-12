@@ -6,7 +6,7 @@
 	ui = always
 [core]
 	editor = emacs
-	autocrlf = true
+	autocrlf = false
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 	excludesfile = ~/.gitignore
 [web]
