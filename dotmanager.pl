@@ -10,7 +10,7 @@ my $current_dir = $ENV{'PWD'};
 
 my %files = (
     #awesome
-    "freedesktop"   => $root . "/.config/awesome",
+    "menugen.lua"   => $root . "/.config/awesome",
     "scratchdrop"   => $root . "/.config/awesome",
     "starbreaker"   => $root . "/.config/awesome/themes",
     

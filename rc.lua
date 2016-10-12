@@ -183,11 +183,13 @@ for s = 1, screen.count() do
                               wp_timer.timeout = wp_timeout
                               wp_timer:start()
    end)
-      end
+end
 -- initial start when rc.lua is first run
 -- gears.wallpaper.maximized(beautiful.wallpaper, s, true)
 wp_timer:start()
-   
+
+
+
 -- }}}
 
 -- {{{ Freedesktop Menu
@@ -202,19 +204,19 @@ local awesomemenu = {
 }
 
 local mymainmenu = awful.menu.new({ items = {
-                                 { "music", music },
-                                 { "terminal", terminal },
-                                 { "files", files },
-                                 { "text editor", gui_editor },
-                                 { "word processor", word_processor },
-                                 { "web browser", browser },
-                                 { "lightweight browser", browser2 },
-                                 { "mail", mail },
-                                 { "im", im },
-                                 { "apps", freedesktopmenu },
-                                 { "awesome", awesomemenu }
+                                       { "music", music },
+                                       { "terminal", terminal },
+                                       { "files", files },
+                                       { "text editor", gui_editor },
+                                       { "word processor", word_processor },
+                                       { "web browser", browser },
+                                       { "lightweight browser", browser2 },
+                                       { "mail", mail },
+                                       { "im", im },
+                                       { "apps", freedesktopmenu },
+                                       { "awesome", awesomemenu }
 },
-                              theme = { height = 16, width = 150 }})
+                                    theme = { height = 16, width = 150 }})
 -- }}}
 
 -- Widgets
@@ -372,19 +374,19 @@ local memwidget = lain.widgets.mem({
 
 -- mpd widget
 --[[
-   mpdicon   = wibox.widget.imagebox(beautiful.widget_note)
-   mpdwidget = lain.widgets.mpd({
-   settings = function()
-   mpd_notification_preset = {
-   title   = "Now playing",
-   timeout = 6,
-   text    = string.format("%s (%s) - %s\n%s", mpd_now.artist,
-   mpd_now.album, mpd_now.date, mpd_now.title)
-   }
+mpdicon   = wibox.widget.imagebox(beautiful.widget_note)
+mpdwidget = lain.widgets.mpd({
+      settings = function()
+         mpd_notification_preset = {
+            title   = "Now playing",
+            timeout = 6,
+            text    = string.format("%s (%s) - %s\n%s", mpd_now.artist,
+                                    mpd_now.album, mpd_now.date, mpd_now.title)
+         }
 
-   widget:set_markup(markup("#e54c62", mpd_now.artist) .. " - " .. markup("#b2b2b2", mpd_now.title) .. " ")
-   end
-   })
+         widget:set_markup(markup("#e54c62", mpd_now.artist) .. " - " .. markup("#b2b2b2", mpd_now.title) .. " ")
+      end
+})
 ]]
 
 -- cmus widget
@@ -510,7 +512,7 @@ for s = 1, screen.count() do
    -- Widgets that are aligned to the upper right
    local right_layout = wibox.layout.fixed.horizontal()
 
-      -- Add system tray
+   -- Add system tray
    if s == 1 then
       right_layout:add(wibox.widget.systray())
    end
@@ -700,46 +702,46 @@ globalkeys = awful.util.table.join(
    
    -- mpd
    --[[
-      awful.key({ }, "XF86AudioPlay",
+   awful.key({ }, "XF86AudioPlay",
       function ()		 
-      awful.util.spawn("mpc toggle")
-      mpdwidget.update()
-      end),
-      awful.key({ }, "XF86AudioPrev",
+         awful.util.spawn("mpc toggle")
+         mpdwidget.update()
+   end),
+   awful.key({ }, "XF86AudioPrev",
       function ()
-      awful.util.spawn("mpc prev")
-      mpdwidget.update()
-      end),
-      awful.key({ }, "XF86AudioNext",
+         awful.util.spawn("mpc prev")
+         mpdwidget.update()
+   end),
+   awful.key({ }, "XF86AudioNext",
       function ()
-      awful.util.spawn("mpc next")
-      mpdwidget.update()
-      end),
+         awful.util.spawn("mpc next")
+         mpdwidget.update()
+   end),
    ]]
-   -- end
-      
-   -- Add xrandr module to deal with multiple monitor user 'Display' key
-      
-   awful.key({}, "XF86WWW", function() xrandr.xrandr() end),
+-- end
 
-   -- Copy to clipboard
-   awful.key({ modkey }, "c", function () os.execute("xsel -p -o | xsel -i -b") end),
+-- Add xrandr module to deal with multiple monitor user 'Display' key
 
-   -- User programs
-   awful.key({ modkey }, "q", function () awful.util.spawn(browser) end),
-   awful.key({ modkey }, "i", function () awful.util.spawn(browser2) end),
-   awful.key({ modkey }, "s", function () awful.util.spawn(gui_editor) end),
-   awful.key({ modkey }, "g", function () awful.util.spawn(graphics) end),
+awful.key({}, "XF86WWW", function() xrandr.xrandr() end),
 
-   -- Prompt
-   awful.key({ modkey }, "r", function () mypromptbox[mouse.screen]:run() end),
-   awful.key({ modkey }, "x",
-      function ()
-         awful.prompt.run({ prompt = "Run Lua code: " },
-            mypromptbox[mouse.screen].widget,
-            awful.util.eval, nil,
-            awful.util.getdir("cache") .. "/history_eval")
-   end)
+-- Copy to clipboard
+awful.key({ modkey }, "c", function () os.execute("xsel -p -o | xsel -i -b") end),
+
+-- User programs
+awful.key({ modkey }, "q", function () awful.util.spawn(browser) end),
+awful.key({ modkey }, "i", function () awful.util.spawn(browser2) end),
+awful.key({ modkey }, "s", function () awful.util.spawn(gui_editor) end),
+awful.key({ modkey }, "g", function () awful.util.spawn(graphics) end),
+
+-- Prompt
+awful.key({ modkey }, "r", function () mypromptbox[mouse.screen]:run() end),
+awful.key({ modkey }, "x",
+   function ()
+      awful.prompt.run({ prompt = "Run Lua code: " },
+         mypromptbox[mouse.screen].widget,
+         awful.util.eval, nil,
+         awful.util.getdir("cache") .. "/history_eval")
+end)
 )
 
 clientkeys = awful.util.table.join(
