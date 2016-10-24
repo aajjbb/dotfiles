@@ -26,8 +26,8 @@
 
 
 ;; set default font
-(set-frame-font "Droid Sans Mono Slashed 11")
-    
+;;(set-frame-font "Droid Sans Mono Slashed 11")
+(set-frame-font "OfficeCodePro 11")
 
 ;; Adding flycheck support
 ;; C++ 11 in flycheck
@@ -167,8 +167,12 @@
 (rainbow-mode 1)
 
 ;; binds C-C <arrows> using smart-shift mode
-(when (require 'smart-shift nil 'noerror)
-  (global-smart-shift-mode 1))
+;; (when (require 'smart-shift nil 'noerror)
+;;  (global-smart-shift-mode 1))
+
+;; adding windmode support (move windows with shift-arrow)
+;; (when (fboundp 'windmove-default-keybindings)
+;;  (windmove-default-keybindings))
 
 ;; remap RET
 ;; (define-key key-translation-map (kbd "RET") (kbd "C-j"))

@@ -10,6 +10,7 @@ set ignorecase
 set smartcase
 set hlsearch
 set incsearch
+set expandtab
 
 set undolevels=1000
 set title
