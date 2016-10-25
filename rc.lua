@@ -20,7 +20,6 @@ local beautiful = require("beautiful")
 local naughty   = require("naughty")
 
 -- External
-local drop      = require("scratchdrop")
 local lain      = require("lain")
 local rev       = require("awesome-revelation")
 local xrandr    = require("xrandr")
@@ -194,29 +193,30 @@ wp_timer:start()
 -- }}}
 
 -- {{{ Freedesktop Menu
-freedesktopmenu = require("menugen").build_menu()
-awesomemenu = {
-   { "manual", terminal .. " -e man awesome" },
-   { "config", gui_editor .. " ~/.config/awesome/rc.lua" },
-   { ".Xresources", gui_editor .. " ~/.Xresources" },
-   { ".xprofile", gui_editor .. " ~/.xprofile" },
-   { "restart", awesome.restart },
-   { "quit", awesome.quit }
-}
-mymainmenu = awful.menu.new({ items = {
-                                 { "music", music },
-                                 { "terminal", terminal },
-                                 { "files", files },
-                                 { "text editor", gui_editor },
-                                 { "word processor", word_processor },
-                                 { "web browser", browser },
-                                 { "lightweight browser", browser2 },
-                                 { "mail", mail },
-                                 { "im", im },
-                                 { "apps", freedesktopmenu },
-                                 { "awesome", awesomemenu }
-},
-                              theme = { height = 16, width = 150 }})
+-- {{{
+-- freedesktopmenu = require("menugen").build_menu()
+-- awesomemenu = {
+--    { "manual", terminal .. " -e man awesome" },
+--    { "config", gui_editor .. " ~/.config/awesome/rc.lua" },
+--    { ".Xresources", gui_editor .. " ~/.Xresources" },
+--    { ".xprofile", gui_editor .. " ~/.xprofile" },
+--    { "restart", awesome.restart },
+--    { "quit", awesome.quit }
+-- }
+-- mymainmenu = awful.menu.new({ items = {
+--                                  { "music", music },
+--                                  { "terminal", terminal },
+--                                  { "files", files },
+--                                  { "text editor", gui_editor },
+--                                  { "word processor", word_processor },
+--                                  { "web browser", browser },
+--                                  { "lightweight browser", browser2 },
+--                                  { "mail", mail },
+--                                  { "im", im },
+--                                  { "apps", freedesktopmenu },
+--                                  { "awesome", awesomemenu }
+-- },
+--                               theme = { height = 16, width = 150 }})
 -- }}}
 
 -- Widgets
@@ -709,7 +709,7 @@ globalkeys = awful.util.table.join(
    awful.key({ modkey }, "g", function () awful.util.spawn(graphics) end),
 
    -- Prompt
-   awful.key({ modkey }, "r", function () mypromptbox[mouse.screen]:run() end),
+   awful.key({ modkey }, "r", function () mypromptbox[awful.screen.focused()]:run() end),
    awful.key({ modkey }, "x",
       function ()
          awful.prompt.run({ prompt = "Run Lua code: " },

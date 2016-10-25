@@ -10,11 +10,11 @@ my $current_dir = $ENV{'PWD'};
 
 my %files = (
     #awesome
-    "freedesktop"     => $root . "/.config/awesome",
     "starbreaker"     => $root . "/.config/awesome/themes",
 
     "menugen.lua"     => $root . "/.config/awesome",
     "rc.lua"          => $root . "/.config/awesome",
+    "xrand.lua"       => $root . "/.config/awesome",
 
     #general
     ".bash_profile"   => $root,

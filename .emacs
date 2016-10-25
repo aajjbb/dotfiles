@@ -157,8 +157,8 @@
 (require 'uniquify)
 
 ;; Emacs transparency
-(set-frame-parameter (selected-frame) 'alpha '(80 80))
-(add-to-list 'default-frame-alist '(alpha 80 80))
+(set-frame-parameter (selected-frame) 'alpha '(85 85))
+(add-to-list 'default-frame-alist '(alpha 85 85))
 
 
 ;; remap RET
