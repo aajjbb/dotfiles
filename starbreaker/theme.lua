@@ -11,11 +11,14 @@
 theme                               = {}
 
 theme.confdir                       = os.getenv("HOME") .. "/.config/awesome/themes/starbreaker"
+theme.lain_icons                    = os.getenv("HOME") .. "/.config/awesome/lain/icons/layout/default/"
+
 theme.wallpaper                     = theme.confdir .. "/wallpaper-lain.jpg"
 
 --theme.font                          = "Source Code Pro Regular 8"
 --theme.font                          = "Mono One 9"
 theme.font                          = "MesloLGM 9"
+--theme.font                          = "OfficeCodePro 10"
 --theme.font                          = "DejaVu Sans Mono 8"
 --theme.taglist_font                =
 theme.menu_bg_normal                = "#073642"
@@ -86,10 +89,36 @@ theme.layout_floating               = theme.confdir .. "/icons/floating.png"
 
 theme.useless_gap_width = 5
 
-theme.lain_icons         = os.getenv("HOME") .. "/.config/awesome/lain/icons/layout/default/"
 theme.layout_termfair    = theme.lain_icons .. "termfairw.png"
 theme.layout_cascade     = theme.lain_icons .. "cascadew.png"
 theme.layout_cascadetile = theme.lain_icons .. "cascadetilew.png"
 theme.layout_centerwork  = theme.lain_icons .. "centerworkw.png"
+
+theme.titlebar_close_button_normal = theme.confdir .. "/titlebar/close_normal.png"
+theme.titlebar_close_button_focus  = theme.confdir .. "/titlebar/close_focus.png"
+
+theme.titlebar_minimize_button_normal = theme.confdir .. "/titlebar/minimize_normal.png"
+theme.titlebar_minimize_button_focus  = theme.confdir .. "/titlebar/minimize_focus.png"
+
+theme.titlebar_ontop_button_normal_inactive = theme.confdir .. "/titlebar/ontop_normal_inactive.png"
+theme.titlebar_ontop_button_focus_inactive  = theme.confdir .. "/titlebar/ontop_focus_inactive.png"
+theme.titlebar_ontop_button_normal_active = theme.confdir .. "/titlebar/ontop_normal_active.png"
+theme.titlebar_ontop_button_focus_active  = theme.confdir .. "/titlebar/ontop_focus_active.png"
+
+theme.titlebar_sticky_button_normal_inactive = theme.confdir .. "/titlebar/sticky_normal_inactive.png"
+theme.titlebar_sticky_button_focus_inactive  = theme.confdir .. "/titlebar/sticky_focus_inactive.png"
+theme.titlebar_sticky_button_normal_active = theme.confdir .. "/titlebar/sticky_normal_active.png"
+theme.titlebar_sticky_button_focus_active  = theme.confdir .. "/titlebar/sticky_focus_active.png"
+
+theme.titlebar_floating_button_normal_inactive = theme.confdir .. "/titlebar/floating_normal_inactive.png"
+theme.titlebar_floating_button_focus_inactive  = theme.confdir .. "/titlebar/floating_focus_inactive.png"
+theme.titlebar_floating_button_normal_active = theme.confdir .. "/titlebar/floating_normal_active.png"
+theme.titlebar_floating_button_focus_active  = theme.confdir .. "/titlebar/floating_focus_active.png"
+
+theme.titlebar_maximized_button_normal_inactive = theme.confdir .. "/titlebar/maximized_normal_inactive.png"
+theme.titlebar_maximized_button_focus_inactive  = theme.confdir .. "/titlebar/maximized_focus_inactive.png"
+theme.titlebar_maximized_button_normal_active = theme.confdir .. "/titlebar/maximized_normal_active.png"
+theme.titlebar_maximized_button_focus_active  = theme.confdir .. "/titlebar/maximized_focus_active.png"
+
 
 return theme

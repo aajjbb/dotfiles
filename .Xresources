@@ -60,7 +60,7 @@ urxvt.perl-ext-common:
 
 !Make transparency
 urxvt*transparent: true
-urxvt*shading: 10
+urxvt*shading: 50
 
 !Font
 urxvt*font: xft: MesloLGM :pixelsize=12:antialias=true:hinting=true
