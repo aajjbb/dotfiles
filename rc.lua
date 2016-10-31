@@ -334,7 +334,7 @@ local tasklist_buttons = awful.util.table.join(
 -- {{{ Wallpaper
 
 wp_index = 1
-wp_timeout  = 2
+wp_timeout  = 20
 wp_path = os.getenv("HOME") .. "/.config/awesome/themes/starbreaker/"
 wp_files = { "1.jpg",
              "2.jpg",
@@ -342,10 +342,14 @@ wp_files = { "1.jpg",
              "4.jpg",
 }
 
+wp_timer = gears.timer { timeout = wp_timeout }
+
 function set_wallpaper(s)
-   --gears.wallpaper.maximized(wp_path .. wp_files[wp_index] , s, true)
    -- Wallpaper
-   wp_timer = gears.timer { timeout = wp_timeout }
+   --gears.wallpaper.maximized(wp_path .. wp_files[wp_index] , s, true)
+
+   wp_timer:start()
+   
    wp_timer:connect_signal("timeout", function()
                               -- set wallpaper to current index
                               gears.wallpaper.maximized(wp_path .. wp_files[wp_index] , s, true)
