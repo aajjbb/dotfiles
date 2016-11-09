@@ -325,10 +325,10 @@ local volumewidget = lain.widgets.alsa({
       channel = "Master",
       settings = function()
          if volume_now.status == "off" then
-            volume_now.level = "M"
-	 else
-            widget:set_markup(markup("#7493d2", volume_now.level .. "% "))            
-	 end
+            widget:set_markup(markup("#7493d2", "0M%"))
+         else
+            widget:set_markup(markup("#7493d2", volume_now.level .. "% "))
+         end
       end
 })
 volumewidget:buttons(awful.util.table.join(
