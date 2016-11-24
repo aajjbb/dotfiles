@@ -267,7 +267,7 @@ local weather = lain.widgets.weather({
       settings = function()
          if weather_now then
             local units = math.floor(weather_now["main"]["temp"])
-            widget:set_markup(markup("#eca4c4", " " .. string.format("%2d", units) .. "°C "))
+            widget:set_markup(" " .. markup("#eca4c4", " " .. string.format("%2d", units) .. "°C "))
          end
       end
 })
@@ -282,7 +282,7 @@ local fswidget = lain.widgets.fs({
             title = text,
             height = 220
          }
-         widget:set_markup(markup("#80d9d8", fs_now.used .. "% "))
+         widget:set_markup(" " .. markup("#80d9d8", fs_now.used .. "% "))
       end
 })
 
@@ -292,7 +292,7 @@ cpuicon:set_image(beautiful.widget_cpu)
 
 local cpuwidget = lain.widgets.cpu({
       settings = function()
-         widget:set_markup(markup("#e33a6e", string.format("%3d", cpu_now.usage) .. "% "))
+         widget:set_markup(" " .. markup("#e33a6e", string.format("%3d", cpu_now.usage) .. "% "))
       end
 })
 
@@ -302,7 +302,7 @@ local tempwidget = lain.widgets.temp({
       timeout = 0.5,
       tempfile = "/sys/class/thermal/thermal_zone2/temp", 
       settings = function()
-         widget:set_markup(markup("#f1af5f", string.format("%3.1f", coretemp_now) .. "°C "))
+         widget:set_markup(" " .. markup("#f1af5f", string.format("%3.1f", coretemp_now) .. "°C "))
       end
 })
 
@@ -314,7 +314,7 @@ local batwidget = lain.widgets.bat({
       notify = "on",
       
       settings = function()
-         widget:set_text(bat_now.perc .. "% " .. bat_now.status .. " ")
+         widget:set_text(" " .. bat_now.perc .. "% " .. bat_now.status .. " ")
       end
 })
 
@@ -325,9 +325,9 @@ local volumewidget = lain.widgets.alsa({
       channel = "Master",
       settings = function()
          if volume_now.status == "off" then
-            widget:set_markup(markup("#7493d2", "0M%"))
+            widget:set_markup(" " .. markup("#7493d2", "0M%"))
          else
-            widget:set_markup(markup("#7493d2", volume_now.level .. "% "))
+            widget:set_markup(" " .. markup("#7493d2", volume_now.level .. "% "))
          end
       end
 })
@@ -368,7 +368,7 @@ netupinfo = lain.widgets.net({
 local memicon = wibox.widget.imagebox(beautiful.widget_mem)
 local memwidget = lain.widgets.mem({
       settings = function()
-         widget:set_markup(markup("#e0da37", string.format("%4d", mem_now.used) .. "M "))
+         widget:set_markup(" " .. markup("#e0da37", string.format("%4d", mem_now.used) .. "M "))
       end
 })
 
@@ -414,7 +414,7 @@ local cmuswidget = lain.widgets.abase({
             title = utf8.sub(title, 0, 25) .. " ..."
          end
          
-         widget:set_markup(markup("#e54c62", artist) .. " - " .. markup("#b2b2b2", title) .. " ")
+         widget:set_markup(" " .. markup("#e54c62", artist) .. " - " .. markup("#b2b2b2", title) .. " ")
       end
 })
 

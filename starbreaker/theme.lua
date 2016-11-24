@@ -16,7 +16,8 @@ theme.lain_icons                    = os.getenv("HOME") .. "/.config/awesome/lai
 
 --theme.font                          = "Source Code Pro Regular 8"
 --theme.font                          = "Mono One 9"
-theme.font                          = "MesloLGM 9"
+--theme.font                          = "MesloLGM 9"
+theme.font                          = "Terminus 9.7"
 --theme.font                          = "DejaVu Sans Mono 8"
 --theme.taglist_font                =
 theme.menu_bg_normal                = "#073642"
