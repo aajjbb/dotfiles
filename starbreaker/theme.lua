@@ -12,7 +12,7 @@ theme                               = {}
 
 theme.confdir                       = os.getenv("HOME") .. "/.config/awesome/themes/starbreaker"
 theme.wallpaper                     = theme.confdir .. "/wallpaper-lain.jpg"
-theme.lain_icons                    = os.getenv("HOME") .. "/.config/awesome/lain/icons/layout/default"
+theme.lain_icons                    = os.getenv("HOME") .. "/.config/awesome/lain/icons"
 
 --theme.font                          = "Source Code Pro Regular 8"
 --theme.font                          = "Mono One 9"
@@ -88,9 +88,9 @@ theme.layout_floating               = theme.confdir .. "/icons/floating.png"
 
 theme.useless_gap_width = 5
 
-theme.layout_termfair    = theme.lain_icons .. "/termfairw.png"
-theme.layout_cascade     = theme.lain_icons .. "/cascadew.png"
-theme.layout_cascadetile = theme.lain_icons .. "/cascadetilew.png"
-theme.layout_centerwork  = theme.lain_icons .. "/centerworkw.png"
+theme.layout_termfair    = theme.lain_icons .. "/layout/default/termfairw.png"
+theme.layout_cascade     = theme.lain_icons .. "/layout/default/cascadew.png"
+theme.layout_cascadetile = theme.lain_icons .. "/layout/default/cascadetilew.png"
+theme.layout_centerwork  = theme.lain_icons .. "/layout/default/centerworkw.png"
 
 return theme

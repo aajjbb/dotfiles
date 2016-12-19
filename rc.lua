@@ -1,11 +1,11 @@
 --[[
    Starbreaker Awesome WM config 0.1
    github.com/demifiend
-   
+
    Based on...
 
-   Multicolor Awesome WM config 2.0 
-   github.com/copycat-killer                              
+   Multicolor Awesome WM config 2.0
+   github.com/copycat-killer
 
    Modified by aajjbb:
    github.com/aajjbb
@@ -47,7 +47,7 @@ do
    awesome.connect_signal("debug::error", function (err)
                              if in_error then return end
                              in_error = true
-                             
+
                              naughty.notify({ preset = naughty.config.presets.critical,
                                               title = "Oops, an error happened!",
                                               text = err })
@@ -125,7 +125,7 @@ local layouts = {
 
 -- {{{ Tags
 local tags = {
-   names = { 
+   names = {
       "web",
       "emacs",
       "term",
@@ -134,13 +134,13 @@ local tags = {
       "docs",
       "other",
    },
-   layout = { 
-      layouts[1], 
-      layouts[1], 
-      layouts[1], 
-      layouts[1], 
-      layouts[1], 
-      layouts[1], 
+   layout = {
+      layouts[1],
+      layouts[1],
+      layouts[1],
+      layouts[1],
+      layouts[1],
+      layouts[1],
       layouts[1]
    }
 }
@@ -166,19 +166,19 @@ local wp_files = {
 for s = 1, screen.count() do
    -- Random Wallpaper
    -- configuration - edit to your liking
-   
+
    -- setup the timer
    wp_timer = timer { timeout = wp_timeout }
-   wp_timer:connect_signal("timeout", function()                           
+   wp_timer:connect_signal("timeout", function()
                               -- set wallpaper to current index
                               gears.wallpaper.maximized(wp_path .. wp_files[wp_index] , s, true)
-                              
+
                               -- stop the timer (we don't need multiple instances running at the same time)
                               wp_timer:stop()
-                              
+
                               -- get next random index
                               wp_index = math.random( 1, #wp_files)
-                              
+
                               --restart the timer
                               wp_timer.timeout = wp_timeout
                               wp_timer:start()
@@ -243,8 +243,8 @@ redshift:attach(
          redshift_widget:set_image(rs_on)
       else
          redshift_widget:set_image(rs_off)
-      end 
-   end 
+      end
+   end
 )
 
 redshift_widget:buttons(awful.util.table.join(
@@ -252,10 +252,10 @@ redshift_widget:buttons(awful.util.table.join(
 
 -- Textclock
 local clockicon   = wibox.widget.imagebox(beautiful.widget_clock)
-local mytextclock = awful.widget.textclock(markup("#7788af", "%d %B %Y ") .. markup("#eee8d5", ">") .. markup("#de5e1e", " %I:%M %p "))
+local mytextclock = awful.widget.textclock(" " .. markup("#7788af", "%d %B %Y ") .. markup("#eee8d5", ">") .. markup("#de5e1e", " %I:%M %p "))
 
 -- Calendar
-lain.widgets.calendar:attach(mytextclock, { 
+lain.widgets.calendar.attach(mytextclock, {
                                 font_size = 10,
                                 position = "top_right"
                                 -- font = "MesloLGM 9"
@@ -300,7 +300,7 @@ local cpuwidget = lain.widgets.cpu({
 local tempicon = wibox.widget.imagebox(beautiful.widget_temp)
 local tempwidget = lain.widgets.temp({
       timeout = 0.5,
-      tempfile = "/sys/class/thermal/thermal_zone2/temp", 
+      tempfile = "/sys/class/thermal/thermal_zone2/temp",
       settings = function()
          widget:set_markup(" " .. markup("#f1af5f", string.format("%3.1f", coretemp_now) .. "°C "))
       end
@@ -312,7 +312,7 @@ local batwidget = lain.widgets.bat({
       timeout = 0.1,
       batteries = {"BAT1"},
       notify = "on",
-      
+
       settings = function()
          widget:set_text(" " .. bat_now.perc .. "% " .. bat_now.status .. " ")
       end
@@ -348,11 +348,11 @@ netupinfo = lain.widgets.net({
       settings = function()
          file_helper = io.popen("iwgetid -r")
          ssid = file_helper:read("*all")
-         
+
          if (ssid == "") then
             ssid = "Not connected"
          end
-         
+
          widget:set_markup(markup("#e54c62", net_now.sent .. " "))
          netssid:set_markup(markup("#cc66ff", ssid .. " "))
          netdowninfo:set_markup(markup("#87af5f", net_now.received .. " "))
@@ -391,9 +391,9 @@ mpdwidget = lain.widgets.mpd({
 
 -- cmus widget
 local cmusicon = wibox.widget.imagebox(beautiful.widget_note)
-local cmuswidget = lain.widgets.abase({	  
+local cmuswidget = lain.widgets.abase({
       cmd = "cmus-remote -Q",
-      timeout = 2, 
+      timeout = 2,
       settings = function()
          local cmus_now = {
             state   = "N/A",
@@ -409,11 +409,11 @@ local cmuswidget = lain.widgets.abase({
 
          local artist = cmus_now.artist
          local title  = cmus_now.title
-         
+
          if utf8.len(title) > 25 then
             title = utf8.sub(title, 0, 25) .. " ..."
          end
-         
+
          widget:set_markup(" " .. markup("#e54c62", artist) .. " - " .. markup("#b2b2b2", title) .. " ")
       end
 })
@@ -502,7 +502,7 @@ for s = 1, screen.count() do
 
    -- Create the bottom wibox
    mybottomwibox[s] = awful.wibox({ position = "bottom", screen = s, border_width = 0, height = 24 })
-   
+
    -- Widgets that are aligned to the upper left
    local left_layout = wibox.layout.fixed.horizontal()
    --left_layout:add(awful.titlebar.widget.iconwidget(c))
@@ -518,11 +518,11 @@ for s = 1, screen.count() do
    end
 
 
-   
+
    right_layout:add(redshift_widget)
    --right_layout:add(mpdicon)
    --right_layout:add(mpdwidget)
-   right_layout:add(cmusicon)	  
+   right_layout:add(cmusicon)
    right_layout:add(cmuswidget)
    --right_layout:add(netssid)
    --right_layout:add(netdownicon)
@@ -539,14 +539,14 @@ for s = 1, screen.count() do
    right_layout:add(fswidget)
    right_layout:add(tempicon)
    right_layout:add(tempwidget)
-   right_layout:add(weather.icon)   
-   right_layout:add(weather.widget)      
+   right_layout:add(weather.icon)
+   right_layout:add(weather.widget)
    right_layout:add(baticon)
    right_layout:add(batwidget)
    right_layout:add(clockicon)
    right_layout:add(mytextclock)
-   right_layout:add(menu_buttom)   
-   
+   right_layout:add(menu_buttom)
+
    -- Now bring it all together (with the tasklist in the middle)
    local layout_top = wibox.layout.align.horizontal()
    layout_top:set_left(left_layout)
@@ -557,14 +557,14 @@ for s = 1, screen.count() do
 
    --Layout from bottom wibox
 
-   
+
    -- Widgets that are aligned to the bottom left
    local bottom_left_layout = wibox.layout.fixed.horizontal()
-   
+
    -- Widgets that are aligned to the bottom right
    local bottom_right_layout = wibox.layout.fixed.horizontal()
 
-   
+
    bottom_right_layout:add(mylayoutbox[s])
 
    -- Now bring it all together (with the tasklist in the middle)
@@ -572,7 +572,7 @@ for s = 1, screen.count() do
    bottom_layout:set_left(bottom_left_layout)
    bottom_layout:set_middle(mytasklist[s])
    bottom_layout:set_right(bottom_right_layout)
-   
+
    mybottomwibox[s]:set_widget(bottom_layout)
 end
 -- }}}
@@ -588,7 +588,7 @@ root.buttons(awful.util.table.join(
 -- {{{ Key bindings
 globalkeys = awful.util.table.join(
    -- Take a screenshot
-   awful.key({}, "Print", function () 
+   awful.key({}, "Print", function ()
          awful.util.spawn_with_shell(screenshot)
    end),
 
@@ -597,12 +597,12 @@ globalkeys = awful.util.table.join(
    awful.key({modkey}, "e", rev),
 
    -- Suspend on pressing sleep key
-   
+
    awful.key({ }, "XF86Sleep", function() awful.util.spawn_with_shell("mysuspend") end),
-   
+
    -- Lock Screen
    awful.key({modkey}, "l", function() awful.util.spawn_with_shell("lock") end),
-   
+
    -- Tag browsing
    awful.key({ modkey }, "Left",   awful.tag.viewprev       ),
    awful.key({ modkey }, "Right",  awful.tag.viewnext       ),
@@ -689,21 +689,21 @@ globalkeys = awful.util.table.join(
    -- Dropdown terminal
    --awful.key({ modkey,	          }, "z",      function () drop(terminal) end),
 
-   -- ALSA volume control	
+   -- ALSA volume control
 
    awful.key({ }, "XF86AudioRaiseVolume",    function () awful.util.spawn("amixer set Master 2%+") end),
    awful.key({ }, "XF86AudioLowerVolume",    function () awful.util.spawn("amixer set Master 2%-") end),
    awful.key({ }, "XF86AudioMute", function () awful.util.spawn("amixer set Master toggle") end),
 
-   -- cmus   
+   -- cmus
    awful.key({ }, "XF86AudioPlay",    function () awful.util.spawn("cmus-remote -u") end),
    awful.key({ }, "XF86AudioPrev",    function () awful.util.spawn("cmus-remote -r") end),
    awful.key({ }, "XF86AudioNext",    function () awful.util.spawn("cmus-remote -n") end),
-   
+
    -- mpd
    --[[
    awful.key({ }, "XF86AudioPlay",
-      function ()		 
+      function ()
          awful.util.spawn("mpc toggle")
          mpdwidget.update()
    end),
@@ -814,7 +814,7 @@ root.keys(globalkeys)
 awful.rules.rules = {
    -- All clients will match this rule.
    { rule = { },
-     properties = { 
+     properties = {
         border_width = beautiful.border_width,
         border_color = beautiful.border_normal,
         focus = awful.client.focus.filter,
@@ -829,11 +829,11 @@ awful.rules.rules = {
      properties = { tag = tags[1][2] } },
 
    { rule = { class = "term" },
-     properties = { tag = tags[1][3] } },	
+     properties = { tag = tags[1][3] } },
 
    { rule = { class = "doc" },
-     properties = { tag = tags[1][4] } },	
-   
+     properties = { tag = tags[1][4] } },
+
    { rule = { class = "mail" },
      properties = { tag = tags[1][5] } },
 
@@ -842,11 +842,11 @@ awful.rules.rules = {
 
    { rule = { class = "music", name = "cmus v2.6.0" },
      properties = { tag = tags[1][8] } },
-   
+
    { rule = { class = "other" },
      properties = { tag = tags[1][9] } },
 
-   
+
    { rule = { class = "Gimp", role = "gimp-image-window" },
      properties = { maximized_horizontal = true,
                     maximized_vertical = true } },
