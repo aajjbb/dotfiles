@@ -193,7 +193,7 @@ wp_timer:start()
 -- }}}
 
 -- {{{ Freedesktop Menu
-freedesktopmenu = require("menugen").build_menu()
+local freedesktopmenu = require("menugen").build_menu()
 local awesomemenu = {
    { "manual", terminal .. " -e man awesome" },
    { "config", gui_editor .. " ~/.config/awesome/rc.lua" },
