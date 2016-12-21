@@ -14,11 +14,10 @@ local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup").widget
 
 -- Libs
-local lain      = require("lain")
-local rev       = require("awesome-revelation")
-local xrandr    = require("xrandr")
-local utf8      = require 'lua-utf8'
-
+local lain           = require("lain")
+local rev            = require("awesome-revelation")
+local xrandr         = require("xrandr")
+local utf8           = require 'lua-utf8'
 local lain_icons_dir = require("lain.helpers").icons_dir
 
 -- {{{ Error handling
@@ -47,13 +46,39 @@ do
 end
 -- }}}
 
+-- {{{ Autostart applications
+
+local spawn_once = function(command, class, tag)
+   -- create move callback
+   local callback
+   callback = function(c)
+      if c.name == class then
+         awful.client.movetotag(tag, c)
+         client.disconnect_signal("manage", callback)
+      end
+   end
+   client.connect_signal("manage", callback)
+   -- now check if not already running!
+   local findme = command
+   local firstspace = findme:find(" ")
+   if firstspace then
+      findme = findme:sub(0, firstspace-1)
+   end
+   -- finally run it
+   awful.util.spawn_with_shell("pgrep -u $USER -x " .. findme .. " > /dev/null || (" .. command .. ")")
+end
+
+-- }}}
+
+
 -- {{{ Variable definitions
 -- @DOC_LOAD_THEME@
 -- Themes define colours, icons, font and wallpapers.
 -- localization
 os.setlocale(os.getenv("LANG"))
 
-beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/starbreaker/theme.lua")
+--beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/starbreaker/theme.lua")
+beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/awesome-copycats/themes/multicolor/theme.lua")
 
 --beautiful.init(awful.util.get_themes_dir() .. "default/theme.lua")
 
@@ -92,9 +117,6 @@ modkey = "Mod4"
 awful.layout.layouts = {
     awful.layout.suit.floating,
     awful.layout.suit.tile,
-    awful.layout.suit.tile.left,
-    awful.layout.suit.tile.bottom,
-    awful.layout.suit.tile.top,
     awful.layout.suit.fair,
     awful.layout.suit.fair.horizontal,
     awful.layout.suit.spiral,
@@ -132,7 +154,6 @@ end
 -- Create a launcher widget and a main menu
 
 -- XDG Menu
----freedesktopmenu = require("menugen").build_menu()
 
 myawesomemenu = {
    { "hotkeys", function() return false, hotkeys_popup.show_help end},
@@ -152,7 +173,6 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                              { "lightweight browser", browser2 },
                              { "mail", mail },
                              { "im", im },
-                             { "apps", freedesktopmenu },
 }
                         }
                        )
@@ -246,7 +266,7 @@ local function set_wallpaper(s)
 
                               --restart the timer
                               wp_timer.timeout = wp_timeout
-                              wp_timer:start()                              
+                              wp_timer:start()
    end)
    wp_timer:start()
     -- Wallpaper
@@ -459,10 +479,6 @@ local cmuswidget = lain.widgets.abase({
       end
 })
 
--- Spacer
-local spacer = wibox.widget.textbox(" ")
-
-
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
 --screen.connect_signal("property::geometry", set_wallpaper)
 
@@ -480,7 +496,7 @@ awful.screen.connect_for_each_screen(function(s)
                "docs",
                "other",
               }, s, awful.layout.layouts[1])
-    
+
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
     -- Create an imagebox widget which will contains an icon indicating which layout we're using.
@@ -499,11 +515,11 @@ awful.screen.connect_for_each_screen(function(s)
 
     -- @DOC_WIBAR@
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s })
+    s.mywibox = awful.wibar({ position = "top", screen = s, height = 22 })
 
     -- Create bottom wibox
-    s.mybottomwibox = awful.wibar({ position = "bottom", screen = s })
-    
+    s.mybottomwibox = awful.wibar({ position = "bottom", screen = s, height = 22 })
+
     -- @DOC_SETUP_WIDGETS@
     -- Add widgets to the wibox
     s.mywibox:setup {
@@ -521,7 +537,7 @@ awful.screen.connect_for_each_screen(function(s)
            layout = wibox.layout.fixed.horizontal,
            wibox.widget.systray(),
            mykeyboardlayout,
-           --Widgets           
+           --Widgets
            redshift_widget,
            cmusicon,
            cmuswidget,
@@ -667,7 +683,36 @@ globalkeys = awful.util.table.join(
               {description = "lua execute prompt", group = "awesome"}),
     -- Menubar
     awful.key({ modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"})
+       {description = "show the menubar", group = "launcher"}),
+
+    -- My personal keybindings
+
+    awful.key({ }, "XF86AudioRaiseVolume",    function () awful.util.spawn("amixer set Master 2%+") end),
+    awful.key({ }, "XF86AudioLowerVolume",    function () awful.util.spawn("amixer set Master 2%-") end),
+    awful.key({ }, "XF86AudioMute", function () awful.util.spawn("amixer set Master toggle") end),
+
+    -- cmus
+    awful.key({ }, "XF86AudioPlay",    function () awful.util.spawn("cmus-remote -u") end),
+    awful.key({ }, "XF86AudioPrev",    function () awful.util.spawn("cmus-remote -r") end),
+    awful.key({ }, "XF86AudioNext",    function () awful.util.spawn("cmus-remote -n") end),
+
+    -- Working with multiple screens
+    awful.key({}, "XF86WWW", function() xrandr.xrandr() end),
+
+    -- Take a screenshot
+    awful.key({}, "Print", function ()
+          awful.util.spawn_with_shell(screenshot)
+    end),
+
+    -- Open Revelation
+    awful.key({modkey}, "e", rev),
+
+    -- Suspend on pressing sleep key
+    awful.key({ }, "XF86Sleep", function() awful.util.spawn_with_shell("mysuspend") end),
+
+    -- Lock Screen
+    awful.key({modkey}, "l", function() awful.util.spawn_with_shell("lock") end)
+
 )
 
 -- @DOC_CLIENT_KEYBINDINGS@
@@ -892,3 +937,11 @@ end)
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
+
+-- {{ Autorun
+
+awful.util.spawn_with_shell("xrdb -merge ~/.Xresources")
+awful.util.spawn_with_shell('xmodmap -e "keycode 118 ="')
+awful.util.spawn_with_shell("urxvtd")
+
+-- }}
