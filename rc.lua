@@ -80,6 +80,9 @@ os.setlocale(os.getenv("LANG"))
 --beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/starbreaker/theme.lua")
 beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/awesome-copycats/themes/multicolor/theme.lua")
 
+-- Define Useless Gap
+beautiful.useless_gap = 5
+
 --beautiful.init(awful.util.get_themes_dir() .. "default/theme.lua")
 
 -- @DOC_DEFAULT_APPLICATIONS@
@@ -98,7 +101,6 @@ local terminal   = "urxvtc" or "xterm"
 local editor_cmd = "vim"
 local browser = "google-chrome-stable"
 local gui_editor = "emacs"
-local graphics = "pinta"
 local mail = "thunderbird"
 local word_processor = "libreoffice --writer"
 local music = "cmus"
@@ -370,7 +372,7 @@ local tempwidget = lain.widgets.temp({
 -- Battery
 local baticon = wibox.widget.imagebox(beautiful.widget_batt)
 local batwidget = lain.widgets.bat({
-      timeout = 0.1,
+      timeout = 30,
       batteries = {"BAT1"},
       notify = "on",
 
@@ -480,7 +482,7 @@ local cmuswidget = lain.widgets.abase({
 })
 
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
---screen.connect_signal("property::geometry", set_wallpaper)
+screen.connect_signal("property::geometry", set_wallpaper)
 
 -- @DOC_FOR_EACH_SCREEN@
 awful.screen.connect_for_each_screen(function(s)
@@ -943,5 +945,6 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 awful.util.spawn_with_shell("xrdb -merge ~/.Xresources")
 awful.util.spawn_with_shell('xmodmap -e "keycode 118 ="')
 awful.util.spawn_with_shell("urxvtd")
+awful.util.spawn_with_shell("nm-applet")
 
 -- }}
