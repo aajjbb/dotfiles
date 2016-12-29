@@ -81,7 +81,7 @@ os.setlocale(os.getenv("LANG"))
 beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/awesome-copycats/themes/multicolor/theme.lua")
 
 -- Define Useless Gap
-beautiful.useless_gap = 5
+beautiful.useless_gap = 2
 
 --beautiful.init(awful.util.get_themes_dir() .. "default/theme.lua")
 
@@ -372,7 +372,7 @@ local tempwidget = lain.widgets.temp({
 -- Battery
 local baticon = wibox.widget.imagebox(beautiful.widget_batt)
 local batwidget = lain.widgets.bat({
-      timeout = 30,
+      timeout = 10,
       batteries = {"BAT1"},
       notify = "on",
 
