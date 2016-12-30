@@ -86,4 +86,6 @@ source $ZSH/oh-my-zsh.sh
 alias ls="ls++"
 alias cp="rsync -avz" 
 
+source ~/perl5/perlbrew/etc/bashrc
+
 neofetch
