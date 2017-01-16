@@ -349,7 +349,7 @@ local cpuicon = wibox.widget.imagebox(beautiful.widget_cpu)
 
 local cpuwidget = lain.widgets.cpu({
       settings = function()
-         widget:set_markup(" " .. markup("#e33a6e", string.format("%3d", cpu_now.usage) .. "% "))
+         widget:set_markup(markup("#e33a6e", string.format("%3d", cpu_now.usage) .. "% "))
       end
 })
 
