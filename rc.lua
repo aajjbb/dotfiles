@@ -345,8 +345,7 @@ local fswidget = lain.widgets.fs({
 })
 
 -- CPU
-local cpuicon = wibox.widget.imagebox()
-cpuicon:set_image(beautiful.widget_cpu)
+local cpuicon = wibox.widget.imagebox(beautiful.widget_cpu)
 
 local cpuwidget = lain.widgets.cpu({
       settings = function()
@@ -542,6 +541,8 @@ awful.screen.connect_for_each_screen(function(s)
            volumewidget,
            memicon,
            memwidget,
+           cpuicon,
+           cpuwidget,
            fsicon,
            fswidget,
            tempicon,
