@@ -85,3 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls="ls++"
 alias cp="rsync -avz" 
+
+source ~/perl5/perlbrew/etc/bashrc
+
+neofetch

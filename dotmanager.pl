@@ -9,12 +9,6 @@ my $root = $ENV{'HOME'};
 my $current_dir = $ENV{'PWD'};
 
 my %files = (
-    #awesome
-    "menugen.lua"   => $root . "/.config/awesome",
-    "scratchdrop"   => $root . "/.config/awesome",
-    "starbreaker"   => $root . "/.config/awesome/themes",
-    
-    "menugen.lua"   => $root . "/.config/awesome",
     "rc.lua"        => $root . "/.config/awesome",
     "xrandr.lua"    => $root . "/.config/awesome",
 
