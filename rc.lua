@@ -288,25 +288,37 @@ menu_buttom:buttons(awful.util.table.join(
 
 -- Redshift
 
-local redshift = lain.widgets.contrib.redshift
-local redshift_widget = wibox.widget.imagebox(rs_on)
+local myredshift = wibox.widget{
+    checked      = false,
+    check_color  = "#EB8F8F",
+    border_color = "#EB8F8F",
+    border_width = 0,
+    shape        = gears.shape.square,
+    widget       = wibox.widget.checkbox
+}
 
-redshift:attach(
-   redshift_widget,
-   function ()
-      local rs_on  = lain_icons_dir .. "/redshift/redshift_on.png"
-      local rs_off = lain_icons_dir .. "/redshift/redshift_off.png"
+local myredshift_text = wibox.widget{
+    align  = "center",
+    widget = wibox.widget.textbox,
+}
 
-      if redshift:is_active() then
-         redshift_widget:set_image(rs_on)
-      else
-         redshift_widget:set_image(rs_off)
-      end
-   end
+local myredshift_stack = wibox.widget{
+    myredshift,
+    myredshift_text,
+    layout = wibox.layout.stack
+}
+
+lain.widgets.contrib.redshift:attach(
+    myredshift,
+    function (active)
+        if active then
+            myredshift_text:set_markup(markup(beautiful.bg_normal, "<b>R</b>"))
+        else
+            myredshift_text:set_markup(markup(beautiful.fg_normal, "R"))
+        end
+        myredshift.checked = active
+    end
 )
-
-redshift_widget:buttons(awful.util.table.join(
-                           awful.button({ }, 1, function () redshift:toggle() end)))
 
 -- Textclock
 local clockicon   = wibox.widget.imagebox(beautiful.widget_clock)
@@ -534,7 +546,7 @@ awful.screen.connect_for_each_screen(function(s)
            wibox.widget.systray(),
            mykeyboardlayout,
            --Widgets
-           redshift_widget,
+           myredshift_stack,
            cmusicon,
            cmuswidget,
            volicon,

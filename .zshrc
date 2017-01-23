@@ -84,6 +84,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cp="rsync -avz" 
+alias lastupd='expac --timefmt="%Y-%m-%d %T" "%l\t%n" | sort | tail -300'
+
+# Git achievements
+#export PATH="$PATH:$HOME/Devel/git-achievements"
+#alias git="git-achievements"
 
 source ~/perl5/perlbrew/etc/bashrc
 
