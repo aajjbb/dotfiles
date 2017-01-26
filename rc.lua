@@ -237,7 +237,7 @@ local tasklist_buttons = awful.util.table.join(
 
 wp_index = 1
 wp_timeout  = 40
-wp_path = os.getenv("HOME") .. "/.config/awesome/themes/starbreaker/"
+wp_path = os.getenv("HOME") .. "/.config/awesome/wallpapers"
 wp_files = {
    "1.jpg",
    "2.jpg",
@@ -359,19 +359,7 @@ local tempwidget = lain.widgets.temp({
       timeout = 0.5,
       tempfile = "/sys/class/thermal/thermal_zone2/temp",
       settings = function()
-         widget:set_markup(" " .. markup("#f1af5f", string.format("%3.1f", coretemp_now) .. "°C "))
-      end
-})
-
--- Battery
-local baticon = wibox.widget.imagebox(beautiful.widget_batt)
-local batwidget = lain.widgets.bat({
-      timeout = 10,
-      batteries = {"BAT1"},
-      notify = "on",
-
-      settings = function()
-         widget:set_text(" " .. bat_now.perc .. "% " .. bat_now.status .. " ")
+         widget:set_markup(" " .. markup("#f1af5f", coretemp_now .. "°C "))
       end
 })
 
@@ -549,8 +537,6 @@ awful.screen.connect_for_each_screen(function(s)
            tempwidget,
            weather.icon,
            weather.widget,
-           baticon,
-           batwidget,
            clockicon,
            mytextclock,
            menu_buttom,

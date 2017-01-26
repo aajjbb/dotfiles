@@ -11,7 +11,8 @@ my $current_dir = $ENV{'PWD'};
 my %files = (
     "rc.lua"        => $root . "/.config/awesome",
     "xrandr.lua"    => $root . "/.config/awesome",
-
+    "wallpapers"    => $root . "/.config/awesome",
+    
     #weechat
     "plugins.conf"  => $root . "/.weechat",
     "irc.conf"      => $root . "/.weechat", 
