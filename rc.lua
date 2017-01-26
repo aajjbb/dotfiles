@@ -81,7 +81,7 @@ os.setlocale(os.getenv("LANG"))
 beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/awesome-copycats/themes/multicolor/theme.lua")
 
 -- Define Useless Gap
-beautiful.useless_gap = 3
+beautiful.useless_gap = 1
 
 --beautiful.init(awful.util.get_themes_dir() .. "default/theme.lua")
 
