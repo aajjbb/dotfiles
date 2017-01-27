@@ -38,6 +38,8 @@ xterm*faceNameDoublesize: xft:vlgothic :style=Regular :pixelsize=12
 xterm*font: MesloLGM :pixelsize=13:antialias=true:hinting=true
 xterm*boldFont: MesloLGM :bold:pixelsize=12:antialias=true:hinting=true
 xterm*faceName: MesloLGM :pixelsize=12:antialias=true:hinting=true
+
+xterm*dynamicColors: true
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -64,6 +66,9 @@ urxvt.perl-ext-common:
 !Make transparency
 urxvt*transparent: true
 urxvt*shading: 10
+
+!Allow Dynamic Colors
+urxvt*dynamicColors: on
 
 !Home-End keys
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

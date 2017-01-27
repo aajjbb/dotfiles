@@ -81,7 +81,7 @@ os.setlocale(os.getenv("LANG"))
 beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/awesome-copycats/themes/multicolor/theme.lua")
 
 -- Define Useless Gap
-beautiful.useless_gap = 3
+beautiful.useless_gap = 1
 
 --beautiful.init(awful.util.get_themes_dir() .. "default/theme.lua")
 
@@ -346,12 +346,7 @@ local weather = lain.widgets.weather({
 local fsicon = wibox.widget.imagebox(beautiful.widget_fs)
 local fswidget = lain.widgets.fs({
       settings  = function()
-         local script_response = io.popen('./.config/awesome/lain/scripts/dfs')
-         local text = script_response:read('*all')
-         fs_notification_preset = {
-            title = text,
-            height = 220
-         }
+         notification_preset.font = "Terminus 9"
          widget:set_markup(" " .. markup("#80d9d8", fs_now.used .. "% "))
       end
 })
@@ -390,18 +385,18 @@ local batwidget = lain.widgets.bat({
 -- ALSA volume
 local volicon = wibox.widget.imagebox(beautiful.widget_vol)
 local volumewidget = lain.widgets.alsa({
-      timeout = 0.2,
+      timeout = 0.1,
       channel = "Master",
       settings = function()
          if volume_now.status == "off" then
             widget:set_markup(" " .. markup("#7493d2", "0M%"))
          else
-            widget:set_markup(" " .. markup("#7493d2", volume_now.level .. "% "))
+            widget:set_markup(" " .. markup("#7493d2", volume_now.level .. "%"))
          end
       end
 })
 volumewidget:buttons(awful.util.table.join(
-                        awful.button({ }, 1, function () awful.util.spawn("amixer -D pulse set Master 1+ toggle") end),
+                        awful.button({ }, 1, function () awful.util.spawn("amixer set Master toggle") end),
                         awful.button({ }, 4, function () awful.util.spawn("amixer set Master 2%+") end),
                         awful.button({ }, 5, function () awful.util.spawn("amixer set Master 2%-") end)
 ))

@@ -90,6 +90,9 @@ alias lastupd='expac --timefmt="%Y-%m-%d %T" "%l\t%n" | sort | tail -300'
 #export PATH="$PATH:$HOME/Devel/git-achievements"
 #alias git="git-achievements"
 
+#Dynamic Terminal Colors
+export PATH="$PATH:$HOME/.dynamic-colors/bin"
+source $HOME/.dynamic-colors/completions/dynamic-colors.zsh
 source ~/perl5/perlbrew/etc/bashrc
 
 neofetch

@@ -28,6 +28,7 @@
 ;; set default font
 ;;(set-frame-font "Droid Sans Mono Slashed 11")
 (set-frame-font "OfficeCodePro 11")
+;; (set-frame-font "artwiz lime 50")
 
 ;; Adding flycheck support
 ;; C++ 11 in flycheck

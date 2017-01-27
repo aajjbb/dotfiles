@@ -4,18 +4,20 @@ local awful     = require("awful")
 local naughty   = require("naughty")
 local beautiful = require("beautiful");
 
+-- A path to a fancy icon
 local icon_path = "/usr/share/icons/mate/32x32/devices/video-display.png";
 
 -- Get active outputs
 local function outputs()
    local outputs = {}
-   local xrandr = io.popen("xrandr -q")
+   local xrandr = io.popen("xrandr -q --current")
+
    if xrandr then
       for line in xrandr:lines() do
-		 output = line:match("^([%w-]+) connected ")
-		 if output then
-			outputs[#outputs + 1] = output
-		 end
+         local output = line:match("^([%w-]+) connected ")
+         if output then
+            outputs[#outputs + 1] = output
+                                   end
       end
       xrandr:close()
    end
@@ -24,8 +26,8 @@ local function outputs()
 end
 
 local function arrange(out)
-   -- We need to enumerate all the way to combinate output. We assume
-   -- we want only an horizontal layout.
+   -- We need to enumerate all permutations of horizontal outputs.
+
    local choices  = {}
    local previous = { {} }
    for i = 1, #out do
@@ -35,11 +37,11 @@ local function arrange(out)
       -- not already present.
       local new = {}
       for _, p in pairs(previous) do
-		 for _, o in pairs(out) do
-			if not awful.util.table.hasitem(p, o) then
-			   new[#new + 1] = awful.util.table.join(p, {o})
-			end
-		 end
+         for _, o in pairs(out) do
+            if not awful.util.table.hasitem(p, o) then
+               new[#new + 1] = awful.util.table.join(p, {o})
+            end
+         end
       end
       choices = awful.util.table.join(choices, new)
       previous = new
@@ -53,35 +55,35 @@ local function menu()
    local menu = {}
    local out = outputs()
    local choices = arrange(out)
-   
+
    for _, choice in pairs(choices) do
       local cmd = "xrandr"
       -- Enabled outputs
       for i, o in pairs(choice) do
-		 cmd = cmd .. " --output " .. o .. " --auto"
-		 if i > 1 then
-			cmd = cmd .. " --right-of " .. choice[i-1]
-		 end
+         cmd = cmd .. " --output " .. o .. " --auto"
+         if i > 1 then
+            cmd = cmd .. " --right-of " .. choice[i-1]
+         end
       end
       -- Disabled outputs
       for _, o in pairs(out) do
-		 if not awful.util.table.hasitem(choice, o) then
-			cmd = cmd .. " --output " .. o .. " --off"
-		 end
+         if not awful.util.table.hasitem(choice, o) then
+            cmd = cmd .. " --output " .. o .. " --off"
+         end
       end
 
       local label = ""
       if #choice == 1 then
-		 label = 'Only <span weight="bold">' .. choice[1] .. '</span>'
+         label = 'Only <span weight="bold">' .. choice[1] .. '</span>'
       else
-		 for i, o in pairs(choice) do
-			if i > 1 then label = label .. " + " end
-			label = label .. '<span weight="bold">' .. o .. '</span>'
-		 end
+         for i, o in pairs(choice) do
+            if i > 1 then label = label .. " + " end
+            label = label .. '<span weight="bold">' .. o .. '</span>'
+         end
       end
 
       menu[#menu + 1] = { label,
-						  cmd,
+                          cmd,
                           icon_path}
    end
 
@@ -90,24 +92,26 @@ end
 
 -- Display xrandr notifications from choices
 local state = { iterator = nil,
-				timer = nil,
-				cid = nil }
+                timer = nil,
+                cid = nil }
 local function xrandr()
    -- Stop any previous timer
    if state.timer then
       state.timer:stop()
       state.timer = nil
    end
-   
+
    -- Build the list of choices
-   if not state.iterator then
-      state.iterator = awful.util.table.iterate(menu(),
-												function() return true end)
+   if not state.index then
+      state.menu = menu()
+      state.index = 1
    end
 
    -- Select one and display the appropriate notification
-   local next  = state.iterator()
    local label, action, icon
+   local next  = state.menu[state.index]
+   state.index = state.index + 1
+
    if not next then
       label, icon = "Keep the current configuration", icon_path
       state.iterator = nil
@@ -115,22 +119,22 @@ local function xrandr()
       label, action, icon = unpack(next)
    end
    state.cid = naughty.notify({ text = label,
-								icon = icon,
-								timeout = 4,
-								screen = mouse.screen, -- Important, not all screens may be visible
-								font = beautiful.font,
-								replaces_id = state.cid }).id
+                                icon = icon,
+                                timeout = 4,
+                                screen = mouse.screen,
+                                font = beautiful.font,
+                                replaces_id = state.cid }).id
 
    -- Setup the timer
    state.timer = timer { timeout = 4 }
    state.timer:connect_signal("timeout",
-							  function()
-								 state.timer:stop()
-								 state.timer = nil
-								 state.iterator = nil
-								 if action then
-									awful.util.spawn(action, false)
-								 end
+                              function()
+                                 state.timer:stop()
+                                 state.timer = nil
+                                 state.iterator = nil
+                                 if action then
+                                    awful.util.spawn(action, false)
+                                 end
    end)
    state.timer:start()
 end
