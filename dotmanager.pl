@@ -28,9 +28,14 @@ my %files = (
     ".compton.conf" => $root,
     
     ".zshrc"        => $root,
-        
+
+    #scripts
     ".lock.sh"      => $root,
-    ".mysuspend.sh" => $root,	
+    ".mysuspend.sh" => $root,
+
+    #terminal-colors
+    "my-default.sh" => $root . "/.dynamic-colors/colorschemes",
+    "gummy.sh"      => $root . "/.dynamic-colors/colorschemes"
 );
 
 =doc
