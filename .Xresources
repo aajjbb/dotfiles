@@ -60,8 +60,9 @@ urxvt*secondaryScroll:    true
 !urxvt.keysym.Shift-Control-V: perl:clipboard:paste 
 urxvt.iso14755: False
 
-urxvt.perl-ext:
-urxvt.perl-ext-common: 
+urxvt*perl-ext-common: urxvt-colors
+urxvt*perl-lib: /home/aajjbb/.bin
+urxvt*keysym.F12: perl:urxvt-colors:
 
 !Make transparency
 urxvt*transparent: true

@@ -91,8 +91,7 @@ local function menu()
 end
 
 -- Display xrandr notifications from choices
-local state = { iterator = nil,
-                timer = nil,
+local state = { timer = nil,
                 cid = nil }
 local function xrandr()
    -- Stop any previous timer
@@ -114,7 +113,7 @@ local function xrandr()
 
    if not next then
       label, icon = "Keep the current configuration", icon_path
-      state.iterator = nil
+      state.index = nil
    else
       label, action, icon = unpack(next)
    end
@@ -131,7 +130,6 @@ local function xrandr()
                               function()
                                  state.timer:stop()
                                  state.timer = nil
-                                 state.iterator = nil
                                  if action then
                                     awful.util.spawn(action, false)
                                  end

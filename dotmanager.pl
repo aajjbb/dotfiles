@@ -30,9 +30,9 @@ my %files = (
     ".zshrc"        => $root,
 
     #scripts
-    ".lock.sh"      => $root . "/.bin",
-    ".mysuspend.sh" => $root . "/.bin",
-    ".urxvt-colors" => $root . "/.bin",
+    "lock.sh"      => $root . "/.bin",
+    "mysuspend.sh" => $root . "/.bin",
+    "urxvt-colors" => $root . "/.bin",
     
     #terminal-colors
     "my-default.sh" => $root . "/.dynamic-colors/colorschemes",

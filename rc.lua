@@ -81,7 +81,7 @@ os.setlocale(os.getenv("LANG"))
 beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/awesome-copycats/themes/multicolor/theme.lua")
 
 -- Define Useless Gap
-beautiful.useless_gap = 1
+beautiful.useless_gap = 0
 
 --beautiful.init(awful.util.get_themes_dir() .. "default/theme.lua")
 
@@ -325,10 +325,8 @@ local clockicon   = wibox.widget.imagebox(beautiful.widget_clock)
 local mytextclock = awful.widget.textclock(" " .. markup("#7788af", "%d %B %Y ") .. markup("#eee8d5", ">") .. markup("#de5e1e", " %I:%M %p "))
 
 -- Calendar
-lain.widgets.calendar.attach(mytextclock, {
-                                font_size = 10,
-                                position = "top_right"
-                                -- font = "MesloLGM 9"
+local calendar = lain.widgets.calendar({
+      attach_to = {mytextclock }
 })
 
 -- Weather
@@ -384,21 +382,37 @@ local batwidget = lain.widgets.bat({
 
 -- ALSA volume
 local volicon = wibox.widget.imagebox(beautiful.widget_vol)
-local volumewidget = lain.widgets.alsa({
-      timeout = 0.1,
+local volumewidget = lain.widgets.alsabar({
+      timeout = 1.0,
       channel = "Master",
       settings = function()
-         if volume_now.status == "off" then
-            widget:set_markup(" " .. markup("#7493d2", "0M%"))
-         else
-            widget:set_markup(" " .. markup("#7493d2", volume_now.level .. "%"))
-         end
+--         if volume_now.status == "off" then
+--            widget:set_markup(" " .. markup("#7493d2", "0M%"))
+--         else
+--            widget:set_markup(" " .. markup("#7493d2", volume_now.level .. "%"))
+--         end
       end
 })
-volumewidget:buttons(awful.util.table.join(
-                        awful.button({ }, 1, function () awful.util.spawn("amixer set Master toggle") end),
-                        awful.button({ }, 4, function () awful.util.spawn("amixer set Master 2%+") end),
-                        awful.button({ }, 5, function () awful.util.spawn("amixer set Master 2%-") end)
+volumewidget.bar:buttons(awful.util.table.join (
+          awful.button({}, 1, function()
+            awful.spawn.with_shell(string.format("%s -e alsamixer", terminal))
+          end),
+          awful.button({}, 2, function()
+            awful.spawn(string.format("%s set %s 100%%", volumewidget.cmd, volumewidget.channel))
+            volumewidget.update()
+          end),
+          awful.button({}, 3, function()
+            awful.spawn(string.format("%s set %s toggle", volumewidget.cmd, volumewidget.togglechannel or volumewidget.channel))
+            volumewidget.update()
+          end),
+          awful.button({}, 4, function()
+            awful.spawn(string.format("%s set %s 1%%+", volumewidget.cmd, volumewidget.channel))
+            volumewidget.update()
+          end),
+          awful.button({}, 5, function()
+            awful.spawn(string.format("%s set %s 1%%-", volumewidget.cmd, volumewidget.channel))
+            volumewidget.update()
+          end)
 ))
 
 -- Net
@@ -545,7 +559,7 @@ awful.screen.connect_for_each_screen(function(s)
            cmusicon,
            cmuswidget,
            volicon,
-           volumewidget,
+           volumewidget.bar,
            memicon,
            memwidget,
            cpuicon,
@@ -673,9 +687,18 @@ globalkeys = awful.util.table.join(
               {description = "restore minimized", group = "client"}),
 
     -- Prompt
-    awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
-              {description = "run prompt", group = "launcher"}),
-
+    awful.key({ modkey }, "r", function ()
+          awful.screen.focused().mypromptbox:run({
+                prompt       = "Open: ",
+                textbox      = awful.screen.focused().mypromptbox.widget,
+                exe_callback = function(...)
+                   awful.screen.focused().mypromptbox:spawn_and_handle_error(..., {tag=mouse.screen.selected_tag})
+                end,
+                history_path = awful.util.get_cache_dir() .. "/history"
+                                                })
+                               end,
+       {description = "run prompt", group = "launcher"}),
+    
     awful.key({ modkey }, "x",
               function ()
                   awful.prompt.run {
