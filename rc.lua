@@ -236,8 +236,8 @@ local tasklist_buttons = awful.util.table.join(
 -- @DOC_WALLPAPER@
 
 wp_index = 1
-wp_timeout  = 40
-wp_path = os.getenv("HOME") .. "/.config/awesome/wallpapers"
+wp_timeout = 40
+wp_path = os.getenv("HOME") .. "/.config/awesome/wallpapers/"
 wp_files = {
    "1.jpg",
    "2.jpg",
@@ -288,35 +288,47 @@ menu_buttom:buttons(awful.util.table.join(
 
 -- Redshift
 
-local redshift = lain.widgets.contrib.redshift
-local redshift_widget = wibox.widget.imagebox(rs_on)
 
-redshift:attach(
-   redshift_widget,
-   function ()
-      local rs_on  = lain_icons_dir .. "/redshift/redshift_on.png"
-      local rs_off = lain_icons_dir .. "/redshift/redshift_off.png"
+local myredshift = wibox.widget{
+    checked      = false,
+    check_color  = "#EB8F8F",
+    border_color = "#EB8F8F",
+    border_width = 0,
+    shape        = gears.shape.square,
+    widget       = wibox.widget.checkbox
+}
 
-      if redshift:is_active() then
-         redshift_widget:set_image(rs_on)
-      else
-         redshift_widget:set_image(rs_off)
-      end
-   end
+local myredshift_text = wibox.widget{
+    align  = "center",
+    widget = wibox.widget.textbox,
+}
+
+local myredshift_stack = wibox.widget{
+    myredshift,
+    myredshift_text,
+    layout = wibox.layout.stack
+}
+
+lain.widgets.contrib.redshift:attach(
+    myredshift,
+    function (active)
+        if active then
+            myredshift_text:set_markup(markup(beautiful.bg_normal, "<b>R</b>"))
+        else
+            myredshift_text:set_markup(markup(beautiful.fg_normal, "R"))
+        end
+        myredshift.checked = active
+    end
 )
 
-redshift_widget:buttons(awful.util.table.join(
-                           awful.button({ }, 1, function () redshift:toggle() end)))
 
 -- Textclock
 local clockicon   = wibox.widget.imagebox(beautiful.widget_clock)
 local mytextclock = awful.widget.textclock(" " .. markup("#7788af", "%d %B %Y ") .. markup("#eee8d5", ">") .. markup("#de5e1e", " %I:%M %p "))
 
 -- Calendar
-lain.widgets.calendar.attach(mytextclock, {
-                                font_size = 10,
-                                position = "top_right"
-                                -- font = "MesloLGM 9"
+local calendar = lain.widgets.calendar({
+      attach_to = {mytextclock }
 })
 
 -- Weather
@@ -365,21 +377,37 @@ local tempwidget = lain.widgets.temp({
 
 -- ALSA volume
 local volicon = wibox.widget.imagebox(beautiful.widget_vol)
-local volumewidget = lain.widgets.alsa({
-      timeout = 0.2,
+local volumewidget = lain.widgets.alsabar({
+      timeout = 1.0,
       channel = "Master",
       settings = function()
-         if volume_now.status == "off" then
-            widget:set_markup(" " .. markup("#7493d2", "0M%"))
-         else
-            widget:set_markup(" " .. markup("#7493d2", volume_now.level .. "% "))
-         end
+--         if volume_now.status == "off" then
+--            widget:set_markup(" " .. markup("#7493d2", "0M%"))
+--         else
+--            widget:set_markup(" " .. markup("#7493d2", volume_now.level .. "%"))
+--         end
       end
 })
-volumewidget:buttons(awful.util.table.join(
-                        awful.button({ }, 1, function () awful.util.spawn("amixer -D pulse set Master 1+ toggle") end),
-                        awful.button({ }, 4, function () awful.util.spawn("amixer set Master 2%+") end),
-                        awful.button({ }, 5, function () awful.util.spawn("amixer set Master 2%-") end)
+volumewidget.bar:buttons(awful.util.table.join (
+          awful.button({}, 1, function()
+            awful.spawn.with_shell(string.format("%s -e alsamixer", terminal))
+          end),
+          awful.button({}, 2, function()
+            awful.spawn(string.format("%s set %s 100%%", volumewidget.cmd, volumewidget.channel))
+            volumewidget.update()
+          end),
+          awful.button({}, 3, function()
+            awful.spawn(string.format("%s set %s toggle", volumewidget.cmd, volumewidget.togglechannel or volumewidget.channel))
+            volumewidget.update()
+          end),
+          awful.button({}, 4, function()
+            awful.spawn(string.format("%s set %s 1%%+", volumewidget.cmd, volumewidget.channel))
+            volumewidget.update()
+          end),
+          awful.button({}, 5, function()
+            awful.spawn(string.format("%s set %s 1%%-", volumewidget.cmd, volumewidget.channel))
+            volumewidget.update()
+          end)
 ))
 
 -- Net
@@ -526,7 +554,7 @@ awful.screen.connect_for_each_screen(function(s)
            cmusicon,
            cmuswidget,
            volicon,
-           volumewidget,
+           volumewidget.bar,
            memicon,
            memwidget,
            cpuicon,
