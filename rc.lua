@@ -149,6 +149,11 @@ local function client_menu_toggle_fn()
 end
 -- }}}
 
+
+-- Workaround on v4.0 to fix (all clients move to tag 0 on monitor change)
+screen.connect_signal("removed", awesome.restart)
+screen.connect_signal("added", awesome.restart)
+
 -- {{{ Menu
 -- @DOC_MENU@
 -- Create a launcher widget and a main menu
@@ -308,7 +313,7 @@ local myredshift_stack = wibox.widget{
     layout = wibox.layout.stack
 }
 
-lain.widgets.contrib.redshift:attach(
+lain.widget.contrib.redshift:attach(
     myredshift,
     function (active)
         if active then
@@ -325,12 +330,12 @@ local clockicon   = wibox.widget.imagebox(beautiful.widget_clock)
 local mytextclock = awful.widget.textclock(" " .. markup("#7788af", "%d %B %Y ") .. markup("#eee8d5", ">") .. markup("#de5e1e", " %I:%M %p "))
 
 -- Calendar
-local calendar = lain.widgets.calendar({
+local calendar = lain.widget.calendar({
       attach_to = {mytextclock }
 })
 
 -- Weather
-local weather = lain.widgets.weather({
+local weather = lain.widget.weather({
       city_id = 3453837,
       settings = function()
          if weather_now then
@@ -342,7 +347,7 @@ local weather = lain.widgets.weather({
 
 -- fs
 local fsicon = wibox.widget.imagebox(beautiful.widget_fs)
-local fswidget = lain.widgets.fs({
+local fswidget = lain.widget.fs({
       settings  = function()
          notification_preset.font = "Terminus 9"
          widget:set_markup(" " .. markup("#80d9d8", fs_now.used .. "% "))
@@ -352,7 +357,7 @@ local fswidget = lain.widgets.fs({
 -- CPU
 local cpuicon = wibox.widget.imagebox(beautiful.widget_cpu)
 
-local cpuwidget = lain.widgets.cpu({
+local cpuwidget = lain.widget.cpu({
       settings = function()
          widget:set_markup(markup("#e33a6e", string.format("%3d", cpu_now.usage) .. "% "))
       end
@@ -360,7 +365,7 @@ local cpuwidget = lain.widgets.cpu({
 
 -- Coretemp
 local tempicon = wibox.widget.imagebox(beautiful.widget_temp)
-local tempwidget = lain.widgets.temp({
+local tempwidget = lain.widget.temp({
       timeout = 0.5,
       tempfile = "/sys/class/thermal/thermal_zone2/temp",
       settings = function()
@@ -370,7 +375,7 @@ local tempwidget = lain.widgets.temp({
 
 -- Battery
 local baticon = wibox.widget.imagebox(beautiful.widget_batt)
-local batwidget = lain.widgets.bat({
+local batwidget = lain.widget.bat({
       timeout = 10,
       batteries = {"BAT1"},
       notify = "on",
@@ -382,7 +387,7 @@ local batwidget = lain.widgets.bat({
 
 -- ALSA volume
 local volicon = wibox.widget.imagebox(beautiful.widget_vol)
-local volumewidget = lain.widgets.alsabar({
+local volumewidget = lain.widget.alsabar({
       timeout = 1.0,
       channel = "Master",
       settings = function()
@@ -422,7 +427,7 @@ volumewidget.bar:buttons(awful.util.table.join (
 
 --netupicon = wibox.widget.imagebox(beautiful.widget_netup)
 --[[
-netupinfo = lain.widgets.net({
+netupinfo = lain.widget.net({
       settings = function()
          file_helper = io.popen("iwgetid -r")
          ssid = file_helper:read("*all")
@@ -444,7 +449,7 @@ netupinfo = lain.widgets.net({
 
 -- MEM
 local memicon = wibox.widget.imagebox(beautiful.widget_mem)
-local memwidget = lain.widgets.mem({
+local memwidget = lain.widget.mem({
       settings = function()
          widget:set_markup(" " .. markup("#e0da37", string.format("%4d", mem_now.used) .. "M "))
       end
@@ -453,7 +458,7 @@ local memwidget = lain.widgets.mem({
 -- mpd widget
 --[[
 mpdicon   = wibox.widget.imagebox(beautiful.widget_note)
-mpdwidget = lain.widgets.mpd({
+mpdwidget = lain.widget.mpd({
       settings = function()
          mpd_notification_preset = {
             title   = "Now playing",
@@ -469,7 +474,7 @@ mpdwidget = lain.widgets.mpd({
 
 -- cmus widget
 local cmusicon = wibox.widget.imagebox(beautiful.widget_note)
-local cmuswidget = lain.widgets.abase({
+local cmuswidget = lain.widget.watch({
       cmd = "cmus-remote -Q",
       timeout = 2,
       settings = function()
