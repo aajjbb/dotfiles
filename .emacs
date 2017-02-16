@@ -137,8 +137,8 @@
 (setq scroll-step 1) ;; keyboard scroll one line at a time
 
 ;; Emacs transparency
-(set-frame-parameter (selected-frame) 'alpha '(80 80))
-(add-to-list 'default-frame-alist '(alpha 80 80))
+;;(set-frame-parameter (selected-frame) 'alpha '(80 80))
+;;(add-to-list 'default-frame-alist '(alpha 80 80))
 
 ;; Rainbow minor mode (show real colors of rgb colors
 (rainbow-mode 1)

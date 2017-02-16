@@ -17,7 +17,7 @@ local hotkeys_popup = require("awful.hotkeys_popup").widget
 local lain           = require("lain")
 local rev            = require("awesome-revelation")
 local xrandr         = require("xrandr")
-local utf8           = require 'lua-utf8'
+--local utf8           = require 'lua-utf8'
 local lain_icons_dir = require("lain.helpers").icons_dir
 
 -- {{{ Error handling
@@ -95,7 +95,7 @@ rev.init()
 local markup     = lain.util.markup
 local modkey     = "Mod4"
 local altkey     = "Mod1"
-local terminal   = "urxvtc" or "xterm"
+local terminal   = "urxvt" or "xterm"
 
 -- user defined
 local editor_cmd = "vim"
@@ -309,13 +309,13 @@ local myredshift_stack = wibox.widget{
     layout = wibox.layout.stack
 }
 
-lain.widgets.contrib.redshift:attach(
+lain.widget.contrib.redshift:attach(
     myredshift,
     function (active)
         if active then
-            myredshift_text:set_markup(markup(beautiful.bg_normal, "<b>R</b>"))
+           -- myredshift_text:set_markup(markup(beautiful.bg_normal, "<b>R</b>"))
         else
-            myredshift_text:set_markup(markup(beautiful.fg_normal, "R"))
+--            myredshift_text:set_markup(markup(beautiful.fg_normal, "R"))
         end
         myredshift.checked = active
     end
@@ -327,12 +327,12 @@ local clockicon   = wibox.widget.imagebox(beautiful.widget_clock)
 local mytextclock = awful.widget.textclock(" " .. markup("#7788af", "%d %B %Y ") .. markup("#eee8d5", ">") .. markup("#de5e1e", " %I:%M %p "))
 
 -- Calendar
-local calendar = lain.widgets.calendar({
+local calendar = lain.widget.calendar({
       attach_to = {mytextclock }
 })
 
 -- Weather
-local weather = lain.widgets.weather({
+local weather = lain.widget.weather({
       city_id = 3453837,
       settings = function()
          if weather_now then
@@ -344,7 +344,7 @@ local weather = lain.widgets.weather({
 
 -- fs
 local fsicon = wibox.widget.imagebox(beautiful.widget_fs)
-local fswidget = lain.widgets.fs({
+local fswidget = lain.widget.fs({
       settings  = function()
          local script_response = io.popen('./.config/awesome/lain/scripts/dfs')
          local text = script_response:read('*all')
@@ -359,7 +359,7 @@ local fswidget = lain.widgets.fs({
 -- CPU
 local cpuicon = wibox.widget.imagebox(beautiful.widget_cpu)
 
-local cpuwidget = lain.widgets.cpu({
+local cpuwidget = lain.widget.cpu({
       settings = function()
          widget:set_markup(markup("#e33a6e", string.format("%3d", cpu_now.usage) .. "% "))
       end
@@ -367,9 +367,9 @@ local cpuwidget = lain.widgets.cpu({
 
 -- Coretemp
 local tempicon = wibox.widget.imagebox(beautiful.widget_temp)
-local tempwidget = lain.widgets.temp({
-      timeout = 0.5,
-      tempfile = "/sys/class/thermal/thermal_zone2/temp",
+local tempwidget = lain.widget.temp({
+      timeout = 1.0,
+      tempfile = "/sys/class/thermal/thermal_zone0/temp",
       settings = function()
          widget:set_markup(" " .. markup("#f1af5f", coretemp_now .. "°C "))
       end
@@ -377,7 +377,7 @@ local tempwidget = lain.widgets.temp({
 
 -- ALSA volume
 local volicon = wibox.widget.imagebox(beautiful.widget_vol)
-local volumewidget = lain.widgets.alsabar({
+local volumewidget = lain.widget.alsabar({
       timeout = 1.0,
       channel = "Master",
       settings = function()
@@ -417,7 +417,7 @@ volumewidget.bar:buttons(awful.util.table.join (
 
 --netupicon = wibox.widget.imagebox(beautiful.widget_netup)
 --[[
-netupinfo = lain.widgets.net({
+netupinfo = lain.widget.net({
       settings = function()
          file_helper = io.popen("iwgetid -r")
          ssid = file_helper:read("*all")
@@ -439,7 +439,7 @@ netupinfo = lain.widgets.net({
 
 -- MEM
 local memicon = wibox.widget.imagebox(beautiful.widget_mem)
-local memwidget = lain.widgets.mem({
+local memwidget = lain.widget.mem({
       settings = function()
          widget:set_markup(" " .. markup("#e0da37", string.format("%4d", mem_now.used) .. "M "))
       end
@@ -448,7 +448,7 @@ local memwidget = lain.widgets.mem({
 -- mpd widget
 --[[
 mpdicon   = wibox.widget.imagebox(beautiful.widget_note)
-mpdwidget = lain.widgets.mpd({
+mpdwidget = lain.widget.mpd({
       settings = function()
          mpd_notification_preset = {
             title   = "Now playing",
@@ -464,7 +464,7 @@ mpdwidget = lain.widgets.mpd({
 
 -- cmus widget
 local cmusicon = wibox.widget.imagebox(beautiful.widget_note)
-local cmuswidget = lain.widgets.abase({
+local cmuswidget = lain.widget.watch({
       cmd = "cmus-remote -Q",
       timeout = 2,
       settings = function()
@@ -483,9 +483,9 @@ local cmuswidget = lain.widgets.abase({
          local artist = cmus_now.artist
          local title  = cmus_now.title
 
-         if utf8.len(title) > 25 then
-            title = utf8.sub(title, 0, 25) .. " ..."
-         end
+         --if utf8.len(title) > 25 then
+         --title = utf8.sub(title, 0, 25) .. " ..."
+         --end
 
          widget:set_markup(" " .. markup("#e54c62", artist) .. " - " .. markup("#b2b2b2", title) .. " ")
       end
@@ -560,7 +560,7 @@ awful.screen.connect_for_each_screen(function(s)
            cpuicon,
            cpuwidget,
            fsicon,
-           fswidget,
+           --fswidget,
            tempicon,
            tempwidget,
            weather.icon,
