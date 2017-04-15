@@ -61,7 +61,7 @@ urxvt*secondaryScroll:    true
 urxvt.iso14755: False
 
 urxvt*perl-ext-common: urxvt-colors
-urxvt*perl-lib: /home/aajjbb/.bin
+urxvt*perl-lib: /home/aajjbb/.bin/
 urxvt*keysym.F12: perl:urxvt-colors:
 
 !Make transparency
