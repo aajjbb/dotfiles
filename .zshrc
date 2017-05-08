@@ -98,3 +98,5 @@ export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 # Add Dynamic Color to Path
 export PATH="$HOME/.dynamic-colors/bin:$PATH"
 source $HOME/.dynamic-colors/completions/dynamic-colors.zsh
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.dynamic-colors/bin:$PATH"

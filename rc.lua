@@ -464,7 +464,7 @@ mpdwidget = lain.widget.mpd({
 
 -- cmus widget
 local cmusicon = wibox.widget.imagebox(beautiful.widget_note)
-local cmuswidget = lain.widget.watch({
+local cmuswidget = awful.widget.watch({
       cmd = "cmus-remote -Q",
       timeout = 2,
       settings = function()
