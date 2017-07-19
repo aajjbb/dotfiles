@@ -96,3 +96,4 @@ source $HOME/.dynamic-colors/completions/dynamic-colors.zsh
 source ~/perl5/perlbrew/etc/bashrc
 
 neofetch
+. ~/.luaver/luaver

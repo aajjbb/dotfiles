@@ -50,7 +50,7 @@ urxvt*saveLines: 9000
 urxvt.scrollBar: false
 urxvt.borderLess: false
 
-urxvt.letterSpace: -2
+urxvt.letterSpace: -1
 urxvt*font: xft:MesloLGM:pixelsize=11.5:antialias=true:hinting=true
 
 urxvt*loginShell:         true

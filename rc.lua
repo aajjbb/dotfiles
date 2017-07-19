@@ -16,7 +16,7 @@ local wibox         = require("wibox")
 local beautiful     = require("beautiful")
 local naughty       = require("naughty")
 local lain          = require("lain")
---local menubar       = require("menubar")
+local menubar       = require("menubar")
 --local freedesktop   = require("freedesktop")
 local hotkeys_popup = require("awful.hotkeys_popup").widget
 
@@ -57,6 +57,7 @@ local function run_once(cmd_arr)
     end
 end
 
+rev.init()
 run_once({ "urxvtd", "unclutter -root" })
 -- }}}
 
@@ -68,6 +69,7 @@ local terminal     = "urxvtc" or "xterm"
 local editor       = os.getenv("EDITOR") or "vim" or "nano"
 local gui_editor   = "emacs"
 local browser      = "google-chrome-stable"
+local screenshot = "scrot -q 100 '%Y-%m-%d-%k-%M-%S_$wx$h.png' -e 'mv $f ~/Pictures/Screenshot/'"
 
 awful.util.terminal = terminal
 awful.util.tagnames = { "web", "emacs", "term", "chat", "twit", "music", "docs", "other" }
@@ -77,23 +79,23 @@ awful.layout.layouts = {
     awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
     awful.layout.suit.tile.top,
-    --awful.layout.suit.fair,
-    --awful.layout.suit.fair.horizontal,
-    --awful.layout.suit.spiral,
-    --awful.layout.suit.spiral.dwindle,
+    awful.layout.suit.fair,
+    awful.layout.suit.fair.horizontal,
+    awful.layout.suit.spiral,
+    awful.layout.suit.spiral.dwindle,
     awful.layout.suit.max,
-    --awful.layout.suit.max.fullscreen,
-    --awful.layout.suit.magnifier,
-    --awful.layout.suit.corner.nw,
-    --awful.layout.suit.corner.ne,
-    --awful.layout.suit.corner.sw,
-    --awful.layout.suit.corner.se,
-    --lain.layout.cascade,
-    --lain.layout.cascade.tile,
-    --lain.layout.centerwork,
-    --lain.layout.centerwork.horizontal,
-    --lain.layout.termfair,
-    --lain.layout.termfair.center,
+    awful.layout.suit.max.fullscreen,
+    awful.layout.suit.magnifier,
+    awful.layout.suit.corner.nw,
+    awful.layout.suit.corner.ne,
+    awful.layout.suit.corner.sw,
+    awful.layout.suit.corner.se,
+    lain.layout.cascade,
+    lain.layout.cascade.tile,
+    lain.layout.centerwork,
+    lain.layout.centerwork.horizontal,
+    lain.layout.termfair,
+    lain.layout.termfair.center,
 }
 awful.util.taglist_buttons = awful.util.table.join(
                     awful.button({ }, 1, function(t) t:view_only() end),
@@ -215,7 +217,7 @@ root.buttons(awful.util.table.join(
 globalkeys = awful.util.table.join(
     -- Take a screenshot
     -- https://github.com/copycat-killer/dots/blob/master/bin/screenshot
-    awful.key({ altkey }, "p", function() os.execute("screenshot") end),
+    awful.key({}, "Print", function() os.execute("screenshot") end),
 
     -- Hotkeys
     awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
@@ -426,14 +428,14 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey }, "v", function () awful.spawn("xsel -b | xsel") end),
 
     -- User programs
-    awful.key({ modkey }, "e", function () awful.spawn(gui_editor) end),
+    -- awful.key({ modkey }, "e", function () awful.spawn(gui_editor) end),
     awful.key({ modkey }, "q", function () awful.spawn(browser) end),
 
     -- Default
-    --[[ Menubar
+    -- Menubar
     awful.key({ modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"})
-    --]]
+       {description = "show the menubar", group = "launcher"}),
+    -- ]]
     --[[ dmenu
     awful.key({ modkey }, "x", function ()
         awful.spawn(string.format("dmenu_run -i -fn 'Monospace' -nb '%s' -nf '%s' -sb '%s' -sf '%s'",
@@ -461,14 +463,14 @@ globalkeys = awful.util.table.join(
     awful.key({ }, "XF86AudioMute", function () awful.util.spawn("amixer set Master toggle") end),
 
     -- cmus
-    --awful.key({ }, "XF86AudioPlay",    function () awful.util.spawn("cmus-remote -u") end),
-    --awful.key({ }, "XF86AudioPrev",    function () awful.util.spawn("cmus-remote -r") end),
-    --awful.key({ }, "XF86AudioNext",    function () awful.util.spawn("cmus-remote -n") end),
+    awful.key({ }, "XF86AudioPlay",    function () awful.util.spawn("cmus-remote -u") end),
+    awful.key({ }, "XF86AudioPrev",    function () awful.util.spawn("cmus-remote -r") end),
+    awful.key({ }, "XF86AudioNext",    function () awful.util.spawn("cmus-remote -n") end),
 
     -- Now using mpd
-    awful.key({ }, "XF86AudioPlay",    function () awful.util.spawn("mpc toggle ") end),
-    awful.key({ }, "XF86AudioPrev",    function () awful.util.spawn("mpc prev") end),
-    awful.key({ }, "XF86AudioNext",    function () awful.util.spawn("mpc next") end),
+    --awful.key({ }, "XF86AudioPlay",    function () awful.util.spawn("mpc toggle ") end),
+    --awful.key({ }, "XF86AudioPrev",    function () awful.util.spawn("mpc prev") end),
+    --awful.key({ }, "XF86AudioNext",    function () awful.util.spawn("mpc next") end),
 
     -- Working with multiple screens
     awful.key({}, "XF86WWW", function() xrandr.xrandr() end),
