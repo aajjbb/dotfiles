@@ -95,5 +95,5 @@ PATH="$PATH:$HOME/Devel/git-achievements"
 export PATH
 
 screenfetch
-#export PATH=$PATH:/opt/openresty/bin/:/opt/openresty/nginx/sbin/ #Automatically added by openresty package
+export PATH=$PATH:/opt/openresty/bin/:/opt/openresty/nginx/sbin/ #Automatically added by openresty package
 

@@ -20,6 +20,7 @@ my %files = (
     ".bash_profile" => $root,
     ".bashrc"       => $root,
     ".emacs"        => $root,
+    ".spacemacs"    => $root,
     ".gitconfig"    => $root,
     ".tmux.conf"    => $root,
     ".vimrc"        => $root,
