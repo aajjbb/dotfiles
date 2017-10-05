@@ -95,5 +95,9 @@ export PATH="$PATH:$HOME/.dynamic-colors/bin"
 source $HOME/.dynamic-colors/completions/dynamic-colors.zsh
 source ~/perl5/perlbrew/etc/bashrc
 
+#g++ alias for programming competitions
+alias mycpp="g++ -Wall -Wextra -pedantic -std=c++11 -O2 -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -fsanitize=address -fsanitize=undefined -fno-sanitize-recover -fstack-protector"
+
+
 neofetch
 . ~/.luaver/luaver
