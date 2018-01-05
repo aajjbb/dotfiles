@@ -12,14 +12,10 @@ my %files = (
     "rc.lua"        => $root . "/.config/awesome",
     "xrandr.lua"    => $root . "/.config/awesome",
 
-    #weechat
-    "plugins.conf"  => $root . "/.weechat",
-    "irc.conf"      => $root . "/.weechat",
-
     #general
     ".bash_profile" => $root,
     ".bashrc"       => $root,
-    ".emacs"        => $root,
+    ".emacs.bkp"    => $root,
     ".spacemacs"    => $root,
     ".gitconfig"    => $root,
     ".tmux.conf"    => $root,
@@ -33,11 +29,6 @@ my %files = (
     #scripts
     "lock.sh"      => $root . "/.bin",
     "mysuspend.sh" => $root . "/.bin",
-    "urxvt-colors" => $root . "/.bin",
-
-    #terminal-colors
-    "my-default.sh" => $root . "/.dynamic-colors/colorschemes",
-    "gummy.sh"      => $root . "/.dynamic-colors/colorschemes"
 );
 
 =doc

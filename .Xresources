@@ -1,45 +1,12 @@
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !Xft
-Xft.dpi: 96
-Xft.antialias: true
+Xft.autohint: 0
+Xft.antialias: 1
 Xft.hinting: true
-Xft.rgba: rgb
-!Xft.autohint: false
 Xft.hintstyle: hintslight
-!Xft.lcdfilter: lcddefault
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!xterm
-xterm*utf8: 1
-xterm*termName: xterm-256color
-xterm*locale: true
-xterm*metaSendsEscape: true
-xterm*eightBitInput: false
-!fix clipboard issue
-
-xterm*selectToClipboard: true
-xterm*VT100.*translations:      #override \
-        Shift Ctrl C: select-end(CLIPBOARD, CUT_BUFFER0) \n\
-        Shift Ctrl V: insert-selection(CLIPBOARD, CUT_BUFFER0)
-			
-xterm*saveLines: 9000
-
-xterm.scrollBar: false
-xterm.borderLess: false
-
-xterm*loginShell:         true
-xterm*scrollBar:         false
-xterm*secondaryScroll:    true
-
-xterm.iso14755: False 
-
-xterm*faceNameDoublesize: xft:vlgothic :style=Regular :pixelsize=12
-xterm*font: MesloLGM :pixelsize=13:antialias=true:hinting=true
-xterm*boldFont: MesloLGM :bold:pixelsize=12:antialias=true:hinting=true
-xterm*faceName: MesloLGM :pixelsize=12:antialias=true:hinting=true
-
-xterm*dynamicColors: true
+Xft.dpi: 96
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -51,27 +18,18 @@ urxvt.scrollBar: false
 urxvt.borderLess: false
 
 urxvt.letterSpace: 0
-!urxvt*font: xft:MesloLGM:pixelsize=11.5:antialias=true:hinting=true
-urxvt.font                   : xft:Tamzen:pixelsize=16
-urxvt.boldFont               : xft:Tamzen:pixelsize=16
+URxvt*font:    -*-tamsyn-medium-*-*--16-*-*-*-*-*-1
+URxvt*boldFont: -*-tamsyn-medium-*-*--16-*-*-*-*-*-1
 
 urxvt*loginShell:         true
 urxvt*scrollBar:         false
 urxvt*secondaryScroll:    true
 
-!urxvt.keysym.Shift-Control-V: perl:clipboard:paste 
 urxvt.iso14755: False
-
-urxvt*perl-ext-common: urxvt-colors
-urxvt*perl-lib: /home/aajjbb/.bin/
-urxvt*keysym.F12: perl:urxvt-colors:
 
 !Make transparency
 urxvt*transparent: true
 urxvt*shading: 10
-
-!Allow Dynamic Colors
-urxvt*dynamicColors: on
 
 !Home-End keys
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
