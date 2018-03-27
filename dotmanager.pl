@@ -9,8 +9,14 @@ my $root = $ENV{'HOME'};
 my $current_dir = $ENV{'PWD'};
 
 my %files = (
-    "rc.lua"        => $root . "/.config/awesome",
-    "xrandr.lua"    => $root . "/.config/awesome",
+    # awesome
+    ".config/awesome/menugen.lua"   => $root . ".config/awesome",
+    ".config/awesome/rc.lua"        => $root . ".config/awesome",
+    ".config/awesome/widgets.lua"   => $root . ".config/awesome",
+    ".config/awesome/xrandr.lua"    => $root . ".config/awesome",
+
+    # i3
+    ".config/i3/config"    => $root . "/.config/i3",
 
     #general
     ".bash_profile" => $root,
@@ -23,12 +29,15 @@ my %files = (
     ".xbindkeysrc"  => $root,
     ".Xresources"   => $root,
     ".compton.conf" => $root,
-
     ".zshrc"        => $root,
 
     #scripts
-    "lock.sh"      => $root . "/.bin",
-    "mysuspend.sh" => $root . "/.bin",
+    ".bin/lock.sh"      => $root . "/.bin",
+    ".bin/mysuspend.sh" => $root . "/.bin",
+
+    # weechat
+    ".weechat/irc.conf" => $root . ".weechat/"
+    ".weechat/plugins.conf" => $root . ".weechat/"
 );
 
 =doc
