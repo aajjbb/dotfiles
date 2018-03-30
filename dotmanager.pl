@@ -36,7 +36,7 @@ my %files = (
     ".bin/mysuspend.sh" => $root . "/.bin",
 
     # weechat
-    ".weechat/irc.conf" => $root . ".weechat/"
+    ".weechat/irc.conf" => $root . ".weechat/",
     ".weechat/plugins.conf" => $root . ".weechat/"
 );
 
