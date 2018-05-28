@@ -16,7 +16,12 @@ my %files = (
     ".config/awesome/xrandr.lua"    => $root . ".config/awesome",
 
     # i3
-    ".config/i3/config"    => $root . "/.config/i3",
+    ".config/i3/config"   => $root . "/.config/i3",
+    ".config/i3/start.sh" => $root . "/.config/i3",
+
+    # polybar
+    ".config/polybar/config"    => $root . "/.config/polybar",
+    ".config/polybar/launch.sh" => $root . "/.config/polybar",
 
     #general
     ".bash_profile" => $root,
@@ -36,7 +41,7 @@ my %files = (
     ".bin/mysuspend.sh" => $root . "/.bin",
 
     # weechat
-    ".weechat/irc.conf" => $root . ".weechat/",
+    ".weechat/irc.conf"     => $root . ".weechat/",
     ".weechat/plugins.conf" => $root . ".weechat/"
 );
 
