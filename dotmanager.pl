@@ -27,6 +27,7 @@ my %files = (
     ".bash_profile" => $root,
     ".bashrc"       => $root,
     ".emacs.bkp"    => $root,
+    ".emacs"	    => $root,
     ".spacemacs"    => $root,
     ".gitconfig"    => $root,
     ".tmux.conf"    => $root,

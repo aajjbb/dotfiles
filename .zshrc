@@ -96,3 +96,6 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 export PATH=$PATH:~/.bin
+
+[ -s ~/.luaver/luaver ] && . ~/.luaver/luaver
+
