@@ -1,3 +1,6 @@
+set ruler
+set title
+
 set ts=4
 set sw=2
 set noet

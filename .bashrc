@@ -95,3 +95,6 @@ PATH="$PATH:$HOME/Devel/git-achievements"
 export PATH
 
 screenfetch
+. ~/.luaver/luaver
+export PATH=$PATH:/opt/openresty/bin/:/opt/openresty/nginx/sbin/ #Automatically added by openresty package
+
