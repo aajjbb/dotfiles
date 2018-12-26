@@ -1,9 +1,0 @@
-[submodule "awesome/lain"]
-	path = awesome/lain
-	url = https://github.com/copycat-killer/lain.git
-[submodule "awesome/awesome-revelation"]
-	path = awesome/awesome-revelation
-	url = https://github.com/guotsuan/awesome-revelation.git
-[submodule "awesome/themes/awesome-themes-3.5"]
-	path = awesome/themes/awesome-themes-3.5
-	url = https://github.com/Morley93/awesome-themes-3.5.git
