@@ -1,36 +1,3 @@
 [user]
 	email = jefersonlsiq@gmail.com
-	name = aajjbb
-	username = aajjbb
-	signingkey = B1321B6007B93B8B
-[color]
-	ui = always
-[core]
-	editor = emacs
-	autocrlf = false
-	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
-	excludesfile = ~/.gitignore
-[web]
-	browser = google-chrome
-[color "branch"]
-	current = yellow bold
-	local = green bold
-	remote = cyan bold
-[color "diff"]
-	meta = yellow bold
-	frag = magenta bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
-[color "status"]
-	added = green bold
-	changed = yellow bold
-	untracked = red bold
-[github]
-	user = aajjbb
-[achievement]
-	upload = true
-[credential]
-	helper = cache --timeout=3600000
-[merge]
-	conflictstyle = diff3
+	name = Jeferson Siqueira
