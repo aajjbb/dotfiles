@@ -66,3 +66,5 @@ set number
 
 syntax on
 
+" necessary on using the fish shell
+set shell=/bin/bash
