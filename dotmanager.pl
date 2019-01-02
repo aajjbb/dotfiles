@@ -9,41 +9,30 @@ my $root = $ENV{'HOME'};
 my $current_dir = $ENV{'PWD'};
 
 my %files = (
-    # awesome
-    ".config/awesome/menugen.lua"   => $root . ".config/awesome",
-    ".config/awesome/rc.lua"        => $root . ".config/awesome",
-    ".config/awesome/widgets.lua"   => $root . ".config/awesome",
-    ".config/awesome/xrandr.lua"    => $root . ".config/awesome",
+    # awesome-wm
+    # awesome depends on other packages:
+    # (awesome-copycats, awesome-revelation, freedesktop)
+    ".config/awesome/rc.lua"        => $root,
+    ".config/awesome/xrandr.lua"    => $root,
 
-    # i3
-    ".config/i3/config"   => $root . "/.config/i3",
-    ".config/i3/start.sh" => $root . "/.config/i3",
-
-    # polybar
-    ".config/polybar/config"    => $root . "/.config/polybar",
-    ".config/polybar/launch.sh" => $root . "/.config/polybar",
+    # i3 config
+    ".config/i3/config"   => $root,
 
     #general
     ".bash_profile" => $root,
     ".bashrc"       => $root,
+    ".compton.conf" => $root,
     ".emacs.bkp"    => $root,
-    ".emacs"	    => $root,
-    ".spacemacs"    => $root,
     ".gitconfig"    => $root,
+    ".spacemacs"    => $root,
     ".tmux.conf"    => $root,
     ".vimrc"        => $root,
-    ".xbindkeysrc"  => $root,
     ".Xresources"   => $root,
-    ".compton.conf" => $root,
     ".zshrc"        => $root,
 
     #scripts
-    ".bin/lock.sh"      => $root . "/.bin",
-    ".bin/mysuspend.sh" => $root . "/.bin",
-
-    # weechat
-    ".weechat/irc.conf"     => $root . ".weechat/",
-    ".weechat/plugins.conf" => $root . ".weechat/"
+    ".bin/lock.sh"      => $root,
+    ".bin/suspend.sh" => $root,
 );
 
 =doc
@@ -134,9 +123,9 @@ if ($#ARGV > 2) {
     my $option = $ARGV[0];
     my $bypass = ($ARGV[1] and ($ARGV[1] eq "--skip")) or 0;
 
-    if ($option eq "--install") {
+    if ($option eq "install") {
         install($bypass);
-    } elsif ($option eq "--update") {
+    } elsif ($option eq "update") {
         update($bypass);
     } else {
         print("Invalid argument\n$usage");

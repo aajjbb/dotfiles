@@ -77,9 +77,9 @@ local themes = {
 local chosen_theme = themes[7]
 local modkey       = "Mod4"
 local altkey       = "Mod1"
-local terminal     = "urxvtc" or "urxvt"
+local terminal     = "kitty" or "xterm"
 local editor       = os.getenv("EDITOR") or "nano"
-local gui_editor   = "gvim"
+local gui_editor   = "emacs"
 local browser      = "firefox"
 local guieditor    = "atom"
 
@@ -451,7 +451,7 @@ globalkeys = awful.util.table.join(
         {description = "show dmenu", group = "launcher"})
     --]]
     -- Prompt
-    awful.key({ modkey }, "r", function () awful.screen.focused().mypromptbox:run() end,
+    awful.key({ modkey }, "r", function () awful.spawn.with_shell("rofi -show run") end,
               {description = "run prompt", group = "launcher"}),
 
     awful.key({ modkey }, "x",
@@ -716,12 +716,22 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 -- {{ Autorun
 
-awful.util.spawn_with_shell("xrdb -merge ~/.Xresources")
-awful.util.spawn_with_shell('xmodmap -e "keycode 118 ="')
-awful.util.spawn_with_shell("urxvtd")
-awful.util.spawn_with_shell("mpd")
-awful.util.spawn_with_shell("compton")
-awful.util.spawn_with_shell("nm-applet")
+awful.spawn.with_shell("xrdb -merge ~/.Xresources")
+
+-- open kde internet connection
+awful.spawn.with_shell("kcmshell5 kcm_networkmanagement")
+
+-- disabling 'insert' key
+-- awful.spawn.with_shell('xmodmap -e "keycode 118 ="')
+
+-- disabled as i am using kitty now.
+-- awful.spawn.with_shell("urxvtd")
+
+-- using cmus instead of mpd
+-- awful.spawn.with_shell("mpd")
+
+awful.spawn.with_shell("compton")
+awful.spawn.with_shell("nm-applet")
 
 -- }}}
 
