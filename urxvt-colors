@@ -1,5 +1,0 @@
-sub on_user_command {
-    my ($self, $cmd) = @_;
-    my $output = `dynamic-colors cycle`;
-    $self->cmd_parse($output);
-}
