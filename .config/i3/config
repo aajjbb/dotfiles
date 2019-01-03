@@ -184,6 +184,5 @@ exec --no-startup-id xset fp rehash &
 exec --no-startup-id xmodmap -e "keycode 118 =" &
 
 # Programs
-exec --no-startup-id /usr/share/goobuntu-indicator/goobuntu_indicator.py &
 exec --no-startup-id compton &
 exec --no-startup-id urxvtd &
