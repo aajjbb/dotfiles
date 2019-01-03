@@ -25,7 +25,7 @@ my %files = (
     #general
     ".bash_profile"        => $root,
     ".bashrc"              => $root,
-    ".config/compton.conf" => $root,
+    ".config/.compton.conf" => $root,
     ".emacs.bkp"           => $root,
     ".gitconfig"           => $root,
     ".spacemacs"           => $root,
