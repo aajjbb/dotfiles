@@ -17,6 +17,7 @@ my %files = (
 
     # i3 config
     ".config/i3/config"   => $root,
+    ".config/i3/init.sh"  => $root,
 
     # kitty config
     ".config/kitty/kitty.conf" => $root,
