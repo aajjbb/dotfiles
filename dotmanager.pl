@@ -18,6 +18,9 @@ my %files = (
     # i3 config
     ".config/i3/config"   => $root,
 
+    # kitty config
+    ".config/kitty/kitty.conf" => $root,
+
     #general
     ".bash_profile"        => $root,
     ".bashrc"              => $root,
