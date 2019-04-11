@@ -75,7 +75,7 @@ sub install {
 
         print("Installing " . $key . " in " . $destiny_file . "\n");
 
-        my $result = `cp -TR $source_file $destiny_file`;
+        my $result = `ln -s $source_file $destiny_file`;
 
         if ($result) {
             say "Failed to install " . $key . " is probably being used by other application or it does not exists";
@@ -115,8 +115,8 @@ sub update {
 
 my $usage = "Usage: perl dotmanager.pl [OPTION] [BYPASS]\n
   Options:
-    --install [Install current files in repository to system]\n
-    --update [Update files in repository with ones from the system]\n
+    install [Install current files in repository to system]\n
+    update [Update files in repository with ones from the system]\n
   Bypass:
     --skip [Skip Confirmations]\n
     ";
