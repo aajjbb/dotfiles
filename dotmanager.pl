@@ -23,16 +23,16 @@ my %files = (
     ".config/kitty/kitty.conf" => $root,
 
     #general
-    ".bash_profile"        => $root,
-    ".bashrc"              => $root,
+    ".bash_profile"         => $root,
+    ".bashrc"               => $root,
     ".config/.compton.conf" => $root,
-    ".emacs.bkp"           => $root,
-    ".gitconfig"           => $root,
-    ".spacemacs"           => $root,
-    ".tmux.conf"           => $root,
-    ".vimrc"               => $root,
-    ".Xresources"          => $root,
-    ".zshrc"               => $root,
+    ".emacs"                => $root,
+    ".gitconfig"            => $root,
+    ".spacemacs"            => $root,
+    ".tmux.conf"            => $root,
+    ".vimrc"                => $root,
+    ".Xresources"           => $root,
+    ".zshrc"                => $root,
 
     #scripts
     ".bin/lock.sh"      => $root,
