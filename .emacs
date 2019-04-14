@@ -168,7 +168,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (all-the-icons moonscript rust-mode markdown-mode neotree haskell-mode zenburn-theme yaxception yaml-mode web-mode warm-night-theme underwater-theme twittering-mode tuareg sunny-day-theme sublime-themes spacegray-theme soothe-theme solarized-theme soft-morning-theme smyx-theme smart-shift slime-theme scala-outline-popup rainbow-mode php-mode perl-completion pde paper-theme org occidental-theme mustard-theme moe-theme minesweeper matlab-mode magit lush-theme lua-mode log4e leuven-theme js2-mode jedi jazz-theme grandshell-theme gotham-theme flycheck flatland-theme firecode-theme direx dark-krystal-theme darcula-theme d-mode cyberpunk-theme csharp-mode color-theme-solarized boron-theme bliss-theme base16-theme alect-themes afternoon-theme ac-octave ac-html))))
+    (erlang all-the-icons moonscript rust-mode markdown-mode neotree haskell-mode zenburn-theme yaxception yaml-mode web-mode warm-night-theme underwater-theme twittering-mode tuareg sunny-day-theme sublime-themes spacegray-theme soothe-theme solarized-theme soft-morning-theme smyx-theme smart-shift slime-theme scala-outline-popup rainbow-mode php-mode perl-completion pde paper-theme org occidental-theme mustard-theme moe-theme minesweeper matlab-mode magit lush-theme lua-mode log4e leuven-theme js2-mode jedi jazz-theme grandshell-theme gotham-theme flycheck flatland-theme firecode-theme direx dark-krystal-theme darcula-theme d-mode cyberpunk-theme csharp-mode color-theme-solarized boron-theme bliss-theme base16-theme alect-themes afternoon-theme ac-octave ac-html))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -316,5 +316,8 @@
 
 ;; remap RET
 ;; (define-key key-translation-map (kbd "RET") (kbd "C-j"))
+
+;; delete trailing whitespace on save
+(add-hook 'write-file-hooks 'delete-trailing-whitespace)
 
 ;;; .emacs ends here
