@@ -481,7 +481,7 @@ globalkeys = awful.util.table.join(
     awful.key({ }, "XF86AudioNext",    function () awful.util.spawn("mpc next") end),
 
     -- Working with multiple screens
-    awful.key({}, "XF86WWW", function() xrandr.xrandr() end),
+    awful.key({}, "XF86Display", function() xrandr.xrandr() end),
 
     -- Take a screenshot
     awful.key({}, "Print", function ()
