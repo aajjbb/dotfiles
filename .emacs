@@ -188,10 +188,13 @@
 
 ;; define tabspace
 ;; tab lenght config
-(setq-default indent-tabs-mode nil)
-(setq-default tab-width 4)
+(progn
+  ;; make indentation commands use space only (never tab character)
+  (setq-default indent-tabs-mode nil)
+  ;; emacs 23.1 to 26, default to t
+  ;; if indent-tabs-mode is t, it means it may use tab, resulting mixed space and tab
+  )
 (setq-default c-basic-offset 4)
-;;(setq tab-stop-list (number-sequence 4 200 4))
 
 ;;(setq-default indent-tabs-mode nil)
 ;;(setq-default tab-width 4)
