@@ -171,7 +171,7 @@ lain.layout.cascade.tile.extra_padding = 5
 lain.layout.cascade.tile.nmaster       = 5
 lain.layout.cascade.tile.ncol          = 2
 
-local theme_path = string.format("%s/.config/awesome/%s/theme.lua", os.getenv("HOME"), chosen_theme)
+local theme_path = string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv("HOME"), chosen_theme)
 beautiful.init(theme_path)
 -- }}}
 
@@ -492,7 +492,7 @@ globalkeys = awful.util.table.join(
     awful.key({modkey}, "e", rev),
 
     -- Suspend on pressing sleep key
-    awful.key({ }, "XF86Sleep", function() awful.util.spawn_with_shell("mysuspend") end),
+    awful.key({ }, "XF86Sleep", function() awful.util.spawn_with_shell("systemnctl suspend") end),
 
     -- Lock Screen
     awful.key({modkey}, "l", function() awful.util.spawn_with_shell("lock") end)
