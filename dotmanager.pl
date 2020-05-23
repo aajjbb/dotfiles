@@ -35,8 +35,7 @@ my %files = (
     ".zshrc"                => $root,
 
     #scripts
-    ".bin/lock.sh"      => $root,
-    ".bin/suspend.sh" => $root,
+    ".local/bin/lock.sh"    => $root,
 );
 
 =doc
