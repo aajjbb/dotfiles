@@ -5,7 +5,7 @@
 [color]
 	ui = always
 [core]
-	editor = emacs
+	editor = emacsclient -c
 	autocrlf = false
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 	excludesfile = ~/.gitignore
