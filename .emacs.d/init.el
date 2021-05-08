@@ -128,6 +128,23 @@
     (indent-guide-global-mode))
   )
 
+;; set cc-mode
+(use-package cc-mode
+  :defer t)
+
+;; use flycheck on c/c++ code
+(use-package flycheck
+  :config
+  (progn
+    (add-hook 'c-mode-hook 'flycheck-mode)
+    (add-hook 'c++-mode-hook (lambda () (progn
+					  'flycheck-mode
+					  (setq-default  flycheck-g++-language-standard "c++14")
+					  )))
+    )
+  :defer t
+  :ensure t)
+
 ;; set python configuration with elpy
 (use-package python
   :config (progn
@@ -152,7 +169,7 @@
  '(custom-safe-themes
    '("197cefea731181f7be51e9d498b29fb44b51be33484b17416b9855a2c4243cb1" default))
  '(package-selected-packages
-   '(indent-guide nord-theme all-the-icons powerline smartparens smartparens-config rainbow-mode company use-package)))
+   '(flycheck indent-guide nord-theme all-the-icons powerline smartparens smartparens-config rainbow-mode company use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
