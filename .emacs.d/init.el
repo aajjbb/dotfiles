@@ -70,6 +70,15 @@
     )
   )
 
+;; includes powerline
+(use-package powerline
+  :ensure
+  :init
+  (progn
+    (powerline-default-theme)
+    )
+ )
+;; emacs mode to show colors for #rgb variables.
 (use-package rainbow-mode
 	     :config
 	     (rainbow-mode 1))
@@ -88,7 +97,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(smartparens smartparens-config rainbow-mode company use-package)))
+   '(powerline smartparens smartparens-config rainbow-mode company use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
