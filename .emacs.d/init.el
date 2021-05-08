@@ -56,6 +56,9 @@
 ;; make emacs kill ring iteraction with system clipboard
 (setq select-enable-clipboard t)
 
+;; make unix unicode default
+(setq-default default-buffer-file-coding-system 'utf-8-unix)
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; package configuration section
