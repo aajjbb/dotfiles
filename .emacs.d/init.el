@@ -40,8 +40,17 @@
 
 (global-display-line-numbers-mode)
 
+;; force files to end with a new line
+(require-final-newline t)
 
 ;;; package configuration section
+
+;; package to smartly reason about parenthesis on code.
+(use-package smartparens
+  :ensure
+  :init
+  (progn
+    (use-package smartparens-config))
 
 (use-package rainbow-mode
 	     :config
@@ -60,7 +69,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(rainbow-mode company use-package)))
+ '(package-selected-packages '(smartparens-config rainbow-mode company use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
