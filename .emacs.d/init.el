@@ -84,6 +84,7 @@
   (progn
     (use-package smartparens-config)
     (smartparens-global-mode 1)
+    (show-smartparens-global-mode +1)
     )
   )
 
