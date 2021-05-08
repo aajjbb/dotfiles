@@ -88,6 +88,19 @@
   :config
   (rainbow-mode 1))
 
+;; uniquify package improves default buffer naming
+(use-package uniquify
+  :config (setq uniquify-buffer-name-style 'forward))
+
+;; set js2-mode as the default mode for *.js files
+(use-package js2-mode
+  :mode ("\\.js$" . js2-mode)
+  :interpreter ("node" . js2-mode)
+  :config
+  (progn
+    (add-hook 'js2-mode-hook (lambda () (setq js2-basic-offset 2)))))
+
+
 (use-package company
   :config (global-company-mode t)
   :defer 2
