@@ -22,6 +22,9 @@ my %files = (
     # kitty config
     ".config/kitty/kitty.conf" => $root,
 
+    # emacs config file
+    ".emacs.d/init.el"      => $root,
+
     #general
     ".bash_profile"         => $root,
     ".bashrc"               => $root,
