@@ -36,7 +36,17 @@
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; global configuration section
+
+;; remove emacs's toolbar, menubar and scroolbar
+(mapc
+ (lambda (mode)
+   (when (fboundp mode)
+     (funcall mode -1)))
+ '(menu-bar-mode tool-bar-mode scroll-bar-mode))
 
 (global-display-line-numbers-mode)
 
