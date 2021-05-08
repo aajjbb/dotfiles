@@ -63,6 +63,13 @@
 ;; make unix unicode default
 (setq-default default-buffer-file-coding-system 'utf-8-unix)
 
+;; make whitespaces and line endings visible
+(global-whitespace-mode 1)
+
+;; set background mode
+(setq-default frame-background-mode 'dark)
+
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; package configuration section
@@ -104,6 +111,30 @@
   (progn
     (add-hook 'js2-mode-hook (lambda () (setq js2-basic-offset 2)))))
 
+;; set web-mode as the default mode for *.html files
+(use-package web-mode
+  :mode ("\\.html$" . web-mode)
+  :config
+  (progn
+    (add-hook 'web-mode-hook (lambda () (setq web-mode-markup-indent-offset 2)))
+    )
+  )
+
+;; show visual information about file indentation
+(use-package indent-guide
+  :ensure
+  :config
+  (progn
+    (indent-guide-global-mode))
+  )
+
+;; set python configuration with elpy
+(use-package python
+  :config (progn
+            (use-package elpy
+              :config (elpy-enable)
+              :ensure t))
+  :defer t)
 
 (use-package company
   :config (global-company-mode t)
@@ -121,7 +152,7 @@
  '(custom-safe-themes
    '("197cefea731181f7be51e9d498b29fb44b51be33484b17416b9855a2c4243cb1" default))
  '(package-selected-packages
-   '(nord-theme all-the-icons powerline smartparens smartparens-config rainbow-mode company use-package)))
+   '(indent-guide nord-theme all-the-icons powerline smartparens smartparens-config rainbow-mode company use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
