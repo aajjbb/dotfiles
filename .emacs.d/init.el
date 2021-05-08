@@ -36,6 +36,13 @@
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 
+;;; global configuration section
+
+(global-display-line-numbers-mode)
+
+
+;;; package configuration section
+
 (use-package rainbow-mode
 	     :config
 	     (rainbow-mode 1))
@@ -45,6 +52,8 @@
   :defer 2
   :ensure t)
 
+;;; this is added by the emacs package manager
+;;; one should not change it manually.
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
