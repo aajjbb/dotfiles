@@ -18,8 +18,8 @@
 
 ;; Any add to list for package-archives (to add marmalade or melpa) goes here
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-;;                       ("marmalade" . "http://marmalade-repo.org/packages/")
-;;                       ("Melpa" . "http://melpa.milkbox.net/packages/")
+			 ;;                       ("marmalade" . "http://marmalade-repo.org/packages/")
+			 ;;                       ("Melpa" . "http://melpa.milkbox.net/packages/")
 			 ("melpa-stable" . "https://stable.melpa.org/packages/")))
 (package-initialize)
 
@@ -77,11 +77,11 @@
   (progn
     (powerline-default-theme)
     )
- )
+  )
 ;; emacs mode to show colors for #rgb variables.
 (use-package rainbow-mode
-	     :config
-	     (rainbow-mode 1))
+  :config
+  (rainbow-mode 1))
 
 (use-package company
   :config (global-company-mode t)
