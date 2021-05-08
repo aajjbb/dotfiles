@@ -69,6 +69,9 @@
 ;; set background mode
 (setq-default frame-background-mode 'dark)
 
+;; set transparency to emacs client
+(set-frame-parameter (selected-frame) 'alpha '(93 93))
+(add-to-list 'default-frame-alist '(alpha 93 93))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
