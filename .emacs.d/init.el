@@ -158,6 +158,12 @@
   :defer t
   :ensure t)
 
+;; set ido mode. tis enhace emac's search
+(use-package ido
+  :config
+  (setq ido-enable-flex-matching t)
+  (ido-mode 1))
+
 ;; set python configuration with elpy
 (use-package python
   :config (progn
