@@ -80,7 +80,7 @@
 (add-to-list 'default-frame-alist '(alpha 93 93))
 
 ;; start emacs server, in case we want to open clients later
-(server-start)
+(unless (server-running-p) (server-start))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
