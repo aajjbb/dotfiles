@@ -69,6 +69,9 @@
 ;; make whitespaces and line endings visible
 (global-whitespace-mode 1)
 
+;; highlight the current line
+(global-hl-line-mode 1)
+
 ;; set background mode
 (setq-default frame-background-mode 'dark)
 
