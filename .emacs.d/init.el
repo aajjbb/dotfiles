@@ -76,6 +76,9 @@
 (set-frame-parameter (selected-frame) 'alpha '(93 93))
 (add-to-list 'default-frame-alist '(alpha 93 93))
 
+;; start emacs server, in case we want to open clients later
+(server-start)
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; package configuration section
