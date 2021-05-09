@@ -54,6 +54,9 @@
 ;; force emacs to show line numbers
 (global-display-line-numbers-mode)
 
+;; remove emacs start up screean
+(setq inhibit-startup-screen t)
+
 ;; force files to end with a new line
 (setq require-final-newline t)
 
@@ -156,6 +159,11 @@
               :config (elpy-enable)
               :ensure t))
   :defer t)
+
+;; set cua mode, allowing C-c C-v for cop/paste.
+(use-package cua-base
+  :init (cua-mode 1)
+  )
 
 (use-package company
   :config (global-company-mode t)
