@@ -152,6 +152,8 @@
 
 ;; use flycheck on c/c++ code
 (use-package flycheck
+  :ensure t
+  :defer 5
   :config
   (progn
     (add-hook 'c-mode-hook 'flycheck-mode)
@@ -159,9 +161,9 @@
 					  'flycheck-mode
 					  (setq-default  flycheck-g++-language-standard "c++14")
 					  )))
+    (global-flycheck-mode 1)
     )
-  :defer t
-  :ensure t)
+  )
 
 ;; set ido mode. tis enhace emac's search
 (use-package ido
