@@ -80,8 +80,9 @@
 (add-to-list 'default-frame-alist '(alpha 93 93))
 
 ;; start emacs server, in case we want to open clients later
-(unless (server-running-p) (server-start))
-
+(unless (and (fboundp 'server-running-p)
+             (server-running-p))
+  (server-start))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; package configuration section
@@ -136,6 +137,11 @@
   (progn
     (add-hook 'web-mode-hook (lambda () (setq web-mode-markup-indent-offset 2)))
     )
+  )
+
+(use-package neotree
+  :ensure t
+  :defer t
   )
 
 ;; show visual information about file indentation
@@ -205,7 +211,7 @@
  '(custom-safe-themes
    '("197cefea731181f7be51e9d498b29fb44b51be33484b17416b9855a2c4243cb1" default))
  '(package-selected-packages
-   '(helm markdown-mode ag flycheck indent-guide nord-theme all-the-icons powerline smartparens smartparens-config rainbow-mode company use-package)))
+   '(magit helm markdown-mode ag flycheck indent-guide nord-theme all-the-icons powerline smartparens smartparens-config rainbow-mode company use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
