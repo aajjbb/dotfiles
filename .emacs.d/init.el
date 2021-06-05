@@ -49,7 +49,14 @@
  '(menu-bar-mode tool-bar-mode scroll-bar-mode))
 
 ;; set the emacs theme
-(load-theme 'nord)
+(use-package material-theme
+  :ensure t
+  :config
+  (progn
+    (load-theme 'material t)
+  )
+)
+
 
 ;; force emacs to show line numbers
 (global-display-line-numbers-mode)
