@@ -96,11 +96,9 @@
 ;; changed lines
 (use-package ws-butler
   :ensure
-  :config
-  (progn
-    (add-hook 'prog-mode-hook ws-butler-mode)
-    )
-  )
+  :init
+  (add-hook 'prog-mode-hook #'ws-butler-mode)
+)
 
 ;; package to smartly reason about parenthesis on code.
 (use-package smartparens
@@ -113,7 +111,13 @@
     )
   )
 
-(use-package all-the-icons)
+;; (use-package all-the-icons-ivy-rich
+;;   :ensure t
+;;   :init (all-the-icons-ivy-rich-mode 1))
+
+;; (use-package ivy-rich
+;;   :ensure t
+;;   :init (ivy-rich-mode 1))
 
 ;; setup ag search
 (use-package ag
@@ -168,13 +172,13 @@
   )
 
 ;; set cc-mode
-(use-package cc-mode
-  :defer t
-  :config
-  (progn
-    (setq c-default-style "k&r")
-    (setq c-basic-offset 2)
-  ))
+;; (use-package cc-mode
+;;   :defer t
+;;   :config
+;;   (progn
+;;     (setq c-default-style "k&r")
+;;     (setq c-basic-offset 2)
+;;   ))
 
 ;; use flycheck on c/c++ code
 (use-package flycheck
@@ -189,7 +193,8 @@
 ;; set mode for markdown files.
 (use-package markdown-mode
   :ensure t
-  :mode (" \\.md\\" . markdown-mode))
+  :mode ("\\.md\\'" . markdown-mode)
+  )
 
 ;; set ido mode. tis enhace emac's search
 (use-package ido
@@ -223,10 +228,37 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default bold shadow italic underline bold bold-italic bold])
+ '(ansi-color-names-vectorc__
+   (vector "#ffffff" "#f36c60" "#8bc34a" "#fff59d" "#4dd0e1" "#b39ddb" "#81d4fa" "#263238"))
  '(custom-safe-themes
-   '("197cefea731181f7be51e9d498b29fb44b51be33484b17416b9855a2c4243cb1" default))
+   '("7922b14d8971cce37ddb5e487dbc18da5444c47f766178e5a4e72f90437c0711" "197cefea731181f7be51e9d498b29fb44b51be33484b17416b9855a2c4243cb1" default))
+ '(fci-rule-color "#37474f")
+ '(hl-sexp-background-color "#1c1f26")
  '(package-selected-packages
-   '(material-theme magit helm markdown-mode ag flycheck indent-guide nord-theme all-the-icons powerline smartparens smartparens-config rainbow-mode company use-package)))
+   '(material-theme magit helm markdown-mode ag flycheck indent-guide nord-theme all-the-icons powerline smartparens smartparens-config rainbow-mode company use-package))
+ '(vc-annotate-background nil)
+ '(vc-annotate-color-map
+   '((20 . "#f36c60")
+     (40 . "#ff9800")
+     (60 . "#fff59d")
+     (80 . "#8bc34a")
+     (100 . "#81d4fa")
+     (120 . "#4dd0e1")
+     (140 . "#b39ddb")
+     (160 . "#f36c60")
+     (180 . "#ff9800")
+     (200 . "#fff59d")
+     (220 . "#8bc34a")
+     (240 . "#81d4fa")
+     (260 . "#4dd0e1")
+     (280 . "#b39ddb")
+     (300 . "#f36c60")
+     (320 . "#ff9800")
+     (340 . "#fff59d")
+     (360 . "#8bc34a")))
+ '(vc-annotate-very-old-color nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
