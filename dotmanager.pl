@@ -24,12 +24,12 @@ my %files = (
 
     # emacs config file
     ".emacs.d/init.el"      => $root,
+    ".emacs.bkp"            => $root,
 
     #general
     ".bash_profile"         => $root,
     ".bashrc"               => $root,
     ".config/.compton.conf" => $root,
-    ".emacs"                => $root,
     ".gitconfig"            => $root,
     ".spacemacs"            => $root,
     ".tmux.conf"            => $root,

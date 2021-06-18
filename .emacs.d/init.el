@@ -94,6 +94,16 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; package configuration section
 
+;; set ws-butler mode. it delete trailing whitespaces from
+;; changed lines
+(use-package ws-butler
+  :ensure
+  :config
+  (progn
+    (add-hook 'prog-mode-hook ws-butler-mode)
+    )
+  )
+
 ;; package to smartly reason about parenthesis on code.
 (use-package smartparens
   :ensure
@@ -161,7 +171,12 @@
 
 ;; set cc-mode
 (use-package cc-mode
-  :defer t)
+  :defer t
+  :config
+  (progn
+    (setq c-default-style "k&r")
+    (setq c-basic-offset 2)
+  ))
 
 ;; use flycheck on c/c++ code
 (use-package flycheck
@@ -169,14 +184,9 @@
   :defer 5
   :config
   (progn
-    (add-hook 'c-mode-hook 'flycheck-mode)
-    (add-hook 'c++-mode-hook (lambda () (progn
-					  'flycheck-mode
-					  (setq-default  flycheck-g++-language-standard "c++14")
-					  )))
     (global-flycheck-mode 1)
     )
-  )
+)
 
 ;; set mode for markdown files.
 (use-package markdown-mode
@@ -218,7 +228,7 @@
  '(custom-safe-themes
    '("197cefea731181f7be51e9d498b29fb44b51be33484b17416b9855a2c4243cb1" default))
  '(package-selected-packages
-   '(magit helm markdown-mode ag flycheck indent-guide nord-theme all-the-icons powerline smartparens smartparens-config rainbow-mode company use-package)))
+   '(material-theme magit helm markdown-mode ag flycheck indent-guide nord-theme all-the-icons powerline smartparens smartparens-config rainbow-mode company use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
