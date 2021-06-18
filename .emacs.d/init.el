@@ -51,10 +51,8 @@
 ;; set the emacs theme
 (use-package material-theme
   :ensure t
-  :config
-  (progn
-    (load-theme 'material t)
-  )
+  :init
+  (add-hook 'after-init-hook (lambda () (load-theme 'material t)))
 )
 
 
