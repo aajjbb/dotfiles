@@ -196,6 +196,12 @@
   :mode ("\\.md\\'" . markdown-mode)
   )
 
+;;
+(use-package diff-hl
+  :ensure t
+  :init (global-diff-hl-mode)
+  :config (add-hook 'vc-checkin-hook 'diff-hl-update))
+
 ;; set ido mode. tis enhace emac's search
 (use-package ido
   :config
@@ -237,7 +243,7 @@
  '(fci-rule-color "#37474f")
  '(hl-sexp-background-color "#1c1f26")
  '(package-selected-packages
-   '(material-theme magit helm markdown-mode ag flycheck indent-guide nord-theme all-the-icons powerline smartparens smartparens-config rainbow-mode company use-package))
+   '(diff-hl material-theme magit helm markdown-mode ag flycheck indent-guide nord-theme all-the-icons powerline smartparens smartparens-config rainbow-mode company use-package))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    '((20 . "#f36c60")
