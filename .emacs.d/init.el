@@ -18,9 +18,11 @@
 
 ;; Any add to list for package-archives (to add marmalade or melpa) goes here
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-			 ;;                       ("marmalade" . "http://marmalade-repo.org/packages/")
-			 ;;                       ("Melpa" . "http://melpa.milkbox.net/packages/")
-			 ("melpa-stable" . "https://stable.melpa.org/packages/")))
+			 ;;("marmalade" . "http://marmalade-repo.org/packages/")
+			 ("melpa" . "http://melpa.org/packages/")
+			 ;;("melpa-stable" . "https://stable.melpa.org/packages/")
+			 )
+      )
 (package-initialize)
 
 ;; Load plugins
