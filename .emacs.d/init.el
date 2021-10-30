@@ -51,10 +51,10 @@
  '(menu-bar-mode tool-bar-mode scroll-bar-mode))
 
 ;; set the emacs theme
-(use-package material-theme
+(use-package blackboard-theme
   :ensure t
   :init
-  (add-hook 'after-init-hook (lambda () (load-theme 'material t)))
+  (add-hook 'after-init-hook (lambda () (load-theme 'blackboard t)))
 )
 
 
@@ -242,11 +242,11 @@
  '(ansi-color-names-vectorc__
    (vector "#ffffff" "#f36c60" "#8bc34a" "#fff59d" "#4dd0e1" "#b39ddb" "#81d4fa" "#263238"))
  '(custom-safe-themes
-   '("7922b14d8971cce37ddb5e487dbc18da5444c47f766178e5a4e72f90437c0711" "197cefea731181f7be51e9d498b29fb44b51be33484b17416b9855a2c4243cb1" default))
+   '("4eb69f17b4fa0cd74f4ff497bb6075d939e8d8bf4321ce8b81d13974000baac1" "a325ba05dc3b5c2fa89af0ff354bbbe90251fb1a6e6d5682977cebe61ce72ab7" "7922b14d8971cce37ddb5e487dbc18da5444c47f766178e5a4e72f90437c0711" "197cefea731181f7be51e9d498b29fb44b51be33484b17416b9855a2c4243cb1" default))
  '(fci-rule-color "#37474f")
  '(hl-sexp-background-color "#1c1f26")
  '(package-selected-packages
-   '(erlang tide elpy diff-hl material-theme magit helm markdown-mode ag flycheck indent-guide nord-theme all-the-icons powerline smartparens smartparens-config rainbow-mode company use-package))
+   '(blackboard-theme tomorrow-night-paradise tomorrow-night-paradise-theme melancholy-theme zeno zeno-theme erlang tide elpy diff-hl material-theme magit helm markdown-mode ag flycheck indent-guide nord-theme all-the-icons powerline smartparens smartparens-config rainbow-mode company use-package))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    '((20 . "#f36c60")
