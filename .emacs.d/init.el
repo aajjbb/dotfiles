@@ -74,7 +74,7 @@
 (setq-default default-buffer-file-coding-system 'utf-8-unix)
 
 ;; make whitespaces and line endings visible
-(global-whitespace-mode 1)
+;;(global-whitespace-mode 1)
 
 ;; highlight the current line
 (global-hl-line-mode 1)
