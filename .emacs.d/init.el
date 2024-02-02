@@ -19,10 +19,14 @@
 ;; Any add to list for package-archives (to add marmalade or melpa) goes here
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
 			 ;;("marmalade" . "http://marmalade-repo.org/packages/")
-			 ("melpa" . "http://melpa.org/packages/")
+			 ("melpa" . "https://melpa.org/packages/")
 			 ;;("melpa-stable" . "https://stable.melpa.org/packages/")
 			 )
       )
+
+(unless package-archive-contents
+  (package-refresh-contents))
+
 (package-initialize)
 
 ;; Load plugins
@@ -51,12 +55,22 @@
  '(menu-bar-mode tool-bar-mode scroll-bar-mode))
 
 ;; set the emacs theme
-(use-package blackboard-theme
-  :ensure t
-  :init
-  (add-hook 'after-init-hook (lambda () (load-theme 'blackboard t)))
-)
+;; (use-package blackboard-theme
+;;   :ensure t
+;;   :init
+;;   (add-hook 'after-init-hook (lambda () (load-theme 'blackboard t)))
+;; )
 
+;; (use-package zenburn-theme
+;;   :ensure t
+;;   :init
+;;   (add-hook 'after-init-hook (lambda () (load-theme 'zenburn t))))
+
+(use-package nimbus-theme
+	:ensure t
+	:init
+	(add-hook 'after-init-hook (lambda () (load-theme 'nimbus t)))
+	)
 
 ;; force emacs to show line numbers
 (global-display-line-numbers-mode)
@@ -90,6 +104,9 @@
 (unless (and (fboundp 'server-running-p)
              (server-running-p))
   (server-start))
+
+;; prevent the annoying beep
+(setq visible-bell t)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; package configuration section
@@ -134,10 +151,6 @@
     (powerline-default-theme)
     )
   )
-;; emacs mode to show colors for #rgb variables.
-(use-package rainbow-mode
-  :config
-  (rainbow-mode 1))
 
 ;; uniquify package improves default buffer naming
 (use-package uniquify
@@ -229,6 +242,11 @@
   :defer 2
   :ensure t)
 
+(use-package treemacs
+  :ensure t
+  :defer t
+  :init )
+
 ;;; this is added by the emacs package manager
 ;;; one should not change it manually.
 
@@ -238,35 +256,35 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(ansi-color-faces-vector
-   [default bold shadow italic underline bold bold-italic bold])
+	 [default bold shadow italic underline bold bold-italic bold])
  '(ansi-color-names-vectorc__
-   (vector "#ffffff" "#f36c60" "#8bc34a" "#fff59d" "#4dd0e1" "#b39ddb" "#81d4fa" "#263238"))
+	 (vector "#ffffff" "#f36c60" "#8bc34a" "#fff59d" "#4dd0e1" "#b39ddb" "#81d4fa" "#263238"))
  '(custom-safe-themes
-   '("4eb69f17b4fa0cd74f4ff497bb6075d939e8d8bf4321ce8b81d13974000baac1" "a325ba05dc3b5c2fa89af0ff354bbbe90251fb1a6e6d5682977cebe61ce72ab7" "7922b14d8971cce37ddb5e487dbc18da5444c47f766178e5a4e72f90437c0711" "197cefea731181f7be51e9d498b29fb44b51be33484b17416b9855a2c4243cb1" default))
+	 '("c5e7a36784b1955b28a89a39fef7c65ddc455b8e7fd70c6f5635cb21e4615670" "c07daf599a7d07a18faaf354d269c48d4462ff7dbdbcc3773950a4b37b003d80" "f366d4bc6d14dcac2963d45df51956b2409a15b770ec2f6d730e73ce0ca5c8a7" "4eb69f17b4fa0cd74f4ff497bb6075d939e8d8bf4321ce8b81d13974000baac1" "a325ba05dc3b5c2fa89af0ff354bbbe90251fb1a6e6d5682977cebe61ce72ab7" "7922b14d8971cce37ddb5e487dbc18da5444c47f766178e5a4e72f90437c0711" "197cefea731181f7be51e9d498b29fb44b51be33484b17416b9855a2c4243cb1" default))
  '(fci-rule-color "#37474f")
  '(hl-sexp-background-color "#1c1f26")
  '(package-selected-packages
-   '(blackboard-theme tomorrow-night-paradise tomorrow-night-paradise-theme melancholy-theme zeno zeno-theme erlang tide elpy diff-hl material-theme magit helm markdown-mode ag flycheck indent-guide nord-theme all-the-icons powerline smartparens smartparens-config rainbow-mode company use-package))
+	 '(lua-mode nimbus-theme zenburn-theme treemacs typescript-mode blackboard-theme tomorrow-night-paradise tomorrow-night-paradise-theme melancholy-theme zeno zeno-theme erlang tide elpy diff-hl material-theme magit helm markdown-mode ag flycheck indent-guide nord-theme all-the-icons powerline smartparens smartparens-config rainbow-mode company use-package))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
-   '((20 . "#f36c60")
-     (40 . "#ff9800")
-     (60 . "#fff59d")
-     (80 . "#8bc34a")
-     (100 . "#81d4fa")
-     (120 . "#4dd0e1")
-     (140 . "#b39ddb")
-     (160 . "#f36c60")
-     (180 . "#ff9800")
-     (200 . "#fff59d")
-     (220 . "#8bc34a")
-     (240 . "#81d4fa")
-     (260 . "#4dd0e1")
-     (280 . "#b39ddb")
-     (300 . "#f36c60")
-     (320 . "#ff9800")
-     (340 . "#fff59d")
-     (360 . "#8bc34a")))
+	 '((20 . "#f36c60")
+		 (40 . "#ff9800")
+		 (60 . "#fff59d")
+		 (80 . "#8bc34a")
+		 (100 . "#81d4fa")
+		 (120 . "#4dd0e1")
+		 (140 . "#b39ddb")
+		 (160 . "#f36c60")
+		 (180 . "#ff9800")
+		 (200 . "#fff59d")
+		 (220 . "#8bc34a")
+		 (240 . "#81d4fa")
+		 (260 . "#4dd0e1")
+		 (280 . "#b39ddb")
+		 (300 . "#f36c60")
+		 (320 . "#ff9800")
+		 (340 . "#fff59d")
+		 (360 . "#8bc34a")))
  '(vc-annotate-very-old-color nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
