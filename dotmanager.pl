@@ -27,15 +27,15 @@ my %files = (
     ".emacs.bkp"            => $root,
 
     #general
-    ".bash_profile"         => $root,
-    ".bashrc"               => $root,
-    ".config/.compton.conf" => $root,
+    # ".bash_profile"         => $root,
+    # ".bashrc"               => $root,
+    # ".config/.compton.conf" => $root,
     ".gitconfig"            => $root,
-    ".spacemacs"            => $root,
+    # ".spacemacs"            => $root,
     ".tmux.conf"            => $root,
-    ".vimrc"                => $root,
-    ".Xresources"           => $root,
-    ".zshrc"                => $root,
+    # ".vimrc"                => $root,
+    # ".Xresources"           => $root,
+    # ".zshrc"                => $root,
 
     #scripts
     ".local/bin/lock.sh"    => $root,
